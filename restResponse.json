@@ -1,0 +1,69 @@
+{
+  "conception": {
+    "classType": "objectClass",
+    "className": "json",
+    "conceptionName": "response",
+    "name": "rest",
+    "bucketName":"instriitConfig"
+  }, 
+  "restResponse": {
+    "result": {
+      "status": true,
+      "statusCode": 200,
+      "securityLevel": 0,
+      "retryNb": 0,
+      "toRetry": false,
+      "toDelete": false,
+      "toArchive": false,
+      "expidation": {
+        "state": true,
+        "dateStart": 0,
+        "dateEnd": 0,
+        "ttl": 0,
+        "renewOnCall": false
+      },
+      "messageList": {
+        "infoList": [
+          {
+            "messageTextName": "",
+            "securityLevel": 0
+          }
+        ],
+        "warningList": [
+          {
+            "messageTextName": "",
+            "securityLevel": 0
+          }
+        ]
+      }
+    },
+    "audit": {
+      "from": {
+        "sended": {
+          "credentials": "",
+          "connexionString": "",
+          "date": 0,
+          "securityLevel": 0,
+          "headerList": []
+        }
+      },
+      "endPoint": {
+        "recieved": {
+          "credentials": "",
+          "connexionString": "",
+          "date": 0,
+          "securityLevel": 0,
+          "headerList": []
+        },
+        "sended": {
+          "credentials": "",
+          "connexionString": "",
+          "date": 0,
+          "securityLevel": 0,
+          "headerList": []
+        }
+      }
+    }
+  },
+  "dataResponse": {}
+}

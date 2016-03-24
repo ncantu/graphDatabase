@@ -1,0 +1,489 @@
+{
+  "conception": {
+    "classType": "objectClass",
+    "className": "profil",
+    "conceptionName": "default",
+    "name": "default",
+    "bucketName":"instriitProfil"
+  },
+  "description": {
+    "name": "",
+    "descriptionName": "profil-description",
+    "semanticNameList": [],
+    "titleTextName": "",
+    "template": "",
+    "content": "",
+    "contentUrl": ""
+  },
+  "expidation": {
+    "name": "",
+    "expidationName": "profil-expidation",
+    "state": true,
+    "dateStart": 0,
+    "dateEnd": 0,
+    "ttl": 0,
+    "renewOnCall":false
+  },
+  "audit": {
+    "name": "",
+    "auditName": "profil-audit",
+    "aboutList": [],
+    "toList": [],
+    "fromList": [],
+    "originList": [],
+    "profilNameList": [],
+    "notificationNameList": [],
+    "algorthimNameList": [],
+    "semanticNameList": [],
+    "textNameList": [],
+    "levelList": [],
+    "parentProfilNameList": [],
+    "organisationNameList": [],
+    "tagList": []
+  },
+  "algorithmList": [
+    {
+      "weight": 5,
+      "max": 100,
+      "min": 0,
+      "reverse": false,
+      "detailList": true,
+      "alogrithmName": "profil-algorithm",
+      "valueEnd": 75025,
+      "valueStart": 0,
+      "value": 0,
+      "expidation": {
+        "name": "",
+        "expidationName": "profil-algorithm-expidation",
+        "state": true,
+        "dateStart": 0,
+        "dateEnd": 0,
+        "ttl": 0,
+        "renewOnCall":false
+      }
+    }
+  ],
+  "visiblity": [
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-map",
+      "all": true,
+      "parentProfilNameSame": true,
+      "inChilds": true
+    },
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-search",
+      "all": true,
+      "parentProfilNameSame": true,
+      "inChilds": true
+    },
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-connection",
+      "all": false,
+      "parentProfilNameSame": true,
+      "inChilds": false
+    },
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-person-pin",
+      "all": false,
+      "parentProfilNameSame": true,
+      "inChilds": false
+    },
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-comment-multiple-outline",
+      "all": false,
+      "parentProfilNameSame": true,
+      "inChilds": false
+    },
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-incognito",
+      "all": false,
+      "parentProfilNameSame": false,
+      "inChilds": false
+    },
+    {
+      "name": "",
+      "visibilityName": "profil-visiblity",
+      "profilSourceType": "instriit-organization-torso-business",
+      "all": true,
+      "parentProfilNameSame": true,
+      "inChilds": true
+    }
+  ],
+  "result": [
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-favorite",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-photo-camera",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-videocam",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-notification",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-forum",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-insert-comment",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-reply",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-report",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-account-circle",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-add-shopping-cart",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-help",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-zoom-in",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-zoom-out",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-lock",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-lock-open",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-mail",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-phone",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-location-searching",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-search",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-edit",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-equalizer",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-more",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-navigation",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-street-view",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-local-activity",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-activity",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-thumbs-up-down",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-business",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-remove-red-eye",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-people",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-public",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    },
+    {
+      "name": "",
+      "resultName": "profil-result",
+      "profilName": "instriit-activity-event",
+      "classType": "instriit-profil-activity",
+      "count": 0
+    }
+  ],
+  "specific": {
+    "securityLevel": 100,
+    "avatarUrl": "",
+    "onMap": true,
+    "contact": {
+      "lastName": "",
+      "firstName": "",
+      "fullName": "",
+      "emailList": [],
+      "phoneList": [],
+      "socialSiteList": [
+        {
+          "socialSiteName": "",
+          "socialSiteProfilId": "",
+          "socialSiteUrl": "",
+          "socialSiteProfil": {},
+          "actionList": [
+            {
+              "name": "updateDaily"
+            },
+            {
+              "history": true
+            }
+          ],
+          "history": []
+        }
+      ]
+    },
+    "localisationList": [
+      {
+        "localisationName": "",
+        "lattitude": 0,
+        "longitude": 0,
+        "conuntry": "",
+        "state": "",
+        "street": "",
+        "streetNumber": "",
+        "zipCode": "",
+        "city": ""
+      }
+    ],
+    "algorithmSynthesisNameList": [
+      {
+        "algorithmName": "score",
+        "value": 0,
+        "contextModificationList": [
+          {
+            "bonus": true,
+            "malus": false,
+            "algorithmName": "score",
+            "name": "init",
+            "type": "init",
+            "dateStart": 0,
+            "dateEnd": 99999999999999,
+            "value": 2,
+            "origin": ""
+          },
+          {
+            "bonus": false,
+            "malus": true,
+            "algorithmName": "score",
+            "name": "init",
+            "type": "init",
+            "dateStart": 0,
+            "dateEnd": 99999999999999,
+            "value": 1,
+            "origin": ""
+          }
+        ],
+        "notificationHistory": [
+          {
+            "notificationName": "",
+            "origin": [
+              "init"
+            ],
+            "name": "init",
+            "type": "init",
+            "expidation": {
+              "dateStart": 0,
+              "dateEnd": 0,
+              "ttl": 0,
+              "accessLast": 0,
+              "clickLast": 0,
+              "mouseOverLast": 0,
+              "notificationLast": 0,
+              "tchatOpenLast": 0
+            },
+            "content": "Welcome!"
+          }
+        ]
+      },
+      {
+        "algorithmName": "match",
+        "value": 0,
+        "contextModificationList": [
+          {
+            "bonus": true,
+            "malus": false,
+            "algorithmName": "score",
+            "name": "init",
+            "type": "init",
+            "dateStart": 0,
+            "dateEnd": 99999999999999,
+            "value": 2,
+            "origin": ""
+          },
+          {
+            "bonus": false,
+            "malus": true,
+            "algorithmName": "score",
+            "name": "init",
+            "type": "init",
+            "dateStart": 0,
+            "dateEnd": 99999999999999,
+            "value": 1,
+            "origin": ""
+          }
+        ],
+        "notificationHistory": [
+          {
+            "notificationName": "",
+            "origin": [
+              "init"
+            ],
+            "name": "init",
+            "type": "init",
+            "expidation": {
+              "dateStart": 0,
+              "dateEnd": 0,
+              "ttl": 0,
+              "accessLast": 0,
+              "clickLast": 0,
+              "mouseOverLast": 0,
+              "notificationLast": 0,
+              "tchatOpenLast": 0
+            },
+            "content": "Welcome!"
+          }
+        ]
+      }
+    ]
+  }
+}

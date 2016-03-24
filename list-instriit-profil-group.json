@@ -1,0 +1,32 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "profil",
+    "conceptionName": "group",
+    "name": "default",
+    "bucketName":"instriitProfil",
+    "classDocumentName": "classProfil"
+  },
+  "itemList": [
+    {
+      "name": "anonymous",
+      "conceptionName": "instriit-organisation-incognito",
+      "classType": "instriit-profil-group"
+    },
+    {
+      "name": "nicolas.cantu@instriit.com",
+      "conceptionName": "instriit-organisation-connection",
+      "classType": "instriit-profil-group"
+    },
+    {
+      "name": "someOne@someMailer.com",
+      "conceptionName": "instriit-organisation-connection",
+      "classType": "instriit-profil-group"
+    },
+    {
+      "name": "SomeOrganisation",
+      "conceptionName": "instriit-organisation-torso-business",
+      "classType": "instriit-profil-group"
+    }
+  ]
+}

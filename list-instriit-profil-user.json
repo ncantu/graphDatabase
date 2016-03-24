@@ -1,0 +1,56 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "profil",
+    "conceptionName": "user",
+    "name": "default",
+    "bucketName":"instriitProfil",
+    "classDocumentName": "classProfil"
+  },
+  "itemList": [
+    {
+      "name": "anonymous",
+      "conceptionName": "instriit-profil-person-mdi",
+      "organizationNameList": [
+        "instriit-organisation-incognito"
+      ],
+      "parentconceptionNameList": [
+        "anonymous"
+      ],
+      "classType": "instriit-profil-user"
+    },
+    {
+      "name": "nicolas.cantu@instriit.com",
+      "conceptionName": "instriit-profil-person-mdi",
+      "organizationNameList": [
+        "instriit-organisation-connection"
+      ],
+      "parentconceptionNameList": [
+        "nicolas.cantu@instriit.com"
+      ],
+      "classType": "instriit-profil-user"
+    },
+    {
+      "name": "someOne@someMailer.com",
+      "conceptionName": "instriit-profil-person-mdi",
+      "organizationNameList": [
+        "instriit-organisation-connection"
+      ],
+      "parentconceptionNameList": [
+        "someOne@someMailer.com"
+      ],
+      "classType": "instriit-profil-user"
+    },
+    {
+      "name": "someProfressionnal@someOrganisation.com",
+      "conceptionName": "instriit-profil-person-mdi",
+      "organizationNameList": [
+        "instriit-organisation-torso-business"
+      ],
+      "parentconceptionNameList": [
+        "someOrganisation"
+      ],
+      "classType": "instriit-profil-user"
+    }
+  ]
+}

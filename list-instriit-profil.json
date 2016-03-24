@@ -1,0 +1,44 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "profil",
+    "conceptionName": "default",
+    "name": "default",
+    "bucketName":"instriitProfil",
+    "classDocumentName": "classProfil"
+  },
+  "itemList": [
+    {
+      "conceptionName": "instriit-profil-person-mdi",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-map-marker",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-thumbs-up-down",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-activity",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-message-reply",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-favorite",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-organization",
+      "classType": "instriit-profil"
+    },
+    {
+      "conceptionName": "instriit-profil-event",
+      "classType": "instriit-profil"
+    }
+  ]
+}

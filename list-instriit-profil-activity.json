@@ -1,0 +1,140 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "profil",
+    "conceptionName": "activity",
+    "name": "default",
+    "bucketName":"instriitProfil",
+    "classDocumentName": "classProfil"
+  },
+  "itemList": [
+    {
+      "conceptionName": "instriit-activity-favorite",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-photo-camera",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-videocam",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-notification",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-forum",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-insert-comment",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-reply",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-report",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-account-circle",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-add-shopping-cart",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-help",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-zoom-in",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-zoom-out",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-lock",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-lock-open",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-mail",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-phone",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-location-searching",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-search",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-edit",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-equalizer",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-more",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-navigation",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-street-view",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-local-activity",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-activity",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-thumbs-up-down",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-business",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-remove-red-eye",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-people",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-public",
+      "classType": "instriit-profil-activity"
+    },
+    {
+      "conceptionName": "instriit-activity-event",
+      "classType": "instriit-profil-activity"
+    }
+  ]
+}
