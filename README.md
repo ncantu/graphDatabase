@@ -1,6 +1,6 @@
 # graphDatabase
 
-Graph script for init a the projet Graphof Instriit 
+Graph script for init a the projet Graph of Instriit 
 
 Version Graph with Neo4j
 
