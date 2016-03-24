@@ -1,0 +1,44 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "profil",
+    "conceptionName": "organization",
+    "name": "default",
+    "bucketName":"instriitProfil",
+    "classDocumentName": "classProfil"
+  },
+  "itemList": [
+    {
+      "conceptionName": "instriit-organization-organization",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-incognito",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-torso-business",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-connection",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-person-pin",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-map",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-search",
+      "classType": "instriit-profil-organization"
+    },
+    {
+      "conceptionName": "instriit-organization-comment-multiple-outline",
+      "classType": "instriit-profil-organization"
+    }
+  ]
+}

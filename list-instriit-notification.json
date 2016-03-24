@@ -1,0 +1,40 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "notification",
+    "conceptionName": "default",
+    "name": "default",
+    "bucketName":"instriitNotification",
+    "classDocumentName": "classNotification"
+  },
+  "itemList": [
+    {
+      "conceptionName": "instriit-notification-questionchat",
+      "classType": "instriit-notification"
+    },
+    {
+      "conceptionName": "instriit-notification-perm-device-information",
+      "classType": "instriit-notification"
+    },
+    {
+      "conceptionName": "instriit-notification-coins",
+      "classType": "instriit-notification"
+    },
+    {
+      "conceptionName": "instriit-notification-comments-o",
+      "classType": "instriit-notification"
+    },
+    {
+      "conceptionName": "instriit-notification-event",
+      "classType": "instriit-notification"
+    },
+    {
+      "conceptionName": "instriit-notification-task",
+      "classType": "instriit-otification"
+    },
+    {
+      "conceptionName": "instriit-notification-add-shopping-cart",
+      "classType": "instriit-notification"
+    }
+  ]
+}

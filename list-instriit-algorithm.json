@@ -1,0 +1,104 @@
+{
+  "conception": {
+    "classType": "list",
+    "className": "algorithm",
+    "conceptionName": "default",
+    "name": "default",
+    "bucketName":"instriitAlgorithm",
+    "classDocumentName": "classAlgorithm"
+  },
+  "itemList": [
+    {
+      "conceptionName": "instriit-algorithm-compare",
+      "classType": "instriit-algorithm",
+      "levelList": [
+        {
+          "level": 1,
+          "levelName": "unknown"
+        },
+        {
+          "level": 2,
+          "levelName": "nothingCommun"
+        },
+        {
+          "level": 3,
+          "levelName": "sameBasics"
+        },
+        {
+          "level": 4,
+          "levelName": "likeYou"
+        },
+        {
+          "level": 5,
+          "levelName": "samePriorities"
+        },
+        {
+          "level": 6,
+          "levelName": "sameValues"
+        },
+        {
+          "level": 7,
+          "name": "perfectMatching"
+        },
+        {
+          "level": 8,
+          "levelName": "perfectCouple"
+        },
+        {
+          "level": 9,
+          "levelName": "symbiosis"
+        },
+        {
+          "level": 10,
+          "levelName": "clone"
+        }
+      ]
+    },
+    {
+      "conceptionName": "instriit-algorithm-price-ribbon",
+      "classType": "instriit-algorithm",
+      "levelList": [
+        {
+          "level": 1,
+          "levelName": "unknown"
+        },
+        {
+          "level": 2,
+          "levelName": "notIntersted"
+        },
+        {
+          "level": 3,
+          "levelName": "intersted"
+        },
+        {
+          "level": 4,
+          "levelName": "APlus"
+        },
+        {
+          "level": 5,
+          "levelName": "interestConfirmed"
+        },
+        {
+          "level": 6,
+          "levelName": "majorValue"
+        },
+        {
+          "level": 7,
+          "name": "expert"
+        },
+        {
+          "level": 8,
+          "levelName": "fan"
+        },
+        {
+          "level": 9,
+          "levelName": "addict"
+        },
+        {
+          "level": 10,
+          "levelName": "hero"
+        }
+      ]
+    }
+  ]
+}
