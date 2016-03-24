@@ -215,7 +215,7 @@ WITH id.str + id.count AS clientUid
 MERGE (id:UniqueId{name:'Host', str:'host_'})
 ON CREATE SET id.count = 1
 ON MATCH SET id.count = id.count + 1
-WITH id.str + id.count AS hosttUid
+WITH id.str + id.count AS hostUid
 
 //semantic
 
