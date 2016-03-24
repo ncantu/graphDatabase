@@ -1,3 +1,7 @@
+
+MATCH (n)
+DETACH DELETE n
+
 MERGE (id:UniqueId{name:'User',str:'user_'})
 ON CREATE SET id.count = 1
 ON MATCH SET id.count = id.count + 1
@@ -465,7 +469,6 @@ CREATE
 	(history1) -[:historize {user:'localization1', state:true, dateStart:0, dateEnd:0, step:'published', visibility:'public', action:'create', note:''}]-> (expireControler1),
 	(history1) -[:historize {user:'localization1', state:true, dateStart:0, dateEnd:0, step:'published', visibility:'public', action:'create', note:''}]-> (fr),
 	(history1) -[:historize {user:'localization1', state:true, dateStart:0, dateEnd:0, step:'published', visibility:'public', action:'create', note:''}]-> (place1),
-
 
 	(ncantu) -[:comment {title: '', value:'hello', listId:['838847'], user:'ncantu', state:false, dateStart:0, dateEnd:0, step:'created', visibility:'public', description500: '', descriptionLong3000:'', descriptionShort240:'', note:''}) ]-> (ressource)
 	(ncantu) -[:comment {title: '', value:'olleh', listId:['838847'], user:'ncantu', state:false, dateStart:0, dateEnd:0, step:'created', visibility:'public', description500: '', descriptionLong3000:'', descriptionShort240:'', note:''}) ]-> (user1)
