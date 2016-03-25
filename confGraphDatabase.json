@@ -1,0 +1,380 @@
+{
+  "relationshipList": {},
+  "labelList": {
+    "Compagny": {
+      "DianeKruger": {},
+      "Instriit": {}
+    },
+    "Personn": {
+      "DianeKruger": {
+        "lastName": "Kruger",
+        "firstName": "Diane"
+      },
+      "NicolasCantu": {
+        "lastName": "Cantu",
+        "firstName": "Nicolas"
+      }
+    },
+    "User": {
+      "ncantu": {
+        "login": "ncantu",
+        "email": "nicolas.cantu@instriit.com"
+      },
+      "user1": {
+        "login": "user1",
+        "email": "nicolas.cantu@instriit.com"
+      }
+    },
+    "UserGroup": {
+      "admin": {
+        "lastName": "Service",
+        "firstName": "Admin",
+        "email": "admin@instriit.com"
+      },
+      "user": {
+        "lastName": "Service",
+        "firstName": "User",
+        "email": "user@instriit.com"
+      },
+      "instriit": {
+        "lastName": "Service",
+        "firstName": "User",
+        "email": "user@instriit.com"
+      }
+    },
+    "Domain": {
+      "instriit": {
+        "dns": "instriit.com"
+      }
+    },
+    "Device": {
+      "PC": {},
+      "tablette": {},
+      "smarphone": {}
+    },
+    "Media": {
+      "site": {},
+      "appAndroid": {},
+      "appIohone": {}
+    },
+    "Campaign": {
+      "campaign1": {}
+    },
+    "Resource ": {
+      "logo": {
+        "urlPath": "img",
+        "urlName": "logo",
+        "urlExt": ".png",
+        "crc": ""
+      },
+      "product1": {
+        "urlPath": "img",
+        "urlName": "product1",
+        "urlExt": ".png",
+        "crc": ""
+      }
+    },
+    "Format": {
+      "standardLogo": {
+        "contentType": "image/png",
+        "height": 480,
+        "heightUnit": "px",
+        "width": 38,
+        "widthUnit": "px",
+        "weight": 19,
+        "weightUnit": "ko"
+      }
+    },
+    "AnalyticScriptCall": {
+      "analyticScriptCall1": {
+        "google": "<script></scrypt>",
+        "crm": "<script></scrypt>",
+        "salesforce": "<script></scrypt>",
+        "other": "<script></scrypt>"
+      }
+    },
+    "AnalyticUrlCall": {
+      "analyticUrlCall1": {
+        "google": "http://",
+        "crm": "http://",
+        "salesforce": "http://",
+        "other": "http://"
+      }
+    },
+    "Segment": {
+      "early": {},
+      "fan": {}
+    },
+    "Right": {
+      "adminRight": {},
+      "userRight": {},
+      "compagnyRight": {}
+    },
+    "Action": {
+      "create": {},
+      "publish": {},
+      "test": {},
+      "valid": {},
+      "host": {},
+      "use": {},
+      "state": {},
+      "manage": {},
+      "target": {},
+      "represente": {},
+      "collect": {},
+      "authorise": {},
+      "own": {},
+      "init": {},
+      "optimize": {},
+      "identify": {},
+      "facility": {},
+      "mark": {},
+      "expire": {},
+      "localize": {},
+      "show": {},
+      "size": {},
+      "historize": {},
+      "contributeTo": {},
+      "concern": {},
+      "cost": {},
+      "stock": {},
+      "shipp": {},
+      "order": {},
+      "pay": {},
+      "billing": {},
+      "expedite": {},
+      "payBack": {},
+      "shippManange": {},
+      "expediteManange": {},
+      "payManange": {},
+      "produce": {},
+      "ask": {},
+      "balance": {},
+      "note": {},
+      "comment": {}
+    },
+    "step": {
+      "todo": {},
+      "created": {},
+      "published": {},
+      "tested": {},
+      "validated": {},
+      "accessed": {},
+      "used": {},
+      "updated": {},
+      "expireded": {},
+      "integrityFalse": {}
+    },
+    "Quality": {
+      "hight": {},
+      "optimised": {},
+      "low": {}
+    },
+    "Contract": {
+      "contract1DianeKruger": {}
+    },
+    "Token": {
+      "ncantu": {
+        "value": "sdfsdfsdfsdf",
+        "expire": 0
+      },
+      "user1": {
+        "value": "sdfsdfsdfsdfqdsqsd",
+        "expire": 0
+      }
+    },
+    "Tag": {
+      "init": {}
+    },
+    "ExpireControler": {
+      "batch": {
+        "version": 0.1
+      }
+    },
+    "Localization": {
+      "fr": {
+        "code": "fr",
+        "locale": "Europe/Paris",
+        "lang": "fr-FR",
+        "charset": "utf-8",
+        "moneyUnit": "euro"
+      }
+    },
+    "Place": {
+      "top": {},
+      "left": {},
+      "right": {},
+      "bottom": {},
+      "body": {},
+      "confirmButton": {},
+      "validButton": {},
+      "visitButton": {}
+    },
+    "History": {
+      "batch": {
+        "version": 0.1
+      }
+    },
+    "Membership": {
+      "basic": {},
+      "gold": {},
+      "business": {},
+      "smart": {},
+      "starup": {},
+      "school": {},
+      "try": {}
+    },
+    "ProductCategory": {
+      "cdn": {},
+      "hosting": {},
+      "localiazation": {},
+      "monitoring": {},
+      "seo": {},
+      "framework": {},
+      "ebusiness": {}
+    },
+    "Product": {
+      "hostingCdnImage": {},
+      "frameworkEbusiness": {},
+      "ebusinessSiteInternationnal": {}
+    },
+    "Price": {
+      "basic": {
+        "value": 20,
+        "during": 12,
+        "duringUnit": "month",
+        "renewBilling": 1
+      },
+      "gold": {
+        "value": 20,
+        "during": 12,
+        "duringUnit": "month",
+        "renewBilling": 1
+      },
+      "business": {
+        "value": 20,
+        "during": 12,
+        "duringUnit": "month",
+        "renewBilling": 1
+      },
+      "smart": {
+        "value": 20,
+        "during": 12,
+        "duringUnit": "month",
+        "renewBilling": 1
+      },
+      "starup": {
+        "value": 20,
+        "during": 12,
+        "duringUnit": "month",
+        "renewBilling": 1
+      },
+      "school": {
+        "value": 20,
+        "during": 12,
+        "duringUnit": "month",
+        "renewBilling": 1
+      },
+      "try": {
+        "value": 0,
+        "during": 3,
+        "duringUnit": "month",
+        "renewBilling": 3
+      }
+    },
+    "Stock": {
+      "stockPart1": {
+        "value": 20,
+        "unit": "unit"
+      },
+      "stockPart2": {
+        "value": 20,
+        "unit": "unit"
+      }
+    },
+    "Shipping": {
+      "shippingPart1": {
+        "value": 20,
+        "unit": "unit"
+      },
+      "shippingPart2": {
+        "value": 20,
+        "unit": "unit"
+      }
+    },
+    "Order": {
+      "order1": {
+        "value": 3,
+        "unit": "unit"
+      },
+      "order2": {
+        "value": 2,
+        "unit": "unit"
+      }
+    },
+    "BankTransaction": {
+      "bankTransaction1": {
+        "value": 60
+      },
+      "bankTransaction2": {
+        "value": 40
+      }
+    },
+    "Bill": {
+      "bill1": {
+        "value": 3,
+        "unit": "unit",
+        "trascationValue": 60
+      },
+      "bill2": {
+        "value": 2,
+        "unit": "unit",
+        "trascationValue": 40
+      }
+    },
+    "Expedition": {
+      "expition1": {
+        "open": false,
+        "motif": ""
+      }
+    },
+    "ExpeditionReturn": {
+      "expitionReturn1": {}
+    },
+    "PayBack": {
+      "payBack1": {}
+    },
+    "Host": {
+      "hostPublic1": {},
+      "hostFront1": {},
+      "hostFront2": {}
+    },
+    "integrityControler": {
+      "batch": {
+        "version": 0.1
+      }
+    }
+  },
+  "labelParam": {
+    "user": "sysInit",
+    "state": true,
+    "dateStart": 0,
+    "dateEnd": 0,
+    "step": "created",
+    "visibility": "public",
+    "listId": {},
+    "alias": {}
+  },
+  "relationshipParam": {
+    "user": "sysInit",
+    "state": true,
+    "dateStart": 0,
+    "dateEnd": 0,
+    "step": "created",
+    "visibility": "public",
+    "listId": {},
+    "alias": {},
+    "note": "",
+    "value": ""
+  }
+}
