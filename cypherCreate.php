@@ -5,6 +5,20 @@ $jsonObj 		= json_decode($jsonContent);
 
 $listHtlmElement = array();
 $htlmElementList = array();
+$cypherCode       = '
+MATCH (n)
+DETACH DELETE n
+';
+$cypherCodeLabelsWithAutoIncrementTemplate = '
+CREATE ({labelName}:{nodeName} {labelParamCypherCode})
+';
+
+$cypherCodeCreateNodeWithAutoIncrementTemplate = '
+MERGE (id:UniqueId{name:\'{nodeName}\',str:\'{nodeName}_\'})
+ON CREATE SET id.count = 1
+ON MATCH SET id.count = id.count + 1
+WITH id.str + id.count AS {nodeName}Uid
+';
 
 foreach($jsonObj as $list => $jsonObj1) {
 		
@@ -33,6 +47,31 @@ foreach($jsonObj as $list => $jsonObj1) {
  #{'.$listName.'}.ondrop(this.call());
 </script>
 ';		
+		$cypherCode .= "\n".$cypherCodeCreateNodeWithAutoIncrementTemplate;
+		$cypherCode = str_replace('{nodeName}', ucfirst($name), $cypherCode);
+		
+		if($list === 'labelList') {
+
+			$labelParamCypherCode = '';
+			
+			foreach($attributList as $k => $v){
+				
+				foreach($jsonObj->labelParam as $kP => $vP){
+					
+					if(isset($v->$kP) === false) $v->$kP = $vP;
+				}
+				foreach($v as $kP2 => $vP2){
+					
+					$labelParamCypherCode .= ' '.$kP2.': '.$vP2.' ';
+				}
+				$labelParamCypherCode = '{ '.$labelParamCypherCode.' }';
+								
+				$cypherCode .= "\n".$cypherCodeLabelsWithAutoIncrementTemplate;
+				$cypherCode = str_replace('{nodeName}', ucfirst($name), $cypherCode);
+				$cypherCode = str_replace('{labelName}', strtolower($k), $cypherCode);
+				$cypherCode = str_replace('{labelParamCypherCode}', $labelParamCypherCode, $cypherCode);
+			}
+		}
 	}
 	$listHtlmElement[$list] = '
 <div class="list '.$list.'">
@@ -44,6 +83,7 @@ foreach($jsonObj as $list => $jsonObj1) {
 	$htlmElementList[$list] = implode("\n", $listHtlmElement[$list]);
 }
 
-foreach($htlmElementList as $html) echo $html;
+file_put_contents('itemNavigationTemplate.html', implode("\n", $htlmElementList));
+file_put_contents('itemNavigationTemplate.cypher', $cypherCode);
 
 ?>
