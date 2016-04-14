@@ -1,9 +1,242 @@
 {
-  "relationshipList": {},
+  "actionList": {
+    "create": {},
+    "publish": {},
+    "test": {},
+    "valid": {},
+    "host": {},
+    "use": {},
+    "state": {},
+    "manage": {},
+    "target": {},
+    "represente": {},
+    "collect": {},
+    "authorise": {},
+    "own": {},
+    "init": {},
+    "optimize": {},
+    "identify": {},
+    "facility": {},
+    "mark": {},
+    "expire": {},
+    "localize": {},
+    "show": {},
+    "size": {},
+    "historize": {},
+    "contributeTo": {},
+    "concern": {},
+    "cost": {},
+    "stock": {},
+    "shipp": {},
+    "order": {},
+    "pay": {},
+    "billing": {},
+    "expedite": {},
+    "payBack": {},
+    "shippManange": {},
+    "expediteManange": {},
+    "payManange": {},
+    "produce": {},
+    "ask": {},
+    "balance": {},
+    "note": {},
+    "comment": {},
+    "share": {},
+    "add": {},
+    "buy": {}
+  },
+  "emotionList": {
+    "anger": {
+      "negative": true,
+      "forceful": true
+    },
+    "annoyance": {
+      "negative": true,
+      "forceful": true
+    },
+    "contempt": {
+      "negative": true,
+      "forceful": true
+    },
+    "disgust": {
+      "negative": true,
+      "forceful": true
+    },
+    "iIrritation": {
+      "negative": true,
+      "forceful": true
+    },
+    "anxiety": {
+      "negative": true,
+      "notinControl": true
+    },
+    "embarrassment": {
+      "negative": true,
+      "notinControl": true
+    },
+    "fear": {
+      "negative": true,
+      "notinControl": true
+    },
+    "helplessness": {
+      "negative": true,
+      "notinControl": true
+    },
+    "powerlessness": {
+      "negative": true,
+      "notinControl": true
+    },
+    "worry": {
+      "negative": true,
+      "notinControl": true
+    },
+    "doubt": {
+      "negative": true,
+      "thoughts": true
+    },
+    "envy": {
+      "negative": true,
+      "thoughts": true
+    },
+    "frustration": {
+      "negative": true,
+      "thoughts": true
+    },
+    "guilt": {
+      "negative": true,
+      "thoughts": true
+    },
+    "shame": {
+      "negative": true,
+      "thoughts": true
+    },
+    "boredom": {
+      "negative": true,
+      "passive": true
+    },
+    "despair": {
+      "negative": true,
+      "passive": true
+    },
+    "disappointment": {
+      "negative": true,
+      "passive": true
+    },
+    "hurt": {
+      "negative": true,
+      "passive": true
+    },
+    "sadness": {
+      "negative": true,
+      "passive": true
+    },
+    "stress": {
+      "agitation": true
+    },
+    "shock": {
+      "agitation": true
+    },
+    "tension": {
+      "agitation": true
+    },
+    "amusement": {
+      "positive": true,
+      "lively": true
+    },
+    "delight": {
+      "positive": true,
+      "lively": true
+    },
+    "elation": {
+      "positive": true,
+      "lively": true
+    },
+    "excitement": {
+      "positive": true,
+      "lively": true
+    },
+    "happiness": {
+      "positive": true,
+      "lively": true
+    },
+    "joy": {
+      "positive": true,
+      "lively": true
+    },
+    "pleasure": {
+      "positive": true,
+      "lively": true
+    },
+    "affection": {
+      "caring": true
+    },
+    "empathy": {
+      "caring": true
+    },
+    "friendliness": {
+      "caring": true
+    },
+    "love": {
+      "caring": true
+    },
+    "courage": {
+      "positive": true,
+      "thoughts": true
+    },
+    "hope": {
+      "positive": true,
+      "thoughts": true
+    },
+    "pride": {
+      "positive": true,
+      "thoughts": true
+    },
+    "satisfaction": {
+      "positive": true,
+      "thoughts": true
+    },
+    "trust": {
+      "positive": true,
+      "thoughts": true
+    },
+    "calmness": {
+      "quiet": true,
+      "positive": true
+    },
+    "contentment": {
+      "quiet": true,
+      "positive": true
+    },
+    "relaxation": {
+      "quiet": true,
+      "positive": true
+    },
+    "relief": {
+      "quiet": true,
+      "positive": true
+    },
+    "serenity": {
+      "quiet": true,
+      "positive": true
+    },
+    "interest": {
+      "reactive": true
+    },
+    "politeness": {
+      "reactive": true
+    },
+    "surprise": {
+      "reactive": true
+    }
+  },
   "labelList": {
     "Compagny": {
-      "DianeKruger": {"compagnyName":"DianeKruger"},
-      "Instriit": {"compagnyName":"Instriit"}
+      "DianeKruger": {
+        "compagnyName": "DianeKruger"
+      },
+      "Instriit": {
+        "compagnyName": "Instriit"
+      }
     },
     "Personn": {
       "DianeKruger": {
@@ -25,9 +258,9 @@
         "email": "nicolas.cantu@instriit.com"
       }
     },
-    "Contact":{
+    "Contact": {
       "avatarUrl": "",
-      "onMap": true,      
+      "onMap": true,
       "emailList": [],
       "phoneList": []
     },
@@ -115,49 +348,6 @@
       "adminRight": {},
       "userRight": {},
       "compagnyRight": {}
-    },
-    "Action": {
-      "create": {},
-      "publish": {},
-      "test": {},
-      "valid": {},
-      "host": {},
-      "use": {},
-      "state": {},
-      "manage": {},
-      "target": {},
-      "represente": {},
-      "collect": {},
-      "authorise": {},
-      "own": {},
-      "init": {},
-      "optimize": {},
-      "identify": {},
-      "facility": {},
-      "mark": {},
-      "expire": {},
-      "localize": {},
-      "show": {},
-      "size": {},
-      "historize": {},
-      "contributeTo": {},
-      "concern": {},
-      "cost": {},
-      "stock": {},
-      "shipp": {},
-      "order": {},
-      "pay": {},
-      "billing": {},
-      "expedite": {},
-      "payBack": {},
-      "shippManange": {},
-      "expediteManange": {},
-      "payManange": {},
-      "produce": {},
-      "ask": {},
-      "balance": {},
-      "note": {},
-      "comment": {}
     },
     "step": {
       "todo": {},
@@ -360,10 +550,10 @@
         "version": 0.1
       }
     },
-    "Localisation":{
-      "point1":{
-        "lat":0,
-        "long":0,
+    "Localisation": {
+      "point1": {
+        "lat": 0,
+        "long": 0,
         "conuntry": "",
         "state": "",
         "street": "",
@@ -372,179 +562,179 @@
         "city": ""
       }
     },
-    "alogithmLevel":{
-      "unknown":{
+    "alogithmLevel": {
+      "unknown": {
         "level": 1,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "nothingCommun":{
+      "nothingCommun": {
         "level": 2,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "sameBasics":{
+      "sameBasics": {
         "level": 3,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "likeYou":{
+      "likeYou": {
         "level": 4,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "samePriorities":{
+      "samePriorities": {
         "level": 5,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "sameValues":{
+      "sameValues": {
         "level": 6,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "perfectMatching":{
+      "perfectMatching": {
         "level": 7,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "perfectCouple":{
+      "perfectCouple": {
         "level": 8,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "symbiosis":{
+      "symbiosis": {
         "level": 9,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "clone":{
+      "clone": {
         "level": 10,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "notIntersted":{
+      "notIntersted": {
         "level": 2,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "intersted":{
+      "intersted": {
         "level": 3,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "APlus":{
+      "APlus": {
         "level": 4,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "interestConfirmed":{
+      "interestConfirmed": {
         "level": 5,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "majorValue":{
+      "majorValue": {
         "level": 6,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "expert":{
+      "expert": {
         "level": 7,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "fan":{
+      "fan": {
         "level": 8,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "addict":{
+      "addict": {
         "level": 9,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       },
-      "hero":{
+      "hero": {
         "level": 10,
-        "min":0,
-        "max":10
+        "min": 0,
+        "max": 10
       }
     },
-    "Algorithm":{
-      "scoreEmotion":{},
-      "scoreAction":{},
-      "scoreNode":{},
-      "scorePosition":{},
-      "scoreTime":{},
-      "scoreGraph":{},
-      "scoreDevice":{},
-      "scoreFilter":{},
-      "scoreCampaign":{},
-      "scoreBusiness":{},
-      "scoreLeader":{},
-      "scoreContent":{}
+    "Algorithm": {
+      "scoreEmotion": {},
+      "scoreAction": {},
+      "scoreNode": {},
+      "scorePosition": {},
+      "scoreTime": {},
+      "scoreGraph": {},
+      "scoreDevice": {},
+      "scoreFilter": {},
+      "scoreCampaign": {},
+      "scoreBusiness": {},
+      "scoreLeader": {},
+      "scoreContent": {}
     },
-    "score":{
-      "value1":50
+    "score": {
+      "value1": 50
     },
-    "Emotion":{
-      "fan":{},
-      "like":{},
-      "hate":{},
-      "wtf":{}
+    "Emotion": {
+      "fan": {},
+      "like": {},
+      "hate": {},
+      "wtf": {}
     },
-    "Node":{
-      "web":{},
-      "innovation":{}
+    "Node": {
+      "web": {},
+      "innovation": {}
     },
-    "SocialProfil":{
-      "twitterNiocolasCantu":{},
-      "facebookNiocolasCantu":{}
+    "SocialProfil": {
+      "twitterNiocolasCantu": {},
+      "facebookNiocolasCantu": {}
     },
-    "Time":{
-      "time1":{
-        "timestamp":0,
-        "weekDay":0,
-        "month":0,
-        "year":0,
-        "yearDay":0,
-        "hour":0
+    "Time": {
+      "time1": {
+        "timestamp": 0,
+        "weekDay": 0,
+        "month": 0,
+        "year": 0,
+        "yearDay": 0,
+        "hour": 0
       }
     },
-    "UxElement":{
-      "uxElement1":{
-        "id":""
+    "UxElement": {
+      "uxElement1": {
+        "id": ""
       }
     },
-    "UxEvent":{
-      "uxEvent1":{
-        "event":"Click"
+    "UxEvent": {
+      "uxEvent1": {
+        "event": "Click"
       }
     },
-    "UxPosition":{
-      "uxPosition1":{
-        "top":0,
-        "bottom":0,
-        "left":0,
-        "right":0,
+    "UxPosition": {
+      "uxPosition1": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
       }
     },
-    "Filter":{
-      "filter1":{
-        "expression":""
+    "Filter": {
+      "filter1": {
+        "expression": ""
       }
     },
-    "Notification":{
-      "notification1":{
-        "message":"",
-        "canal":"",
-        "action":"",
+    "Notification": {
+      "notification1": {
+        "message": "",
+        "canal": "",
+        "action": "",
         "all": true,
         "parentProfilNameSame": true,
         "inChilds": true
       }
     },
-    "Semantic":{
-      "theme1":{
+    "Semantic": {
+      "theme1": {
         "textName": "",
         "cssList": [],
         "value": "",
@@ -559,22 +749,22 @@
         "excludeEachWordSeparate": true,
         "excludeEachWordTogether": false,
         "excludeOnlyWithList": [],
-        "excludeOnlyWithoutList": [],
+        "excludeOnlyWithoutList": []
       }
     },
-    "Weight":{
-      "weight1":{
-        "weight":0,
-        "alogithm":0,
-        "min":0,
-        "max":0
+    "Weight": {
+      "weight1": {
+        "weight": 0,
+        "alogithm": 0,
+        "min": 0,
+        "max": 0
       }
     },
-    "Text":{
-      "text1":{
+    "Text": {
+      "text1": {
         "textLang": "EN",
         "textName": ""
-       }
+      }
     }
   },
   "labelParam": {
@@ -600,4 +790,3 @@
     "value": ""
   }
 }
-
