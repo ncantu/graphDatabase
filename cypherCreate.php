@@ -1,16 +1,14 @@
 <?php
 
-$jsonContent	= file_get_contents('confGraphbase.json');
-$jsonObj 		= json_decode($jsonContent);
-
+$jsonContent	 = file_get_contents('confGraphbase.json');
+$jsonObj 		 = json_decode($jsonContent);
 $listHtlmElement = array();
 $htlmElementList = array();
-$cypherCode       = '
+$cypherCode      = '';
+
+$cypherCodeInit = '
 MATCH (n)
 DETACH DELETE n
-';
-$cypherCodeLabelsWithAutoIncrementTemplate = '
-CREATE ({labelName}:{nodeName} {labelParamCypherCode})
 ';
 
 $cypherCodeCreateNodeWithAutoIncrementTemplate = '
@@ -19,6 +17,34 @@ ON CREATE SET id.count = 1
 ON MATCH SET id.count = id.count + 1
 WITH id.str + id.count AS {nodeName}Uid
 ';
+
+$cypherCodeLabelsWithAutoIncrementTemplate = '
+CREATE ({labelName}:{nodeName} {labelParamCypherCode})
+';
+
+$attributListHTMLTemplate = '<p class="def {attributName}">
+<label class="field {attributName}">{attributName}: </label>
+<span class="value {attributValue}">{attributValue}<span>
+</p>
+';
+
+$htlmElementHtmlTemplate = '
+<div class="postIt {listName} {nodeName}" title="{$attributListTitle}" id="{listName}" draggable=true>{listName}</div>
+<div class="titleOver">{attributListHTML}</div>
+<script>
+#{{listName}}.onclick(this.show());
+#{{listName}}.ondrop(this.call());
+</script>
+';
+
+$listHtlmElementHtmlTemplate = '
+<div class="list {listName}">
+	{listHtlmElement}
+</div>
+<div class="button add" id="add{listName}"></div>
+';
+
+$cypherCode = $cypherCodeInit;
 
 foreach($jsonObj as $list => $jsonObj1) {
 		
@@ -32,21 +58,17 @@ foreach($jsonObj as $list => $jsonObj1) {
 		$attributListHTML = '';
 		
 		foreach($attributList as $k => $v){
-			$attributListTitle .= $k.': '.$v."\n"; 
-			$attributListHTML .= '
-<p class="def '.$k.'">
-	<label class="field '.$k.'">'.$k.': </label> 
-	<span class="value '.$v.'">'.$v.'<span>
-</p>';
+			$attributListTitle .= $k.': '.$v."\n";
+			$attributListHTML .= $attributListHTMLTemplate;
+			$attributListHTML = str_replace('{attributName}', $k, $attributListHTML);
+			$attributListHTML = str_replace('{attributValue}', $v, $attributListHTML);
 		}
-		$listHtlmElement[$list][$listId] = '
-<div class="postIt '.$list.' '.$name.'" title="'.$attributListTitle.'" id="'.$listName.'" draggable=true>'.$list.' '.$name.'</div>
-<div class="titleOver">'.$attributListHTML.'</div>
-<script>
- #{'.$listName.'}.onclick(this.show());
- #{'.$listName.'}.ondrop(this.call());
-</script>
-';		
+		$listHtlmElement[$list][$listId] = $htlmElement;
+		$listHtlmElement[$list][$listId] = str_replace('{listName}', $listName, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace('{$attributListTitle}', $attributListTitle, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace('{attributListHTML}', $attributListHTML, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace('{nodeName}', $name, $htlmElementHtmlTemplate);
+		
 		$cypherCode .= "\n".$cypherCodeCreateNodeWithAutoIncrementTemplate;
 		$cypherCode = str_replace('{nodeName}', ucfirst($name), $cypherCode);
 		
@@ -73,12 +95,10 @@ foreach($jsonObj as $list => $jsonObj1) {
 			}
 		}
 	}
-	$listHtlmElement[$list] = '
-<div class="list '.$list.'">
-	'.implode('', $listHtlmElement[$list]).'
-</div>
-<div class="button add" id="add'.$list.'"></div>
-';
+	$listHtlmElement[$list] = $listHtlmElementHtmlTemplate;
+	$listHtlmElement[$list] = str_replace('{listName}', $list, $listHtlmElementHtmlTemplate);
+	$listHtlmElement[$list] = str_replace('{listHtlmElement}', implode('', $listHtlmElement[$list]), $listHtlmElementHtmlTemplate);
+
 	sort($listHtlmElement[$list]);
 	$htlmElementList[$list] = implode("\n", $listHtlmElement[$list]);
 }
