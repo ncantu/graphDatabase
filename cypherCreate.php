@@ -4,6 +4,7 @@ $jsonContent	= file_get_contents('confGraphbase.json');
 $jsonObj 		= json_decode($jsonContent);
 
 $listHtlmElement = array();
+$htlmElementList = array();
 
 foreach($jsonObj as $list => $jsonObj1) {
 		
@@ -30,7 +31,6 @@ foreach($jsonObj as $list => $jsonObj1) {
 <script>
  #{'.$listName.'}.onclick(this.show());
  #{'.$listName.'}.ondrop(this.call());
- 		
 </script>
 ';		
 	}
@@ -40,11 +40,10 @@ foreach($jsonObj as $list => $jsonObj1) {
 </div>
 <div class="button add" id="add'.$list.'"></div>
 ';
+	sort($listHtlmElement[$list]);
+	$htlmElementList[$list] = implode("\n", $listHtlmElement[$list]);
 }
 
-sort($listHtlmElement);
-$htlmElementList = implode('', $listHtlmElement);
-
-echo $htlmElementList;
+foreach($htlmElementList as $html) echo $html;
 
 ?>
