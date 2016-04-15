@@ -2,27 +2,161 @@
 
 require_once 'lib/conf.php';
 
-$conf = new Conf();
+function scoreGet($list){
 
-foreach($conf->actionList as $actionConfItem) {
+	$score = count($list);
+
+	while(isset($list[$score]) === true) $score++;
+
+	return $score;
+}
+
+function actionScoreGet($actionList){
+	
+	return scoreGet($actionList);
+}
+
+function emotionScoreGet($emotionList){
+	
+	return scoreGet($emotionList);
+}
+
+function labelScoreGet($labelList){
+	
+	return scoreGet($labelList);
+}
+
+/*
+    public $deleteAllCypherConfTemplateContent                            = '';
+    public $createNodeWithAutoIncrementCypherConfTemplateContent          = '';
+    public $labelsWithAutoIncrementCypherConfTemplateContent              = '';
+
+    public $attributListHtmlTemplateContent                               = '';
+    public $postitHtmlTemplateContent                                     = '';
+    public $postitLisHtmlTemplateContent                             = '';
+ */
+
+/*
+
+  "attributNameTag": "{attributName}",
+  "attributValueTag": "{attributValue}",
+  "listNameTag": "{listName}",
+  "attributListHTMLTag": "{attributListHTML}",
+  "nodeNameTag": "{nodeName}",
+  "labelNameTag": "{labelName}",
+  "labelParamCypherCode": "{labelParamCypherCode}",
+
+ */
+
+
+function mergeObj($default, $vals){
+
+	foreach($default as $k => $v){
+
+		if(isset($vals[$k]) === false) $vals[$k] = $v;
+	}
+	return $vals;	
+}
+
+//$default = $conf->tagList
+function template($content, $default, $vals){
+		
+	$vals = mergeObj($default, $vals);
+	
+	foreach($vals as $k => $v){
+		
+		$tagHtml = '{'.$k.'}';
+		$content = str_replace($tagHtml, $v, $content);
+	}
+	return $content;
+}
+
+function attributListHtml($confItem){
+	
+	$tagValList['attributName']         = '';
+	$tagValList['attributValue']        = '';
 	
 }
 
-foreach($conf->emotionList as $emotionConfItem) {
+function actionListTemplateHtml($conf, $type = 'action', $paramVar = 'relationshipParamList'){
 
+	$list         = array();
+	$listVar      = $type.'List';
+	$scoreGetFunc = $type.'ScoreGet';
+	$postitList   = array();
+	
+	foreach($conf->$listVar as $confItemName => $confItem) {
+		
+		$param                              = $conf->$paramVar;
+		$confItem                           = mergeObj($param, $confItem);		
+		$tagValList							= array();
+		$tagValList['nodeName']             = $confItemName;
+		$tagValList['labelName']            = $type;		
+		$tagValList['listName']             = $type;		
+		$tagValList['attributListHtml']     = attributListHtml($confItem);		
+		$score                              = $scoreGetFunc($list);
+		$postitList[$score]                = template($conf->postitHtmlTemplateContent, $conf->tagList, $tagValList);
+	}
+	sort($postitList);
+	$postitListHtml 		     = implode('', $postitList);	
+	$tagValList				     = array();
+	$tagValList['positListHtml'] = $postitListHtml;	
+    $tagValList['labelName']     = $type;		
+	$tagValList['listName']      = $type;
+    $postitListHtml              = template($conf->postitHtmlTemplateContent, $conf->tagList, $tagValList);
+	
+	return $postitListHtml;
 }
 
-foreach($conf->labelList as $labelConfItem) {
+function emotionListTemplate($conf, $type = 'emotion', $paramVar = 'relationshipParamList'){
 
+	$list         = array();
+	$listVar      = $type.'List';
+	$scoreGetFunc = $type.'ScoreGet';
+	
+	foreach($conf->$listVar as $confItemName => $confItem) {
+	
+		$param      = $conf->$paramVar;
+		$param      = mergeObj($param, $confItem);
+		$score      = $scoreGetFunc($list);
+		$postItHtml = template($conf->postitHtmlTemplateContent, $conf->tagList, $tagValList);
+	
+	/*
+		 "anger": {
+		 "negative": true,
+		 "forceful": true
+		 },
+		 */
+	}
 }
 
-foreach($conf->labelParamList as $labelParamConfItem) {
+function labelListTemplate($conf, $type = 'label', $paramVar = 'labelParamList'){
 
+	$list         = array();
+	$listVar      = $type.'List';
+	$scoreGetFunc = $type.'ScoreGet';
+	
+	foreach($conf->$listVar as $confItemName => $confItem) {
+		
+		$param      = $conf->$paramVar;
+		$param      = mergeObj($param, $confItem);		
+		$score      = $scoreGetFunc($list);
+		$postItHtml = template($conf->postitHtmlTemplateContent, $conf->tagList, $tagValList);
+
+		/*
+		 "Compagny": {
+		 "DianeKruger": {
+		 "compagnyName": "DianeKruger"
+		 },
+		 "Instriit": {
+		 "compagnyName": "Instriit"
+		 }
+		 },
+		*/
+	}
 }
 
-foreach($conf->relationshipParamList as $relationshipParapItem) {
-
-}
+$conf = new Conf();
 
 /*
 

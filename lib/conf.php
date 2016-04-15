@@ -14,7 +14,7 @@ class Conf {
     
     CONST ATTRIBUT_LIST_HTML_TEMPLATE_BASENAME_VAR                         = 'attributListHtmlTemplateBasename';
     CONST POSTIT_HTML_TEMPLATE_BASENAME_VAR                                = 'postitHtmlTemplateBasename';
-    CONST POSTIT_LIST_HTML_TEMPLATE_BASENAME_VAR                           = 'postitListHtmlHtmlTemplateBasename';
+    CONST POSTIT_LIST_HTML_TEMPLATE_BASENAME_VAR                           = 'postitListHtmlTemplateBasename';
     
     CONST GRAPH_DATABASE_CONF_BASENAME_VAR								   = 'graphDatabaseConfBasename';
         
@@ -32,7 +32,7 @@ class Conf {
 
     public $attributListHtmlTemplateContent                               = '';
     public $postitHtmlTemplateContent                                     = '';
-    public $postitListHtmlHtmlTemplateContent                             = '';
+    public $postitListHtmlTemplateContent                                 = '';
 
     public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE){
 
@@ -91,7 +91,7 @@ class Conf {
     	
     	if($return === false) return false;
     	
-    	$return  = $this->postitListHtmlHtmlTemplateContentGet();
+    	$return  = $this->postitListHtmlTemplateContentGet();
     	
     	if($return === false) return false;
     	
@@ -175,7 +175,7 @@ class Conf {
         return $this->htmlConfTemplateGet($confBasenameVar);
     }
     
-    private function postitListHtmlHtmlTemplateContentGet($confBasenameVar = self::POSTIT_LIST_HTML_TEMPLATE_BASENAME_VAR){
+    private function postitListHtmlTemplateContentGet($confBasenameVar = self::POSTIT_LIST_HTML_TEMPLATE_BASENAME_VAR){
         
         return $this->htmlConfTemplateGet($confBasenameVar);
     }

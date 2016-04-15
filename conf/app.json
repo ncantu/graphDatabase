@@ -8,13 +8,29 @@
   "graphDatabaseConfBasename": "graphDatabaseConf.json",
   "navigationTemplateFileBasename": "navigationTemplate.html",
   "nodeTemplateFileBasename": "nodesTemplate.cypher.cypher",
-  "attributNameTag": "{attributName}",
-  "attributValueTag": "{attributValue}",
-  "listNameTag": "{listName}",
-  "attributListHTMLTag": "{attributListHTML}",
-  "nodeNameTag": "{nodeName}",
-  "labelNameTag": "{labelName}",
-  "labelParamCypherCode": "{labelParamCypherCode}",
+  "tagList": [
+    {
+      "attributNameTag": ""
+    },
+    {
+      "attributValueTag": ""
+    },
+    {
+      "listNameTag": ""
+    },
+    {
+      "attributListHtmlTag": ""
+    },
+    {
+      "nodeNameTag": ""
+    },
+    {
+      "labelNameTag": ""
+    },
+    {
+      "labelParamCypherCode": "{labelParamCypherCode}"
+    }
+  ],
   "listHtlmElement": [],
   "htlmElementList": [],
   "deleteAllCypherConfTemplateBasename": "deleteAll.cypher",
@@ -22,5 +38,5 @@
   "labelsWithAutoIncrementCypherConfTemplateBasename": "labelsWithAutoIncrement.cypher",
   "attributListHtmlTemplateBasename": "attributList.html",
   "postitHtmlTemplateBasename": "postit.html",
-  "postitListHtmlHtmlTemplateBasename": "postitList.html"
+  "postitListHtmlTemplateBasename": "postitList.html"
 }
