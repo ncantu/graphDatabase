@@ -1,10 +1,15 @@
 <?php
 
-$jsonContent	 = file_get_contents('confGraphbase.json');
-$jsonObj 		 = json_decode($jsonContent);
-$listHtlmElement = array();
-$htlmElementList = array();
-$cypherCode      = '';
+$cypherCode      				= '';
+$confDir         				= 'conf/';
+$resultDir       				= 'result/';
+$cypherDir              		= 'cypher/';
+$htmlDir              			= 'html/';
+$confFileBasename               = 'confGraphDatabase.json';
+$navigationTemplateFileBasename = 'navigationTemplate.html';
+$nodeTemplateFileBasename       = 'nodesTemplate.cypher.cypher';
+$listHtlmElement 				= array();
+$htlmElementList 				= array();
 
 $cypherCodeInit = '
 MATCH (n)
@@ -44,6 +49,16 @@ $listHtlmElementHtmlTemplate = '
 <div class="button add" id="add{listName}"></div>
 ';
 
+$htmlResultDir					= $resultDir.$htmlDir;
+$cypherResultDir				= $resultDir.$cypherDir;
+$cypherResultDir 				= $resultDir.$cypherDir;
+$htmlResultDir 	 				= $resultDir.$htmlDir;
+$confFile               		= $confDir.$confFileBasename;
+$navigationTemplateFileBasename = $htmlResultDir.$navigationTemplateFileBasename;
+$nodeTemplateFileBasename       = $cypherResultDir.$nodeTemplateFileBasename;
+$jsonContent	 				= file_get_contents($confFile);
+$jsonObj 		 				= json_decode($jsonContent);
+
 $cypherCode = $cypherCodeInit;
 
 foreach($jsonObj as $list => $jsonObj1) {
@@ -63,7 +78,7 @@ foreach($jsonObj as $list => $jsonObj1) {
 			$attributListHTML = str_replace('{attributName}', $k, $attributListHTML);
 			$attributListHTML = str_replace('{attributValue}', $v, $attributListHTML);
 		}
-		$listHtlmElement[$list][$listId] = $htlmElement;
+		$listHtlmElement[$list][$listId] = $htlmElementHtmlTemplate;
 		$listHtlmElement[$list][$listId] = str_replace('{listName}', $listName, $htlmElementHtmlTemplate);
 		$listHtlmElement[$list][$listId] = str_replace('{$attributListTitle}', $attributListTitle, $htlmElementHtmlTemplate);
 		$listHtlmElement[$list][$listId] = str_replace('{attributListHTML}', $attributListHTML, $htlmElementHtmlTemplate);
@@ -103,7 +118,7 @@ foreach($jsonObj as $list => $jsonObj1) {
 	$htlmElementList[$list] = implode("\n", $listHtlmElement[$list]);
 }
 
-file_put_contents('itemNavigationTemplate.html', implode("\n", $htlmElementList));
-file_put_contents('itemNavigationTemplate.cypher', $cypherCode);
+file_put_contents($navigationTemplateFile, implode("\n", $htlmElementList));
+file_put_contents($nodeTemplateFile, $cypherCode);
 
 ?>
