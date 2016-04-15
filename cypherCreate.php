@@ -58,7 +58,6 @@ function mergeObj($default, $vals){
 	return $vals;	
 }
 
-//$default = $conf->tagList
 function template($content, $default, $vals){
 		
 	$vals = mergeObj($default, $vals);
@@ -76,6 +75,11 @@ function attributListHtml($confItem){
 	$tagValList['attributName']         = '';
 	$tagValList['attributValue']        = '';
 	
+	foreach($confItem as $k => $v) {
+	
+	}
+	return template($conf->postitHtmlTemplateContent, array(), $tagValList);
+	
 }
 
 function actionListTemplateHtml($conf, $type = 'action', $paramVar = 'relationshipParamList'){
@@ -87,19 +91,19 @@ function actionListTemplateHtml($conf, $type = 'action', $paramVar = 'relationsh
 	
 	foreach($conf->$listVar as $confItemName => $confItem) {
 		
-		$param                              = $conf->$paramVar;
-		$confItem                           = mergeObj($param, $confItem);		
-		$tagValList							= array();
-		$tagValList['nodeName']             = $confItemName;
-		$tagValList['labelName']            = $type;		
-		$tagValList['listName']             = $type;		
-		$tagValList['attributListHtml']     = attributListHtml($confItem);		
-		$score                              = $scoreGetFunc($list);
-		$postitList[$score]                = template($conf->postitHtmlTemplateContent, $conf->tagList, $tagValList);
+		$param                          = $conf->$paramVar;
+		$confItem                       = mergeObj($param, $confItem);		
+		$tagValList						= array();
+		$tagValList['nodeName']         = $confItemName;
+		$tagValList['labelName']        = $type;		
+		$tagValList['listName']         = $type;		
+		$tagValList['attributListHtml'] = attributListHtml($confItem);		
+		$score                          = $scoreGetFunc($list);
+		$postitList[$score]             = template($conf->postitHtmlTemplateContent, $conf->tagList, $tagValList);
 	}
 	sort($postitList);
 	$postitListHtml 		     = implode('', $postitList);	
-	$tagValList				     = array();
+	$tagValList				     = array(); 
 	$tagValList['positListHtml'] = $postitListHtml;	
     $tagValList['labelName']     = $type;		
 	$tagValList['listName']      = $type;
