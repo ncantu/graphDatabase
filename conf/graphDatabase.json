@@ -767,7 +767,7 @@
       }
     }
   },
-  "labelParam": {
+  "labelParamList": {
     "user": "sysInit",
     "state": true,
     "dateStart": 0,
@@ -777,7 +777,7 @@
     "listId": {},
     "alias": {}
   },
-  "relationshipParam": {
+  "relationshipParamList": {
     "user": "sysInit",
     "state": true,
     "dateStart": 0,

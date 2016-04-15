@@ -1,65 +1,36 @@
 <?php
 
-$cypherCode      				= '';
-$confDir         				= 'conf/';
-$resultDir       				= 'result/';
-$cypherDir              		= 'cypher/';
-$htmlDir              			= 'html/';
-$confFileBasename               = 'confGraphDatabase.json';
-$navigationTemplateFileBasename = 'navigationTemplate.html';
-$nodeTemplateFileBasename       = 'nodesTemplate.cypher.cypher';
-$listHtlmElement 				= array();
-$htlmElementList 				= array();
+require_once 'lib/conf.php';
 
-$cypherCodeInit = '
-MATCH (n)
-DETACH DELETE n
-';
+$conf = new Conf();
 
-$cypherCodeCreateNodeWithAutoIncrementTemplate = '
-MERGE (id:UniqueId{name:\'{nodeName}\',str:\'{nodeName}_\'})
-ON CREATE SET id.count = 1
-ON MATCH SET id.count = id.count + 1
-WITH id.str + id.count AS {nodeName}Uid
-';
+foreach($conf->actionList as $actionConfItem) {
+	
+}
 
-$cypherCodeLabelsWithAutoIncrementTemplate = '
-CREATE ({labelName}:{nodeName} {labelParamCypherCode})
-';
+foreach($conf->emotionList as $emotionConfItem) {
 
-$attributListHTMLTemplate = '<p class="def {attributName}">
-<label class="field {attributName}">{attributName}: </label>
-<span class="value {attributValue}">{attributValue}<span>
-</p>
-';
+}
 
-$htlmElementHtmlTemplate = '
-<div class="postIt {listName} {nodeName}" title="{$attributListTitle}" id="{listName}" draggable=true>{listName}</div>
-<div class="titleOver">{attributListHTML}</div>
-<script>
-#{{listName}}.onclick(this.show());
-#{{listName}}.ondrop(this.call());
-</script>
-';
+foreach($conf->labelList as $labelConfItem) {
 
-$listHtlmElementHtmlTemplate = '
-<div class="list {listName}">
-	{listHtlmElement}
-</div>
-<div class="button add" id="add{listName}"></div>
-';
+}
 
-$htmlResultDir					= $resultDir.$htmlDir;
-$cypherResultDir				= $resultDir.$cypherDir;
-$cypherResultDir 				= $resultDir.$cypherDir;
-$htmlResultDir 	 				= $resultDir.$htmlDir;
-$confFile               		= $confDir.$confFileBasename;
-$navigationTemplateFileBasename = $htmlResultDir.$navigationTemplateFileBasename;
-$nodeTemplateFileBasename       = $cypherResultDir.$nodeTemplateFileBasename;
-$jsonContent	 				= file_get_contents($confFile);
-$jsonObj 		 				= json_decode($jsonContent);
+foreach($conf->labelParamList as $labelParamConfItem) {
 
-$cypherCode = $cypherCodeInit;
+}
+
+foreach($conf->relationshipParamList as $relationshipParapItem) {
+
+}
+
+/*
+
+$navigationTemplateFile     = $confObj->htmlResultDir.$confObj->navigationTemplateFileBasename;
+$nodeTemplateFile           = $confObj->cypherResultDir.$confObj->nodeTemplateFileBasename;
+
+$cypherCode = $conf->deleteAllCypherConfTemplateContent;
+
 
 foreach($jsonObj as $list => $jsonObj1) {
 		
@@ -75,17 +46,17 @@ foreach($jsonObj as $list => $jsonObj1) {
 		foreach($attributList as $k => $v){
 			$attributListTitle .= $k.': '.$v."\n";
 			$attributListHTML .= $attributListHTMLTemplate;
-			$attributListHTML = str_replace('{attributName}', $k, $attributListHTML);
-			$attributListHTML = str_replace('{attributValue}', $v, $attributListHTML);
+			$attributListHTML = str_replace($attributName, $k, $attributListHTML);
+			$attributListHTML = str_replace($attributValue, $v, $attributListHTML);
 		}
 		$listHtlmElement[$list][$listId] = $htlmElementHtmlTemplate;
-		$listHtlmElement[$list][$listId] = str_replace('{listName}', $listName, $htlmElementHtmlTemplate);
-		$listHtlmElement[$list][$listId] = str_replace('{$attributListTitle}', $attributListTitle, $htlmElementHtmlTemplate);
-		$listHtlmElement[$list][$listId] = str_replace('{attributListHTML}', $attributListHTML, $htlmElementHtmlTemplate);
-		$listHtlmElement[$list][$listId] = str_replace('{nodeName}', $name, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace($listNameTag, $listName, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace($attributListTitleTag, $attributListTitle, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace($attributListHTMLTag, $attributListHTML, $htlmElementHtmlTemplate);
+		$listHtlmElement[$list][$listId] = str_replace($nodeNameTag, $name, $htlmElementHtmlTemplate);
 		
 		$cypherCode .= "\n".$cypherCodeCreateNodeWithAutoIncrementTemplate;
-		$cypherCode = str_replace('{nodeName}', ucfirst($name), $cypherCode);
+		$cypherCode = str_replace($odeNameTag, ucfirst($name), $cypherCode);
 		
 		if($list === 'labelList') {
 
@@ -120,5 +91,7 @@ foreach($jsonObj as $list => $jsonObj1) {
 
 file_put_contents($navigationTemplateFile, implode("\n", $htlmElementList));
 file_put_contents($nodeTemplateFile, $cypherCode);
+
+*/
 
 ?>

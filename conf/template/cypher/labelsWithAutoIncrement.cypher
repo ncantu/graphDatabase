@@ -1,0 +1,2 @@
+
+CREATE ({labelName}:{nodeName} {labelParamCypherCode})
