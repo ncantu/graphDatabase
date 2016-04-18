@@ -8,7 +8,7 @@ class Element {
 
 	public function __construct($labelName, $elementName, $type, $list, $attributListDefault, $attributList, $render = false) {
 
-		$result = $this->designCoreConstuctInit();
+		$result = $this->designCoreConstuctInit($labelName, $elementName, $type);
 		
 		if($result === false) return false;
 		

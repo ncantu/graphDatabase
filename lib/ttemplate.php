@@ -1,22 +1,22 @@
-<?php 
+<?php
 
 trait TTemplate {
 	
 	private static $TEMPLATE_FUNCTION_PREFIX = 'template';
 	
-	public $templateList = array();
+	public $templateList;
 	
-	private $templateDefaultList = array();
-	private $templateValList     = array();
+	private $templateDefaultList;
+	private $templateValList;
 	
 	private function template($fileBasename, $type){
 	
-		$file     = Conf::$export['templateDir'].$type.DIRECTORY_SEPARATOR.$fileBasename;
+		$file     = Conf::$templateDir.$type.DIRECTORY_SEPARATOR.$fileBasename;
 		$content  = file_get_contents($file);
 		$template = new Template($content, $type);
 	
 		if($template === false) return false;
-	
+			
 		$rendered = $template->template($this->templateDefaultList, $this->templateValList);
 	
 		if($rendered === false) return false;
@@ -98,10 +98,10 @@ trait TTemplate {
 	}
 	public function templateRender(){
 		
-		foreach(Conf::$export['renderList'] as $render){
+		foreach(Conf::$renderList as $render){
 			
 			$func = self::$TEMPLATE_FUNCTION_PREFIX.ucfirst($render);
-			$render->ext;	
+			$render->ext;
 			
 			if(method_exists($this, $func)) {
 				
@@ -110,9 +110,9 @@ trait TTemplate {
 			else {
 				
 				$result = $this->templateStandard();
-			}			
+			}
 			if($result === false) return false;
-		}		
+		}
 		return true;
 	}
 		

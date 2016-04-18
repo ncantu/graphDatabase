@@ -12,7 +12,7 @@ class attribut {
 
 	public function __construct($labelName, $elementName, $type, $name, $value, $def = '', $render = false) {
 
-		$result = $this->designCoreConstuctInit();
+		$result = $this->designCoreConstuctInit($labelName, $elementName, $type);
 		
 		if($result === false) return false;
 		

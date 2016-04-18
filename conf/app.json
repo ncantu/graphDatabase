@@ -1,5 +1,5 @@
 {
-  "graphDatabaseConfBasename": "graphDatabaseConf.json",
+  "graphDatabaseConfBasename": "graphDatabase.json",
   "renderList":{
       "cypher":{
 	   "ext": ".cypher"
@@ -19,7 +19,7 @@
          "attributListDefault":"labelParamList"
     }      
   },
-  "confDir": "conf/",
-  "resultDir": "result/",
+  "confDir": "../conf/",
+  "resultDir": "../result/",
   "templateDir": "template/"
 }

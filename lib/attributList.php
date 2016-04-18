@@ -6,13 +6,15 @@ class attributList {
 
 	public function __construct($labelName, $elementName, $type, $attributListDefault, $attributList = array(), $render = false) {
 
-		$result = $this->designCoreConstuctInit();
+		$result = $this->designCoreConstuctInit($labelName, $elementName, $type);
 		
 		if($result === false) return false;
 		
-		$attributList = self::mergeObj(Conf::$export[$attributListDefault], $attributList);
+		$attributList = self::mergeObj(Conf::$$attributListDefault, $attributList);
 		
 		if($attributList === false) return false;
+		
+		if(is_array($attributList) === false || is_object($attributList) === false) return false;
 
 		foreach($attributList as $attributName => $attributValue){
 				
@@ -21,7 +23,7 @@ class attributList {
 			if($attribut === false) return false;
 				
 			$this->attributList[$attributName] = $attribut;
-		}				
+		}
 		$result = $this->designCoreConstuctFinish($render);
 			
 		if($result === false) return false;

@@ -28,7 +28,7 @@ class Score {
 		return self::scoreGet($list);
 	}
 	
-	private static function get($type, $list, $scoreFunctionSuffix = self::SCORE_FUNCTION_SUFFIX){
+	public static function get($type, $list, $scoreFunctionSuffix = self::SCORE_FUNCTION_SUFFIX){
 	
 		$scoreGetFunc = $type.$scoreFunctionSuffix;
 	

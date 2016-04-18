@@ -2,53 +2,47 @@
 
 class Conf {
     
-    CONST CONSTRUCT_CONF_APP_FILE          = 'conf/app.json';
-    CONST CONF_BASENAME_VAR_SUFFIX         = 'Basename';
-    CONST CONF_CONTENT_VAR_SUFFIX          = 'Content';    
-    CONST CYPHER_TYPE                      = 'cypher';
-    CONST HTML_TYPE                        = 'html';    
-    CONST GRAPH_DATABASE_CONF_BASENAME_VAR = 'graphDatabaseConfBasename';
+    CONST CONSTRUCT_CONF_APP_FILE  = '../conf/app.json';
+    CONST CONF_BASENAME_VAR_SUFFIX = 'Basename';
+    CONST CONF_CONTENT_VAR_SUFFIX  = 'Content';
+    CONST CYPHER_TYPE              = 'cypher';
+    CONST HTML_TYPE                = 'html';
     
-    static public $export;
+    public static $objectList;
+    public static $actionList;
+    public static $emotionList;
+    public static $labelList;
+    public static $labelParamList;
+    public static $relationshipParamList;
+    public static $confDir;
+    public static $resultDir;
+    public static $templateDir;
+    public static $renderList;
 
-    public $confObj;
-    public $actionList;
-    public $emotionList;
-    public $labelList;
-    public $labelParamList;
-    public $relationshipParamList;
-    public $confDir;
-    public $resultDir;
-    public $templateDir;
-    public $renderList;
+    public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
 
-    public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE){
-
-        $return  = $this->initConf($confAppFile);     
+        $return = $this->initConf($confAppFile);
         
         if($return === false) return false;
     }
     
     private function initConf($confAppFile){
     	
-    	$confContent   = file_get_contents($confAppFile);
+    	$confContent = file_get_contents($confAppFile);
     	
-    	if($confContent === 0) return false;
+    	if($confContent === false) return false;
     	
-    	$this->confObj = json_decode($confContent);
+    	$confObj = json_decode($confContent);
     	
-    	if($this->confObj === false) return false;
+    	if($confObj === false) return false;
     	
-    	$this->confDir     = $this->confObj->confDir;
-    	$this->resultDir   = $this->confObj->resultDir;
-    	$this->templateDir = $this->confObj->confDir.$this->confObj->templateDir;
-		$this->renderList  = $this->confObj->renderList;	
+    	self::$objectList  = $confObj->objectList;
+    	self::$confDir     = $confObj->confDir;
+    	self::$resultDir   = $confObj->resultDir;
+    	self::$templateDir = $confObj->confDir.$confObj->templateDir;
+		self::$renderList  = $confObj->renderList;
     	
-    	$result  = $this->grapDatabaseConfGet();
-    	
-    	if($result === false) return false;
-    	
-    	$result = $this->export();
+    	$result = $this->grapDatabaseConfGet($confObj->graphDatabaseConfBasename);
     	
     	if($result === false) return false;
     	
@@ -57,51 +51,34 @@ class Conf {
     
     private function confGet($confBasenameVar){
     
-	    $confgraphDatabaseFile    = self::$export->confObj->confDir.self::$export->confObj->confFileBasename;
+	    $confgraphDatabaseFile    = self::$confDir.$confBasenameVar;
 	    $confgraphDatabaseContent = file_get_contents($confgraphDatabaseFile);
 	    
-	    if($confgraphDatabaseContent === 0) return false;
+	    if($confgraphDatabaseContent === false) return false;
 	    
 	    return json_decode($confgraphDatabaseContent);
 	}
 	
-	private function grapDatabaseConfGet($confBasenameVar = self::GRAPH_DATABASE_CONF_BASENAME_VAR){
+	private function grapDatabaseConfGet($confBasenameVar){
 		
-		$confgraphDatabaseObj = $this->confGet($confBasenameVar);
+		$confGraphDatabaseObj = $this->confGet($confBasenameVar);
 		
-		if($confgraphDatabaseObj === false) return false;
+		if($confGraphDatabaseObj === false) return false;
 		
-		$this->actionList            = $confgraphDatabaseObj->actionList;
-		$this->emotionList           = $confgraphDatabaseObj->emotionList;
-		$this->labelList             = $confgraphDatabaseObj->labelList;
-		$this->labelParamList        = $confgraphDatabaseObj->labelParam;
-		$this->relationshipParamList = $confgraphDatabaseObj->relationshipParam;
+		self::$actionList            = $confGraphDatabaseObj->actionList;
+		self::$emotionList           = $confGraphDatabaseObj->emotionList;
+		self::$labelList             = $confGraphDatabaseObj->labelList;
+		self::$labelParamList        = $confGraphDatabaseObj->labelParamList;
+		self::$relationshipParamList = $confGraphDatabaseObj->relationshipParamList;
 		
 		return true;
 	}
     
     private function resultSet($content, $typeDir, $confBasenameVar){
 
-        $typeResulDir = self::$export['resultDir'].self::$export[$typeDir];
+        $typeResulDir = self::$resultDir.self::$$typeDir;
 
         return file_put_contents($content, $typeResulDir.self::$export[$confBasenameVar]);
-    }
-
-    private function cypherResultSet($content, $confBasenameVar, $type = self::CYPHER_TYPE){
-            
-        return $this->resultSet($content, $type, $confBasenameVar);
-    }
-
-    private function htmlResultSet($content, $confBasenameVar, $type = self::HTML_TYPE){
-            
-        return $this->resultSet($content, $type, $confBasenameVar);
-    }
-    
-    public function export(){
-    	
-    	self::$export = get_object_vars($this);
-    	
-    	return true;
     }
 }
 

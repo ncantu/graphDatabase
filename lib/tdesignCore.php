@@ -11,7 +11,7 @@ Trait TDesignCore {
 	private $elementName  = '';
 	private $type         = 0;
 	
-	public function designCoreConstuctInit(){
+	public function designCoreConstuctInit($labelName, $elementName, $type){
 		
 		$this->labelName   = $labelName;
 		$this->elementName = $elementName;
@@ -32,3 +32,4 @@ Trait TDesignCore {
 }
 
 ?>
+

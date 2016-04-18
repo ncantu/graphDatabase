@@ -32,9 +32,9 @@ class Template {
 
     private static function confTemplateGet($typeDir, $confBasenameVar){
 
-        $confTemplateDir     = Conf::$export['confDir'].Conf::$export['templateDir'];
-        $typeConfTemplateDir = $confTemplateDir.Conf::$export[$typeDir];
-        $content             = file_get_contents($typeConfTemplateDir.Conf::$export[$confBasenameVar]);
+        $confTemplateDir     = Conf::$confDir.Conf::$templateDir;
+        $typeConfTemplateDir = $confTemplateDir.Conf::$$typeDir;
+        $content             = file_get_contents($typeConfTemplateDir.Conf::$$confBasenameVar);
         
         if($content === 0) return false;
             
