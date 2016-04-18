@@ -3,34 +3,29 @@
 class ElementList {
 
 	use TDesignCore;
-	use TTemplate;
 
-	private function __construct($type, $attributListDefault) {
+	private function __construct($type, $attributListDefault, $render = false) {
 
-		$listVar = $type.'List';
-		$list    = Conf::$export[$listVar];
+		$this->type = $type;		
+		$listVar    = $type.'List';
+		$list       = Conf::$export[$listVar];
 
 		foreach($list as $labelName => $elementList){
 				
 			foreach($elementList as $elementName => $attributList){
 
-				$postIt = new Element($labelName, $elementName, $type, $this->list, $attributListDefault, $attributList);
+				$element = new Element($labelName, $elementName, $type, $this->elementList, $attributListDefault, $attributList, $render);
 
-				if($postIt === false) return false;
+				if($element === false) return false;				
 
-				$this->elementList[$postIt->score] = $postIt;
+				$this->elementList[$element->score] = $element;
 			}
 		}
 		rsort($this->elementList);
-
-		$result = $this->templateRender();
+		
+		$result = $this->designCoreConstuctFinish($render);
 			
 		if($result === false) return false;
-	}
-
-	public function actionPostitListCreate($type = 'action', $attributListDefault = 'relationshipParamList') {
-
-		return new ElementList($type, $attributListDefault);
 	}
 }
 

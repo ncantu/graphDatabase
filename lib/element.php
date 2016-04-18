@@ -3,29 +3,26 @@
 class Element {
 
 	use TDesignCore;
-	use TTemplate;
 
 	public $score = 0;
 
-	public function __construct($labelName, $elementName, $type, $list, $attributListDefault, $attributList) {
+	public function __construct($labelName, $elementName, $type, $list, $attributListDefault, $attributList, $render = false) {
 
-		$this->labelName   = $labelName;
-		$this->elementName = $elementName;
-		$this->type        = $type;
-		$this->score       = $this->scoreGet($type, $list);
-
+		$result = $this->designCoreConstuctInit();
+		
+		if($result === false) return false;
+		
+		$this->score = Score::get($type, $list);
+		
 		if($this->score === false) return false;
 
-		$this->attributList = new attributList($labelName, $elementName, $type, $attributListDefault, $attributList);
+		$this->attributList = new attributList($labelName, $elementName, $type, $attributListDefault, $attributList, $render);
 
 		if($this->attributList === false) return false;
-	}
 
-	private function scoreGet($type, $list, $scoreFuncSuffix = 'ScoreGet'){
-
-		$scoreGetFunc = $type.$scoreFuncSuffix;
-
-		return Score::$scoreGetFunc($list);
+		$result = $this->designCoreConstuctFinish($render);
+			
+		if($result === false) return false;
 	}
 }
 

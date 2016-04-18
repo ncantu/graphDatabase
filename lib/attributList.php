@@ -3,33 +3,26 @@
 class attributList {
 
 	use TDesignCore;
-	use TMerge;
-	use TTemplate;
 
-	public function __construct($labelName, $elementName, $type, $attributListDefault, $attributList = array()) {
+	public function __construct($labelName, $elementName, $type, $attributListDefault, $attributList = array(), $render = false) {
 
-		$this->labelName   = $labelName;
-		$this->elementName = $elementName;
-		$this->type        = $type;
-		$attributList      = self::mergeObj(Conf::$export[$attributListDefault], $attributList);
+		$result = $this->designCoreConstuctInit();
+		
+		if($result === false) return false;
+		
+		$attributList = self::mergeObj(Conf::$export[$attributListDefault], $attributList);
+		
+		if($attributList === false) return false;
 
 		foreach($attributList as $attributName => $attributValue){
 				
-			$attribut = new attribut($labelName, $elementName, $type, $attributName, $attributValue);
+			$attribut = new attribut($labelName, $elementName, $type, $attributName, $attributValue, $render);
 				
 			if($attribut === false) return false;
 				
-			$result = $attribut->templateCypher();
-
-			if($result === false) return false;
-				
-			$result = $attribut->templateHtml();
-				
-			if($result === false) return false;
-				
 			$this->attributList[$attributName] = $attribut;
-		}
-		$result = $this->templateRender();
+		}				
+		$result = $this->designCoreConstuctFinish($render);
 			
 		if($result === false) return false;
 	}

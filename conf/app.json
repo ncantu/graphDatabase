@@ -8,6 +8,17 @@
        "ext": ".html"
 	  }  
   },  
+  "objectList":{
+    "action":{
+        "attributListDefault":"relationshipParamList"
+    },
+    "emotion":{
+        "attributListDefault":"relationshipParamList"  
+    },
+    "label":{
+         "attributListDefault":"labelParamList"
+    }      
+  },
   "confDir": "conf/",
   "resultDir": "result/",
   "templateDir": "template/"

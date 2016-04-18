@@ -3,7 +3,6 @@
 class attribut {
 
 	use TDesignCore;
-	use Ttemplate;
 
 	private $k;
 	private $v;
@@ -11,11 +10,12 @@ class attribut {
 	private $labelName   = '';
 	private $elementName = '';
 
-	public function __construct($labelName, $elementName, $type, $name, $value, $def = '') {
+	public function __construct($labelName, $elementName, $type, $name, $value, $def = '', $render = false) {
 
-		$this->labelName                = $labelName;
-		$this->elementName              = $elementName;
-		$this->type                     = $type;
+		$result = $this->designCoreConstuctInit();
+		
+		if($result === false) return false;
+		
 		$this->k   						= $name;
 		$this->v   						= $value;
 		$this->def 						= $def;
@@ -23,6 +23,10 @@ class attribut {
 		$this->templateDefaultList['v'] = $this->def;
 		$this->templateValList['k']     = $this->k;
 		$this->templateValList['v']     = $this->v;
+				
+		$result = $this->designCoreConstuctFinish($render);
+		
+		if($result === false) return false;
 	}
 }
 

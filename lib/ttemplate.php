@@ -2,8 +2,8 @@
 
 trait TTemplate {
 	
-	use TDesignCore;
-
+	CONST TEMPLATE_FUNCTION_PREFIX = 'template';
+	
 	public $templateList = array();
 	
 	private $templateDefaultList = array();
@@ -11,7 +11,7 @@ trait TTemplate {
 	
 	private function template($fileBasename, $type){
 	
-		$file     = Conf::$export['templateDir'].$type.'/'.$fileBasename;
+		$file     = Conf::$export['templateDir'].$type.DIRECTORY_SEPARATOR.$fileBasename;
 		$content  = file_get_contents($file);
 		$template = new Template($content, $type);
 	
@@ -35,7 +35,7 @@ trait TTemplate {
 				
 		foreach($list as $obj){
 		
-			$listRendered['attributList'] .= $obj->templateList[$type];
+			$listRendered .= $obj->templateList[$type];
 		}
 		return $listRendered;
 	}
@@ -76,7 +76,7 @@ trait TTemplate {
 		return $paramList;
 	}
 	
-	public function templateCypher($type, $ext){
+	private function templateCypher($type, $ext){
 		
 		$result = $this->templateTagDesignCorePrepare($type);
 		
@@ -96,11 +96,11 @@ trait TTemplate {
 	
 		return $this->template($templateCypherFile, $type);
 	}
-	public function templateRender(){
+	public function templateRender($functionPrefix = self::TEMPLATE_FUNCTION_PREFIX){
 		
 		foreach(Conf::$export['renderList'] as $render){
 			
-			$func = 'template'.ucfirst($render);
+			$func = $functionPrefix.ucfirst($render);
 			$render->ext;		
 			
 			if(method_exists($this, $func)) {
