@@ -1,42 +1,16 @@
 {
-  "cypherCode": "",
+  "graphDatabaseConfBasename": "graphDatabaseConf.json",
+  "renderList":{
+      "cypher":{
+	   "ext": ".cypher"
+	  },
+	  "html":{
+       "ext": ".html"
+	  }  
+  },  
   "confDir": "conf/",
   "resultDir": "result/",
-  "cypherDir": "cypher/",
-  "htmlDir": "html/",
-  "templateDir": "template/",
-  "graphDatabaseConfBasename": "graphDatabaseConf.json",
-  "navigationTemplateFileBasename": "navigationTemplate.html",
-  "nodeTemplateFileBasename": "nodesTemplate.cypher.cypher",
-  "tagList": [
-    {
-      "attributNameTag": ""
-    },
-    {
-      "attributValueTag": ""
-    },
-    {
-      "listNameTag": ""
-    },
-    {
-      "attributListHtmlTag": ""
-    },
-    {
-      "nodeNameTag": ""
-    },
-    {
-      "labelNameTag": ""
-    },
-    {
-      "labelParamCypherCode": "{labelParamCypherCode}"
-    }
-  ],
+  "templateDir": "template/",  
   "listHtlmElement": [],
-  "htlmElementList": [],
-  "deleteAllCypherConfTemplateBasename": "deleteAll.cypher",
-  "createNodeWithAutoIncrementCypherConfTemplateBasename": "createNodeWithAutoIncrement.cypher",
-  "labelsWithAutoIncrementCypherConfTemplateBasename": "labelsWithAutoIncrement.cypher",
-  "attributListHtmlTemplateBasename": "attributList.html",
-  "postitHtmlTemplateBasename": "postit.html",
-  "postitListHtmlTemplateBasename": "postitList.html"
+  "htlmElementList": []
 }

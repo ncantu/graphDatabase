@@ -1,232 +1,254 @@
 {
   "actionList": {
-    "create": {},
-    "publish": {},
-    "test": {},
-    "valid": {},
-    "host": {},
-    "use": {},
-    "state": {},
-    "manage": {},
-    "target": {},
-    "represente": {},
-    "collect": {},
-    "authorise": {},
-    "own": {},
-    "init": {},
-    "optimize": {},
-    "identify": {},
-    "facility": {},
-    "mark": {},
-    "expire": {},
-    "localize": {},
-    "show": {},
-    "size": {},
-    "historize": {},
-    "contributeTo": {},
-    "concern": {},
-    "cost": {},
-    "stock": {},
-    "shipp": {},
-    "order": {},
-    "pay": {},
-    "billing": {},
-    "expedite": {},
-    "payBack": {},
-    "shippManange": {},
-    "expediteManange": {},
-    "payManange": {},
-    "produce": {},
-    "ask": {},
-    "balance": {},
-    "note": {},
-    "comment": {},
-    "share": {},
-    "add": {},
-    "buy": {}
+    "Workflow": {
+      "test": {},
+      "valid": {},
+      "collect": {},
+      "optimize": {},
+      "shipp": {},
+      "pay": {},
+      "billing": {},
+      "expedite": {},
+      "payBack": {},
+      "shippManange": {},
+      "expediteManange": {},
+      "payManange": {}
+    },
+    "Lifcycle": {
+      "create": {},
+      "init": {},
+      "publish": {},
+      "state": {},
+      "expire": {},
+      "historize": {},
+      "archive": {}
+    },
+    "Collaborate": {
+      "mark": {},
+      "ask": {},
+      "note": {},
+      "comment": {},
+      "share": {},
+      "contributeTo": {},
+      "facility": {},
+      "balance": {}
+    },
+    "UserAction": {
+      "return": {},
+      "order": {},
+      "add": {},
+      "buy": {},
+      "show": {},
+      "use": {}
+    },
+    "ContextMaker": {
+      "target": {},
+      "represente": {},
+      "identify": {},
+      "localize": {},
+      "size": {},
+      "concern": {},
+      "cost": {}
+    },
+    "AuthorityControle": {
+      "own": {},
+      "manage": {},
+      "authorise": {}
+    },
+    "StaticAction": {
+      "host": {},
+      "produce": {},
+      "stock": {}
+    }
   },
   "emotionList": {
-    "anger": {
-      "negative": true,
-      "forceful": true
+    "Negative": {
+      "anger": {
+        "negative": true,
+        "forceful": true
+      },
+      "annoyance": {
+        "negative": true,
+        "forceful": true
+      },
+      "contempt": {
+        "negative": true,
+        "forceful": true
+      },
+      "disgust": {
+        "negative": true,
+        "forceful": true
+      },
+      "iIrritation": {
+        "negative": true,
+        "forceful": true
+      },
+      "anxiety": {
+        "negative": true,
+        "notinControl": true
+      },
+      "embarrassment": {
+        "negative": true,
+        "notinControl": true
+      },
+      "fear": {
+        "negative": true,
+        "notinControl": true
+      },
+      "helplessness": {
+        "negative": true,
+        "notinControl": true
+      },
+      "powerlessness": {
+        "negative": true,
+        "notinControl": true
+      },
+      "worry": {
+        "negative": true,
+        "notinControl": true
+      },
+      "doubt": {
+        "negative": true,
+        "thoughts": true
+      },
+      "envy": {
+        "negative": true,
+        "thoughts": true
+      },
+      "frustration": {
+        "negative": true,
+        "thoughts": true
+      },
+      "guilt": {
+        "negative": true,
+        "thoughts": true
+      },
+      "shame": {
+        "negative": true,
+        "thoughts": true
+      },
+      "boredom": {
+        "negative": true,
+        "passive": true
+      },
+      "despair": {
+        "negative": true,
+        "passive": true
+      },
+      "disappointment": {
+        "negative": true,
+        "passive": true
+      },
+      "hurt": {
+        "negative": true,
+        "passive": true
+      },
+      "sadness": {
+        "negative": true,
+        "passive": true
+      }
     },
-    "annoyance": {
-      "negative": true,
-      "forceful": true
+    "Positive": {
+      "amusement": {
+        "positive": true,
+        "lively": true
+      },
+      "delight": {
+        "positive": true,
+        "lively": true
+      },
+      "elation": {
+        "positive": true,
+        "lively": true
+      },
+      "excitement": {
+        "positive": true,
+        "lively": true
+      },
+      "happiness": {
+        "positive": true,
+        "lively": true
+      },
+      "joy": {
+        "positive": true,
+        "lively": true
+      },
+      "pleasure": {
+        "positive": true,
+        "lively": true
+      },
+      "courage": {
+        "positive": true,
+        "thoughts": true
+      },
+      "hope": {
+        "positive": true,
+        "thoughts": true
+      },
+      "pride": {
+        "positive": true,
+        "thoughts": true
+      },
+      "satisfaction": {
+        "positive": true,
+        "thoughts": true
+      },
+      "trust": {
+        "positive": true,
+        "thoughts": true
+      },
+      "calmness": {
+        "quiet": true,
+        "positive": true
+      },
+      "contentment": {
+        "quiet": true,
+        "positive": true
+      },
+      "relaxation": {
+        "quiet": true,
+        "positive": true
+      },
+      "relief": {
+        "quiet": true,
+        "positive": true
+      },
+      "serenity": {
+        "quiet": true,
+        "positive": true
+      }
     },
-    "contempt": {
-      "negative": true,
-      "forceful": true
-    },
-    "disgust": {
-      "negative": true,
-      "forceful": true
-    },
-    "iIrritation": {
-      "negative": true,
-      "forceful": true
-    },
-    "anxiety": {
-      "negative": true,
-      "notinControl": true
-    },
-    "embarrassment": {
-      "negative": true,
-      "notinControl": true
-    },
-    "fear": {
-      "negative": true,
-      "notinControl": true
-    },
-    "helplessness": {
-      "negative": true,
-      "notinControl": true
-    },
-    "powerlessness": {
-      "negative": true,
-      "notinControl": true
-    },
-    "worry": {
-      "negative": true,
-      "notinControl": true
-    },
-    "doubt": {
-      "negative": true,
-      "thoughts": true
-    },
-    "envy": {
-      "negative": true,
-      "thoughts": true
-    },
-    "frustration": {
-      "negative": true,
-      "thoughts": true
-    },
-    "guilt": {
-      "negative": true,
-      "thoughts": true
-    },
-    "shame": {
-      "negative": true,
-      "thoughts": true
-    },
-    "boredom": {
-      "negative": true,
-      "passive": true
-    },
-    "despair": {
-      "negative": true,
-      "passive": true
-    },
-    "disappointment": {
-      "negative": true,
-      "passive": true
-    },
-    "hurt": {
-      "negative": true,
-      "passive": true
-    },
-    "sadness": {
-      "negative": true,
-      "passive": true
-    },
-    "stress": {
-      "agitation": true
-    },
-    "shock": {
-      "agitation": true
-    },
-    "tension": {
-      "agitation": true
-    },
-    "amusement": {
-      "positive": true,
-      "lively": true
-    },
-    "delight": {
-      "positive": true,
-      "lively": true
-    },
-    "elation": {
-      "positive": true,
-      "lively": true
-    },
-    "excitement": {
-      "positive": true,
-      "lively": true
-    },
-    "happiness": {
-      "positive": true,
-      "lively": true
-    },
-    "joy": {
-      "positive": true,
-      "lively": true
-    },
-    "pleasure": {
-      "positive": true,
-      "lively": true
-    },
-    "affection": {
-      "caring": true
-    },
-    "empathy": {
-      "caring": true
-    },
-    "friendliness": {
-      "caring": true
-    },
-    "love": {
-      "caring": true
-    },
-    "courage": {
-      "positive": true,
-      "thoughts": true
-    },
-    "hope": {
-      "positive": true,
-      "thoughts": true
-    },
-    "pride": {
-      "positive": true,
-      "thoughts": true
-    },
-    "satisfaction": {
-      "positive": true,
-      "thoughts": true
-    },
-    "trust": {
-      "positive": true,
-      "thoughts": true
-    },
-    "calmness": {
-      "quiet": true,
-      "positive": true
-    },
-    "contentment": {
-      "quiet": true,
-      "positive": true
-    },
-    "relaxation": {
-      "quiet": true,
-      "positive": true
-    },
-    "relief": {
-      "quiet": true,
-      "positive": true
-    },
-    "serenity": {
-      "quiet": true,
-      "positive": true
-    },
-    "interest": {
-      "reactive": true
-    },
-    "politeness": {
-      "reactive": true
-    },
-    "surprise": {
-      "reactive": true
+    "PositiveOrNegative": {
+      "stress": {
+        "agitation": true
+      },
+      "shock": {
+        "agitation": true
+      },
+      "tension": {
+        "agitation": true
+      },
+      "affection": {
+        "caring": true
+      },
+      "empathy": {
+        "caring": true
+      },
+      "friendliness": {
+        "caring": true
+      },
+      "love": {
+        "caring": true
+      },
+      "interest": {
+        "reactive": true
+      },
+      "politeness": {
+        "reactive": true
+      },
+      "surprise": {
+        "reactive": true
+      }
     }
   },
   "labelList": {

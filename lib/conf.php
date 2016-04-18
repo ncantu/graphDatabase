@@ -2,49 +2,29 @@
 
 class Conf {
     
-    CONST CONSTRUCT_CONF_APP_FILE                                          = 'conf/app.json';
-    CONST CONF_BASENAME_VAR_SUFFIX                                         = 'Basename';
-    CONST CONF_CONTENT_VAR_SUFFIX                                          = 'Content';    
-    CONST CYPHER_TYPE                                                      = 'cypher';
-    CONST HTML_TYPE                                                        = 'html';
+    CONST CONSTRUCT_CONF_APP_FILE          = 'conf/app.json';
+    CONST CONF_BASENAME_VAR_SUFFIX         = 'Basename';
+    CONST CONF_CONTENT_VAR_SUFFIX          = 'Content';    
+    CONST CYPHER_TYPE                      = 'cypher';
+    CONST HTML_TYPE                        = 'html';    
+    CONST GRAPH_DATABASE_CONF_BASENAME_VAR = 'graphDatabaseConfBasename';
     
-    CONST DELETE_ALL_CYPHER_CONF_TEMPLATE_BASENAME_VAR                     = 'deleteAllCypherConfTemplateBasename';
-    CONST CREATE_NODE_WITH_AUTOINCREMENT_CYPHER_CONF_TEMPLATE_BASENAME_VAR = 'createNodeWithAutoIncrementCypherConfTemplateBasename';
-    CONST LABEL_WITH_AUTORINCREMENT_CYPHER_CONF_TEMPLATE_BASENAME_VAR      = 'labelsWithAutoIncrementCypherConfTemplateBasename';
-    
-    CONST ATTRIBUT_LIST_HTML_TEMPLATE_BASENAME_VAR                         = 'attributListHtmlTemplateBasename';
-    CONST POSTIT_HTML_TEMPLATE_BASENAME_VAR                                = 'postitHtmlTemplateBasename';
-    CONST POSTIT_LIST_HTML_TEMPLATE_BASENAME_VAR                           = 'postitListHtmlTemplateBasename';
-    
-    CONST GRAPH_DATABASE_CONF_BASENAME_VAR								   = 'graphDatabaseConfBasename';
-        
-    private $confObj;
-    
+    static public $export;
+
+    public $confObj;
     public $actionList;
     public $emotionList;
     public $labelList;
     public $labelParamList;
     public $relationshipParamList;
-
-    public $deleteAllCypherConfTemplateContent                            = '';
-    public $createNodeWithAutoIncrementCypherConfTemplateContent          = '';
-    public $labelsWithAutoIncrementCypherConfTemplateContent              = '';
-
-    public $attributListHtmlTemplateContent                               = '';
-    public $postitHtmlTemplateContent                                     = '';
-    public $postitListHtmlTemplateContent                                 = '';
+    public $confDir;
+    public $resultDir;
+    public $templateDir;
+    public $renderList;
 
     public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE){
 
         $return  = $this->initConf($confAppFile);     
-        
-        if($return === false) return false;
-
-        $return  = $this->initTemplateCypher();     
-        
-        if($return === false) return false;
-
-        $return  = $this->initTemplateHtml();     
         
         if($return === false) return false;
     }
@@ -59,53 +39,25 @@ class Conf {
     	
     	if($this->confObj === false) return false;
     	
-    	$return  = $this->grapDatabaseConfGet();
+    	$this->confDir     = $this->confObj->confDir;
+    	$this->resultDir   = $this->confObj->resultDir;
+    	$this->templateDir = $this->confObj->confDir.$this->confObj->templateDir;
+		$this->renderList  = $this->confObj->renderList;	
     	
-    	if($return === false) return false;
+    	$result  = $this->grapDatabaseConfGet();
     	
-    	return true;
-    }
-    
-    private function initTemplateCypher(){
+    	if($result === false) return false;
     	
-    	$return  = $this->deleteAllCypherConfTemplateContentGet();
+    	$result = $this->export();
     	
-    	if($return === false) return false;
-    	
-    	$return  = $this->createNodeWithAutoIncrementCypherConfTemplateContentGet();
-    	
-    	if($return === false) return false;
-    	
-    	$return  = $this->labelsWithAutoIncrementCypherConfTemplateContentGet();
+    	if($result === false) return false;
     	
     	return true;
-    }
-    
-    private function initTemplateHtml(){
-    	
-       	$return  = $this->attributListHtmlTemplateContentGet();
-    	
-    	if($return === false) return false;
-    	
-    	$return  =  $this->postitHtmlTemplateContentGet();
-    	
-    	if($return === false) return false;
-    	
-    	$return  = $this->postitListHtmlTemplateContentGet();
-    	
-    	if($return === false) return false;
-    	
-    	return true;
-    }
-    
-    private static function BasenameVarSuffixTocontentVarSuffix($confBasenameVar, $basenameVarSuffix = self::CONF_BASENAME_VAR_SUFFIX, $contentVarSuffix = self::CONF_CONTENT_VAR_SUFFIX) {
-    	
-    	return str_replace($basenameVarSuffix, $contentVarSuffix, $confBasenameVar);
     }
     
     private function confGet($confBasenameVar){
     
-	    $confgraphDatabaseFile    = $this->confObj->confDir.$this->confObj->confFileBasename;
+	    $confgraphDatabaseFile    = self::$export->confObj->confDir.self::$export->confObj->confFileBasename;
 	    $confgraphDatabaseContent = file_get_contents($confgraphDatabaseFile);
 	    
 	    if($confgraphDatabaseContent === 0) return false;
@@ -127,64 +79,12 @@ class Conf {
 		
 		return true;
 	}
-
-    private function confTemplateGet($typeDir, $confBasenameVar){
-
-        $var                 = self::BasenameVarSuffixTocontentVarSuffix($confBasenameVar);
-        $confTemplateDir     = $this->confObj->confDir.$this->confObj->templateDir;
-        $typeConfTemplateDir = $confTemplateDir.$this->confObj->$typeDir;
-        $this->$var          = file_get_contents($typeConfTemplateDir.$this->confObj->$confBasenameVar);
-        
-        if($this->$var === 0) return false;
-            
-        return true;
-    }
-
-    private function cypherConfTemplateGet($confBasenameVar, $type = self::CYPHER_TYPE){
-                        
-        return $this->confTemplateGet($type, $confBasenameVar);
-    }
-    
-    private function deleteAllCypherConfTemplateContentGet($confBasename = self::DELETE_ALL_CYPHER_CONF_TEMPLATE_BASENAME_VAR){
-        
-        return $this->cypherConfTemplateGet($confBasename);
-    }
-    
-    private function createNodeWithAutoIncrementCypherConfTemplateContentGet($confBasenameVar = self::CREATE_NODE_WITH_AUTOINCREMENT_CYPHER_CONF_TEMPLATE_BASENAME_VAR){
-        
-        return $this->cypherConfTemplateGet($confBasenameVar);
-    }
-    
-    private function labelsWithAutoIncrementCypherConfTemplateContentGet($confBasenameVar = self::LABEL_WITH_AUTORINCREMENT_CYPHER_CONF_TEMPLATE_BASENAME_VAR){
-        
-        $this->cypherConfTemplateGet($confBasenameVar);
-    }
-
-    private function htmlConfTemplateGet($confBasenameVar, $type = self::HTML_TYPE){
-            
-        return $this->confTemplateGet($type, $confBasenameVar);
-    }
-
-    private function attributListHtmlTemplateContentGet($confBasenameVar = self::ATTRIBUT_LIST_HTML_TEMPLATE_BASENAME_VAR){
-        
-        return $this->htmlConfTemplateGet($confBasenameVar);
-    }
-    
-    private function postitHtmlTemplateContentGet($confBasenameVar = self::POSTIT_HTML_TEMPLATE_BASENAME_VAR){
-        
-        return $this->htmlConfTemplateGet($confBasenameVar);
-    }
-    
-    private function postitListHtmlTemplateContentGet($confBasenameVar = self::POSTIT_LIST_HTML_TEMPLATE_BASENAME_VAR){
-        
-        return $this->htmlConfTemplateGet($confBasenameVar);
-    }
     
     private function resultSet($content, $typeDir, $confBasenameVar){
 
-        $typeResulDir = $this->confObj->resultDir.$this->confObj->$typeDir;
+        $typeResulDir = self::$export['resultDir'].self::$export[$typeDir];
 
-        return file_put_contents($content, $typeResulDir.$this->confObj->$confBasenameVar);
+        return file_put_contents($content, $typeResulDir.self::$export[$confBasenameVar]);
     }
 
     private function cypherResultSet($content, $confBasenameVar, $type = self::CYPHER_TYPE){
@@ -195,6 +95,13 @@ class Conf {
     private function htmlResultSet($content, $confBasenameVar, $type = self::HTML_TYPE){
             
         return $this->resultSet($content, $type, $confBasenameVar);
+    }
+    
+    public function export(){
+    	
+    	self::$export = get_object_vars($this);
+    	
+    	return true;
     }
 }
 
