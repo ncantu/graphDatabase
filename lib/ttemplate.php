@@ -2,7 +2,7 @@
 
 trait TTemplate {
 	
-	CONST TEMPLATE_FUNCTION_PREFIX = 'template';
+	private static $TEMPLATE_FUNCTION_PREFIX = 'template';
 	
 	public $templateList = array();
 	
@@ -96,12 +96,12 @@ trait TTemplate {
 	
 		return $this->template($templateCypherFile, $type);
 	}
-	public function templateRender($functionPrefix = self::TEMPLATE_FUNCTION_PREFIX){
+	public function templateRender(){
 		
 		foreach(Conf::$export['renderList'] as $render){
 			
-			$func = $functionPrefix.ucfirst($render);
-			$render->ext;		
+			$func = self::$TEMPLATE_FUNCTION_PREFIX.ucfirst($render);
+			$render->ext;	
 			
 			if(method_exists($this, $func)) {
 				

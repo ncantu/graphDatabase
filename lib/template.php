@@ -4,8 +4,8 @@ class Template {
 	
 	use TMerge;
 	
-	CONST TAG_PREFFIX = '{';
-	CONST TAG_SUFFIX  = '}';
+	private static $TAG_PREFFIX = '{';
+	private static $TAG_SUFFIX  = '}';
 	
 	public $type    = '';
 	public $content = '';
@@ -18,13 +18,13 @@ class Template {
 		$this->content = $content;
 	}
 
-	public function template($default, $vals, $tagPreffix = self::TAG_PREFFIX, $tagSuffix = self::TAG_SUFFIX){
+	public function template($default, $vals){
 	
 		$vals = self::mergeObj($default, $vals);
 	
 		foreach($vals as $k => $v){
 	
-			$tagHtml = self::TAG_PREFFIX.$k.self::TAG_SUFFIX;
+			$tagHtml = self::$TAG_PREFFIX.$k.self::$TAG_SUFFIX;
 			$content = str_replace($tagHtml, $v, $this->content);
 		}
 		return $content;
