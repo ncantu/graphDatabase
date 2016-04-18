@@ -1,7 +1,8 @@
 
-<div class="postIt {listName} {nodeName}" title="{$attributListTitle}" id="{listName}" draggable=true>{listName}</div> 
-<div class="titleOver">{attributListHTML}</div> 
-<script> 
-	#{{listName}}.onclick(this.show());
-	#{{listName}}.ondrop(this.call()); 
-</script> 
+<div class="element {labelName} {elementName} {type}" title="{$attributListTitle}" id="{listName}" draggable=true>{listName}> 
+	<div class="elementDetail {labelName} {elementName} {type}">{attributListHTML}</div> 
+	<script> 
+		#{{listName}}.onclick(this.show());
+		#{{listName}}.ondrop(this.call()); 
+	</script> 
+</div>

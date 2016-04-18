@@ -6,6 +6,7 @@ Trait TDesignCore {
 	private $elementList  = array();
 	private $labelName    = '';
 	private $elementName  = '';
+	private $type         = 0;
 }
 
 ?>

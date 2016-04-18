@@ -10,7 +10,5 @@
   },  
   "confDir": "conf/",
   "resultDir": "result/",
-  "templateDir": "template/",  
-  "listHtlmElement": [],
-  "htlmElementList": []
+  "templateDir": "template/"
 }
