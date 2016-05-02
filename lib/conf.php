@@ -8,6 +8,9 @@ class Conf {
     CONST CYPHER_TYPE              = 'cypher';
     CONST HTML_TYPE                = 'html';
     
+    public static $appName;
+    public static $userId;
+    public static $mockState;
     public static $objectList;
     public static $actionList;
     public static $emotionList;
@@ -18,10 +21,16 @@ class Conf {
     public static $resultDir;
     public static $templateDir;
     public static $renderList;
+    public static $env;
+    public static $errorCodeList;
+    public static $logDir;
+    public static $logFormat;
+    public static $securityLevel           = 0;
 
     public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
 
-        $return = $this->initConf($confAppFile);
+    	self::$appName = $appName;
+        $return        = $this->initConf($confAppFile);
         
         if($return === false) return false;
     }
@@ -36,11 +45,16 @@ class Conf {
     	
     	if($confObj === false) return false;
     	
-    	self::$objectList  = $confObj->objectList;
-    	self::$confDir     = $confObj->confDir;
-    	self::$resultDir   = $confObj->resultDir;
-    	self::$templateDir = $confObj->confDir.$confObj->templateDir;
-		self::$renderList  = $confObj->renderList;
+    	self::$objectList    = $confObj->objectList;
+    	self::$confDir       = $confObj->confDir;
+    	self::$resultDir     = $confObj->resultDir;
+    	self::$templateDir   = $confObj->confDir.$confObj->templateDir;
+		self::$renderList    = $confObj->renderList;
+		$envName             = $confObj->envName;
+		self::$env           = $confObj->envList->$env;
+		self::$errorCodeList = $confObj->errorCodeList;
+		self::$logDir		 = $confObj->logDir;
+		self::$logFormat     = $confObj->logFormat;
     	
     	$result = $this->grapDatabaseConfGet($confObj->graphDatabaseConfBasename);
     	

@@ -4,6 +4,7 @@ Trait TDesignCore {
 	
 	use TMerge;
 	use TTemplate;
+	use TTrace;
 
 	private $attributList = array();
 	private $elementList  = array();
