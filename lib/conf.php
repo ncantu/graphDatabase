@@ -25,12 +25,14 @@ class Conf {
     public static $errorCodeList;
     public static $logDir;
     public static $logFormat;
-    public static $securityLevel           = 0;
+    public static $securityLevel         = 0;
 
-    public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
+    public function __construct($input, $confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
 
-    	self::$appName = $appName;
-        $return        = $this->initConf($confAppFile);
+    	Conf::$appName   = $input->appName;
+    	Conf::$userId    = $input->userId;
+    	Conf::$mockState = $input->mockState;
+        $return          = $this->initConf($confAppFile);
         
         if($return === false) return false;
     }
