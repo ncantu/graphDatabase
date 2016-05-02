@@ -27,7 +27,9 @@ trait TTrace {
 			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
 			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
 	
-		$var                      = str_replace($sep, '\n', $var);
+
+	    // $varStr                   = json_encode($var);
+		// $varStr                   = str_replace($sep, '\n', $varStr);
 		$instance                 = get_class($this);
 		$code                     = $description->major->code.'-'.$description->secondary->code;
 		$this->traceSentence     .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->$errVerbose->msg;
@@ -224,9 +226,7 @@ trait TTrace {
 		$logFullCase[true]    = $errorVerboseFullSuffix;
 		$logFullCase[false]   = $errorVerboseShortSuffix;
 		$errVerbose           = $logFullCase[$logFullStatus];
-		
-		$var                  = json_encode($var);
-		
+				
 		$trace                = $this->traceLog($errorInfoLevel, $errorInfo->description, $line, $method, $class, $var, $errVerbose);
 		
 		$traceFileStatus      = $errorLevelInfo->traceFile;
