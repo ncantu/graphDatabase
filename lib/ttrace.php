@@ -41,7 +41,7 @@ trait TTrace {
 		$this->traceSentence      = str_replace($methodTag, $method, $this->traceSentence);
 		$this->traceSentence      = str_replace($classTag, $class, $this->traceSentence);
 		$this->traceSentence      = str_replace($instanceTag, $instance, $this->traceSentence);
-		$this->traceSentence      = $sep;
+		$this->traceSentence     .= $sep;
 		
 		$traceLog                 = new stdClass();
 		$traceLog->time           = time();
@@ -51,9 +51,7 @@ trait TTrace {
 		$traceLog->securityLevel  = Conf::$securityLevel;
 		$traceLog->errorInfoLevel = $errorInfoLevel;
 		$traceLog->majorCode      = $description->major->code;
-		$traceLog->majorMsg       = $description->major->$errVerbose->msg;
 		$traceLog->secondaryCode  = $description->secondary->code;
-		$traceLog->secondaryMsg   = $description->secondary->$errVerbose->msg;
 		
 		switch($errVerbose){
 		
@@ -67,6 +65,7 @@ trait TTrace {
 			break;
 			default: break;
 		}
+		
 		$this->traceLog = json_encode($traceLog).$sep;
 		
 		return true;
