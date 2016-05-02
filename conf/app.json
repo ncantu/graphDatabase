@@ -100,7 +100,7 @@
           "traceStdout": true,
           "logFull": true
         },
-        "startparam": {
+        "startParam": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
@@ -176,7 +176,7 @@
           "traceStdout": true,
           "logFull": true
         },
-        "startparam": {
+        "startParam": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
