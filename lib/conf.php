@@ -50,7 +50,7 @@ class Conf {
     	self::$templateDir   = $confObj->confDir.$confObj->templateDir;
 		self::$renderList    = $confObj->renderList;
 		$envName             = $confObj->envName;
-		self::$env           = $confObj->envList->$env;
+		self::$env           = $confObj->envList->$envName;
 		self::$errorCodeList = $confObj->errorCodeList;
 		self::$logDir		 = $confObj->logDir;
 		self::$logFormat     = $confObj->logFormat;

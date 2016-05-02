@@ -1,7 +1,7 @@
 <?php
 
 trait TTemplate {
-	
+		
 	private static $TEMPLATE_FUNCTION_PREFIX = 'template';
 	
 	public $templateList;

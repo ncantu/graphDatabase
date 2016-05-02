@@ -3,6 +3,7 @@
 class Trace {
 	
 	CONST VOID                     = '<<VOID>>';
+	CONST VOID_FUNC                = 'traceVoid';
 	CONST FILE_SEPARATPOR          = '-';
 	CONST FILE_EXT                 = '.log';
 	CONST FILE_WRITE_MODE          = 'a+';
