@@ -61,7 +61,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "start": {
@@ -70,7 +70,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "end": {
@@ -79,7 +79,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "endOK": {
@@ -88,7 +88,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "endValue": {
@@ -97,7 +97,7 @@
           "funcReturn": "value",
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "startParam": {
@@ -106,7 +106,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         }
       }
@@ -146,7 +146,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "start": {
@@ -155,7 +155,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "endOK": {
@@ -164,7 +164,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "endValue": {
@@ -173,7 +173,7 @@
           "funcReturn": "value",
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "startParam": {
@@ -182,7 +182,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         }
       }
@@ -240,7 +240,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "endValue": {
@@ -249,7 +249,7 @@
           "funcReturn": "value",
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         },
         "startParam": {
@@ -258,7 +258,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": true,
-          "traceStdout": true,
+          "traceStdout": false,
           "logFull": true
         }
       }
