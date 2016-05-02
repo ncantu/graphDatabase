@@ -30,7 +30,10 @@ trait TTrace {
 
 	    // $varStr                   = json_encode($var);
 		// $varStr                   = str_replace($sep, '\n', $varStr);
-		$instance                 = get_class($this);
+		
+	    if(is_object($this) === true) $instance = get_class($this);
+	    else                          $instance = 'STATIC '.__CLASS__;
+		
 		$code                     = $description->major->code.'-'.$description->secondary->code;
 		$this->traceSentence     .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->$errVerbose->msg;
 		$this->traceSentence     .= ' '.$description->secondary->$errVerbose->msg;
