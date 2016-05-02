@@ -1,7 +1,7 @@
 <?php
 
 trait TMerge{
-
+	
 	private static function mergeObj($default, $vals){
 	
 		if(empty($vals) === true) return false;

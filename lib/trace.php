@@ -19,6 +19,14 @@ class Trace {
 	CONST ERR_VERBOSE_SHORT_SUFFIX = 'short';
 	CONST ERR_VERBOSE_FULL_SUFFIX  = 'full';
 	CONST FILE_FUNC                = 'traceFile';
+	CONST CODE_FATAL               = '500-001';
+	CONST CODE_WARNING             = '500-101';
+	CONST CODE_NOTICE              = '200-101';
+	CONST CODE_INFO                = '200-001';
+	CONST CODE_START               = '200-201';
+	CONST CODE_START_PARAM         = '200-401';
+	CONST CODE_END_OK              = '200-301';
+	CONST CODE_END_VALUE           = '000-001';
 }
 
 ?>

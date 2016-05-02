@@ -2,10 +2,10 @@
 
 Trait TDesignCore {
 	
+	use TTrace;
 	use TMerge;
 	use TTemplate;
-	use TTrace;
-
+	
 	private $attributList = array();
 	private $elementList  = array();
 	private $labelName    = '';
@@ -14,21 +14,29 @@ Trait TDesignCore {
 	
 	public function designCoreConstuctInit($labelName, $elementName, $type){
 		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__, get_class($this));
+		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $labelName);
+		$this->traceStartparam( __LINE__, __METHOD__, __CLASS__, $elementName);
+		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $type);
+		
 		$this->labelName   = $labelName;
 		$this->elementName = $elementName;
 		$this->type        = $type;
 		
-		return true;
+		return $this->trace(Trace::CODE_END_OK, __LINE__, __METHOD__, __CLASS__, get_class($this));
 	}
 	public function designCoreConstuctFinish($render = false){
+		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__, get_class($this));
+		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $render);
+		
+		$result = true;
 		
 		if($render === true) {
 			
 			$result = $this->templateRender();
-				
-			if($result === false) return false;
 		}
-		return true;
+		return $this->traceTestFatalEnd(__LINE__, __METHOD__, __CLASS__, get_class($this), $result);
 	}
 }
 

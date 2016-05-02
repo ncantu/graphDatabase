@@ -7,22 +7,31 @@ class Element {
 	public $score = 0;
 
 	public function __construct($labelName, $elementName, $type, $list, $attributListDefault, $attributList, $render = false) {
+		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $labelName);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $elementName);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $type);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $list);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $attributListDefault);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $attributList);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $render);
 
 		$result = $this->designCoreConstuctInit($labelName, $elementName, $type);
 		
-		if($result === false) return false;
+		$this->traceTestFatal(__LINE__, __METHOD__, __CLASS__, $result);
 		
 		$this->score = Score::get($type, $list);
 		
-		if($this->score === false) return false;
+		$this->traceTestFatal(__LINE__, __METHOD__, __CLASS__, $this->score);
 
 		$this->attributList = new attributList($labelName, $elementName, $type, $attributListDefault, $attributList, $render);
 
-		if($this->attributList === false) return false;
+		$this->traceTestFatal(__LINE__, __METHOD__, __CLASS__, $this->attributList);
 
 		$result = $this->designCoreConstuctFinish($render);
 			
-		if($result === false) return false;
+		$this->traceTestFatalEnd(__LINE__, __METHOD__, __CLASS__, $result);
 	}
 }
 

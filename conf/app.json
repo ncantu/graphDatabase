@@ -1,238 +1,461 @@
 {
   "graphDatabaseConfBasename": "graphDatabase.json",
-  "renderList":{
-      "cypher":{
-	   "ext": ".cypher"
-	  },
-	  "html":{
-       "ext": ".html"
-	  }  
-  },  
-  "objectList":{
-    "action":{
-        "attributListDefault":"relationshipParamList"
+  "renderList": {
+    "cypher": {
+      "ext": ".cypher"
     },
-    "emotion":{
-        "attributListDefault":"relationshipParamList"  
+    "html": {
+      "ext": ".html"
+    }
+  },
+  "objectList": {
+    "action": {
+      "attributListDefault": "relationshipParamList"
     },
-    "label":{
-         "attributListDefault":"labelParamList"
-    }      
+    "emotion": {
+      "attributListDefault": "relationshipParamList"
+    },
+    "label": {
+      "attributListDefault": "labelParamList"
+    }
   },
   "confDir": "../conf/",
   "logDir": "../log/",
   "logFormat": "YmdH",
   "resultDir": "../result/",
   "templateDir": "template/",
-  "envName":"dev",
-  "envList":{
-    "dev":{
-  	  "errorLevelList":{
-	      "warning":{
-			"errorLevel":"2",
-			"httpCode":"500"
-			"funcReturn":false,
-			"exit":true,
-			"traceFile":true,
-	        "traceStdout":true,
-	        "logFull":true
-	      },
-	      "fatal":{
-            "errorLevel":"3",
-            "httpCode":"500"
-            "funcReturn":false,
-            "exit":true,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true,
-            "logFull":true
-          },
-          "notice":{
-            "errorLevel":"1",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true,
-            "logFull":true
-          },
-          "info":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true,
-            "logFull":true,
-            "logFull":true
-          },
-          "start":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true,
-            "logFull":true
-          },
-          "end":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true,
-            "logFull":true
-          }
-	   }
-	 },
-    "preProduction":{
-      "errorLevelList":{
-          "warning":{
-            "errorLevel":"2",
-            "httpCode":"500"
-            "funcReturn":false,
-            "exit":true,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true
-          },
-          "fatal":{
-            "errorLevel":"3",
-            "httpCode":"500"
-            "funcReturn":false,
-            "exit":true,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true
-          },
-          "notice":{
-            "errorLevel":"1",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true
-          },
-          "info":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true
-          },
-          "start":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true
-          },
-          "end":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":true,
-            "logFull":true
-          }
-       }
-   },
-    "production":{
-      "errorLevelList":{
-          "warning":{
-            "errorLevel":"2",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":true,
-            "traceStdout":false,
-            "logFull":false
-          },
-          "fatal":{
-            "errorLevel":"3",
-            "httpCode":"500"
-            "funcReturn":false,
-            "exit":true,
-            "traceFile":true,
-            "traceStdout":false,
-            "logFull":true
-          },
-          "notice":{
-            "errorLevel":"1",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":false,
-            "traceStdout":false,
-            "logFull":false
-          },
-          "info":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":false,
-            "traceStdout":false,
-            "logFull":false
-          },
-          "start":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":false,
-            "traceStdout":false,
-            "logFull":false
-          },
-          "end":{
-            "errorLevel":"0",
-            "httpCode":"200"
-            "funcReturn":true,
-            "exit":false,
-            "traceFile":false,
-            "traceStdout":false,
-            "logFull":false
-          }
-       }
-  }  
-  "errorCodeList":{
-      "000-000":{
-        "errorLevel":"fatal",
-        "description":{
-	        "major":{
-	            "short":{
-	                "msg":"",
-	                "code":""
-	            },
-	            "full":{
-	                "msg":"",
-	                "code":""
-	            }
-	        },
-	        "secondary":{
-	            "short":{
-	                "msg":"",
-	                "code":""
-	            },
-	            "full":{
-	                "msg":"",
-	                "code":""
-	            }
-	        }
+  "envName": "dev",
+  "envList": {
+    "dev": {
+      "errorLevelList": {
+        "warning": {
+          "errorLevel": "2",
+          "httpCode": "500",
+          "funcReturn": false,
+          "exit": true,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "fatal": {
+          "errorLevel": "3",
+          "httpCode": "500",
+          "funcReturn": false,
+          "exit": true,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "notice": {
+          "errorLevel": "1",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "info": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "start": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "end": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "endOK": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "endValue": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": "value",
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "startparam": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
         }
-        "securityLevel":"0",
       }
-   }
+    },
+    "preProduction": {
+      "errorLevelList": {
+        "warning": {
+          "errorLevel": "2",
+          "httpCode": "500",
+          "funcReturn": false,
+          "exit": true,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "fatal": {
+          "errorLevel": "3",
+          "httpCode": "500",
+          "funcReturn": false,
+          "exit": true,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "notice": {
+          "errorLevel": "1",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "info": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "start": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "endOK": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "endValue": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": "value",
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "startparam": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        }
+      }
+    },
+    "production": {
+      "errorLevelList": {
+        "warning": {
+          "errorLevel": "2",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": false,
+          "logFull": false
+        },
+        "fatal": {
+          "errorLevel": "3",
+          "httpCode": "500",
+          "funcReturn": false,
+          "exit": true,
+          "traceFile": true,
+          "traceStdout": false,
+          "logFull": true
+        },
+        "notice": {
+          "errorLevel": "1",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": false,
+          "traceStdout": false,
+          "logFull": false
+        },
+        "info": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": false,
+          "traceStdout": false,
+          "logFull": false
+        },
+        "start": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": false,
+          "traceStdout": false,
+          "logFull": false
+        },
+        "endOK": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "endValue": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": "value",
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        },
+        "startparam": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": true,
+          "traceStdout": true,
+          "logFull": true
+        }
+      }
+    }
+  },
+  "errorCodeList": {
+    "500-001": {
+      "errorLevel": "fatal",
+      "description": {
+        "major": {
+          "code": "500",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "error"
+          }
+        },
+        "secondary": {
+          "code": "001",
+          "short": {
+            "msg": "fatal"
+          },
+          "full": {
+            "msg": "__INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 5
+    },
+    "500-101": {
+      "errorLevel": "warning",
+      "description": {
+        "major": {
+          "code": "500",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "error"
+          }
+        },
+        "secondary": {
+          "code": "101",
+          "short": {
+            "msg": "warning"
+          },
+          "full": {
+            "msg": "__INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 5
+    },
+    "200-101": {
+      "errorLevel": "notice",
+      "description": {
+        "major": {
+          "code": "200",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "notification"
+          }
+        },
+        "secondary": {
+          "code": "101",
+          "short": {
+            "msg": "notice"
+          },
+          "full": {
+            "msg": "__INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 1
+    },
+    "200-001": {
+      "errorLevel": "info",
+      "description": {
+        "major": {
+          "code": "200",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "notification"
+          }
+        },
+        "secondary": {
+          "code": "001",
+          "short": {
+            "msg": "info"
+          },
+          "full": {
+            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 0
+    },
+    "200-201": {
+      "errorLevel": "start",
+      "description": {
+        "major": {
+          "code": "200",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "notification"
+          }
+        },
+        "secondary": {
+          "code": "201",
+          "short": {
+            "msg": "start"
+          },
+          "full": {
+            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 0
+    },
+    "200-401": {
+      "errorLevel": "startParam",
+      "description": {
+        "major": {
+          "code": "200",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "notification"
+          }
+        },
+        "secondary": {
+          "code": "201",
+          "short": {
+            "msg": "start param"
+          },
+          "full": {
+            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 0
+    },
+    "200-301": {
+      "errorLevel": "endOK",
+      "description": {
+        "major": {
+          "code": "200",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "notification"
+          }
+        },
+        "secondary": {
+          "code": "301",
+          "short": {
+            "msg": "endOK"
+          },
+          "full": {
+            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 0
+    },
+    "000-001": {
+      "errorLevel": "endValue",
+      "description": {
+        "major": {
+          "code": "200",
+          "short": {
+            "msg": "system"
+          },
+          "full": {
+            "msg": "notification"
+          }
+        },
+        "secondary": {
+          "code": "301",
+          "short": {
+            "msg": "endOK"
+          },
+          "full": {
+            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
+          }
+        }
+      },
+      "securityLevel": 0
+    }
   }
 }

@@ -11,10 +11,19 @@ class attribut {
 	private $elementName = '';
 
 	public function __construct($labelName, $elementName, $type, $name, $value, $def = '', $render = false) {
+		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $labelName);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $elementName);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $type);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $name);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $value);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $def);
+		$this->traceStartParam(__LINE__, __METHOD__, __CLASS__, $render);
 
 		$result = $this->designCoreConstuctInit($labelName, $elementName, $type);
 		
-		if($result === false) return false;
+		$this->traceTestFatal($line, $method, $class, $result);
 		
 		$this->k   						= $name;
 		$this->v   						= $value;
@@ -26,7 +35,7 @@ class attribut {
 				
 		$result = $this->designCoreConstuctFinish($render);
 		
-		if($result === false) return false;
+		$this->traceTestFatalEnd($line, $method, $class, $result);
 	}
 }
 
