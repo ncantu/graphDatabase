@@ -96,9 +96,9 @@ trait TTrace {
 			$errorVerboseFullSuffix = Trace::ERR_VERBOSE_FULL_SUFFIX,
 			$traceFileFunc = Trace::FILE_FUNC, $okState = Trace::CODE_INFO) {
 		
-		if($var === false) return $this->trace(Trace::CODE_FATAL, $line, $method, $class, $instance, $var, $funcVoid, $traceExitFunc, $traceStdoutFunc, $errorVerboseShortSuffix, $errorVerboseFullSuffix, $traceFileFunc);
+		if($result === false) return $this->trace(Trace::CODE_FATAL, $line, $method, $class, $instance, $result, $funcVoid, $traceExitFunc, $traceStdoutFunc, $errorVerboseShortSuffix, $errorVerboseFullSuffix, $traceFileFunc);
 		
-		return $this->trace($okState, $line, $method, $class, $var, $funcVoid, $traceExitFunc, $traceStdoutFunc, $errorVerboseShortSuffix, $errorVerboseFullSuffix, $traceFileFunc);
+		return $this->trace($okState, $line, $method, $class, $result, $funcVoid, $traceExitFunc, $traceStdoutFunc, $errorVerboseShortSuffix, $errorVerboseFullSuffix, $traceFileFunc);
 	}
 	
 	private function traceTestFatalEnd($line, $method, $class, $var = Trace::VOID, $funcVoid = Trace::VOID_FUNC,
