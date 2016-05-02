@@ -16,28 +16,28 @@ class attributList {
 
 		$result = $this->designCoreConstuctInit($labelName, $elementName, $type);
 		
-		$this->traceTestFatal($line, $method, $class, $result);
+		$this->traceTestFatal(__LINE__, __METHOD__, __CLASS__, $result);
 		
 		$attributList = self::mergeObj(Conf::$$attributListDefault, $attributList);
 		
-		$this->traceTestFatal($line, $method, $class, $attributList);
+		$this->traceTestFatal(__LINE__, __METHOD__, __CLASS__, $attributList);
 		
 		if(is_array($attributList) === false || is_object($attributList) === false) {
 			
-			$this->traceFatal($line, $method, $class, $attributList);
+			$this->traceFatal(__LINE__, __METHOD__, __CLASS__, $attributList);
 		}
 
 		foreach($attributList as $attributName => $attributValue){
 				
 			$attribut = new attribut($labelName, $elementName, $type, $attributName, $attributValue, $render);
 				
-			$this->traceTestFatal($line, $method, $class, $attribut);
+			$this->traceTestFatal(__LINE__, __METHOD__, __CLASS__, $attribut);
 				
 			$this->attributList[$attributName] = $attribut;
 		}
 		$result = $this->designCoreConstuctFinish($render);
 			
-		$this->traceTestFatalEnd($line, $method, $class, $result);
+		$this->traceTestFatalEnd(__LINE__, __METHOD__, __CLASS__, $result);
 	}
 }
 
