@@ -27,6 +27,7 @@ trait TTrace {
 			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
 			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
 	
+		$var                      = str_replace($sep, '\n', $var);
 		$instance                 = get_class($this);
 		$code                     = $description->major->code.'-'.$description->secondary->code;
 		$this->traceSentence     .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->$errVerbose->msg;
