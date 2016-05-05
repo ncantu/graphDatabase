@@ -2,6 +2,8 @@
 
 class Conf {
     
+	use TUser;
+	
     CONST CONSTRUCT_CONF_APP_FILE         = '../conf/app.json';
     CONST CONF_BASENAME_VAR_SUFFIX        = 'Basename';
     CONST CONF_CONTENT_VAR_SUFFIX         = 'Content';
@@ -9,10 +11,7 @@ class Conf {
     CONST HTML_TYPE                       = 'html';
     CONST TIMEZONE_DEFAULT                = 'UTC';
 
-    public static $securityLevel          = 0;
     public static $mock                   = false;
-    public static $userId;
-    public static $sessionId;
     public static $appName;
     public static $objectList;
     public static $actionList;
@@ -25,13 +24,8 @@ class Conf {
     public static $templateDir;
     public static $renderList;
     public static $env;
-    public static $errorCodeList;
     public static $timeZone;
-    public static $userIdCryptedT        = Trace::VOID;
-    public static $sessionIdCryptedT     = Trace::VOID;
-    public static $userIdCryptedS        = Trace::VOID;
-    public static $sessionIdCryptedS     = Trace::VOID;
-
+    
     public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
 
     	date_default_timezone_set(self::TIMEZONE_DEFAULT);
@@ -39,10 +33,10 @@ class Conf {
     	if(self::$mock !== false) {
 
     		$m             = self::$mock;
-    		self::$userId  = $m->userId;
-    		self::$appName = $m->appName;
+    		User::$id      = $m->userId;
+    		Conf::$appName = $m->appName;
     	}
-    	self::$userIdCryptedT = self::secC(self::$userId, Trace::SEC_F);
+    	User::$idCryptedT = self::secC(User::$id, Trace::SEC_F);
     	    	
         $return = $this->initConf($confAppFile);
         
@@ -93,16 +87,18 @@ class Conf {
     	
     	if($confObj === false) return false;
     	
-    	self::$objectList    = $confObj->objectList;
-    	self::$confDir       = $confObj->confDir;
-    	self::$resultDir     = $confObj->resultDir;
-    	self::$templateDir   = $confObj->confDir.$confObj->templateDir;
-		self::$renderList    = $confObj->renderList;
-		$envName             = $confObj->envName;
-		self::$env           = $confObj->envList->$envName;
-		self::$errorCodeList = $confObj->errorCodeList;
-		self::$timeZone      = $confObj->timeZone;
-		Session::$ttl        = $confObj->sessionTtl;
+    	self::$objectList      = $confObj->objectList;
+    	self::$confDir         = $confObj->confDir;
+    	self::$resultDir       = $confObj->resultDir;
+    	self::$templateDir     = $confObj->confDir.$confObj->templateDir;
+		self::$renderList      = $confObj->renderList;
+		$envName               = $confObj->envName;
+		self::$env             = $confObj->envList->$envName;
+		$confEnv               = self::$env;
+		Trace::$errorLevelList = $confEnv->errorLevelList;
+		Trace::$errorCodeList  = $confObj->errorCodeList;
+		self::$timeZone        = $confObj->timeZone;
+		Session::$ttl          = $confObj->sessionTtl;
 				
 		date_default_timezone_set(self::$timeZone);
     	

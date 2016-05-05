@@ -1,26 +1,28 @@
 <?php
 
-$libDir = '../lib/';
-$libExt = '.php';
-$env    = 'dev';
+$libDir      = '../lib/';
+$libClassExt = '.php';
+$libTraitExt = '.php';
 
-require_once $libDir.'ttrace'.$libExt;
-require_once $libDir.'trequest'.$libExt;
-require_once $libDir.'tmerge'.$libExt;
-require_once $libDir.'ttemplate'.$libExt;
-require_once $libDir.'tdesignCore'.$libExt;
+require_once $libDir.'tuser'.$libTraitExt;
+require_once $libDir.'ttrace'.$libTraitExt;
+require_once $libDir.'trequest'.$libTraitExt;
+require_once $libDir.'tmerge'.$libTraitExt;
+require_once $libDir.'ttemplate'.$libTraitExt;
+require_once $libDir.'tdesignCore'.$libTraitExt;
+require_once $libDir.'tuser'.$libClassExt;
 
-require_once $libDir.'trace'.$libExt;
-require_once $libDir.'session'.$libExt;
-require_once $libDir.'conf'.$libExt;
-require_once $libDir.'conf'.$libExt;
-require_once $libDir.'mock'.$libExt;
-require_once $libDir.'score'.$libExt;
-require_once $libDir.'template'.$libExt;
-
-require_once $libDir.'attribut'.$libExt;
-require_once $libDir.'attributList'.$libExt;
-require_once $libDir.'element'.$libExt;
-require_once $libDir.'elementList'.$libExt;
+require_once $libDir.'trace'.$libClassExt;
+require_once $libDir.'user'.$libClassExt;
+require_once $libDir.'session'.$libClassExt;
+require_once $libDir.'conf'.$libClassExt;
+require_once $libDir.'conf'.$libClassExt;
+require_once $libDir.'mock'.$libClassExt;
+require_once $libDir.'score'.$libClassExt;
+require_once $libDir.'template'.$libClassExt;
+require_once $libDir.'attribut'.$libClassExt;
+require_once $libDir.'attributList'.$libClassExt;
+require_once $libDir.'element'.$libClassExt;
+require_once $libDir.'elementList'.$libClassExt;
 
 ?>

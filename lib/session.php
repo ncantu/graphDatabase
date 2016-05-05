@@ -3,13 +3,11 @@
 class Session {
 	
 	use TTrace;
-	
-	CONST SECURITY_LEVEL_TAG  = 'securityLevel';
+
+	CONST HISTORY_TAG         = 'history';
 	CONST USER_ID_CRIPTED_TAG = 'userIdCrypted';
 	CONST ID_CRIPTED_TAG      = 'sessionIdCrypted';
 	CONST START_TIME_TAG      = 'startTime';
-	CONST END_TIME_TAG        = 'endTime';
-	CONST HISTORY_TAG         = 'history';
 	CONST SEC_F               = 'secS05052016';
 	
 	public static $ttl        = 20;
@@ -27,19 +25,20 @@ class Session {
 			Trace::traceInfoStatic(__LINE__, __METHOD__, __CLASS__);
 	
 			$_SESSION[self::HISTORY_TAG]        = array();
-			$_SESSION[self::SECURITY_LEVEL_TAG] = 0;
+			User::$securityLevel 			    = 0;
 			$_SESSION[self::START_TIME_TAG]     = time();
 			
-			self::securityLevelUpdate(5);
+			self::userSecurityLevelupdate(5);
 		}
 		else Trace::traceInfoStatic(__LINE__, __METHOD__, __CLASS__);
 		
-		Conf::$sessionIdCryptedT        = Conf::secC(session_id(), Trace::SEC_F);
-		Conf::$userIdCryptedS           = Conf::secC(Conf::$userId, Session::SEC_F);
-		Conf::$sessionIdCryptedS        = Conf::secC(session_id(), Session::SEC_F);
-		$_SESSION[self::ID_CRIPTED_TAG] = Conf::$userIdCryptedS;
-		$_SESSION[self::ID_CRIPTED_TAG] = Conf::$sessionIdCryptedS;
-		$history 						= $_SESSION;
+		User::$sessionIdCryptedT             = Conf::secC(session_id(), Trace::SEC_F);
+		User::$idCryptedS                    = Conf::secC(User::$id, Session::SEC_F);
+		User::$sessionIdCryptedS             = Conf::secC(session_id(), Session::SEC_F);
+		$_SESSION[self::USER_ID_CRIPTED_TAG] = User::$idCryptedS;
+		$_SESSION[self::ID_CRIPTED_TAG]      = User::$sessionIdCryptedS;
+		User::$sessionStart                  = $_SESSION[self::START_TIME_TAG];
+		$history 						     = $_SESSION;
 		
 		unset($history[self::HISTORY_TAG]);
 		
@@ -51,9 +50,13 @@ class Session {
 		
 		Trace::traceStartStatic(__LINE__, __METHOD__, __CLASS__);
 		
-		$_SESSION[self::END_TIME_TAG] = $_SESSION[self::START_TIME_TAG] + self::$ttl;
+		User::$sessionEnd = User::$sessionStart + self::$ttl;
+
+		$result = self::userSave();
 		
-		if($_SESSION[self::END_TIME_TAG] < time()) {
+		if($result === false) return false;
+		
+		if(User::$sessionEnd < time()) {
 		
 			session_destroy();
 			
@@ -61,22 +64,17 @@ class Session {
 		}
 		return Trace::traceEndOKStatic(__LINE__, __METHOD__, __CLASS__);
 	}
+	
 	public static function renew() {
 		
 		Trace::traceStartStatic(__LINE__, __METHOD__, __CLASS__);
 	
 		$_SESSION[self::START_TIME_TAG] = time();
-		$_SESSION[self::END_TIME_TAG]   = $_SESSION[self::START_TIME_TAG] + self::$ttl;
+		User::$sessionEnd               = User::$sessionStart + self::$ttl;
+		$result                         = self::userSave();
+		
+		if($result === false) return false;
 	
-		return Trace::traceEndOKStatic(__LINE__, __METHOD__, __CLASS__);
-	}
-			
-	static public function securityLevelUpdate($add){
-		
-		Trace::traceStartStatic(__LINE__, __METHOD__, __CLASS__);
-		
-		$_SESSION[self::SECURITY_LEVEL_TAG] += $add;
-		
 		return Trace::traceEndOKStatic(__LINE__, __METHOD__, __CLASS__);
 	}
 }

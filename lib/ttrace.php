@@ -2,8 +2,10 @@
 
 trait TTrace {
 	
-	private $traceSentence    = Trace::VOID;
-	private $traceLog         = Trace::VOID;
+	use TUser;
+	
+	private $traceSentence = Trace::VOID;
+	private $traceLog      = Trace::VOID;
 	
 	private function traceVoid($opt = ''){
 		
@@ -38,6 +40,7 @@ trait TTrace {
 		$this->traceSentence        .= $sep;
 		$traceLog                    = new stdClass();
 		$traceLog->time              = time();
+		$traceLog->env               = Conf::$env;
 		$traceLog->date              = date(Trace::DATE_FORMAT, $traceLog->time);
 		$traceLog->date_d            = date('d', $traceLog->time);
 		$traceLog->date_m            = date('m', $traceLog->time);
@@ -53,16 +56,13 @@ trait TTrace {
 		$traceLog->date_I            = date('I', $traceLog->time);
 		$traceLog->date_O            = date('O', $traceLog->time);
 		$traceLog->appName           = Conf::$appName;
-		$traceLog->mockStatus        = Conf::$mock->mockState;
-		$traceLog->securityLevel     = Conf::$securityLevel;
+		$traceLog->mock              = Conf::$mock;
+		$traceLog->securityLevel     = User::$securityLevel;
 		$traceLog->errorInfoLevel    = $errorInfoLevel;
 		$traceLog->majorCode         = $description->major->code;
 		$traceLog->secondaryCode     = $description->secondary->code;
-        $traceLog->userIdCryptedT    = Conf::$userIdCryptedT;
-        $traceLog->userIdCryptedS    = Conf::$userIdCryptedS;
-		$traceLog->sessionIdCryptedT = Conf::$sessionIdCryptedT;
-		$traceLog->sessionIdCryptedS = Conf::$sessionIdCryptedS;
-		
+        $traceLog->user              = get_class_vars('User');
+        
 		switch($errVerbose){
 		
 			case Trace::ERR_VERBOSE_FULL:
@@ -71,7 +71,8 @@ trait TTrace {
 				$traceLog->class    = $class;
 				$traceLog->instance = $instance;
 				$traceLog->varJson  = $var;
-				$traceLog->session  = $_SESSION;
+				
+				if(isset($_SESSION) === true) $traceLog->session = $_SESSION;
 				
 				switch ($errorInfoLevel) {
 					case 'notice':
@@ -110,14 +111,6 @@ trait TTrace {
 		return true;
 	}
 	
-	private function securityLevelupdate($usedId, $securityLevel){
-		
-		Conf::$securityLevel      += $securityLevel;
-		$_SESSION['securityLevel'] = Conf::$securityLevel;
-		
-		return $usedId.$securityLevel;
-	}
-	
 	private function traceFile($fileSeparator = Trace::FILE_SEPARATPOR, $fileExt = Trace::FILE_EXT, $fileWriteMode = Trace::FILE_WRITE_MODE) {
 				
 		switch(Conf::$mock) {
@@ -126,7 +119,7 @@ trait TTrace {
 			default: $prefix = Conf::$mock->mockState.$fileSeparator;
 		 	 break;
 		}
-		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.Conf::$appName.$fileSeparator.Conf::$userId.$fileExt;
+		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.Conf::$appName.$fileSeparator.User::$id.$fileExt;
 		$fp       = fopen($filename, $fileWriteMode);
 		
 		if($fp === false) return false;
@@ -279,14 +272,13 @@ trait TTrace {
 		$this->traceSentence = '';
 		$this->traceLog      = '';
 		
-		$confErrorCodeList   = Conf::$errorCodeList;
+		$confErrorCodeList   = Trace::$errorCodeList;
 		$errorInfo           = $confErrorCodeList->$code;
 		$errorInfoLevel      = $errorInfo->errorLevel;
 		
-		$this->securityLevelupdate(Conf::$userId, $errorInfo->securityLevel);
-		
-		$confEnv              = Conf::$env;
-		$errorLevelInfo       = $confEnv->errorLevelList->$errorInfoLevel;
+		Self::UserSecurityLevelupdate($errorInfo->securityLevel);
+
+		$errorLevelInfo       = Trace::$errorLevelList->$errorInfoLevel;
 				
 		$returnValue          = $errorLevelInfo->funcReturn;
 		$returnCase[true]     = true;
