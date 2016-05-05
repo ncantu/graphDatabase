@@ -2,6 +2,8 @@
 
 class Trace {
 	
+	use TTrace;
+	
 	CONST VOID                     = '<<VOID>>';
 	CONST VOID_FUNC                = 'traceVoid';
 	CONST FILE_SEPARATPOR          = '-';

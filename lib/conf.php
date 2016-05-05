@@ -2,15 +2,15 @@
 
 class Conf {
     
-    CONST CONSTRUCT_CONF_APP_FILE  = '../conf/app.json';
-    CONST CONF_BASENAME_VAR_SUFFIX = 'Basename';
-    CONST CONF_CONTENT_VAR_SUFFIX  = 'Content';
-    CONST CYPHER_TYPE              = 'cypher';
-    CONST HTML_TYPE                = 'html';
-    CONST TIMEZONE_DEFAULT         = 'UTC';
+    CONST CONSTRUCT_CONF_APP_FILE         = '../conf/app.json';
+    CONST CONF_BASENAME_VAR_SUFFIX        = 'Basename';
+    CONST CONF_CONTENT_VAR_SUFFIX         = 'Content';
+    CONST CYPHER_TYPE                     = 'cypher';
+    CONST HTML_TYPE                       = 'html';
+    CONST TIMEZONE_DEFAULT                = 'UTC';
 
-    public static $securityLevel = 0;
-    public static $mock          = false;
+    public static $securityLevel          = 0;
+    public static $mock                   = false;
     public static $userId;
     public static $sessionId;
     public static $appName;
@@ -26,49 +26,55 @@ class Conf {
     public static $renderList;
     public static $env;
     public static $errorCodeList;
-    public static $logDir;
-    public static $logFormat;
     public static $timeZone;
-    
-    private static $userIdCryptedT;
-    private static $userIdCryptedS;
-    private static $sessionIdCryptedT;
-    private static $sessionIdCryptedS;
+    public static $userIdCryptedT        = Trace::VOID;
+    public static $sessionIdCryptedT     = Trace::VOID;
+    public static $userIdCryptedS        = Trace::VOID;
+    public static $sessionIdCryptedS     = Trace::VOID;
 
     public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
 
     	date_default_timezone_set(self::TIMEZONE_DEFAULT);
     	
     	if(self::$mock !== false) {
-    	
-    		self::$userId  = self::$mock->userId;
-    		self::$appName = self::$mock->appName;
+
+    		$m             = self::$mock;
+    		self::$userId  = $m->userId;
+    		self::$appName = $m->appName;
     	}
-    	self::$userIdCryptedT    = $this->secC(self::$userId, Trace::SEC_F);
-    	self::$sessionIdCryptedT = $this->secC(SID, Trace::SEC_F);
-    	
-		$session = Session::init();
-				
-		if($session === false) return false;
+    	self::$userIdCryptedT = self::secC(self::$userId, Trace::SEC_F);
     	    	
         $return = $this->initConf($confAppFile);
         
         if($return === false) return false;
+    	
+		$return = Session::init();
+				
+		if($return === false) return false;
+    }
+    
+    public function secSaltGen($basename){
+    	
+    	$salt = mcrypt_create_iv(16, MCRYPT_DEV_URANDOM);
+    	 
+    	return file_put_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.$basename, $salt);
     }
         
-    private function secC($value, $secF){
+    public static function secC($value, $secF){
     	
+    	$salt       = file_get_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'secSalt');
     	$keyBase    = file_get_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.$secF);
-    	$key        = pack('H*', hash('SHA256', $keyBase, true));
+    	$iterations = 1000;
+    	$key        = pack('H*', hash_pbkdf2('sha256', $keyBase, $salt, $iterations, 32));
     	$iv_size    = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
     	$iv         = mcrypt_create_iv($iv_size, MCRYPT_RAND);
     	$ciphertext = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $value, MCRYPT_MODE_CBC, $iv);
     	$ciphertext = $iv . $ciphertext;
-    	
+    	 
     	return base64_encode($ciphertext);
     }
     
-    private function secD($value){
+    public static function secD($value){
     	
     	$ciphertext_dec = base64_decode($value);
     	$iv_dec         = substr($ciphertext_dec, 0, $iv_size);
@@ -95,8 +101,6 @@ class Conf {
 		$envName             = $confObj->envName;
 		self::$env           = $confObj->envList->$envName;
 		self::$errorCodeList = $confObj->errorCodeList;
-		self::$logDir		 = $confObj->logDir;
-		self::$logFormat     = $confObj->logFormat;
 		self::$timeZone      = $confObj->timeZone;
 		Session::$ttl        = $confObj->sessionTtl;
 				

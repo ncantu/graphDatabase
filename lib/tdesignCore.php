@@ -14,7 +14,7 @@ Trait TDesignCore {
 	
 	public function designCoreConstuctInit($labelName, $elementName, $type){
 		
-		$this->traceStart(__LINE__, __METHOD__, __CLASS__, get_class($this));
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
 		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $labelName);
 		$this->traceStartparam( __LINE__, __METHOD__, __CLASS__, $elementName);
 		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $type);
@@ -23,11 +23,11 @@ Trait TDesignCore {
 		$this->elementName = $elementName;
 		$this->type        = $type;
 		
-		return $this->trace(Trace::CODE_END_OK, __LINE__, __METHOD__, __CLASS__, get_class($this));
+		return $this->traceEndOK(__LINE__, __METHOD__, __CLASS__);
 	}
 	public function designCoreConstuctFinish($render = false){
 		
-		$this->traceStart(__LINE__, __METHOD__, __CLASS__, get_class($this));
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
 		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $render);
 		
 		$result = true;
@@ -36,7 +36,7 @@ Trait TDesignCore {
 			
 			$result = $this->templateRender();
 		}
-		return $this->traceTestFatalEnd(__LINE__, __METHOD__, __CLASS__, get_class($this), $result);
+		return $this->traceTestFatalEnd(__LINE__, __METHOD__, __CLASS__, $result);
 	}
 }
 

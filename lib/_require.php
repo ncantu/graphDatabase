@@ -4,14 +4,13 @@ $libDir = '../lib/';
 $libExt = '.php';
 $env    = 'dev';
 
-require_once $libDir.'trace'.$libExt;
-
 require_once $libDir.'ttrace'.$libExt;
 require_once $libDir.'trequest'.$libExt;
 require_once $libDir.'tmerge'.$libExt;
 require_once $libDir.'ttemplate'.$libExt;
 require_once $libDir.'tdesignCore'.$libExt;
 
+require_once $libDir.'trace'.$libExt;
 require_once $libDir.'session'.$libExt;
 require_once $libDir.'conf'.$libExt;
 require_once $libDir.'conf'.$libExt;
