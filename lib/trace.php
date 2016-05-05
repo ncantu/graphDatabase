@@ -7,6 +7,9 @@ class Trace {
 	CONST FILE_SEPARATPOR          = '-';
 	CONST FILE_EXT                 = '.log';
 	CONST FILE_WRITE_MODE          = 'a+';
+	CONST FILE_FUNC                = 'traceFile';
+    CONST FILE_DATE_FORMAT         = 'YmdH';
+    CONST DIR                      = '../log/';
 	CONST ERR_VERBOSE_SHORT        = 'short';
 	CONST ERR_VERBOSE_FULL         = 'full';
 	CONST SEP                      = "\n";
@@ -19,7 +22,6 @@ class Trace {
 	CONST STDOUT_FUNC              = 'traceStdout';
 	CONST ERR_VERBOSE_SHORT_SUFFIX = 'short';
 	CONST ERR_VERBOSE_FULL_SUFFIX  = 'full';
-	CONST FILE_FUNC                = 'traceFile';
 	CONST CODE_FATAL               = '500-001';
 	CONST CODE_WARNING             = '500-101';
 	CONST CODE_NOTICE              = '200-101';
@@ -28,6 +30,7 @@ class Trace {
 	CONST CODE_START_PARAM         = '200-401';
 	CONST CODE_END_OK              = '200-301';
 	CONST CODE_END_VALUE           = '000-001';
+	CONST SEC_F                    = 'secT05052016';
 }
 
 ?>

@@ -1,4 +1,6 @@
 {
+  "sessionTtl":1296000,
+  "timeZone":"UTC",
   "graphDatabaseConfBasename": "graphDatabase.json",
   "renderList": {
     "cypher": {
@@ -20,8 +22,6 @@
     }
   },
   "confDir": "../conf/",
-  "logDir": "../log/",
-  "logFormat": "YmdH",
   "resultDir": "../result/",
   "templateDir": "template/",
   "envName": "dev",

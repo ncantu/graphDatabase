@@ -2,8 +2,8 @@
 
 trait TTrace {
 	
-	private $traceSentence = Trace::VOID;
-	private $traceLog      = Trace::VOID;
+	private $traceSentence    = Trace::VOID;
+	private $traceLog         = Trace::VOID;
 	
 	private function traceVoid($opt = ''){
 		
@@ -26,54 +26,96 @@ trait TTrace {
 			$errorInfoLevel, $description, $line, $method, $class, $var = Trace::VOID,
 			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
 			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
-	
-
-	    // $varStr                   = json_encode($var);
-		// $varStr                   = str_replace($sep, '\n', $varStr);
 		
 	    if(is_object($this) === true) $instance = get_class($this);
 	    else                          $instance = 'STATIC '.__CLASS__;
 		
-		$code                     = $description->major->code.'-'.$description->secondary->code;
-		$this->traceSentence     .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->$errVerbose->msg;
-		$this->traceSentence     .= ' '.$description->secondary->$errVerbose->msg;
-		$this->traceSentence      = str_replace($lineTag, $line, $this->traceSentence);
-		$this->traceSentence      = str_replace($methodTag, $method, $this->traceSentence);
-		$this->traceSentence      = str_replace($classTag, $class, $this->traceSentence);
-		$this->traceSentence      = str_replace($instanceTag, $instance, $this->traceSentence);
-		$this->traceSentence     .= $sep;
-		
-		$traceLog                 = new stdClass();
-		$traceLog->time           = time();
-		$traceLog->date           = date(Trace::DATE_FORMAT, $traceLog->time);
-		$traceLog->appName        = Conf::$appName;
-		$traceLog->mockStatus     = Conf::$mockState;
-		$traceLog->securityLevel  = Conf::$securityLevel;
-		$traceLog->errorInfoLevel = $errorInfoLevel;
-		$traceLog->majorCode      = $description->major->code;
-		$traceLog->secondaryCode  = $description->secondary->code;
+		$code                       = $description->major->code.'-'.$description->secondary->code;
+		$this->traceSentence       .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->$errVerbose->msg;
+		$this->traceSentence       .= ' '.$description->secondary->$errVerbose->msg;
+		$this->traceSentence        = str_replace($lineTag, $line, $this->traceSentence);
+		$this->traceSentence        = str_replace($methodTag, $method, $this->traceSentence);
+		$this->traceSentence        = str_replace($classTag, $class, $this->traceSentence);
+		$this->traceSentence        = str_replace($instanceTag, $instance, $this->traceSentence);
+		$this->traceSentence       .= $sep;
+		$traceLog                   = new stdClass();
+		$traceLog->time             = time();
+		$traceLog->date             = date(Trace::DATE_FORMAT, $traceLog->time);
+		$traceLog->date_d           = date('d', $traceLog->time);
+		$traceLog->date_m           = date('m', $traceLog->time);
+		$traceLog->date_Y           = date('Y', $traceLog->time);
+		$traceLog->date_H           = date('H', $traceLog->time);
+		$traceLog->date_i           = date('i', $traceLog->time);
+		$traceLog->date_s           = date('s', $traceLog->time);
+		$traceLog->date_w           = date('w', $traceLog->time);
+		$traceLog->date_z           = date('z', $traceLog->time);
+		$traceLog->date_c           = date('c', $traceLog->time);
+		$traceLog->date_u           = date('u', $traceLog->time);
+		$traceLog->date_e           = date('e', $traceLog->time);
+		$traceLog->date_I           = date('I', $traceLog->time);
+		$traceLog->date_O           = date('O', $traceLog->time);
+		$traceLog->appName          = Conf::$appName;
+		$traceLog->mockStatus       = Conf::$mockState;
+		$traceLog->securityLevel    = Conf::$securityLevel;
+		$traceLog->errorInfoLevel   = $errorInfoLevel;
+		$traceLog->majorCode        = $description->major->code;
+		$traceLog->secondaryCode    = $description->secondary->code;
+        $traceLog->userIdCryptedT   = Conf::$userIdCryptedT;
+        $traceLog->userIdCryptedS   = Conf::$userIdCryptedS;
+		$raceLog->sessionIdCryptedT = Conf::$sessionIdCryptedT;
+		$raceLog->sessionIdCryptedS = Conf::$sessionIdCryptedS;
 		
 		switch($errVerbose){
 		
 			case Trace::ERR_VERBOSE_FULL:
-			$traceLog->userId         = Conf::$userId;
-			$traceLog->line           = $line;
-			$traceLog->method         = $method;
-			$traceLog->class          = $class;
-			$traceLog->instance       = $instance;
-			$traceLog->varJson        = $var;
+				$traceLog->line     = $line;
+				$traceLog->method   = $method;
+				$traceLog->class    = $class;
+				$traceLog->instance = $instance;
+				$traceLog->varJson  = $var;
+				$traceLog->session  = $_SESSION;
+				
+				switch ($errorInfoLevel) {
+					case 'notice':
+							$btLimit            = 3;
+							$traceLog->request  = Trace::VOID;
+							$traceLog->context 	= Trace::VOID;
+							$traceLog->conf 	= Trace::VOID;
+						break;
+					case 'warning':
+							$btLimit            = 5;
+							$traceLog->request  = $_REQUEST;
+							$traceLog->context 	= $_SERVER;
+							$traceLog->conf 	= get_class_vars('Conf');
+						break;
+					case 'fatal':
+							$btLimit            = 0;
+							$traceLog->request  = $_REQUEST;
+							$traceLog->context 	= $_SERVER;
+							$traceLog->conf 	= get_class_vars('Conf');
+				        break;
+					default:
+							$btLimit            = 1;
+							$traceLog->request  = Trace::VOID;
+							$traceLog->context 	= Trace::VOID;
+							$traceLog->conf 	= Trace::VOID;
+						break;
+				}
+				$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, $btLimit);
 			break;
-			default: break;
+				default: break;
 		}
-		
-		$this->traceLog = json_encode($traceLog).$sep;
+		$this->traceLog  = json_encode($traceLog);
+		$this->traceLog  = str_replace($sep, '{{\n}}', $this->traceLog);
+		$this->traceLog .= $sep;
 		
 		return true;
 	}
 	
 	private function securityLevelupdate($usedId, $securityLevel){
 		
-		Conf::$securityLevel += $securityLevel;
+		Conf::$securityLevel      += $securityLevel;
+		$_SESSION['securityLevel'] = Conf::$securityLevel;
 		
 		return $usedId.$securityLevel;
 	}
@@ -86,7 +128,7 @@ trait TTrace {
 			default: $prefix = Conf::$mockState.$fileSeparator;
 		 	 break;
 		}
-		$filename = Conf::$logDir.$prefix.date(Conf::$logFormat, time()).$fileSeparator.Conf::$appName.$fileSeparator.Conf::$userId.$fileExt;
+		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.Conf::$appName.$fileSeparator.Conf::$userId.$fileExt;
 		$fp       = fopen($filename, $fileWriteMode);
 		
 		if($fp === false) return false;
