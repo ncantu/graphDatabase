@@ -39,29 +39,30 @@ trait TTrace {
 		$this->traceSentence         = str_replace($instanceTag, $instance, $this->traceSentence);
 		$this->traceSentence        .= $sep;
 		$traceLog                    = new stdClass();
-		$traceLog->time              = time();
-		$traceLog->env               = Conf::$env;
-		$traceLog->date              = date(Trace::DATE_FORMAT, $traceLog->time);
-		$traceLog->date_d            = date('d', $traceLog->time);
-		$traceLog->date_m            = date('m', $traceLog->time);
-		$traceLog->date_Y            = date('Y', $traceLog->time);
-		$traceLog->date_H            = date('H', $traceLog->time);
-		$traceLog->date_i            = date('i', $traceLog->time);
-		$traceLog->date_s            = date('s', $traceLog->time);
-		$traceLog->date_w            = date('w', $traceLog->time);
-		$traceLog->date_z            = date('z', $traceLog->time);
-		$traceLog->date_c            = date('c', $traceLog->time);
-		$traceLog->date_u            = date('u', $traceLog->time);
-		$traceLog->date_e            = date('e', $traceLog->time);
-		$traceLog->date_I            = date('I', $traceLog->time);
-		$traceLog->date_O            = date('O', $traceLog->time);
-		$traceLog->appName           = Conf::$appName;
-		$traceLog->mock              = Conf::$mock;
-		$traceLog->securityLevel     = User::$securityLevel;
+		$traceLog->env               = Conf::$envName;
 		$traceLog->errorInfoLevel    = $errorInfoLevel;
 		$traceLog->majorCode         = $description->major->code;
 		$traceLog->secondaryCode     = $description->secondary->code;
-        $traceLog->user              = get_class_vars('User');
+		$traceLog->time              = new stdClass();
+		$traceLog->time->time        = time();
+		$traceLog->time->date        = date(Trace::DATE_FORMAT, $traceLog->time->time);
+		$traceLog->time->d           = date('d', $traceLog->time->time);
+		$traceLog->time->m           = date('m', $traceLog->time->time);
+		$traceLog->time->Y           = date('Y', $traceLog->time->time);
+		$traceLog->time->H           = date('H', $traceLog->time->time);
+		$traceLog->time->i           = date('i', $traceLog->time->time);
+		$traceLog->time->s           = date('s', $traceLog->time->time);
+		$traceLog->time->w           = date('w', $traceLog->time->time);
+		$traceLog->time->z           = date('z', $traceLog->time->time);
+		$traceLog->time->c           = date('c', $traceLog->time->time);
+		$traceLog->time->u           = date('u', $traceLog->time->time);
+		$traceLog->time->e           = date('e', $traceLog->time->time);
+		$traceLog->time->I           = date('I', $traceLog->time->time);
+		$traceLog->time->O           = date('O', $traceLog->time->time);
+		$traceLog->mock              = get_class_vars('Mock');
+        $traceLog->app               = get_class_vars('App');
+		$traceLog->user              = get_class_vars('User');
+		$traceLog->session			 = new stdClass();
         
 		switch($errVerbose){
 		
@@ -72,40 +73,48 @@ trait TTrace {
 				$traceLog->instance = $instance;
 				$traceLog->varJson  = $var;
 				
-				if(isset($_SESSION) === true) $traceLog->session = $_SESSION;
-				
 				switch ($errorInfoLevel) {
 					case 'notice':
-							$btLimit            = 3;
 							$traceLog->request  = Trace::VOID;
 							$traceLog->context 	= Trace::VOID;
 							$traceLog->conf 	= Trace::VOID;
+							$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 3);
 						break;
 					case 'warning':
-							$btLimit            = 5;
 							$traceLog->request  = $_REQUEST;
 							$traceLog->context 	= $_SERVER;
 							$traceLog->conf 	= get_class_vars('Conf');
+							$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 5);
+				
+							if(isset($_SESSION) === true) {
+
+								$traceLog->session->client = $_SESSION;
+								$traceLog->session->app    = get_class_vars('Session');
+							}
 						break;
 					case 'fatal':
-							$btLimit            = 0;
 							$traceLog->request  = $_REQUEST;
 							$traceLog->context 	= $_SERVER;
 							$traceLog->conf 	= get_class_vars('Conf');
+							$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 0);
+				
+							if(isset($_SESSION) === true) {
+								
+								$traceLog->session->client = $_SESSION;
+								$traceLog->session->app    = get_class_vars('Session');
+							}
 				        break;
 					default:
-							$btLimit            = 1;
 							$traceLog->request  = Trace::VOID;
 							$traceLog->context 	= Trace::VOID;
 							$traceLog->conf 	= Trace::VOID;
 						break;
 				}
-				$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, $btLimit);
 			break;
 				default: break;
 		}
 		$this->traceLog  = json_encode($traceLog);
-		$this->traceLog  = str_replace($sep, '{{\n}}', $this->traceLog);
+		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
 		$this->traceLog .= $sep;
 		
 		return true;
@@ -113,13 +122,13 @@ trait TTrace {
 	
 	private function traceFile($fileSeparator = Trace::FILE_SEPARATPOR, $fileExt = Trace::FILE_EXT, $fileWriteMode = Trace::FILE_WRITE_MODE) {
 				
-		switch(Conf::$mock) {
+		switch(Mock::$mock) {
 			case false: $prefix = '';
 			 break;
-			default: $prefix = Conf::$mock->mockState.$fileSeparator;
+			default: $prefix = Mock::$mock->mockState.$fileSeparator;
 		 	 break;
 		}
-		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.Conf::$appName.$fileSeparator.User::$id.$fileExt;
+		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.App::$name.$fileSeparator.User::$id.$fileExt;
 		$fp       = fopen($filename, $fileWriteMode);
 		
 		if($fp === false) return false;

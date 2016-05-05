@@ -15,6 +15,7 @@ class Trace {
 	CONST ERR_VERBOSE_SHORT        = 'short';
 	CONST ERR_VERBOSE_FULL         = 'full';
 	CONST SEP                      = "\n";
+	CONST SEP_REPLACE              = '{{\n}}';
 	CONST LINE_TAG                 = '__LINE__';
 	CONST METHOD_TAG               = '__METHOD__';
 	CONST CLASS_TAG                = '__CLASS__';

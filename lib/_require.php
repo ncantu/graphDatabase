@@ -13,6 +13,7 @@ require_once $libDir.'tdesignCore'.$libTraitExt;
 require_once $libDir.'tuser'.$libClassExt;
 
 require_once $libDir.'trace'.$libClassExt;
+require_once $libDir.'app'.$libClassExt;
 require_once $libDir.'user'.$libClassExt;
 require_once $libDir.'session'.$libClassExt;
 require_once $libDir.'conf'.$libClassExt;

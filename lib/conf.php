@@ -11,8 +11,6 @@ class Conf {
     CONST HTML_TYPE                       = 'html';
     CONST TIMEZONE_DEFAULT                = 'UTC';
 
-    public static $mock                   = false;
-    public static $appName;
     public static $objectList;
     public static $actionList;
     public static $emotionList;
@@ -23,16 +21,20 @@ class Conf {
     public static $resultDir;
     public static $templateDir;
     public static $renderList;
-    public static $env;
+    public static $envName;
     public static $timeZone;
+    
+    private static $appName;
     
     public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
 
     	date_default_timezone_set(self::TIMEZONE_DEFAULT);
     	
-    	if(self::$mock !== false) {
+    	Conf::$appName = App::$name;
+    	
+    	if(Mock::$mock !== false) {
 
-    		$m             = self::$mock;
+    		$m             = Mock::$mock;
     		User::$id      = $m->userId;
     		Conf::$appName = $m->appName;
     	}
@@ -45,6 +47,8 @@ class Conf {
 		$return = Session::init();
 				
 		if($return === false) return false;
+		
+		App::$name = Conf::$appName;
     }
     
     public function secSaltGen($basename){
@@ -93,8 +97,8 @@ class Conf {
     	self::$templateDir     = $confObj->confDir.$confObj->templateDir;
 		self::$renderList      = $confObj->renderList;
 		$envName               = $confObj->envName;
-		self::$env             = $confObj->envList->$envName;
-		$confEnv               = self::$env;
+		self::$envName         = $envName;
+		$confEnv               = $confObj->envList->$envName;
 		Trace::$errorLevelList = $confEnv->errorLevelList;
 		Trace::$errorCodeList  = $confObj->errorCodeList;
 		self::$timeZone        = $confObj->timeZone;

@@ -4,19 +4,25 @@ class Mock {
 	
 	use TRequest;
 	
-	CONST MOCK_DIR = '../mock/';
-	CONST MOCK_EXT = '.json';
-	CONST MOCK_TAG = 'mockState';
+	CONST DIR           = '../mock/';
+	CONST FILE_EXT      = '.json';
+	CONST TAG           = 'mockState';
+	
+    public static $mock = false;
 		
 	public function __construct() {
 		
-		$mockValue  = self::val(self::MOCK_TAG);
-		Conf::$mock = false;
+		$mockValue  = self::requestVal(self::TAG);
+		self::$mock = false;
 		
 		if($mockValue === false) return false;
+		
+		$file = self::DIR.$mockValue.self::FILE_EXT;
+		
+		if(is_file($file) === false) return false;
 
-		$input      = file_get_contents(self::MOCK_DIR.$mockValue.self::MOCK_EXT);
-		Conf::$mock = json_decode($input);
+		$input      = file_get_contents(self::DIR.$mockValue.self::FILE_EXT);
+		self::$mock = json_decode($input);
 	}
 }
 

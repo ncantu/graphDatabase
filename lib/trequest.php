@@ -2,7 +2,7 @@
 
 trait TRequest {
 	
-	static function val($tag) {
+	static function requestVal($tag) {
 		
 		if(isset($_REQUEST[$tag]) === true && empty($_REQUEST[$tag]) === false && $_REQUEST[$tag] !== false ) {
 		
