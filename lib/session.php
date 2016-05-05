@@ -2,6 +2,8 @@
 
 class Session {
 	
+	use TTrace;
+	
 	CONST SECURITY_LEVEL_TAG  = 'securityLevel';
 	CONST USER_ID_CRIPTED_TAG = 'userIdCrypted';
 	CONST ID_CRIPTED_TAG      = 'sessionIdCrypted';
@@ -11,15 +13,19 @@ class Session {
 	CONST HISTORY_TAG         = 'count';
 	CONST SEC_F               = 'secS05052016';
 	
-	public static $ttl        = 30;
+	public static $ttl        = 20;
 		
 	public static function init() {
+		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
 		 
 		ini_set('session.use_trans_sid', false);
 		ini_set('url_rewriter.tags','');
 		session_start();
 	
 		if (isset($_SESSION[self::HISTORY_TAG]) === false || empty($_SESSION[self::HISTORY_TAG]) === true) {
+			
+			$this->traceInfo(__LINE__, __METHOD__, __CLASS__);
 	
 			$_SESSION[self::HISTORY_TAG]        = array();
 			$_SESSION[self::COUNT_TAG]          = 0;
@@ -28,6 +34,8 @@ class Session {
 			
 			$this->securityLevelUpdate(5);
 		}
+		else $this->traceInfo(__LINE__, __METHOD__, __CLASS__);
+		
 		Conf::$userIdCryptedS                   = $this->secC(Conf::$userId, Session::SEC_F);
 		Conf::$sessionIdCryptedS                = $this->secC(SID, Session::SEC_F);
 		$_SESSION[self::ID_CRIPTED_TAG]         = Conf::$userIdCryptedS;
@@ -43,27 +51,35 @@ class Session {
 	}
 	public static function expireUpdate() {
 		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
+		
 		$_SESSION[self::START_END_TAG] = $_SESSION[self::START_TIME_TAG] + self::$ttl;
 		
 		if($_SESSION[self::START_END_TAG] < time()) {
 		
 			session_destroy();
 			
-			return false;
+			return $this->traceEndValue(__LINE__, __METHOD__, __CLASS__, false);
 		}
-		return true;
+		return $this->traceEndOK(__LINE__, __METHOD__, __CLASS__);
 	}
 	public static function renew() {
+		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
 	
 		$_SESSION[self::START_TIME_TAG] = time();
 		$_SESSION[self::START_END_TAG]  = $_SESSION[self::START_TIME_TAG] + self::$ttl;
 	
-		return true;
+		return $this->traceEndOK(__LINE__, __METHOD__, __CLASS__);
 	}
 			
 	static public function securityLevelUpdate($add){
 		
+		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
+		
 		$_SESSION[self::SECURITY_LEVEL_TAG] += $add;
+		
+		return $this->traceEndOK(__LINE__, __METHOD__, __CLASS__);
 	}
 }
 
