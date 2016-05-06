@@ -4,12 +4,13 @@ class Conf {
     
 	use TUser;
 	
-    CONST CONSTRUCT_CONF_APP_FILE         = '../conf/app.json';
     CONST CONF_BASENAME_VAR_SUFFIX        = 'Basename';
     CONST CONF_CONTENT_VAR_SUFFIX         = 'Content';
     CONST CYPHER_TYPE                     = 'cypher';
     CONST HTML_TYPE                       = 'html';
     CONST TIMEZONE_DEFAULT                = 'UTC';
+    CONST DIR                             = '../conf/';
+    CONST EXT                             = '.json';
 
     public static $objectList;
     public static $actionList;
@@ -17,16 +18,13 @@ class Conf {
     public static $labelList;
     public static $labelParamList;
     public static $relationshipParamList;
-    public static $confDir;
     public static $resultDir;
-    public static $templateDir;
-    public static $renderList;
     public static $envName;
     public static $timeZone;
     
     private static $appName;
     
-    public function __construct($confAppFile = self::CONSTRUCT_CONF_APP_FILE) {
+    public function __construct() {
 
     	date_default_timezone_set(self::TIMEZONE_DEFAULT);
     	
@@ -40,7 +38,7 @@ class Conf {
     	}
     	User::$idCryptedT = self::secC(User::$id, Trace::SEC_F);
     	    	
-        $return = $this->initConf($confAppFile);
+        $return = $this->initConf(App::$name);
         
         if($return === false) return false;
     	
@@ -83,7 +81,7 @@ class Conf {
     
     private function initConf($confAppFile){
     	
-    	$confContent = file_get_contents($confAppFile);
+    	$confContent = file_get_contents(self::DIR.$confAppFile.self::EXT);
     	
     	if($confContent === false) return false;
     	
@@ -92,10 +90,8 @@ class Conf {
     	if($confObj === false) return false;
     	
     	self::$objectList      = $confObj->objectList;
-    	self::$confDir         = $confObj->confDir;
     	self::$resultDir       = $confObj->resultDir;
-    	self::$templateDir     = $confObj->confDir.$confObj->templateDir;
-		self::$renderList      = $confObj->renderList;
+		Template::$renderList  = $confObj->renderList;
 		$envName               = $confObj->envName;
 		self::$envName         = $envName;
 		$confEnv               = $confObj->envList->$envName;
@@ -115,7 +111,7 @@ class Conf {
     
     private function confGet($confBasenameVar){
     
-	    $confgraphDatabaseFile    = self::$confDir.$confBasenameVar;
+	    $confgraphDatabaseFile    = self::DIR.$confBasenameVar;
 	    $confgraphDatabaseContent = file_get_contents($confgraphDatabaseFile);
 	    
 	    if($confgraphDatabaseContent === false) return false;

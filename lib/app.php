@@ -11,6 +11,26 @@ class App {
 	
 	public static $name = false;
 	
+	public static function init($appClass) {
+		
+		new App();
+		new Mock();
+		
+		$result = new Conf();
+		
+		if($result === false) return false;
+		
+		$result = Session::renew();
+		
+		if($result === false) return false;
+		
+		$app = new $appClass();
+		
+		if($result === false) return false;
+		
+		return $app;
+	}
+
 	public function __construct() {
 	
 		self::$name = false;

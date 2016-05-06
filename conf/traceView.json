@@ -3,27 +3,13 @@
   "timeZone":"UTC",
   "graphDatabaseConfBasename": "graphDatabase.json",
   "renderList": {
-    "cypher": {
-      "ext": ".cypher"
-    },
     "html": {
-      "ext": ".html"
+      "ext": ".html",
+      "dir": "html/"
     }
   },
-  "objectList": {
-    "action": {
-      "attributListDefault": "relationshipParamList"
-    },
-    "emotion": {
-      "attributListDefault": "relationshipParamList"
-    },
-    "label": {
-      "attributListDefault": "labelParamList"
-    }
-  },
-  "confDir": "../conf/",
+  "objectList": {},
   "resultDir": "../result/",
-  "templateDir": "template/",
   "envName": "dev",
   "envList": {
     "dev": {
@@ -33,54 +19,54 @@
           "httpCode": "500",
           "funcReturn": false,
           "exit": true,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": true,
-          "logFull": true
+          "logFull": false
         },
         "fatal": {
           "errorLevel": "3",
           "httpCode": "500",
           "funcReturn": false,
           "exit": true,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": true,
-          "logFull": true
+          "logFull": false
         },
         "notice": {
           "errorLevel": "1",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": true,
-          "logFull": true
+          "logFull": false
         },
         "info": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "start": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "end": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "endOK": {
           "errorLevel": "0",
@@ -96,67 +82,76 @@
           "httpCode": "200",
           "funcReturn": "value",
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "startParam": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         }
       }
     },
     "preProduction": {
       "errorLevelList": {
-        "warning": {
+         "warning": {
           "errorLevel": "2",
           "httpCode": "500",
           "funcReturn": false,
           "exit": true,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": true,
-          "logFull": true
+          "logFull": false
         },
         "fatal": {
           "errorLevel": "3",
           "httpCode": "500",
           "funcReturn": false,
           "exit": true,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": true,
-          "logFull": true
+          "logFull": false
         },
         "notice": {
           "errorLevel": "1",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": true,
-          "logFull": true
+          "logFull": false
         },
         "info": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "start": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
+        },
+        "end": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": false,
+          "traceStdout": false,
+          "logFull": false
         },
         "endOK": {
           "errorLevel": "0",
@@ -172,30 +167,30 @@
           "httpCode": "200",
           "funcReturn": "value",
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "startParam": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         }
       }
     },
     "production": {
       "errorLevelList": {
-        "warning": {
+          "warning": {
           "errorLevel": "2",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
+          "httpCode": "500",
+          "funcReturn": false,
+          "exit": true,
+          "traceFile": false,
+          "traceStdout": true,
           "logFull": false
         },
         "fatal": {
@@ -203,9 +198,9 @@
           "httpCode": "500",
           "funcReturn": false,
           "exit": true,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
+          "traceFile": false,
+          "traceStdout": true,
+          "logFull": false
         },
         "notice": {
           "errorLevel": "1",
@@ -213,7 +208,7 @@
           "funcReturn": true,
           "exit": false,
           "traceFile": false,
-          "traceStdout": false,
+          "traceStdout": true,
           "logFull": false
         },
         "info": {
@@ -226,6 +221,15 @@
           "logFull": false
         },
         "start": {
+          "errorLevel": "0",
+          "httpCode": "200",
+          "funcReturn": true,
+          "exit": false,
+          "traceFile": false,
+          "traceStdout": false,
+          "logFull": false
+        },
+        "end": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
@@ -248,18 +252,18 @@
           "httpCode": "200",
           "funcReturn": "value",
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         },
         "startParam": {
           "errorLevel": "0",
           "httpCode": "200",
           "funcReturn": true,
           "exit": false,
-          "traceFile": true,
+          "traceFile": false,
           "traceStdout": false,
-          "logFull": true
+          "logFull": false
         }
       }
     }

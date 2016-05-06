@@ -128,7 +128,10 @@ trait TTrace {
 			default: $prefix = Mock::$mock->mockState.$fileSeparator;
 		 	 break;
 		}
-		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.App::$name.$fileSeparator.User::$id.$fileExt;
+		$userId   = filter_var(User::$idCryptedT, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+		$userId   = str_replace('/', 'I', $userId);
+		$userId   = str_replace('\\', 'I', $userId);
+		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.$userId.$fileExt;
 		$fp       = fopen($filename, $fileWriteMode);
 		
 		if($fp === false) return false;

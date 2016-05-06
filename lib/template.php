@@ -2,11 +2,15 @@
 
 class Template {
 	
+	CONST DIR = '../conf/template/';
+	
 	use TMerge;
+	
+    public static $renderList;
 	
 	private static $TAG_PREFFIX = '{';
 	private static $TAG_SUFFIX  = '}';
-	
+		
 	public $type    = '';
 	public $content = '';
 	public $file    = false;
@@ -18,7 +22,7 @@ class Template {
 		$this->content = $content;
 	}
 
-	public function template($default, $vals){
+	public function template($default, $vals) {
 	
 		$vals = self::mergeObj($default, $vals);
 	
@@ -30,23 +34,25 @@ class Template {
 		return $content;
 	}
 
-    private static function confTemplateGet($typeDir, $confBasenameVar){
+    private static function confTemplateGet($type, $confBasenameVar) {
 
-        $confTemplateDir     = Conf::$confDir.Conf::$templateDir;
-        $typeConfTemplateDir = $confTemplateDir.Conf::$$typeDir;
-        $content             = file_get_contents($typeConfTemplateDir.Conf::$$confBasenameVar);
+        $dir  = self::DIR.self::$renderList->$type->dir;
+        $ext  = self::$renderList->$type->ext;
+        $file = $dir.$confBasenameVar.$ext;
+        
+        $content = file_get_contents($file);
         
         if($content === 0) return false;
             
         return $content;
     }
 
-    public static function cypherConfTemplateGet($confBasenameVar, $type = Conf::CYPHER_TYPE){
+    public static function cypherConfTemplateGet($confBasenameVar, $type = Conf::CYPHER_TYPE) {
                         
         return self::confTemplateGet($type, $confBasenameVar);
     }
 
-    public static function htmlConfTemplateGet($confBasenameVar, $type = seConflf::HTML_TYPE){
+    public static function htmlConfTemplateGet($confBasenameVar, $type = Conf::HTML_TYPE) {
                         
         return  self::confTemplateGet($type, $confBasenameVar);
     }
