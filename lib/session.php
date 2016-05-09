@@ -14,6 +14,7 @@ class Session {
 	public static $startTime;
 	public static $endTime;
 	public static $userId;
+	public static $appId;
 	public static $id;
 	public static $idCryptedS;
 	public static $idCryptedT;
@@ -34,6 +35,7 @@ class Session {
 			User::$securityLevel 			= 0;
 			$_SESSION[self::START_TIME_TAG] = time();
 			self::$userId					= User::$id;
+			self::$appId					= App::$id;
 			self::$id		         		= session_id();
 			self::$appId		         	= App::id;
 			

@@ -8,6 +8,108 @@ trait TTrace {
 	private $traceLog      = Trace::VOID;
 	private $cypherLog     = Trace::VOID;
 	
+	private $t_time;
+	private $t_u;
+	private $t_c;
+	private $t_e;
+	private $t_i;
+	private $t_O;
+	private $t_SERVER_REQUEST_TIME_FLOAT;
+	private $t_SERVER_REQUEST_TIME;
+	private $tdy_z;
+	private $ty_Y;
+	private $tmon_m;
+	private $tdm_d;
+	private $th_H;
+	private $tmin_i;
+	private $ts_s;
+	private $code_major;
+	private $code_minor;
+	private $l_baktrace;
+	private $code_level;
+	private $req_SERVER_SCRIPT_NAME;
+	private $req_SERVER_REQUEST_URI;
+	private $req_SERVER_QUERY_STRING;
+	private $req_SERVER_REQUEST_METHOD;
+	private $req_SERVER_SERVER_PROTOCOL;
+	private $req_SERVER_GATEWAY_INTERFACE;
+	private $req_SERVER_REQUEST_SCHEME;
+	private $req_SERVER_SCRIPT_FILENAME;
+	private $req_SERVER_SERVER_PORT;
+	private $req_SERVER_SERVER_ADDR;
+	private $req_SERVER_HTTP_ACCEPT_ENCODING;
+	private $req_SERVER_HTTP_UPGRADE_INSECURE_REQUESTS;
+	private $req_SERVER_HTTP_ACCEPT;
+	private $req_SERVER_HTTP_CONNECTION;
+	private $req_SERVER_HTTP_HOST;
+	private $req_SERVER_FCGI_ROLE;
+	private $req_SERVER_PHP_SELF;
+	private $req_REQUEST_JSON;
+	private $req_cpu;
+	private $req_memory;
+	private $req_diskSpace;
+	private $req_pid;
+	private $i_name;
+	private $c_name;
+	private $m_name;
+	private $l_name;
+	private $r_json;
+	private $app_name;
+	private $app_id;
+	private $app_json;
+	private $app_ttl;
+	private $app_idCryptedT;
+	private $app_idCryptedS;
+	private $hApp_SERVER_PATH;
+	private $hApp_SERVER_SYSTEMROOT;
+	private $hApp_SERVER_COMSPEC;
+	private $hApp_SERVER_PATHEXT;
+	private $hApp_SERVER_WINDIR;
+	private $hApp_SERVER_SYSTEMDRIVE;
+	private $hApp_SERVER_TEMP;
+	private $hApp_SERVER_TMP;
+	private $hApp_SERVER_QT_PLUGIN_PATH;
+	private $hApp_SERVER_PHPRC;
+	private $hApp_SERVER_PHP_FCGI_MAX_REQUESTS;
+	private $hApp_SERVER__FCGI_SHUTDOWN_EVENT_;
+	private $hApp_SERVER_DOCUMENT_ROOT;
+	private $hApp_SERVER_SERVER_NAME;
+	private $hApp_SERVER_CONTEXT_PREFIX;
+	private $hApp_SERVER_SERVER_SOFTWARE;
+	private $hApp_SERVER_SERVER_SIGNATURE;
+	private $hApp_SERVER_CONTEXT_DOCUMENT_ROOT;
+	private $hApp_SERVER_SystemRoot;
+	private $hApp_json;
+	private $env_name;
+	private $env_SERVER_SERVER_ADMIN;
+	private $cf_json;
+	private $u_securityLevel;
+	private $u_idCryptedT;
+	private $u_idCryptedS;
+	private $u_id;
+	private $u_json;
+	private $hClient_SERVER_REMOTE_PORT;
+	private $hClient_SERVER_REMOTE_ADDR;
+	private $hClient_SERVER_HTTP_USER_AGENT;
+	private $ss_id;
+	private $ss_startTime;
+	private $ss_endTime;
+	private $ss_SERVER_HTTP_COOKIE;
+	private $ss_SESSION_JSON;
+	private $ss_idCryptedT;
+	private $ss_idCryptedS;
+	private $ss_json;
+	private $ss_userId;
+	private $ss_appId;
+	private $ssClient_userIdCryptedS;
+	private $ssClient_userIdCryptedT;
+	private $ssApp_appIdCryptedS;
+	private $ssApp_appIdCryptedT;
+	private $mock_userId;
+	private $mock_appName;
+	private $mock_mockName;
+	private $mock_json;
+	
 	private function traceVoid($opt = ''){
 		
 		return;
@@ -25,13 +127,26 @@ trait TTrace {
 		exit();
 	}
 	
-	private function traceLog(
-			$errorInfoLevel, $description, $line, $method, $class, $var = Trace::VOID,
-			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
-			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
+	private function traceSysVar($sysVar) {
 		
-	    $instance = get_class($this);
-		$code     = $description->major->code.'-'.$description->secondary->code;
+		return str_replace("'", "\'", json_encode($sysVar));
+	}
+	
+	private function traceSysVarItem($sysVar, $itemName) {
+		
+		if(isset($sysVar[$itemName]) === false) return Trace::VOID;
+		
+		return $sysVar[$itemName];
+	}
+	
+	private function traceClassExport($className) {
+		
+		return str_replace("'", "\'", json_encode($className));
+	}
+	
+	private function traceSentence($description, $errVerbose, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG) {
+		
+		$code = $description->major->code.'-'.$description->secondary->code;
 		
 		switch($errVerbose){
 		
@@ -41,183 +156,279 @@ trait TTrace {
 				break;
 			default: break;
 		}
-		$this->traceSentence        .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->short->msg;
-		$this->traceSentence        .= ' '.$description->secondary->short->msg;
-		$this->traceSentence         = str_replace($lineTag, $line, $this->traceSentence);
-		$this->traceSentence         = str_replace($methodTag, $method, $this->traceSentence);
-		$this->traceSentence         = str_replace($classTag, $class, $this->traceSentence);
-		$this->traceSentence         = str_replace($instanceTag, $instance, $this->traceSentence);
-		$this->traceSentence        .= $sep;
-		$traceLog                    = new stdClass();
-		$traceLog->env               = Conf::$envName;
-		$traceLog->errorInfoLevel    = $errorInfoLevel;
-		$traceLog->majorCode         = $description->major->code;
-		$traceLog->secondaryCode     = $description->secondary->code;
-		$traceLog->time              = new stdClass();
-		$traceLog->time->time        = time();
-		$traceLog->time->date        = date(Trace::DATE_FORMAT, $traceLog->time->time);
-		$traceLog->time->d           = date('d', $traceLog->time->time);
-		$traceLog->time->m           = date('m', $traceLog->time->time);
-		$traceLog->time->Y           = date('Y', $traceLog->time->time);
-		$traceLog->time->H           = date('H', $traceLog->time->time);
-		$traceLog->time->i           = date('i', $traceLog->time->time);
-		$traceLog->time->s           = date('s', $traceLog->time->time);
-		$traceLog->time->W           = date('W', $traceLog->time->time);
-		$traceLog->time->w           = date('w', $traceLog->time->time);
-		$traceLog->time->z           = date('z', $traceLog->time->time);
-		$traceLog->time->c           = date('c', $traceLog->time->time);
-		$traceLog->time->u           = date('u', $traceLog->time->time);
-		$traceLog->time->e           = date('e', $traceLog->time->time);
-		$traceLog->time->I           = date('I', $traceLog->time->time);
-		$traceLog->time->O           = date('O', $traceLog->time->time);
-		$traceLog->mock              = get_class_vars('Mock');
-        $traceLog->app               = get_class_vars('App');
-		$traceLog->user              = get_class_vars('User');
-		$traceLog->session			 = new stdClass();
-        
+		$this->traceSentence .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->short->msg;
+		$this->traceSentence .= ' '.$description->secondary->short->msg;
+		$this->traceSentence  = str_replace($lineTag, $line, $this->traceSentence);
+		$this->traceSentence  = str_replace($methodTag, $method, $this->traceSentence);
+		$this->traceSentence  = str_replace($classTag, $class, $this->traceSentence);
+		$this->traceSentence  = str_replace($instanceTag, $instance, $this->traceSentence);
+		$this->traceSentence .= $sep;
+		
+		return true;
+	}
+	
+	private function traceTime() {
+		
+		$this->t_time                      = time();
+		$this->t_u                         = date('u', $traceLog->time->time);
+		$this->t_c                         = date('c', $traceLog->time->time);
+		$this->t_e                         = date('e', $traceLog->time->time);
+		$this->t_i                         = date('I', $traceLog->time->time);
+		$this->t_O                         = date('O', $traceLog->time->time);
+		$this->t_SERVER_REQUEST_TIME_FLOAT = $this->traceSysVarItem($_SERVER, 'REQUEST_TIME_FLOAT');
+		$this->t_SERVER_REQUEST_TIME_FLOAT = $this->traceSysVarItem($_SERVER, 'REQUEST_TIME');
+		$this->tdy_z                       = date('z', $traceLog->time->time);
+		$this->ty_Y                        = date('Y', $traceLog->time->time);
+		$this->tmon_m                      = date('m', $traceLog->time->time);
+		$this->tdm_d                       = date('d', $traceLog->time->time);
+		$this->th_H                        = date('H', $traceLog->time->time);
+		$this->tmin_i                      = date('i', $traceLog->time->time);
+		$this->ts_s                        = date('s', $traceLog->time->time);
+		
+		return true;
+	}
+	
+	private function traceCode() {
+		
+		$this->code_major = $description->major->code;
+		$this->code_minor = $description->secondary->code;
+		$this->code_level = $errorInfoLevel;
+		$this->i_name     = $line;
+		$this->c_name     = $class;
+		$this->m_name     = $method;
+		$this->l_name     = $line;
+		$this->r_json     = get_class($this);
+		$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 10);
+		
+		return true;
+	}
+	
+	public function traceRequest() {
+		
+		$this->req_SERVER_SCRIPT_NAME                    = $this->traceSysVarItem($_SERVER, 'SCRIPT_NAME');
+		$this->req_SERVER_REQUEST_URI                    = $this->traceSysVarItem($_SERVER, 'REQUEST_URI');
+		$this->req_SERVER_QUERY_STRING                   = $this->traceSysVarItem($_SERVER, 'QUERY_STRING');
+		$this->req_SERVER_REQUEST_METHOD                 = $this->traceSysVarItem($_SERVER, 'REQUEST_METHOD');
+		$this->req_SERVER_SERVER_PROTOCOL                = $this->traceSysVarItem($_SERVER, 'SERVER_PROTOCOL');
+		$this->req_SERVER_GATEWAY_INTERFACE              = $this->traceSysVarItem($_SERVER, 'GATEWAY_INTERFACE');
+		$this->req_SERVER_REQUEST_SCHEME                 = $this->traceSysVarItem($_SERVER, 'REQUEST_SCHEME');
+		$this->req_SERVER_SCRIPT_FILENAME                = $this->traceSysVarItem($_SERVER, 'SCRIPT_FILENAME');
+		$this->req_SERVER_SERVER_PORT                    = $this->traceSysVarItem($_SERVER, 'SERVER_PORT');
+		$this->req_SERVER_SERVER_ADDR                    = $this->traceSysVarItem($_SERVER, 'SERVER_ADDR');
+		$this->req_SERVER_HTTP_ACCEPT_ENCODING           = $this->traceSysVarItem($_SERVER, 'HTTP_ACCEPT_ENCODING');
+		$this->req_SERVER_HTTP_UPGRADE_INSECURE_REQUESTS = $this->traceSysVarItem($_SERVER, 'HTTP_UPGRADE_INSECURE_REQUESTS');
+		$this->req_SERVER_HTTP_ACCEPT                    = $this->traceSysVarItem($_SERVER, 'HTTP_ACCEPT');
+		$this->req_SERVER_HTTP_CONNECTION                = $this->traceSysVarItem($_SERVER, 'HTTP_CONNECTION');
+		$this->req_SERVER_HTTP_HOST                      = $this->traceSysVarItem($_SERVER, 'HTTP_HOST');
+		$this->req_SERVER_FCGI_ROLE                      = $this->traceSysVarItem($_SERVER, 'FCGI_ROLE');
+		$this->req_SERVER_PHP_SELF                       = $this->traceSysVarItem($_SERVER, 'PHP_SELF');
+		$this->req_REQUEST_JSON                          = $this->traceSysVar($_REQUEST);
+		$this->req_cpu                                   = sys_getloadavg()[0];
+		$this->req_memory                                = memory_get_usage(true);
+		$this->req_diskSpace                             = disk_free_space('.');
+		$this->req_pid                                   = getmypid();
+		
+		return true;
+	}
+	
+	private function traceApp() {
+		
+		$this->app_name       = App::$name;
+		$this->app_id         = App::$id;
+		$this->app_ttl 	      = App::$ttl;
+		$this->app_idCryptedT = App::$idCryptedST;
+		$this->app_idCryptedS = App::$idCryptedS;
+		$this->app_json       = $this->traceClassExport('App');
+		
+		return true;
+	}
+	
+	private function traceHostApp() {
+		
+		$this->hApp_SERVER_PATH                  = $this->traceSysVarItem($_SERVER, 'PATH');
+		$this->hApp_SERVER_SYSTEMROOT            = $this->traceSysVarItem($_SERVER, 'SYSTEMROOT');
+		$this->hApp_SERVER_COMSPEC               = $this->traceSysVarItem($_SERVER, 'COMSPEC');
+		$this->hApp_SERVER_PATHEXT               = $this->traceSysVarItem($_SERVER, 'PATHEXT');
+		$this->hApp_SERVER_WINDIR                = $this->traceSysVarItem($_SERVER, 'WINDIR');
+		$this->hApp_SERVER_SYSTEMDRIVE           = $this->traceSysVarItem($_SERVER, 'SYSTEMDRIVE');
+		$this->hApp_SERVER_TEMP                  = $this->traceSysVarItem($_SERVER, 'TEMP');
+		$this->hApp_SERVER_TMP                   = $this->traceSysVarItem($_SERVER, 'TMP');
+		$this->hApp_SERVER_QT_PLUGIN_PATH        = $this->traceSysVarItem($_SERVER, 'QT_PLUGIN_PATH');
+		$this->hApp_SERVER_PHPRC                 = $this->traceSysVarItem($_SERVER, 'PHPRC');
+		$this->hApp_SERVER_PHP_FCGI_MAX_REQUESTS = $this->traceSysVarItem($_SERVER, 'PHP_FCGI_MAX_REQUESTS');
+		$this->hApp_SERVER__FCGI_SHUTDOWN_EVENT_ = $this->traceSysVarItem($_SERVER, '_FCGI_SHUTDOWN_EVENT_');
+		$this->hApp_SERVER_DOCUMENT_ROOT         = $this->traceSysVarItem($_SERVER, 'DOCUMENT_ROOT');
+		$this->hApp_SERVER_SERVER_NAME           = $this->traceSysVarItem($_SERVER, 'SERVER_NAME');
+		$this->hApp_SERVER_CONTEXT_PREFIX        = $this->traceSysVarItem($_SERVER, 'CONTEXT_PREFIX');
+		$this->hApp_SERVER_SERVER_SOFTWARE       = $this->traceSysVarItem($_SERVER, 'SERVER_SOFTWARE');
+		$this->hApp_SERVER_SERVER_SIGNATURE      = $this->traceSysVarItem($_SERVER, 'SERVER_SIGNATURE');
+		$this->hApp_SERVER_CONTEXT_DOCUMENT_ROOT = $this->traceSysVarItem($_SERVER, 'CONTEXT_DOCUMENT_ROOT');
+		$this->hApp_SERVER_SystemRoot            = $this->traceSysVarItem($_SERVER, 'SystemRoot');
+		$this->hApp_json                         = $this->traceSysVar($_SERVER);
+		
+		return true;
+	}
+	
+	private function traceEnv() {
+		
+		$this->env_name                = Conf::$envName;
+		$this->env_SERVER_SERVER_ADMIN = $this->traceSysVarItem($_SERVER, 'SERVER_ADMIN');
+		
+		return true;
+	}
+	
+	private function traceConf() {
+		
+		$this->cf_json = $this->traceClassExport('Conf');
+		
+		return true;
+	}
+	
+	private function traceUser() {
+		
+		$this->u_securityLevel = User::$securityLevel;
+		$this->u_idCryptedT    = User::$idCryptedT;
+		$this->u_idCryptedS    = User::$idCryptedS;
+		$this->u_id            = User::$id;
+		$this->u_json          = $this->traceClassExport('User');
+		
+		return true;
+	}
+	
+	private function traceHostClient() {
+		
+		$this->hClient_SERVER_REMOTE_PORT     = $this->traceSysVarItem($_SERVER, 'REMOTE_PORT');
+		$this->hClient_SERVER_REMOTE_ADDR     = $this->traceSysVarItem($_SERVER, 'REMOTE_ADDR');
+		$this->hClient_SERVER_HTTP_USER_AGENT = $this->traceSysVarItem($_SERVER, 'HTTP_USER_AGENT');
+		
+		return true;
+	}
+	
+	private function traceSession() {
+		
+		$this->ss_id                 = Session::$id;
+		$this->ss_startTime          = Session::$startTime;
+		$this->ss_endTime            = Session::$endTime;
+		$this->ss_SERVER_HTTP_COOKIE = $this->traceSysVarItem($_SERVER, 'HTTP_COOKIE');
+		
+		if(isset($_SESSION) === true) $this->ss_SESSION_JSON = $this->traceSysVar($_SESSION);
+		
+		$this->ss_idCryptedT           = Session::$idCryptedT;
+		$this->ss_idCryptedS           = Session::$idCryptedS;
+		$this->ss_json                 = $this->traceClassExport('Session');
+		$this->ss_userId               = Session::$userId;
+		$this->ss_appId				   = Session::$appId;
+		$this->ssClient_userIdCryptedS = User::$idCryptedS;
+		$this->ssClient_userIdCryptedT = User::$idCryptedT;
+		$this->ssApp_appIdCryptedS     = App::$idCryptedS;
+		$this->ssApp_appIdCryptedT     = App::$idCryptedT;
+		
+		return true;
+	}
+	
+	private function traceMock() {
+		
+		$this->mock_userId   = Mock::$userId;
+		$this->mock_appName  = Mock::$appName;
+		$this->mock_mockName = Mock::$name;
+		$this->mock_json     = $this->traceClassExport('Mock');
+		
+		return true;
+	}
+	
+	private function traceShort() {
+		
+		$this->line             = Trace::VOID;
+		$this->method           = Trace::VOID;
+		$this->class            = Trace::VOID;
+		$this->instance         = Trace::VOID;
+		$this->varJson          = Trace::VOID;
+		$this->app_json         = Trace::VOID;
+		$this->req_REQUEST_JSON = Trace::VOID;
+		$this->u_json	        = Trace::VOID;
+		$this->ss_json	        = Trace::VOID;
+		$this->ss_SESSION_JSON	= Trace::VOID;
+		$this->cf_json 	        = Trace::VOID;
+		$this->l_baktrace       = Trace::VOID;
+		
+		return true;
+	}
+	
+	
+	private function traceLog(
+			$errorInfoLevel, $description, $line, $method, $class, $var = Trace::VOID,
+			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
+			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
+				
+	    $this->traceSentence($description, $errVerbose, $lineTag, $methodTag, $classTag, $instanceTag);
+		$this->traceTime();
+		$this->traceCode();
+		$this->traceRequest();
+		$this->traceApp();
+		$this->traceHostApp();
+		$this->traceEnv();
+		$this->traceConf();
+		$this->traceUser();
+		$this->traceHostClient();
+		$this->traceSession();
+		$this->traceMock();
+		
 		switch($errVerbose){
 		
+			case Trace::ERR_VERBOSE_SHORT:
+				$this->traceShort();
+				break;
 			case Trace::ERR_VERBOSE_FULL:
-				$traceLog->line     = $line;
-				$traceLog->method   = $method;
-				$traceLog->class    = $class;
-				$traceLog->instance = $instance;
-				$traceLog->varJson  = $var;
-				
+		
 				switch ($errorInfoLevel) {
 					case 'notice':
-							$traceLog->request  = Trace::VOID;
-							$traceLog->context 	= Trace::VOID;
-							$traceLog->conf 	= Trace::VOID;
-							$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 3);
+						$this->line             = Trace::VOID;
+						$this->method           = Trace::VOID;
+						$this->class            = Trace::VOID;
+						$this->instance         = Trace::VOID;
+						$this->varJson          = Trace::VOID;
+						$this->app_json         = Trace::VOID;
+						$this->req_REQUEST_JSON = Trace::VOID;
+						$this->u_json	        = Trace::VOID;
+						$this->ss_json	        = Trace::VOID;
+						$this->ss_SESSION_JSON	= Trace::VOID;
+						$this->cf_json 	        = Trace::VOID;
+						$this->l_baktrace       = Trace::VOID;
+						$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 3);
 						break;
 					case 'warning':
-							$traceLog->request  = $_REQUEST;
-							$traceLog->context 	= $_SERVER;
-							$traceLog->conf 	= get_class_vars('Conf');
-							$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 5);
-				
-							if(isset($_SESSION) === true) {
-
-								$traceLog->session->client = $_SESSION;
-								$traceLog->session->app    = get_class_vars('Session');
-							}
+						$this->app_json         = Trace::VOID;
+						$this->req_REQUEST_JSON = Trace::VOID;
+						$this->u_json	        = Trace::VOID;
+						$this->ss_json	        = Trace::VOID;
+						$this->ss_SESSION_JSON	= Trace::VOID;
+						$this->l_baktrace       = Trace::VOID;
+						$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 5);
 						break;
 					case 'fatal':
-							$traceLog->request  = $_REQUEST;
-							$traceLog->context 	= $_SERVER;
-							$traceLog->conf 	= get_class_vars('Conf');
-							$traceLog->baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 0);
-				
-							if(isset($_SESSION) === true) {
-								
-								$traceLog->session->client = $_SESSION;
-								$traceLog->session->app    = get_class_vars('Session');
-							}
-				        break;
+						$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 0);
+						break;
 					default:
-							$traceLog->request = Trace::VOID;
-							$traceLog->context = Trace::VOID;
-							$traceLog->conf    = Trace::VOID;
+						$this->traceShort();
 						break;
 				}
-			break;
-				default: break;
+				break;
+			default: break;
 		}
-		$this->traceLog  = $traceLog;
-		$this->cypherLog = file_get_contents(Trace::CYPHER_TEMPLATE);
-		$this->cypherLog = str_replace('{t_time}', $this->traceLog->time->time, $this->cypherLog);
-		$this->cypherLog = str_replace('{t_u}', $this->traceLog->time->u, $this->cypherLog);
-		$this->cypherLog = str_replace('{t_c}', $this->traceLog->time->c, $this->cypherLog);
-		$this->cypherLog = str_replace('{t_e}', $this->traceLog->time->e, $this->cypherLog);
-		$this->cypherLog = str_replace('{t_i}', $this->traceLog->time->i, $this->cypherLog);
-		$this->cypherLog = str_replace('{t_O}', $this->traceLog->time->O, $this->cypherLog);
-		$this->cypherLog = str_replace('{t_SERVER_REQUEST_TIME_FLOAT}', $traceLog->context['REQUEST_TIME_FLOAT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{t_SERVER_REQUEST_TIME_FLOAT}', $traceLog->context['REQUEST_TIME_FLOAT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{tdy_z}', $this->traceLog->time->z, $this->cypherLog);
-		$this->cypherLog = str_replace('{ty_Y}', $this->traceLog->time->Y, $this->cypherLog);
-		$this->cypherLog = str_replace('{tmon_m}', $this->traceLog->time->m, $this->cypherLog);
-		$this->cypherLog = str_replace('{tdm_d}', $this->traceLog->time->d, $this->cypherLog);
-		$this->cypherLog = str_replace('{th_H}', $this->traceLog->time->H, $this->cypherLog);
-		$this->cypherLog = str_replace('{tmin_i}', $this->traceLog->time->i, $this->cypherLog);
-		$this->cypherLog = str_replace('{ts_s}', $this->traceLog->time->s, $this->cypherLog);
-		$this->cypherLog = str_replace('{code_major}', $this->traceLog->majorCode, $this->cypherLog);
-		$this->cypherLog = str_replace('{code_minor}', $this->traceLog->secondaryCode, $this->cypherLog);
-		$this->cypherLog = str_replace('{code_level}', $this->traceLog->errorInfoLevel, $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_SCRIPT_NAME}', $traceLog->context['SCRIPT_NAME'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_REQUEST_URI}', $traceLog->context['REQUEST_URI'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_QUERY_STRING}', $traceLog->context['QUERY_STRING'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_REQUEST_METHOD}', $traceLog->context['REQUEST_METHOD'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_SERVER_PROTOCOL}', $traceLog->context['SERVER_PROTOCOL'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_GATEWAY_INTERFACE}', $traceLog->context['GATEWAY_INTERFACE'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_REQUEST_SCHEME}', $traceLog->context['REQUEST_SCHEME'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_SCRIPT_FILENAME}', $traceLog->context['SCRIPT_FILENAME'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_SERVER_PORT}', $traceLog->context['SERVER_PORT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_SERVER_ADDR}', $traceLog->context['SERVER_SERVER_ADDR'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_HTTP_ACCEPT_ENCODING}', $traceLog->context['HTTP_ACCEPT_ENCODING'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_HTTP_UPGRADE_INSECURE_REQUESTS}', $traceLog->context['HTTP_UPGRADE_INSECURE_REQUESTS'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_HTTP_ACCEPT}', $traceLog->context['HTTP_ACCEPT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_HTTP_CONNECTION}', $traceLog->context['HTTP_CONNECTION'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_HTTP_HOST}', $traceLog->context['HTTP_HOST'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_FCGI_ROLE}', $traceLog->context['FCGI_ROLE'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_SERVER_PHP_SELF}',$traceLog->context['PHP_SELF'], $this->cypherLog);
-		$this->cypherLog = str_replace('{req_REQUEST_JSON}', str_replace("'", "\'", json_encode($this->traceLog->request)), $this->cypherLog);
-		$this->cypherLog = str_replace('{i_name}', $this->traceLog->instance, $this->cypherLog);
-		$this->cypherLog = str_replace('{c_name}', $this->traceLog->class, $this->cypherLog);
-		$this->cypherLog = str_replace('{m_name}', $this->traceLog->method, $this->cypherLog);
-		$this->cypherLog = str_replace('{l_name}', $this->traceLog->line, $this->cypherLog);
-		$this->cypherLog = str_replace('{r_json}', str_replace("'", "\'", json_encode($this->traceLog->varJson)), $this->cypherLog);
-		$this->cypherLog = str_replace('{app_name}', $this->traceLog->app->name, $this->cypherLog);
-		$this->cypherLog = str_replace('{app_json}', str_replace("'", "\'", json_encode($this->traceLog->app)), $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_PATH}', $traceLog->context['PATH'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_SYSTEMROOT}', $traceLog->context['SYSTEMROOT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_COMSPEC}', $traceLog->context['COMSPEC'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_PATHEXT}', $traceLog->context['PATHEXT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_WINDIR}', $traceLog->context['WINDIR'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_SYSTEMDRIVE}', $traceLog->context['SYSTEMDRIVE'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_TEMP}', $traceLog->context['TEMP'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_TMP}', $traceLog->context['TMP'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_QT_PLUGIN_PATH}', $traceLog->context['QT_PLUGIN_PATH'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_PHPRC}', $traceLog->context['PHPRC'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_PHP_FCGI_MAX_REQUESTS}', $traceLog->context['PHP_FCGI_MAX_REQUESTS'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER__FCGI_SHUTDOWN_EVENT_}', $traceLog->context['_FCGI_SHUTDOWN_EVENT_'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_DOCUMENT_ROOT}', $traceLog->context['DOCUMENT_ROOT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_SERVER_NAME}', $traceLog->context['SERVER_NAME'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_CONTEXT_PREFIX}', $traceLog->context['CONTEXT_PREFIX'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_SERVER_SOFTWARE}', $traceLog->context['SERVER_SOFTWARE'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_SERVER_SIGNATURE}', $traceLog->context['SERVER_SIGNATURE'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_CONTEXT_DOCUMENT_ROOT}', $traceLog->context['CONTEXT_DOCUMENT_ROOT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hApp_SERVER_SystemRoot}', $traceLog->context['SystemRoot'], $this->cypherLog);
-		$this->cypherLog = str_replace('{env_name}', $this->traceLog->env, $this->cypherLog);
-		$this->cypherLog = str_replace('{env_SERVER_SERVER_ADMIN}', $traceLog->context['SERVER_ADMIN'], $this->cypherLog);
-		$this->cypherLog = str_replace('{cf_json}', str_replace("'", "\'", json_encode($this->traceLog->conf)), $this->cypherLog);
-		$this->cypherLog = str_replace('{u_securityLevel}', $this->traceLog->user->securityLevel, $this->cypherLog);
-		$this->cypherLog = str_replace('{u_idCryptedT}', $this->traceLog->user->idCryptedT, $this->cypherLog);
-		$this->cypherLog = str_replace('{u_idCryptedS}', $this->traceLog->user->idCryptedS, $this->cypherLog);
-		$this->cypherLog = str_replace('{u_id}', $this->traceLog->user->id, $this->cypherLog);
-		$this->cypherLog = str_replace('{hClient_SERVER_REMOTE_PORT}', $traceLog->context['REMOTE_PORT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hClient_SERVER_REMOTE_ADDR}', $traceLog->context['REMOTE_ADDR'], $this->cypherLog);
-		$this->cypherLog = str_replace('{hClient_SERVER_HTTP_USER_AGENT}', $traceLog->context['HTTP_USER_AGENT'], $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_id}', $this->traceLog->session->app->id, $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_startTime}', $this->traceLog->session->app->startTime, $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_endTime}', $this->traceLog->session->app->startTime, $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_SERVER_HTTP_COOKIE}', $this->traceLog->session->app->startTime, $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_SESSION_JSON}', str_replace("'", "\'", json_encode($traceLog->session->client)), $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_idCryptedT}', $this->traceLog->session->app->idCryptedT, $this->cypherLog);
-		$this->cypherLog = str_replace('{ss_idCryptedS}', $this->traceLog->session->app->idCryptedS, $this->cypherLog);
-		$this->cypherLog = str_replace('{ssClient_userIdCryptedS}', $this->traceLog->user->idCryptedS, $this->cypherLog);
-		$this->cypherLog = str_replace('{ssClient_userIdCryptedT}', $this->traceLog->user->idCryptedT, $this->cypherLog);
-		$this->cypherLog = str_replace('{ssApp_appIdCryptedS}', $this->traceLog->app->idCryptedS, $this->cypherLog);
-		$this->cypherLog = str_replace('{ssApp_appIdCryptedT}', $this->traceLog->app->idCryptedT, $this->cypherLog);
-		$this->cypherLog = str_replace('{mock_userId}', $this->traceLog->mock->mock->userId, $this->cypherLog);
-		$this->cypherLog = str_replace('{mock_appName}', $this->traceLog->mock->mock->appName, $this->cypherLog);
-		$this->cypherLog = str_replace('{mock_mockName}', $this->traceLog->mock->mock->mockName, $this->cypherLog);
-		$this->cypherLog = str_replace('{mock_json}', str_replace("'", "\'", json_encode($this->traceLog->mock)), $this->cypherLog);
-
-		$this->traceLog  = json_encode($this->traceLog);
+		$toTrace = $this;
+		
+		unset($toTrace->traceLog);
+		unset($toTrace->cypherLog);
+		
+		$this->traceLog  = json_encode($toTrace);
 		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
 		$this->traceLog .= $sep;
+		$this->cypherLog = file_get_contents(Trace::CYPHER_TEMPLATE);
 		
+		foreach($toTrace as $k => $v) {
+			
+			$this->cypherLog = str_replace('{'.$k.'}', $v, $this->cypherLog);
+		}
 		return true;
 	}
 	

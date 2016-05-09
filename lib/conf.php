@@ -32,9 +32,8 @@ class Conf {
     	
     	if(Mock::$mock !== false) {
 
-    		$m             = Mock::$mock;
-    		User::$id      = $m->userId;
-    		Conf::$appName = $m->appName;
+    		User::$id      = Mock::$userId;
+    		Conf::$appName = Mock::$appName;
     	}
     	User::$idCryptedT = self::secC(User::$id, Trace::SEC_F);
     	    	
