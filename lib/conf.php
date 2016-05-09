@@ -98,7 +98,7 @@ class Conf {
 		Trace::$errorLevelList = $confEnv->errorLevelList;
 		Trace::$errorCodeList  = $confObj->errorCodeList;
 		self::$timeZone        = $confObj->timeZone;
-		Session::$ttl          = $confObj->sessionTtl;
+		App::$ttl              = $confObj->sessionTtl;
 				
 		date_default_timezone_set(self::$timeZone);
     	

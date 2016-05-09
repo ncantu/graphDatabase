@@ -6,7 +6,7 @@ class Mock {
 	
 	CONST DIR           = '../mock/';
 	CONST FILE_EXT      = '.json';
-	CONST TAG           = 'mockState';
+	CONST TAG           = 'mockName';
 	
     public static $mock = false;
 		
