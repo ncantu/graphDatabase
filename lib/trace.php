@@ -34,6 +34,7 @@ class Trace {
 	CONST CODE_END_OK              = '200-301';
 	CONST CODE_END_VALUE           = '000-001';
 	CONST SEC_F                    = 'secT05052016';
+	CONST CYPHER_TEMPLATE          = '../conf/template/cypher/trace.cypher';
 	
 	public static $errorCodeList;
 	public static $errorLevelList;

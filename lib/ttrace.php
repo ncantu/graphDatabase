@@ -30,8 +30,8 @@ trait TTrace {
 			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
 			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
 		
-	    $instance                    = get_class($this);
-		$code                        = $description->major->code.'-'.$description->secondary->code;
+	    $instance = get_class($this);
+		$code     = $description->major->code.'-'.$description->secondary->code;
 		
 		switch($errVerbose){
 		
@@ -128,9 +128,103 @@ trait TTrace {
 		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
 		$this->traceLog .= $sep;
 		
-		$this->cypherLog = "";
-		
-		
+		$this->cypherLog = file_get_contents(Trace::CYPHER_TEMPLATE);
+		$this->cypherLog = str_replace('{t_time}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_u}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_c}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_e}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_i}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_O}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_SERVER_REQUEST_TIME_FLOAT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{t_SERVER_REQUEST_TIME_FLOAT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{tdy_z}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ty_Y}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{tmon_m}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{tdm_d}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{th_H}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{tmin_i}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ts_i}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{code_major}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{code_minor}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{code_level}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_SCRIPT_NAME}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_REQUEST_URI}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_QUERY_STRING}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_REQUEST_METHOD}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_SERVER_PROTOCOL}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_GATEWAY_INTERFACE}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_REQUEST_SCHEME}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_SCRIPT_FILENAME}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_SERVER_PORT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_SERVER_ADDR}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_HTTP_ACCEPT_ENCODING}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_HTTP_UPGRADE_INSECURE_REQUESTS}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_HTTP_ACCEPT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_HTTP_CONNECTION}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_HTTP_HOST}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_FCGI_ROLE}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_SERVER_PHP_SELF}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{req_REQUEST_JSON}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{i_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{c_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{m_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{l_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{r_json}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{app_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_json}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_PATH}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_SYSTEMROOT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_COMSPEC}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_PATHEXT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_WINDIR}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_SYSTEMDRIVE}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_TEMP}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_TMP}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_QT_PLUGIN_PATH}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_PHPRC}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_PHP_FCGI_MAX_REQUESTS}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER__FCGI_SHUTDOWN_EVENT_}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_DOCUMENT_ROOT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_SERVER_NAME}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_CONTEXT_PREFIX}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_SERVER_SOFTWARE}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_SERVER_SIGNATURE}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_CONTEXT_DOCUMENT_ROOT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hApp_SERVER_SystemRoot}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{env_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{env_SERVER_SERVER_ADMIN}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{cfApp_json}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_securityLevel}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_sessionEnd}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_sessionStart}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_idCryptedT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_sessionIdCryptedT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_idCryptedS}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_sessionIdCryptedS}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_id}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{u_sessionId}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hClient_json}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hClient_SERVER_REMOTE_PORT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hClient_SERVER_REMOTE_ADDR}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{hClient_SERVER_HTTP_USER_AGENT}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{env_name}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{env_SERVER_SERVER_ADMIN}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_startTime}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_userId}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_sessionId}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_appId}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_sessionIdCrypted}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_SERVER_HTTP_COOKIE}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ss_SESSION_JSON}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ssClient_startTime}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ssClient_userIdCrypted}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ssApp_startTime}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ssApp_appIdCrypted}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{ssApp_ttl}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{cfClient_json}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{mock_userId}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{mock_appName}', $this->traceLog->time->time, $this->cypherLog);
+		$this->cypherLog = str_replace('{mock_mockName}', $this->traceLog->time->time, $this->cypherLog);
 		
 		return true;
 	}
