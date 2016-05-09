@@ -6,6 +6,7 @@ trait TTrace {
 	
 	private $traceSentence = Trace::VOID;
 	private $traceLog      = Trace::VOID;
+	private $cypherLog     = Trace::VOID;
 	
 	private function traceVoid($opt = ''){
 		
@@ -31,8 +32,17 @@ trait TTrace {
 		
 	    $instance                    = get_class($this);
 		$code                        = $description->major->code.'-'.$description->secondary->code;
-		$this->traceSentence        .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->$errVerbose->msg;
-		$this->traceSentence        .= ' '.$description->secondary->$errVerbose->msg;
+		
+		switch($errVerbose){
+		
+			case Trace::ERR_VERBOSE_FULL:
+				$description->major->short->msg     .= ' '.$description->major->full->msg;
+				$description->secondary->short->msg .= ' '.$description->secondary->full->msg;
+				break;
+			default: break;
+		}
+		$this->traceSentence        .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->short->msg;
+		$this->traceSentence        .= ' '.$description->secondary->short->msg;
 		$this->traceSentence         = str_replace($lineTag, $line, $this->traceSentence);
 		$this->traceSentence         = str_replace($methodTag, $method, $this->traceSentence);
 		$this->traceSentence         = str_replace($classTag, $class, $this->traceSentence);
@@ -52,6 +62,7 @@ trait TTrace {
 		$traceLog->time->H           = date('H', $traceLog->time->time);
 		$traceLog->time->i           = date('i', $traceLog->time->time);
 		$traceLog->time->s           = date('s', $traceLog->time->time);
+		$traceLog->time->W           = date('W', $traceLog->time->time);
 		$traceLog->time->w           = date('w', $traceLog->time->time);
 		$traceLog->time->z           = date('z', $traceLog->time->time);
 		$traceLog->time->c           = date('c', $traceLog->time->time);
@@ -116,6 +127,10 @@ trait TTrace {
 		$this->traceLog  = json_encode($traceLog);
 		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
 		$this->traceLog .= $sep;
+		
+		$this->cypherLog = "";
+		
+		
 		
 		return true;
 	}

@@ -11,35 +11,43 @@ fieldset, section {
 
 .endValue {
 	background-color: #CECBCE;
+	padding:2px;
 }
 
 .endOK {
 	background-color: #CECBCE;
+    padding:2px;	
 }
 
 .startParam {
 	background-color: #9CFBFF;
+    padding:2px;	
 }
 
 .start {
 	background-color: #D6D7D6;
+    padding:2px;	
 }
 
 .info {
 	background-color: #9CFBFF;
+    padding:2px;	
 }
 
 .notice {
 	background-color: #A5CBEF;
+    padding:2px;	
 }
 
 .warning {
 	background-color: #FF9229;
+    padding:2px;	
 }
 
 .fatal {
 	background-color: #631408;
 	color: #9CFBFF;
+    padding:2px;
 }
 </style>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,6 +61,7 @@ fieldset, section {
 		<h1>Log view</h1>
 	</header>
 	<section>
+	    <div class="alert alert-info">Date {timeZone} Now d/m/Y H:i:s = {time}<br/>UserId are crypted</div>
 		<form method="POST" class="navbar-form">
 			<div class="form-group">
 				<label for="appNameFilter">Application</label><select
@@ -69,7 +78,7 @@ fieldset, section {
 					class="form-control" id="userIdFilter" name="userIdFilter"
 					type="text" value="{userIdSelected}">
 			</div>
-			<h2>Date {timeZone} Now d/m/Y H:i:s = {time}</h2>
+			
 			<div class="form-group">
 				<label for="yearFilter">Year</label><input class="form-control"
 					min="2015" max="2016" id="yearFilter" name="yearFilter"
@@ -118,7 +127,12 @@ fieldset, section {
 			<input type="submit" class="btn btn-success">
 		</form>
 	</section>
-	<section>{content}</section>
+	<section>
+	{countHtml}
+	</section>
+	<section>
+	{content}
+	</section>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
