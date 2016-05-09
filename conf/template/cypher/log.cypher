@@ -19,7 +19,7 @@ CREATE (evt:Event),
 (code:Code {major: '', minor: '', level: ''}),
 (req:Request {major: '', minor: '', level: '', SERVER_SCRIPT_NAME: ''; SERVER_REQUEST_URI: '', SERVER_QUERY_STRING: '', SERVER_REQUEST_METHOD: '', SERVER_SERVER_PROTOCOL: '', 
 SERVER_GATEWAY_INTERFACE: '', SERVER_REQUEST_SCHEME: '', SERVER_SCRIPT_FILENAME: '', SERVER_SERVER_PORT: '', SERVER_SERVER_ADDR: '', SERVER_HTTP_ACCEPT_ENCODING: '', 
-SERVER_HTTP_UPGRADE_INSECURE_REQUESTS: '', SERVER_HTTP_ACCEPT: '', SERVER_HTTP_CONNECTION: '', SERVER_HTTP_HOST: '', SERVER_FCGI_ROLE: '', SERVER_PHP_SELF: ''}),
+SERVER_HTTP_UPGRADE_INSECURE_REQUESTS: '', SERVER_HTTP_ACCEPT: '', SERVER_HTTP_CONNECTION: '', SERVER_HTTP_HOST: '', SERVER_FCGI_ROLE: '', SERVER_PHP_SELF: '', REQUEST_JSON: ''}),
 (t)-[:DATE]->(evt),
 (code)-[:CATEGORIZE]->(evt),
 (req)-[:GENERATE]>(evt)
@@ -54,7 +54,7 @@ CREATE (u:User {securityLevel: '', sessionEnd: '', sessionStart: '', idCryptedT:
 (uh:UserHistory),
 (hClient:HostClient {json: '', SERVER_REMOTE_PORT: '', SERVER_REMOTE_ADDR: '', SERVER_HTTP_USER_AGENT: ''}),
 (env:Evironnement {name: '', SREVER_SERVER_ADMIN: ''}),
-(ss:Session {startTime: '', userId: '', sessionId:'', appId: '', sessionIdCrypted: '', SERVER_HTTP_COOKIE: ''}),
+(ss:Session {startTime: '', userId: '', sessionId:'', appId: '', sessionIdCrypted: '', SERVER_HTTP_COOKIE: '', SESSION_JSON: ''}),
 (ssClient:SessionClient {startTime: '', userIdCrypted: ''}),
 (ssApp:SessionApp {startTime: '', appIdCrypted: '', ttl: ''}),
 (cfClient:ConfClient {json: ''}),
@@ -66,7 +66,3 @@ CREATE (u:User {securityLevel: '', sessionEnd: '', sessionStart: '', idCryptedT:
 (ssApp)-[:ACCESS]->(app),
 (mock)-[:MOCK]->(u),
 (uh)-[:HISTORIZE]->(ss)
-
-
-
-
