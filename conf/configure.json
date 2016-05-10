@@ -1,6 +1,6 @@
 {
-  "sessionTtl":1296000,
-  "timeZone":"UTC",
+  "sessionTtl": 1296000,
+  "timeZone": "UTC",
   "renderList": {
     "cypher": {
       "ext": ".cypher",
@@ -9,17 +9,6 @@
     "html": {
       "ext": ".html",
       "dir": "html/"
-    }
-  },
-  "objectList": {
-    "action": {
-      "attributListDefault": "relationshipParamList"
-    },
-    "emotion": {
-      "attributListDefault": "relationshipParamList"
-    },
-    "label": {
-      "attributListDefault": "labelParamList"
     }
   },
   "resultDir": "../result/",
@@ -479,7 +468,7 @@
     "note": "",
     "value": ""
   },
-    "actionList": {
+  "actionList": {
     "Workflow": {
       "test": {},
       "valid": {},
