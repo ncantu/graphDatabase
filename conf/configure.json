@@ -457,5 +457,27 @@
       },
       "securityLevel": 0
     }
+  },
+  "labelParamList": {
+    "user": "sysInit",
+    "state": true,
+    "dateStart": 0,
+    "dateEnd": 0,
+    "step": "created",
+    "visibility": "public",
+    "listId": {},
+    "alias": {}
+  },
+  "relationshipParamList": {
+    "user": "sysInit",
+    "state": true,
+    "dateStart": 0,
+    "dateEnd": 0,
+    "step": "created",
+    "visibility": "public",
+    "listId": {},
+    "alias": {},
+    "note": "",
+    "value": ""
   }
 }
