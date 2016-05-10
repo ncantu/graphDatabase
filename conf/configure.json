@@ -447,14 +447,23 @@
     }
   },
   "labelParamList": {
-    "user": "sysInit",
+    "CREATE": {
     "state": true,
     "dateStart": 0,
     "dateEnd": 0,
     "step": "created",
     "visibility": "public",
     "listId": {},
-    "alias": {}
+    "alias": {},
+    "createUser": "'{$u_name}'",
+    "createdDate": "timestamp()"
+    },
+    "MATCH": {
+    "matchLastUser": "'{$u_name}'",
+    "matchLastListId": {},
+    "matchLastAlias": {},
+    "matchLastDate": "timestamp()"
+    }
   },
   "relationshipParamList": {
     "user": "sysInit",
