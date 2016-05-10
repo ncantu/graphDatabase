@@ -504,9 +504,6 @@ trait TTrace {
 			}
 			else $this->cypherLog = str_replace($tag, $v, $this->cypherLog);
 		}
-		echo $this->cypherLog;
-		exit();
-		
 		return true;
 	}
 	
