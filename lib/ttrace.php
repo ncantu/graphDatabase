@@ -24,10 +24,10 @@ trait TTrace {
 	private $t_SERVER_REQUEST_TIME_FLOAT;
 	private $t_SERVER_REQUEST_TIME;
 	private $tdy_z;
-	private $ty_Y;
+	private $tY_Y;
 	private $tmon_m;
 	private $tdm_d;
-	private $th_H;
+	private $tH_H;
 	private $tmin_i;
 	private $ts_s;
 	private $code_major;
@@ -59,8 +59,8 @@ trait TTrace {
 	private $i_name;
 	private $c_name;
 	private $m_name;
-	private $l_name;
-	private $r_json;
+	private $l_number;
+	private $var_json;
 	private $app_name;
 	private $app_id;
 	private $app_json;
@@ -114,7 +114,8 @@ trait TTrace {
 	private $ssApp_appIdCryptedT;
 	private $mock_userId;
 	private $mock_appName;
-	private $mock_mockName;
+	private $mock_name;
+	private $mock_state;
 	private $mock_json;
 	
 	private function traceVoid($opt = ''){
@@ -155,7 +156,8 @@ trait TTrace {
 		return str_replace("'", "\'", $classVar);
 	}
 	
-	private function traceSentence($description, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG) {
+	private function traceSentence($description, $line, $method, $class, $instance, $lineTag = Trace::LINE_TAG,
+			$methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $sep = Trace::SEP) {
 		
 		$code = $description->major->code.'-'.$description->secondary->code;
 		
@@ -181,34 +183,34 @@ trait TTrace {
 	private function traceTime() {
 		
 		$this->t_time                      = time();
-		$this->t_u                         = date('u', $traceLog->time->time);
-		$this->t_c                         = date('c', $traceLog->time->time);
-		$this->t_e                         = date('e', $traceLog->time->time);
-		$this->t_i                         = date('I', $traceLog->time->time);
-		$this->t_O                         = date('O', $traceLog->time->time);
+		$this->t_u                         = date('u', $this->t_time);
+		$this->t_c                         = date('c', $this->t_time);
+		$this->t_e                         = date('e', $this->t_time);
+		$this->t_i                         = date('I', $this->t_time);
+		$this->t_O                         = date('O', $this->t_time);
 		$this->t_SERVER_REQUEST_TIME_FLOAT = $this->traceSysVarItem($_SERVER, 'REQUEST_TIME_FLOAT');
 		$this->t_SERVER_REQUEST_TIME_FLOAT = $this->traceSysVarItem($_SERVER, 'REQUEST_TIME');
-		$this->tdy_z                       = date('z', $traceLog->time->time);
-		$this->ty_Y                        = date('Y', $traceLog->time->time);
-		$this->tmon_m                      = date('m', $traceLog->time->time);
-		$this->tdm_d                       = date('d', $traceLog->time->time);
-		$this->th_H                        = date('H', $traceLog->time->time);
-		$this->tmin_i                      = date('i', $traceLog->time->time);
-		$this->ts_s                        = date('s', $traceLog->time->time);
+		$this->tdy_z                       = date('z', $this->t_time);
+		$this->tY_Y                        = date('Y', $this->t_time);
+		$this->tmon_m                      = date('m', $this->t_time);
+		$this->tdm_d                       = date('d', $this->t_time);
+		$this->tH_H                        = date('H', $this->t_time);
+		$this->tmin_i                      = date('i', $this->t_time);
+		$this->ts_s                        = date('s', $this->t_time);
 		
 		return true;
 	}
 	
-	private function traceCode() {
+	private function traceCode($description, $instance, $class, $method, $line, $var) {
 		
 		$this->code_major = $description->major->code;
 		$this->code_minor = $description->secondary->code;
-		$this->code_level = $errorInfoLevel;
-		$this->i_name     = $line;
+		$this->code_level = $this->errorInfoLevel;
+		$this->i_name     = $instance;
 		$this->c_name     = $class;
 		$this->m_name     = $method;
-		$this->l_name     = $line;
-		$this->r_json     = get_class($this);
+		$this->l_number   = $line;
+		$this->var_json   = $this->traceSysVar($var);
 		$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 10);
 		
 		return true;
@@ -234,10 +236,13 @@ trait TTrace {
 		$this->req_SERVER_FCGI_ROLE                      = $this->traceSysVarItem($_SERVER, 'FCGI_ROLE');
 		$this->req_SERVER_PHP_SELF                       = $this->traceSysVarItem($_SERVER, 'PHP_SELF');
 		$this->req_REQUEST_JSON                          = $this->traceSysVar($_REQUEST);
-		$this->req_cpu                                   = sys_getloadavg()[0];
-		$this->req_memory                                = memory_get_usage(true);
-		$this->req_diskSpace                             = disk_free_space('.');
-		$this->req_pid                                   = getmypid();
+		$this->req_cpu									 = Trace::VOID;
+		
+		if(function_exists('sys_getloadavg') === true ) $this->req_cpu = sys_getloadavg()[0];
+		
+		$this->req_memory    = memory_get_usage(true);
+		$this->req_diskSpace = disk_free_space('.');
+		$this->req_pid       = getmypid();
 		
 		return true;
 	}
@@ -247,7 +252,7 @@ trait TTrace {
 		$this->app_name       = App::$name;
 		$this->app_id         = App::$id;
 		$this->app_ttl 	      = App::$ttl;
-		$this->app_idCryptedT = App::$idCryptedST;
+		$this->app_idCryptedT = App::$idCryptedT;
 		$this->app_idCryptedS = App::$idCryptedS;
 		$this->app_json       = $this->traceClassExport('App');
 		
@@ -339,28 +344,57 @@ trait TTrace {
 	
 	private function traceMock() {
 		
-		$this->mock_userId   = Mock::$userId;
-		$this->mock_appName  = Mock::$appName;
-		$this->mock_mockName = Mock::$name;
-		$this->mock_json     = $this->traceClassExport('Mock');
+		$this->mock_userId  = Mock::$userId;
+		$this->mock_appName = Mock::$appName;
+		$this->mock_name    = Mock::$name;
+		$this->mock_state   = Mock::$state;
+		$this->mock_json    = $this->traceClassExport('Mock');
 		
 		return true;
 	}
 	
 	private function traceShort() {
 		
-		$this->line             = Trace::VOID;
-		$this->method           = Trace::VOID;
-		$this->class            = Trace::VOID;
-		$this->instance         = Trace::VOID;
-		$this->varJson          = Trace::VOID;
-		$this->app_json         = Trace::VOID;
-		$this->req_REQUEST_JSON = Trace::VOID;
-		$this->u_json	        = Trace::VOID;
-		$this->ss_json	        = Trace::VOID;
-		$this->ss_SESSION_JSON	= Trace::VOID;
-		$this->cf_json 	        = Trace::VOID;
-		$this->l_baktrace       = Trace::VOID;
+		$this->var_json                                  = Trace::VOID;
+		$this->app_json                                  = Trace::VOID;
+		$this->req_REQUEST_JSON                          = Trace::VOID;
+		$this->u_json	                                 = Trace::VOID;
+		$this->ss_json	                                 = Trace::VOID;
+		$this->ss_SESSION_JSON                         	 = Trace::VOID;
+		$this->cf_json 	                                 = Trace::VOID;
+		$this->hApp_json                                 = Trace::VOID;
+		$this->l_baktrace                                = Trace::VOID;
+		$this->req_SERVER_SCRIPT_NAME                    = Trace::VOID;
+		$this->req_SERVER_REQUEST_URI                    = Trace::VOID;
+		$this->req_SERVER_QUERY_STRING                   = Trace::VOID;
+		$this->req_SERVER_REQUEST_METHOD                 = Trace::VOID;
+		$this->req_SERVER_SERVER_PROTOCOL                = Trace::VOID;
+		$this->req_SERVER_GATEWAY_INTERFACE              = Trace::VOID;
+		$this->req_SERVER_REQUEST_SCHEME                 = Trace::VOID;
+		$this->req_SERVER_SCRIPT_FILENAME                = Trace::VOID;
+		$this->req_SERVER_SERVER_PORT                    = Trace::VOID;
+		$this->req_SERVER_HTTP_ACCEPT_ENCODING           = Trace::VOID;
+		$this->req_SERVER_HTTP_UPGRADE_INSECURE_REQUESTS = Trace::VOID;
+		$this->req_SERVER_HTTP_ACCEPT                    = Trace::VOID;
+		$this->req_SERVER_HTTP_CONNECTION                = Trace::VOID;
+		$this->req_SERVER_FCGI_ROLE                      = Trace::VOID;
+		$this->hApp_SERVER_PATH                          = Trace::VOID;
+		$this->hApp_SERVER_SYSTEMROOT                    = Trace::VOID;
+		$this->hApp_SERVER_COMSPEC                       = Trace::VOID;
+		$this->hApp_SERVER_PATHEXT                       = Trace::VOID;
+		$this->hApp_SERVER_WINDIR                        = Trace::VOID;
+		$this->hApp_SERVER_SYSTEMDRIVE                   = Trace::VOID;
+		$this->hApp_SERVER_TEMP                          = Trace::VOID;
+		$this->hApp_SERVER_TMP                           = Trace::VOID;
+		$this->hApp_SERVER_QT_PLUGIN_PATH                = Trace::VOID;
+		$this->hApp_SERVER_PHPRC                         = Trace::VOID;
+		$this->hApp_SERVER_PHP_FCGI_MAX_REQUESTS         = Trace::VOID;
+		$this->hApp_SERVER__FCGI_SHUTDOWN_EVENT_         = Trace::VOID;
+		$this->hApp_SERVER_DOCUMENT_ROOT                 = Trace::VOID;
+		$this->hApp_SERVER_CONTEXT_PREFIX                = Trace::VOID;
+		$this->hApp_SERVER_SERVER_SOFTWARE               = Trace::VOID;
+		$this->hApp_SERVER_SERVER_SIGNATURE              = Trace::VOID;
+		$this->hApp_SERVER_SystemRoot                    = Trace::VOID;
 		
 		return true;
 	}
@@ -409,8 +443,16 @@ trait TTrace {
 				break;
 			default: break;
 		}
-		$toTrace = $this;
+		$toTrace = new stdClass();
 		
+		foreach($this as $k => $v){
+			
+			if(is_string($v) === false && is_null($v) === false && is_numeric($v) === false && is_bool($v) === false) {
+			
+				$v = $this->traceSysVar($v);
+			}
+			$toTrace->$k = $v;
+		}
 		unset($toTrace->traceLog);
 		unset($toTrace->cypherLog);
 		
@@ -423,12 +465,13 @@ trait TTrace {
 			$dateFormat = Trace::DATE_FORMAT) {
 		
 		$description         = $this->errorInfo->description;
+		$instance            = get_class($this);
 		$this->traceSentence = '';
 		$this->traceLog      = '';
 				
-	    $this->traceSentence($description, $lineTag, $methodTag, $classTag, $instanceTag);
+	    $this->traceSentence($description, $line, $method, $class, $instance, $lineTag, $methodTag, $classTag, $instanceTag, $sep);
 		$this->traceTime();
-		$this->traceCode();
+		$this->traceCode($description, $instance, $class, $method, $line, $var);
 		$this->traceRequest();
 		$this->traceApp();
 		$this->traceHostApp();
@@ -447,17 +490,22 @@ trait TTrace {
 		
 		foreach($toTrace as $k => $v) {
 			
-			$this->cypherLog = str_replace('{'.$k.'}', $v, $this->cypherLog);
+			if(is_string($v) === true) {
+					
+				$this->cypherLog = str_replace('\'{'.$k.'}\'', '\''.$v.'\'', $this->cypherLog);
+			}
+			else $this->cypherLog = str_replace('\'{'.$k.'}\'', $v, $this->cypherLog);
+			
 		}
 		return true;
 	}
 	
 	private function traceFile($fileSeparator = Trace::FILE_SEPARATPOR, $fileExt = Trace::FILE_EXT, $fileWriteMode = Trace::FILE_WRITE_MODE) {
 				
-		switch(Mock::$mock) {
+		switch(Mock::$state) {
 			case false: $prefix = '';
 			 break;
-			default: $prefix = Mock::$mock->mockState.$fileSeparator;
+			default: $prefix = Mock::$name.$fileSeparator;
 		 	 break;
 		}
 		$userId   = filter_var(User::$idCryptedT, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
@@ -609,15 +657,16 @@ trait TTrace {
 		return $this->t(Trace::CODE_NOTICE, $line, $method, $class, $var, $funcVoid, $traceExitFunc, $traceStdoutFunc, $errorVerboseShortSuffix, $errorVerboseFullSuffix, $traceFileFunc);
 	}
 	
-	private function tErrorInfo($errorCodeList, $confErrorCodeList, $code) {
+	private function tErrorInfo($code) {
 	
 		$confErrorCodeList    = Trace::$errorCodeList;
 		$this->errorInfo      = $confErrorCodeList->$code;
-		$this->errorInfoLevel = $errorInfo->errorLevel;
+		$this->errorInfoLevel = $this->errorInfo->errorLevel;
 		
-		Self::UserSecurityLevelupdate($errorInfo->securityLevel);
+		Self::UserSecurityLevelupdate($this->errorInfo->securityLevel);
 		
-		$this->errorLevelInfo = Trace::$errorLevelList->$errorInfoLevel;
+		$errorInfoLevel        = $this->errorInfoLevel;
+		$this->errorLevelInfo  = Trace::$errorLevelList->$errorInfoLevel;
 		
 		return true;
 	}
@@ -633,7 +682,7 @@ trait TTrace {
 		return true;
 	}
 	
-	private function tExitFunc($traceExitFunc = Trace::FILE_FUNC) {
+	private function tExitFunc($traceExitFunc = Trace::FILE_FUNC, $funcVoid = Trace::VOID_FUNC) {
 
 		$exitStatus      = $this->errorLevelInfo->exit;
 		$exitCase[true]  = $traceExitFunc;
@@ -653,7 +702,8 @@ trait TTrace {
 		return true;
 	}
 	
-	private function tErrVerbose($traceStdoutFunc = Trace::STDOUT_FUNC, $errorVerboseShortSuffix = Trace::ERR_VERBOSE_SHORT_SUFFIX) {
+	private function tErrVerbose($traceStdoutFunc = Trace::STDOUT_FUNC, $errorVerboseShortSuffix = Trace::ERR_VERBOSE_SHORT_SUFFIX,
+			$errorVerboseFullSuffix = Trace::ERR_VERBOSE_FULL_SUFFIX) {
 	
 		$logFullStatus      = $this->errorLevelInfo->logFull;
 		$logFullCase[true]  = $errorVerboseFullSuffix;
@@ -678,7 +728,7 @@ trait TTrace {
 			$errorVerboseShortSuffix = Trace::ERR_VERBOSE_SHORT_SUFFIX,
 			$errorVerboseFullSuffix = Trace::ERR_VERBOSE_FULL_SUFFIX, $traceFileFunc = Trace::FILE_FUNC){
 		
-		$this->tErrorInfo($errorCodeList, $confErrorCodeList, $code);
+		$this->tErrorInfo($code);
 		$this->tReturnValue($var);
 		$this->tExitFunc($traceExitFunc);
 		$this->tStdoutFunc($funcVoid, $traceStdoutFunc);
@@ -689,15 +739,15 @@ trait TTrace {
 		$this->tTraceFileStatus($funcVoid, $traceFileFunc);
 		
 		$func = $this->traceFileFunc;
-		$this->$$func();
+		$this->$func();
 		
 		http_response_code($this->errorLevelInfo->httpCode);
 		
 		$func = $this->stdoutFunc;
-		$this->$$func();
+		$this->$func();
 		
 		$func = $this->exitFunc;
-		$this->$$func();
+		$this->$func();
 		
 		return $this->returnValue;
 	}

@@ -30,7 +30,7 @@ class Conf {
     	
     	Conf::$appName = App::$name;
     	
-    	if(Mock::$mock !== false) {
+    	if(Mock::$state !== false) {
 
     		User::$id      = Mock::$userId;
     		Conf::$appName = Mock::$appName;

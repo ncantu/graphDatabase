@@ -37,7 +37,7 @@ class Session {
 			self::$userId					= User::$id;
 			self::$appId					= App::$id;
 			self::$id		         		= session_id();
-			self::$appId		         	= App::id;
+			self::$appId		         	= App::$id;
 			
 			self::userSecurityLevelupdate(5);
 		}

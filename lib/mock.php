@@ -6,9 +6,7 @@ class Mock {
 	
 	CONST DIR              = '../mock/';
 	CONST FILE_EXT         = '.json';
-	CONST TAG              = 'name';
-	CONST USER_ID_TAG      = 'userId';
-	CONST APP_NAME_TAG     = 'appName';
+	CONST TAG              = 'MockName';
 	
     public static $state   = false;
     public static $userId  = false;
