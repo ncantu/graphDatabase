@@ -364,9 +364,9 @@ trait TTrace {
 		$this->ss_SESSION_JSON                         	 = Trace::VOID;
 		$this->cf_json 	                                 = Trace::VOID;
 		$this->hApp_json                                 = Trace::VOID;
+		$this->mock_json                                 = Trace::VOID;
 		$this->l_baktrace                                = Trace::VOID;
 		$this->req_SERVER_SCRIPT_NAME                    = Trace::VOID;
-		$this->req_SERVER_REQUEST_URI                    = Trace::VOID;
 		$this->req_SERVER_QUERY_STRING                   = Trace::VOID;
 		$this->req_SERVER_REQUEST_METHOD                 = Trace::VOID;
 		$this->req_SERVER_SERVER_PROTOCOL                = Trace::VOID;
@@ -458,7 +458,7 @@ trait TTrace {
 		unset($toTrace->traceLog);
 		unset($toTrace->cypherLog);
 		unset($toTrace->errorLevelInfo);
-		unset($toTrace->errorLevelInfo);
+		unset($toTrace->errorInfo);
 		
 		return $toTrace;
 	}
