@@ -56,13 +56,13 @@ class App {
 		
 		switch (self::$idCryptedS) {
 			
-			case:
+			case 'Configure':
 
 				self::$id        = 'Configure';
 				self::$name      = 'Configure';
 				self::$mainClass = 'configure';
 				break;
-			case:
+			case 'TraceView':
 				self::$id        = 'TraceView';
 				self::$name      = 'TraceView';
 				self::$mainClass = 'traceView';

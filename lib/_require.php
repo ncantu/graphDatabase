@@ -12,8 +12,8 @@ final class Fw {
 	final public function __construct() {
 		
 		self::requireTrait('tuser');
-		self::requireTrait('ttrace');
 		self::requireTrait('trequest');
+		self::requireTrait('ttrace');
 		self::requireTrait('tmerge');
 		self::requireTrait('ttemplate');
 		self::requireTrait('tdesignCore');

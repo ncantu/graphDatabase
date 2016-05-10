@@ -15,7 +15,7 @@ CREATE (t:Time {time: '{t_time}', u: '{t_u}', c: '{t_c}', e: '{t_e}', i: '{t_i}'
 (tmin)-[:DATE]->(t),
 (ts)-[:DATE]->(t)
 
-CREATE (evt:Event),
+CREATE (evt:Event {sequence: '{$evt_sequence}'}),
 (code:Code {major: '{code_major}', minor: '{code_minor}', level: '{code_level}'}),
 (req:Request {SERVER_SCRIPT_NAME: '{req_SERVER_SCRIPT_NAME}'; SERVER_REQUEST_URI: '{req_SERVER_REQUEST_URI}', SERVER_QUERY_STRING: '{req_SERVER_QUERY_STRING}', 
 SERVER_REQUEST_METHOD: '{req_SERVER_REQUEST_METHOD}', SERVER_SERVER_PROTOCOL: '{req_SERVER_SERVER_PROTOCOL}', SERVER_GATEWAY_INTERFACE: '{req_SERVER_GATEWAY_INTERFACE}', 
@@ -33,7 +33,7 @@ CREATE (tr:Trace {}),
 (i:Instance {name: '{i_name}'}),
 (c:Class {name: '{c_name}'}),
 (m:Method {name: '{m_name}'}),
-(l:Line {number: '{l_number}', baktrace: '{l_baktrace}'}),
+(l:Line {number: '{l_number}', baktrace: '{l_baktrace_json}'}),
 (var:Var {json: '{var_json}'}),
 (t)-[:TRACE]->(req),
 (tr)-[:TRACE]->(i),

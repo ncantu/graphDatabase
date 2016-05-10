@@ -29,7 +29,7 @@ class Mock {
 		self::$state          = true;
 		self::$name           = $mock->name;
 		self::$userIdCryptedS = $mock->userIdCryptedS;
-		self::$appIdCryptedS  = $mock->userIdCryptedS;
+		self::$appIdCryptedS  = $mock->appIdCryptedS;
 		$_REQUEST[App::TAG]   = self::$appIdCryptedS;
 		$_REQUEST[User::TAG]  = self::$userIdCryptedS;
 	}

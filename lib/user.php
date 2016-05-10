@@ -1,7 +1,8 @@
 <?php
 
 class User {
-	
+
+	use TRequest;
 	use TUser;
 	
 	CONST TAG                    = 'userIdCryptedS';

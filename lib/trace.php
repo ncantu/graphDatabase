@@ -38,6 +38,7 @@ class Trace {
 	
 	public static $errorCodeList;
 	public static $errorLevelList;
+	public static $envSequence     = 0;
 	
 	public static $stateList = array('endValue', 'endOK', 'startParam', 'start', 'info', 'notice', 'warning', 'fatal');
 	

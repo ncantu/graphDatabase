@@ -32,8 +32,9 @@ trait TTrace {
 	private $ts_s;
 	private $code_major;
 	private $code_minor;
-	private $l_baktrace;
+	private $l_baktrace_json;
 	private $code_level;
+	private $evt_sequence;
 	private $req_SERVER_SCRIPT_NAME;
 	private $req_SERVER_REQUEST_URI;
 	private $req_SERVER_QUERY_STRING;
@@ -137,11 +138,26 @@ trait TTrace {
 		exit();
 	}
 	
+	private function secureVarCypher($var) {
+		
+		$var = str_replace("\\", "\\\\'", $var);
+		$var = str_replace("'", "\\'", $var);
+		
+		return $var;
+	}
+	
+	private function secureVar($var) {
+		
+		if(is_string($var) === false && is_null($var) === false && is_numeric($var) === false && is_bool($var) === false) {
+		
+			$var = json_encode($var);
+		}
+		return $var;
+	}
+	
 	private function traceSysVar($sysVar) {
-		
-		$sysVar = str_replace("\\", "\\\\", json_encode($sysVar));
-		
-		return str_replace("'", "\'", $sysVar);
+				
+		return $sysVar;
 	}
 	
 	private function traceSysVarItem($sysVar, $itemName) {
@@ -153,9 +169,7 @@ trait TTrace {
 	
 	private function traceClassExport($className) {
 		
-		$classVar = str_replace("\\", "\\\\", json_encode(get_class_vars($className)));
-		
-		return str_replace("'", "\'", $classVar);
+		return get_class_vars($className);
 	}
 	
 	private function traceSentence($description, $line, $method, $class, $instance, $lineTag = Trace::LINE_TAG,
@@ -206,15 +220,18 @@ trait TTrace {
 	
 	private function traceCode($description, $instance, $class, $method, $line, $var) {
 		
-		$this->code_major = $description->major->code;
-		$this->code_minor = $description->secondary->code;
-		$this->code_level = $this->errorInfoLevel;
-		$this->i_name     = $instance;
-		$this->c_name     = $class;
-		$this->m_name     = $method;
-		$this->l_number   = $line;
-		$this->var_json   = $this->traceSysVar($var);
-		$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 10);
+		Trace::$envSequence++;
+		
+		$this->code_major      = $description->major->code;
+		$this->code_minor      = $description->secondary->code;
+		$this->code_level      = $this->errorInfoLevel;
+		$this->i_name          = $instance;
+		$this->c_name          = $class;
+		$this->m_name          = $method;
+		$this->l_number        = $line;
+		$this->var_json        = $this->traceSysVar($var);
+		$this->l_baktrace_json = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 10);
+		$this->evt_sequence    = Trace::$envSequence;
 		
 		return true;
 	}
@@ -369,7 +386,7 @@ trait TTrace {
 		$this->cf_json 	                                 = Trace::VOID;
 		$this->hApp_json                                 = Trace::VOID;
 		$this->mock_json                                 = Trace::VOID;
-		$this->l_baktrace                                = Trace::VOID;
+		$this->l_baktrace_json                           = Trace::VOID;
 		$this->req_SERVER_SCRIPT_NAME                    = Trace::VOID;
 		$this->req_SERVER_QUERY_STRING                   = Trace::VOID;
 		$this->req_SERVER_REQUEST_METHOD                 = Trace::VOID;
@@ -426,8 +443,7 @@ trait TTrace {
 						$this->ss_json	        = Trace::VOID;
 						$this->ss_SESSION_JSON	= Trace::VOID;
 						$this->cf_json 	        = Trace::VOID;
-						$this->l_baktrace       = Trace::VOID;
-						$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 3);
+						$this->l_baktrace_json  = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 3);
 						break;
 					case 'warning':
 						$this->app_json         = Trace::VOID;
@@ -435,11 +451,10 @@ trait TTrace {
 						$this->u_json	        = Trace::VOID;
 						$this->ss_json	        = Trace::VOID;
 						$this->ss_SESSION_JSON	= Trace::VOID;
-						$this->l_baktrace       = Trace::VOID;
-						$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 5);
+						$this->l_baktrace_json  = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 5);
 						break;
 					case 'fatal':
-						$this->l_baktrace = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 0);
+						$this->l_baktracel_json = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 0);
 						break;
 					default:
 						$this->traceShort();
@@ -453,10 +468,7 @@ trait TTrace {
 		
 		foreach($this as $k => $v){
 			
-			if(is_string($v) === false && is_null($v) === false && is_numeric($v) === false && is_bool($v) === false) {
-			
-				$v = $this->traceSysVar($v);
-			}
+			$v           = $this->secureVar($v);
 			$toTrace->$k = $v;
 		}
 		unset($toTrace->traceLog);
@@ -467,10 +479,35 @@ trait TTrace {
 		return $toTrace;
 	}
 	
+	private function traceLogFileContent($toTrace, $sep, $sepReplace = Trace::SEP_REPLACE) {
+		
+		$this->traceLog  = json_encode($toTrace);
+		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
+		$this->traceLog .= $sep;
+		$this->cypherLog = file_get_contents(Trace::CYPHER_TEMPLATE);
+		
+		return true;
+	}
+	
+	private function traceLogCypherContent($toTrace) {
+		
+		foreach($toTrace as $k => $v) {
+				
+			$v   = $this->secureVarCypher($v);
+			$tag = '\'{'.$k.'}\'';
+				
+			if(is_string($v) === true) {
+					
+				$this->cypherLog = str_replace($tag, '\''.$v.'\'', $this->cypherLog);
+			}
+			else $this->cypherLog = str_replace($tag, $v, $this->cypherLog);
+		}
+		return true;
+	}
 	
 	private function traceLog($line, $method, $class, $var = Trace::VOID, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG,
 			$methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG,
-			$dateFormat = Trace::DATE_FORMAT) {
+			$dateFormat = Trace::DATE_FORMAT, $sepReplace = Trace::SEP_REPLACE) {
 		
 		$description = $this->errorInfo->description;
 		$instance    = get_class($this);
@@ -488,21 +525,11 @@ trait TTrace {
 		$this->traceSession();
 		$this->traceMock();
 		
-		$toTrace         = $this->traceLogOptimize();
-		$this->traceLog  = json_encode($toTrace);
-		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
-		$this->traceLog .= $sep;
-		$this->cypherLog = file_get_contents(Trace::CYPHER_TEMPLATE);
+		$toTrace = $this->traceLogOptimize();
 		
-		foreach($toTrace as $k => $v) {
-			
-			if(is_string($v) === true) {
-					
-				$this->cypherLog = str_replace('\'{'.$k.'}\'', '\''.$v.'\'', $this->cypherLog);
-			}
-			else $this->cypherLog = str_replace('\'{'.$k.'}\'', $v, $this->cypherLog);
-			
-		}
+		$this->traceLogFileContent($toTrace, $sep, $sepReplace);
+		$this->traceLogCypherContent($toTrace);
+		
 		return true;
 	}
 	
