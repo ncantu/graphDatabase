@@ -11,7 +11,6 @@ class Conf {
     CONST TIMEZONE_DEFAULT                = 'UTC';
     CONST DIR                             = '../conf/';
     CONST EXT                             = '.json';
-
     public static $objectList;
     public static $actionList;
     public static $emotionList;
@@ -23,7 +22,6 @@ class Conf {
     public static $timeZone;
     
     public function __construct() {
-
     	date_default_timezone_set(self::TIMEZONE_DEFAULT);
     	
     	User::$idCryptedT = self::secC(User::$id, Trace::SEC_F);
@@ -93,43 +91,18 @@ class Conf {
 		App::$ttl              = $confObj->sessionTtl;
 				
 		date_default_timezone_set(self::$timeZone);
-    	
-    	$result = $this->grapDatabaseConfGet($confObj->graphDatabaseConfBasename);
-    	
-    	if($result === false) return false;
+
+        self::$actionList            = $confObj->actionList;
+        self::$emotionList           = $confObj->emotionList;
+        self::$labelList             = $confObj->labelList;
+        self::$labelParamList        = $confObj->labelParamList;
+        self::$relationshipParamList = $confObj->relationshipParamList;
     	
     	return true;
     }
-    
-    private function confGet($confBasenameVar){
-    
-	    $confgraphDatabaseFile    = self::DIR.$confBasenameVar;
-	    $confgraphDatabaseContent = file_get_contents($confgraphDatabaseFile);
-	    
-	    if($confgraphDatabaseContent === false) return false;
-	    
-	    return json_decode($confgraphDatabaseContent);
-	}
-	
-	private function grapDatabaseConfGet($confBasenameVar){
-		
-		$confGraphDatabaseObj = $this->confGet($confBasenameVar);
-		
-		if($confGraphDatabaseObj === false) return false;
-		
-		self::$actionList            = $confGraphDatabaseObj->actionList;
-		self::$emotionList           = $confGraphDatabaseObj->emotionList;
-		self::$labelList             = $confGraphDatabaseObj->labelList;
-		self::$labelParamList        = $confGraphDatabaseObj->labelParamList;
-		self::$relationshipParamList = $confGraphDatabaseObj->relationshipParamList;
-		
-		return true;
-	}
-    
+
     private function resultSet($content, $typeDir, $confBasenameVar){
-
         $typeResulDir = self::$resultDir.self::$$typeDir;
-
         return file_put_contents($content, $typeResulDir.self::$export[$confBasenameVar]);
     }
 }
