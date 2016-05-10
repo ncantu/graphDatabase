@@ -7,18 +7,20 @@ class App {
 	CONST EXPLOIT_DIR         = '../AppExploitation/';
 	CONST PUBLIC_DIR          = '../AppPublic/';
 	CONST FILE_EXT            = '.php';
-	CONST TAG                 = 'appName';
+	CONST TAG                 = 'appIdCryptedS';
 	
 	public static $name       = false;
 	public static $id         = false;
+	public static $mainClass  = false;
 	public static $ttl        = 20;
 	public static $idCryptedT = Trace::VOID;
 	public static $idCryptedS = Trace::VOID;
 	
-	public static function init($appClass) {
+	public static function init() {
 		
-		new App();
 		new Mock();
+		new App();
+		new User();
 		
 		$result = new Conf();
 		
@@ -27,6 +29,10 @@ class App {
 		$result = Session::renew();
 		
 		if($result === false) return false;
+		
+		$appClass = App::$mainClass;
+		
+		Fw::requireAppExploitation($appClass);
 		
 		$app = new $appClass();
 		
@@ -37,12 +43,33 @@ class App {
 
 	public function __construct() {
 	
-		self::$name = false;
-		$appName  = self::requestVal(self::TAG);
+		$idCryptedS = self::requestVal(self::TAG);
 			
-		if($appName === false) return false;
+		if($idCryptedS === false) return false;
 		
-		self::$name = $appName;
+		self::$idCryptedS = $idCryptedS;
+		
+		$this->initFromIdCryptedS();
+	}
+	
+	private function initFromIdCryptedS(){
+		
+		switch (self::$idCryptedS) {
+			
+			case:
+
+				self::$id        = 'Configure';
+				self::$name      = 'Configure';
+				self::$mainClass = 'configure';
+				break;
+			case:
+				self::$id        = 'TraceView';
+				self::$name      = 'TraceView';
+				self::$mainClass = 'traceView';
+				break;
+		}
+		
+		return true;
 	}
 }
 

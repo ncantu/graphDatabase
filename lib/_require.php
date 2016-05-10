@@ -2,35 +2,41 @@
 
 final class Fw {
 
-	CONST DIR          = '../lib/';
-	CONST CLASS_EXT    = '.php';
-	CONST TRAIT_EXT    = '.php';
+	CONST DIR                  = '../lib/';
+	CONST DIR_APP_EXPLOITATION = '../appExploitation/';
+	CONST CLASS_EXT            = '.php';
+	CONST TRAIT_EXT            = '.php';
 	
 	public static $classList = array('trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template', 'attribut', 'attributList', 'element', 'elementList');
 	
 	final public function __construct() {
 		
-		$this->requireTrait('tuser');
-		$this->requireTrait('ttrace');
-		$this->requireTrait('trequest');
-		$this->requireTrait('tmerge');
-		$this->requireTrait('ttemplate');
-		$this->requireTrait('tdesignCore');
+		self::requireTrait('tuser');
+		self::requireTrait('ttrace');
+		self::requireTrait('trequest');
+		self::requireTrait('tmerge');
+		self::requireTrait('ttemplate');
+		self::requireTrait('tdesignCore');
 				
 		foreach(self::$classList as $class){
 			
-			$this->requireClass($class);
+			self::requireClass($class);
 		}
 	}
 	
-	final private function requireTrait($traitName) {
+	final private static function requireTrait($traitName) {
 		
 		require_once self::DIR.$traitName.self::TRAIT_EXT;
 	}
 	
-	final private function requireClass($className) {
+	final private static function requireClass($className) {
 		
 		require_once self::DIR.$className.self::CLASS_EXT;
+	}
+	
+	final public static function requireAppExploitation($appName) {
+		
+		require_once self::DIR_APP_EXPLOITATION.$appName.self::CLASS_EXT;
 	}
 }
 new Fw();

@@ -22,19 +22,10 @@ class Conf {
     public static $envName;
     public static $timeZone;
     
-    private static $appName;
-    
     public function __construct() {
 
     	date_default_timezone_set(self::TIMEZONE_DEFAULT);
     	
-    	Conf::$appName = App::$name;
-    	
-    	if(Mock::$state !== false) {
-
-    		User::$id      = Mock::$userId;
-    		Conf::$appName = Mock::$appName;
-    	}
     	User::$idCryptedT = self::secC(User::$id, Trace::SEC_F);
     	    	
         $return = $this->initConf(App::$name);
@@ -44,8 +35,6 @@ class Conf {
 		$return = Session::init();
 				
 		if($return === false) return false;
-		
-		App::$name = Conf::$appName;
     }
     
     public function secSaltGen($basename){

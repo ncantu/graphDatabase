@@ -65,6 +65,7 @@ trait TTrace {
 	private $app_id;
 	private $app_json;
 	private $app_ttl;
+	private $app_mainClass;
 	private $app_idCryptedT;
 	private $app_idCryptedS;
 	private $hApp_SERVER_PATH;
@@ -94,6 +95,7 @@ trait TTrace {
 	private $u_idCryptedT;
 	private $u_idCryptedS;
 	private $u_id;
+	private $u_name;
 	private $u_json;
 	private $hClient_SERVER_REMOTE_PORT;
 	private $hClient_SERVER_REMOTE_ADDR;
@@ -112,8 +114,8 @@ trait TTrace {
 	private $ssClient_userIdCryptedT;
 	private $ssApp_appIdCryptedS;
 	private $ssApp_appIdCryptedT;
-	private $mock_userId;
-	private $mock_appName;
+	private $mock_userIdCryptedS;
+	private $mock_appIdCryptedS;
 	private $mock_name;
 	private $mock_state;
 	private $mock_json;
@@ -255,6 +257,7 @@ trait TTrace {
 		$this->app_ttl 	      = App::$ttl;
 		$this->app_idCryptedT = App::$idCryptedT;
 		$this->app_idCryptedS = App::$idCryptedS;
+		$this->app_mainClass  = App::$mainClass;
 		$this->app_json       = $this->traceClassExport('App');
 		
 		return true;
@@ -307,6 +310,7 @@ trait TTrace {
 		$this->u_idCryptedT    = User::$idCryptedT;
 		$this->u_idCryptedS    = User::$idCryptedS;
 		$this->u_id            = User::$id;
+		$this->u_name          = User::$name;
 		$this->u_json          = $this->traceClassExport('User');
 		
 		return true;
@@ -345,11 +349,11 @@ trait TTrace {
 	
 	private function traceMock() {
 		
-		$this->mock_userId  = Mock::$userId;
-		$this->mock_appName = Mock::$appName;
-		$this->mock_name    = Mock::$name;
-		$this->mock_state   = Mock::$state;
-		$this->mock_json    = $this->traceClassExport('Mock');
+		$this->mock_userIdCryptedS = Mock::$userIdCryptedS;
+		$this->mock_appIdCryptedS  = Mock::$appIdCryptedS;
+		$this->mock_name           = Mock::$name;
+		$this->mock_state          = Mock::$state;
+		$this->mock_json           = $this->traceClassExport('Mock');
 		
 		return true;
 	}

@@ -45,7 +45,7 @@ CREATE (tr:Trace {}),
 
 CREATE (cf:Conf {json: '{cf_json}'})
 
-CREATE (app:Application {name: '{app_name}', json:'{app_json}'}, id: '{app_id}'),
+CREATE (app:Application {name: '{app_name}', json:'{app_json}'}, id: '{app_id}', mainClass: '{app_mainClass}'}), 
 (hApp:HostApp {SERVER_PATH: '{hApp_SERVER_PATH}', SERVER_SYSTEMROOT: '{hApp_SERVER_SYSTEMROOT}', SERVER_COMSPEC: '{hApp_SERVER_COMSPEC}', 
 SERVER_PATHEXT: '{hApp_SERVER_PATHEXT}', SERVER_WINDIR: '{hApp_SERVER_WINDIR}', SERVER_SYSTEMDRIVE: '{hApp_SERVER_SYSTEMDRIVE}', SERVER_TEMP: '{hApp_SERVER_TEMP}', SERVER_TMP: '{hApp_SERVER_TMP}', 
 SERVER_QT_PLUGIN_PATH: '{hApp_SERVER_QT_PLUGIN_PATH}', SERVER_PHPRC: '{hApp_SERVER_PHPRC}', SERVER_PHP_FCGI_MAX_REQUESTS: '{hApp_SERVER_PHP_FCGI_MAX_REQUESTS}', 
@@ -58,14 +58,14 @@ SERVER_CONTEXT_DOCUMENT_ROOT: '{hApp_SERVER_CONTEXT_DOCUMENT_ROOT}', SERVER_Syst
 (env)-[:SPONSORIZE]->(hApp),
 (hApp)-[:HOST]->(app)
 
-CREATE (u:User {securityLevel: '{u_securityLevel}', idCryptedT: '{u_idCryptedT}', idCryptedS: '{u_idCryptedS}', id: '{u_id}', json: '{u_json}'),
+CREATE (u:User {name: '{u_name}', securityLevel: '{u_securityLevel}', idCryptedT: '{u_idCryptedT}', idCryptedS: '{u_idCryptedS}', id: '{u_id}', json: '{u_json}'),
 (uh:UserHistory),
 (hClient:HostClient {SERVER_REMOTE_PORT: '{hClient_SERVER_REMOTE_PORT}', SERVER_REMOTE_ADDR: '{hClient_SERVER_REMOTE_ADDR}', SERVER_HTTP_USER_AGENT: '{hClient_SERVER_HTTP_USER_AGENT}'}),
 (ss:Session {startTime: '{ss_startTime}', endTime: '{ss_endTime}', id:'{ss_id}', SERVER_HTTP_COOKIE: '{ss_SERVER_HTTP_COOKIE}', idCryptedT: '{ss_idCryptedT}', idCryptedS: '{ss_idCryptedS}', 
 SESSION_JSON: '{ss_SESSION_JSON}'}, json: '{ss_json}', appId: '{ss_appId}'),
 (ssClient:SessionClient {userIdCryptedS: '{ssClient_userIdCryptedS}', userIdCryptedT: '{ssClient_userIdCryptedT}'}),
 (ssApp:SessionApp {appIdCryptedS: '{ssApp_appIdCryptedS}', appIdCryptedT: '{ssApp_appIdCryptedT}'}),
-(mock:Mock {userId: '{mock_userId}', appName: '{mock_appName}', state: '{mock_State}', name: '{mock_name}', mockJson: '{mock_json}'}),
+(mock:Mock {userIdCryptedS: '{mock_userIdCryptedS}', appIdCryptedS: '{mock_appIdCryptedS}', state: '{mock_State}', name: '{mock_name}', mockJson: '{mock_json}'}),
 (u)-[:CALL]->(req),
 (ss)-[:MAINTAIN]->(ssClient),
 (ss)-[:MAINTAIN]->(ssApp),
