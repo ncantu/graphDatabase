@@ -25,9 +25,9 @@ class attribut {
 		
 		$this->traceTestFatal($line, $method, $class, $result);
 		
-		$this->k   						= $name;
-		$this->v   						= $value;
-		$this->def 						= $def;
+		$this->k   			= $name;
+		$this->v   			= $value;
+		$this->def 			= $def;
 		$this->templateDefaultList['k'] = $this->k;
 		$this->templateDefaultList['v'] = $this->def;
 		$this->templateValList['k']     = $this->k;
