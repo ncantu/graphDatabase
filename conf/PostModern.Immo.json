@@ -1,7 +1,6 @@
 {
   "sessionTtl":1296000,
   "timeZone":"UTC",
-  "graphDatabaseConfBasename": "graphDatabase.json",
   "renderList": {
     "cypher": {
       "ext": ".cypher",
