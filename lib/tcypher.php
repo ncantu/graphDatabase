@@ -19,33 +19,28 @@ trait TCypher {
 
     private function cypherAttributGet($list, $str = '') {
 
-		foreach(Conf::$labelParamList as $k => $v){
+	foreach(Conf::$labelParamList as $k => $v){
 
             $v = $this->cypherSecureVar($v);
 
             if(is_string($v) === true) {
 
-				$v = "'".$v."'";
-            }
+		$v = "'".$v."'";
+	    }
+	    $str .= '{cypherVar}'.'_'.$k.'= '.$v .' , ';
+	}      
+	$str = subtr($str, 0, -3)."\n";
 
-			$str .= $k.': '.$v .', ';
-		}      
-		return $str;
+	return $str;
     }
 
-	private function cypherLabelParamListGet() {
-		
-		$this->cypherLabelParamList = $this->cypherAttributGet(Conf::$labelParamList);
+    private function cypherLabelParamListContext($cypherVar, $tag = '{cypherVar}'){
 
-		return true;
-	}
+    	$traceVar        = str_replace($tag, $cypherVar, $this->cypherLabelParamList);		
+	$this->cypherLog = str_replace('{'.$cypherVar.'_LabelParamList}', $traceVar, $this->cypherLog);
 
-	private function cypherRelationshipParamListGet() {
-
-		$this->cypherLabelParamList = $this->cypherAttributGet(Conf::$cypherRelationshipParamList);
-
-		return true;
-	}
+	return true;
+    }
 
     private function cypherTraceLogContent($toTrace) {
 
@@ -60,15 +55,40 @@ trait TCypher {
             }
             else $this->cypherLog = str_replace($tag, $v, $this->cypherLog);
         }
-        $this->cypherLabelParamListGet();        
-		$this->cypherLog = str_replace('{cypherLabelParamList}', $this->cypherLabelParamList, $this->cypherLog);
+	$this->cypherLabelParamList        = $this->cypherAttributGet(Conf::$labelParamList);
+	$this->cypherRelationshipParamList = $this->cypherAttributGet(Conf::$cypherRelationshipParamList);
 
-    	$this->cypherRelationshipParamListGet();
-		$this->cypherLog = str_replace('{cypherRelationshipParamList}', $this->cypherRelationshipParamList, $this->cypherLog);
+	$this->cypherLabelParamListContext('t');
+	$this->cypherLabelParamListContext('tdy');
+	$this->cypherLabelParamListContext('tY');
+	$this->cypherLabelParamListContext('tmon');
+	$this->cypherLabelParamListContext('tdm');
+	$this->cypherLabelParamListContext('tH');
+	$this->cypherLabelParamListContext('tH');
+	$this->cypherLabelParamListContext('tmin');
+	$this->cypherLabelParamListContext('ts');
+	$this->cypherLabelParamListContext('evt');
+	$this->cypherLabelParamListContext('code');
+	$this->cypherLabelParamListContext('req');
+	$this->cypherLabelParamListContext('tr');
+	$this->cypherLabelParamListContext('bt');
+	$this->cypherLabelParamListContext('i');
+	$this->cypherLabelParamListContext('c');
+	$this->cypherLabelParamListContext('m');
+	$this->cypherLabelParamListContext('l');
+	$this->cypherLabelParamListContext('var');
+	$this->cypherLabelParamListContext('cf');
+	$this->cypherLabelParamListContext('app');
+	$this->cypherLabelParamListContext('hApp');
+	$this->cypherLabelParamListContext('env');
+	$this->cypherLabelParamListContext('u');
+	$this->cypherLabelParamListContext('uh');
+	$this->cypherLabelParamListContext('hClient');
+	$this->cypherLabelParamListContext('ss');
+	$this->cypherLabelParamListContext('ssClient');
+	$this->cypherLabelParamListContext('ssApp');
+	$this->cypherLabelParamListContext('mock');
 
-        echo $this->cypherLog;
-        exit();
-        
         return true;
     }
 }
