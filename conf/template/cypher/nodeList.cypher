@@ -2,4 +2,4 @@
 MATCH (n)
 DETACH DELETE n
 
-{elementList}
+{cypherNodeList}
