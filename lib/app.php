@@ -4,17 +4,18 @@ class App {
 	
 	use TRequest;
 	
-	CONST EXPLOIT_DIR         = '../AppExploitation/';
-	CONST PUBLIC_DIR          = '../AppPublic/';
-	CONST FILE_EXT            = '.php';
-	CONST TAG                 = 'appIdCryptedS';
+	CONST EXPLOIT_DIR            = '../AppExploitation/';
+	CONST PUBLIC_DIR             = '../AppPublic/';
+	CONST FILE_EXT               = '.php';
+	CONST TAG                    = 'appIdCryptedS';
 	
-	public static $name       = false;
-	public static $id         = false;
-	public static $mainClass  = false;
-	public static $ttl        = 20;
-	public static $idCryptedT = Trace::VOID;
-	public static $idCryptedS = Trace::VOID;
+	public static $name          = false;
+	public static $id            = false;
+	public static $mainClass     = false;
+	public static $ttl           = 20;
+	public static $idCryptedT    = Trace::VOID;
+	public static $idCryptedS    = Trace::VOID;
+	public static $securityLevel = 0;
 	
 	public static function init() {
 		

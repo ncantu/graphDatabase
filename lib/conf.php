@@ -69,7 +69,11 @@ class Conf {
     
     private function initConf($confAppFile){
     	
-    	$confContent = file_get_contents(self::DIR.$confAppFile.self::EXT);
+    	$file = self::DIR.$confAppFile.self::EXT;
+    	
+    	if(is_file($file) === false) return false;
+    	
+    	$confContent = file_get_contents($file);
     	
     	if($confContent === false) return false;
     	
