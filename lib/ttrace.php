@@ -504,12 +504,14 @@ trait TTrace {
 			}
 			else $this->cypherLog = str_replace($tag, $v, $this->cypherLog);
 		}
+		echo $this->cypherLog;
+		exit();
+		
 		return true;
 	}
 	
-	private function traceLog($line, $method, $class, $var = Trace::VOID, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG,
-			$methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG,
-			$dateFormat = Trace::DATE_FORMAT, $sepReplace = Trace::SEP_REPLACE) {
+	private function traceLog($line, $method, $class, $var = Trace::VOID, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG,
+			$instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT, $sepReplace = Trace::SEP_REPLACE) {
 		
 		$instance = get_class($this);
 				

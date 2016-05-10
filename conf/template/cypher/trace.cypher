@@ -1,5 +1,5 @@
 
-MERGE (t:Time {time: '{t_time}'})
+MERGE (t:Time {time: '{t_time}', e: '{t_e}'})
 ON CREATE SET 
 t.time = '{t_time}' , 
 t.u = '{t_u}' , 
@@ -7,7 +7,7 @@ t.c = '{t_c}' ,
 t.e = '{t_e}' , 
 t.i = '{t_i}' , 
 t.O = '{t_O}' , 
-t.SERVER_REQUEST_TIME = '{SERVER_REQUEST_TIME}' , 
+t.SERVER_REQUEST_TIME = '{t_SERVER_REQUEST_TIME}' , 
 t.dateCreated = timestamp()
 ON MATCH SET
 t.dateMatchLast = timestamp()
@@ -19,9 +19,9 @@ tdy.dateCreated = timestamp()
 ON MATCH SET
 tdy.dateMatchLast = timestamp()
 
-MERGE (tY:TimeYear {Y: '{ty_Y}'})
+MERGE (tY:TimeYear {Y: '{tY_Y}'})
 ON CREATE SET 
-tY.Y = '{ty_Y}' , 
+tY.Y = '{tY_Y}' , 
 tY.dateCreated = timestamp()
 ON MATCH SET
 tY.dateMatchLast = timestamp()
@@ -112,9 +112,10 @@ req.dateMatchLast = timestamp()
 
 MERGE (t)-[:DATE]->(evt)
 MERGE (code)-[:CATEGORIZE]->(evt)
-MERGE (req)-[:GENERATE]>(evt)
+MERGE (req)-[:GENERATE]->(evt)
 
-CREATE (tr:Trace {cpu: '{tr_cpu}', memory: '{tr_memory}', diskSpace: '{tr_diskSpace}', pid: '{tr_pid}', SERVER_REQUEST_TIME_FLOAT = '{tr_SERVER_REQUEST_TIME_FLOAT}', backtrace: '{tr_backtrace_json}'}
+MERGE (tr:Trace {cpu: '{tr_cpu}', memory: '{tr_memory}', diskSpace: '{tr_diskSpace}', pid: '{tr_pid}', SERVER_REQUEST_TIME_FLOAT: '{tr_SERVER_REQUEST_TIME_FLOAT}', 
+backtrace: '{tr_backtrace_json}'})
 ON CREATE SET 
 tr.dateCreated = timestamp()
 ON MATCH SET
@@ -162,6 +163,7 @@ ON MATCH SET
 var.dateMatchLast = timestamp()
 
 MERGE (t)-[:TRACE]->(req)
+MERGE (tr)-[:TRACE]->(req)
 MERGE (tr)-[:TRACE]->(i)
 MERGE (tr)-[:TRACE]->(c)
 MERGE (tr)-[:TRACE]->(m)
@@ -200,7 +202,7 @@ SERVER_TMP: '{hApp_SERVER_TMP}', SERVER_QT_PLUGIN_PATH: '{hApp_SERVER_QT_PLUGIN_
 SERVER_PHP_FCGI_MAX_REQUESTS: '{hApp_SERVER_PHP_FCGI_MAX_REQUESTS}', SERVER__FCGI_SHUTDOWN_EVENT_: '{hApp_SERVER__FCGI_SHUTDOWN_EVENT_}', SERVER_DOCUMENT_ROOT: '{hApp_SERVER_DOCUMENT_ROOT}', 
 SERVER_SERVER_NAME: '{hApp_SERVER_SERVER_NAME}', SERVER_CONTEXT_PREFIX: '{hApp_SERVER_CONTEXT_PREFIX}', SERVER_SERVER_SOFTWARE: '{hApp_SERVER_SERVER_SOFTWARE}', 
 SERVER_SERVER_SIGNATURE: '{hApp_SERVER_SERVER_SIGNATURE}', SERVER_CONTEXT_DOCUMENT_ROOT: '{hApp_SERVER_CONTEXT_DOCUMENT_ROOT}', SERVER_SystemRoot: '{hApp_SERVER_SystemRoot}', 
-json: '{hApp_json}'}
+json: '{hApp_json}'})
 ON CREATE SET 
 hApp.SERVER_PATH = '{hApp_SERVER_PATH}' ,
 hApp.SERVER_SYSTEMROOT = '{hApp_SERVER_SYSTEMROOT}' ,
@@ -241,7 +243,7 @@ MERGE (cf)-[:CONFIGURE]->(app)
 MERGE (env)-[:SPONSORIZE]->(hApp)
 MERGE (hApp)-[:HOST]->(app)
 
-MERGE (u:User {name: '{u_name}', securityLevel: '{u_securityLevel}', id: '{u_id}')
+MERGE (u:User {name: '{u_name}', securityLevel: '{u_securityLevel}', id: '{u_id}'})
 ON CREATE SET 
 u.name = '{u_name}' ,
 u.id = '{u_id}' ,
@@ -280,7 +282,7 @@ ss.idCryptedT = '{ss_idCryptedT}' ,
 ss.idCryptedS = '{ss_idCryptedS}' , 
 ss.SESSION_JSON = '{ss_SESSION_JSON}' , 
 ss.json = '{ss_json}' ,
-ss.userId = '{ss_userId}' 
+ss.userId = '{ss_userId}' ,
 ss.appId = '{ss_appId}' , 
 ss.dateCreated = timestamp()
 ON MATCH SET 
@@ -313,14 +315,14 @@ MERGE (mock:Mock {name: '{mock_name}'})
 ON CREATE SET 
 mock.userIdCryptedS = '{mock_userIdCryptedS}' ,
 mock.appIdCryptedS = '{mock_appIdCryptedS}' , 
-mock.state = '{mock_State}' , 
+mock.state = '{mock_state}' , 
 mock.name = '{mock_name}' , 
 mock.mockJson = '{mock_json}'  , 
 mock.dateCreated = timestamp()
 ON MATCH SET 
 mock.userIdCryptedS = '{mock_userIdCryptedS}' ,
 mock.appIdCryptedS = '{mock_appIdCryptedS}' , 
-mock.state = '{mock_State}' ,
+mock.state = '{mock_state}' ,
 mock.mockJson = '{mock_json}' ,
 mock.dateMatchLast = timestamp()
 
