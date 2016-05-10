@@ -169,6 +169,7 @@ trait TTrace {
 				break;
 			default: break;
 		}
+		$this->traceSentence  = '';
 		$this->traceSentence .= ucfirst(strtolower($this->errorInfoLevel)).' '.$code.': '.$description->major->short->msg;
 		$this->traceSentence .= ' '.$description->secondary->short->msg;
 		$this->traceSentence  = str_replace($lineTag, $line, $this->traceSentence);
@@ -400,7 +401,7 @@ trait TTrace {
 	}
 	
 	private function traceLogOptimize() {
-		
+				
 		switch($this->errVerbose){
 		
 			case Trace::ERR_VERBOSE_SHORT:
@@ -443,6 +444,7 @@ trait TTrace {
 				break;
 			default: break;
 		}
+		
 		$toTrace = new stdClass();
 		
 		foreach($this as $k => $v){
@@ -455,6 +457,8 @@ trait TTrace {
 		}
 		unset($toTrace->traceLog);
 		unset($toTrace->cypherLog);
+		unset($toTrace->errorLevelInfo);
+		unset($toTrace->errorLevelInfo);
 		
 		return $toTrace;
 	}
@@ -464,10 +468,8 @@ trait TTrace {
 			$methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG,
 			$dateFormat = Trace::DATE_FORMAT) {
 		
-		$description         = $this->errorInfo->description;
-		$instance            = get_class($this);
-		$this->traceSentence = '';
-		$this->traceLog      = '';
+		$description = $this->errorInfo->description;
+		$instance    = get_class($this);
 				
 	    $this->traceSentence($description, $line, $method, $class, $instance, $lineTag, $methodTag, $classTag, $instanceTag, $sep);
 		$this->traceTime();
