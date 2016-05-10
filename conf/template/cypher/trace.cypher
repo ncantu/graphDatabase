@@ -62,10 +62,10 @@ ON MATCH SET
 ts.dateMatchLast = timestamp()
 
 MERGE (tdy)-[:DATE]->(t)
-MERGE (ty)-[:DATE]->(t)
+MERGE (tY)-[:DATE]->(t)
 MERGE (tmon)-[:DATE]->(t)
 MERGE (tdm)-[:DATE]->(t)
-MERGE (th)-[:DATE]->(t)
+MERGE (tH)-[:DATE]->(t)
 MERGE (tmin)-[:DATE]->(t)
 MERGE (ts)-[:DATE]->(t)
 
@@ -162,14 +162,14 @@ var.dateCreated = timestamp()
 ON MATCH SET
 var.dateMatchLast = timestamp()
 
-MERGE (t)-[:TRACE]->(req)
+MERGE (req)-[:GENERATE]->(tr)
 MERGE (tr)-[:TRACE]->(req)
 MERGE (tr)-[:TRACE]->(i)
 MERGE (tr)-[:TRACE]->(c)
 MERGE (tr)-[:TRACE]->(m)
 MERGE (tr)-[:TRACE]->(l)
 MERGE (tr)-[:TRACE]->(var)
-MERGE (bt)-[:HISTORIZE]->(trace)
+MERGE (bt)-[:HISTORIZE]->(tr)
 
 MERGE  (cf:Conf {json: '{cf_json}'})
 ON CREATE 
@@ -262,6 +262,10 @@ ON MATCH SET
 u.dateMatchLast = timestamp()
 
 MERGE (uh:UserHistory)
+ON CREATE SET 
+uh.created = timestamp()
+ON MATCH SET 
+uh.dateMatchLast = timestamp()
 
 MERGE (hClient:HostClient {SERVER_REMOTE_PORT: '{hClient_SERVER_REMOTE_PORT}', SERVER_REMOTE_ADDR: '{hClient_SERVER_REMOTE_ADDR}', SERVER_HTTP_USER_AGENT: '{hClient_SERVER_HTTP_USER_AGENT}'})
 ON CREATE SET 
@@ -332,4 +336,4 @@ MERGE (ss)-[:MAINTAIN]->(ssApp)
 MERGE (ssClient)-[:AUTORIZE]->(u)
 MERGE (ssApp)-[:ACCESS]->(app)
 MERGE (mock)-[:MOCK]->(u)
-MERGE (uh)-[:HISTORIZE]->(ss)
+MERGE (uh)-[:HISTORIZE]->(u)
