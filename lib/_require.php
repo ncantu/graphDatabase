@@ -11,6 +11,7 @@ final class Fw {
 	
 	final public function __construct() {
 		
+		self::requireTrait('tcypher');
 		self::requireTrait('tuser');
 		self::requireTrait('trequest');
 		self::requireTrait('ttrace');
