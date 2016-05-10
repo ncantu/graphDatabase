@@ -4,10 +4,17 @@ trait TTrace {
 	
 	use TUser;
 	
-	private $traceSentence = Trace::VOID;
-	private $traceLog      = Trace::VOID;
-	private $cypherLog     = Trace::VOID;
-	
+	private $traceSentence                             = Trace::VOID;
+	private $traceLog                                  = Trace::VOID;
+	private $cypherLog                                 = Trace::VOID;
+	private $returnValue;
+	private $errorLevelInfo;
+	private $errorInfoLevel;
+	private $errorInfo;
+	private $exitFunc;
+	private $stdoutFunc;
+	private $errVerbose;
+	private $traceFileFunc;
 	private $t_time;
 	private $t_u;
 	private $t_c;
@@ -129,7 +136,9 @@ trait TTrace {
 	
 	private function traceSysVar($sysVar) {
 		
-		return str_replace("'", "\'", json_encode($sysVar));
+		$sysVar = str_replace("\\", "\\\\", json_encode($sysVar));
+		
+		return str_replace("'", "\'", $sysVar);
 	}
 	
 	private function traceSysVarItem($sysVar, $itemName) {
@@ -141,14 +150,16 @@ trait TTrace {
 	
 	private function traceClassExport($className) {
 		
-		return str_replace("'", "\'", json_encode($className));
+		$classVar = str_replace("\\", "\\\\", json_encode(get_class_vars($className)));
+		
+		return str_replace("'", "\'", $classVar);
 	}
 	
-	private function traceSentence($description, $errVerbose, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG) {
+	private function traceSentence($description, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG) {
 		
 		$code = $description->major->code.'-'.$description->secondary->code;
 		
-		switch($errVerbose){
+		switch($this->errVerbose){
 		
 			case Trace::ERR_VERBOSE_FULL:
 				$description->major->short->msg     .= ' '.$description->major->full->msg;
@@ -156,7 +167,7 @@ trait TTrace {
 				break;
 			default: break;
 		}
-		$this->traceSentence .= ucfirst(strtolower($errorInfoLevel)).' '.$code.': '.$description->major->short->msg;
+		$this->traceSentence .= ucfirst(strtolower($this->errorInfoLevel)).' '.$code.': '.$description->major->short->msg;
 		$this->traceSentence .= ' '.$description->secondary->short->msg;
 		$this->traceSentence  = str_replace($lineTag, $line, $this->traceSentence);
 		$this->traceSentence  = str_replace($methodTag, $method, $this->traceSentence);
@@ -354,33 +365,16 @@ trait TTrace {
 		return true;
 	}
 	
-	
-	private function traceLog(
-			$errorInfoLevel, $description, $line, $method, $class, $var = Trace::VOID,
-			$errVerbose = Trace::ERR_VERBOSE_SHORT, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG, $methodTag = Trace::METHOD_TAG,
-			$classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG, $dateFormat = Trace::DATE_FORMAT) {
-				
-	    $this->traceSentence($description, $errVerbose, $lineTag, $methodTag, $classTag, $instanceTag);
-		$this->traceTime();
-		$this->traceCode();
-		$this->traceRequest();
-		$this->traceApp();
-		$this->traceHostApp();
-		$this->traceEnv();
-		$this->traceConf();
-		$this->traceUser();
-		$this->traceHostClient();
-		$this->traceSession();
-		$this->traceMock();
+	private function traceLogOptimize() {
 		
-		switch($errVerbose){
+		switch($this->errVerbose){
 		
 			case Trace::ERR_VERBOSE_SHORT:
 				$this->traceShort();
 				break;
 			case Trace::ERR_VERBOSE_FULL:
 		
-				switch ($errorInfoLevel) {
+				switch ($this->errorInfoLevel) {
 					case 'notice':
 						$this->line             = Trace::VOID;
 						$this->method           = Trace::VOID;
@@ -420,6 +414,32 @@ trait TTrace {
 		unset($toTrace->traceLog);
 		unset($toTrace->cypherLog);
 		
+		return $toTrace;
+	}
+	
+	
+	private function traceLog($line, $method, $class, $var = Trace::VOID, $sep = Trace::SEP, $lineTag = Trace::LINE_TAG,
+			$methodTag = Trace::METHOD_TAG, $classTag = Trace::CLASS_TAG, $instanceTag = Trace::INSTANCE_TAG,
+			$dateFormat = Trace::DATE_FORMAT) {
+		
+		$description         = $this->errorInfo->description;
+		$this->traceSentence = '';
+		$this->traceLog      = '';
+				
+	    $this->traceSentence($description, $lineTag, $methodTag, $classTag, $instanceTag);
+		$this->traceTime();
+		$this->traceCode();
+		$this->traceRequest();
+		$this->traceApp();
+		$this->traceHostApp();
+		$this->traceEnv();
+		$this->traceConf();
+		$this->traceUser();
+		$this->traceHostClient();
+		$this->traceSession();
+		$this->traceMock();
+		
+		$toTrace         = $this->traceLogOptimize();
 		$this->traceLog  = json_encode($toTrace);
 		$this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
 		$this->traceLog .= $sep;
@@ -443,6 +463,7 @@ trait TTrace {
 		$userId   = filter_var(User::$idCryptedT, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 		$userId   = str_replace('/', 'I', $userId);
 		$userId   = str_replace('\\', 'I', $userId);
+		$userId   = str_replace("'", 'I', $userId);
 		$filename = Trace::DIR.$prefix.date(Trace::FILE_DATE_FORMAT, time()).$fileSeparator.$userId.$fileExt;
 		$fp       = fopen($filename, $fileWriteMode);
 		
@@ -588,59 +609,97 @@ trait TTrace {
 		return $this->t(Trace::CODE_NOTICE, $line, $method, $class, $var, $funcVoid, $traceExitFunc, $traceStdoutFunc, $errorVerboseShortSuffix, $errorVerboseFullSuffix, $traceFileFunc);
 	}
 	
-	private function t($code, $line, $method, $class, $var = Trace::VOID, $funcVoid = Trace::VOID_FUNC,
-			$traceExitFunc = Trace::EXIT_FUNC, $traceStdoutFunc = Trace::STDOUT_FUNC, $errorVerboseShortSuffix = Trace::ERR_VERBOSE_SHORT_SUFFIX,
-			$errorVerboseFullSuffix = Trace::ERR_VERBOSE_FULL_SUFFIX,
-			$traceFileFunc = Trace::FILE_FUNC){
-				
-		$this->traceSentence = '';
-		$this->traceLog      = '';
-		
-		$confErrorCodeList   = Trace::$errorCodeList;
-		$errorInfo           = $confErrorCodeList->$code;
-		$errorInfoLevel      = $errorInfo->errorLevel;
+	private function tErrorInfo($errorCodeList, $confErrorCodeList, $code) {
+	
+		$confErrorCodeList    = Trace::$errorCodeList;
+		$this->errorInfo      = $confErrorCodeList->$code;
+		$this->errorInfoLevel = $errorInfo->errorLevel;
 		
 		Self::UserSecurityLevelupdate($errorInfo->securityLevel);
+		
+		$this->errorLevelInfo = Trace::$errorLevelList->$errorInfoLevel;
+		
+		return true;
+	}
+	
+	private function tReturnValue($var = Trace::VOID) {
+		
+		$returnValue         = $this->errorLevelInfo->funcReturn;
+		$returnCase[true]    = true;
+		$returnCase[false]   = false;
+		$returnCase['value'] = $var;
+		$this->returnValue   = $returnCase[$returnValue];
+		
+		return true;
+	}
+	
+	private function tExitFunc($traceExitFunc = Trace::FILE_FUNC) {
 
-		$errorLevelInfo       = Trace::$errorLevelList->$errorInfoLevel;
-				
-		$returnValue          = $errorLevelInfo->funcReturn;
-		$returnCase[true]     = true;
-		$returnCase[false]    = false;
-		$returnCase['value']  = $var;
-		$returnValue          = $returnCase[$returnValue];
+		$exitStatus      = $this->errorLevelInfo->exit;
+		$exitCase[true]  = $traceExitFunc;
+		$exitCase[false] = $funcVoid;
+		$this->exitFunc  = $exitCase[$exitStatus];
 		
-		$exitStatus           = $errorLevelInfo->exit;
-		$exitCase[true]       = $traceExitFunc;
-		$exitCase[false]      = $funcVoid;
-		$exitFunc             = $exitCase[$exitStatus];
+		return true;
+	}
+	
+	private function tStdoutFunc($funcVoid = Trace::VOID_FUNC, $traceStdoutFunc = Trace::STDOUT_FUNC){
 		
-		$stdoutStatus         = $errorLevelInfo->traceStdout;
-		$stdoutCase[true]     = $traceStdoutFunc;
-		$stdoutCase[false]    = $funcVoid;
-		$stdoutFunc           = $stdoutCase[$stdoutStatus];
-				
-		$logFullStatus        = $errorLevelInfo->logFull;
-		$logFullCase[true]    = $errorVerboseFullSuffix;
-		$logFullCase[false]   = $errorVerboseShortSuffix;
-		$errVerbose           = $logFullCase[$logFullStatus];
-				
-		$trace                = $this->traceLog($errorInfoLevel, $errorInfo->description, $line, $method, $class, $var, $errVerbose);
+		$stdoutStatus      = $this->errorLevelInfo->traceStdout;
+		$stdoutCase[true]  = $traceStdoutFunc;
+		$stdoutCase[false] = $funcVoid;
+		$this->stdoutFunc  = $stdoutCase[$stdoutStatus];
 		
-		$traceFileStatus      = $errorLevelInfo->traceFile;
+		return true;
+	}
+	
+	private function tErrVerbose($traceStdoutFunc = Trace::STDOUT_FUNC, $errorVerboseShortSuffix = Trace::ERR_VERBOSE_SHORT_SUFFIX) {
+	
+		$logFullStatus      = $this->errorLevelInfo->logFull;
+		$logFullCase[true]  = $errorVerboseFullSuffix;
+		$logFullCase[false] = $errorVerboseShortSuffix;
+		$this->errVerbose   = $logFullCase[$logFullStatus];
+		
+		return true;
+	}
+	
+	private function tTraceFileStatus($funcVoid = Trace::VOID_FUNC, $traceFileFunc = Trace::FILE_FUNC) {
+	
+		$traceFileStatus      = $this->errorLevelInfo->traceFile;
 		$traceFileCase[true]  = $traceFileFunc;
 		$traceFileCase[false] = $funcVoid;
-		$traceFiletFunc       = $traceFileCase[$traceFileStatus];
+		$this->traceFileFunc  = $traceFileCase[$traceFileStatus];
 		
-		$this->$traceFiletFunc();
+		return true;
+	}
+	
+	private function t($code, $line, $method, $class, $var = Trace::VOID, $funcVoid = Trace::VOID_FUNC,
+			$traceExitFunc = Trace::EXIT_FUNC, $traceStdoutFunc = Trace::STDOUT_FUNC,
+			$errorVerboseShortSuffix = Trace::ERR_VERBOSE_SHORT_SUFFIX,
+			$errorVerboseFullSuffix = Trace::ERR_VERBOSE_FULL_SUFFIX, $traceFileFunc = Trace::FILE_FUNC){
 		
-		http_response_code($errorLevelInfo->httpCode);
+		$this->tErrorInfo($errorCodeList, $confErrorCodeList, $code);
+		$this->tReturnValue($var);
+		$this->tExitFunc($traceExitFunc);
+		$this->tStdoutFunc($funcVoid, $traceStdoutFunc);
+		$this->tErrVerbose($traceStdoutFunc, $errorVerboseShortSuffix);
+				
+		$trace = $this->traceLog($line, $method, $class, $var);
 		
-		$this->$stdoutFunc();
+		$this->tTraceFileStatus($funcVoid, $traceFileFunc);
 		
-		$this->$exitFunc();
+		$func = $this->traceFileFunc;
+		$this->$$func();
 		
-		return $returnValue;
+		http_response_code($this->errorLevelInfo->httpCode);
+		
+		$func = $this->stdoutFunc;
+		$this->$$func();
+		
+		$func = $this->exitFunc;
+		$this->$$func();
+		
+		return $this->returnValue;
 	}
 }
 
