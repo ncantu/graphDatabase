@@ -22,7 +22,7 @@ trait TCypher {
     	return self::cypherLogAttributMode($toTrace, $var->$mode, $var);
     }
     
-    private static function cypherLogAttributMode($toTrace, $list, $var, $sepKV = '= ', $sepK = ' , ', $list = '') {
+    private static function cypherLogAttributMode($toTrace, $list, $var, $sepKV = '= ', $sepK = ' , ', $listC = '') {
     	
     	foreach($list as $k => $v) {
     		
@@ -33,11 +33,11 @@ trait TCypher {
     				
     			$v = "'".$v."'";
     		}
-    		$list .= $var.'.'.$k.$sepKV.$v.$sepK;
+    		$listC .= $var.'.'.$k.$sepKV.$v.$sepK;
     	}
-    	$list = substr($list, 0, (-1 * strlen($sepK)));
+    	$listC = substr($list, 0, (-1 * strlen($sepK)));
     	
-    	return $list;
+    	return $listC;
     }
     
     private static function onModeList($toTrace, $detailList, $createMode = 'onCreateSetList', $matchMode = 'onMatchSetList', $labelPrefix = 'label', $relationshipPrefix = 'relationship') {
