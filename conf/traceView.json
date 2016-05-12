@@ -461,5 +461,12 @@
       },
       "securityLevel": 0
     }
-  }
+  },
+  "actionList": {},
+  "emotionList": {},
+  "labelList": {},
+  "labelParamList": {},
+  "relationshipParamList": {},
+  "nodeList": {},
+  "relationshipList": {}
 }

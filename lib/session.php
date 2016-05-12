@@ -84,7 +84,7 @@ class Session {
 	public static function renew() {
 		
 		Trace::traceStartStatic(__LINE__, __METHOD__, __CLASS__);
-	
+		
 		$_SESSION[self::START_TIME_TAG] = time();
 		self::$startTime                = $_SESSION[self::START_TIME_TAG];
 		self::$endTime                  = self::$startTime + App::$ttl;

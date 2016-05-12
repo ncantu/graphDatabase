@@ -24,7 +24,7 @@ class App {
 		new User();
 		
 		$result = new Conf();
-		
+
 		if($result === false) return false;
 		
 		$result = Session::renew();
@@ -68,8 +68,9 @@ class App {
 				self::$name      = 'TraceView';
 				self::$mainClass = 'traceView';
 				break;
+			default:
+				return false;
 		}
-		
 		return true;
 	}
 }

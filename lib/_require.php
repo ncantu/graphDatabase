@@ -7,18 +7,15 @@ final class Fw {
 	CONST CLASS_EXT            = '.php';
 	CONST TRAIT_EXT            = '.php';
 	
-	public static $classList = array('trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template', 'attribut', 'attributList', 'element', 'elementList');
+	public static $classList   = array('cypher', 'trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template', 'attribut', 'attributList', 'element', 'elementList');
+	public static $traitList   = array('tcypher', 'tuser', 'trequest', 'ttrace', 'tmerge', 'ttemplate', 'tdesignCore');
 	
 	final public function __construct() {
 		
-		self::requireTrait('tcypher');
-		self::requireTrait('tuser');
-		self::requireTrait('trequest');
-		self::requireTrait('ttrace');
-		self::requireTrait('tmerge');
-		self::requireTrait('ttemplate');
-		self::requireTrait('tdesignCore');
-				
+		foreach(self::$traitList as $trait){
+			
+			self::requireTrait($trait);
+		}
 		foreach(self::$classList as $class){
 			
 			self::requireClass($class);

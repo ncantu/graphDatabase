@@ -1160,34 +1160,37 @@
   },
   "labelParamList": {
     "onCreateSetList": {
-      "state": true,
-      "dateStart": 0,
-      "dateEnd": 0,
-      "step": "created",
-      "visibility": "public",
-      "listId": {},
-      "alias": {},
+      "state": "t_n_state",
+      "dateStart": "t_n_dateStart",
+      "dateEnd": "t_n_dateEnd",
+      "step": "t_n_step_created",
+      "visibility": "t_n_visibility",
       "createUser": "u_name",
-      "createdDate": "timestamp()"
+      "createdDate": "t_time",
+      "note": "t_n_note",
+      "value": "t_n_value"
     },
     "onMatchSetList": {
       "matchLastUser": "u_name",
-      "matchLastListId": {},
-      "matchLastAlias": {},
-      "matchLastDate": "timestamp()"
+      "matchLastDate": "t_time"
     }
   },
   "relationshipParamList": {
-    "user": "sysInit",
-    "state": true,
-    "dateStart": 0,
-    "dateEnd": 0,
-    "step": "created",
-    "visibility": "public",
-    "listId": {},
-    "alias": {},
-    "note": "",
-    "value": ""
+    "onCreateSetList": {
+      "state": "t_r_state",
+      "createUser": "u_name",
+      "createdDate": "t_time",
+      "dateStart": "t_r_dateStart",
+      "dateEnd": "t_r_dateEnd",
+      "step": "t_r_step_created",
+      "visibility": "t_r_visibility",
+      "note": "t_r_note",
+      "value": "t_r_value"
+    },
+    "onMatchSetList": {
+      "matchLastUser": "u_name",
+      "matchLastDate": "t_time"
+    }
   },
   "actionList": {
     "Workflow": {

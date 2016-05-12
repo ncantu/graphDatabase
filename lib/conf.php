@@ -11,13 +11,14 @@ class Conf {
     CONST TIMEZONE_DEFAULT                = 'UTC';
     CONST DIR                             = '../conf/';
     CONST EXT                             = '.json';
-    public static $objectList;
+    
     public static $actionList;
     public static $emotionList;
     public static $labelList;
-    public static $labelParamList;
-    public static $relationshipParamList;
-    public static $nodeList;
+    public static $labelParamList      	 = array();
+    public static $relationshipParamList = array();
+    public static $nodeList              = array();
+    public static $relationshipList      = array();
     public static $resultDir;
     public static $envName;
     public static $timeZone;
@@ -67,7 +68,7 @@ class Conf {
         return mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
     }
     
-    private function initConf($confAppFile){
+    private function initConf($confAppFile) {
         
         $file = self::DIR.$confAppFile.self::EXT;
         
@@ -81,7 +82,6 @@ class Conf {
         
         if($confObj === false) return false;
         
-        self::$objectList      = $confObj->objectList;
         self::$resultDir       = $confObj->resultDir;
         Template::$renderList  = $confObj->renderList;
         $envName               = $confObj->envName;
@@ -100,11 +100,13 @@ class Conf {
         self::$labelParamList        = $confObj->labelParamList;
         self::$relationshipParamList = $confObj->relationshipParamList;
         self::$nodeList              = $confObj->nodeList;
+        self::$relationshipList      = $confObj->relationshipList;
         
         return true;
     }
 
-    private function resultSet($content, $typeDir, $confBasenameVar){
+    private function resultSet($content, $typeDir, $confBasenameVar) {
+    
         $typeResulDir = self::$resultDir.self::$$typeDir;
         return file_put_contents($content, $typeResulDir.self::$export[$confBasenameVar]);
     }
