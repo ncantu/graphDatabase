@@ -35,8 +35,9 @@ trait TCypher {
     		}
     		$listC .= $var.'.'.$k.$sepKV.$v.$sepK;
     	}
-    	$listC = substr($listC, 0, (-1 * strlen($sepK)));
-    	
+    	$end   = (-1 * strlen($sepK));
+    	$listC = substr($listC, 0, $end);
+    	    	
     	return $listC;
     }
     
@@ -48,7 +49,15 @@ trait TCypher {
     	$onMatchSetListCommon  = self::cypherTraceLogAttributModeCommon($relationshipPrefix, $toTrace, $detailList->var, $matchMode);
     	$onMatchSetList        = self::cypherLogAttributMode($toTrace, $detailList->$matchMode, $detailList->var);
  
-    	return "\n"."ON CREATE SET ".$onCreateSetListCommon." , ".$onCreateSetList."\n"."ON MATCH SET ".$onMatchSetListCommon." , ".$onMatchSetList;
+    	$list = "\n"."ON CREATE SET ".$onCreateSetListCommon;
+    	
+    	if(strlen($onCreateSetList) !== 0) $list .= ' , '.$onCreateSetList;
+    	
+    	$list .= "\n"."ON MATCH SET ".$onMatchSetListCommon;
+    	    	
+    	if(strlen($onMatchSetList) !== 0) $list .= ' , '.$onMatchSetList;
+    	
+    	return $list;
     }
     
     private function cypherTraceLogContent($toTrace) {
