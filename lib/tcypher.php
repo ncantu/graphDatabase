@@ -24,16 +24,24 @@ trait TCypher {
     
     private static function cypherLogAttributMode($toTrace, $list, $var, $sepKV = Cypher::SEP_K_V, $sepK = Cypher::SEP_K, $listC = '') {
 
+    	$kvsep = '.';
+    	
+    	if($var === '') $kvsep = '';
+    	
     	foreach($list as $k => $v) {
     		
     		$v = $toTrace->$v;
     		$v = self::cypherSecureVar($v);
-    	
+
     		if(is_string($v) === true) {
     				
     			$v = "'".$v."'";
     		}
-    		$listC .= $var.'.'.$k.$sepKV.$v.$sepK;
+    		if(is_null($v) === true) {
+    		
+    			$v = "'".Trace::VOID."'";
+    		}
+    		$listC .= $var.$kvsep.$k.$sepKV.$v.$sepK;
     	}
     	$end   = (-1 * strlen($sepK));
     	$listC = substr($listC, 0, $end);
@@ -66,13 +74,13 @@ trait TCypher {
 
     	foreach(Conf::$nodeList as $detailList) {
     		
-    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, $detailList->var, ': ', ', ');
+    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
     		$this->cypherLog .= "\n"."MERGE (".$detailList->var.":".$detailList->label." { ".$attributList." })"."\n".$modeList."\n\n";
     	}
     	foreach(Conf::$relationshipList as $detailList) {
  
-    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, $detailList->var, ': ', ', ');
+    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
 			$this->cypherLog .= "\n"."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")"."\n".$modeList."\n\n";
     	}
