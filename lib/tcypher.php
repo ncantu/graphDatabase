@@ -1,11 +1,8 @@
 <?php
 
 trait TCypher {
-    
-    private $cypherLabelParamListCreate;
-    private $cypherLabelParamListMatch;
-    private $cypherRelationshipParamListCreate;
-    private $cypherRelationshipParamListMatch;
+	    
+	private $cypherLog = Trace::VOID;
 
     private function cypherSecureVar($var) {
         
@@ -16,86 +13,57 @@ trait TCypher {
         
         return $var;
     }
-
-    private function cypherAttributGet($list, $mode, $str = '') {
-
-        foreach(Conf::$labelParamList->mode as $k => $v){
-
-            $v = $this->cypherSecureVar($v);
-
-            if(is_string($v) === true) {
-
-                $v = "'".$v."'";
-            }
-
-            $str .= '{cypherVar}'.'_'.$k.'= '.$v .' , ';
-        }      
-        $str = subtr($str, 0, -3)."\n";
-
-        return $str;
+    
+    private static function cypherTraceLogAttributModeCommon($type, $toTrace, $var, $mode){
+    	    	
+    	$var = $type.$ParamList;
+    	$var = Conf::$$var;
+    	
+    	return self::cypherLogAttributMode($toTrace, $var->$mode, $var);
     }
-
-    private function cypherLabelParamListContext($cypherVar, $tag = '{cypherVar}'){
-
-        $traceVarCreate  = str_replace($tag, $cypherVar, $this->cypherLabelParamListCreate);        
-        $this->cypherLog = str_replace('{'.$cypherVar.'_createLabelParamList}', $traceVarCreate, $this->cypherLog);
-
-        $traceVarMatch  = str_replace($tag, $cypherVar, $this->cypherLabelParamListMatch);        
-        $this->cypherLog = str_replace('{'.$cypherVar.'_matchLabelParamList}', $traceVarMatch, $this->cypherLog);
-
-        return true;
+    
+    private static function cypherLogAttributMode($toTrace, $list, $var, $sepKV = '= ', $sepK = ' , ', $list = '') {
+    	
+    	foreach($list as $k => $v) {
+    		
+    		$v = $toTrace->$v;
+    		$v = $this->cypherSecureVar($v);
+    	
+    		if(is_string($v) === true) {
+    				
+    			$v = "'".$v."'";
+    		}
+    		$list .= $var.'.'.$k.$sepKV.$v.$sepK;
+    	}
+    	$list = substr($list, 0, (-1 * strlen($sepK)));
+    	
+    	return $list;
     }
-
+    
+    private static function onModeList($toTrace, $detailList, $createMode = 'onCreateSetList', $matchMode = 'onMatchSetList', $labelPrefix = 'label', $relationshipPrefix = 'relationship') {
+    
+    	$onCreateSetListCommon = self::cypherTraceLogAttributModeCommon($labelPrefix, $toTrace, $detailList->var, $createMode);
+    	$onCreateSetList       = self::cypherLogAttributMode($toTrace, $detailList->$createMode, $detailList->var);
+    	$onMatchSetListCommon  = self::cypherTraceLogAttributModeCommon($relationshipPrefix, $type, $toTrace, $detailList->var, $matchMode);
+    	$onMatchSetList        = self::cypherLogAttributMode($toTrace, $detailList->$matchMode, $detailList->var);
+ 
+    	return "\n"."ON CREATE SET ".$onCreateSetListCommon." , ".$onCreateSetList."\n"."ON MATCH SET ".$onMatchSetListCommon." , ".$onMatchSetList;
+    }
+    
     private function cypherTraceLogContent($toTrace) {
 
-        foreach($toTrace as $k => $v) {
-                
-            $v   = $this->cypherSecureVar($v);
-            $tag = '\'{'.$k.'}\'';
-                
-            if(is_string($v) === true) {
-                    
-                $this->cypherLog = str_replace($tag, '\''.$v.'\'', $this->cypherLog);
-            }
-            else $this->cypherLog = str_replace($tag, $v, $this->cypherLog);
-        }
-        $this->cypherLabelParamListCreate        = $this->cypherAttributGet(Conf::$labelParamList, 'CREATE');
-        $this->cypherLabelParamListMatch         = $this->cypherAttributGet(Conf::$labelParamList, 'MATCH');
-        $this->cypherRelationshipParamListCreate = $this->cypherAttributGet(Conf::$cypherRelationshipParamList, 'CREATE');
-        $this->cypherRelationshipParamListMatch  = $this->cypherAttributGet(Conf::$cypherRelationshipParamList, 'MATCH');
-
-        $this->cypherLabelParamListContext('t');
-        $this->cypherLabelParamListContext('tdy');
-        $this->cypherLabelParamListContext('tY');
-        $this->cypherLabelParamListContext('tmon');
-        $this->cypherLabelParamListContext('tdm');
-        $this->cypherLabelParamListContext('tH');
-        $this->cypherLabelParamListContext('tH');
-        $this->cypherLabelParamListContext('tmin');
-        $this->cypherLabelParamListContext('ts');
-        $this->cypherLabelParamListContext('evt');
-        $this->cypherLabelParamListContext('code');
-        $this->cypherLabelParamListContext('req');
-        $this->cypherLabelParamListContext('tr');
-        $this->cypherLabelParamListContext('bt');
-        $this->cypherLabelParamListContext('i');
-        $this->cypherLabelParamListContext('c');
-        $this->cypherLabelParamListContext('m');
-        $this->cypherLabelParamListContext('l');
-        $this->cypherLabelParamListContext('var');
-        $this->cypherLabelParamListContext('cf');
-        $this->cypherLabelParamListContext('app');
-        $this->cypherLabelParamListContext('hApp');
-        $this->cypherLabelParamListContext('env');
-        $this->cypherLabelParamListContext('u');
-        $this->cypherLabelParamListContext('uh');
-        $this->cypherLabelParamListContext('hClient');
-        $this->cypherLabelParamListContext('ss');
-        $this->cypherLabelParamListContext('ssClient');
-        $this->cypherLabelParamListContext('ssApp');
-        $this->cypherLabelParamListContext('mock');
-        
-        return true;
+    	foreach(Conf::$nodeList as $detailList) {
+    		
+    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, $detailList->var, ': ', ', ');
+    		$modeList         = self::onModeList($toTrace, $detailList);
+    		$this->cypherLog .= "\n"."MERGE (".$detailList->var.":".$detailList->label." { ".$attributList." })"."\n".$modeList."\n\n";
+    	}
+    	foreach(Conf::$relationshipList as $detailList) {
+ 
+    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, $detailList->var, ': ', ', ');
+    		$modeList         = self::onModeList($toTrace, $detailList);
+			$this->cypherLog .= "\n"."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")"."\n".$modeList."\n\n";
+    	}
     }
 }
 

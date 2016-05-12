@@ -1,4 +1,10 @@
 
+// ************************************************
+// TIME PART
+// ************************************************
+
+// NODES
+
 MERGE (t:Time {time: '{t_time}', e: '{t_e}'})
 ON CREATE SET 
 {t_createLabelParamList} ,
@@ -61,13 +67,56 @@ ts.s = '{ts_s}'
 ON MATCH SET
 {ts_matchLabelParamList}
 
-MERGE (tdy)-[:DATE]->(t)
-MERGE (tY)-[:DATE]->(t)
-MERGE (tmon)-[:DATE]->(t)
-MERGE (tdm)-[:DATE]->(t)
-MERGE (tH)-[:DATE]->(t)
-MERGE (tmin)-[:DATE]->(t)
-MERGE (ts)-[:DATE]->(t)
+// RELATIONSHIPS
+
+MERGE (tdy)-[tdy_t:DATE]->(t)
+ON CREATE SET 
+{tdy_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tdy_t_matchcypherRelationshipParamList}
+
+MERGE (tY)-[ty_t:DATE]->(t)
+ON CREATE SET 
+{ty_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{ty_t_matchcypherRelationshipParamList}
+
+MERGE (tmon)-[dmon_t:DATE]->(t)
+ON CREATE SET 
+{dmon_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{dmon_t_matchcypherRelationshipParamList}
+
+MERGE (tdm)-[tdm_t:DATE]->(t)
+ON CREATE SET 
+{tdm_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tdm_t_matchcypherRelationshipParamList}
+
+MERGE (tH)-[tH_t:DATE]->(t)
+ON CREATE SET 
+{tH_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tH_t_matchcypherRelationshipParamList}
+
+MERGE (tmin)-[tmin_t:DATE]->(t)
+ON CREATE SET 
+{tmin_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tmin_t_matchcypherRelationshipParamList}
+
+MERGE (ts)-[ts_t:DATE]->(t)
+ON CREATE SET 
+{ts_t_createcypherRelationshipParamList} 
+ON MATCH SET 
+{ts_t_matchcypherRelationshipParamList}
+
+
+// ************************************************
+// EVENT PART
+// ************************************************
+
+// NODES
 
 MERGE  (evt:Event {sequence: '{evt_sequence}'})
 ON CREATE SET 
@@ -110,9 +159,32 @@ req.SERVER_PHP_SELF = '{req_SERVER_PHP_SELF}'
 ON MATCH SET
 {req_matchLabelParamList}
 
-MERGE (t)-[:DATE]->(evt)
-MERGE (code)-[:CATEGORIZE]->(evt)
-MERGE (req)-[:GENERATE]->(evt)
+// RELATIONSHIPS
+
+MERGE (t)-[t_evt:DATE]->(evt)
+ON CREATE SET 
+{t_evt_createcypherRelationshipParamList} 
+ON MATCH SET 
+{t_evt_matchcypherRelationshipParamList}
+
+MERGE (code)-[code_evt:CATEGORIZE]->(evt)
+ON CREATE SET 
+{code_evt_createcypherRelationshipParamList} 
+ON MATCH SET 
+{code_evt_matchcypherRelationshipParamList}
+
+MERGE (req)-[req_evt:GENERATE]->(evt)
+ON CREATE SET 
+{req_evt_createcypherRelationshipParamList} 
+ON MATCH SET 
+{req_evt_matchcypherRelationshipParamList}
+
+
+// ************************************************
+// CODE PART
+// ************************************************
+
+// NODES
 
 MERGE (tr:Trace {cpu: '{tr_cpu}', memory: '{tr_memory}', diskSpace: '{tr_diskSpace}', pid: '{tr_pid}', SERVER_REQUEST_TIME_FLOAT: '{tr_SERVER_REQUEST_TIME_FLOAT}', 
 backtrace: '{tr_backtrace_json}'})
@@ -162,14 +234,62 @@ var.json = '{var_json}'
 ON MATCH SET
 {var_matchLabelParamList}
 
-MERGE (req)-[:GENERATE]->(tr)
-MERGE (tr)-[:TRACE]->(req)
-MERGE (tr)-[:TRACE]->(i)
-MERGE (tr)-[:TRACE]->(c)
-MERGE (tr)-[:TRACE]->(m)
-MERGE (tr)-[:TRACE]->(l)
-MERGE (tr)-[:TRACE]->(var)
-MERGE (bt)-[:HISTORIZE]->(tr)
+// RELATIONSHIPS
+
+MERGE (req)-[req_tr:GENERATE]->(tr)
+ON CREATE SET 
+{req_tr_createcypherRelationshipParamList} 
+ON MATCH SET 
+{req_tr_matchcypherRelationshipParamList}
+
+MERGE (tr)-[tr_reg:TRACE]->(req)
+ON CREATE SET 
+{tr_reg_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tr_reg_matchcypherRelationshipParamList}
+
+MERGE (tr)-[tr_i:TRACE]->(i)
+ON CREATE SET 
+{tr_i_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tr_i_matchcypherRelationshipParamList}
+
+MERGE (tr)-[tr_c:TRACE]->(c)
+ON CREATE SET 
+{tr_c_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tr_c_matchcypherRelationshipParamList}
+
+MERGE (tr)-[tr_m:TRACE]->(m)
+ON CREATE SET 
+{tr_m_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tr_m_matchcypherRelationshipParamList}
+
+MERGE (tr)-[tr_l:TRACE]->(l)
+ON CREATE SET 
+{tr_l_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tr_l_matchcypherRelationshipParamList}
+
+MERGE (tr)-[tr_var:TRACE]->(var)
+ON CREATE SET 
+{tr_var_createcypherRelationshipParamList} 
+ON MATCH SET 
+{tr_var_matchcypherRelationshipParamList}
+
+MERGE (bt)-[bt_tr:HISTORIZE]->(tr)
+ON CREATE SET 
+{bt_tr_createcypherRelationshipParamList} 
+ON MATCH SET 
+{bt_tr_matchcypherRelationshipParamList}
+
+
+// ************************************************
+// APPLICATION PART
+// ************************************************
+
+// NODES
 
 MERGE  (cf:Conf {json: '{cf_json}'})
 ON CREATE SET 
@@ -238,10 +358,38 @@ ON MATCH SET
 {env_matchLabelParamList} , 
 env.SERVER_SERVER_ADMIN = '{env_SERVER_SERVER_ADMIN}'
 
-MERGE (t)-[:TRACE]->(app)
-MERGE (cf)-[:CONFIGURE]->(app)
-MERGE (env)-[:SPONSORIZE]->(hApp)
-MERGE (hApp)-[:HOST]->(app)
+// RELATIONSHIPS
+
+MERGE (t)-[t_app:TRACE]->(app)
+ON CREATE SET 
+{t_app_createcypherRelationshipParamList} 
+ON MATCH SET 
+{t_app_matchcypherRelationshipParamList}
+
+MERGE (cf)-[cf_app:CONFIGURE]->(app)
+ON CREATE SET 
+{cf_app_createcypherRelationshipParamList} 
+ON MATCH SET 
+{cf_app_matchcypherRelationshipParamList}
+
+MERGE (env)-[env_hApp:SPONSORIZE]->(hApp)
+ON CREATE SET 
+{env_hApp_createcypherRelationshipParamList} 
+ON MATCH SET 
+{env_hApp_matchcypherRelationshipParamList}
+
+MERGE (hApp)-[hApp_app:HOST]->(app)
+ON CREATE SET 
+{hApp_app_createcypherRelationshipParamList} 
+ON MATCH SET 
+{hApp_app_matchcypherRelationshipParamList}
+
+
+// ************************************************
+// USER PART
+// ************************************************
+
+// NODES
 
 MERGE (u:User {name: '{u_name}', securityLevel: '{u_securityLevel}', id: '{u_id}'})
 ON CREATE SET 
@@ -329,10 +477,46 @@ mock.appIdCryptedS = '{mock_appIdCryptedS}' ,
 mock.state = '{mock_state}' ,
 mock.mockJson = '{mock_json}'
 
-MERGE (u)-[:CALL]->(req)
-MERGE (ss)-[:MAINTAIN]->(ssClient)
-MERGE (ss)-[:MAINTAIN]->(ssApp)
-MERGE (ssClient)-[:AUTORIZE]->(u)
-MERGE (ssApp)-[:ACCESS]->(app)
-MERGE (mock)-[:MOCK]->(u)
-MERGE (uh)-[:HISTORIZE]->(u)
+// RELATIONSHIPS
+
+MERGE (u)-[u_req:CALL]->(req)
+ON CREATE SET 
+{u_req_createcypherRelationshipParamList} 
+ON MATCH SET 
+{u_req_matchcypherRelationshipParamList}
+
+MERGE (ss)-[ss_ssClient:MAINTAIN]->(ssClient)
+ON CREATE SET 
+{ss_ssClient_createcypherRelationshipParamList} 
+ON MATCH SET 
+{ss_ssClient_matchcypherRelationshipParamList}
+
+MERGE (ss)-[ss_ssApp:MAINTAIN]->(ssApp)
+ON CREATE SET 
+{ss_ssApp_createcypherRelationshipParamList} 
+ON MATCH SET 
+{ss_ssApp_matchcypherRelationshipParamList}
+
+MERGE (ssClient)-[ssClient_u:AUTORIZE]->(u)
+ON CREATE SET 
+{ssClient_u_createcypherRelationshipParamList} 
+ON MATCH SET 
+{ssClient_u_matchcypherRelationshipParamList}
+
+MERGE (ssApp)-[ssApp_app:ACCESS]->(app)
+ON CREATE SET 
+{ssApp_app_createcypherRelationshipParamList} 
+ON MATCH SET 
+{ssApp_app_matchcypherRelationshipParamList}
+
+MERGE (mock)-[mock_u:MOCK]->(u)
+ON CREATE SET 
+{mock_u_createcypherRelationshipParamList} 
+ON MATCH SET 
+{mock_u_matchcypherRelationshipParamList}
+
+MERGE (uh)-[uh_u:HISTORIZE]->(u)
+ON CREATE SET 
+{uh_u_createcypherRelationshipParamList} 
+ON MATCH SET 
+{uh_u_matchcypherRelationshipParamList}

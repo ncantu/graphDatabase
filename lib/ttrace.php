@@ -3,11 +3,11 @@
 
 trait TTrace {
     
+	use TCypher;
     use TUser;
     
     private $traceSentence                             = Trace::VOID;
     private $traceLog                                  = Trace::VOID;
-    private $cypherLog                                 = Trace::VOID;
     private $returnValue;
     private $errorLevelInfo;
     private $errorInfoLevel;
@@ -478,7 +478,6 @@ trait TTrace {
         $this->traceLog  = json_encode($toTrace);
         $this->traceLog  = str_replace($sep, Trace::SEP_REPLACE, $this->traceLog);
         $this->traceLog .= $sep;
-        $this->cypherLog = file_get_contents(Trace::CYPHER_TEMPLATE);
         
         return true;
     }
@@ -508,7 +507,11 @@ trait TTrace {
         $toTrace = $this->traceLogOptimize();
         
         $this->traceLogFileContent($toTrace, $sep, $sepReplace);
+        
         $this->cypherTraceLogContent($toTrace);
+        
+        echo $this->cypherLog;
+        exit();
         
         return true;
     }

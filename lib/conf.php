@@ -17,6 +17,7 @@ class Conf {
     public static $labelList;
     public static $labelParamList;
     public static $relationshipParamList;
+    public static $nodeList;
     public static $resultDir;
     public static $envName;
     public static $timeZone;
@@ -98,6 +99,7 @@ class Conf {
         self::$labelList             = $confObj->labelList;
         self::$labelParamList        = $confObj->labelParamList;
         self::$relationshipParamList = $confObj->relationshipParamList;
+        self::$nodeList              = $confObj->nodeList;
         
         return true;
     }
