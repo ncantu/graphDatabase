@@ -32,6 +32,7 @@ trait TTrace {
     private $errVerbose;
     private $traceFileFunc;
     private $t_time;
+    private $t_date;
     private $t_u;
     private $t_c;
     private $t_e;
@@ -45,6 +46,7 @@ trait TTrace {
     private $tH_H;
     private $tmin_i;
     private $ts_s;
+    private $code_code;
     private $code_major;
     private $code_minor;
     private $tr_backtrace_json;
@@ -76,6 +78,7 @@ trait TTrace {
     private $i_name;
     private $c_name;
     private $m_name;
+    private $bt_name;
     private $l_number;
     private $var_json;
     private $app_name;
@@ -115,6 +118,7 @@ trait TTrace {
     private $u_id;
     private $u_name;
     private $u_json;
+    private $uh_name;
     private $hClient_SERVER_REMOTE_PORT;
     private $hClient_SERVER_REMOTE_ADDR;
     private $hClient_SERVER_HTTP_USER_AGENT;
@@ -209,6 +213,7 @@ trait TTrace {
     private function traceTime() {
         
         $this->t_time                = time();
+        $this->t_date                = date(Trace::DATE_FORMAT, $this->t_time);
         $this->t_u                   = date('u', $this->t_time);
         $this->t_c                   = date('c', $this->t_time);
         $this->t_e                   = date('e', $this->t_time);
@@ -226,12 +231,13 @@ trait TTrace {
         return true;
     }
     
-    private function traceCode($description, $instance, $class, $method, $line, $var) {
+    private function traceCode($description, $instance, $class, $method, $line, $var, $codeSep = Trace::CODE_SEPARATPOR) {
         
         Trace::$envSequence++;
-        
+               
         $this->code_major   = $description->major->code;
         $this->code_minor   = $description->secondary->code;
+        $this->code_code    = $description->major->code.$codeSep.$this->code_minor;
         $this->code_level   = $this->errorInfoLevel;
         $this->i_name       = $instance;
         $this->c_name       = $class;
@@ -277,6 +283,7 @@ trait TTrace {
         $this->tr_pid                       = getmypid();
         $this->tr_SERVER_REQUEST_TIME_FLOAT = $this->traceSysVarItem($_SERVER, 'REQUEST_TIME_FLOAT');
         $this->tr_backtrace_json            = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 10);
+        $this->bt_name                      = Trace::ALL;
         $this->app_name                     = App::$name;
         $this->app_id                       = App::$id;
         $this->app_ttl                      = App::$ttl;
@@ -338,6 +345,7 @@ trait TTrace {
         $this->u_id            = User::$id;
         $this->u_name          = User::$name;
         $this->u_json          = $this->traceClassExport('User');
+        $this->uh_name         = Trace::ALL;
         
         return true;
     }

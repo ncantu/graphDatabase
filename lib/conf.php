@@ -19,7 +19,6 @@ class Conf {
     public static $relationshipParamList = array();
     public static $nodeList              = array();
     public static $relationshipList      = array();
-    public static $resultDir;
     public static $envName;
     public static $timeZone;
     
@@ -71,19 +70,17 @@ class Conf {
     private function initConf($confAppFile) {
         
         $file = self::DIR.$confAppFile.self::EXT;
-        
+ 
         if(is_file($file) === false) return false;
         
         $confContent = file_get_contents($file);
         
         if($confContent === false) return false;
-        
+
         $confObj = json_decode($confContent);
         
         if($confObj === false) return false;
-        
-        self::$resultDir       = $confObj->resultDir;
-        Template::$renderList  = $confObj->renderList;
+
         $envName               = $confObj->envName;
         self::$envName         = $envName;
         $confEnv               = $confObj->envList->$envName;
@@ -91,6 +88,7 @@ class Conf {
         Trace::$errorCodeList  = $confObj->errorCodeList;
         self::$timeZone        = $confObj->timeZone;
         App::$ttl              = $confObj->sessionTtl;
+        Cypher::$database      = $confObj->graphDatabase;
                 
         date_default_timezone_set(self::$timeZone);
 

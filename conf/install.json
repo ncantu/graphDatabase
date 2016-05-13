@@ -1,17 +1,13 @@
 {
   "sessionTtl": 1296000,
   "timeZone": "UTC",
-  "renderList": {
-    "cypher": {
-      "ext": ".cypher",
-      "dir": "cypher/"
-    },
-    "html": {
-      "ext": ".html",
-      "dir": "html/"
-    }
+  "graphDatabase": {
+    "host": "localhost",
+    "port": "7474",
+    "url": "/db/data/transaction/commit",
+    "username": "neo4j",
+    "password": "picnic1280AAA!"
   },
-  "resultDir": "../result/",
   "envName": "dev",
   "envList": {
     "dev": {
@@ -451,10 +447,12 @@
       "label": "time",
       "var": "t",
       "paramList": {
+        "name": "t_date",
         "time": "t_time",
         "e": "t_e"
       },
       "onCreateSetList": {
+        "name": "t_date",
         "time": "t_time",
         "u": "t_u",
         "c": "t_c",
@@ -468,10 +466,10 @@
       "label": "TimeDayYear",
       "var": "tdy",
       "paramList": {
-        "z": "tdy_z"
+        "name": "tdy_z"
       },
       "onCreateSetList": {
-        "z": "tdy_z"
+        "name": "tdy_z"
       },
       "onMatchSetList": {}
     },
@@ -479,10 +477,10 @@
       "label": "TimeYear",
       "var": "tY",
       "paramList": {
-        "Y": "tY_Y"
+        "name": "tY_Y"
       },
       "onCreateSetList": {
-        "Y": "tY_Y"
+        "name": "tY_Y"
       },
       "onMatchSetList": {}
     },
@@ -490,10 +488,10 @@
       "label": "TimeYear",
       "var": "tmon",
       "paramList": {
-        "m": "tmon_m"
+        "name": "tmon_m"
       },
       "onCreateSetList": {
-        "m": "tmon_m"
+        "name": "tmon_m"
       },
       "onMatchSetList": {}
     },
@@ -501,10 +499,10 @@
       "label": "TimeDayMonth",
       "var": "tdm",
       "paramList": {
-        "d": "tdm_d"
+        "name": "tdm_d"
       },
       "onCreateSetList": {
-        "d": "tdm_d"
+        "name": "tdm_d"
       },
       "onMatchSetList": {}
     },
@@ -512,10 +510,10 @@
       "label": "TimeMinute",
       "var": "tmin",
       "paramList": {
-        "i": "tmin_i"
+        "name": "tmin_i"
       },
       "onCreateSetList": {
-        "i": "tmin_i"
+        "name": "tmin_i"
       },
       "onMatchSetList": {}
     },
@@ -523,10 +521,10 @@
       "label": "TimeDayHour",
       "var": "tH",
       "paramList": {
-        "H": "tH_H"
+        "name": "tH_H"
       },
       "onCreateSetList": {
-        "H": "tH_H"
+        "name": "tH_H"
       },
       "onMatchSetList": {}
     },
@@ -534,10 +532,10 @@
       "label": "TimeSecond",
       "var": "ts",
       "paramList": {
-        "s": "ts_s"
+        "name": "ts_s"
       },
       "onCreateSetList": {
-        "s": "ts_s"
+        "name": "ts_s"
       },
       "onMatchSetList": {}
     },
@@ -545,10 +543,20 @@
       "label": "Event",
       "var": "evt",
       "paramList": {
-        "sequence": "evt_sequence"
+        "uId": "u_id",
+        "appId": "app_id",
+        "sequence": "evt_sequence",
+        "pid": "tr_pid",
+        "SERVER_REQUEST_TIME_FLOAT": "tr_SERVER_REQUEST_TIME_FLOAT",
+        "backtrace": "tr_backtrace_json"
       },
       "onCreateSetList": {
-        "sequence": "evt_sequence"
+        "uId": "u_id",
+        "appId": "app_id",
+        "sequence": "evt_sequence",
+        "pid": "tr_pid",
+        "SERVER_REQUEST_TIME_FLOAT": "tr_SERVER_REQUEST_TIME_FLOAT",
+        "backtrace": "tr_backtrace_json"
       },
       "onMatchSetList": {}
     },
@@ -556,11 +564,13 @@
       "label": "Code",
       "var": "code",
       "paramList": {
+        "name": "code_code",
         "major": "code_major",
         "minor": "code_minor",
         "level": "code_level"
       },
       "onCreateSetList": {
+        "name": "code_code",
         "major": "code_major",
         "minor": "code_minor",
         "level": "code_level"
@@ -571,6 +581,7 @@
       "label": "Request",
       "var": "req",
       "paramList": {
+        "name": "req_SERVER_QUERY_STRING",
         "SERVER_SCRIPT_NAME": "req_SERVER_SCRIPT_NAME",
         "SERVER_REQUEST_URI": "req_SERVER_REQUEST_URI",
         "SERVER_QUERY_STRING": "req_SERVER_QUERY_STRING",
@@ -590,6 +601,7 @@
         "SERVER_PHP_SELF": "req_SERVER_PHP_SELF"
       },
       "onCreateSetList": {
+        "name": "req_SERVER_QUERY_STRING",
         "SERVER_SCRIPT_NAME": "req_SERVER_SCRIPT_NAME",
         "SERVER_REQUEST_URI": "req_SERVER_REQUEST_URI",
         "SERVER_QUERY_STRING": "req_SERVER_QUERY_STRING",
@@ -624,8 +636,12 @@
     "bt": {
       "label": "BackTrace",
       "var": "bt",
-      "paramList": {},
-      "onCreateSetList": {},
+      "paramList": {
+        "name": "bt_name"
+      },
+      "onCreateSetList": {
+        "name": "bt_name"
+      },
       "onMatchSetList": {}
     },
     "i": {
@@ -665,10 +681,10 @@
       "label": "Line",
       "var": "l",
       "paramList": {
-        "number": "l_number"
+        "name": "l_number"
       },
       "onCreateSetList": {
-        "number": "l_number"
+        "name": "l_number"
       },
       "onMatchSetList": {}
     },
@@ -722,6 +738,7 @@
       "label": "HostApp",
       "var": "hApp",
       "paramList": {
+        "name": "hApp_SERVER_SERVER_NAME",
         "SERVER_PATH": "hApp_SERVER_PATH",
         "SERVER_SYSTEMROOT": "hApp_SERVER_SYSTEMROOT",
         "SERVER_COMSPEC": "hApp_SERVER_COMSPEC",
@@ -745,6 +762,7 @@
         "json": "hApp_json"
       },
       "onCreateSetList": {
+        "name": "hApp_SERVER_SERVER_NAME",
         "SERVER_PATH": "hApp_SERVER_PATH",
         "SERVER_SYSTEMROOT": "hApp_SERVER_SYSTEMROOT",
         "SERVER_COMSPEC": "hApp_SERVER_COMSPEC",
@@ -808,19 +826,25 @@
     "uh": {
       "label": "UserHistory",
       "var": "uh",
-      "paramList": {},
-      "onCreateSetList": {},
+      "paramList": {
+        "name": "uh_name"
+      },
+      "onCreateSetList": {
+        "name": "uh_name"
+      },
       "onMatchSetList": {}
     },
     "hClient": {
       "label": "HostClient",
       "var": "hClient",
       "paramList": {
+        "name": "hClient_SERVER_REMOTE_ADDR",
         "SERVER_REMOTE_PORT": "hClient_SERVER_REMOTE_PORT",
         "SERVER_REMOTE_ADDR": "hClient_SERVER_REMOTE_ADDR",
         "SERVER_HTTP_USER_AGENT": "hClient_SERVER_HTTP_USER_AGENT"
       },
       "onCreateSetList": {
+        "name": "hClient_SERVER_REMOTE_ADDR",
         "SERVER_REMOTE_PORT": "hClient_SERVER_REMOTE_PORT",
         "SERVER_REMOTE_ADDR": "hClient_SERVER_REMOTE_ADDR",
         "SERVER_HTTP_USER_AGENT": "hClient_SERVER_HTTP_USER_AGENT"
@@ -831,11 +855,13 @@
       "label": "Session",
       "var": "ss",
       "paramList": {
+        "name": "ss_id",
         "id": "ss_id",
         "userId": "ss_userId",
         "appId": "ss_appId"
       },
       "onCreateSetList": {
+        "name": "ss_id",
         "id": "ss_id",
         "startTime": "ss_startTime",
         "endTime": "ss_endTime",
@@ -861,10 +887,12 @@
       "label": "SessionClient",
       "var": "ssClient",
       "paramList": {
+        "name": "ssClient_userIdCryptedS",
         "userIdCryptedS": "ssClient_userIdCryptedS",
         "userIdCryptedT": "ssClient_userIdCryptedT"
       },
       "onCreateSetList": {
+        "name": "ssClient_userIdCryptedS",
         "userIdCryptedS": "ssClient_userIdCryptedS",
         "userIdCryptedT": "ssClient_userIdCryptedT"
       },
@@ -874,10 +902,12 @@
       "label": "SessionApp",
       "var": "ssApp",
       "paramList": {
+        "name": "ssApp_appIdCryptedS",
         "appIdCryptedS": "ssApp_appIdCryptedS",
         "appIdCryptedT": "ssApp_appIdCryptedT"
       },
       "onCreateSetList": {
+        "name": "ssApp_appIdCryptedS",
         "appIdCryptedS": "ssApp_appIdCryptedS",
         "appIdCryptedT": "ssApp_appIdCryptedT"
       },
@@ -941,10 +971,19 @@
       "onCreateSetList": {},
       "onMatchSetList": {}
     },
-    "tH_t": {
+    "tmin_t": {
       "relationship": "DATE",
       "var": "tmin_t",
       "start": "tmin",
+      "end": "t",
+      "paramList": {},
+      "onCreateSetList": {},
+      "onMatchSetList": {}
+    },
+    "tH_t": {
+      "relationship": "DATE",
+      "var": "tH_t",
+      "start": "tH",
       "end": "t",
       "paramList": {},
       "onCreateSetList": {},
@@ -963,7 +1002,7 @@
       "relationship": "DATE",
       "var": "t_evt",
       "start": "t",
-      "end": "evnt",
+      "end": "evt",
       "paramList": {},
       "onCreateSetList": {},
       "onMatchSetList": {}
@@ -1058,15 +1097,6 @@
       "onCreateSetList": {},
       "onMatchSetList": {}
     },
-    "t_app": {
-      "relationship": "TRACE",
-      "var": "t_app",
-      "start": "t",
-      "end": "app",
-      "paramList": {},
-      "onCreateSetList": {},
-      "onMatchSetList": {}
-    },
     "cf_app": {
       "relationship": "CONFIGURE",
       "var": "cf_app",
@@ -1090,6 +1120,15 @@
       "var": "hApp_app",
       "start": "hApp",
       "end": "app",
+      "paramList": {},
+      "onCreateSetList": {},
+      "onMatchSetList": {}
+    },
+    "hClient_ss": {
+      "relationship": "HOST",
+      "var": "hClient_ss",
+      "start": "hClient",
+      "end": "ss",
       "paramList": {},
       "onCreateSetList": {},
       "onMatchSetList": {}

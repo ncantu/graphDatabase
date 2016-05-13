@@ -7,7 +7,7 @@ final class Fw {
 	CONST CLASS_EXT            = '.php';
 	CONST TRAIT_EXT            = '.php';
 	
-	public static $classList   = array('cypher', 'trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template', 'attribut', 'attributList', 'element', 'elementList');
+	public static $classList   = array('cypher', 'trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template');
 	public static $traitList   = array('tcypher', 'tuser', 'trequest', 'ttrace', 'tmerge', 'ttemplate', 'tdesignCore');
 	
 	final public function __construct() {

@@ -8,8 +8,10 @@ trait TCypher {
         
         if(is_string($var) === false) return $var;
 
-        $var = str_replace("\\", "\\\\'", $var);
+        if(strstr($var, '\\\\') === false) $var = str_replace("\\", "\\\\'", $var);
+        
         $var = str_replace("'", "\\'", $var);
+        $var = str_replace("\\\\\\", "\\\\", $var);
         
         return $var;
     }
@@ -57,11 +59,11 @@ trait TCypher {
     	$onMatchSetListCommon  = self::cypherTraceLogAttributModeCommon($relationshipPrefix, $toTrace, $detailList->var, $matchMode);
     	$onMatchSetList        = self::cypherLogAttributMode($toTrace, $detailList->$matchMode, $detailList->var);
  
-    	$list = "\n"."ON CREATE SET ".$onCreateSetListCommon;
+    	$list = Cypher::EOL."ON CREATE SET ".$onCreateSetListCommon;
     	
     	if(strlen($onCreateSetList) !== 0) $list .= ' , '.$onCreateSetList;
     	
-    	$list .= "\n"."ON MATCH SET ".$onMatchSetListCommon;
+    	$list .= Cypher::EOL."ON MATCH SET ".$onMatchSetListCommon;
     	    	
     	if(strlen($onMatchSetList) !== 0) $list .= ' , '.$onMatchSetList;
     	
@@ -76,14 +78,16 @@ trait TCypher {
     		
     		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
-    		$this->cypherLog .= "\n"."MERGE (".$detailList->var.":".$detailList->label." { ".$attributList." })"."\n".$modeList."\n\n";
+    		$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->var.":".$detailList->label." { ".$attributList." })".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
     	foreach(Conf::$relationshipList as $detailList) {
  
     		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
-			$this->cypherLog .= "\n"."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")"."\n".$modeList."\n\n";
+			$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
+    	Cypher::send($this->cypherLog);
+    	
     	return true;
     }
 }

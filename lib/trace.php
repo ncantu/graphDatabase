@@ -5,6 +5,7 @@ class Trace {
 	use TTrace;
 	
 	CONST VOID                     = '<<VOID>>';
+	CONST ALL                      = 'ALL';
 	CONST VOID_FUNC                = 'traceVoid';
 	CONST FILE_SEPARATPOR          = '-';
 	CONST FILE_EXT                 = '.log';
@@ -25,6 +26,7 @@ class Trace {
 	CONST STDOUT_FUNC              = 'traceStdout';
 	CONST ERR_VERBOSE_SHORT_SUFFIX = 'short';
 	CONST ERR_VERBOSE_FULL_SUFFIX  = 'full';
+	CONST CODE_SEPARATPOR          = '-';
 	CONST CODE_FATAL               = '500-001';
 	CONST CODE_WARNING             = '500-101';
 	CONST CODE_NOTICE              = '200-101';
