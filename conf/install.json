@@ -6,7 +6,7 @@
     "port": "7474",
     "url": "/db/data/transaction/commit",
     "username": "neo4j",
-    "password": "picnic1280AAA!"
+    "password": ""
   },
   "envName": "dev",
   "envList": {
