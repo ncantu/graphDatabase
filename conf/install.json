@@ -628,9 +628,18 @@
         "diskSpace": "tr_diskSpace",
         "pid": "tr_pid",
         "SERVER_REQUEST_TIME_FLOAT": "tr_SERVER_REQUEST_TIME_FLOAT",
-        "backtrace": "tr_backtrace_json"
+        "backtrace": "tr_backtrace_json",
+        "sequence": "tr_sequence"
       },
-      "onCreateSetList": {},
+      "onCreateSetList": {
+        "cpu": "tr_cpu",
+        "memory": "tr_memory",
+        "diskSpace": "tr_diskSpace",
+        "pid": "tr_pid",
+        "SERVER_REQUEST_TIME_FLOAT": "tr_SERVER_REQUEST_TIME_FLOAT",
+        "backtrace": "tr_backtrace_json",
+        "sequence": "tr_sequence"
+      },
       "onMatchSetList": {}
     },
     "bt": {
@@ -827,10 +836,12 @@
       "label": "UserHistory",
       "var": "uh",
       "paramList": {
-        "name": "uh_name"
+        "name": "uh_name",
+        "userId": "u_id"
       },
       "onCreateSetList": {
-        "name": "uh_name"
+        "name": "uh_name",
+        "userId": "u_id"
       },
       "onMatchSetList": {}
     },
@@ -1052,11 +1063,29 @@
       "onCreateSetList": {},
       "onMatchSetList": {}
     },
+    "i_c": {
+      "relationship": "IMPLEMENT",
+      "var": "i_c",
+      "start": "i",
+      "end": "c",
+      "paramList": {},
+      "onCreateSetList": {},
+      "onMatchSetList": {}
+    },
     "tr_c": {
       "relationship": "TRACE",
       "var": "tr_c",
       "start": "tr",
       "end": "c",
+      "paramList": {},
+      "onCreateSetList": {},
+      "onMatchSetList": {}
+    },
+    "c_m": {
+      "relationship": "EXPOSE",
+      "var": "c_m",
+      "start": "c",
+      "end": "m",
       "paramList": {},
       "onCreateSetList": {},
       "onMatchSetList": {}
@@ -1079,10 +1108,28 @@
       "onCreateSetList": {},
       "onMatchSetList": {}
     },
+    "m_l": {
+      "relationship": "CONTAIN",
+      "var": "m_l",
+      "start": "m",
+      "end": "l",
+      "paramList": {},
+      "onCreateSetList": {},
+      "onMatchSetList": {}
+    },
     "tr_var": {
       "relationship": "TRACE",
       "var": "tr_var",
       "start": "tr",
+      "end": "var",
+      "paramList": {},
+      "onCreateSetList": {},
+      "onMatchSetList": {}
+    },
+    "l_var": {
+      "relationship": "GENERATE",
+      "var": "l_var",
+      "start": "l",
       "end": "var",
       "paramList": {},
       "onCreateSetList": {},

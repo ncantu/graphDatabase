@@ -75,6 +75,7 @@ trait TTrace {
     private $tr_diskSpace;
     private $tr_pid;
     private $tr_SERVER_REQUEST_TIME_FLOAT;
+    private $tr_sequence;
     private $i_name;
     private $c_name;
     private $m_name;
@@ -283,6 +284,7 @@ trait TTrace {
         $this->tr_pid                       = getmypid();
         $this->tr_SERVER_REQUEST_TIME_FLOAT = $this->traceSysVarItem($_SERVER, 'REQUEST_TIME_FLOAT');
         $this->tr_backtrace_json            = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, 10);
+        $this->tr_sequence                  = Trace::$envSequence;
         $this->bt_name                      = Trace::ALL;
         $this->app_name                     = App::$name;
         $this->app_id                       = App::$id;

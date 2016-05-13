@@ -27,8 +27,7 @@ class Cypher {
 		
 		$process = curl_init('http://'.self::$database->host.':'.self::$database->port.self::$database->url);
 	
-		curl_setopt($process, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-		curl_setopt($process, CURLOPT_HTTPHEADER, array('Accept: application/json; charset=UTF-8'));
+		curl_setopt($process, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Accept: application/json; charset=UTF-8'));
 		curl_setopt($process, CURLOPT_HEADER, 1);
 		curl_setopt($process, CURLOPT_USERPWD, self::$database->username.':'.self::$database->password);
 		curl_setopt($process, CURLOPT_TIMEOUT, 30);
