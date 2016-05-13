@@ -37,9 +37,9 @@ class Cypher {
 		
 		$return = curl_exec($process);
 		
-		echo $return;
-		
 		curl_close($process);
+		
+		return $return;
 	}
 	
 	public static function cleanAll() {

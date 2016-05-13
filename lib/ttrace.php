@@ -3,6 +3,7 @@
 
 trait TTrace {
     
+	use TNotification;
 	use TCypher;
     use TUser;
     
@@ -150,7 +151,7 @@ trait TTrace {
     
     private function traceStdout(){
         
-        echo $this->traceSentence;
+    	$this->notification_send($this->traceSentence);
         
         return true;
     }
@@ -752,14 +753,8 @@ trait TTrace {
         $toTrace = $this->tracePrepare($line, $method, $class, $var);
         
         $this->traceLogFileContent($toTrace);
-
         $this->cypherTraceLogContent($toTrace);
-        
-        if(empty($this->cypherLog) === false && $this->cypherLog !== Trace::VOID) {
-	        echo $this->cypherLog;
-	        exit();
-	    }
-        
+                
         $func  = $this->traceFileFunc;
         $this->$func();
         

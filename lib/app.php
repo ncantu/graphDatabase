@@ -18,7 +18,7 @@ class App {
 	public static $securityLevel = 0;
 	
 	public static function init() {
-		
+				
 		new Mock();
 		new App();
 		new User();

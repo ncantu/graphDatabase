@@ -931,10 +931,10 @@
         "name": "mock_name"
       },
       "onCreateSetList": {
+        "name": "mock_name",
         "userIdCryptedS": "mock_userIdCryptedS",
         "appIdCryptedS": "mock_appIdCryptedS",
         "state": "mock_state",
-        "name": "mock_name",
         "mockJson": "mock_json"
       },
       "onMatchSetList": {
@@ -1531,6 +1531,21 @@
     }
   },
   "labelList": {
+    "not": {
+      "var": "not",
+      "label": "Notification",
+      "paramList": {
+        "name": "name",
+        "not_json": "json"
+      },
+      "onCreateSetList": {
+        "name": "name",
+        "json": "json"
+      },
+      "onMatchSetList": {
+        "json": "json"
+      }
+    },
     "Compagny": {
       "DianeKruger": {
         "compagnyName": "DianeKruger"
@@ -2065,6 +2080,21 @@
       "text1": {
         "textLang": "EN",
         "textName": ""
+      }
+    }
+  },
+  "eventList": {
+    "not": {
+      "send": {
+        "not_evt": {
+          "relationship": "NOTIFE",
+          "var": "not_evt",
+          "start": "not",
+          "end": "evt",
+          "paramList": {},
+          "onCreateSetList": {},
+          "onMatchSetList": {}
+        }
       }
     }
   }

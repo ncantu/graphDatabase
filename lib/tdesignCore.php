@@ -1,42 +1,48 @@
 <?php
 
 Trait TDesignCore {
-	
+
 	use TTrace;
-	use TMerge;
 	use TTemplate;
 	
-	private $attributList = array();
-	private $elementList  = array();
-	private $labelName    = '';
-	private $elementName  = '';
-	private $type         = 0;
+	private $var       = '';
+	private $labelName = '';
+	private $name      = '';
+	private $json      = '';
 	
-	public function designCoreConstuctInit($labelName, $elementName, $type){
+	public static $nodeList;
+	public static $relationshipList;
+	
+	public function designCoreConstuctInit($name) {
 		
 		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
-		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $labelName);
-		$this->traceStartparam( __LINE__, __METHOD__, __CLASS__, $elementName);
-		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $type);
+		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $name);
 		
-		$this->labelName   = $labelName;
-		$this->elementName = $elementName;
-		$this->type        = $type;
+		self::$relationshipList = new stdClass();
+		$var                    = self::VARC;
+		$this->var              = $var;
+		$this->labelName        = get_class($this);
+		$this->name             = $name;
+		self::$nodeList         = stdClass();
+		self::$nodeList->$var   = Conf::$labelList->$var;
+		
+		$this->template_init($this->labelName);
 		
 		return $this->traceEndOK(__LINE__, __METHOD__, __CLASS__);
 	}
-	public function designCoreConstuctFinish($render = false){
+	public function designCoreConstuctFinish($func, $send = true) {
 		
 		$this->traceStart(__LINE__, __METHOD__, __CLASS__);
-		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $render);
-		
-		$result = true;
-		
-		if($render === true) {
+		$this->traceStartparam(__LINE__, __METHOD__, __CLASS__, $func);
 			
-			$result = $this->templateRender();
-		}
-		return $this->traceTestFatalEnd(__LINE__, __METHOD__, __CLASS__, $result);
+		$this->templateHtmlGet();
+		
+		if($send === true) $this->templateSend();
+		
+		$this->cypherRelationshipListSet($func);
+		$this->cypherTraceLogContent($this);
+		
+		return $this->traceEndOK(__LINE__, __METHOD__, __CLASS__);
 	}
 }
 

@@ -7,10 +7,14 @@ final class Fw {
 	CONST CLASS_EXT            = '.php';
 	CONST TRAIT_EXT            = '.php';
 	
-	public static $classList   = array('cypher', 'trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template');
-	public static $traitList   = array('tcypher', 'tuser', 'trequest', 'ttrace', 'tmerge', 'ttemplate', 'tdesignCore');
+	public static $classList   = array('notification', 'cypher', 'trace', 'app', 'user', 'session', 'conf', 'mock', 'score', 'template');
+	public static $traitList   = array('tnotification', 'tcypher', 'tuser', 'trequest', 'ttrace', 'tmerge', 'ttemplate', 'tdesignCore');
 	
 	final public function __construct() {
+		
+		require_once 'install.php';
+		
+		Install::verif();
 		
 		foreach(self::$traitList as $trait){
 			

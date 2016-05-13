@@ -1,131 +1,95 @@
 <?php
 
 trait TTemplate {
-		
-	private static $TEMPLATE_FUNCTION_PREFIX = 'template';
 	
-	public $templateList;
+	use TMerge;
+
+	public $templateContent = '';
+	public $templateHtml    = '';
 	
-	private $templateDefaultList;
-	private $templateValList;
+	private function template_init($file = false) {
 	
-	private function template($fileBasename, $type){
-			
-		$file     = Conf::$templateDir.$type.DIRECTORY_SEPARATOR.$fileBasename;
-		$content  = file_get_contents($file);
-		$template = new Template($content, $type);
-		
-		if($template === false) return false;
-			
-		$rendered = $template->template($this->templateDefaultList, $this->templateValList);
-	
-		if($rendered === false) return false;
-	
-		$this->templateList[$template->type] = $rendered;
-	
-		return true;
+		$this->templateContent = self::templateGet($file);
 	}
 	
-	private function templateClassToTemplate($ext){
-		
-		$result = strtolower(get_class($this)).$ext;
-		
-		return $result;
+	private static function templateGet($confBasenameVar) {
+	
+		$file = Template::DIR.$confBasenameVar.Template::EXT;
+	
+		$content = file_get_contents($file);
+	
+		if($content === 0) return false;
+	
+		return $content;
 	}
 	
-	private function templateTagDesignCorePrepareList($list, $type, $listRendered = ''){
-						
-		foreach($list as $obj){
+	private function templateHtmlGet() {
 		
-			$listRendered .= $obj->templateList[$type];
+		$this->templateHtml = $templateContent;
+		
+		foreach($this as $k => $v){
+	
+			if(is_string($v) !== true) continue;
+	
+			$this->templateHtml = str_replace(Template::TAG_PREFFIX.$k.Template::TAG_SUFFIX, $v, $this->templateHtml);
 		}
-		return true;
+		return $this->templateHtml;
 	}
 	
-	private function templateTagDesignCorePrepare($type){
+	private function templateSend(){
 		
-		$this->templateValList['attributList'] = $this->templateTagDesignCorePrepareList($this->attributList, $type);
-		
-		if($this->templateValList['attributList']) {
-			
-			return false;
+		echo $this->templateHtml;
+	}
+	
+	private static function selectedHtmlGet($var, $selected, $selectedHtml = '') {
+	
+		if($var === $selected) $selectedHtml = Template::SELECTED_HTML;
+	
+		return $selectedHtml;
+	}
+	
+	private static function optionHtmlGet($selected, $id, $value, $text) {
+	
+		return '<option '.$selected.' name="'.$id.'" id="'.$id.'" value="'.$value.'">'.$text.'</option>';
+	}
+	
+	private static function filterExist($tag, $default = 'all') {
+	
+		$value = Template::requestVal($tag);
+	
+		if($value === false) $value = $default;
+	
+		return $value;
+	}
+	
+	private static function isSelected($val, $select){
+	
+		$val    = strtolower($val);
+		$select = strtolower($select);
+	
+		if($select === '')      return true;
+		if($select === '0')     return true;
+		if($select === 'all')   return true;
+		if($val    === $select) return true;
+	
+		return false;
+	}
+	
+	private static function listHtmlGet($list, $valueSelected, $all = true, $none = false) {
+	
+		$listHtml = '';
+	
+		if($all  === true) $listHtml .= Template::OPTION_ALL_HTML;
+		if($none === true) $listHtml .= Template::OPTION_NONE_HTML;
+	
+		foreach($list as $value){
+	
+			$selected  = Template::selectedHtmlGet($value, $valueSelected);
+			$listHtml .= Template::optionHtmlGet($selected, $value, $value, $value);
 		}
-				
-		$this->templateValList['elementList'] = $this->templateTagDesignCorePrepareList($this->elementList, $type);
-		
-		if($this->templateValList['elementList']) {
-			
-			return false;
-		}
-		
-		$this->templateValList['labelName']    = $this->labelName;
-		$this->templateValList['elementName']  = $this->elementName;
-		
-		return true;
+		return $listHtml;
 	}
 	
-	private function templateStandard($type = Conf::HTML_TYPE, $ext = Conf::HTML_EXT){
-			
-		$result = $this->templateTagDesignCorePrepare($type);
-	
-		if($result === false) return false;
-	
-		$templateFile = $this->templateClassToTemplate($ext);
-		$result       = $this->template($templateFile, $type);
-		
-		return $result;
-	}
-	
-	private static function cypherParamFormat($paramList){
-		
-		foreach($paramList as $k => $v) {
-			
-			if(is_string($k) === true) $paramList[$k] = str_replace($v, "'".$v."'", $paramList);
-		}
-		return $paramList;
-	}
-	
-	private function templateCypher($type, $ext){
-				
-		$result = $this->templateTagDesignCorePrepare($type);
-		
-		if($result === false) return false;
-		
-		$templateCypherFile = $this->templateClassToTemplate($ext);
-		
-		if($templateCypherFile === false) return false;
-		
-		$this->templateDefaultList = self::cypherParamFormat($this->templateDefaultList);
-		
-		if($this->templateDefaultList === false) return false;
-		
-		$this->templateValList = self::cypherParamFormat($this->templateValList);
-		
-		if($this->templateValList === false) return false;
-	
-		$result = $this->template($templateCypherFile, $type);
-		
-		return $result;
-	}
-	public function templateRender(){
-				
-		foreach(Conf::$renderList as $render){
-			
-			$func = self::$TEMPLATE_FUNCTION_PREFIX.ucfirst($render);
-			$render->ext;
-			
-			if(method_exists($this, $func)) {
-				
-				$result = $this->$func();
-			}
-			else {
-				
-				$result = $this->templateStandard();
-			}
-			if($result === false) return false;
-		}
-		return true;
-	}
 		
 }
 

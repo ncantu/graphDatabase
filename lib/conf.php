@@ -21,6 +21,7 @@ class Conf {
     public static $relationshipList      = array();
     public static $envName;
     public static $timeZone;
+    public static $eventList;
     
     public function __construct() {
         
@@ -99,6 +100,7 @@ class Conf {
         self::$relationshipParamList = $confObj->relationshipParamList;
         self::$nodeList              = $confObj->nodeList;
         self::$relationshipList      = $confObj->relationshipList;
+        self::$eventList             = $confObj->eventList;
         
         return true;
     }

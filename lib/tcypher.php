@@ -72,6 +72,8 @@ trait TCypher {
     
     private function cypherTraceLogContent($toTrace) {
     	
+    	if(isset($this->json) && is_object($this->json) === true) $toTrace->json = json_encode($this->json);
+    	
     	$this->cypherLog = '';
 
     	foreach(Conf::$nodeList as $detailList) {
@@ -88,7 +90,20 @@ trait TCypher {
     	}
     	Cypher::send($this->cypherLog);
     	
+    	$this->cypherLog = '';
+    	
     	return true;
+    }
+    
+    private function cypherRelationshipListSet($func) {
+    
+	    $var = self::VARC;
+	    
+	    foreach(Conf::$eventList->$var->$func as $k => $v) {
+	    
+	    	self::$relationshipList->$k = $v;
+	    }
+	    return true;
     }
 }
 
