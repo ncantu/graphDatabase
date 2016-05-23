@@ -1519,10 +1519,7 @@
         "version": "0.0", "deployment": "0.0"
       },
       "onMatchSetList": {}
-    },
-    
-    // ---------------------------------- NEXT
-    
+    },    
     "catActWfl": {
       "var": "catActWfl",
       "label": "CategoryAction",
@@ -1606,9 +1603,7 @@
         "version": "0.0", "deployment": "0.0"
       },
       "onMatchSetList": {}
-    },
-    
-        
+    },        
     "actWkfTest": {
       "var": "actWkfTest",
       "label": "Action",
@@ -1837,8 +1832,6 @@
       }   
       "onMatchSetList": {}
   },
-
-
   "actClabMark": {
       "var": "actClabMark",
       "label": "Action",
@@ -1935,7 +1928,6 @@
       }   
       "onMatchSetList": {}
   },
-
   "actUaReturn": {
       "var": "actUaReturn",
       "label": "Action",
@@ -2008,7 +2000,6 @@
       }   
       "onMatchSetList": {}
   },
-
   "actCmTarget": {
       "var": "actCmTarget",
       "label": "Action",
@@ -2093,8 +2084,6 @@
       }   
       "onMatchSetList": {}
   },
-
-
   "actAuthOwn": {
       "var": "actAuthOwn",
       "label": "Action",
@@ -2131,7 +2120,6 @@
       }   
       "onMatchSetList": {}
   },
-
   "actStaHost": {
       "var": "actStaHost",
       "label": "Action",
@@ -2167,7 +2155,796 @@
         "version": "0.0", "deployment": "0.0"
       }   
       "onMatchSetList": {}
- }  
+ },
+ // ----------------------------------------------- NEXT
+ 
+ 
+    
+    "catEmoNeg": {
+      "var": "catEmoNeg",
+      "label": "CategoryEmotion",
+      "paramList": {
+        "name": "catEmoNeg_name"
+      },
+      "onCreateSetList": {
+        "name": "catEmoNeg_name",
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },    
+    "catEmoPos": {
+      "var": "catEmoPos",
+      "label": "CategoryEmotion",
+      "paramList": {
+        "name": "catEmoPos_name"
+      },
+      "onCreateSetList": {
+        "name": "catEmoPos_name",
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },  
+    "catEmoNegPos": {
+      "var": "catEmoPos",
+      "label": "CategoryEmotion",
+      "paramList": {
+        "name": "catEmoNegPos_name"
+      },
+      "onCreateSetList": {
+        "name": "catEmoNegPos_name",
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    
+    "emoNegAnger": {
+      "var": "emoNegAnger",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegAnger_name",
+        "negative": true,
+        "forceful": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegAnger_name",
+        "negative": true,
+        "forceful": true,
+        "version": "0.0", "deployment": "0.0"
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegAnnoyance": {
+      "var": "emoNegAnnoyance",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegAnnoyance_name",
+        "negative": true,
+        "forceful": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegAnnoyance_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "forceful": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegContempt": {
+      "var": "emoNegContempt",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegContempt_name",
+         "negative": true,
+         "forceful": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegContempt_name",
+        "version": "0.0", "deployment": "0.0",
+         "negative": true,
+         "forceful": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegDisgust": {
+      "var": "catEmoNegDisgust",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegDisgust_name",
+        "negative": true,
+        "forceful": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegDisgust_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "forceful": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegIrritation": {
+      "var": "emoNegIrritation",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegIrritation_name",
+        "negative": true,
+        "forceful": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegIrritation_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "forceful": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegAnxiety": {
+      "var": "emoNegAnxiety",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegAnxiety_name",
+        "negative": true,
+        "notinControl": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegAnxiety_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "notinControl": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegEmbarrassment": {
+      "var": "emoNegEmbarrassment",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegEmbarrassment_name",
+        "negative": true,
+        "notinControl": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegEmbarrassment_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "notinControl": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegFear": {
+      "var": "emoNegFear",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegFear_name",
+        "negative": true,
+        "notinControl": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegFear_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "notinControl": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegHelplessness": {
+      "var": "emoNegFear",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegHelplessness_name",
+        "negative": true,
+        "notinControl": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegHelplessness_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "notinControl": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegPowerlessness": {
+      "var": "emoNegFear",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegPowerlessness_name",
+        "negative": true,
+        "notinControl": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegPowerlessness_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "notinControl": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegWorry": {
+      "var": "emoNegFear",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegWorry_name",
+        "negative": true,
+        "notinControl": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegWorry_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "notinControl": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegDoubty": {
+      "var": "emoNegDoubty",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegDoubty_name",
+        "negative": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegDoubty_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegEnvy": {
+      "var": "emoNegDoubty",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegEnvy_name",
+        "negative": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegEnvy_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegFrustration": {
+      "var": "emoNegFrustration",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegFrustration_name",
+        "negative": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegFrustration_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegGuilt": {
+      "var": "emoNegGuilt",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegGuilt_name",
+        "negative": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegGuilt_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegShame": {
+      "var": "emoNegShame",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegShame_name",
+        "negative": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegShame_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegBoredom": {
+      "var": "emoNegBoredom",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegBoredom_name",
+        "negative": true,
+        "passive": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegBoredom_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "passive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegDespair": {
+      "var": "emoNegDespair",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegDespair_name",
+        "negative": true,
+        "passive": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegDespair_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "passive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegDisappointment": {
+      "var": "emoNegDisappointment",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegDisappointment_name",
+        "negative": true,
+        "passive": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegDisappointment_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "passive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegHurt": {
+      "var": "emoNegHurt",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegHurt_name",
+        "negative": true,
+        "passive": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegHurt_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "passive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoNegSadness": {
+      "var": "emoNegSadness",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoNegSadness_name",
+        "negative": true,
+        "passive": true
+      },
+      "onCreateSetList": {
+        "name": "emoNegSadness_name",
+        "version": "0.0", "deployment": "0.0",
+        "negative": true,
+        "passive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosAmusement": {
+      "var": "emoPosAmusement",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosAmusement_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosAmusement_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosDelight": {
+      "var": "emoPosDelight",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosDelight_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosDelight_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosElation": {
+      "var": "emoPosElation",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosElation_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosElation_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosExcitement": {
+      "var": "emoPosExcitement",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosExcitement_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosExcitement_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosHappiness": {
+      "var": "emoPosHappiness",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosHappiness_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosHappiness_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosJoy": {
+      "var": "emoPosJoy",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosJoy_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosJoy_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosPleasure": {
+      "var": "emoPosPleasure",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosPleasure_name",
+        "positive": true,
+        "lively": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosPleasure_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "lively": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosCourage": {
+      "var": "emoPosCourage",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosCourage_name",
+        "positive": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosCourage_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosHope": {
+      "var": "emoPosHope",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosHope_name",
+        "positive": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosHope_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosPride": {
+      "var": "emoPosPride",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosPride_name",
+        "positive": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosPride_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosSatisfaction": {
+      "var": "emoPosSatisfaction",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosSatisfaction_name",
+        "positive": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosSatisfaction_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosTrust": {
+      "var": "emoPosTrust",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosTrust_name",
+        "positive": true,
+        "thoughts": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosTrust_name",
+        "version": "0.0", "deployment": "0.0",
+        "positive": true,
+        "thoughts": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosCalmness": {
+      "var": "emoPosCalmness",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosCalmness_name",
+        "quiet": true,
+        "positive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosCalmness_name",
+        "version": "0.0", "deployment": "0.0",
+        "quiet": true,
+        "positive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosContentment": {
+      "var": "emoPosContentment",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosContentment_name",
+        "quiet": true,
+        "positive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosContentment_name",
+        "version": "0.0", "deployment": "0.0",
+        "quiet": true,
+        "positive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosRelaxation": {
+      "var": "emoPosRelaxation",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosRelaxation_name",
+        "quiet": true,
+        "positive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosRelaxation_name",
+        "version": "0.0", "deployment": "0.0",
+        "quiet": true,
+        "positive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosRelief": {
+      "var": "emoPosRelief",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosRelief_name",
+        "quiet": true,
+        "positive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosRelief_name",
+        "version": "0.0", "deployment": "0.0",
+        "quiet": true,
+        "positive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosSerenity": {
+      "var": "emoPosSerenity",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosSerenity_name",
+        "quiet": true,
+        "positive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosSerenity_name",
+        "version": "0.0", "deployment": "0.0",
+        "quiet": true,
+        "positive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegStress": {
+      "var": "emoPosNegStress",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegStress_name",
+        "agitation": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegStress_name",
+        "version": "0.0", "deployment": "0.0",
+        "agitation": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegShock": {
+      "var": "emoPosNegShock",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegShock_name",
+        "agitation": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegShock_name",
+        "version": "0.0", "deployment": "0.0",
+        "agitation": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegTension": {
+      "var": "emoPosNegTension",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegTension_name",
+        "agitation": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegTension_name",
+        "version": "0.0", "deployment": "0.0",
+        "agitation": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegAffection": {
+      "var": "emoPosNegAffection",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegAffection_name",
+        "caring": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegAffection_name",
+        "version": "0.0", "deployment": "0.0",
+        "caring": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegEmpathy": {
+      "var": "emoPosNegEmpathy",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegEmpathy_name",
+        "caring": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegEmpathy_name",
+        "version": "0.0", "deployment": "0.0",
+        "caring": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegFriendliness": {
+      "var": "emoPosNegFriendliness",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegFriendliness_name",
+        "caring": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegFriendliness_name",
+        "version": "0.0", "deployment": "0.0",
+        "caring": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegLove": {
+      "var": "emoPosNegLove",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegLove_name",
+        "caring": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegLove_name",
+        "version": "0.0", "deployment": "0.0",
+        "caring": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegInterest": {
+      "var": "emoPosNegInterest",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegInterest_name",
+        "reactive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegInterest_name",
+        "version": "0.0", "deployment": "0.0",
+        "reactive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegPoliteness": {
+      "var": "emoPosNegPoliteness",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegPoliteness_name",
+        "reactive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegPoliteness_name",
+        "version": "0.0", "deployment": "0.0",
+        "reactive": true
+      }   
+      "onMatchSetList": {}
+    },
+    "emoPosNegSurprise": {
+      "var": "emoPosNegSurprise",
+      "label": "Emotion",
+      "paramList": {
+        "name": "emoPosNegSurprise_name",
+        "reactive": true
+      },
+      "onCreateSetList": {
+        "name": "emoPosNegSurprise_name",
+        "version": "0.0", "deployment": "0.0",
+        "reactive": true
+      }   
+      "onMatchSetList": {}
+    }
   },
   "relationshipList": {
     "catActWfl_actWkfTest": {
@@ -3193,16 +3970,6 @@
       },
       "onMatchSetList": {}
     },
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    // ---------------- NEXT 
     "team_corp": {
       "relationship": "CONTRIBUTE",
       "var": "team_corp",
@@ -3923,68 +4690,6 @@
       "matchLastUser": "u_name",
       "matchLastDate": "t_time",
       "sign": "t_sign"
-    }
-  },
-  "actionList": {
-    "Workflow": {
-      "test": {},
-      "valid": {},
-      "collect": {},
-      "optimize": {},
-      "shipp": {},
-      "pay": {},
-      "billing": {},
-      "expedite": {},
-      "payBack": {},
-      "shippManange": {},
-      "expediteManange": {},
-      "payManange": {}
-    },
-    "Lifcycle": {
-      "create": {},
-      "init": {},
-      "publish": {},
-      "state": {},
-      "expire": {},
-      "historize": {},
-      "archive": {}
-    },
-    "Collaborate": {
-      "mark": {},
-      "ask": {},
-      "note": {},
-      "comment": {},
-      "share": {},
-      "contributeTo": {},
-      "facility": {},
-      "balance": {}
-    },
-    "UserAction": {
-      "return": {},
-      "order": {},
-      "add": {},
-      "buy": {},
-      "show": {},
-      "use": {}
-    },
-    "ContextMaker": {
-      "target": {},
-      "represente": {},
-      "identify": {},
-      "localize": {},
-      "size": {},
-      "concern": {},
-      "cost": {}
-    },
-    "AuthorityControle": {
-      "own": {},
-      "manage": {},
-      "authorise": {}
-    },
-    "StaticAction": {
-      "host": {},
-      "produce": {},
-      "stock": {}
     }
   },
   "emotionList": {
