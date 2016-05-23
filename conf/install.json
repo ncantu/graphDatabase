@@ -5362,7 +5362,11 @@
     // ****************************
     
     
+    // uxMedia uxDevice uxCatDevice uxCatMedia uxCampaign uxSegement uxResource uxFormat uxQuality uxNetwork uxCatNetwork uxText uxSemanctic
     
+    // workfow step task kpi transformation score algorythme algolevel algonodeWeight algoNode taskPriority taskSeverity 
+    
+    // product stock stockShipping stockWarehouse expeditionCost expeditionReturnCost expeditionVehicle series serialNumber provider price currency offer order bill BillPayment BillPaymentReturnKO BillPaymentReturnOK BillPaymentValidationOK BillPaymentValidationKO expedition ExpeditionReturnOpen ExpeditionReturnClosed ExpeditionPaymentBack BillPaymentBackReturnKO BillPaymentBackReturnOK BillPaymentBackValidationOK package packageProtection 
     
     
     
@@ -7690,7 +7694,7 @@
       "var": "uCorp_corp",
       "start": "uCorp",
       "end": "corp",
-      "paramList": {},
+      "paramList": {"housing":false, "work":true, "expedition":true, "billing":true, "expeditionReturnFrom":true, "payment":true},
       "onCreateSetList": {
         "version": "0.0",
         "deployment": "0.0"
@@ -7702,7 +7706,7 @@
       "var": "uTeam_team",
       "start": "uTeam",
       "end": "team",
-      "paramList": {},
+      "paramList": {"housing":false, "work":true, "expedition":true, "billing":true, "expeditionReturnFrom":true, "payment":true},
       "onCreateSetList": {
         "version": "0.0",
         "deployment": "0.0"
@@ -7714,7 +7718,7 @@
       "var": "uPers_pers",
       "start": "uPers",
       "end": "pers",
-      "paramList": {},
+      "paramList": {"housing":false, "work":true, "expedition":true, "billing":true, "expeditionReturnFrom":true, "payment":true},
       "onCreateSetList": {
         "version": "0.0",
         "deployment": "0.0"
@@ -7846,7 +7850,7 @@
       "var": "locCorp_corp",
       "start": "locCorp",
       "end": "corp",
-      "paramList": {},
+      "paramList": {"housing":false, "work":true, "expedition":true, "billing":true, "expeditionReturnFrom":true, "payment":true},
       "onCreateSetList": {
         "version": "0.0",
         "deployment": "0.0"
@@ -7858,7 +7862,7 @@
       "var": "locTeam_team",
       "start": "locTeam",
       "end": "team",
-      "paramList": {},
+      "paramList": {"housing":false, "work":true, "expedition":true, "billing":true, "expeditionReturnFrom":true, "payment":true},
       "onCreateSetList": {
         "version": "0.0",
         "deployment": "0.0"
@@ -7870,7 +7874,7 @@
       "var": "locPers_pers",
       "start": "locPers",
       "end": "pers",
-      "paramList": {},
+      "paramList": {"housing":false, "work":true, "expedition":true, "billing":true, "expeditionReturnFrom":true, "payment":true},
       "onCreateSetList": {
         "version": "0.0",
         "deployment": "0.0"
