@@ -3096,1364 +3096,1364 @@
       },
       "onMatchSetList": {}
     },
-        "StickTctCorp": {
-      "var": "StickTctCorp",
+    "stickTctCorp": {
+      "var": "stickTctCorp",
       "label": "Stikers",
       "paramList": {
-        "var": "StickTctCorp_name",
+        "name": "stickTctCorp_name"
       },
       "onCreateSetList": {
-        "var": "StickTctCorp_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickTctCorp_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickTctTeam": {
-      "var": "StickTctTeam",
+    "stickTctTeam": {
+      "var": "stickTctTeam",
       "label": "Stikers",
       "paramList": {
-        "var": "StickTctTeam_name"
+        "name": "stickTctTeam_name"
       },
       "onCreateSetList": {
-        "var": "StickTctTeam_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickTctTeam_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickTctPers": {
-      "var": "StickTctPers",
+    "stickTctPers": {
+      "var": "stickTctPers",
       "label": "Stikers",
       "paramList": {
-        "var": "StickTctPers_name"
+        "name": "stickTctPers_name"
       },
       "onCreateSetList": {
-        "var": "StickTctPers_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickTctPers_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfTest": {
-      "var": "StickActWkfTest",
+    "stickActWkfTest": {
+      "var": "stickActWkfTest",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfTest_name"
+        "name": "stickActWkfTest_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfTest_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfTest_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfValid": {
-      "var": "StickActWkfValid",
+    "stickActWkfValid": {
+      "var": "stickActWkfValid",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfValid_name"
+        "name": "stickActWkfValid_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfValid_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfValid_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfCollect": {
-      "var": "StickActWkfCollect",
+    "stickActWkfCollect": {
+      "var": "stickActWkfCollect",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfCollect_name"
+        "name": "stickActWkfCollect_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfCollect_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfCollect_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfOptimize": {
-      "var": "StickActWkfOptimize",
+    "stickActWkfOptimize": {
+      "var": "stickActWkfOptimize",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfOptimize_name"
+        "name": "stickActWkfOptimize_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfOptimize_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfOptimize_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfShipp": {
-      "var": "StickActWkfShipp",
+    "stickActWkfShipp": {
+      "var": "stickActWkfShipp",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfShipp_name"
+        "name": "stickActWkfShipp_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfShipp_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfShipp_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfPay": {
-      "var": "StickActWkfPay",
+    "stickActWkfPay": {
+      "var": "stickActWkfPay",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfPay_name"
+        "name": "stickActWkfPay_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfPay_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfPay_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfBilling": {
-      "var": "StickActWkfBilling",
+    "stickActWkfBilling": {
+      "var": "stickActWkfBilling",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfBilling_name"
+        "name": "stickActWkfBilling_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfBilling_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfBilling_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfExpedite": {
-      "var": "StickActWkfExpedite",
+    "stickActWkfExpedite": {
+      "var": "stickActWkfExpedite",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfExpedite_name"
+        "name": "stickActWkfExpedite_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfExpedite_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfExpedite_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfPayBack": {
-      "var": "StickActWkfPayBack",
+    "stickActWkfPayBack": {
+      "var": "stickActWkfPayBack",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfPayBack_name"
+        "name": "stickActWkfPayBack_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfPayBack_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfPayBack_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfShippManange": {
-      "var": "StickActWkfShippManange",
+    "stickActWkfShippManange": {
+      "var": "stickActWkfShippManange",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfShippManange_name"
+        "name": "stickActWkfShippManange_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfShippManange_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfShippManange_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfExpediteManange": {
-      "var": "StickActWkfExpediteManange",
+    "stickActWkfExpediteManange": {
+      "var": "stickActWkfExpediteManange",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfExpediteManange_name"
+        "name": "stickActWkfExpediteManange_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfExpediteManange_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfExpediteManange_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActWkfPayManange": {
-      "var": "StickActWkfPayManange",
+    "stickActWkfPayManange": {
+      "var": "stickActWkfPayManange",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActWkfPayManange_name"
+        "name": "stickActWkfPayManange_name"
       },
       "onCreateSetList": {
-        "name": "StickActWkfPayManange_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActWkfPayManange_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcCreate": {
-      "var": "StickActLfcCreate",
+    "stickActLfcCreate": {
+      "var": "stickActLfcCreate",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcCreate_name"
+        "name": "stickActLfcCreate_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcCreate_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcCreate_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcInit": {
-      "var": "StickActLfcInit",
+    "stickActLfcInit": {
+      "var": "stickActLfcInit",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcInit_name"
+        "name": "stickActLfcInit_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcInit_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcInit_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcPublish": {
-      "var": "StickActLfcPublish",
+    "stickActLfcPublish": {
+      "var": "stickActLfcPublish",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcPublish_name"
+        "name": "stickActLfcPublish_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcPublish_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcPublish_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcState": {
-      "var": "StickActLfcState",
+    "stickActLfcState": {
+      "var": "stickActLfcState",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcState_name"
+        "name": "stickActLfcState_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcState_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcState_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcExpire": {
-      "var": "StickActLfcExpire",
+    "stickActLfcExpire": {
+      "var": "stickActLfcExpire",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcExpire_name"
+        "name": "stickActLfcExpire_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcExpire_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcExpire_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcHistorize": {
-      "var": "StickActLfcHistorize",
+    "stickActLfcHistorize": {
+      "var": "stickActLfcHistorize",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcHistorize_name"
+        "name": "stickActLfcHistorize_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcHistorize_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcHistorize_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActLfcArchive": {
-      "var": "StickActLfcArchive",
+    "stickActLfcArchive": {
+      "var": "stickActLfcArchive",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActLfcArchive_name"
+        "name": "stickActLfcArchive_name"
       },
       "onCreateSetList": {
-        "name": "StickActLfcArchive_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActLfcArchive_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabMark": {
-      "var": "StickActClabMark",
+    "stickActClabMark": {
+      "var": "stickActClabMark",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabMark_name"
+        "name": "stickActClabMark_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabMark_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabMark_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabAsk": {
-      "var": "StickActClabAsk",
+    "stickActClabAsk": {
+      "var": "stickActClabAsk",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabAsk_name"
+        "name": "stickActClabAsk_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabAsk_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabAsk_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabNote": {
-      "var": "StickActClabNote",
+    "stickActClabNote": {
+      "var": "stickActClabNote",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabNote_name"
+        "name": "stickActClabNote_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabNote_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabNote_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabComment": {
-      "var": "StickActClabComment",
+    "stickActClabComment": {
+      "var": "stickActClabComment",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabComment_name"
+        "name": "stickActClabComment_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabComment_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabComment_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabShare": {
-      "var": "StickActClabShare",
+    "stickActClabShare": {
+      "var": "stickActClabShare",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabShare_name"
+        "name": "stickActClabShare_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabShare_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabShare_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabContributeTo": {
-      "var": "StickActClabContributeTo",
+    "stickActClabContributeTo": {
+      "var": "stickActClabContributeTo",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabContributeTo_name"
+        "name": "stickActClabContributeTo_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabContributeTo_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabContributeTo_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabFacility": {
-      "var": "StickActClabFacility",
+    "stickActClabFacility": {
+      "var": "stickActClabFacility",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabFacility_name"
+        "name": "stickActClabFacility_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabFacility_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabFacility_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActClabBalance": {
-      "var": "StickActClabBalance",
+    "stickActClabBalance": {
+      "var": "stickActClabBalance",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActClabBalance_name"
+        "name": "stickActClabBalance_name"
       },
       "onCreateSetList": {
-        "name": "StickActClabBalance_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActClabBalance_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActUaReturn": {
-      "var": "StickActUaReturn",
+    "stickActUaReturn": {
+      "var": "stickActUaReturn",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActUaReturn_name"
+        "name": "stickActUaReturn_name"
       },
       "onCreateSetList": {
-        "name": "StickActUaReturn_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActUaReturn_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActUaOrder": {
-      "var": "StickActUaOrder",
+    "stickActUaOrder": {
+      "var": "stickActUaOrder",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActUaOrder_name"
+        "name": "stickActUaOrder_name"
       },
       "onCreateSetList": {
-        "name": "StickActUaOrder_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActUaOrder_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActUaAdd": {
-      "var": "StickActUaAdd",
+    "stickActUaAdd": {
+      "var": "stickActUaAdd",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActUaAdd_name"
+        "name": "stickActUaAdd_name"
       },
       "onCreateSetList": {
-        "name": "StickActUaAdd_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActUaAdd_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActUaBuy": {
-      "var": "StickActUaBuy",
+    "stickActUaBuy": {
+      "var": "stickActUaBuy",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActUaBuy_name"
+        "name": "stickActUaBuy_name"
       },
       "onCreateSetList": {
-        "name": "StickActUaBuy_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActUaBuy_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActUaShow": {
-      "var": "StickActUaShow",
+    "stickActUaShow": {
+      "var": "stickActUaShow",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActUaShow_name"
+        "name": "stickActUaShow_name"
       },
       "onCreateSetList": {
-        "name": "StickActUaShow_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActUaShow_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActUaUse": {
-      "var": "StickActUaUse",
+    "stickActUaUse": {
+      "var": "stickActUaUse",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActUaUse_name"
+        "name": "stickActUaUse_name"
       },
       "onCreateSetList": {
-        "name": "StickActUaUse_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActUaUse_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmTarget": {
-      "var": "StickActCmTarget",
+    "stickActCmTarget": {
+      "var": "stickActCmTarget",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmTarget_name"
+        "name": "stickActCmTarget_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmTarget_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmTarget_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmRepresente": {
-      "var": "StickActCmRepresente",
+    "stickActCmRepresente": {
+      "var": "stickActCmRepresente",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmRepresente_name"
+        "name": "stickActCmRepresente_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmRepresente_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmRepresente_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmIdentify": {
-      "var": "StickActCmIdentify",
+    "stickActCmIdentify": {
+      "var": "stickActCmIdentify",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmIdentify_name"
+        "name": "stickActCmIdentify_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmIdentify_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmIdentify_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmLocalize": {
-      "var": "StickActCmLocalize",
+    "stickActCmLocalize": {
+      "var": "stickActCmLocalize",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmLocalize_name"
+        "name": "stickActCmLocalize_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmLocalize_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmLocalize_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmSize": {
-      "var": "StickActCmSize",
+    "stickActCmSize": {
+      "var": "stickActCmSize",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmSize_name"
+        "name": "stickActCmSize_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmSize_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmSize_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmConcern": {
-      "var": "StickActCmConcern",
+    "stickActCmConcern": {
+      "var": "stickActCmConcern",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmConcern_name"
+        "name": "stickActCmConcern_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmConcern_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmConcern_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActCmCost": {
-      "var": "StickActCmCost",
+    "stickActCmCost": {
+      "var": "stickActCmCost",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActCmCost_name"
+        "name": "stickActCmCost_name"
       },
       "onCreateSetList": {
-        "name": "StickActCmCost_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActCmCost_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActAuthOwn": {
-      "var": "StickActAuthOwn",
+    "stickActAuthOwn": {
+      "var": "stickActAuthOwn",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActAuthOwn_name"
+        "name": "stickActAuthOwn_name"
       },
       "onCreateSetList": {
-        "name": "StickActAuthOwn_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActAuthOwn_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActAuthManage": {
-      "var": "StickActAuthManage",
+    "stickActAuthManage": {
+      "var": "stickActAuthManage",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActAuthManage_name"
+        "name": "stickActAuthManage_name"
       },
       "onCreateSetList": {
-        "name": "StickActAuthManage_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActAuthManage_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActAuthAuthorise": {
-      "var": "StickActAuthAuthorise",
+    "stickActAuthAuthorise": {
+      "var": "stickActAuthAuthorise",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActAuthAuthorise_name"
+        "name": "stickActAuthAuthorise_name"
       },
       "onCreateSetList": {
-        "name": "StickActAuthAuthorise_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActAuthAuthorise_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActStaHost": {
-      "var": "StickActStaHost",
+    "stickActStaHost": {
+      "var": "stickActStaHost",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActStaHost_name"
+        "name": "stickActStaHost_name"
       },
       "onCreateSetList": {
-        "name": "StickActStaHost_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActStaHost_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActStaProduce": {
-      "var": "StickActStaProduce",
+    "stickActStaProduce": {
+      "var": "stickActStaProduce",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActStaProduce_name"
+        "name": "stickActStaProduce_name"
       },
       "onCreateSetList": {
-        "name": "StickActStaProduce_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActStaProduce_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickActStaStock": {
-      "var": "StickActStaStock",
+    "stickActStaStock": {
+      "var": "stickActStaStock",
       "label": "Stikers",
       "paramList": {
-        "name": "StickActStaStock_name"
+        "name": "stickActStaStock_name"
       },
       "onCreateSetList": {
-        "name": "StickActStaStock_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickActStaStock_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegAnger": {
-      "var": "StickEmoNegAnger",
+    "stickEmoNegAnger": {
+      "var": "stickEmoNegAnger",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegAnger_name"
+        "name": "stickEmoNegAnger_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegAnger_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegAnger_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegAnnoyance": {
-      "var": "StickEmoNegAnnoyance",
+    "stickEmoNegAnnoyance": {
+      "var": "stickEmoNegAnnoyance",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegAnnoyance_name"
+        "name": "stickEmoNegAnnoyance_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegAnnoyance_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegAnnoyance_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegContempt": {
-      "var": "StickEmoNegContempt",
+    "stickEmoNegContempt": {
+      "var": "stickEmoNegContempt",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegContempt_name"
+        "name": "stickEmoNegContempt_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegContempt_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegContempt_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegDisgust": {
+    "stickEmoNegDisgust": {
       "var": "catEmoNegDisgust",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegDisgust_name"
+        "name": "stickEmoNegDisgust_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegDisgust_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegDisgust_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegIrritation": {
-      "var": "StickEmoNegIrritation",
+    "stickEmoNegIrritation": {
+      "var": "stickEmoNegIrritation",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegIrritation_name"
+        "name": "stickEmoNegIrritation_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegIrritation_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegIrritation_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegAnxiety": {
-      "var": "StickEmoNegAnxiety",
+    "stickEmoNegAnxiety": {
+      "var": "stickEmoNegAnxiety",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegAnxiety_name"
+        "name": "stickEmoNegAnxiety_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegAnxiety_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegAnxiety_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegEmbarrassment": {
-      "var": "StickEmoNegEmbarrassment",
+    "stickEmoNegEmbarrassment": {
+      "var": "stickEmoNegEmbarrassment",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegEmbarrassment_name"
+        "name": "stickEmoNegEmbarrassment_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegEmbarrassment_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegEmbarrassment_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegFear": {
-      "var": "StickEmoNegFear",
+    "stickEmoNegFear": {
+      "var": "stickEmoNegFear",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegFear_name"
+        "name": "stickEmoNegFear_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegFear_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegFear_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegHelplessness": {
-      "var": "StickEmoNegFear",
+    "stickEmoNegHelplessness": {
+      "var": "stickEmoNegFear",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegHelplessness_name"
+        "name": "stickEmoNegHelplessness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegHelplessness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegHelplessness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegPowerlessness": {
-      "var": "StickEmoNegFear",
+    "stickEmoNegPowerlessness": {
+      "var": "stickEmoNegFear",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegPowerlessness_name"
+        "name": "stickEmoNegPowerlessness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegPowerlessness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegPowerlessness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegWorry": {
-      "var": "StickEmoNegFear",
+    "stickEmoNegWorry": {
+      "var": "stickEmoNegFear",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegWorry_name"
+        "name": "stickEmoNegWorry_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegWorry_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegWorry_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegDoubty": {
-      "var": "StickEmoNegDoubty",
+    "stickEmoNegDoubty": {
+      "var": "stickEmoNegDoubty",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegDoubty_name"
+        "name": "stickEmoNegDoubty_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegDoubty_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegDoubty_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegEnvy": {
-      "var": "StickEmoNegDoubty",
+    "stickEmoNegEnvy": {
+      "var": "stickEmoNegDoubty",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegEnvy_name"
+        "name": "stickEmoNegEnvy_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegEnvy_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegEnvy_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegFrustration": {
-      "var": "StickEmoNegFrustration",
+    "stickEmoNegFrustration": {
+      "var": "stickEmoNegFrustration",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegFrustration_name"
+        "name": "stickEmoNegFrustration_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegFrustration_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegFrustration_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegGuilt": {
-      "var": "StickEmoNegGuilt",
+    "stickEmoNegGuilt": {
+      "var": "stickEmoNegGuilt",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegGuilt_name"
+        "name": "stickEmoNegGuilt_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegGuilt_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegGuilt_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegShame": {
-      "var": "StickEmoNegShame",
+    "stickEmoNegShame": {
+      "var": "stickEmoNegShame",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegShame_name"
+        "name": "stickEmoNegShame_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegShame_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegShame_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegBoredom": {
-      "var": "StickEmoNegBoredom",
+    "stickEmoNegBoredom": {
+      "var": "stickEmoNegBoredom",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegBoredom_name"
+        "name": "stickEmoNegBoredom_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegBoredom_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegBoredom_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegDespair": {
-      "var": "StickEmoNegDespair",
+    "stickEmoNegDespair": {
+      "var": "stickEmoNegDespair",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegDespair_name"
+        "name": "stickEmoNegDespair_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegDespair_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegDespair_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegDisappointment": {
-      "var": "StickEmoNegDisappointment",
+    "stickEmoNegDisappointment": {
+      "var": "stickEmoNegDisappointment",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegDisappointment_name"
+        "name": "stickEmoNegDisappointment_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegDisappointment_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegDisappointment_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegHurt": {
-      "var": "StickEmoNegHurt",
+    "stickEmoNegHurt": {
+      "var": "stickEmoNegHurt",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegHurt_name"
+        "name": "stickEmoNegHurt_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegHurt_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegHurt_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoNegSadness": {
-      "var": "StickEmoNegSadness",
+    "stickEmoNegSadness": {
+      "var": "stickEmoNegSadness",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoNegSadness_name"
+        "name": "stickEmoNegSadness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoNegSadness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoNegSadness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosAmusement": {
-      "var": "StickEmoPosAmusement",
+    "stickEmoPosAmusement": {
+      "var": "stickEmoPosAmusement",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosAmusement_name"
+        "name": "stickEmoPosAmusement_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosAmusement_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosAmusement_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosDelight": {
-      "var": "StickEmoPosDelight",
+    "stickEmoPosDelight": {
+      "var": "stickEmoPosDelight",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosDelight_name"
+        "name": "stickEmoPosDelight_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosDelight_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosDelight_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosElation": {
-      "var": "StickEmoPosElation",
+    "stickEmoPosElation": {
+      "var": "stickEmoPosElation",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosElation_name"
+        "name": "stickEmoPosElation_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosElation_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosElation_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosExcitement": {
-      "var": "StickEmoPosExcitement",
+    "stickEmoPosExcitement": {
+      "var": "stickEmoPosExcitement",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosExcitement_name"
+        "name": "stickEmoPosExcitement_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosExcitement_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosExcitement_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosHappiness": {
-      "var": "StickEmoPosHappiness",
+    "stickEmoPosHappiness": {
+      "var": "stickEmoPosHappiness",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosHappiness_name"
+        "name": "stickEmoPosHappiness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosHappiness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosHappiness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosJoy": {
-      "var": "StickEmoPosJoy",
+    "stickEmoPosJoy": {
+      "var": "stickEmoPosJoy",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosJoy_name"
+        "name": "stickEmoPosJoy_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosJoy_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosJoy_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosPleasure": {
-      "var": "StickEmoPosPleasure",
+    "stickEmoPosPleasure": {
+      "var": "stickEmoPosPleasure",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosPleasure_name"
+        "name": "stickEmoPosPleasure_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosPleasure_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosPleasure_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosCourage": {
-      "var": "StickEmoPosCourage",
+    "stickEmoPosCourage": {
+      "var": "stickEmoPosCourage",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosCourage_name"
+        "name": "stickEmoPosCourage_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosCourage_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosCourage_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosHope": {
-      "var": "StickEmoPosHope",
+    "stickEmoPosHope": {
+      "var": "stickEmoPosHope",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosHope_name"
+        "name": "stickEmoPosHope_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosHope_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosHope_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosPride": {
-      "var": "StickEmoPosPride",
+    "stickEmoPosPride": {
+      "var": "stickEmoPosPride",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosPride_name"
+        "name": "stickEmoPosPride_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosPride_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosPride_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosSatisfaction": {
-      "var": "StickEmoPosSatisfaction",
+    "stickEmoPosSatisfaction": {
+      "var": "stickEmoPosSatisfaction",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosSatisfaction_name"
+        "name": "stickEmoPosSatisfaction_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosSatisfaction_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosSatisfaction_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosTrust": {
-      "var": "StickEmoPosTrust",
+    "stickEmoPosTrust": {
+      "var": "stickEmoPosTrust",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosTrust_name"
+        "name": "stickEmoPosTrust_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosTrust_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosTrust_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosCalmness": {
-      "var": "StickEmoPosCalmness",
+    "stickEmoPosCalmness": {
+      "var": "stickEmoPosCalmness",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosCalmness_name"
+        "name": "stickEmoPosCalmness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosCalmness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosCalmness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosContentment": {
-      "var": "StickEmoPosContentment",
+    "stickEmoPosContentment": {
+      "var": "stickEmoPosContentment",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosContentment_name"
+        "name": "stickEmoPosContentment_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosContentment_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosContentment_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosRelaxation": {
-      "var": "StickEmoPosRelaxation",
+    "stickEmoPosRelaxation": {
+      "var": "stickEmoPosRelaxation",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosRelaxation_name"
+        "name": "stickEmoPosRelaxation_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosRelaxation_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosRelaxation_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosRelief": {
-      "var": "StickEmoPosRelief",
+    "stickEmoPosRelief": {
+      "var": "stickEmoPosRelief",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosRelief_name"
+        "name": "stickEmoPosRelief_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosRelief_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosRelief_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosSerenity": {
-      "var": "StickEmoPosSerenity",
+    "stickEmoPosSerenity": {
+      "var": "stickEmoPosSerenity",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosSerenity_name"
+        "name": "stickEmoPosSerenity_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosSerenity_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosSerenity_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegStress": {
-      "var": "StickEmoPosNegStress",
+    "stickEmoPosNegStress": {
+      "var": "stickEmoPosNegStress",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegStress_name"
+        "name": "stickEmoPosNegStress_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegStress_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegStress_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegShock": {
-      "var": "StickEmoPosNegShock",
+    "stickEmoPosNegShock": {
+      "var": "stickEmoPosNegShock",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegShock_name"
+        "name": "stickEmoPosNegShock_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegShock_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegShock_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegTension": {
-      "var": "StickEmoPosNegTension",
+    "stickEmoPosNegTension": {
+      "var": "stickEmoPosNegTension",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegTension_name"
+        "name": "stickEmoPosNegTension_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegTension_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegTension_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegAffection": {
-      "var": "StickEmoPosNegAffection",
+    "stickEmoPosNegAffection": {
+      "var": "stickEmoPosNegAffection",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegAffection_name"
+        "name": "stickEmoPosNegAffection_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegAffection_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegAffection_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegEmpathy": {
-      "var": "StickEmoPosNegEmpathy",
+    "stickEmoPosNegEmpathy": {
+      "var": "stickEmoPosNegEmpathy",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegEmpathy_name"
+        "name": "stickEmoPosNegEmpathy_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegEmpathy_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegEmpathy_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegFriendliness": {
-      "var": "StickEmoPosNegFriendliness",
+    "stickEmoPosNegFriendliness": {
+      "var": "stickEmoPosNegFriendliness",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegFriendliness_name"
+        "name": "stickEmoPosNegFriendliness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegFriendliness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegFriendliness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegLove": {
-      "var": "StickEmoPosNegLove",
+    "stickEmoPosNegLove": {
+      "var": "stickEmoPosNegLove",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegLove_name"
+        "name": "stickEmoPosNegLove_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegLove_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegLove_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegInterest": {
-      "var": "StickEmoPosNegInterest",
+    "stickEmoPosNegInterest": {
+      "var": "stickEmoPosNegInterest",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegInterest_name"
+        "name": "stickEmoPosNegInterest_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegInterest_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegInterest_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegPoliteness": {
-      "var": "StickEmoPosNegPoliteness",
+    "stickEmoPosNegPoliteness": {
+      "var": "stickEmoPosNegPoliteness",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegPoliteness_name"
+        "name": "stickEmoPosNegPoliteness_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegPoliteness_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegPoliteness_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
     },
-    "StickEmoPosNegSurprise": {
-      "var": "StickEmoPosNegSurprise",
+    "stickEmoPosNegSurprise": {
+      "var": "stickEmoPosNegSurprise",
       "label": "Stikers",
       "paramList": {
-        "name": "StickEmoPosNegSurprise_name"
+        "name": "stickEmoPosNegSurprise_name"
       },
       "onCreateSetList": {
-        "name": "StickEmoPosNegSurprise_name",
-        "cssClass": "StickTctCorp_className",
+        "name": "stickEmoPosNegSurprise_name",
+        "cssClass": "stickTctCorp_className",
         "version": "0.0",
         "deployment": "0.0"
       },
       "onMatchSetList": {}
-    }    
+    }
   },
   "relationshipList": {
     "catEmoNeg_emoNegSadness": {
