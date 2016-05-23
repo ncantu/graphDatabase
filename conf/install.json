@@ -2944,9 +2944,542 @@
         "reactive": true
       }   
       "onMatchSetList": {}
-    }   
+    }
   },
   "relationshipList": {
+      
+    "catEmoNeg_emoNegSadness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegSadness",
+      "start": "catEmoNeg",
+      "end": "emoNegSadness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegHurt": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegHurt",
+      "start": "catEmoNeg",
+      "end": "emoNegHurt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegDisappointment": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegDisappointment",
+      "start": "catEmoNeg",
+      "end": "emoNegDisappointment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegDespair": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegDespair",
+      "start": "catEmoNeg",
+      "end": "emoNegDespair",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegBoredom": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegBoredom",
+      "start": "catEmoNeg",
+      "end": "emoNegBoredom",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegShame": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegShame",
+      "start": "catEmoNeg",
+      "end": "emoNegShame",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegGuilt": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegGuilt",
+      "start": "catEmoNeg",
+      "end": "emoNegGuilt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegFrustration": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegFrustration",
+      "start": "catEmoNeg",
+      "end": "emoNegFrustration",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegEnvy": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegEnvy",
+      "start": "catEmoNeg",
+      "end": "emoNegEnvy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegDoubty": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegDoubty",
+      "start": "catEmoNeg",
+      "end": "emoNegDoubty",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegWorry": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegWorry",
+      "start": "catEmoNeg",
+      "end": "emoNegWorry",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegPowerlessness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegPowerlessness",
+      "start": "catEmoNeg",
+      "end": "emoNegPowerlessness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegHelplessness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegHelplessness",
+      "start": "catEmoNeg",
+      "end": "emoNegHelplessness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegFear": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegFear",
+      "start": "catEmoNeg",
+      "end": "emoNegFear",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegEmbarrassment": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegEmbarrassment",
+      "start": "catEmoNeg",
+      "end": "emoNegEmbarrassment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegAnxiety": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegAnxiety",
+      "start": "catEmoNeg",
+      "end": "emoNegAnxiety",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegIrritation": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegIrritation",
+      "start": "catEmoNeg",
+      "end": "emoNegIrritation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegDisgust": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegDisgust",
+      "start": "catEmoNeg",
+      "end": "emoNegDisgust",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegContempt": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegContempt",
+      "start": "catEmoNeg",
+      "end": "emoNegContempt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegAnnoyance": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegAnnoyance",
+      "start": "catEmoNeg",
+      "end": "emoNegAnnoyance",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "catEmoNeg_emoNegAnger": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNeg_emoNegAnger",
+      "start": "catEmoNeg",
+      "end": "emoNegAnger",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosSerenity": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosSerenity",
+      "start": "catEmoPos",
+      "end": "emoPosSerenity",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosRelief": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosRelief",
+      "start": "catEmoPos",
+      "end": "emoPosRelief",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosRelaxation": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosRelaxation",
+      "start": "catEmoPos",
+      "end": "emoPosRelaxation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosContentment": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosContentment",
+      "start": "catEmoPos",
+      "end": "emoPosContentment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosCalmness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosCalmness",
+      "start": "catEmoPos",
+      "end": "emoPosCalmness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosTrust": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosTrust",
+      "start": "catEmoPos",
+      "end": "emoPosTrust",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosSatisfaction": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosSatisfaction",
+      "start": "catEmoPos",
+      "end": "emoPosSatisfaction",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosPride": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosPride",
+      "start": "catEmoPos",
+      "end": "emoPosPride",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosHope": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosHope",
+      "start": "catEmoPos",
+      "end": "emoPosHope",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosCourage": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosCourage",
+      "start": "catEmoPos",
+      "end": "emoPosCourage",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosPleasure": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosPleasure",
+      "start": "catEmoPos",
+      "end": "emoPosPleasure",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosJoy": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosJoy",
+      "start": "catEmoPos",
+      "end": "emoPosJoy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosHappiness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosHappiness",
+      "start": "catEmoPos",
+      "end": "emoPosHappiness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosExcitement": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosExcitement",
+      "start": "catEmoPos",
+      "end": "emoPosExcitement",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosElation": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosElation",
+      "start": "catEmoPos",
+      "end": "emoPosElation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosDelight": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosDelight",
+      "start": "catEmoPos",
+      "end": "emoPosDelight",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoPos_emoPosAmusement": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoPos_emoPosAmusement",
+      "start": "catEmoPos",
+      "end": "emoPosAmusement",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegSurprise": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegSurprise",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegSurprise",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegPoliteness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegPoliteness",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegPoliteness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegInterest": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegInterest",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegInterest",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegLove": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegLove",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegLove",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegFriendliness": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegFriendliness",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegFriendliness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegEmpathy": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegEmpathy",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegEmpathy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegAffection": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegAffection",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegAffection",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegTension": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegTension",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegTension",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegShock": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegShock",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegShock",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "catEmoNegPos_emoPosNegStress": {
+      "relationship": "CATEGORISE",
+      "var": "catEmoNegPos_emoPosNegStress",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegStress",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+
+
+      
+    // --------------------NEXT
     "catActWfl_actWkfTest": {
       "relationship": "CATEGORISE",
       "var": "catActWfl_actWkfTest",
