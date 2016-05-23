@@ -1261,6 +1261,19 @@
       },
       "onMatchSetList": {}
     },
+    "zone": {
+      "var": "zone",
+      "label": "Zone",
+      "paramList": {
+        "name": "zone_name"
+      },
+      "onCreateSetList": {
+        "name": "zone_name",
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
     "locCorp": {
       "var": "locCorp",
       "label": "Location",
@@ -6945,6 +6958,42 @@
       "var": "locPers_pers",
       "start": "locPers",
       "end": "pers",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "zone_locCorp": {
+      "relationship": "LOCATE",
+      "var": "zone_locCorp",
+      "start": "zone",
+      "end": "locCorp",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "zone_locTeam": {
+      "relationship": "LOCATE",
+      "var": "zone_locTeam",
+      "start": "zone",
+      "end": "locTeam",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "zone_locPers": {
+      "relationship": "LOCATE",
+      "var": "zone_locPers",
+      "start": "zone",
+      "end": "locPers",
       "paramList": {},
       "onCreateSetList": {
         "version": "0.0",
