@@ -2947,8 +2947,7 @@
     }
   },
   "relationshipList": {
-      
-    "catEmoNeg_emoNegSadness": {
+   "catEmoNeg_emoNegSadness": {
       "relationship": "CATEGORISE",
       "var": "catEmoNeg_emoNegSadness",
       "start": "catEmoNeg",
@@ -3476,6 +3475,537 @@
       },
       "onMatchSetList": {}
     },
+    "evt_emoNegSadness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegSadness",
+      "start": "evt",
+      "end": "emoNegSadness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegHurt": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegHurt",
+      "start": "evt",
+      "end": "emoNegHurt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegDisappointment": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegDisappointment",
+      "start": "evt",
+      "end": "emoNegDisappointment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegDespair": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegDespair",
+      "start": "evt",
+      "end": "emoNegDespair",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegBoredom": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegBoredom",
+      "start": "evt",
+      "end": "emoNegBoredom",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegShame": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegShame",
+      "start": "evt",
+      "end": "emoNegShame",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegGuilt": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegGuilt",
+      "start": "evt",
+      "end": "emoNegGuilt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegFrustration": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegFrustration",
+      "start": "evt",
+      "end": "emoNegFrustration",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegEnvy": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegEnvy",
+      "start": "evt",
+      "end": "emoNegEnvy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegDoubty": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegDoubty",
+      "start": "evt",
+      "end": "emoNegDoubty",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegWorry": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegWorry",
+      "start": "evt",
+      "end": "emoNegWorry",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegPowerlessness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegPowerlessness",
+      "start": "evt",
+      "end": "emoNegPowerlessness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegHelplessness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegHelplessness",
+      "start": "evt",
+      "end": "emoNegHelplessness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegFear": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegFear",
+      "start": "evt",
+      "end": "emoNegFear",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegEmbarrassment": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegEmbarrassment",
+      "start": "evt",
+      "end": "emoNegEmbarrassment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegAnxiety": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegAnxiety",
+      "start": "evt",
+      "end": "emoNegAnxiety",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegIrritation": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegIrritation",
+      "start": "evt",
+      "end": "emoNegIrritation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegDisgust": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegDisgust",
+      "start": "evt",
+      "end": "emoNegDisgust",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegContempt": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegContempt",
+      "start": "evt",
+      "end": "emoNegContempt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegAnnoyance": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegAnnoyance",
+      "start": "evt",
+      "end": "emoNegAnnoyance",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    }, 
+    "evt_emoNegAnger": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoNegAnger",
+      "start": "evt",
+      "end": "emoNegAnger",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosSerenity": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosSerenity",
+      "start": "evt",
+      "end": "emoPosSerenity",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosRelief": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosRelief",
+      "start": "evt",
+      "end": "emoPosRelief",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosRelaxation": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosRelaxation",
+      "start": "evt",
+      "end": "emoPosRelaxation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosContentment": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosContentment",
+      "start": "evt",
+      "end": "emoPosContentment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosCalmness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosCalmness",
+      "start": "evt",
+      "end": "emoPosCalmness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosTrust": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosTrust",
+      "start": "evt",
+      "end": "emoPosTrust",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosSatisfaction": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosSatisfaction",
+      "start": "evt",
+      "end": "emoPosSatisfaction",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosPride": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosPride",
+      "start": "evt",
+      "end": "emoPosPride",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosHope": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosHope",
+      "start": "evt",
+      "end": "emoPosHope",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosCourage": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosCourage",
+      "start": "evt",
+      "end": "emoPosCourage",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosPleasure": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosPleasure",
+      "start": "evt",
+      "end": "emoPosPleasure",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosJoy": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosJoy",
+      "start": "evt",
+      "end": "emoPosJoy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosHappiness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosHappiness",
+      "start": "evt",
+      "end": "emoPosHappiness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosExcitement": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosExcitement",
+      "start": "evt",
+      "end": "emoPosExcitement",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosElation": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosElation",
+      "start": "evt",
+      "end": "emoPosElation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosDelight": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosDelight",
+      "start": "evt",
+      "end": "emoPosDelight",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosAmusement": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosAmusement",
+      "start": "evt",
+      "end": "emoPosAmusement",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegSurprise": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegSurprise",
+      "start": "evt",
+      "end": "emoPosNegSurprise",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegPoliteness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegPoliteness",
+      "start": "evt",
+      "end": "emoPosNegPoliteness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegInterest": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegInterest",
+      "start": "evt",
+      "end": "emoPosNegInterest",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegLove": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegLove",
+      "start": "evt",
+      "end": "emoPosNegLove",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegFriendliness": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegFriendliness",
+      "start": "evt",
+      "end": "emoPosNegFriendliness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegEmpathy": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegEmpathy",
+      "start": "evt",
+      "end": "emoPosNegEmpathy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegAffection": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegAffection",
+      "start": "evt",
+      "end": "emoPosNegAffection",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegTension": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegTension",
+      "start": "evt",
+      "end": "emoPosNegTension",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegShock": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegShock",
+      "start": "evt",
+      "end": "emoPosNegShock",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "evt_emoPosNegStress": {
+      "relationship": "CATEGORISE",
+      "var": "evt_emoPosNegStress",
+      "start": "evt",
+      "end": "emoPosNegStress",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0", "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+
+
+
 
 
       
