@@ -4466,7 +4466,919 @@
         "deployment": "0.0"
       },
       "onMatchSetList": {}
+    },
+    
+    
+    // ****************************
+    // START LINK WITH UX (TODO)
+    // ****************************
+    
+    
+    "uxSite": {
+      "var": "uxSite",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSite_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSite_name",
+        "cssClass": "uxSite_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },    
+    "uxHeader": {
+      "var": "uxHeader",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeader_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeader_name",
+        "cssClass": "uxHeader_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderBurger": {
+      "var": "uxHeaderBurger",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeaderBurger_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeaderBurger_name",
+        "cssClass": "uxHeaderBurger_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderLogo": {
+      "var": "uxHeaderLogo",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeaderLogo_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeaderLogo_name",
+        "cssClass": "uxHeaderLogo_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderTitle": {
+      "var": "uxHeaderTitle",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeaderTitle_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeaderTitle_name",
+        "cssClass": "uxHeaderTitle_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBar": {
+      "var": "uxHeaderToolBar",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeaderToolBar_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeaderToolBar_name",
+        "cssClass": "uxHeaderToolBar_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotion": {
+      "var": "uxHeaderToolBarEmotion",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeaderToolBarEmotion_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeaderToolBarEmotion_name",
+        "cssClass": "uxHeaderToolBarEmotion_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH EMOTION
+    "uxHeaderToolBarEmotionItem": {
+      "var": "uxHeaderToolBarEmotionItem",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxHeaderToolBarEmotionItem_name"
+      },
+      "onCreateSetList": {
+        "name": "uxHeaderToolBarEmotionItem_name",
+        "cssClass": "uxHeaderToolBarEmotionItem_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBar": {
+      "var": "uxSectionRightToolBar",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionRightToolBar_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionRightToolBar_name",
+        "cssClass": "uxSectionRightToolBar_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarViewMapAction": {
+      "var": "uxSectionRightToolBarViewMapAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionRightToolBarViewMapAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionRightToolBarViewMapAction_name",
+        "cssClass": "uxSectionRightToolBarViewMapAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarViewTimeAction": {
+      "var": "uxSectionRightToolBarViewTimeAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionRightToolBarViewTimeAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionRightToolBarViewTimeAction_name",
+        "cssClass": "uxSectionRightToolBarViewTimeAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarViewGrpahAction": {
+      "var": "uxSectionRightToolBarViewGrpahAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionRightToolBarViewGrpahAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionRightToolBarViewGrpahAction_name",
+        "cssClass": "uxSectionRightToolBarViewGrpahAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarAction": {
+      "var": "uxSectionRightToolBarAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionRightToolBarAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionRightToolBarAction_name",
+        "cssClass": "uxSectionRightToolBarAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH ACTION
+    "uxSectionRightToolBarActionItem": {
+      "var": "uxSectionRightToolBarActionItem",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionRightToolBarActionItem_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionRightToolBarActionItem_name",
+        "cssClass": "uxSectionRightToolBarActionItem_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserAction": {
+      "var": "uxSectionleftUserAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserAction_name",
+        "cssClass": "uxSectionleftUserAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserList": {
+      "var": "uxSectionleftUserList",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserList_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserList_name",
+        "cssClass": "uxSectionleftUserList_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     // TO DUPLICATE EACH COMPAGNY, TEAM, PERSONN, USERS from LOGIN
+     "uxSectionleftUserListItem": {
+      "var": "uxSectionleftUserListItem",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserListItem_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserListItem_name",
+        "cssClass": "uxSectionleftUserListItem_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserNotAction": {
+      "var": "uxSectionleftUserNotAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserNotAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserNotAction_name",
+        "cssClass": "uxSectionleftUserNotAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserNotList": {
+      "var": "uxSectionleftUserNotList",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserNotList_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserNotList_name",
+        "cssClass": "uxSectionleftUserNotList_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH NOTIFIACTION
+     "uxSectionleftUserNotListItem": {
+      "var": "uxSectionleftUserNotListItem",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserNotListItem_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserNotListItem_name",
+        "cssClass": "uxSectionleftUserNotListItem_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserPoint": {
+      "var": "uxSectionleftUserPoint",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserPoint_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserPoint_name",
+        "cssClass": "uxSectionleftUserPoint_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserAgendaAction": {
+      "var": "uxSectionleftUserAgendaAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserAgendaAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserAgendaAction_name",
+        "cssClass": "uxSectionleftUserAgendaAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftUserAgendaList": {
+      "var": "uxSectionleftUserAgendaList",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserAgendaList_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserAgendaList_name",
+        "cssClass": "uxSectionleftUserAgendaList_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH DATE_DUE
+     "uxSectionleftUserAgendaListItem": {
+      "var": "uxSectionleftUserAgendaListItem",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftUserAgendaListItem_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftUserAgendaListItem_name",
+        "cssClass": "uxSectionleftUserAgendaListItem_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftFilterAction": {
+      "var": "uxSectionleftFilterAction",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftFilterAction_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftFilterAction_name",
+        "cssClass": "uxSectionleftFilterAction_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionleftToolBarNode": {
+      "var": "uxSectionleftToolBarNode",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftToolBarNode_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftToolBarNode_name",
+        "cssClass": "uxSectionleftToolBarNode_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH NODE
+    "uxSectionleftToolBarNodeItem": {
+      "var": "uxSectionleftToolBarNodeItem",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionleftToolBarNodeItem_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionleftToolBarNodeItem_name",
+        "cssClass": "uxSectionleftToolBarNodeItem_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionCenterContentToolBar": {
+      "var": "uxSectionCenterContentToolBar",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionCenterContentToolBar_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionCenterContentToolBar_name",
+        "cssClass": "uxSectionCenterContentToolBar_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}        
+    },
+    "uxSectionCenterContentToolBarZoomIn": {
+      "var": "uxSectionCenterContentToolBarZoomIn",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionCenterContentToolBarZoomIn_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionCenterContentToolBarZoomIn_name",
+        "cssClass": "uxSectionCenterContentToolBarZoomIn_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}        
+    },
+    "uxSectionCenterContentToolBarZoomOut": {
+      "var": "uxSectionCenterContentToolBarZoomOut",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionCenterContentToolBarZoomOut_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionCenterContentToolBarZoomOut_name",
+        "cssClass": "uxSectionCenterContentToolBarZoomOut_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}        
+    },
+    "uxSectionCenterContentMap": {
+      "var": "uxSectionCenterContentMap",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionCenterContentMap_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionCenterContentMap_name",
+        "cssClass": "uxSectionCenterContentMap_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "version": "0.0",
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionCenterContentTimeLine": {
+      "var": "uxSectionCenterContentTimeLine",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionCenterContentTimeLine_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionCenterContentTimeLine_name",
+        "cssClass": "uxSectionCenterContentTimeLine_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "zoom":0,
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionCenterContentGraph": {
+      "var": "uxSectionCenterContentGraph",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "uxSectionCenterContentGraph_name"
+      },
+      "onCreateSetList": {
+        "name": "uxSectionCenterContentGraph_name",
+        "cssClass": "uxSectionCenterContentGraph_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "zoom":0,
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "xNode": "",
+        "yNode": "",
+        "xAttribut": "",
+        "yAttribut": "",
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH LOC
+    "evtUxMapPoint": {
+      "var": "evtUxMapPoint",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "evtUxMapPoint_name"
+      },
+      "onCreateSetList": {
+        "name": "evtUxMapPoint_name",
+        "cssClass": "evtUxMapPoint_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "weight":0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH TIME
+    "evtUxTimePoint": {
+      "var": "evtUxTimePoint",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "evtUxTimePoint_name"
+      },
+      "onCreateSetList": {
+        "name": "evtUxTimePoint_name",
+        "cssClass": "evtUxTimePoint_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "weight":0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH NODE, ATTRIBUTS
+    "evtUxGraphPoint": {
+      "var": "evtUxGraphPoint",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "evtUxGraphPoint_name"
+      },
+      "onCreateSetList": {
+        "name": "evtUxGraphPoint_name",
+        "cssClass": "evtUxGraphPoint_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "weight":0,,
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH LOC RELATIONSHIPS
+    "evtUxMapPointRelationShips": {
+      "var": "evtUxMapPointRelationShips",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "evtUxMapPointRelationShips_name"
+      },
+      "onCreateSetList": {
+        "name": "evtUxMapPointRelationShips_name",
+        "cssClass": "evtUxMapPointRelationShips_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "weight":0,
+        "zoom":0,,
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH TIME RELATIONSHIPS
+    "evtUxTimePointRelationShips": {
+      "var": "evtUxTimePointRelationShips",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "evtUxTimePointRelationShips_name"
+      },
+      "onCreateSetList": {
+        "name": "evtUxTimePointRelationShips_name",
+        "cssClass": "evtUxTimePointRelationShips_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "weight":0,
+        "zoom":0,,
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+    // TO DUPLICATE EACH NODE, ATTRIBUTS RELATIONSHIPS
+    "evtUxGraphPointRelationShips": {
+      "var": "evtUxGraphPointRelationShips",
+      "label": "uxPosition",
+      "paramList": {
+        "name": "evtUxGraphPointRelationShips_name"
+      },
+      "onCreateSetList": {
+        "name": "evtUxGraphPointRelationShips_name",
+        "cssClass": "evtUxGraphPointRelationShips_className",
+        "top": "",
+        "bottom": "",
+        "right": "",
+        "letf": "",
+        "width": "",
+        "height": "",
+        "order": 0,
+        "weight":0,
+        "zoom":0,,
+        "xStart": 0,
+        "xEnd": 0,
+        "yStart": 0,
+        "yEnd": 0,
+        "zoom":0,
+        "version": "0.0",
+        "deployment": "0.0"
+      },
+      "onMatchSetList": {}
     }
+       
+    // ****************************
+    // END LINK WITH UX (TODO)
+    // ****************************
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   },
   "relationshipList": {
     "catEmoNeg_emoNegSadness": {
