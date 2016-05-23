@@ -2944,7 +2944,7 @@
         "reactive": true
       }   
       "onMatchSetList": {}
-    }
+    }   
   },
   "relationshipList": {
     "catActWfl_actWkfTest": {
