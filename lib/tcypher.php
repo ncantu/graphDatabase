@@ -73,6 +73,20 @@ trait TCypher {
     
     private function cypherTraceLogContent($toTrace) {
     	
+    	/*
+    	 *
+SET n.property = {value},
+n.property2 = {value2}
+Update or create a property.
+SET n={map}
+Set all properties. This will remove any existing properties.
+SET n:Person
+Adds a label Person to a node.
+
+indexList
+
+    	 */
+    	
     	if(isset($this->json) && is_object($this->json) === true) $toTrace->json = json_encode($this->json);
     	
     	$this->cypherLog = '';
