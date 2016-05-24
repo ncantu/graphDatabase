@@ -36,14 +36,9 @@ trait TCypher {
     		$v = $toTrace->$v;
     		$v = self::cypherSecureVar($v);
 
-    		if(is_string($v) === true) {
-    				
-    			$v = "'".$v."'";
-    		}
-    		if(is_null($v) === true) {
+    		if(is_string($v) === true)   $v = "'".$v."'";
+    		elseif(is_null($v) === true) $v = "'".Trace::VOID."'";
     		
-    			$v = "'".Trace::VOID."'";
-    		}
     		$listC .= $var.$kvsep.$k.$sepKV.$v.$sepK;
     	}
     	$end   = (-1 * strlen($sepK));
@@ -53,12 +48,25 @@ trait TCypher {
     }
     
     private static function onModeList($toTrace, $detailList, $createMode = Cypher::CREATE_MODE, $matchMode = Cypher::MATCH_MODE,
-    		$labelPrefix = Cypher::LABEL_PREFIX, $relationshipPrefix = Cypher::RELATIONSHIP_PREFIX) {
-    
-    	$onCreateSetListCommon = self::cypherTraceLogAttributModeCommon($labelPrefix, $toTrace, $detailList->var, $createMode);
-    	$onCreateSetList       = self::cypherLogAttributMode($toTrace, $detailList->$createMode, $detailList->var);
-    	$onMatchSetListCommon  = self::cypherTraceLogAttributModeCommon($relationshipPrefix, $toTrace, $detailList->var, $matchMode);
-    	$onMatchSetList        = self::cypherLogAttributMode($toTrace, $detailList->$matchMode, $detailList->var);
+    		$labelPrefix = Cypher::LABEL_PREFIX, $relationshipPrefix = Cypher::RELATIONSHIP_PREFIX, $sha1 = '') {
+        
+     	foreach($detailList->uidHash as $k){
+     		
+     		$v = str_replace('__KEY__', $k, $v);
+     		$v = $toTrace->$v;
+     		$v = self::cypherSecureVar($v);
+     		
+     		if(is_null($v) === true) $v = Trace::VOID;
+     		
+     		$sha1 .= $v;
+     	}
+    	$detailList->$createMode->uid     = sha1($sha1);
+    	$detailList->$createMode->name    = $detailList->name;
+    	$detailList->$createMode->version = $detailList->version;
+    	$onCreateSetListCommon            = self::cypherTraceLogAttributModeCommon($labelPrefix, $toTrace, $detailList->var, $createMode);
+    	$onCreateSetList                  = self::cypherLogAttributMode($toTrace, $detailList->$createMode, $detailList->var);
+    	$onMatchSetListCommon             = self::cypherTraceLogAttributModeCommon($relationshipPrefix, $toTrace, $detailList->var, $matchMode);
+    	$onMatchSetList                   = self::cypherLogAttributMode($toTrace, $detailList->$matchMode, $detailList->var);
  
     	$list = Cypher::EOL."ON CREATE SET ".$onCreateSetListCommon;
     	
@@ -85,6 +93,9 @@ Adds a label Person to a node.
 
 indexList
 
+      "name": "tagInstall_name",
+      "idHash":["name"],
+
     	 */
     	
     	if(isset($this->json) && is_object($this->json) === true) $toTrace->json = json_encode($this->json);
@@ -94,14 +105,12 @@ indexList
     	foreach(Conf::$nodeList as $v => $detailList) {
     		
     		$detailList->var  = $v;
-    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
     		$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->var.":".$detailList->label." )".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(name)".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(state)"."CREATE INDEX ON :".$detailList->label."(visibility)".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->label.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
     	foreach(Conf::$relationshipList as $v => $detailList) {
  
     		$detailList->var  = $v;
-    		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
 			$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->relationship.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
