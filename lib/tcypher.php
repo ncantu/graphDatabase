@@ -77,14 +77,16 @@ trait TCypher {
     	
     	$this->cypherLog = '';
 
-    	foreach(Conf::$nodeList as $detailList) {
+    	foreach(Conf::$nodeList as $v => $detailList) {
     		
+    		$detailList->var  = $v;
     		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
     		$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->var.":".$detailList->label." )".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(name)".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(state)"."CREATE INDEX ON :".$detailList->label."(visibility)".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->label.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
-    	foreach(Conf::$relationshipList as $detailList) {
+    	foreach(Conf::$relationshipList as $v => $detailList) {
  
+    		$detailList->var  = $v;
     		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
 			$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->relationship.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;

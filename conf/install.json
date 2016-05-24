@@ -5237,10 +5237,11 @@
     // END LINK WITH UX (TODO)
     // ****************************
     
+    // user social profil follower visitor lover relay
     
     // uxMedia uxDevice uxCatDevice uxCatMedia uxCampaign uxSegement uxResource uxFormat uxQuality uxNetwork uxCatNetwork uxText uxSemanctic
     
-    // workfow step task kpi transformation score algorythme algolevel algonodeWeight algoNode taskPriority taskSeverity 
+    // workfow step task kpi transformation score algorythme algolevel algonodeWeight algoNode taskPriority taskSeverity payementvalidationOk pts 
     
     // product stock stockShipping stockWarehouse expeditionCost expeditionReturnCost expeditionVehicle series serialNumber provider price currency offer order bill BillPayment BillPaymentReturnKO BillPaymentReturnOK BillPaymentValidationOK BillPaymentValidationKO expedition ExpeditionReturnOpen ExpeditionReturnClosed ExpeditionPaymentBack BillPaymentBackReturnKO BillPaymentBackReturnOK BillPaymentBackValidationOK package packageProtection 
     
@@ -5262,6 +5263,1073 @@
   },
   "relationshipList": {
 
+	"stickTctCorp_tctCorp": {
+      "relationship": "REPRESENTE",
+      "var": "stickTctCorp_tctCorp",
+      "start": "stickTctCorp",
+      "end": "tctCorp",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickTctTeam_tctTeam": {
+      "relationship": "REPRESENTE",
+      "var": "stickTctTeam_tctTeam",
+      "start": "stickTctTeam",
+      "end": "tctTeam",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickTctPers_tctPers": {
+      "relationship": "REPRESENTE",
+      "var": "stickTctPers_tctPers",
+      "start": "stickTctPers",
+      "end": "tctPers",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfTest_actWkfTest": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfTest_actWkfTest",
+      "start": "stickActWkfTest",
+      "end": "actWkfTest",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfValid_actWkfValid": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfValid_actWkfValid",
+      "start": "stickActWkfValid",
+      "end": "actWkfValid",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfCollect_actWkfCollect": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfCollect_actWkfCollect",
+      "start": "stickActWkfCollect",
+      "end": "actWkfCollect",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfOptimize_actWkfOptimize": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfOptimize_actWkfOptimize",
+      "start": "stickActWkfOptimize",
+      "end": "actWkfOptimize",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfShipp_actWkfShipp": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfShipp_actWkfShipp",
+      "start": "stickActWkfShipp",
+      "end": "actWkfShipp",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfPay_actWkfPay": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfPay_actWkfPay",
+      "start": "stickActWkfPay",
+      "end": "actWkfPay",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfBilling_actWkfBilling": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfBilling_actWkfBilling",
+      "start": "stickActWkfBilling",
+      "end": "actWkfBilling",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfExpedite_actWkfExpedite": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfExpedite_actWkfExpedite",
+      "start": "stickActWkfExpedite",
+      "end": "actWkfExpedite",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfPayBack_actWkfPayBack": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfPayBack_actWkfPayBack",
+      "start": "stickActWkfPayBack",
+      "end": "actWkfPayBack",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfShippManange_actWkfShippManange": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfShippManange_actWkfShippManange",
+      "start": "stickActWkfShippManange",
+      "end": "actWkfShippManange",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfExpediteManange_actWkfExpediteManange": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfExpediteManange_actWkfExpediteManange",
+      "start": "stickActWkfExpediteManange",
+      "end": "actWkfExpediteManange",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActWkfPayManange_actWkfPayManange": {
+      "relationship": "REPRESENTE",
+      "var": "stickActWkfPayManange_actWkfPayManange",
+      "start": "stickActWkfPayManange",
+      "end": "stickActWkfPayManange",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcCreate_actLfcCreate": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcCreate_actLfcCreate",
+      "start": "stickActLfcCreate",
+      "end": "actLfcCreate",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcInit_actLfcInit": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcInit_actLfcInit",
+      "start": "stickActLfcInit",
+      "end": "actLfcInit",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcPublish_actLfcPublish": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcPublish_actLfcPublish",
+      "start": "stickActLfcPublish",
+      "end": "actLfcPublish",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcState_actLfcState": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcState_actLfcState",
+      "start": "stickActLfcState",
+      "end": "actLfcState",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcExpire_actLfcExpire": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcExpire_actLfcExpire",
+      "start": "stickActLfcExpire",
+      "end": "actLfcExpire",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcHistorize_actLfcHistorize": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcHistorize_actLfcHistorize",
+      "start": "stickActLfcHistorize",
+      "end": "actLfcHistorize",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActLfcArchive_actLfcArchive": {
+      "relationship": "REPRESENTE",
+      "var": "stickActLfcArchive_actLfcArchive",
+      "start": "stickActLfcArchive",
+      "end": "actLfcArchive",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabMark_actClabMark": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabMark_actClabMark",
+      "start": "stickActClabMark",
+      "end": "actClabMark",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabAsk_actClabAsk": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabAsk_actClabAsk",
+      "start": "stickActClabAsk",
+      "end": "actClabAsk",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabNote_actClabNote": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabNote_actClabNote",
+      "start": "stickActClabNote",
+      "end": "actClabNote",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabComment_actClabComment": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabComment_actClabComment",
+      "start": "stickActClabComment",
+      "end": "actClabComment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabShare_actClabShare": {
+      "relationship": "REPRESENTE",
+      "var": "catEmoNeg_emoNegSadness",
+      "start": "catEmoNeg",
+      "end": "emoNegSadness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabContributeTo_actClabContributeTo": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabContributeTo_actClabContributeTo",
+      "start": "stickActClabContributeTo",
+      "end": "actClabContributeTo",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabFacility_actClabFacility": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabFacility_actClabFacility",
+      "start": "stickActClabFacility",
+      "end": "actClabFacility",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActClabBalance_actClabBalance": {
+      "relationship": "REPRESENTE",
+      "var": "stickActClabBalance_actClabBalance",
+      "start": "stickActClabBalance",
+      "end": "actClabBalance",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActUaReturn_actUaReturn": {
+      "relationship": "REPRESENTE",
+      "var": "stickActUaReturn_actUaReturn",
+      "start": "stickActUaReturn",
+      "end": "actUaReturn",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActUaOrder_actUaOrder": {
+      "relationship": "REPRESENTE",
+      "var": "stickActUaOrder_actUaOrder",
+      "start": "stickActUaOrder",
+      "end": "actUaOrder",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActUaAdd_actUaAdd": {
+      "relationship": "REPRESENTE",
+      "var": "stickActUaAdd_actUaAdd",
+      "start": "stickActUaAdd",
+      "end": "actUaAdd",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActUaBuy_actUaBuy": {
+      "relationship": "REPRESENTE",
+      "var": "stickActUaBuy_actUaBuy",
+      "start": "stickActUaBuy",
+      "end": "actUaBuy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActUaShow_actUaShow": {
+      "relationship": "REPRESENTE",
+      "var": "catEmoNeg_emoNegSadness",
+      "start": "catEmoNeg",
+      "end": "emoNegSadness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActUaUse_actUaUse": {
+      "relationship": "REPRESENTE",
+      "var": "stickActUaUse_actUaUse",
+      "start": "stickActUaUse",
+      "end": "actUaUse",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmTarget_actCmTarget": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmTarget_actCmTarget",
+      "start": "stickActCmTarget",
+      "end": "actCmTarget",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmRepresente_actCmRepresente": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmRepresente_actCmRepresente",
+      "start": "stickActCmRepresente",
+      "end": "actCmRepresente",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmIdentify_actCmIdentify": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmIdentify_actCmIdentify",
+      "start": "stickActCmIdentify",
+      "end": "actCmIdentify",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmLocalize_actCmLocalize": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmLocalize_actCmLocalize",
+      "start": "stickActCmLocalize",
+      "end": "stickActCmLocalize",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmSize_actCmSize": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmSize_actCmSize",
+      "start": "stickActCmSize",
+      "end": "actCmSize",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmConcern_actCmConcern": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmConcern_actCmConcern",
+      "start": "stickActCmConcern",
+      "end": "actCmConcern",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActCmCost_actCmCost": {
+      "relationship": "REPRESENTE",
+      "var": "stickActCmCost_actCmCost",
+      "start": "stickActCmCost",
+      "end": "actCmCost",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActAuthOwn_actAuthOwn": {
+      "relationship": "REPRESENTE",
+      "var": "stickActAuthOwn_actAuthOwn",
+      "start": "stickActAuthOwn",
+      "end": "actAuthOwn",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActAuthManage_actAuthManage": {
+      "relationship": "REPRESENTE",
+      "var": "stickActAuthManage_actAuthManage",
+      "start": "stickActAuthManage",
+      "end": "actAuthManage",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActAuthAuthorise_actAuthAuthorise": {
+      "relationship": "REPRESENTE",
+      "var": "stickActAuthAuthorise_actAuthAuthorise",
+      "start": "stickActAuthAuthorise",
+      "end": "actAuthAuthorise",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActStaHost_actStaHost": {
+      "relationship": "REPRESENTE",
+      "var": "stickActStaHost_actStaHost",
+      "start": "stickActStaHost",
+      "end": "actStaHost",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActStaProduce_actStaProduce": {
+      "relationship": "REPRESENTE",
+      "var": "stickActStaProduce_actStaProduce",
+      "start": "stickActStaProduce",
+      "end": "actStaProduce",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickActStaStock_actStaStock": {
+      "relationship": "REPRESENTE",
+      "var": "stickActStaStock_actStaStock",
+      "start": "stickActStaStock",
+      "end": "actStaStock",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegAnger_emoNegAnger": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegAnger_emoNegAnger",
+      "start": "stickEmoNegAnger",
+      "end": "emoNegAnger",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegAnnoyance_emoNegAnnoyance": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegAnnoyance_emoNegAnnoyance",
+      "start": "stickEmoNegAnnoyance",
+      "end": "emoNegAnnoyance",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegContempt_emoNegContempt": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegContempt_emoNegContempt",
+      "start": "stickEmoNegContempt",
+      "end": "emoNegContempt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegDisgust_emoNegDisgust": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegDisgust_emoNegDisgust",
+      "start": "stickEmoNegDisgust",
+      "end": "emoNegDisgust",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegIrritation_emoNegIrritation": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegIrritation_emoNegIrritation",
+      "start": "stickEmoNegIrritation",
+      "end": "emoNegIrritation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegAnxiety_emoNegAnxiety": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegAnxiety_emoNegAnxiety",
+      "start": "stickEmoNegAnxiety",
+      "end": "emoNegAnxiety",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegEmbarrassment_emoNegEmbarrassment": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegEmbarrassment_emoNegEmbarrassment",
+      "start": "stickEmoNegEmbarrassment",
+      "end": "emoNegEmbarrassment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegFear_emoNegFear": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegFear_emoNegFear",
+      "start": "stickEmoNegFear",
+      "end": "emoNegFear",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegHelplessness_emoNegHelplessness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegHelplessness_emoNegHelplessness",
+      "start": "stickEmoNegHelplessness",
+      "end": "emoNegHelplessness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegPowerlessness_emoNegPowerlessness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegPowerlessness_emoNegPowerlessness",
+      "start": "stickEmoNegPowerlessness",
+      "end": "emoNegPowerlessness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegWorry_emoNegWorry": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegWorry_emoNegWorry",
+      "start": "stickEmoNegWorry",
+      "end": "emoNegWorry",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegDoubty_emoNegDoubty": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegDoubty_emoNegDoubty",
+      "start": "stickEmoNegDoubty",
+      "end": "emoNegDoubty",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegEnvy_emoNegEnvy": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegEnvy_emoNegEnvy",
+      "start": "stickEmoNegEnvy",
+      "end": "emoNegEnvy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegFrustration_emoNegFrustration": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegFrustration_emoNegFrustration",
+      "start": "stickEmoNegFrustration",
+      "end": "emoNegFrustration",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegGuilt_emoNegGuilt": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegGuilt_emoNegGuilt",
+      "start": "stickEmoNegGuilt",
+      "end": "emoNegGuilt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegShame_emoNegShame": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegShame_emoNegShame",
+      "start": "stickEmoNegShame",
+      "end": "emoNegShame",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegBoredom_emoNegBoredom": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegBoredom_emoNegBoredom",
+      "start": "stickEmoNegBoredom",
+      "end": "emoNegBoredom",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegDespair_emoNegDespair": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegDespair_emoNegDespair",
+      "start": "stickEmoNegDespair",
+      "end": "emoNegDespair",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegDisappointment_emoNegDisappointment": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegDisappointment_emoNegDisappointment",
+      "start": "stickEmoNegDisappointment",
+      "end": "emoNegDisappointment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegHurt_emoNegHurt": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegHurt_emoNegHurt",
+      "start": "stickEmoNegHurt",
+      "end": "emoNegHurt",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoNegSadness_emoNegSadness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoNegSadness_emoNegSadness",
+      "start": "stickEmoNegSadness",
+      "end": "emoNegSadness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosAmusement_emoPosAmusement": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosAmusement_emoPosAmusement",
+      "start": "stickEmoPosAmusement",
+      "end": "emoPosAmusement",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosDelight_emoPosDelight": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosDelight_emoPosDelight",
+      "start": "stickEmoPosDelight",
+      "end": "emoPosDelight",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosElation_emoPosElation": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosElation_emoPosElation",
+      "start": "stickEmoPosElation",
+      "end": "emoPosElation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosExcitement_emoPosExcitement": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosExcitement_emoPosExcitement",
+      "start": "stickEmoPosExcitement",
+      "end": "emoPosExcitement",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosHappiness_emoPosHappiness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosHappiness_emoPosHappiness",
+      "start": "stickEmoPosHappiness",
+      "end": "emoPosHappiness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosJoy_emoPosJoy": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosJoy_emoPosJoy",
+      "start": "stickEmoPosJoy",
+      "end": "emoPosJoy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosPleasure_emoPosPleasure": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosPleasure_emoPosPleasure",
+      "start": "stickEmoPosPleasure",
+      "end": "emoPosPleasure",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosCourage_emoPosCourage": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosCourage_emoPosCourage",
+      "start": "stickEmoPosCourage",
+      "end": "emoPosCourage",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosHope_emoPosHope": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosHope_emoPosHope",
+      "start": "stickEmoPosHope",
+      "end": "emoPosHope",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosPride_emoPosPride": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosPride_emoPosPride",
+      "start": "stickEmoPosPride",
+      "end": "emoPosPride",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosSatisfaction_emoPosSatisfaction": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosSatisfaction_emoPosSatisfaction",
+      "start": "stickEmoPosSatisfaction",
+      "end": "emoPosSatisfaction",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosTrust_emoPosTrust": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosTrust_emoPosTrust",
+      "start": "stickEmoPosTrust",
+      "end": "emoPosTrust",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosCalmness_emoPosCalmness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosCalmness_emoPosCalmness",
+      "start": "stickEmoPosCalmness",
+      "end": "emoPosCalmness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosContentment_emoPosContentment": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosContentment_emoPosContentment",
+      "start": "stickEmoPosContentment",
+      "end": "emoPosContentment",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosRelaxation_emoPosRelaxation": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosRelaxation_emoPosRelaxation",
+      "start": "stickEmoPosRelaxation",
+      "end": "emoPosRelaxation",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosRelief_emoPosRelief": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosRelief_emoPosRelief",
+      "start": "stickEmoPosRelief",
+      "end": "emoPosRelief",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosSerenity_emoPosSerenity": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosSerenity_emoPosSerenity",
+      "start": "stickEmoPosSerenity",
+      "end": "emoPosSerenity",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegStress_emoPosNegStress": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegStress_emoPosNegStress",
+      "start": "stickEmoPosNegStress",
+      "end": "emoPosNegStress",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegShock_emoPosNegShock": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegShock_emoPosNegShock",
+      "start": "stickEmoPosNegShock",
+      "end": "emoPosNegShock",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegTension_emoPosNegTension": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegTension_emoPosNegTension",
+      "start": "stickEmoPosNegTension",
+      "end": "emoPosNegTension",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegAffection_emoPosNegAffection": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegAffection_emoPosNegAffection",
+      "start": "stickEmoPosNegAffection",
+      "end": "emoPosNegAffection",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegEmpathy_emoPosNegEmpathy": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegEmpathy_emoPosNegEmpathy",
+      "start": "stickEmoPosNegEmpathy",
+      "end": "emoPosNegEmpathy",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegFriendliness_emoPosNegFriendliness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegFriendliness_emoPosNegFriendliness",
+      "start": "stickEmoPosNegFriendliness",
+      "end": "emoPosNegFriendliness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegLove_emoPosNegLove": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegLove_emoPosNegLove",
+      "start": "stickEmoPosNegLove",
+      "end": "emoPosNegLove",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegInterest_emoPosNegInterest": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegInterest_emoPosNegInterest",
+      "start": "stickEmoPosNegInterest",
+      "end": "emoPosNegInterest",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegPoliteness_emoPosNegPoliteness": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegPoliteness_emoPosNegPoliteness",
+      "start": "stickEmoPosNegPoliteness",
+      "end": "emoPosNegPoliteness",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
+	"stickEmoPosNegSurprise_emoPosNegSurprise": {
+      "relationship": "REPRESENTE",
+      "var": "stickEmoPosNegSurprise_emoPosNegSurprise",
+      "start": "stickEmoPosNegSurprise",
+      "end": "emoPosNegSurprise",
+      "paramList": {},
+      "onCreateSetList": {
+        "version": "0.0"
+      },
+      "onMatchSetList": {}
+    },
       
     uxSite 
     uxHeader 
@@ -8355,6 +9423,10 @@
       "visibility": "__KEY___visibility",
       "note": "__KEY___note",
       "value": "__KEY___value",
+      "weight": "__KEY___weight",
+      "itCost":  "__KEY___itCost",
+      "commCost":  "__KEY___commCost",
+      "marketCost":  "__KEY___marketCost",
       "uid": "__KEY___uid",
       "sign": "__KEY___sign",
       "blockChain": "t_blockChain",
@@ -8383,6 +9455,10 @@
       "visibility": "__KEY___visibility",
       "note": "__KEY___note",
       "value": "__KEY___value",
+      "weight": "__KEY___weight",
+      "itCost":  "__KEY___itCost",
+      "commCost":  "__KEY___commCost",
+      "marketCost":  "__KEY___marketCost",
       "uid": "__KEY___uid",
       "sign": "__KEY___sign",
       "blockChain": "t_blockChain",
