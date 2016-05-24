@@ -32,6 +32,7 @@ trait TCypher {
     	
     	foreach($list as $k => $v) {
     		
+    		$v = str_replace('__KEY__', $k, $v);
     		$v = $toTrace->$v;
     		$v = self::cypherSecureVar($v);
 
@@ -80,13 +81,13 @@ trait TCypher {
     		
     		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
-    		$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->var.":".$detailList->label." { ".$attributList." })".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
+    		$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->var.":".$detailList->label." )".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(name)".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(state)"."CREATE INDEX ON :".$detailList->label."(visibility)".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->label.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
     	foreach(Conf::$relationshipList as $detailList) {
  
     		$attributList     = self::cypherLogAttributMode($toTrace, $detailList->paramList, '', ': ', ', ');
     		$modeList         = self::onModeList($toTrace, $detailList);
-			$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
+			$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->start.")-[".$detailList->var.":".$detailList->relationship."]->(".$detailList->end.")".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->relationship.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
     	Cypher::send($this->cypherLog);
     	
