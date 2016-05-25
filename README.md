@@ -1,15 +1,6 @@
 
-Just (re)started not finish yet
+A php Framework with neo4j.
 
-# graphDatabase
+http://postmodern.tech
 
-Graph script for init a the projet Graph of Instriit 
 
-Managment for :
-
-Actions
-Emotions
-Nodes 
-Relastionships
-
-For #machinelearning #ia #socialmesure #analytics ...
