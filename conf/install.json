@@ -445,7 +445,6 @@
   "nodeList": {
     "tagInstall":{
       "label": "Tag",
-      "name": "tagInstall_name",
       "uidHash":["name"],
       "indexList": [],
       "version": "0.0",
@@ -454,7 +453,6 @@
     }
     "t": {
       "label": "time",
-      "name": "t_date",
       "uidHash":["time","e"],
       "indexList": ["time","e"],
       "version": "0.0",
@@ -471,7 +469,6 @@
     "tdy": {
       "label": "TimeDayYear",      
       "indexList": [],
-        "name": "tdy_z",
       "uidHash":["name"],
       "version": "0.0",
       "onCreateSetList": { "version": "0.0" },
@@ -481,56 +478,42 @@
       "label": "TimeYear",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "tY_Y"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "tmon": {
       "label": "TimeMonth",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "tmon_m"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "tdm": {
       "label": "TimeDayMonth",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "tdm_d"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "tmin": {
       "label": "TimeMinute",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "tmin_i"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "tH": {
       "label": "TimeDayHour",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "tH_H"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "ts": {
       "label": "TimeSecond",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "ts_s"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "evt": {
@@ -553,11 +536,9 @@
       "indexList": ["major", "minor", "level"],
       "version": "0.0",
       "onCreateSetList": {
-        "name": "code_code",
         "major": "code_major",
         "minor": "code_minor",
-        "level": "code_level"
-        
+        "level": "code_level"        
       },
       "onMatchSetList": {}
     },
@@ -566,7 +547,6 @@
       "version": "0.0",
       "indexList": ["SERVER_SCRIPT_NAME", "SERVER_REQUEST_URI", "SERVER_GATEWAY_INTERFACE", "SERVER_SCRIPT_FILENAME", "SERVER_SERVER_PORT", "SERVER_SERVER_ADDR", "SERVER_HTTP_HOST", "SERVER_PHP_SELF"],
       "onCreateSetList": {
-        "name": "req_SERVER_SCRIPT_NAME",
         "SERVER_SCRIPT_NAME": "req_SERVER_SCRIPT_NAME",
         "SERVER_REQUEST_URI": "req_SERVER_REQUEST_URI",
         "SERVER_QUERY_STRING": "req_SERVER_QUERY_STRING",
@@ -580,8 +560,7 @@
         "SERVER_HTTP_CONNECTION": "req_SERVER_HTTP_CONNECTION",
         "SERVER_HTTP_HOST": "req_SERVER_HTTP_HOST",
         "SERVER_FCGI_ROLE": "req_SERVER_FCGI_ROLE",
-        "SERVER_PHP_SELF": "req_SERVER_PHP_SELF"
-        
+        "SERVER_PHP_SELF": "req_SERVER_PHP_SELF"        
       },
       "onMatchSetList": {}
     },
@@ -596,8 +575,7 @@
         "pid": "tr_pid",
         "SERVER_REQUEST_TIME_FLOAT": "tr_SERVER_REQUEST_TIME_FLOAT",
         "backtrace": "tr_backtrace_json",
-        "sequence": "tr_sequence"
-        
+        "sequence": "tr_sequence"        
       },
       "onMatchSetList": {}
     },
@@ -605,50 +583,35 @@
       "label": "BackTrace",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "bt_name"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "i": {
       "label": "Instance",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "i_name"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "c": {
       "label": "Contract",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "c_name"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "m": {
       "label": "Method",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "m_name"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "l": {
       "label": "Line",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "l_number"
-        
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "var": {
@@ -670,7 +633,6 @@
       "version": "0.0",
       "indexList": ["mainClass"],
       "onCreateSetList": {
-        "name": "app_name",
         "id": "app_id",
         "mainClass": "app_mainClass",
         "idCryptedT": "app_idCryptedT",
@@ -688,7 +650,6 @@
       "version": "0.0",
       "indexList": ["SERVER_PATH", "SERVER_DOCUMENT_ROOT", "SERVER_SERVER_NAME", "SERVER_SERVER_PATH", "SERVER_SERVER_SOFTWARE", "SERVER_SERVER_SIGNATURE", "SERVER_CONTEXT_DOCUMENT_ROOT"],
       "onCreateSetList": {
-        "name": "hApp_SERVER_SERVER_NAME",
         "SERVER_PATH": "hApp_SERVER_PATH",
         "SERVER_SYSTEMROOT": "hApp_SERVER_SYSTEMROOT",
         "SERVER_COMSPEC": "hApp_SERVER_COMSPEC",
@@ -715,9 +676,7 @@
       "label": "Environnement",
       "version": "0.0",
       "indexList": ["SERVER_SERVER_ADMIN"],
-      "onCreateSetList": {
-        "name": "env_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {
         "SERVER_SERVER_ADMIN": "env_SERVER_SERVER_ADMIN"
       }
@@ -727,7 +686,6 @@
       "version": "0.0",
       "indexList": ["email_fav", "phone_fav", "pwd"],
       "onCreateSetList": {
-        "name": "uCorp_name",
         "id": "uCorp_id",
         "idCryptedT": "uCorp_idCryptedT",
         "idCryptedS": "uCorp_idCryptedS",
@@ -749,7 +707,6 @@
       "version": "0.0",
       "indexList": ["email_fav", "phone_fav", "pwd"],
       "onCreateSetList": {
-        "name": "uTeam_name",
         "id": "uTeam_id",
         "idCryptedT": "uTeam_idCryptedT",
         "idCryptedS": "uTeam_idCryptedS",
@@ -771,7 +728,6 @@
       "version": "0.0",
       "indexList": ["email_fav", "phone_fav", "pwd"],
       "onCreateSetList": {
-        "name": "uPers_name",
         "id": "uPers_id",
         "idCryptedT": "uPers_idCryptedT",
         "idCryptedS": "uPers_idCryptedS",
@@ -793,7 +749,6 @@
       "version": "0.0",
       "indexList": ["email_fav", "phone_fav", "pwd"],
       "onCreateSetList": {
-        "name": "uPersPM_name",
         "id": "uPersPM_id",
         "idCryptedT": "uPersPM_idCryptedT",
         "idCryptedS": "uPersPM_idCryptedS",
@@ -815,7 +770,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "uh_name",
         "userId": "u_id"
       },
       "onMatchSetList": {}
@@ -824,7 +778,6 @@
       "label": "HostClient",
       "indexList": ["SERVER_REMOTE_PORT", "SERVER_REMOTE_ADDR", "SERVER_HTTP_USER_AGENT"],
       "onCreateSetList": {
-        "name": "hClient_SERVER_REMOTE_ADDR",
         "SERVER_REMOTE_PORT": "hClient_SERVER_REMOTE_PORT",
         "SERVER_REMOTE_ADDR": "hClient_SERVER_REMOTE_ADDR",
         "SERVER_HTTP_USER_AGENT": "hClient_SERVER_HTTP_USER_AGENT"
@@ -836,8 +789,6 @@
       "version": "0.0",
       "indexList": ["userId", "appId"],
       "onCreateSetList": {
-        "name": "ss_id",
-        "id": "ss_id",
         "startTime": "ss_startTime",
         "endTime": "ss_endTime",
         "SERVER_HTTP_COOKIE": "ss_SERVER_HTTP_COOKIE",
@@ -861,7 +812,6 @@
       "version": "0.0",
       "indexList": ["userIdCryptedS", "userIdCryptedT"],
       "onCreateSetList": {
-        "name": "ssClient_userIdCryptedS",
         "userIdCryptedS": "ssClient_userIdCryptedS",
         "userIdCryptedT": "ssClient_userIdCryptedT"
       },
@@ -871,7 +821,6 @@
       "label": "SessionApp",
       "indexList": ["appIdCryptedS", "appIdCryptedT"],
       "onCreateSetList": {
-        "name": "ssApp_appIdCryptedS",
         "appIdCryptedS": "ssApp_appIdCryptedS",
         "appIdCryptedT": "ssApp_appIdCryptedT"
       },
@@ -882,7 +831,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "mock_name",
         "userIdCryptedS": "mock_userIdCryptedS",
         "appIdCryptedS": "mock_appIdCryptedS",
         "state": "mock_state"
@@ -897,28 +845,21 @@
       "label": "Notification",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "not_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "corp": {
       "label": "Corporation",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "corp_name",
-        "CorpId": "corp_corpId"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "team": {
       "label": "Team",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "team_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "pers": {
@@ -926,7 +867,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "pers_name",
         "firstName": "fisrt_name",
         "lastName": "last_name"
       },
@@ -940,7 +880,6 @@
       "version": "0.0",
       "indexList": ["email", "phone"],
       "onCreateSetList": {
-        "name": "tctCorp_name",
         "email": "tctCorp_email",
         "phone": "tctCorp_phone"
       },
@@ -951,7 +890,6 @@
       "version": "0.0",
       "indexList": ["email", "phone"],
       "onCreateSetList": {
-        "name": "tctTeam_name",
         "email": "tctTeam_email",
         "phone": "tctTeam_phone"
       },
@@ -962,7 +900,6 @@
       "version": "0.0",
       "indexList": ["email", "phone"],
       "onCreateSetList": {
-        "name": "tctPers_name",
         "email": "tctPers_email",
         "phone": "tctPers_phone"
       },
@@ -973,7 +910,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "ext_name",
         "version": "0.0"
       }
       "onMatchSetList": {}
@@ -982,44 +918,34 @@
       "label": "Domain",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "dom_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "btcCorp": {
       "label": "BitCoinChest",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "btcCorp_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "btcTeam": {
       "label": "BitCoinChest",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "btcTeam_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "btcPers": {
       "label": "BitCoinChest",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "btcPers_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "zone": {
       "label": "Zone",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "zone_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "locCorp": {
@@ -1027,7 +953,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "locCorp_name",
         "version": "0.0",
         "street": "locCorp_street",
         "streetNumber": "locCorp_streetNumber",
@@ -1100,7 +1025,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "locTeam_name",
         "version": "0.0",
         "street": "locTeam_street",
         "streetNumber": "locTeam_streetNumber",
@@ -1173,7 +1097,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "locPers_name",
         "version": "0.0",
         "street": "locPers_street",
         "streetNumber": "locPers_streetNumber",
@@ -1245,16 +1168,13 @@
       "label": "Right",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "r_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "docA": {
       "label": "documentToApply",
       "indexList": [],
       "onCreateSetList": {
-        "name": "docA_name",
         "content": "docA_content"
       },
       "onMatchSetList": {}
@@ -1264,7 +1184,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "docR_name",
         "content": "docR_content"
       },
       "onMatchSetList": {}
@@ -1274,7 +1193,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "rid_name",
         "content": "rid_content"
       },
       "onMatchSetList": {}
@@ -1284,7 +1202,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "signPers_name",
         "content": "signPers_content"
       },
       "onMatchSetList": {}
@@ -1294,7 +1211,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "signPersPM_name",
         "content": "signPersPM_content"
       },
       "onMatchSetList": {}
@@ -1303,504 +1219,392 @@
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActWfl_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catActLfc": {
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActLfc_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catActCla": {
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActCla_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catActUa": {
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActUa_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catActCm": {
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActCm_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catActAuth": {
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActAuth_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catActSta": {
       "label": "CategoryAction",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catActSta_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfTest": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actWkfTest_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfValid": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfValid_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfCollect": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfCollect_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfOptimize": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actWkfOptimize_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfShipp": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actWkfShipp_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfPay": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfPay_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfBilling": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfBilling_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfExpedite": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfExpedite_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfPayBack": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfPayBack_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfShippManage": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfShippManage_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfExpediteManage": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfExpediteManage_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actWkfPayManage": {
       "label": "Action",
       "indexList": [],
       "version": "0.0",
-      "onCreateSetList": {
-        "name": "actWkfPayManage_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcCreate": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcCreate_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcInit": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcInit_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcPublish": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcPublish_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcState": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcState_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcExpire": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcExpire_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcHistorize": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcHistorize_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actLfcArchive": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actLfcArchive_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabMark": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabMark_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabAsk": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabAsk_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabNote": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabNote_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabComment": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabComment_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabShare": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabShare_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabContributeTo": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabContributeTo_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabFacility": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabFacility_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actClabBalance": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actClabBalance_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actUaReturn": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actUaReturn_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actUaOrder": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actUaOrder_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actUaAdd": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actUaAdd_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actUaBuy": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actUaBuy_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actUaShow": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actUaShow_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actUaUse": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actUaUse_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmTarget": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmTarget_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmRepresente": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmRepresente_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmIdentify": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmIdentify_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmLocalize": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmLocalize_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmSize": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmSize_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmConcern": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmConcern_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actCmCost": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actCmCost_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actAuthOwn": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actAuthOwn_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actAuthManage": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actAuthManage_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actAuthAuthorise": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actAuthAuthorise_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actStaHost": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actStaHost_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actStaProduce": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actStaProduce_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "actStaStock": {
       "label": "Action",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "actStaStock_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catEmoNeg": {
       "label": "CategoryEmotion",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catEmoNeg_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catEmoPos": {
       "label": "CategoryEmotion",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catEmoPos_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "catEmoNegPos": {
       "label": "CategoryEmotion",
       "version": "0.0",
       "indexList": [],
-      "onCreateSetList": {
-        "name": "catEmoNegPos_name"
-      },
+      "onCreateSetList": {},
       "onMatchSetList": {}
     },
     "emoNegAnger": {
@@ -1808,10 +1612,8 @@
       "version": "0.0",
       "indexList": ["negative", "forceful"],
       "onCreateSetList": {
-        "name": "emoNegAnger_name",
         "negative": true,
-        "forceful": true
-        
+        "forceful": true        
       },
       "onMatchSetList": {}
     },
@@ -1820,7 +1622,6 @@
       "version": "0.0",
       "indexList": ["negative", "forceful"],
       "onCreateSetList": {
-        "name": "emoNegAnnoyance_name",
         "negative": true,
         "forceful": true
       },
@@ -1831,7 +1632,6 @@
       "version": "0.0",
       "indexList": ["negative", "forceful"],
       "onCreateSetList": {
-        "name": "emoNegContempt_name",
         "negative": true,
         "forceful": true
       },
@@ -1842,7 +1642,6 @@
       "version": "0.0",
       "indexList": ["negative", "forceful"],
       "onCreateSetList": {
-        "name": "emoNegDisgust_name",
         "negative": true,
         "forceful": true
       },
@@ -1853,7 +1652,6 @@
       "version": "0.0",
       "indexList": ["negative", "forceful"],
       "onCreateSetList": {
-        "name": "emoNegIrritation_name",
         "negative": true,
         "forceful": true
       },
@@ -1864,7 +1662,6 @@
       "version": "0.0",
       "indexList": ["negative", "notinControl"],
       "onCreateSetList": {
-        "name": "emoNegAnxiety_name",
         "negative": true,
         "notinControl": true
       },
@@ -1875,7 +1672,6 @@
       "version": "0.0",
       "indexList": ["negative", "notinControl"],
       "onCreateSetList": {
-        "name": "emoNegEmbarrassment_name",
         "negative": true,
         "notinControl": true
       },
@@ -1886,7 +1682,6 @@
       "version": "0.0",
       "indexList": ["negative", "notinControl"],
       "onCreateSetList": {
-        "name": "emoNegFear_name",
         "negative": true,
         "notinControl": true
       },
@@ -1896,7 +1691,6 @@
       "label": "Emotion",
       "indexList": ["negative", "notinControl"],
       "onCreateSetList": {
-        "name": "emoNegHelplessness_name",
         "negative": true,
         "notinControl": true
       },
@@ -1907,7 +1701,6 @@
       "version": "0.0",
       "indexList": ["negative", "notinControl"],
       "onCreateSetList": {
-        "name": "emoNegPowerlessness_name",
         "negative": true,
         "notinControl": true
       },
@@ -1918,7 +1711,6 @@
       "version": "0.0",
       "indexList": ["negative", "notinControl"],
       "onCreateSetList": {
-        "name": "emoNegWorry_name",
         "negative": true,
         "notinControl": true
       },
@@ -1929,7 +1721,6 @@
       "version": "0.0",
       "indexList": ["negative", "thoughts"],
       "onCreateSetList": {
-        "name": "emoNegDoubty_name",
         "negative": true,
         "thoughts": true
       },
@@ -1940,7 +1731,6 @@
       "version": "0.0",
       "indexList": ["negative", "thoughts"],
       "onCreateSetList": {
-        "name": "emoNegEnvy_name",
         "negative": true,
         "thoughts": true
       },
@@ -1951,7 +1741,6 @@
       "version": "0.0",
       "indexList": ["negative", "thoughts"],
       "onCreateSetList": {
-        "name": "emoNegFrustration_name",
         "negative": true,
         "thoughts": true
       },
@@ -1962,7 +1751,6 @@
       "version": "0.0",
       "indexList": ["negative", "thoughts"],
       "onCreateSetList": {
-        "name": "emoNegGuilt_name",
         "negative": true,
         "thoughts": true
       },
@@ -1973,7 +1761,6 @@
       "version": "0.0",
       "indexList": ["negative", "thoughts"],
       "onCreateSetList": {
-        "name": "emoNegShame_name",
         "negative": true,
         "thoughts": true
       },
@@ -1984,7 +1771,6 @@
       "version": "0.0",
       "indexList": ["negative", "passive"],
       "onCreateSetList": {
-        "name": "emoNegBoredom_name",
         "negative": true,
         "passive": true
       },
@@ -1995,7 +1781,6 @@
       "version": "0.0",
       "indexList": ["negative", "passive"],
       "onCreateSetList": {
-        "name": "emoNegDespair_name",
         "negative": true,
         "passive": true
       },
@@ -2006,7 +1791,6 @@
       "version": "0.0",
       "indexList": ["negative", "passive"],
       "onCreateSetList": {
-        "name": "emoNegDisappointment_name",
         "negative": true,
         "passive": true
       },
@@ -2017,7 +1801,6 @@
       "version": "0.0",
       "indexList": ["negative", "passive"],
       "onCreateSetList": {
-        "name": "emoNegHurt_name",
         "negative": true,
         "passive": true
       },
@@ -2028,7 +1811,6 @@
       "version": "0.0",
       "indexList": ["negative", "passive"],
       "onCreateSetList": {
-        "name": "emoNegSadness_name",
         "negative": true,
         "passive": true
       },
@@ -2039,7 +1821,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosAmusement_name",
         "positive": true,
         "lively": true
       },
@@ -2050,7 +1831,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosDelight_name",
         "positive": true,
         "lively": true
       },
@@ -2061,7 +1841,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosElation_name",
         "positive": true,
         "lively": true
       },
@@ -2072,7 +1851,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosExcitement_name",
         "positive": true,
         "lively": true
       },
@@ -2083,7 +1861,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosHappiness_name",
         "positive": true,
         "lively": true
       },
@@ -2094,7 +1871,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosJoy_name",
         "positive": true,
         "lively": true
       },
@@ -2105,7 +1881,6 @@
       "version": "0.0",
       "indexList": ["positive", "lively"],
       "onCreateSetList": {
-        "name": "emoPosPleasure_name",
         "positive": true,
         "lively": true
       },
@@ -2116,7 +1891,6 @@
       "version": "0.0",
       "indexList": ["positive", "thoughts"],
       "onCreateSetList": {
-        "name": "emoPosCourage_name",
         "positive": true,
         "thoughts": true
       },
@@ -2127,7 +1901,6 @@
       "version": "0.0",
       "indexList": ["positive", "thoughts"],
       "onCreateSetList": {
-        "name": "emoPosHope_name",
         "positive": true,
         "thoughts": true
       },
@@ -2138,7 +1911,6 @@
       "version": "0.0",
       "indexList": ["positive", "thoughts"],
       "onCreateSetList": {
-        "name": "emoPosPride_name",
         "positive": true,
         "thoughts": true
       },
@@ -2149,7 +1921,6 @@
       "version": "0.0",
       "indexList": ["positive", "thoughts"],
       "onCreateSetList": {
-        "name": "emoPosSatisfaction_name",
         "positive": true,
         "thoughts": true
       },
@@ -2160,7 +1931,6 @@
       "version": "0.0",
       "indexList": ["positive", "thoughts"],
       "onCreateSetList": {
-        "name": "emoPosTrust_name",
         "positive": true,
         "thoughts": true
       },
@@ -2171,7 +1941,6 @@
       "version": "0.0",
       "indexList": ["quiet", "positive"],
       "onCreateSetList": {
-        "name": "emoPosCalmness_name",
         "quiet": true,
         "positive": true
       },
@@ -2182,7 +1951,6 @@
       "version": "0.0",
       "indexList": ["quiet", "positive"],
       "onCreateSetList": {
-        "name": "emoPosContentment_name",
         "quiet": true,
         "positive": true
       },
@@ -2193,7 +1961,6 @@
       "version": "0.0",
       "indexList": ["quiet", "positive"],
       "onCreateSetList": {
-        "name": "emoPosRelaxation_name",
         "quiet": true,
         "positive": true
       },
@@ -2204,7 +1971,6 @@
       "version": "0.0",
       "indexList": ["quiet", "positive"],
       "onCreateSetList": {
-        "name": "emoPosRelief_name",
         "quiet": true,
         "positive": true
       },
@@ -2225,7 +1991,6 @@
       "version": "0.0",
       "indexList": ["agitation"],
       "onCreateSetList": {
-        "name": "emoPosNegStress_name",
         "agitation": true
       },
       "onMatchSetList": {}
@@ -2235,7 +2000,6 @@
       "version": "0.0",
       "indexList": ["agitation"],
       "onCreateSetList": {
-        "name": "emoPosNegShock_name",
         "agitation": true
       },
       "onMatchSetList": {}
@@ -2245,7 +2009,6 @@
       "version": "0.0",
       "indexList": ["agitation"],
       "onCreateSetList": {
-        "name": "emoPosNegTension_name",
         "agitation": true
       },
       "onMatchSetList": {}
@@ -2255,7 +2018,6 @@
       "version": "0.0",
       "indexList": ["caring"],
       "onCreateSetList": {
-        "name": "emoPosNegAffection_name",
         "caring": true
       },
       "onMatchSetList": {}
@@ -2265,7 +2027,6 @@
       "version": "0.0",
       "indexList": ["caring"],
       "onCreateSetList": {
-        "name": "emoPosNegEmpathy_name",
         "caring": true
       },
       "onMatchSetList": {}
@@ -2275,7 +2036,6 @@
       "version": "0.0",
       "indexList": ["caring"],
       "onCreateSetList": {
-        "name": "emoPosNegFriendliness_name",
         "caring": true
       },
       "onMatchSetList": {}
@@ -2285,7 +2045,6 @@
       "version": "0.0",
       "indexList": ["caring"],
       "onCreateSetList": {
-        "name": "emoPosNegLove_name",
         "caring": true
       },
       "onMatchSetList": {}
@@ -2295,7 +2054,6 @@
       "version": "0.0",
       "indexList": ["reactive"],
       "onCreateSetList": {
-        "name": "emoPosNegInterest_name",
         "reactive": true
       },
       "onMatchSetList": {}
@@ -2305,7 +2063,6 @@
       "version": "0.0",
       "indexList": ["reactive"],
       "onCreateSetList": {
-        "name": "emoPosNegPoliteness_name",
         "reactive": true
       },
       "onMatchSetList": {}
@@ -2315,7 +2072,6 @@
       "version": "0.0",
       "indexList": ["reactive"],
       "onCreateSetList": {
-        "name": "emoPosNegSurprise_name",
         "reactive": true
       },
       "onMatchSetList": {}
@@ -2325,7 +2081,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickTctCorp_name",
         "cssClass": "stickTctCorp_className"
      },
       "onMatchSetList": {}
@@ -2335,7 +2090,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickTctTeam_name",
         "cssClass": "stickTctCorp_className",
         "version": "0.0"
         
@@ -2347,7 +2101,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickTctPers_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2357,7 +2110,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfTest_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2367,7 +2119,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfValid_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2377,7 +2128,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfCollect_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2387,7 +2137,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfOptimize_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2397,7 +2146,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfShipp_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2407,7 +2155,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfPay_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2417,7 +2164,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfBilling_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2427,7 +2173,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfExpedite_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2437,7 +2182,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfPayBack_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2447,7 +2191,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfShippManage_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2457,7 +2200,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfExpediteManage_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2467,7 +2209,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActWkfPayManage_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2477,7 +2218,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcCreate_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2487,7 +2227,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcInit_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2497,7 +2236,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcPublish_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2507,7 +2245,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcState_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2517,7 +2254,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcExpire_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2527,7 +2263,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcHistorize_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2537,7 +2272,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActLfcArchive_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2547,7 +2281,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabMark_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2557,7 +2290,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabAsk_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2567,7 +2299,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabNote_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2577,7 +2308,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabComment_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2587,7 +2317,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabShare_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2597,7 +2326,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabContributeTo_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2607,7 +2335,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabFacility_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2617,7 +2344,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActClabBalance_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2627,7 +2353,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActUaReturn_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2637,7 +2362,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActUaOrder_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2647,7 +2371,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActUaAdd_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2657,7 +2380,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActUaBuy_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2667,7 +2389,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActUaShow_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2677,7 +2398,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActUaUse_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2687,7 +2407,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmTarget_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2697,7 +2416,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmRepresente_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2707,7 +2425,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmIdentify_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2717,7 +2434,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmLocalize_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2727,7 +2443,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmSize_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2737,7 +2452,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmConcern_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2747,7 +2461,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActCmCost_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2757,7 +2470,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActAuthOwn_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2767,7 +2479,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActAuthManage_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2777,7 +2488,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActAuthAuthorise_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2787,7 +2497,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActStaHost_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2797,7 +2506,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActStaProduce_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2807,7 +2515,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickActStaStock_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2817,7 +2524,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegAnger_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2827,7 +2533,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegAnnoyance_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2837,7 +2542,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegContempt_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2847,7 +2551,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegDisgust_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2857,7 +2560,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegIrritation_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2867,7 +2569,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegAnxiety_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2877,7 +2578,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegEmbarrassment_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2887,7 +2587,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegFear_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2897,7 +2596,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegHelplessness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2907,7 +2605,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegPowerlessness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2917,7 +2614,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegWorry_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2927,7 +2623,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegDoubty_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2937,7 +2632,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegEnvy_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2947,7 +2641,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegFrustration_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2957,7 +2650,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegGuilt_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2967,7 +2659,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegShame_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2977,7 +2668,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegBoredom_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2987,7 +2677,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegDespair_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -2997,7 +2686,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegDisappointment_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3007,7 +2695,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegHurt_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3017,7 +2704,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoNegSadness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3027,7 +2713,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoPosAmusement_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3037,7 +2722,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoPosDelight_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3047,7 +2731,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoPosElation_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3057,7 +2740,6 @@
       "version": "0.0",
       "indexList": [],
       "onCreateSetList": {
-        "name": "stickEmoPosExcitement_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3067,7 +2749,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosHappiness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3077,7 +2758,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosJoy_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3087,7 +2767,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosPleasure_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3097,7 +2776,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosCourage_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3107,7 +2785,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosHope_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3117,7 +2794,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosPride_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3127,7 +2803,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosSatisfaction_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3137,7 +2812,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosTrust_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3147,7 +2821,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosCalmness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3157,7 +2830,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosContentment_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3167,7 +2839,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosRelaxation_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3177,7 +2848,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosRelief_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3187,7 +2857,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosSerenity_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3197,7 +2866,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegStress_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3207,7 +2875,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegShock_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3217,7 +2884,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegTension_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3227,7 +2893,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegAffection_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3237,7 +2902,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegEmpathy_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3247,7 +2911,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegFriendliness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3257,7 +2920,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegLove_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3267,7 +2929,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegInterest_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3277,7 +2938,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegPoliteness_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3287,7 +2947,6 @@
       "version": "0.0",
       "indexList": ["cssClass"],
       "onCreateSetList": {
-        "name": "stickEmoPosNegSurprise_name",
         "cssClass": "stickTctCorp_className"
       },
       "onMatchSetList": {}
@@ -3304,7 +2963,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSite_name",
         "cssClass": "uxSite_className",
         "template": "",
         "order": 0
@@ -3316,7 +2974,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxHeader_name",
         "cssClass": "uxHeader_className",
         "template": "",
         "order": 0
@@ -3328,7 +2985,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxHeaderBurger_name",
         "cssClass": "uxHeaderBurger_className",
         "template": "",
         "order": 0
@@ -3340,7 +2996,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxHeaderLogo_name",
         "cssClass": "uxHeaderLogo_className",
         "template": "",
         "order": 0
@@ -3352,7 +3007,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxHeaderTitle_name",
         "cssClass": "uxHeaderTitle_className",
         "template": "",
         "order": 0
@@ -3375,7 +3029,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxHeaderToolBarEmotion_name",
         "cssClass": "uxHeaderToolBarEmotion_className",
         "template": "",
         "order": 0
@@ -3388,7 +3041,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxHeaderToolBarEmotionItem_name",
         "cssClass": "uxHeaderToolBarEmotionItem_className",
         "template": "",
         "order": 0
@@ -3400,7 +3052,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBar_name",
         "cssClass": "uxSectionRightToolBar_className",
         "template": "",
         "order": 0
@@ -3412,7 +3063,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBarViewMapAction_name",
         "cssClass": "uxSectionRightToolBarViewMapAction_className",
         "template": "",
         "order": 0
@@ -3424,7 +3074,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBarViewTimeAction_name",
         "cssClass": "uxSectionRightToolBarViewTimeAction_className",
         "template": "",
         "order": 0
@@ -3436,7 +3085,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBarViewGraphAction_name",
         "cssClass": "uxSectionRightToolBarViewGraphAction_className",
         "template": "",
         "order": 0
@@ -3448,7 +3096,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBarAction_name",
         "cssClass": "uxSectionRightToolBarAction_className",
         "template": "",
         "order": 0
@@ -3461,7 +3108,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBarActionItem_name",
         "cssClass": "uxSectionRightToolBarActionItem_className",
         "template": "",
         "order": 0
@@ -3473,7 +3119,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserAction_name",
         "cssClass": "uxSectionleftUserAction_className",
         "template": "",
         "order": 0
@@ -3485,7 +3130,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserList_name",
         "cssClass": "uxSectionleftUserList_className",
         "template": "",
         "order": 0
@@ -3498,7 +3142,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserListItem_name",
         "cssClass": "uxSectionleftUserListItem_className",
         "template": "",
         "order": 0
@@ -3510,7 +3153,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserNotAction_name",
         "cssClass": "uxSectionleftUserNotAction_className",
         "template": "",
         "order": 0
@@ -3522,7 +3164,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserNotList_name",
         "cssClass": "uxSectionleftUserNotList_className",
         "template": "",
         "order": 0
@@ -3535,7 +3176,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserNotListItem_name",
         "cssClass": "uxSectionleftUserNotListItem_className",
         "template": "",
         "order": 0
@@ -3547,7 +3187,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserPoint_name",
         "cssClass": "uxSectionleftUserPoint_className",
         "template": "",
         "order": 0
@@ -3559,7 +3198,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserAgendaAction_name",
         "cssClass": "uxSectionleftUserAgendaAction_className",
         "template": "",
         "order": 0
@@ -3571,7 +3209,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserAgendaList_name",
         "cssClass": "uxSectionleftUserAgendaList_className",
         "template": "",
         "order": 0
@@ -3584,7 +3221,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftUserAgendaListItem_name",
         "cssClass": "uxSectionleftUserAgendaListItem_className",
         "template": "",
         "order": 0
@@ -3596,7 +3232,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftFilterAction_name",
         "cssClass": "uxSectionleftFilterAction_className",
         "template": "",
         "order": 0
@@ -3608,7 +3243,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftToolBarNode_name",
         "cssClass": "uxSectionleftToolBarNode_className",
         "template": "",
         "order": 0
@@ -3621,7 +3255,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionleftToolBarNodeItem_name",
         "cssClass": "uxSectionleftToolBarNodeItem_className",
         "template": "",
         "height": "",
@@ -3634,7 +3267,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentToolBar_name",
         "cssClass": "uxSectionCenterContentToolBar_className",
         "template": "",
         "height": "",
@@ -3647,7 +3279,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentToolBarZoomIn_name",
         "cssClass": "uxSectionCenterContentToolBarZoomIn_className",
         "template": "",
         "order": 0
@@ -3659,7 +3290,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentToolBarZoomOut_name",
         "cssClass": "uxSectionCenterContentToolBarZoomOut_className",
         "template": "",
         "height": "",
@@ -3672,7 +3302,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentToolBarZoomOut_name",
         "cssClass": "uxSectionCenterContentToolBarZoomOut_className",
         "template": "",
         "height": "",
@@ -3685,7 +3314,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentMap_name",
         "cssClass": "uxSectionCenterContentMap_className",
         "template": "",
         "order": 0,
@@ -3703,7 +3331,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentTimeLine_name",
         "cssClass": "uxSectionCenterContentTimeLine_className",
         "template": "",
         "order": 0,
@@ -3720,7 +3347,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionCenterContentGraph_name",
         "cssClass": "uxSectionCenterContentGraph_className",
         "template": "",
         "order": 0,
@@ -3742,7 +3368,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxMapPoint_name",
         "cssClass": "evtUxMapPoint_className",
         "template": "",
         "order": 0,
@@ -3757,7 +3382,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxTimePoint_name",
         "cssClass": "evtUxTimePoint_className",
         "template": "",
         "order": 0,
@@ -3772,7 +3396,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxGraphPoint_name",
         "cssClass": "evtUxGraphPoint_className",
         "template": "",
         "order": 0,
@@ -3791,7 +3414,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxMapPointRelationShips_name",
         "cssClass": "evtUxMapPointRelationShips_className",
         "template": "",
         "order": 0,
@@ -3811,7 +3433,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxTimePointRelationShips_name",
         "cssClass": "evtUxTimePointRelationShips_className",
         "template": "",
         "order": 0,
@@ -3831,7 +3452,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxGraphPointRelationShips_name",
         "cssClass": "evtUxGraphPointRelationShips_className",
         "template": "",
         "order": 0,
@@ -3851,7 +3471,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "evtUxItemPoint_name",
         "cssClass": "evtUxItemPoint_className",
         "template": "",
         "order": 0,
@@ -3870,7 +3489,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "name": "uxSectionRightToolBarViewListAction_name",
         "cssClass": "uxSectionRightToolBarViewListAction_className",
         "template": "",
         "order": 0,
