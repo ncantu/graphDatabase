@@ -1830,452 +1830,452 @@
       }
     },
     "stickTctCorp": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickTctTeam": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className",
         "version": "0.0"
       }
     },
     "stickTctPers": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfTest": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfValid": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfCollect": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfOptimize": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfShipp": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfPay": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfBilling": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfExpedite": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfPayBack": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfShippManage": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfExpediteManage": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfPayManage": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcCreate": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcInit": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcPublish": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcState": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcExpire": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcHistorize": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcArchive": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabMark": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabAsk": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabNote": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabComment": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabShare": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabContributeTo": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabFacility": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabBalance": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaReturn": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaOrder": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaAdd": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaBuy": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaShow": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaUse": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmTarget": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmRepresente": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmIdentify": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmLocalize": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmSize": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmConcern": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmCost": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActAuthOwn": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActAuthManage": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActAuthAuthorise": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActStaHost": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActStaProduce": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActStaStock": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegAnger": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegAnnoyance": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegContempt": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDisgust": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegIrritation": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegAnxiety": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegEmbarrassment": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegFear": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegHelplessness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegPowerlessness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegWorry": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDoubty": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegEnvy": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegFrustration": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegGuilt": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegShame": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegBoredom": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDespair": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDisappointment": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegHurt": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegSadness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosAmusement": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosDelight": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosElation": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosExcitement": {
-      "label": "Stikers",
+      "label": "Stickers",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosHappiness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2284,7 +2284,7 @@
       }
     },
     "stickEmoPosJoy": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2293,7 +2293,7 @@
       }
     },
     "stickEmoPosPleasure": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2302,7 +2302,7 @@
       }
     },
     "stickEmoPosCourage": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2311,7 +2311,7 @@
       }
     },
     "stickEmoPosHope": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2320,7 +2320,7 @@
       }
     },
     "stickEmoPosPride": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2329,7 +2329,7 @@
       }
     },
     "stickEmoPosSatisfaction": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2338,7 +2338,7 @@
       }
     },
     "stickEmoPosTrust": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2347,7 +2347,7 @@
       }
     },
     "stickEmoPosCalmness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2356,7 +2356,7 @@
       }
     },
     "stickEmoPosContentment": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2365,7 +2365,7 @@
       }
     },
     "stickEmoPosRelaxation": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2374,7 +2374,7 @@
       }
     },
     "stickEmoPosRelief": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2383,7 +2383,7 @@
       }
     },
     "stickEmoPosSerenity": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2392,7 +2392,7 @@
       }
     },
     "stickEmoPosNegStress": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2401,7 +2401,7 @@
       }
     },
     "stickEmoPosNegShock": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2410,7 +2410,7 @@
       }
     },
     "stickEmoPosNegTension": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2419,7 +2419,7 @@
       }
     },
     "stickEmoPosNegAffection": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2428,7 +2428,7 @@
       }
     },
     "stickEmoPosNegEmpathy": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2437,7 +2437,7 @@
       }
     },
     "stickEmoPosNegFriendliness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2446,7 +2446,7 @@
       }
     },
     "stickEmoPosNegLove": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2455,7 +2455,7 @@
       }
     },
     "stickEmoPosNegInterest": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2464,7 +2464,7 @@
       }
     },
     "stickEmoPosNegPoliteness": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2473,7 +2473,7 @@
       }
     },
     "stickEmoPosNegSurprise": {
-      "label": "Stikers",
+      "label": "Stickers",
       "indexList": [
         "cssClass"
       ],
@@ -2515,18 +2515,18 @@
       "label": "uxPosition"
     },
     "uxHeaderToolBarEmotionPrevAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionNextActionAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionAddAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionItem": {
       "label": "uxPosition"
     },
-    "uxHeaderToolBarEmotionStiker": {
+    "uxHeaderToolBarEmotionSticker": {
       "label": "uxPosition"
     },
     "uxHeaderToolBarEmotionDetail": {
@@ -2541,20 +2541,20 @@
     "uxHeaderToolBarEmotionDelete": {
       "label": "uxPosition"
     },
-    "uxHeaderToolBarEmotionStikerAction": {
-      "label": "uxPosition"
+    "uxHeaderToolBarEmotionStickerAction": {
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxHeaderToolBarEmotionDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRight": {
       "label": "uxPosition"
@@ -2569,30 +2569,30 @@
       "label": "uxPosition"
     },
     "uxSectionRightToolBarViewMapAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarViewTimeAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarViewGraphAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionPrevAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionNextAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionAddAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionItem": {
       "label": "uxPosition"
     },
-    "uxSectionRightToolBarActionStiker": {
+    "uxSectionRightToolBarActionSticker": {
       "label": "uxPosition"
     },
     "uxSectionRightToolBarActionDetail": {
@@ -2608,22 +2608,22 @@
       "label": "uxPosition"
     },
     "uxSectionRightToolBarActionStickerAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarActionDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserList": {
       "label": "uxPosition"
@@ -2631,7 +2631,7 @@
     "uxSectionLeftUserListItem": {
       "label": "uxPosition"
     },
-    "uxSectionLeftUserStiker": {
+    "uxSectionLeftUserSticker": {
       "label": "uxPosition"
     },
     "uxSectionLeftUserDetail": {
@@ -2646,23 +2646,23 @@
     "uxSectionLeftUserDelete": {
       "label": "uxPosition"
     },
-    "uxSectionLeftUserStikerAction": {
-      "label": "uxPosition"
+    "uxSectionLeftUserStickerAction": {
+      "label": "uxAction"
     },
     "uxSectionLeftUserDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserNotAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserNotList": {
       "label": "uxPosition"
@@ -2670,7 +2670,7 @@
     "uxSectionLeftUserNotListItem": {
       "label": "uxPosition"
     },
-    "uxSectionLeftUserNotStiker": {
+    "uxSectionLeftUserNotSticker": {
       "label": "uxPosition"
     },
     "uxSectionLeftUserNotDetail": {
@@ -2685,26 +2685,26 @@
     "uxSectionLeftUserNotDelete": {
       "label": "uxPosition"
     },
-    "uxSectionLeftUserNotStikerAction": {
-      "label": "uxPosition"
+    "uxSectionLeftUserNotStickerAction": {
+      "label": "uxAction"
     },
     "uxSectionLeftUserNotDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserNotReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserNotWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserNotDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserPoint": {
       "label": "uxPosition"
     },
     "uxSectionLeftUserAgendaAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserAgendaList": {
       "label": "uxPosition"
@@ -2712,7 +2712,7 @@
     "uxSectionLeftUserAgendaListItem": {
       "label": "uxPosition"
     },
-    "uxSectionLeftUserAgendaStiker": {
+    "uxSectionLeftUserAgendaSticker": {
       "label": "uxPosition"
     },
     "uxSectionLeftUserAgendaDetail": {
@@ -2727,20 +2727,20 @@
     "uxSectionLeftUserAgendaDelete": {
       "label": "uxPosition"
     },
-    "uxSectionLeftUserAgendaStikerAction": {
-      "label": "uxPosition"
+    "uxSectionLeftUserAgendaStickerAction": {
+      "label": "uxAction"
     },
     "uxSectionLeftUserAgendaDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserAgendaReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserAgendaWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftUserAgendaDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftFilterAction": {
       "label": "uxPosition"
@@ -2751,7 +2751,7 @@
     "uxSectionLeftToolBarNodeItem": {
       "label": "uxPosition"
     },
-    "uxSectionLeftToolBarNodeStiker": {
+    "uxSectionLeftToolBarNodeSticker": {
       "label": "uxPosition"
     },
     "uxSectionLeftToolBarNodeDetail": {
@@ -2766,20 +2766,20 @@
     "uxSectionLeftToolBarNodeDelete": {
       "label": "uxPosition"
     },
-    "uxSectionLeftToolBarNodeStikerAction": {
-      "label": "uxPosition"
+    "uxSectionLeftToolBarNodeStickerAction": {
+      "label": "uxAction"
     },
     "uxSectionLeftToolBarNodeDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftToolBarNodeReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftToolBarNodeWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionLeftToolBarNodeDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionCenterContentToolBar": {
       "label": "uxPosition"
@@ -2904,7 +2904,7 @@
         "yEnd": 0
       }
     },
-    "evtUxItemRelationShipStiker": {
+    "evtUxItemRelationShipSticker": {
       "label": "uxPosition"
     },
     "evtUxItemRelationShipDetail": {
@@ -2919,23 +2919,23 @@
     "evtUxItemRelationShipDelete": {
       "label": "uxPosition"
     },
-    "evtUxItemRelationShipStikerAction": {
-      "label": "uxPosition"
+    "evtUxItemRelationShipStickerAction": {
+      "label": "uxAction"
     },
     "evtUxItemRelationShipDetailAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "evtUxItemRelationShipReadAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "evtUxItemRelationShipWriteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "evtUxItemRelationShipDeleteAction": {
-      "label": "uxPosition"
+      "label": "uxAction"
     },
     "uxSectionRightToolBarViewListAction": {
-      "label": "uxPosition",
+      "label": "uxAction",
       "onCreateSetList": {
         "weight": 0,
         "zoom": 0,
@@ -3541,10 +3541,10 @@
       "start": "uxSectionRight",
       "end": "uxSectionLeftUserListItem"
     },
-    "uxSectionRight_uxSectionLeftUserStiker": {
+    "uxSectionRight_uxSectionLeftUserSticker": {
       "relationship": "CONTAIN",
       "start": "uxSectionRight",
-      "end": "uxSectionLeftUserStiker"
+      "end": "uxSectionLeftUserSticker"
     },
     "uxSectionRight_uxSectionLeftUserDetail": {
       "relationship": "CONTAIN",
@@ -3611,10 +3611,10 @@
       "start": "uxSectionRightToolBarAction",
       "end": "uxSectionRightToolBarActionAddAction"
     },
-    "uxSectionLeftUserDetail_uxSectionLeftUserStikerAction": {
+    "uxSectionLeftUserDetail_uxSectionLeftUserStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserDetail",
-      "end": "uxSectionLeftUserStikerAction"
+      "end": "uxSectionLeftUserStickerAction"
     },
     "uxSectionLeftUserDetail_uxSectionLeftUserReadAction": {
       "relationship": "CONTAIN",
@@ -3631,7 +3631,7 @@
       "start": "uxSectionLeftUserDetail",
       "end": "uxSectionLeftUserDeleteAction"
     },
-    "uxSectionLeftUserRead_uxSectionLeftUserStikerAction": {
+    "uxSectionLeftUserRead_uxSectionLeftUserStickerAction": {
       "relationship": "CONTAIN",
       "start": "",
       "end": ""
@@ -3651,10 +3651,10 @@
       "start": "uxSectionLeftUserRead",
       "end": "uxSectionLeftUserDeleteAction"
     },
-    "uxSectionLeftUserWrite_uxSectionLeftUserStikerAction": {
+    "uxSectionLeftUserWrite_uxSectionLeftUserStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserWrite",
-      "end": "uxSectionLeftUserStikerAction"
+      "end": "uxSectionLeftUserStickerAction"
     },
     "uxSectionLeftUserWrite_uxSectionLeftUserDetailAction": {
       "relationship": "CONTAIN",
@@ -3681,10 +3681,10 @@
       "start": "uxSectionLeft",
       "end": "uxSectionLeftUserNotList"
     },
-    "uxSectionLeft_uxSectionLeftUserNotStiker": {
+    "uxSectionLeft_uxSectionLeftUserNotSticker": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeft",
-      "end": "uxSectionLeftUserNotStiker"
+      "end": "uxSectionLeftUserNotSticker"
     },
     "uxSectionLeft_uxSectionLeftUserNotDetail": {
       "relationship": "CONTAIN",
@@ -3706,10 +3706,10 @@
       "start": "uxSectionLeft",
       "end": "uxSectionLeftUserNotDelete"
     },
-    "uxSectionLeftUserNotDetail_uxSectionLeftUserNotStikerAction": {
+    "uxSectionLeftUserNotDetail_uxSectionLeftUserNotStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserNotDetail",
-      "end": "uxSectionLeftUserNotStikerAction"
+      "end": "uxSectionLeftUserNotStickerAction"
     },
     "uxSectionLeftUserNotDetail_uxSectionLeftUserNotReadAction": {
       "relationship": "CONTAIN",
@@ -3726,10 +3726,10 @@
       "start": "",
       "end": ""
     },
-    "uxSectionLeftUserNotRead_uxSectionLeftUserNotStikerAction": {
+    "uxSectionLeftUserNotRead_uxSectionLeftUserNotStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserNotRead",
-      "end": "uxSectionLeftUserNotStikerAction"
+      "end": "uxSectionLeftUserNotStickerAction"
     },
     "uxSectionLeftUserNotRead_uxSectionLeftUserNotDetailAction": {
       "relationship": "CONTAIN",
@@ -3746,10 +3746,10 @@
       "start": "uxSectionLeftUserNotRead",
       "end": "uxSectionLeftUserNotDeleteAction"
     },
-    "uxSectionLeftUserNotWrite_uxSectionLeftUserNotStikerAction": {
+    "uxSectionLeftUserNotWrite_uxSectionLeftUserNotStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserNotWrite",
-      "end": "uxSectionLeftUserNotStikerAction"
+      "end": "uxSectionLeftUserNotStickerAction"
     },
     "uxSectionLeftUserNotWrite_uxSectionLeftUserNotDetailAction": {
       "relationship": "CONTAIN",
@@ -3786,10 +3786,10 @@
       "start": "uxSectionLeft",
       "end": "uxSectionLeftUserAgendaList"
     },
-    "uxSectionLeft_uxSectionLeftUserAgendaStiker": {
+    "uxSectionLeft_uxSectionLeftUserAgendaSticker": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeft",
-      "end": "uxSectionLeftUserAgendaStiker"
+      "end": "uxSectionLeftUserAgendaSticker"
     },
     "uxSectionLeft_uxSectionLeftUserAgendaDetail": {
       "relationship": "CONTAIN",
@@ -3811,10 +3811,10 @@
       "start": "uxSectionLeft",
       "end": "uxSectionLeftUserAgendaDelete"
     },
-    "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaStikerAction": {
+    "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserAgendaDetail",
-      "end": "uxSectionLeftUserAgendaStikerAction"
+      "end": "uxSectionLeftUserAgendaStickerAction"
     },
     "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaReadAction": {
       "relationship": "CONTAIN",
@@ -3831,10 +3831,10 @@
       "start": "uxSectionLeftUserAgendaDetail",
       "end": "uxSectionLeftUserAgendaDeleteAction"
     },
-    "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaStikerAction": {
+    "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserAgendaRead",
-      "end": "uxSectionLeftUserAgendaStikerAction"
+      "end": "uxSectionLeftUserAgendaStickerAction"
     },
     "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaDetailAction": {
       "relationship": "CONTAIN",
@@ -3851,10 +3851,10 @@
       "start": "uxSectionLeftUserAgendaRead",
       "end": "uxSectionLeftUserAgendaDeleteAction"
     },
-    "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaStikerAction": {
+    "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftUserAgendaWrite",
-      "end": "uxSectionLeftUserAgendaStikerAction"
+      "end": "uxSectionLeftUserAgendaStickerAction"
     },
     "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaDetailAction": {
       "relationship": "CONTAIN",
@@ -3891,10 +3891,10 @@
       "start": "uxSectionLeft",
       "end": "uxSectionLeftToolBarNodeItem"
     },
-    "uxSectionLeft_uxSectionLeftToolBarNodeStiker": {
+    "uxSectionLeft_uxSectionLeftToolBarNodeSticker": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeft",
-      "end": "uxSectionLeftToolBarNodeStiker"
+      "end": "uxSectionLeftToolBarNodeSticker"
     },
     "uxSectionLeft_uxSectionLeftToolBarNodeDetail": {
       "relationship": "CONTAIN",
@@ -3916,10 +3916,10 @@
       "start": "uxSectionLeft",
       "end": "uxSectionLeftToolBarNodeDelete"
     },
-    "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeStikerAction": {
+    "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftToolBarNodeDetail",
-      "end": "uxSectionLeftToolBarNodeStikerAction"
+      "end": "uxSectionLeftToolBarNodeStickerAction"
     },
     "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeReadAction": {
       "relationship": "CONTAIN",
@@ -3936,10 +3936,10 @@
       "start": "uxSectionLeftToolBarNodeDetail",
       "end": "uxSectionLeftToolBarNodeDeleteAction"
     },
-    "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeStikerAction": {
+    "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftToolBarNodeRead",
-      "end": "uxSectionLeftToolBarNodeStikerAction"
+      "end": "uxSectionLeftToolBarNodeStickerAction"
     },
     "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeDetailAction": {
       "relationship": "CONTAIN",
@@ -3956,10 +3956,10 @@
       "start": "uxSectionLeftToolBarNodeRead",
       "end": "uxSectionLeftToolBarNodeDeleteAction"
     },
-    "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeStikerAction": {
+    "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeStickerAction": {
       "relationship": "CONTAIN",
       "start": "uxSectionLeftToolBarNodeWrite",
-      "end": "uxSectionLeftToolBarNodeStikerAction"
+      "end": "uxSectionLeftToolBarNodeStickerAction"
     },
     "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeDetailAction": {
       "relationship": "CONTAIN",
@@ -4046,10 +4046,10 @@
       "start": "uxSectionCenter",
       "end": "evtUxItemRelationShips"
     },
-    "uxSectionCenter_evtUxItemRelationShipsStiker": {
+    "uxSectionCenter_evtUxItemRelationShipsSticker": {
       "relationship": "CONTAIN",
       "start": "uxSectionCenter",
-      "end": "evtUxItemRelationShipsStiker"
+      "end": "evtUxItemRelationShipsSticker"
     },
     "uxSectionCenter_evtUxItemRelationShipsDetail": {
       "relationship": "CONTAIN",
@@ -4071,10 +4071,10 @@
       "start": "uxSectionCenter",
       "end": "evtUxItemRelationShipsDelete"
     },
-    "evtUxItemRelationShipsDetail_evtUxItemRelationShipsStikerAction": {
+    "evtUxItemRelationShipsDetail_evtUxItemRelationShipsStickerAction": {
       "relationship": "CONTAIN",
       "start": "evtUxItemRelationShipsDetail",
-      "end": "evtUxItemRelationShipsStikerAction"
+      "end": "evtUxItemRelationShipsStickerAction"
     },
     "evtUxItemRelationShipsDetail_evtUxItemRelationShipsReadAction": {
       "relationship": "CONTAIN",
@@ -4091,10 +4091,10 @@
       "start": "evtUxItemRelationShipsDetail",
       "end": "evtUxItemRelationShipsDeleteAction"
     },
-    "evtUxItemRelationShipsRead_evtUxItemRelationShipsStikerAction": {
+    "evtUxItemRelationShipsRead_evtUxItemRelationShipsStickerAction": {
       "relationship": "CONTAIN",
       "start": "evtUxItemRelationShipsRead",
-      "end": "evtUxItemRelationShipsStikerAction"
+      "end": "evtUxItemRelationShipsStickerAction"
     },
     "evtUxItemRelationShipsRead_evtUxItemRelationShipsDetailAction": {
       "relationship": "CONTAIN",
@@ -4111,10 +4111,10 @@
       "start": "evtUxItemRelationShipsRead",
       "end": "evtUxItemRelationShipsDeleteAction"
     },
-    "evtUxItemRelationShipsWrite_evtUxItemRelationShipsStikerAction": {
+    "evtUxItemRelationShipsWrite_evtUxItemRelationShipsStickerAction": {
       "relationship": "CONTAIN",
       "start": "evtUxItemRelationShipsWrite",
-      "end": "evtUxItemRelationShipsStikerAction"
+      "end": "evtUxItemRelationShipsStickerAction"
     },
     "evtUxItemRelationShipsWrite_evtUxItemRelationShipsDetailAction": {
       "relationship": "CONTAIN",
