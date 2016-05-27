@@ -1,4 +1,4 @@
-{
+ {
   "sessionTtl": 1296000,
   "timeZone": "UTC",
   "graphDatabase": {
@@ -2961,21 +2961,28 @@
     "uxSite": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSite_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },    
+    "uxSiteNotification": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    }, 
+    
+    
     "uxHeader": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeader_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -2983,10 +2990,8 @@
     "uxHeaderBurger": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeaderBurger_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -2994,10 +2999,8 @@
     "uxHeaderLogo": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeaderLogo_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3005,10 +3008,8 @@
     "uxHeaderTitle": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeaderTitle_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3016,10 +3017,8 @@
     "uxHeaderToolBar": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeaderToolBar_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3027,10 +3026,35 @@
     "uxHeaderToolBarEmotion": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeaderToolBarEmotion_className",
-        "template": "",
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionPrevAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionNextActionAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },,
+    "uxHeaderToolBarEmotionAddAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
         "order": 0
       },
       "onMatchSetList": {}
@@ -3039,10 +3063,80 @@
     "uxHeaderToolBarEmotionItem": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxHeaderToolBarEmotionItem_className",
-        "template": "",
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionStiker": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionDetail": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionRead": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionWrite": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxHeaderToolBarEmotionDelete": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionRight": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionLeft": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionCenter": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
         "order": 0
       },
       "onMatchSetList": {}
@@ -3050,10 +3144,8 @@
     "uxSectionRightToolBar": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBar_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3061,10 +3153,8 @@
     "uxSectionRightToolBarViewMapAction": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBarViewMapAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3072,10 +3162,8 @@
     "uxSectionRightToolBarViewTimeAction": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBarViewTimeAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3083,10 +3171,8 @@
     "uxSectionRightToolBarViewGraphAction": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBarViewGraphAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3094,10 +3180,35 @@
     "uxSectionRightToolBarAction": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBarAction_className",
-        "template": "",
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarActionPrevAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarActionNextAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },,
+    "uxSectionRightToolBarActionAddAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
         "order": 0
       },
       "onMatchSetList": {}
@@ -3106,158 +3217,174 @@
     "uxSectionRightToolBarActionItem": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBarActionItem_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserAction": { 
+    "uxSectionRightToolBarActionStiker": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserList": { 
+    "uxSectionRightToolBarActionDetail": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserList_className",
-        "template": "",
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarActionRead": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarActionWrite": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+    "uxSectionRightToolBarActionDelete": {
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionLeftUserAction": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
+        "order": 0
+      },
+      "onMatchSetList": {}
+    },
+     "uxSectionLeftUserList": { 
+      "label": "uxPosition",
+      "version": "0.0",
+      "indexList": [],
+      "onCreateSetList": {
         "order": 0
       },
       "onMatchSetList": {}
     },
      // TO DUPLICATE EACH COMPAGNY, TEAM, PERSONN, USERS from LOGIN
-     "uxSectionleftUserListItem": { 
+     "uxSectionLeftUserListItem": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserListItem_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserNotAction": { 
+     "uxSectionLeftUserNotAction": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserNotAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserNotList": { 
+     "uxSectionLeftUserNotList": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserNotList_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
     // TO DUPLICATE EACH NOTIFIACTION
-     "uxSectionleftUserNotListItem": { 
+     "uxSectionLeftUserNotListItem": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserNotListItem_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserPoint": { 
+     "uxSectionLeftUserPoint": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserPoint_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserAgendaAction": { 
+     "uxSectionLeftUserAgendaAction": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserAgendaAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftUserAgendaList": { 
+     "uxSectionLeftUserAgendaList": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserAgendaList_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
     // TO DUPLICATE EACH DATE_DUE
-     "uxSectionleftUserAgendaListItem": { 
+     "uxSectionLeftUserAgendaListItem": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftUserAgendaListItem_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftFilterAction": { 
+     "uxSectionLeftFilterAction": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftFilterAction_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
-     "uxSectionleftToolBarNode": { 
+     "uxSectionLeftToolBarNode": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftToolBarNode_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}
     },
     // TO DUPLICATE EACH NODE
-    "uxSectionleftToolBarNodeItem": { 
+    "uxSectionLeftToolBarNodeItem": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionleftToolBarNodeItem_className",
-        "template": "",
-        "height": "",
         "order": 0
       },
       "onMatchSetList": {}
@@ -3265,11 +3392,8 @@
     "uxSectionCenterContentToolBar": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentToolBar_className",
-        "template": "",
-        "height": "",
         "order": 0
       },
       "onMatchSetList": {}        
@@ -3277,10 +3401,8 @@
     "uxSectionCenterContentToolBarZoomIn": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentToolBarZoomIn_className",
-        "template": "",
         "order": 0
       },
       "onMatchSetList": {}        
@@ -3290,9 +3412,6 @@
       "version": "0.0",
       "indexList": ["cssClass", "template"],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentToolBarZoomOut_className",
-        "template": "",
-        "height": "",
         "order": 0
       },
       "onMatchSetList": {}        
@@ -3300,11 +3419,8 @@
     "uxSectionCenterContentToolBarZoomOut": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentToolBarZoomOut_className",
-        "template": "",
-        "height": "",
         "order": 0
       },
       "onMatchSetList": {}        
@@ -3312,10 +3428,8 @@
     "uxSectionCenterContentMap": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentMap_className",
-        "template": "",
         "order": 0,
         "version": "0.0"
         "xStart": 0,
@@ -3329,10 +3443,8 @@
     "uxSectionCenterContentTimeLine": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentTimeLine_className",
-        "template": "",
         "order": 0,
         "zoom":0,
         "xStart": 0,
@@ -3345,10 +3457,8 @@
     "uxSectionCenterContentGraph": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionCenterContentGraph_className",
-        "template": "",
         "order": 0,
         "zoom":0,
         "xStart": 0,
@@ -3366,10 +3476,8 @@
     "evtUxMapPoint": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxMapPoint_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0
@@ -3380,10 +3488,8 @@
     "evtUxTimePoint": {  
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxTimePoint_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0
@@ -3394,10 +3500,8 @@
     "evtUxGraphPoint": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxGraphPoint_className",
-        "template": "",
         "order": 0,
         "weight":0,,
         "xStart": 0,
@@ -3412,10 +3516,8 @@
     "evtUxMapPointRelationShips": { 
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxMapPointRelationShips_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0,,
@@ -3431,10 +3533,8 @@
     "evtUxTimePointRelationShips": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxTimePointRelationShips_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0,,
@@ -3450,10 +3550,8 @@
     "evtUxGraphPointRelationShips": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxGraphPointRelationShips_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0,,
@@ -3469,10 +3567,8 @@
     "evtUxItemPoint": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "evtUxItemPoint_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0,,
@@ -3487,10 +3583,8 @@
     "uxSectionRightToolBarViewListAction": {
       "label": "uxPosition",
       "version": "0.0",
-      "indexList": ["cssClass", "template"],
+      "indexList": [],
       "onCreateSetList": {
-        "cssClass": "uxSectionRightToolBarViewListAction_className",
-        "template": "",
         "order": 0,
         "weight":0,
         "zoom":0,,
@@ -4301,35 +4395,54 @@
       "onMatchSetList": {}
     },
       
-    uxSite 
-    uxHeader 
-    uxHeaderBurger 
-    uxHeaderLogo 
-    uxHeaderTitle 
-    uxHeaderToolBar 
-    uxHeaderToolBarEmotion 
-    uxHeaderToolBarEmotionItem 
-    uxSectionRightToolBar 
-    uxSectionRightToolBarViewListAction
-    uxSectionRightToolBarViewMapAction 
-    uxSectionRightToolBarViewTimeAction 
-    uxSectionRightToolBarViewGraphAction 
-    uxSectionRightToolBarAction 
-    uxSectionRightToolBarActionItem 
-    uxSectionleftUserAction 
-    uxSectionleftUserList 
-    uxSectionleftUserListItem 
-    uxSectionleftUserNotAction 
-    uxSectionleftUserNotList 
-    uxSectionleftUserNotListItem 
-    uxSectionleftUserPoint 
-    uxSectionleftUserAgendaAction 
-    uxSectionleftUserAgendaList 
-    uxSectionleftUserAgendaListItem 
-    uxSectionleftFilterAction 
-    uxSectionleftToolBarNode 
-    uxSectionleftToolBarNodeItem 
-    uxSectionCenterContentToolBar 
+    uxSite     uxHeader
+    uxSite   uxSectionRight
+    uxSite   uxSectionLeft
+    uxSite   uxSectionCenter
+    uxSite   uxSiteNotification 
+    
+    uxHeader    uxHeaderBurger 
+    uxHeader  uxHeaderLogo 
+    uxHeader uxHeaderTitle 
+    uxHeader uxHeaderToolBar 
+    
+    
+    uxHeaderToolBar uxHeaderToolBarEmotion
+    
+    uxHeaderToolBarEmotion uxHeaderToolBarEmotionItemAction
+    uxHeaderToolBarEmotion uxHeaderToolBarEmotionPrevAction
+    uxHeaderToolBarEmotion uxHeaderToolBarEmotionNextAction
+    uxHeaderToolBarEmotion uxHeaderToolBarEmotionAddAction
+    
+    uxSectionRight uxSectionRightToolBar
+     
+    uxSectionRightToolBar uxSectionRightToolBarViewListAction
+    uxSectionRightToolBar uxSectionRightToolBarViewMapAction 
+    uxSectionRightToolBar uxSectionRightToolBarViewTimeAction 
+    uxSectionRightToolBar uxSectionRightToolBarViewGraphAction 
+    uxSectionRightToolBar uxSectionRightToolBarAction
+    uxSectionRightToolBar uxSectionRightToolBarActionNextAction
+    uxSectionRightToolBar uxSectionRightToolBarActionPrevAction
+    uxSectionRightToolBar uxSectionRightToolBarActionAddAction
+    
+       
+    uxSectionRightToolBarAction uxSectionRightToolBarActionItem
+     
+    uxSectionLeft uxSectionLeftUserAction 
+    uxSectionLeft uxSectionLeftUserList 
+    uxSectionLeft uxSectionLeftUserListItem 
+    uxSectionLeft uxSectionLeftUserNotAction 
+    uxSectionLeft uxSectionLeftUserNotList 
+    uxSectionLeft uxSectionLeftUserNotListItem 
+    uxSectionLeft uxSectionLeftUserPoint 
+    uxSectionLeft uxSectionLeftUserAgendaAction 
+    uxSectionLeft uxSectionLeftUserAgendaList 
+    uxSectionLeft uxSectionLeftUserAgendaListItem 
+    uxSectionLeft uxSectionLeftFilterAction 
+    uxSectionLeft uxSectionLeftToolBarNode 
+    uxSectionLeft uxSectionLeftToolBarNodeItem 
+    uxSectionLeft uxSectionCenterContentToolBar
+     
     uxSectionCenterContentToolBarZoomIn 
     uxSectionCenterContentToolBarZoomOu 
     uxSectionCenterContentMap 
@@ -4341,7 +4454,9 @@
     evtUxItemPoint 
     evtUxGraphPointRelationShips 
     evtUxTimePointRelationShips 
-    evtUxMapPointRelationShips    
+    evtUxMapPointRelationShips   
+    
+    
   
     "catEmoNeg_emoNegSadness": {
       "relationship": "CATEGORISE",
@@ -6374,10 +6489,13 @@
       "onMatchSetList": {}
     }
   },
-  "indexList": ["name", "state", "createUser", "step", "visibility", "uid", "localDefault", "matchLastUser", "version", "deployment"],
+  "indexList": ["name", "state", "createUser", "step", "visibility", "uid", "localDefault", "matchLastUser", "version", "deployment", "cssClassNaùe", "templateName"],
   "nodeParamList": {
     "onCreateSetList": {
+      "var": "__KEY__",
       "name": "__KEY___name",
+      "cssClassName": "__KEY___className",
+      "TemplateName": "__KEY___templateName",
       "state": "__KEY___state",
       "createUser": "u_name",
       "createdDate": "t_time",
@@ -6403,6 +6521,7 @@
       "deployment": "t_deployment"
     },
     "onMatchSetList": {
+      "var": "__KEY__",
       "matchLastUser": "u_name",
       "matchLastDate": "t_time",
       "deployment": "t_deployment"
@@ -6410,6 +6529,7 @@
   },
   "relationshipParamList": {
     "onCreateSetList": {
+      "var": "__KEY__",
       "name": "__KEY___name",
       "state": "__KEY___state",
       "createUser": "u_name",
@@ -6436,6 +6556,7 @@
       "deployment": "t_deployment"
     },
     "onMatchSetList": {
+      "var": "__KEY__",
       "matchLastUser": "u_name",
       "matchLastDate": "t_time",
       "deployment": "t_deployment"

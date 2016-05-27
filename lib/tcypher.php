@@ -105,8 +105,6 @@ indexList
     	foreach(Conf::$nodeList as $v => $detailList) {
     		
     		$detailList->var  = $v;
-    		$detailList->name = $v.'_name';
-    		$detailList->uid  = $v.'_uid';
     		$modeList         = self::onModeList($toTrace, $detailList);
     		$this->cypherLog .= Cypher::EOL."MERGE (".$detailList->var.":".$detailList->label." )".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(name)".Cypher::EOL."CREATE INDEX ON :".$detailList->label."(state)"."CREATE INDEX ON :".$detailList->label."(visibility)".Cypher::EOL."CREATE CONSTRAINT ON (".$detailList->var.":".$detailList->label.") ASSERT ".$detailList->var.".uid IS UNIQUE".Cypher::EOL.$modeList.Cypher::EOL.Cypher::EOL;
     	}
