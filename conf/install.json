@@ -578,31 +578,24 @@
     },
     "bt": {
       "label": "BackTrace",
-      "indexList": []
     },
     "i": {
       "label": "Instance",
-      "indexList": []
     },
     "c": {
       "label": "Contract",
-      "indexList": []
     },
     "m": {
       "label": "Method",
-      "indexList": []
     },
     "l": {
       "label": "Line",
-      "indexList": []
     },
     "var": {
       "label": "Var",
-      "indexList": []
     },
     "cf": {
       "label": "Conf",
-      "indexList": []
     },
     "app": {
       "label": "Application",
@@ -842,15 +835,12 @@
     },
     "not": {
       "label": "Notification",
-      "indexList": []
     },
     "corp": {
       "label": "Corporation",
-      "indexList": []
     },
     "team": {
       "label": "Team",
-      "indexList": []
     },
     "pers": {
       "label": "Personn",
@@ -904,23 +894,18 @@
     },
     "dom": {
       "label": "Domain",
-      "indexList": []
     },
     "btcCorp": {
       "label": "BitCoinChest",
-      "indexList": []
     },
     "btcTeam": {
       "label": "BitCoinChest",
-      "indexList": []
     },
     "btcPers": {
       "label": "BitCoinChest",
-      "indexList": []
     },
     "zone": {
       "label": "Zone",
-      "indexList": []
     },
     "locCorp": {
       "label": "Location",
@@ -1128,7 +1113,6 @@
     },
     "r": {
       "label": "Right",
-      "indexList": []
     },
     "docA": {
       "label": "documentToApply",
@@ -1162,35 +1146,27 @@
     },
     "catActWfl": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "catActLfc": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "catActCla": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "catActUa": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "catActCm": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "catActAuth": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "catActSta": {
       "label": "CategoryAction",
-      "indexList": []
     },
     "actWkfTest": {
       "label": "Action",
-      "indexList": []
     },
     "actWkfValid": {
       "label": "Action",
@@ -1202,11 +1178,9 @@
     },
     "actWkfOptimize": {
       "label": "Action",
-      "indexList": []
     },
     "actWkfShipp": {
       "label": "Action",
-      "indexList": []
     },
     "actWkfPay": {
       "label": "Action",
@@ -1238,151 +1212,114 @@
     },
     "actLfcCreate": {
       "label": "Action",
-      "indexList": []
     },
     "actLfcInit": {
       "label": "Action",
-      "indexList": []
     },
     "actLfcPublish": {
       "label": "Action",
-      "indexList": []
     },
     "actLfcState": {
       "label": "Action",
-      "indexList": []
     },
     "actLfcExpire": {
       "label": "Action",
-      "indexList": []
     },
     "actLfcHistorize": {
       "label": "Action",
-      "indexList": []
     },
     "actLfcArchive": {
       "label": "Action",
-      "indexList": []
     },
     "actClabMark": {
       "label": "Action",
-      "indexList": []
     },
     "actClabAsk": {
       "label": "Action",
-      "indexList": []
     },
     "actClabNote": {
       "label": "Action",
-      "indexList": []
     },
     "actClabComment": {
       "label": "Action",
-      "indexList": []
     },
     "actClabShare": {
       "label": "Action",
-      "indexList": []
     },
     "actClabContributeTo": {
       "label": "Action",
-      "indexList": []
     },
     "actClabFacility": {
       "label": "Action",
-      "indexList": []
     },
     "actClabBalance": {
       "label": "Action",
-      "indexList": []
     },
     "actUaReturn": {
       "label": "Action",
-      "indexList": []
     },
     "actUaOrder": {
       "label": "Action",
-      "indexList": []
     },
     "actUaAdd": {
       "label": "Action",
-      "indexList": []
     },
     "actUaBuy": {
       "label": "Action",
-      "indexList": []
     },
     "actUaShow": {
       "label": "Action",
-      "indexList": []
     },
     "actUaUse": {
       "label": "Action",
-      "indexList": []
     },
     "actCmTarget": {
       "label": "Action",
-      "indexList": []
     },
     "actCmRepresente": {
       "label": "Action",
-      "indexList": []
     },
     "actCmIdentify": {
       "label": "Action",
-      "indexList": []
     },
     "actCmLocalize": {
       "label": "Action",
-      "indexList": []
     },
     "actCmSize": {
       "label": "Action",
-      "indexList": []
     },
     "actCmConcern": {
       "label": "Action",
-      "indexList": []
     },
     "actCmCost": {
       "label": "Action",
-      "indexList": []
     },
     "actAuthOwn": {
       "label": "Action",
-      "indexList": []
     },
     "actAuthManage": {
       "label": "Action",
-      "indexList": []
     },
     "actAuthAuthorise": {
       "label": "Action",
-      "indexList": []
     },
     "actStaHost": {
       "label": "Action",
-      "indexList": []
     },
     "actStaProduce": {
       "label": "Action",
-      "indexList": []
     },
     "actStaStock": {
       "label": "Action",
-      "indexList": []
     },
     "catEmoNeg": {
       "label": "CategoryEmotion",
-      "indexList": []
     },
     "catEmoPos": {
       "label": "CategoryEmotion",
-      "indexList": []
     },
     "catEmoNegPos": {
       "label": "CategoryEmotion",
-      "indexList": []
     },
     "emoNegAnger": {
       "label": "Emotion",
