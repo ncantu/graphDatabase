@@ -1827,451 +1827,451 @@
       }
     },
     "stickTctCorp": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickTctTeam": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickTctPers": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfTest": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfValid": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfCollect": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfOptimize": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfShipp": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfPay": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfBilling": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfExpedite": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfPayBack": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfShippManage": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfExpediteManage": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActWkfPayManage": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcCreate": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcInit": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcPublish": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcState": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcExpire": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcHistorize": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActLfcArchive": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabMark": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabAsk": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabNote": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabComment": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabShare": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabContributeTo": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabFacility": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActClabBalance": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaReturn": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaOrder": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaAdd": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaBuy": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaShow": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActUaUse": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmTarget": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmRepresente": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmIdentify": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmLocalize": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmSize": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmConcern": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActCmCost": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActAuthOwn": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActAuthManage": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActAuthAuthorise": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActStaHost": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActStaProduce": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickActStaStock": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegAnger": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegAnnoyance": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegContempt": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDisgust": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegIrritation": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegAnxiety": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegEmbarrassment": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegFear": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegHelplessness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegPowerlessness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegWorry": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDoubty": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegEnvy": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegFrustration": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegGuilt": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegShame": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegBoredom": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDespair": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegDisappointment": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegHurt": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoNegSadness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosAmusement": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosDelight": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosElation": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosExcitement": {
-      "label": "Stickers",
+      "label": "Sticker",
       "onCreateSetList": {
         "cssClass": "stickTctCorp_className"
       }
     },
     "stickEmoPosHappiness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2280,7 +2280,7 @@
       }
     },
     "stickEmoPosJoy": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2289,7 +2289,7 @@
       }
     },
     "stickEmoPosPleasure": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2298,7 +2298,7 @@
       }
     },
     "stickEmoPosCourage": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2307,7 +2307,7 @@
       }
     },
     "stickEmoPosHope": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2316,7 +2316,7 @@
       }
     },
     "stickEmoPosPride": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2325,7 +2325,7 @@
       }
     },
     "stickEmoPosSatisfaction": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2334,7 +2334,7 @@
       }
     },
     "stickEmoPosTrust": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2343,7 +2343,7 @@
       }
     },
     "stickEmoPosCalmness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2352,7 +2352,7 @@
       }
     },
     "stickEmoPosContentment": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2361,7 +2361,7 @@
       }
     },
     "stickEmoPosRelaxation": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2370,7 +2370,7 @@
       }
     },
     "stickEmoPosRelief": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2379,7 +2379,7 @@
       }
     },
     "stickEmoPosSerenity": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2388,7 +2388,7 @@
       }
     },
     "stickEmoPosNegStress": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2397,7 +2397,7 @@
       }
     },
     "stickEmoPosNegShock": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2406,7 +2406,7 @@
       }
     },
     "stickEmoPosNegTension": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2415,7 +2415,7 @@
       }
     },
     "stickEmoPosNegAffection": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2424,7 +2424,7 @@
       }
     },
     "stickEmoPosNegEmpathy": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2433,7 +2433,7 @@
       }
     },
     "stickEmoPosNegFriendliness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2442,7 +2442,7 @@
       }
     },
     "stickEmoPosNegLove": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2451,7 +2451,7 @@
       }
     },
     "stickEmoPosNegInterest": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2460,7 +2460,7 @@
       }
     },
     "stickEmoPosNegPoliteness": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2469,7 +2469,7 @@
       }
     },
     "stickEmoPosNegSurprise": {
-      "label": "Stickers",
+      "label": "Sticker",
       "indexList": [
         "cssClass"
       ],
@@ -2552,6 +2552,102 @@
     "uxHeaderToolBarEmotionDeleteAction": {
       "label": "uxAction"
     },
+    
+    
+    "uxHeaderCenterAlgorythm": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmPrevAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmNextActionAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmAddAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmItem": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmSticker": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmDetail": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmRead": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmWrite": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmDelete": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterAlgorythmStickerAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmDetailAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmReadAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmWriteAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterAlgorythmDeleteAction": {
+      "label": "uxAction"
+    },
+    
+        "uxHeaderCenterScore": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScorePrevAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreNextActionAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreAddAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreItem": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScoreSticker": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScoreDetail": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScoreRead": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScoreWrite": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScoreDelete": {
+      "label": "uxPosition"
+    },
+    "uxHeaderCenterScoreStickerAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreDetailAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreReadAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreWriteAction": {
+      "label": "uxAction"
+    },
+    "uxHeaderCenterScoreDeleteAction": {
+      "label": "uxAction"
+    },
+    
+    
+    
     "uxSectionRight": {
       "label": "uxPosition"
     },
@@ -5210,652 +5306,644 @@
     },
     
     "scoreNodeMatchingLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelCloneSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       
 
     
     "scoreNodeMatchingActionLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingActionLevelCloneSticker": {
-      "label": "ScoreNodeMatchingActionLevelSticker"
+      "label": "Sticker"
       },
     
     "scoreNodeMatchingPositionSticker": {
-      "label": "ScoreNodeMatchingPositionSticker"
+      "label": "Sticker"
     },
     
     "scoreNodeMatchingPositionLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingPositionLevelCloneSticker": {
-      "label": "ScoreNodeMatchingPositionlevelSticker"
+      "label": "Sticker"
       },
       
     
     "scoreNodeMatchingTimeLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingTimeLevelCloneSticker": {
-      "label": "ScoreNodeMatchingTimeLevelSticker"
+      "label": "Sticker"
       },
 
     
     "scoreNodeMatchingLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
-        "onCreateSetListSticker": {
-        "level": 3,
-        "min": 0,
-        "max": 10
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
-        "onCreateSetListSticker": {
-        "level": 5,
-        "min": 0,
-        "max": 10
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLevelCloneSticker": {
-      "label": "ScoreNodeMatchingLevelSticker"
+      "label": "Sticker"
       },
       
     
     "scoreNodeMatchingCampaignLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingCampaignLevelCloneSticker": {
-      "label": "ScoreNodeMatchingCampaignLevelSticker"
+      "label": "Sticker"
       },
 
     
     "scoreNodeMatchingGraphLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingGraphLevelCloneSticker": {
-      "label": "ScoreNodeMatchingGraphLevelSticker"
+      "label": "Sticker"
       },
 
     
     "scoreNodeMatchingFilterLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingFilterLevelCloneSticker": {
-      "label": "ScoreNodeMatchingFilterLevelSticker"
+      "label": "Sticker"
       },
     
     "scoreNodeMatchingBusinessLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingBusinessLevelCloneSticker": {
-      "label": "ScoreNodeMatchingBusinessLevelSticker"
+      "label": "Sticker"
       },
 
     "scoreNodeMatchingLeaderLevelUnknownSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelNothingCommunSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelSameBasicsSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelLikeYouSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelSamePrioritiesSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelSameValuesSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelPerfectMatchingSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelPerfectCoupleSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelSymbiosisSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeMatchingLeaderLevelCloneSticker": {
-      "label": "ScoreNodeMatchingLeaderLevelSticker"
+      "label": "Sticker"
       },
 
     
       "scoreNodeContentLevelNotInterstedSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelIIinterstedSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelAPlusSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelMajorValueSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelExpertSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelFanSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelAddictSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelHeroSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       
 
     
       "scoreNodeLevelNotInterstedSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelIIinterstedSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelAPlusSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelMajorValueSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelExpertSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelFanSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelAddictSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLevelHeroSticker": {
-      "label": "ScoreNodeLevelSticker"
+      "label": "Sticker"
       },
 
     
       "scoreNodeActionLevelNotInterstedSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelIIinterstedSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelAPlusSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelMajorValueSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelExpertSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelFanSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelAddictSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeActionLevelHeroSticker": {
-      "label": "ScoreNodeActionLevelSticker"
+      "label": "Sticker"
       },
       
  
     
     
       "scoreNodePositionLevelNotInterstedSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelIIinterstedSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelAPlusSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelInterestConfirmedSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelMajorValueSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelExpertSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelFanSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelAddictSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodePositionLevelHeroSticker": {
-      "label": "ScoreNodePositionLevelSticker"
+      "label": "Sticker"
       },
 
     
       "scoreNodeTimeLevelNotInterstedSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelIIinterstedSticker": { 
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelAPlusSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelMajorValueSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelExpertSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelFanSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelAddictSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeTimeLevelHeroSticker": {
-      "label": "ScoreNodeTimeLevelSticker"
+      "label": "Sticker"
       },
       
     
       "scoreNodeCampaignLevelNotInterstedSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelIIinterstedSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelAPlusSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelMajorValueSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelExpertSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelFanSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelAddictSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeCampaignLevelHeroSticker": {
-      "label": "ScoreNodeCampaignLevelSticker"
+      "label": "Sticker"
       },
     
       "scoreNodeGraphLevelNotInterstedSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelIIinterstedSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelAPlusSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelMajorValueSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelExpertSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelFanSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelAddictSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeGraphLevelHeroSticker": {
-      "label": "ScoreNodeGraphLevelSticker"
+      "label": "Sticker"
       },
       
     
     
       "scoreNodeFilterLevelNotInterstedSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelIIinterstedSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelAPlusSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelMajorValueSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelExpertSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelFanSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelAddictSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeFilterLevelHeroSticker": {
-      "label": "ScoreNodeFilterLevelSticker"
+      "label": "Sticker"
       },
 
     
       "scoreNodeBusinessLevelNotInterstedSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelIIinterstedSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelAPlusSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelMajorValueSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelExpertSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelFanSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelAddictSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeBusinessLevelHeroSticker": {
-      "label": "ScoreNodeBusinessLevelSticker"
+      "label": "Sticker"
       },
       
     
       "scoreNodeLeaderLevelNotInterstedSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelIIinterstedSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelAPlusSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelMajorValueSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelExpertSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelFanSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelAddictSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeLeaderLevelHeroSticker": {
-      "label": "ScoreNodeLeaderLevelSticker"
+      "label": "Sticker"
       },
 
       "scoreNodeContentLevelNotInterstedSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       }
       },
       "scoreNodeContentLevelIIinterstedSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       }
       },
       "scoreNodeContentLevelAPlusSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelInterestConfirmedSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelMajorValueSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelExpertSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelFanSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelAddictSticker": {
-      "label": "ScoreNodeContentLevelSticker"
+      "label": "Sticker"
       },
       "scoreNodeContentLevelHeroSticker": {
       },
@@ -5863,67 +5951,67 @@
       
       
     "algorythmeNodeMatchingSticker": {
-      "label": "AlgorythmeNodeMatchingSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingActionSticker": {
-      "label": "AlgorythmeNodeMatchingActionSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingPositionSticker": {
-      "label": "AlgorythmeNodeMatchingPositionSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingTimeSticker": {
-      "label": "AlgorythmeNodeMatchingTimeSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingSticker": {
-      "label": "AlgorythmeNodeMatchingSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingCampaignSticker": {
-      "label": "AlgorythmeNodeMatchingCampaignSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingGraphSticker": {
-      "label": "AlgorythmeNodeMatchingGraphSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingFilterSticker": {
-      "label": "AlgorythmeNodeMatchingFilterSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingBusinessSticker": {
-      "label": "AlgorythmeNodeMatchingBusinessSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeMatchingLeaderSticker": {
-      "label": "AlgorythmeNodeMatchingLeaderSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeContentSticker": {
-      "label": "AlgorythmeNodeContentSticker"
+      "label": "Sticker"
     },    
     "algorythmeNodeSticker": {
-      "label": "AlgorythmeNodeSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeActionSticker": {
-      "label": "AlgorythmeNodeActionSticker"
+      "label": "Sticker"
     },
     "algorythmeNodePositionSticker": {
-      "label": "AlgorythmeNodePositionSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeTimeSticker": {
-      "label": "AlgorythmeNodeTimeSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeCampaignSticker": {
-      "label": "AlgorythmeNodeCampaignSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeGraphSticker": {
-      "label": "AlgorythmeNodeGraphSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeFilterSticker": {
-      "label": "AlgorythmeNodeFilterSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeBusinessSticker": {
-      "label": "AlgorythmeNodeBusinessSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeLeaderSticker": {
-      "label": "AlgorythmeNodeLeaderSticker"
+      "label": "Sticker"
     },
     "algorythmeNodeContentSticker": {
-      "label": "AlgorythmeNodeContentSticker"
+      "label": "Sticker"
     },
     
     "algoNodeWeight": {
@@ -6072,7 +6160,428 @@
     algorythmeNodeFilter
     algorythmeNodeLeader
     algorythmeNodeBusiness
-    algorythmeNodeContent"
+    algorythmeNodeContent
+    scoreNodeMatchingLevelUnknown
+scoreNodeMatchingLevelNothingCommun
+scoreNodeMatchingLevelSameBasics
+scoreNodeMatchingLevelLikeYou
+scoreNodeMatchingLevelSamePriorities
+scoreNodeMatchingLevelSameValues
+scoreNodeMatchingLevelPerfectMatching
+scoreNodeMatchingLevelPerfectCouple
+scoreNodeMatchingLevelSymbiosis
+scoreNodeMatchingLevelClone
+scoreNodeMatchingActionLevelUnknown
+scoreNodeMatchingActionLevelNothingCommun
+scoreNodeMatchingActionLevelSameBasics
+scoreNodeMatchingActionLevelLikeYou
+scoreNodeMatchingActionLevelSamePriorities
+scoreNodeMatchingActionLevelSameValues
+scoreNodeMatchingActionLevelPerfectMatching
+scoreNodeMatchingActionLevelPerfectCouple
+scoreNodeMatchingActionLevelSymbiosis
+scoreNodeMatchingActionLevelClone
+scoreNodeMatchingPosition
+scoreNodeMatchingPositionLevelUnknown
+scoreNodeMatchingPositionLevelNothingCommun
+scoreNodeMatchingPositionLevelSameBasics
+scoreNodeMatchingPositionLevelLikeYou
+scoreNodeMatchingPositionLevelSamePriorities
+scoreNodeMatchingPositionLevelSameValues
+scoreNodeMatchingPositionLevelPerfectMatching
+scoreNodeMatchingPositionLevelPerfectCouple
+scoreNodeMatchingPositionLevelSymbiosis
+scoreNodeMatchingPositionLevelClone
+scoreNodeMatchingTimeLevelUnknown
+scoreNodeMatchingTimeLevelNothingCommun
+scoreNodeMatchingTimeLevelSameBasics
+scoreNodeMatchingTimeLevelLikeYou
+scoreNodeMatchingTimeLevelSamePriorities
+scoreNodeMatchingTimeLevelSameValues
+scoreNodeMatchingTimeLevelPerfectMatching
+scoreNodeMatchingTimeLevelPerfectCouple
+scoreNodeMatchingTimeLevelSymbiosis
+scoreNodeMatchingTimeLevelClone
+scoreNodeMatchingLevelUnknown
+scoreNodeMatchingLevelNothingCommun
+scoreNodeMatchingLevelSameBasics
+scoreNodeMatchingLevelLikeYou
+scoreNodeMatchingLevelSamePriorities
+scoreNodeMatchingLevelSameValues
+scoreNodeMatchingLevelPerfectMatching
+scoreNodeMatchingLevelPerfectCouple
+scoreNodeMatchingLevelSymbiosis
+scoreNodeMatchingLevelClone
+scoreNodeMatchingCampaignLevelUnknown
+scoreNodeMatchingCampaignLevelNothingCommun
+scoreNodeMatchingCampaignLevelSameBasics
+scoreNodeMatchingCampaignLevelLikeYou
+scoreNodeMatchingCampaignLevelSamePriorities
+scoreNodeMatchingCampaignLevelSameValues
+scoreNodeMatchingCampaignLevelPerfectMatching
+scoreNodeMatchingCampaignLevelPerfectCouple
+scoreNodeMatchingCampaignLevelSymbiosis
+scoreNodeMatchingCampaignLevelClone
+scoreNodeMatchingGraphLevelUnknown
+scoreNodeMatchingGraphLevelNothingCommun
+scoreNodeMatchingGraphLevelSameBasics
+scoreNodeMatchingGraphLevelLikeYou
+scoreNodeMatchingGraphLevelSamePriorities
+scoreNodeMatchingGraphLevelSameValues
+scoreNodeMatchingGraphLevelPerfectMatching
+scoreNodeMatchingGraphLevelPerfectCouple
+scoreNodeMatchingGraphLevelSymbiosis
+scoreNodeMatchingGraphLevelClone
+scoreNodeMatchingFilterLevelUnknown
+scoreNodeMatchingFilterLevelNothingCommun
+scoreNodeMatchingFilterLevelSameBasics
+scoreNodeMatchingFilterLevelLikeYou
+scoreNodeMatchingFilterLevelSamePriorities
+scoreNodeMatchingFilterLevelSameValues
+scoreNodeMatchingFilterLevelPerfectMatching
+scoreNodeMatchingFilterLevelPerfectCouple
+scoreNodeMatchingFilterLevelSymbiosis
+scoreNodeMatchingFilterLevelClone
+scoreNodeMatchingBusinessLevelUnknown
+scoreNodeMatchingBusinessLevelNothingCommun
+scoreNodeMatchingBusinessLevelSameBasics
+scoreNodeMatchingBusinessLevelLikeYou
+scoreNodeMatchingBusinessLevelSamePriorities
+scoreNodeMatchingBusinessLevelSameValues
+scoreNodeMatchingBusinessLevelPerfectMatching
+scoreNodeMatchingBusinessLevelPerfectCouple
+scoreNodeMatchingBusinessLevelSymbiosis
+scoreNodeMatchingBusinessLevelClone
+scoreNodeMatchingLeaderLevelUnknown
+scoreNodeMatchingLeaderLevelNothingCommun
+scoreNodeMatchingLeaderLevelSameBasics
+scoreNodeMatchingLeaderLevelLikeYou
+scoreNodeMatchingLeaderLevelSamePriorities
+scoreNodeMatchingLeaderLevelSameValues
+scoreNodeMatchingLeaderLevelPerfectMatching
+scoreNodeMatchingLeaderLevelPerfectCouple
+scoreNodeMatchingLeaderLevelSymbiosis
+scoreNodeMatchingLeaderLevelClone
+scoreNodeContentLevelNotIntersted
+scoreNodeContentLevelIIintersted
+scoreNodeContentLevelAPlus
+scoreNodeContentLevelInterestConfirmed
+scoreNodeContentLevelMajorValue
+scoreNodeContentLevelExpert
+scoreNodeContentLevelFan
+scoreNodeContentLevelAddict
+scoreNodeContentLevelHero
+scoreNodeLevelNotIntersted
+scoreNodeLevelIIintersted
+scoreNodeLevelAPlus
+scoreNodeLevelInterestConfirmed
+scoreNodeLevelMajorValue
+scoreNodeLevelExpert
+scoreNodeLevelFan
+scoreNodeLevelAddict
+scoreNodeLevelHero
+scoreNodeActionLevelNotIntersted
+scoreNodeActionLevelIIintersted
+scoreNodeActionLevelAPlus
+scoreNodeActionLevelInterestConfirmed
+scoreNodeActionLevelMajorValue
+scoreNodeActionLevelExpert
+scoreNodeActionLevelFan
+scoreNodeActionLevelAddict
+scoreNodeActionLevelHero
+scoreNodePositionLevelNotIntersted
+scoreNodePositionLevelIIintersted
+scoreNodePositionLevelAPlus
+scoreNodePositionLevelInterestConfirmed
+scoreNodePositionLevelMajorValue
+scoreNodePositionLevelExpert
+scoreNodePositionLevelFan
+scoreNodePositionLevelAddict
+scoreNodePositionLevelHero
+scoreNodeTimeLevelNotIntersted
+scoreNodeTimeLevelIIintersted 
+scoreNodeTimeLevelAPlus
+scoreNodeTimeLevelInterestConfirmed
+scoreNodeTimeLevelMajorValue
+scoreNodeTimeLevelExpert
+scoreNodeTimeLevelFan
+scoreNodeTimeLevelAddict
+scoreNodeTimeLevelHero
+scoreNodeCampaignLevelNotIntersted
+scoreNodeCampaignLevelIIintersted
+scoreNodeCampaignLevelAPlus
+scoreNodeCampaignLevelInterestConfirmed
+scoreNodeCampaignLevelMajorValue
+scoreNodeCampaignLevelExpert
+scoreNodeCampaignLevelFan
+scoreNodeCampaignLevelAddict
+scoreNodeCampaignLevelHero
+scoreNodeGraphLevelNotIntersted
+scoreNodeGraphLevelIIintersted
+scoreNodeGraphLevelAPlus
+scoreNodeGraphLevelInterestConfirmed
+scoreNodeGraphLevelMajorValue
+scoreNodeGraphLevelExpert
+scoreNodeGraphLevelFan
+scoreNodeGraphLevelAddict
+scoreNodeGraphLevelHero
+scoreNodeFilterLevelNotIntersted
+scoreNodeFilterLevelIIintersted
+scoreNodeFilterLevelAPlus
+scoreNodeFilterLevelInterestConfirmed
+scoreNodeFilterLevelMajorValue
+scoreNodeFilterLevelExpert
+scoreNodeFilterLevelFan
+scoreNodeFilterLevelAddict
+scoreNodeFilterLevelHero
+scoreNodeBusinessLevelNotIntersted
+scoreNodeBusinessLevelIIintersted
+scoreNodeBusinessLevelAPlus
+scoreNodeBusinessLevelInterestConfirmed
+scoreNodeBusinessLevelMajorValue
+scoreNodeBusinessLevelExpert
+scoreNodeBusinessLevelFan
+scoreNodeBusinessLevelAddict
+scoreNodeBusinessLevelHero
+scoreNodeLeaderLevelNotIntersted
+scoreNodeLeaderLevelIIintersted
+scoreNodeLeaderLevelAPlus
+scoreNodeLeaderLevelInterestConfirmed
+scoreNodeLeaderLevelMajorValue
+scoreNodeLeaderLevelExpert
+scoreNodeLeaderLevelFan
+scoreNodeLeaderLevelAddict
+scoreNodeLeaderLevelHero
+scoreNodeContentLevelNotIntersted
+scoreNodeContentLevelIIintersted
+scoreNodeContentLevelAPlus
+scoreNodeContentLevelInterestConfirmed
+scoreNodeContentLevelMajorValue
+scoreNodeContentLevelExpert
+scoreNodeContentLevelFan
+scoreNodeContentLevelAddict
+scoreNodeContentLevelHero
+    scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelNothingCommunSticker
+scoreNodeMatchingLevelSameBasicsSticker
+scoreNodeMatchingLevelLikeYouSticker
+scoreNodeMatchingLevelSamePrioritiesSticker
+scoreNodeMatchingLevelSameValuesSticker
+scoreNodeMatchingLevelPerfectMatchingSticker
+scoreNodeMatchingLevelPerfectCoupleSticker
+scoreNodeMatchingLevelSymbiosisSticker
+scoreNodeMatchingLevelCloneSticker
+scoreNodeMatchingActionLevelUnknownSticker
+scoreNodeMatchingActionLevelNothingCommunSticker
+scoreNodeMatchingActionLevelSameBasicsSticker
+scoreNodeMatchingActionLevelLikeYouSticker
+scoreNodeMatchingActionLevelSamePrioritiesSticker
+scoreNodeMatchingActionLevelSameValuesSticker
+scoreNodeMatchingActionLevelPerfectMatchingSticker
+scoreNodeMatchingActionLevelPerfectCoupleSticker
+scoreNodeMatchingActionLevelSymbiosisSticker
+scoreNodeMatchingActionLevelCloneSticker
+scoreNodeMatchingPositionSticker
+scoreNodeMatchingPositionLevelUnknownSticker
+scoreNodeMatchingPositionLevelNothingCommunSticker
+scoreNodeMatchingPositionLevelSameBasicsSticker
+scoreNodeMatchingPositionLevelLikeYouSticker
+scoreNodeMatchingPositionLevelSamePrioritiesSticker
+scoreNodeMatchingPositionLevelSameValuesSticker
+scoreNodeMatchingPositionLevelPerfectMatchingSticker
+scoreNodeMatchingPositionLevelPerfectCoupleSticker
+scoreNodeMatchingPositionLevelSymbiosisSticker
+scoreNodeMatchingPositionLevelCloneSticker
+scoreNodeMatchingTimeLevelUnknownSticker
+scoreNodeMatchingTimeLevelNothingCommunSticker
+scoreNodeMatchingTimeLevelSameBasicsSticker
+scoreNodeMatchingTimeLevelLikeYouSticker
+scoreNodeMatchingTimeLevelSamePrioritiesSticker
+scoreNodeMatchingTimeLevelSameValuesSticker
+scoreNodeMatchingTimeLevelPerfectMatchingSticker
+scoreNodeMatchingTimeLevelPerfectCoupleSticker
+scoreNodeMatchingTimeLevelSymbiosisSticker
+scoreNodeMatchingTimeLevelCloneSticker
+scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelNothingCommunSticker
+scoreNodeMatchingLevelSameBasicsSticker
+scoreNodeMatchingLevelLikeYouSticker
+scoreNodeMatchingLevelSamePrioritiesSticker
+scoreNodeMatchingLevelSameValuesSticker
+scoreNodeMatchingLevelPerfectMatchingSticker
+scoreNodeMatchingLevelPerfectCoupleSticker
+scoreNodeMatchingLevelSymbiosisSticker
+scoreNodeMatchingLevelCloneSticker
+scoreNodeMatchingCampaignLevelUnknownSticker
+scoreNodeMatchingCampaignLevelNothingCommunSticker
+scoreNodeMatchingCampaignLevelSameBasicsSticker
+scoreNodeMatchingCampaignLevelLikeYouSticker
+scoreNodeMatchingCampaignLevelSamePrioritiesSticker
+scoreNodeMatchingCampaignLevelSameValuesSticker
+scoreNodeMatchingCampaignLevelPerfectMatchingSticker
+scoreNodeMatchingCampaignLevelPerfectCoupleSticker
+scoreNodeMatchingCampaignLevelSymbiosisSticker
+scoreNodeMatchingCampaignLevelCloneSticker
+scoreNodeMatchingGraphLevelUnknownSticker
+scoreNodeMatchingGraphLevelNothingCommunSticker
+scoreNodeMatchingGraphLevelSameBasicsSticker
+scoreNodeMatchingGraphLevelLikeYouSticker
+scoreNodeMatchingGraphLevelSamePrioritiesSticker
+scoreNodeMatchingGraphLevelSameValuesSticker
+scoreNodeMatchingGraphLevelPerfectMatchingSticker
+scoreNodeMatchingGraphLevelPerfectCoupleSticker
+scoreNodeMatchingGraphLevelSymbiosisSticker
+scoreNodeMatchingGraphLevelCloneSticker
+scoreNodeMatchingFilterLevelUnknownSticker
+scoreNodeMatchingFilterLevelNothingCommunSticker
+scoreNodeMatchingFilterLevelSameBasicsSticker
+scoreNodeMatchingFilterLevelLikeYouSticker
+scoreNodeMatchingFilterLevelSamePrioritiesSticker
+scoreNodeMatchingFilterLevelSameValuesSticker
+scoreNodeMatchingFilterLevelPerfectMatchingSticker
+scoreNodeMatchingFilterLevelPerfectCoupleSticker
+scoreNodeMatchingFilterLevelSymbiosisSticker
+scoreNodeMatchingFilterLevelCloneSticker
+scoreNodeMatchingBusinessLevelUnknownSticker
+scoreNodeMatchingBusinessLevelNothingCommunSticker
+scoreNodeMatchingBusinessLevelSameBasicsSticker
+scoreNodeMatchingBusinessLevelLikeYouSticker
+scoreNodeMatchingBusinessLevelSamePrioritiesSticker
+scoreNodeMatchingBusinessLevelSameValuesSticker
+scoreNodeMatchingBusinessLevelPerfectMatchingSticker
+scoreNodeMatchingBusinessLevelPerfectCoupleSticker
+scoreNodeMatchingBusinessLevelSymbiosisSticker
+scoreNodeMatchingBusinessLevelCloneSticker
+scoreNodeMatchingLeaderLevelUnknownSticker
+scoreNodeMatchingLeaderLevelNothingCommunSticker
+scoreNodeMatchingLeaderLevelSameBasicsSticker
+scoreNodeMatchingLeaderLevelLikeYouSticker
+scoreNodeMatchingLeaderLevelSamePrioritiesSticker
+scoreNodeMatchingLeaderLevelSameValuesSticker
+scoreNodeMatchingLeaderLevelPerfectMatchingSticker
+scoreNodeMatchingLeaderLevelPerfectCoupleSticker
+scoreNodeMatchingLeaderLevelSymbiosisSticker
+scoreNodeMatchingLeaderLevelCloneSticker
+scoreNodeContentLevelNotInterstedSticker
+scoreNodeContentLevelIIinterstedSticker
+scoreNodeContentLevelAPlusSticker
+scoreNodeContentLevelInterestConfirmedSticker
+scoreNodeContentLevelMajorValueSticker
+scoreNodeContentLevelExpertSticker
+scoreNodeContentLevelFanSticker
+scoreNodeContentLevelAddictSticker
+scoreNodeContentLevelHeroSticker
+scoreNodeLevelNotInterstedSticker
+scoreNodeLevelIIinterstedSticker
+scoreNodeLevelAPlusSticker
+scoreNodeLevelInterestConfirmedSticker
+scoreNodeLevelMajorValueSticker
+scoreNodeLevelExpertSticker
+scoreNodeLevelFanSticker
+scoreNodeLevelAddictSticker
+scoreNodeLevelHeroSticker
+scoreNodeActionLevelNotInterstedSticker
+scoreNodeActionLevelIIinterstedSticker
+scoreNodeActionLevelAPlusSticker
+scoreNodeActionLevelInterestConfirmedSticker
+scoreNodeActionLevelMajorValueSticker
+scoreNodeActionLevelExpertSticker
+scoreNodeActionLevelFanSticker
+scoreNodeActionLevelAddictSticker
+scoreNodeActionLevelHeroSticker
+scoreNodePositionLevelNotInterstedSticker
+scoreNodePositionLevelIIinterstedSticker
+scoreNodePositionLevelAPlusSticker
+scoreNodePositionLevelInterestConfirmedSticker
+scoreNodePositionLevelMajorValueSticker
+scoreNodePositionLevelExpertSticker
+scoreNodePositionLevelFanSticker
+scoreNodePositionLevelAddictSticker
+scoreNodePositionLevelHeroSticker
+scoreNodeTimeLevelNotInterstedSticker
+scoreNodeTimeLevelIIinterstedSticker 
+scoreNodeTimeLevelAPlusSticker
+scoreNodeTimeLevelInterestConfirmedSticker
+scoreNodeTimeLevelMajorValueSticker
+scoreNodeTimeLevelExpertSticker
+scoreNodeTimeLevelFanSticker
+scoreNodeTimeLevelAddictSticker
+scoreNodeTimeLevelHeroSticker
+scoreNodeCampaignLevelNotInterstedSticker
+scoreNodeCampaignLevelIIinterstedSticker
+scoreNodeCampaignLevelAPlusSticker
+scoreNodeCampaignLevelInterestConfirmedSticker
+scoreNodeCampaignLevelMajorValueSticker
+scoreNodeCampaignLevelExpertSticker
+scoreNodeCampaignLevelFanSticker
+scoreNodeCampaignLevelAddictSticker
+scoreNodeCampaignLevelHeroSticker
+scoreNodeGraphLevelNotInterstedSticker
+scoreNodeGraphLevelIIinterstedSticker
+scoreNodeGraphLevelAPlusSticker
+scoreNodeGraphLevelInterestConfirmedSticker
+scoreNodeGraphLevelMajorValueSticker
+scoreNodeGraphLevelExpertSticker
+scoreNodeGraphLevelFanSticker
+scoreNodeGraphLevelAddictSticker
+scoreNodeGraphLevelHeroSticker
+scoreNodeFilterLevelNotInterstedSticker
+scoreNodeFilterLevelIIinterstedSticker
+scoreNodeFilterLevelAPlusSticker
+scoreNodeFilterLevelInterestConfirmedSticker
+scoreNodeFilterLevelMajorValueSticker
+scoreNodeFilterLevelExpertSticker
+scoreNodeFilterLevelFanSticker
+scoreNodeFilterLevelAddictSticker
+scoreNodeFilterLevelHeroSticker
+scoreNodeBusinessLevelNotInterstedSticker
+scoreNodeBusinessLevelIIinterstedSticker
+scoreNodeBusinessLevelAPlusSticker
+scoreNodeBusinessLevelInterestConfirmedSticker
+scoreNodeBusinessLevelMajorValueSticker
+scoreNodeBusinessLevelExpertSticker
+scoreNodeBusinessLevelFanSticker
+scoreNodeBusinessLevelAddictSticker
+scoreNodeBusinessLevelHeroSticker
+scoreNodeLeaderLevelNotInterstedSticker
+scoreNodeLeaderLevelIIinterstedSticker
+scoreNodeLeaderLevelAPlusSticker
+scoreNodeLeaderLevelInterestConfirmedSticker
+scoreNodeLeaderLevelMajorValueSticker
+scoreNodeLeaderLevelExpertSticker
+scoreNodeLeaderLevelFanSticker
+scoreNodeLeaderLevelAddictSticker
+scoreNodeLeaderLevelHeroSticker
+scoreNodeContentLevelNotInterstedSticker
+scoreNodeContentLevelIIinterstedSticker
+scoreNodeContentLevelAPlusSticker
+scoreNodeContentLevelInterestConfirmedSticker
+scoreNodeContentLevelMajorValueSticker
+scoreNodeContentLevelExpertSticker
+scoreNodeContentLevelFanSticker
+scoreNodeContentLevelAddictSticker
+scoreNodeContentLevelHeroSticker
+algorythmeNodeMatchingSticker
+algorythmeNodeMatchingActionSticker
+algorythmeNodeMatchingPositionSticker
+algorythmeNodeMatchingTimeSticker
+algorythmeNodeMatchingSticker
+algorythmeNodeMatchingCampaignSticker
+algorythmeNodeMatchingGraphSticker
+algorythmeNodeMatchingFilterSticker
+algorythmeNodeMatchingBusinessSticker
+algorythmeNodeMatchingLeaderSticker
+algorythmeNodeContentSticker
+algorythmeNodeSticker
+algorythmeNodeActionSticker
+algorythmeNodePositionSticker
+algorythmeNodeTimeSticker
+algorythmeNodeCampaignSticker
+algorythmeNodeGraphSticker
+algorythmeNodeFilterSticker
+algorythmeNodeBusinessSticker
+algorythmeNodeLeaderSticker
+algorythmeNodeContentSticker"
     
     ,
     "stickTctCorp_tctCorp": {
@@ -6645,6 +7154,10 @@
       "start": "uxHeaderToolBarEmotion",
       "end": "uxHeaderToolBarEmotionAddAction"
     },
+    
+    
+    
+    
     "uxSectionRight_uxSectionRightToolBar": {
       "relationship": "CONTAIN",
       "start": "uxSectionRight",
