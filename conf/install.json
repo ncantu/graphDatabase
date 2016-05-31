@@ -6118,7 +6118,14 @@
     }
   },
   "relationshipList": {
-    "_todo": "user social profil follower visitor lover relay uxMedia uxCatDevicePC uxCatDeviceTablette uxCatDeviceSmatphone uxCatDeviceIot uxCatDeviceOther uxCatMedia uxCampaign uxSegement uxResource uxFormat uxQuality uxNetwork uxCatNetwork uxText uxsemantic workfow step task kpi transformation score algorythme algolevel algonodeWeight algoNode taskPriority taskSeverity payementvalidationOk pts product stock stockShipping stockWarehouse expeditionCost expeditionReturnCost expeditionVehicle series serialNumber provider price currency offer order bill BillPayment BillPaymentReturnKO BillPaymentReturnOK BillPaymentValidationOK BillPaymentValidationKO expedition ExpeditionReturnOpen ExpeditionReturnClosed ExpeditionPaymentBack BillPaymentBackReturnKO BillPaymentBackReturnOK BillPaymentBackValidationOK package packageProtection   
+    "_todo": "user social profil follower visitor lover relay uxMedia uxCatDevicePC uxCatDeviceTablette 
+    uxCatDeviceSmatphone uxCatDeviceIot uxCatDeviceOther uxCatMedia uxCampaign uxSegement uxResource uxFormat 
+    uxQuality uxNetwork uxCatNetwork uxText uxsemantic workfow step task kpi transformation score algorythme 
+    algolevel algonodeWeight algoNode taskPriority taskSeverity payementvalidationOk pts product stock stockShipping 
+    stockWarehouse expeditionCost expeditionReturnCost expeditionVehicle series serialNumber provider price currency 
+    offer order bill BillPayment BillPaymentReturnKO BillPaymentReturnOK BillPaymentValidationOK BillPaymentValidationKO 
+    expedition ExpeditionReturnOpen ExpeditionReturnClosed ExpeditionPaymentBack BillPaymentBackReturnKO 
+    BillPaymentBackReturnOK BillPaymentBackValidationOK package packageProtection   
     scoreNodeMatching       
     scoreNodeMatchingAction
     scoreNodeMatchingPosition
