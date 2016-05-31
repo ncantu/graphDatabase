@@ -2554,95 +2554,95 @@
     },
     
     
-    "uxHeaderCenterAlgorythm": {
+    "uxCenterAlgorythm": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmPrevAction": {
+    "uxCenterAlgorythmPrevAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmNextActionAction": {
+    "uxCenterAlgorythmNextActionAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmAddAction": {
+    "uxCenterAlgorythmAddAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmItem": {
+    "uxCenterAlgorythmItem": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmSticker": {
+    "uxCenterAlgorythmSticker": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmDetail": {
+    "uxCenterAlgorythmDetail": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmRead": {
+    "uxCenterAlgorythmRead": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmWrite": {
+    "uxCenterAlgorythmWrite": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmDelete": {
+    "uxCenterAlgorythmDelete": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterAlgorythmStickerAction": {
+    "uxCenterAlgorythmStickerAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmDetailAction": {
+    "uxCenterAlgorythmDetailAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmReadAction": {
+    "uxCenterAlgorythmReadAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmWriteAction": {
+    "uxCenterAlgorythmWriteAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterAlgorythmDeleteAction": {
+    "uxCenterAlgorythmDeleteAction": {
       "label": "uxAction"
     },
     
-        "uxHeaderCenterScore": {
+        "uxCenterScore": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScorePrevAction": {
+    "uxCenterScorePrevAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreNextActionAction": {
+    "uxCenterScoreNextActionAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreAddAction": {
+    "uxCenterScoreAddAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreItem": {
+    "uxCenterScoreItem": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScoreSticker": {
+    "uxCenterScoreSticker": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScoreDetail": {
+    "uxCenterScoreDetail": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScoreRead": {
+    "uxCenterScoreRead": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScoreWrite": {
+    "uxCenterScoreWrite": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScoreDelete": {
+    "uxCenterScoreDelete": {
       "label": "uxPosition"
     },
-    "uxHeaderCenterScoreStickerAction": {
+    "uxCenterScoreStickerAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreDetailAction": {
+    "uxCenterScoreDetailAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreReadAction": {
+    "uxCenterScoreReadAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreWriteAction": {
+    "uxCenterScoreWriteAction": {
       "label": "uxAction"
     },
-    "uxHeaderCenterScoreDeleteAction": {
+    "uxCenterScoreDeleteAction": {
       "label": "uxAction"
     },
     
@@ -6582,6 +6582,37 @@ algorythmeNodeFilterSticker
 algorythmeNodeBusinessSticker
 algorythmeNodeLeaderSticker
 algorythmeNodeContentSticker"
+
+uxCenterAlgorythm
+uxCenterAlgorythmPrevAction
+uxCenterAlgorythmNextActionAction
+uxCenterAlgorythmAddAction
+uxCenterAlgorythmItem
+uxCenterAlgorythmSticker
+uxCenterAlgorythmDetail
+uxCenterAlgorythmRead
+uxCenterAlgorythmWrite
+uxCenterAlgorythmDelete
+uxCenterAlgorythmStickerAction
+uxCenterAlgorythmDetailAction
+uxCenterAlgorythmReadAction
+uxCenterAlgorythmWriteAction
+uxCenterAlgorythmDeleteAction
+ uxCenterScore
+uxCenterScorePrevAction
+uxCenterScoreNextActionAction
+uxCenterScoreAddAction
+uxCenterScoreItem
+uxCenterScoreSticker
+uxCenterScoreDetail
+uxCenterScoreRead
+uxCenterScoreWrite
+uxCenterScoreDelete
+uxCenterScoreStickerAction
+uxCenterScoreDetailAction
+uxCenterScoreReadAction
+uxCenterScoreWriteAction
+uxCenterScoreDeleteAction
     
     ,
     "stickTctCorp_tctCorp": {
