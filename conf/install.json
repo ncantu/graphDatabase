@@ -304,7 +304,7 @@ scoreNodeContentLevelExpert
 scoreNodeContentLevelFan
 scoreNodeContentLevelAddict
 scoreNodeContentLevelHero
-    scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelUnknownSticker
 scoreNodeMatchingLevelNothingCommunSticker
 scoreNodeMatchingLevelSameBasicsSticker
 scoreNodeMatchingLevelLikeYouSticker
@@ -719,7 +719,10 @@ semanticWordDefault
       }
     },
     "envDev": {
-      "label": "Environment"
+      "label": "Environment",
+      "nextName": "envPreProd",
+      "precMin": "envDev",
+      "nextMax": "envProd"
     },
     "envDevErrorLevelWarning": {
       "label": "ErrorLevel",
@@ -830,7 +833,11 @@ semanticWordDefault
       }
     },
     "envPreprod": {
-      "label": "Environment"
+      "label": "Environment",
+      "precName": "envDev",
+      "nextName": "Prod",
+      "precMin": "envDev",
+      "nextMax": "envProd"
     },
     "envPreprodErrorLevelWarning": {
       "label": "ErrorLevel",
@@ -930,6 +937,9 @@ semanticWordDefault
     },
     "envProd": {
       "label": "Environment"
+      "precName": "envPreProd",
+      "precMin": "envDev",
+      "nextMax": "envProd"
     },
     "envProductionErrorLevelWarning": {
       "label": "ErrorLevel",
@@ -1075,25 +1085,53 @@ semanticWordDefault
       }
     },
     "tdy": {
-      "label": "TimeDayYear"
+      "label": "TimeDayYear",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "tY": {
-      "label": "TimeYear"
+      "label": "TimeYear",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "tmon": {
-      "label": "TimeMonth"
+      "label": "TimeMonth",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "tdm": {
-      "label": "TimeDayMonth"
+      "label": "TimeDayMonth",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "tmin": {
-      "label": "TimeMinute"
+      "label": "TimeMinute",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "tH": {
-      "label": "TimeDayHour"
+      "label": "TimeDayHour",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "ts": {
-      "label": "TimeSecond"
+      "label": "TimeSecond",
+      "precName": "{-1}",
+      "nextName": "{+1}",
+      "precMin": 0,
+      "nextMax": "{count}"
     },
     "evt": {
       "label": "Event",
@@ -9204,135 +9242,584 @@ semanticWordDefault
     "cssClassName",
     "templateName",
     "unit",
-    "occurenceMax"
+    "occurenceMax",
+    "sign"
   ],
-  "nodeParamDefaultList": {
-    "onCreateSetList": {
-      "ttl": 31104000,
-      "ttlKeep": 31104000,
-      "token": false,
-      "tokenCrypted": false,
-      "ttlLastdate": "timestamp()",
-      "var": "__KEY__",
-      "name": "__KEY__",
-      "state": true,
-      "createUser": "u_name",
-      "createdDate": "timestamp()",
-      "dateStart": false,
-      "dateDue": false,
-      "dateEnd": false,
-      "step": "create",
-      "visibility": "public",
-      "note": "",
-      "locDefault": "FR",
-      "value": false,
-      "score": false,
-      "weight": 1,
-      "occurence": 1,
-      "occurenceMax": 1,
-      "unit": 1,
-      "itCost": 0,
-      "commCost": 0,
-      "marketCost": 0,
-      "motif": "",
-      "uid": false,
-      "sign": false,
-      "blockChain": "t_blockChain",
-      "blockChainBlock": "t_blockChainBlock",
-      "blockChainSign": "t_blockChainSign",
-      "blockChainTime": "t_blockChainTime",
-      "blockChainLeader": "t_blockChainleader",
-      "localDefault": "t_localDefault",
-      "version": "0.0",
-      "deployment_version": "0.0"
-    },
-    "onMatchSetList": {
-      "var": "__KEY__",
-      "matchLastUser": "u_name",
-      "matchLastDate": "timestamp()",
-      "ttlLastdate": "timestamp()",
-      "deployment": "t_deployment",
-      "matchLastVersion": "0.0",
-      "matcLastDeployment_version": "0.0",
-      "value": false,
-      "score": false,
-      "itCost": 0,
-      "unit": 1,
-      "commCost": 0,
-      "marketCost": 0,
-      "motif": "",
-      "sign": false,
-      "blockChain": "t_blockChain",
-      "blockChainBlock": "t_blockChainBlock",
-      "blockChainSign": "t_blockChainSign",
-      "blockChainTime": "t_blockChainTime",
-      "blockChainLeader": "t_blockChainleader",
-      "localDefault": "t_localDefault",
-      "token": false,
-      "tokenCrypted": false
-    }
-  },
-  "relationshipParamDefaultList": {
-    "onCreateSetList": {
-      "ttl": 31104000,
-      "ttlKeep": 31104000,
-      "token": false,
-      "tokenCrypted": false,
-      "ttlLastdate": "timestamp()",
-      "var": "__KEY__",
-      "name": "__KEY__",
-      "state": true,
-      "createUser": "u_name",
-      "createdDate": "timestamp()",
-      "dateStart": false,
-      "dateDue": false,
-      "dateEnd": false,
-      "step": "create",
-      "visibility": "public",
-      "note": "",
-      "occurence": 1,
-      "occurenceMax": 1,
-      "locDefault": "FR",
-      "value": false,
-      "weight": 1,
-      "order": 1,
-      "itCost": 0,
-      "commCost": 0,
-      "marketCost": 0,
-      "uid": false,
-      "sign": false,
-      "blockChain": "t_blockChain",
-      "blockChainBlock": "t_blockChainBlock",
-      "blockChainSign": "t_blockChainSign",
-      "blockChainTime": "t_blockChainTime",
-      "blockChainLeader": "t_blockChainleader",
-      "localDefault": "t_localDefault",
-      "version": "0.0",
-      "deployment_version": "0.0"
-    },
-    "onMatchSetList": {
-      "ttlLastdate": "timestamp()",
-      "var": "__KEY__",
-      "matchLastUser": "u_name",
-      "matchLastDate": "timestamp()",
-      "deployment": "t_deployment",
-      "matchLastVersion": "0.0",
-      "matcLastDeployment_version": "0.0",
-      "occurence": 2,
-      "token": false,
-      "tokenCrypted": false
-    }
-  },
-  "eventList": {
-    "not": {
-      "send": {
-        "not_evt": {
-          "relationship": "NOTIFE",
-          "var": "not_evt",
+  "eventDefaultList": {
+      "indexAdd": {
+         
+      },
+      "uxActionAdd": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+     
+      },
+      "uxActionStiker": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+   
+      },
+      "uxActionPrec": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+   
+      },
+      "uxActionNext": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+  
+      },
+      "uxActionDelete": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+  
+      },
+      "uxActionDetail": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+   
+      },
+      "uxActionRead": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+
+      },
+      "uxActionWrite": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+
+      },
+      "uxActionAddAlgo": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+
+      },
+      "uxActionAddEomtion": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+
+      },
+      "uxActionAddAction": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+
+      },
+      "uxActionFilter": {
+          "relationship": "UX_ACTION",
+          "end": "evt"
+
+      },
+      "uxActionAttributSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "relationship": "ATTRIBUT_SET",
+          "end": "evt"
+
+      },
+      "uxActionAttributGet": {
+          "relationship": "ATTRIBUT_GET",
+          "end": "evt"
+
+      },
+      "uxActionRelationshipGet": {
+          "relationship": "RELATIONSHIP_GET",
+          "end": "evt"
+      },
+      "uxActionRelationshipSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false,   
+          "relationship": "RELATIONSHIP_SET",
+          "end": "evt"
+      },
+      "uxElementNameSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false,          
+          "relationship": "UX_ELEMENT_SET",
+          "end": "evt"
+   
+      },
+      "uxElementNameGet": {    
+          "relationship": "UX_ELEMENT_GET",
+          "end": "evt"
+   
+      },
+      "uxCssNameSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false,          
+          "relationship": "UX_CSS_SET",
+          "end": "evt"
+   
+      },
+      "uxCssNameGet": {    
+          "relationship": "UX_CSS_GET",
+          "end": "evt"
+   
+      },
+      "scoreSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true,          
+          "relationship": "SCORE_SET",
+          "end": "evt"
+   
+      },
+      "scoreGet": {
+          "relationship": "SCORE_GET",
+          "end": "evt"
+   
+      },
+      "expireUpdate": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true,   
+          "relationship": "EXPIRE_UPDATE",
+          "end": "evt"
+      },
+      "tokenUpdate": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true,   
+          "relationship": "TOKEN_UPDATE",
+          "end": "evt"
+      },
+      "nameSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false,   
+          "relationship": "NAME_SET",
+          "end": "evt"
+      },
+      "nameGet": {
+          "relationship": "NAME_GET",
           "start": "not",
           "end": "evt"
-        }
+      },
+      "uidGet": {
+          "relationship": "UID_GET",
+          "end": "evt"
+      },
+      "uidSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false, 
+          "relationship": "UID_SET",
+          "end": "evt"
+      },
+      "scoreCostSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true,   
+          "relationship": "SCORE_COST_SET",
+          "end": "evt"
+      },
+      "scoreCostGet": {
+          "relationship": "SCORE_COST_GET",
+          "end": "evt"
+      },
+      "scoreRoiSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "SCORE_ROI_SET",
+          "end": "evt"
+      },
+      "scoreRoiGet": {
+          "relationship": "SCORE_ROI_GET",
+          "end": "evt"
+      },
+      "stateGet": {
+          "relationship": "STATE_GET",
+          "end": "evt"
+      },
+      "stateSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "STATE_SET",
+          "end": "evt"
+      },
+      "dateUpdate": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "DATE_UPDATE",
+          "end": "evt"
+      },
+      "dateStartSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "DATE_START_SET",
+          "end": "evt"
+      },
+      "dateStartGet": {
+          "relationship": "DATE_START_GET",
+          "end": "evt"
+      },
+      "dateEndSet": {
+          "relationship": "DATE_END_SET",
+          "end": "evt"
+      },
+      "dateEndSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "DATE_END_GER",
+          "end": "evt"
+      },
+      "dateDueSet": {
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "DATE_DUE_SET",
+          "end": "evt"
+      },
+      "dateDueGet": {
+          "relationship": "DATE_DUE_GET",
+          "end": "evt"
+      },
+      "stateSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "STATE_SET",
+          "end": "evt"
+      },
+      "stateGet": {
+          "relationship": "STATE_GET",
+          "end": "evt"
+      },
+      "visibilityGet": {
+          "relationship": "VISIBILITY_GET",
+          "end": "evt"
+      },
+      "visibilitySet": {
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "VISIBILITY_SET",
+          "end": "evt"
+      },
+      "noteSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "NOTE_SET",
+          "end": "evt"
+      },
+      "noteGet": {
+          "relationship": "NOTE_GET",
+          "end": "evt"
+      },
+      "occcurenceSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "OCCURENCE_SET",
+          "end": "evt"
+      },
+      "occcurenceGet": {
+          "relationship": "OCCURENCE_GET",
+          "end": "evt"
+      },
+      "localSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "LOCAL_SET",
+          "end": "evt"
+      },
+      "localeGet": {
+          "relationship": "LOCAL_GET",
+          "end": "evt"
+      },
+      "valueSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "VALUE_SET",
+          "end": "evt"
+      },
+      "valueGet": {
+          "relationship": "VALUE_GET",
+          "end": "evt"
+      },
+      "weightSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "WEIGHT_SET",
+          "end": "evt"
+      },
+      "weightGet": {
+          "relationship": "WEIGHT_GET",
+          "end": "evt"
+      },
+      "orderSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "ORDER_SET",
+          "end": "evt"
+      },
+      "orderGet": {
+          "relationship": "ORDER_GET",
+          "end": "evt"
+      },
+      "itCostSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "IT_COST_SET",
+          "end": "evt"
+      },
+      "itCostGet": {
+          "relationship": "IT_COST_GET",
+          "end": "evt"
+      },
+      "commCostSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "COMM_COST_SET",
+          "end": "evt"
+      },
+      "commCostGet": {
+          "relationship": "COMM_COST_GET",
+          "end": "evt"
+      },
+      "marketCostSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "MARKET_COST_GET",
+          "end": "evt"
+      },
+      "marketCostGet": {
+          "relationship": "MARKET_COST_SET",
+          "end": "evt"
+      },
+      "signSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "SIGN_SET",
+          "end": "evt"
+      },
+      "signGet": {
+          "relationship": "SIGN_GET",
+          "end": "evt"
+      },
+      "blockChainlastAsk": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "BLOCKCHAIN_ASK",
+          "end": "evt"
+      },
+      "blockChainAddBlock": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "BLOCKCHAIN_ADD_BLOCK",
+          "end": "evt"
       }
+      "blockChainUpdate": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "BLOCKCHAIN_UPDATE",
+          "end": "evt"
+      },
+      "versionConfSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false, 
+          "relationship": "VERSION_CONF_SET",
+          "end": "evt"
+      },
+      "versionConfGet": {
+          "relationship": "VERSION_CONF_GET",
+          "end": "evt"
+      },
+      "versionDeploymentSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false, 
+          "relationship": "VERSION_DEPLYMENT_SET",
+          "end": "evt"
+      },
+      "versionDeploymentGet": {
+          "relationship": "VERSION_DEPLYMENT_GET",
+          "end": "evt"
+      },
+      "createUserSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false, 
+          "relationship": "CREATE_USER_SET",
+          "end": "evt"
+      },
+      "createUserGet": {
+          "relationship": "CREATE_USER_GET",
+          "end": "evt"
+      }   ,   
+      "createdDateSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": false, 
+          "relationship": "CREATE_DATE_SET",
+          "end": "evt"
+      },
+      "createdDateGet": {
+          "relationship": "CREATE_DATE_GET",
+          "end": "evt"
+      }    ,   
+      "matchLastConfSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "MATCH_LAST_CONF_SET",
+          "end": "evt"
+      },
+      "matchLastConfGet": {
+          "relationship": "MATCH_LAST_CONF_GET",
+          "end": "evt"
+      } ,   
+      "matchLastDeploymentVersionSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "MATCH_LAST_DEPLOYMENT_SET",
+          "end": "evt"
+      },
+      "matchLastDeploymentVersionGet": {
+          "relationship": "MATCH_LAST_DEPLOYMENT_GET",
+          "end": "evt"
+      },
+      "matchLastUserSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "MATCH_LAST_USER_SET",
+          "end": "evt"
+      },
+      "matchLastUserGet": {
+          "relationship": "MATCH_LAST_USER_GET",
+          "end": "evt"
+      } ,
+      "matchLastDateSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "MATCH_LAST_DATE_SET",
+          "end": "evt"
+      },
+      "matchLastDateGet": {
+          "relationship": "MATCH_LAST_DATE_GET",
+          "end": "evt"
+      }  ,
+      "tagSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "TAG_SET",
+          "end": "evt"
+      },
+      "tagGet": {
+          "relationship": "TAG_GET",
+          "end": "evt"
+      }  ,
+      "locationSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "LOCATION_SET",
+          "end": "evt"
+      },
+      "locationGet": {
+          "relationship": "LOCATION_GET",
+          "end": "evt"
+      }  ,
+      "stikerSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "STIKER_SET",
+          "end": "evt"
+      },
+      "stikerGet": {
+          "relationship": "STIKER_GET",
+          "end": "evt"
+      }   ,
+      "typeSet": {
+          "emptyValue": "",
+          "errorValue": fasle,
+          "defaultValue": fasle,
+          "setOnMatch": true, 
+          "relationship": "TYPE_SET",
+          "end": "evt"
+      },
+      "typeGet": {
+          "relationship": "TYPE_GET",
+          "end": "evt"
+      }  
+  }
+  "eventList": {
+    "evt": {
+      "trace": {
+          "relationship": "NOTIFE",
+          "end": "evt"
+        }
+    },
+    "not": {
+      "send": {
+          "relationship": "NOTIFE",
+          "end": "evt"
+        }
     }
   }
 }
