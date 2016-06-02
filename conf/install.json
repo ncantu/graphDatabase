@@ -1,5 +1,609 @@
+TODO: Relationship
+socialProfil
+follower
+visitor
+lover
+relay
+uxMedia
+uxCatDevicePC
+uxCatDeviceTablette 
+uxCatDeviceSmatphone 
+uxCatDeviceIot 
+uxCatDeviceOther 
+uxCatMedia 
+uxCampaign 
+uxSegement 
+uxResource 
+uxFormat 
+uxQuality 
+uxNetwork 
+uxCatNetwork 
+uxText 
+uxsemantic 
+workfow 
+step 
+task 
+kpi 
+transformation 
+score 
+algorythme 
+algolevel 
+algonodeWeight 
+algoNode 
+taskPriority 
+taskSeverity 
+payementvalidationOk 
+pts 
+product 
+stock 
+stockShipping 
+stockWarehouse 
+expeditionCost 
+expeditionReturnCost 
+expeditionVehicle 
+series 
+serialNumber 
+provider 
+price 
+currency 
+offer 
+order 
+bill 
+BillPayment 
+BillPaymentReturnKO 
+BillPaymentReturnOK 
+BillPaymentValidationOK 
+BillPaymentValidationKO 
+expedition ExpeditionReturnOpen 
+ExpeditionReturnClosed 
+ExpeditionPaymentBack 
+BillPaymentBackReturnKO 
+BillPaymentBackReturnOK 
+BillPaymentBackValidationOK 
+package 
+packageProtection   
+scoreNodeMatching       
+scoreNodeMatchingAction
+scoreNodeMatchingPosition
+scoreNodeMatchingTime
+scoreNodeMatching
+scoreNodeMatchingCampaign
+scoreNodeMatchingGraph
+scoreNodeMatchingFilter
+scoreNodeMatchingBusiness
+scoreNodeMatchingLeader
+scoreNodeContent
+scoreNode
+scoreNodeAction
+scoreNodePosition
+scoreNodeTime
+scoreNodeCampaign
+scoreNodeGraph
+scoreNodeFilter
+scoreNodeBusiness
+scoreNodeLeader
+scoreNodeContent
+algorythmeNodeMatching
+algorythmeNodeMatchingAction
+algorythmeNodeMatchingPosition
+algorythmeNodeMatchingTime
+algorythmeNodeMatching
+algorythmeNodeMatchingCampaign
+algorythmeNodeMatchingGraph
+algorythmeNodeMatchingFilter
+algorythmeNodeMatchingBusiness
+algorythmeNodeMatchingLeader
+algorythmeNodeContent
+algorythmeNode
+algorythmeNodeAction
+algorythmeNodePosition
+algorythmeNodeTime
+algorythmeNodeCampaign
+algorythmeNodeGraph
+algorythmeNodeFilter
+algorythmeNodeLeader
+algorythmeNodeBusiness
+algorythmeNodeContent
+scoreNodeMatchingLevelUnknown
+scoreNodeMatchingLevelNothingCommun
+scoreNodeMatchingLevelSameBasics
+scoreNodeMatchingLevelLikeYou
+scoreNodeMatchingLevelSamePriorities
+scoreNodeMatchingLevelSameValues
+scoreNodeMatchingLevelPerfectMatching
+scoreNodeMatchingLevelPerfectCouple
+scoreNodeMatchingLevelSymbiosis
+scoreNodeMatchingLevelClone
+scoreNodeMatchingActionLevelUnknown
+scoreNodeMatchingActionLevelNothingCommun
+scoreNodeMatchingActionLevelSameBasics
+scoreNodeMatchingActionLevelLikeYou
+scoreNodeMatchingActionLevelSamePriorities
+scoreNodeMatchingActionLevelSameValues
+scoreNodeMatchingActionLevelPerfectMatching
+scoreNodeMatchingActionLevelPerfectCouple
+scoreNodeMatchingActionLevelSymbiosis
+scoreNodeMatchingActionLevelClone
+scoreNodeMatchingPosition
+scoreNodeMatchingPositionLevelUnknown
+scoreNodeMatchingPositionLevelNothingCommun
+scoreNodeMatchingPositionLevelSameBasics
+scoreNodeMatchingPositionLevelLikeYou
+scoreNodeMatchingPositionLevelSamePriorities
+scoreNodeMatchingPositionLevelSameValues
+scoreNodeMatchingPositionLevelPerfectMatching
+scoreNodeMatchingPositionLevelPerfectCouple
+scoreNodeMatchingPositionLevelSymbiosis
+scoreNodeMatchingPositionLevelClone
+scoreNodeMatchingTimeLevelUnknown
+scoreNodeMatchingTimeLevelNothingCommun
+scoreNodeMatchingTimeLevelSameBasics
+scoreNodeMatchingTimeLevelLikeYou
+scoreNodeMatchingTimeLevelSamePriorities
+scoreNodeMatchingTimeLevelSameValues
+scoreNodeMatchingTimeLevelPerfectMatching
+scoreNodeMatchingTimeLevelPerfectCouple
+scoreNodeMatchingTimeLevelSymbiosis
+scoreNodeMatchingTimeLevelClone
+scoreNodeMatchingLevelUnknown
+scoreNodeMatchingLevelNothingCommun
+scoreNodeMatchingLevelSameBasics
+scoreNodeMatchingLevelLikeYou
+scoreNodeMatchingLevelSamePriorities
+scoreNodeMatchingLevelSameValues
+scoreNodeMatchingLevelPerfectMatching
+scoreNodeMatchingLevelPerfectCouple
+scoreNodeMatchingLevelSymbiosis
+scoreNodeMatchingLevelClone
+scoreNodeMatchingCampaignLevelUnknown
+scoreNodeMatchingCampaignLevelNothingCommun
+scoreNodeMatchingCampaignLevelSameBasics
+scoreNodeMatchingCampaignLevelLikeYou
+scoreNodeMatchingCampaignLevelSamePriorities
+scoreNodeMatchingCampaignLevelSameValues
+scoreNodeMatchingCampaignLevelPerfectMatching
+scoreNodeMatchingCampaignLevelPerfectCouple
+scoreNodeMatchingCampaignLevelSymbiosis
+scoreNodeMatchingCampaignLevelClone
+scoreNodeMatchingGraphLevelUnknown
+scoreNodeMatchingGraphLevelNothingCommun
+scoreNodeMatchingGraphLevelSameBasics
+scoreNodeMatchingGraphLevelLikeYou
+scoreNodeMatchingGraphLevelSamePriorities
+scoreNodeMatchingGraphLevelSameValues
+scoreNodeMatchingGraphLevelPerfectMatching
+scoreNodeMatchingGraphLevelPerfectCouple
+scoreNodeMatchingGraphLevelSymbiosis
+scoreNodeMatchingGraphLevelClone
+scoreNodeMatchingFilterLevelUnknown
+scoreNodeMatchingFilterLevelNothingCommun
+scoreNodeMatchingFilterLevelSameBasics
+scoreNodeMatchingFilterLevelLikeYou
+scoreNodeMatchingFilterLevelSamePriorities
+scoreNodeMatchingFilterLevelSameValues
+scoreNodeMatchingFilterLevelPerfectMatching
+scoreNodeMatchingFilterLevelPerfectCouple
+scoreNodeMatchingFilterLevelSymbiosis
+scoreNodeMatchingFilterLevelClone
+scoreNodeMatchingBusinessLevelUnknown
+scoreNodeMatchingBusinessLevelNothingCommun
+scoreNodeMatchingBusinessLevelSameBasics
+scoreNodeMatchingBusinessLevelLikeYou
+scoreNodeMatchingBusinessLevelSamePriorities
+scoreNodeMatchingBusinessLevelSameValues
+scoreNodeMatchingBusinessLevelPerfectMatching
+scoreNodeMatchingBusinessLevelPerfectCouple
+scoreNodeMatchingBusinessLevelSymbiosis
+scoreNodeMatchingBusinessLevelClone
+scoreNodeMatchingLeaderLevelUnknown
+scoreNodeMatchingLeaderLevelNothingCommun
+scoreNodeMatchingLeaderLevelSameBasics
+scoreNodeMatchingLeaderLevelLikeYou
+scoreNodeMatchingLeaderLevelSamePriorities
+scoreNodeMatchingLeaderLevelSameValues
+scoreNodeMatchingLeaderLevelPerfectMatching
+scoreNodeMatchingLeaderLevelPerfectCouple
+scoreNodeMatchingLeaderLevelSymbiosis
+scoreNodeMatchingLeaderLevelClone
+scoreNodeContentLevelNotIntersted
+scoreNodeContentLevelIIintersted
+scoreNodeContentLevelAPlus
+scoreNodeContentLevelInterestConfirmed
+scoreNodeContentLevelMajorValue
+scoreNodeContentLevelExpert
+scoreNodeContentLevelFan
+scoreNodeContentLevelAddict
+scoreNodeContentLevelHero
+scoreNodeLevelNotIntersted
+scoreNodeLevelIIintersted
+scoreNodeLevelAPlus
+scoreNodeLevelInterestConfirmed
+scoreNodeLevelMajorValue
+scoreNodeLevelExpert
+scoreNodeLevelFan
+scoreNodeLevelAddict
+scoreNodeLevelHero
+scoreNodeActionLevelNotIntersted
+scoreNodeActionLevelIIintersted
+scoreNodeActionLevelAPlus
+scoreNodeActionLevelInterestConfirmed
+scoreNodeActionLevelMajorValue
+scoreNodeActionLevelExpert
+scoreNodeActionLevelFan
+scoreNodeActionLevelAddict
+scoreNodeActionLevelHero
+scoreNodePositionLevelNotIntersted
+scoreNodePositionLevelIIintersted
+scoreNodePositionLevelAPlus
+scoreNodePositionLevelInterestConfirmed
+scoreNodePositionLevelMajorValue
+scoreNodePositionLevelExpert
+scoreNodePositionLevelFan
+scoreNodePositionLevelAddict
+scoreNodePositionLevelHero
+scoreNodeTimeLevelNotIntersted
+scoreNodeTimeLevelIIintersted 
+scoreNodeTimeLevelAPlus
+scoreNodeTimeLevelInterestConfirmed
+scoreNodeTimeLevelMajorValue
+scoreNodeTimeLevelExpert
+scoreNodeTimeLevelFan
+scoreNodeTimeLevelAddict
+scoreNodeTimeLevelHero
+scoreNodeCampaignLevelNotIntersted
+scoreNodeCampaignLevelIIintersted
+scoreNodeCampaignLevelAPlus
+scoreNodeCampaignLevelInterestConfirmed
+scoreNodeCampaignLevelMajorValue
+scoreNodeCampaignLevelExpert
+scoreNodeCampaignLevelFan
+scoreNodeCampaignLevelAddict
+scoreNodeCampaignLevelHero
+scoreNodeGraphLevelNotIntersted
+scoreNodeGraphLevelIIintersted
+scoreNodeGraphLevelAPlus
+scoreNodeGraphLevelInterestConfirmed
+scoreNodeGraphLevelMajorValue
+scoreNodeGraphLevelExpert
+scoreNodeGraphLevelFan
+scoreNodeGraphLevelAddict
+scoreNodeGraphLevelHero
+scoreNodeFilterLevelNotIntersted
+scoreNodeFilterLevelIIintersted
+scoreNodeFilterLevelAPlus
+scoreNodeFilterLevelInterestConfirmed
+scoreNodeFilterLevelMajorValue
+scoreNodeFilterLevelExpert
+scoreNodeFilterLevelFan
+scoreNodeFilterLevelAddict
+scoreNodeFilterLevelHero
+scoreNodeBusinessLevelNotIntersted
+scoreNodeBusinessLevelIIintersted
+scoreNodeBusinessLevelAPlus
+scoreNodeBusinessLevelInterestConfirmed
+scoreNodeBusinessLevelMajorValue
+scoreNodeBusinessLevelExpert
+scoreNodeBusinessLevelFan
+scoreNodeBusinessLevelAddict
+scoreNodeBusinessLevelHero
+scoreNodeLeaderLevelNotIntersted
+scoreNodeLeaderLevelIIintersted
+scoreNodeLeaderLevelAPlus
+scoreNodeLeaderLevelInterestConfirmed
+scoreNodeLeaderLevelMajorValue
+scoreNodeLeaderLevelExpert
+scoreNodeLeaderLevelFan
+scoreNodeLeaderLevelAddict
+scoreNodeLeaderLevelHero
+scoreNodeContentLevelNotIntersted
+scoreNodeContentLevelIIintersted
+scoreNodeContentLevelAPlus
+scoreNodeContentLevelInterestConfirmed
+scoreNodeContentLevelMajorValue
+scoreNodeContentLevelExpert
+scoreNodeContentLevelFan
+scoreNodeContentLevelAddict
+scoreNodeContentLevelHero
+    scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelNothingCommunSticker
+scoreNodeMatchingLevelSameBasicsSticker
+scoreNodeMatchingLevelLikeYouSticker
+scoreNodeMatchingLevelSamePrioritiesSticker
+scoreNodeMatchingLevelSameValuesSticker
+scoreNodeMatchingLevelPerfectMatchingSticker
+scoreNodeMatchingLevelPerfectCoupleSticker
+scoreNodeMatchingLevelSymbiosisSticker
+scoreNodeMatchingLevelCloneSticker
+scoreNodeMatchingActionLevelUnknownSticker
+scoreNodeMatchingActionLevelNothingCommunSticker
+scoreNodeMatchingActionLevelSameBasicsSticker
+scoreNodeMatchingActionLevelLikeYouSticker
+scoreNodeMatchingActionLevelSamePrioritiesSticker
+scoreNodeMatchingActionLevelSameValuesSticker
+scoreNodeMatchingActionLevelPerfectMatchingSticker
+scoreNodeMatchingActionLevelPerfectCoupleSticker
+scoreNodeMatchingActionLevelSymbiosisSticker
+scoreNodeMatchingActionLevelCloneSticker
+scoreNodeMatchingPositionSticker
+scoreNodeMatchingPositionLevelUnknownSticker
+scoreNodeMatchingPositionLevelNothingCommunSticker
+scoreNodeMatchingPositionLevelSameBasicsSticker
+scoreNodeMatchingPositionLevelLikeYouSticker
+scoreNodeMatchingPositionLevelSamePrioritiesSticker
+scoreNodeMatchingPositionLevelSameValuesSticker
+scoreNodeMatchingPositionLevelPerfectMatchingSticker
+scoreNodeMatchingPositionLevelPerfectCoupleSticker
+scoreNodeMatchingPositionLevelSymbiosisSticker
+scoreNodeMatchingPositionLevelCloneSticker
+scoreNodeMatchingTimeLevelUnknownSticker
+scoreNodeMatchingTimeLevelNothingCommunSticker
+scoreNodeMatchingTimeLevelSameBasicsSticker
+scoreNodeMatchingTimeLevelLikeYouSticker
+scoreNodeMatchingTimeLevelSamePrioritiesSticker
+scoreNodeMatchingTimeLevelSameValuesSticker
+scoreNodeMatchingTimeLevelPerfectMatchingSticker
+scoreNodeMatchingTimeLevelPerfectCoupleSticker
+scoreNodeMatchingTimeLevelSymbiosisSticker
+scoreNodeMatchingTimeLevelCloneSticker
+scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelNothingCommunSticker
+scoreNodeMatchingLevelSameBasicsSticker
+scoreNodeMatchingLevelLikeYouSticker
+scoreNodeMatchingLevelSamePrioritiesSticker
+scoreNodeMatchingLevelSameValuesSticker
+scoreNodeMatchingLevelPerfectMatchingSticker
+scoreNodeMatchingLevelPerfectCoupleSticker
+scoreNodeMatchingLevelSymbiosisSticker
+scoreNodeMatchingLevelCloneSticker
+scoreNodeMatchingCampaignLevelUnknownSticker
+scoreNodeMatchingCampaignLevelNothingCommunSticker
+scoreNodeMatchingCampaignLevelSameBasicsSticker
+scoreNodeMatchingCampaignLevelLikeYouSticker
+scoreNodeMatchingCampaignLevelSamePrioritiesSticker
+scoreNodeMatchingCampaignLevelSameValuesSticker
+scoreNodeMatchingCampaignLevelPerfectMatchingSticker
+scoreNodeMatchingCampaignLevelPerfectCoupleSticker
+scoreNodeMatchingCampaignLevelSymbiosisSticker
+scoreNodeMatchingCampaignLevelCloneSticker
+scoreNodeMatchingGraphLevelUnknownSticker
+scoreNodeMatchingGraphLevelNothingCommunSticker
+scoreNodeMatchingGraphLevelSameBasicsSticker
+scoreNodeMatchingGraphLevelLikeYouSticker
+scoreNodeMatchingGraphLevelSamePrioritiesSticker
+scoreNodeMatchingGraphLevelSameValuesSticker
+scoreNodeMatchingGraphLevelPerfectMatchingSticker
+scoreNodeMatchingGraphLevelPerfectCoupleSticker
+scoreNodeMatchingGraphLevelSymbiosisSticker
+scoreNodeMatchingGraphLevelCloneSticker
+scoreNodeMatchingFilterLevelUnknownSticker
+scoreNodeMatchingFilterLevelNothingCommunSticker
+scoreNodeMatchingFilterLevelSameBasicsSticker
+scoreNodeMatchingFilterLevelLikeYouSticker
+scoreNodeMatchingFilterLevelSamePrioritiesSticker
+scoreNodeMatchingFilterLevelSameValuesSticker
+scoreNodeMatchingFilterLevelPerfectMatchingSticker
+scoreNodeMatchingFilterLevelPerfectCoupleSticker
+scoreNodeMatchingFilterLevelSymbiosisSticker
+scoreNodeMatchingFilterLevelCloneSticker
+scoreNodeMatchingBusinessLevelUnknownSticker
+scoreNodeMatchingBusinessLevelNothingCommunSticker
+scoreNodeMatchingBusinessLevelSameBasicsSticker
+scoreNodeMatchingBusinessLevelLikeYouSticker
+scoreNodeMatchingBusinessLevelSamePrioritiesSticker
+scoreNodeMatchingBusinessLevelSameValuesSticker
+scoreNodeMatchingBusinessLevelPerfectMatchingSticker
+scoreNodeMatchingBusinessLevelPerfectCoupleSticker
+scoreNodeMatchingBusinessLevelSymbiosisSticker
+scoreNodeMatchingBusinessLevelCloneSticker
+scoreNodeMatchingLeaderLevelUnknownSticker
+scoreNodeMatchingLeaderLevelNothingCommunSticker
+scoreNodeMatchingLeaderLevelSameBasicsSticker
+scoreNodeMatchingLeaderLevelLikeYouSticker
+scoreNodeMatchingLeaderLevelSamePrioritiesSticker
+scoreNodeMatchingLeaderLevelSameValuesSticker
+scoreNodeMatchingLeaderLevelPerfectMatchingSticker
+scoreNodeMatchingLeaderLevelPerfectCoupleSticker
+scoreNodeMatchingLeaderLevelSymbiosisSticker
+scoreNodeMatchingLeaderLevelCloneSticker
+scoreNodeContentLevelNotInterstedSticker
+scoreNodeContentLevelIIinterstedSticker
+scoreNodeContentLevelAPlusSticker
+scoreNodeContentLevelInterestConfirmedSticker
+scoreNodeContentLevelMajorValueSticker
+scoreNodeContentLevelExpertSticker
+scoreNodeContentLevelFanSticker
+scoreNodeContentLevelAddictSticker
+scoreNodeContentLevelHeroSticker
+scoreNodeLevelNotInterstedSticker
+scoreNodeLevelIIinterstedSticker
+scoreNodeLevelAPlusSticker
+scoreNodeLevelInterestConfirmedSticker
+scoreNodeLevelMajorValueSticker
+scoreNodeLevelExpertSticker
+scoreNodeLevelFanSticker
+scoreNodeLevelAddictSticker
+scoreNodeLevelHeroSticker
+scoreNodeActionLevelNotInterstedSticker
+scoreNodeActionLevelIIinterstedSticker
+scoreNodeActionLevelAPlusSticker
+scoreNodeActionLevelInterestConfirmedSticker
+scoreNodeActionLevelMajorValueSticker
+scoreNodeActionLevelExpertSticker
+scoreNodeActionLevelFanSticker
+scoreNodeActionLevelAddictSticker
+scoreNodeActionLevelHeroSticker
+scoreNodePositionLevelNotInterstedSticker
+scoreNodePositionLevelIIinterstedSticker
+scoreNodePositionLevelAPlusSticker
+scoreNodePositionLevelInterestConfirmedSticker
+scoreNodePositionLevelMajorValueSticker
+scoreNodePositionLevelExpertSticker
+scoreNodePositionLevelFanSticker
+scoreNodePositionLevelAddictSticker
+scoreNodePositionLevelHeroSticker
+scoreNodeTimeLevelNotInterstedSticker
+scoreNodeTimeLevelIIinterstedSticker 
+scoreNodeTimeLevelAPlusSticker
+scoreNodeTimeLevelInterestConfirmedSticker
+scoreNodeTimeLevelMajorValueSticker
+scoreNodeTimeLevelExpertSticker
+scoreNodeTimeLevelFanSticker
+scoreNodeTimeLevelAddictSticker
+scoreNodeTimeLevelHeroSticker
+scoreNodeCampaignLevelNotInterstedSticker
+scoreNodeCampaignLevelIIinterstedSticker
+scoreNodeCampaignLevelAPlusSticker
+scoreNodeCampaignLevelInterestConfirmedSticker
+scoreNodeCampaignLevelMajorValueSticker
+scoreNodeCampaignLevelExpertSticker
+scoreNodeCampaignLevelFanSticker
+scoreNodeCampaignLevelAddictSticker
+scoreNodeCampaignLevelHeroSticker
+scoreNodeGraphLevelNotInterstedSticker
+scoreNodeGraphLevelIIinterstedSticker
+scoreNodeGraphLevelAPlusSticker
+scoreNodeGraphLevelInterestConfirmedSticker
+scoreNodeGraphLevelMajorValueSticker
+scoreNodeGraphLevelExpertSticker
+scoreNodeGraphLevelFanSticker
+scoreNodeGraphLevelAddictSticker
+scoreNodeGraphLevelHeroSticker
+scoreNodeFilterLevelNotInterstedSticker
+scoreNodeFilterLevelIIinterstedSticker
+scoreNodeFilterLevelAPlusSticker
+scoreNodeFilterLevelInterestConfirmedSticker
+scoreNodeFilterLevelMajorValueSticker
+scoreNodeFilterLevelExpertSticker
+scoreNodeFilterLevelFanSticker
+scoreNodeFilterLevelAddictSticker
+scoreNodeFilterLevelHeroSticker
+scoreNodeBusinessLevelNotInterstedSticker
+scoreNodeBusinessLevelIIinterstedSticker
+scoreNodeBusinessLevelAPlusSticker
+scoreNodeBusinessLevelInterestConfirmedSticker
+scoreNodeBusinessLevelMajorValueSticker
+scoreNodeBusinessLevelExpertSticker
+scoreNodeBusinessLevelFanSticker
+scoreNodeBusinessLevelAddictSticker
+scoreNodeBusinessLevelHeroSticker
+scoreNodeLeaderLevelNotInterstedSticker
+scoreNodeLeaderLevelIIinterstedSticker
+scoreNodeLeaderLevelAPlusSticker
+scoreNodeLeaderLevelInterestConfirmedSticker
+scoreNodeLeaderLevelMajorValueSticker
+scoreNodeLeaderLevelExpertSticker
+scoreNodeLeaderLevelFanSticker
+scoreNodeLeaderLevelAddictSticker
+scoreNodeLeaderLevelHeroSticker
+scoreNodeContentLevelNotInterstedSticker
+scoreNodeContentLevelIIinterstedSticker
+scoreNodeContentLevelAPlusSticker
+scoreNodeContentLevelInterestConfirmedSticker
+scoreNodeContentLevelMajorValueSticker
+scoreNodeContentLevelExpertSticker
+scoreNodeContentLevelFanSticker
+scoreNodeContentLevelAddictSticker
+scoreNodeContentLevelHeroSticker
+algorythmeNodeMatchingSticker
+algorythmeNodeMatchingActionSticker
+algorythmeNodeMatchingPositionSticker
+algorythmeNodeMatchingTimeSticker
+algorythmeNodeMatchingSticker
+algorythmeNodeMatchingCampaignSticker
+algorythmeNodeMatchingGraphSticker
+algorythmeNodeMatchingFilterSticker
+algorythmeNodeMatchingBusinessSticker
+algorythmeNodeMatchingLeaderSticker
+algorythmeNodeContentSticker
+algorythmeNodeSticker
+algorythmeNodeActionSticker
+algorythmeNodePositionSticker
+algorythmeNodeTimeSticker
+algorythmeNodeCampaignSticker
+algorythmeNodeGraphSticker
+algorythmeNodeFilterSticker
+algorythmeNodeBusinessSticker
+algorythmeNodeLeaderSticker
+algorythmeNodeContentSticker"
+uxCenterAlgorythm
+uxCenterAlgorythmPrevAction
+uxCenterAlgorythmNextActionAction
+uxCenterAlgorythmAddAction
+uxCenterAlgorythmItem
+uxCenterAlgorythmSticker
+uxCenterAlgorythmDetail
+uxCenterAlgorythmRead
+uxCenterAlgorythmWrite
+uxCenterAlgorythmDelete
+uxCenterAlgorythmStickerAction
+uxCenterAlgorythmDetailAction
+uxCenterAlgorythmReadAction
+uxCenterAlgorythmWriteAction
+uxCenterAlgorythmDeleteAction
+ uxCenterScore
+uxCenterScorePrevAction
+uxCenterScoreNextActionAction
+uxCenterScoreAddAction
+uxCenterScoreItem
+uxCenterScoreSticker
+uxCenterScoreDetail
+uxCenterScoreRead
+uxCenterScoreWrite
+uxCenterScoreDelete
+uxCenterScoreStickerAction
+uxCenterScoreDetailAction
+uxCenterScoreReadAction
+uxCenterScoreWriteAction
+uxCenterScoreDeleteAction
+errorCode500-101
+errorCode500-001
+errorCode200-101
+errorCode200-001
+errorCode200-201
+errorCode200-401
+errorCode200-301
+errorCode000-001
+envDev
+envDevErrorLevelWarning
+envDevErrorLevelFatal
+envDevErrorLevelNotice
+envDevErrorLevelInfo
+envDevErrorLevelStart
+envDevErrorLevelEnd
+envDevErrorLevelEndOK
+envDevErrorLevelEndValue
+envDevErrorLevelStartParam
+envPreprod
+envPreprodErrorLevelWarning
+envPreprodErrorLevelFatal
+envPreprodErrorLevelNotice
+envPreprodErrorLevelInfo
+envPreprodErrorLevelStart
+envPreprodErrorLevelEndOK
+envPreprodErrorLevelEndValue
+envPreprodErrorLevelStartParam
+envProd
+envProductionErrorLevelWarning
+envProductionErrorLevelFatal
+envProductionErrorLevelNotice
+envProductionErrorLevelInfo
+envProductionErrorLevelStart
+envProductionErrorLevelEndOK
+envProductionErrorLevelEndValue
+envProductionErrorLevelStartParam
+resourceUx
+resourceHuman
+resourceMaterial
+resourceLocation
+resourceService
+resourcelegal
+resourceAdministrative
+resourceOtherAsset
+semanticCorpusThemeDefault
+semanticCorpusDefault
+semanticWordDefault
+    
 {
-  "sessionTtl": 1296000,
   "timeZone": "UTC",
   "graphDatabase": {
     "host": "localhost",
@@ -9,440 +613,450 @@
     "password": ""
   },
   "envName": "dev",
-  "envList": {
-    "dev": {
-      "errorLevelList": {
-        "warning": {
-          "errorLevel": "2",
-          "httpCode": "500",
-          "funcReturn": false,
-          "exit": true,
-          "traceFile": true,
-          "traceStdout": true,
-          "logFull": true
-        },
-        "fatal": {
-          "errorLevel": "3",
-          "httpCode": "500",
-          "funcReturn": false,
-          "exit": true,
-          "traceFile": true,
-          "traceStdout": true,
-          "logFull": true
-        },
-        "notice": {
-          "errorLevel": "1",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": true,
-          "logFull": true
-        },
-        "info": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "start": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "end": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "endOK": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "endValue": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": "value",
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "startParam": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        }
-      }
-    },
-    "preProduction": {
-      "errorLevelList": {
-        "warning": {
-          "errorLevel": "2",
-          "httpCode": "500",
-          "funcReturn": false,
-          "exit": true,
-          "traceFile": true,
-          "traceStdout": true,
-          "logFull": true
-        },
-        "fatal": {
-          "errorLevel": "3",
-          "httpCode": "500",
-          "funcReturn": false,
-          "exit": true,
-          "traceFile": true,
-          "traceStdout": true,
-          "logFull": true
-        },
-        "notice": {
-          "errorLevel": "1",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": true,
-          "logFull": true
-        },
-        "info": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "start": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "endOK": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "endValue": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": "value",
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "startParam": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        }
-      }
-    },
-    "production": {
-      "errorLevelList": {
-        "warning": {
-          "errorLevel": "2",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": false
-        },
-        "fatal": {
-          "errorLevel": "3",
-          "httpCode": "500",
-          "funcReturn": false,
-          "exit": true,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "notice": {
-          "errorLevel": "1",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": false,
-          "traceStdout": false,
-          "logFull": false
-        },
-        "info": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": false,
-          "traceStdout": false,
-          "logFull": false
-        },
-        "start": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": false,
-          "traceStdout": false,
-          "logFull": false
-        },
-        "endOK": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "endValue": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": "value",
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        },
-        "startParam": {
-          "errorLevel": "0",
-          "httpCode": "200",
-          "funcReturn": true,
-          "exit": false,
-          "traceFile": true,
-          "traceStdout": false,
-          "logFull": true
-        }
-      }
-    }
-  },
-  "errorCodeList": {
-    "500-001": {
-      "errorLevel": "fatal",
-      "description": {
-        "major": {
-          "code": "500",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "error"
-          }
-        },
-        "secondary": {
-          "code": "001",
-          "short": {
-            "msg": "fatal"
-          },
-          "full": {
-            "msg": "__INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 5
-    },
-    "500-101": {
-      "errorLevel": "warning",
-      "description": {
-        "major": {
-          "code": "500",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "error"
-          }
-        },
-        "secondary": {
-          "code": "101",
-          "short": {
-            "msg": "warning"
-          },
-          "full": {
-            "msg": "__INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 5
-    },
-    "200-101": {
-      "errorLevel": "notice",
-      "description": {
-        "major": {
-          "code": "200",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "notification"
-          }
-        },
-        "secondary": {
-          "code": "101",
-          "short": {
-            "msg": "notice"
-          },
-          "full": {
-            "msg": "__INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 1
-    },
-    "200-001": {
-      "errorLevel": "info",
-      "description": {
-        "major": {
-          "code": "200",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "notification"
-          }
-        },
-        "secondary": {
-          "code": "001",
-          "short": {
-            "msg": "info"
-          },
-          "full": {
-            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 0
-    },
-    "200-201": {
-      "errorLevel": "start",
-      "description": {
-        "major": {
-          "code": "200",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "notification"
-          }
-        },
-        "secondary": {
-          "code": "201",
-          "short": {
-            "msg": "start"
-          },
-          "full": {
-            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 0
-    },
-    "200-401": {
-      "errorLevel": "startParam",
-      "description": {
-        "major": {
-          "code": "200",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "notification"
-          }
-        },
-        "secondary": {
-          "code": "201",
-          "short": {
-            "msg": "start param"
-          },
-          "full": {
-            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 0
-    },
-    "200-301": {
-      "errorLevel": "endOK",
-      "description": {
-        "major": {
-          "code": "200",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "notification"
-          }
-        },
-        "secondary": {
-          "code": "301",
-          "short": {
-            "msg": "endOK"
-          },
-          "full": {
-            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 0
-    },
-    "000-001": {
-      "errorLevel": "endValue",
-      "description": {
-        "major": {
-          "code": "200",
-          "short": {
-            "msg": "system"
-          },
-          "full": {
-            "msg": "notification"
-          }
-        },
-        "secondary": {
-          "code": "301",
-          "short": {
-            "msg": "endOK"
-          },
-          "full": {
-            "msg": "__METHOD__ __CLASS__ __INSTANCE__"
-          }
-        }
-      },
-      "securityLevel": 0
-    }
-  },
   "nodeList": {
+    "errorCode500-101": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "fatal",
+        "securityLevel": 5,
+        "majorCode": "500",
+        "majorShortMsg": "system",
+        "majorFullMsg": "error",
+        "secondaryCode": "001",
+        "secondaryShortMsg": "fatal",
+        "secondaryFullMsg": "__INSTANCE__"
+      }
+    },
+    "errorCode500-001": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "warning",
+        "securityLevel": 5,
+        "majorCode": "500",
+        "majorShortMsg": "system",
+        "majorFullMsg": "error",
+        "secondaryCode": "001",
+        "secondaryShortMsg": "warning",
+        "secondaryFullMsg": "__INSTANCE__"
+      }
+    },
+    "errorCode200-101": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "notice",
+        "securityLevel": 1,
+        "majorCode": "200",
+        "majorShortMsg": "system",
+        "majorFullMsg": "notification",
+        "secondaryCode": "101",
+        "secondaryShortMsg": "notice",
+        "secondaryFullMsg": "__INSTANCE__"
+      }
+    },
+    "errorCode200-001": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "start",
+        "securityLevel": 0,
+        "majorCode": "200",
+        "majorShortMsg": "system",
+        "majorFullMsg": "notification",
+        "secondaryCode": "001",
+        "secondaryShortMsg": "info",
+        "secondaryFullMsg": "__METHOD__ __CLASS__ __INSTANCE__"
+      }
+    },
+    "errorCode200-201": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "start",
+        "securityLevel": 0,
+        "majorCode": "200",
+        "majorShortMsg": "system",
+        "majorFullMsg": "notification",
+        "secondaryCode": "201",
+        "secondaryShortMsg": "start",
+        "secondaryFullMsg": "__METHOD__ __CLASS__ __INSTANCE__"
+      }
+    },
+    "errorCode200-401": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "startParam",
+        "securityLevel": 0,
+        "majorCode": "200",
+        "majorShortMsg": "system",
+        "majorFullMsg": "notification",
+        "secondaryCode": "401",
+        "secondaryShortMsg": "start param",
+        "secondaryFullMsg": "__METHOD__ __CLASS__ __INSTANCE__"
+      }
+    },
+    "errorCode200-301": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "endOK",
+        "securityLevel": 0,
+        "majorCode": "200",
+        "majorShortMsg": "system",
+        "majorFullMsg": "notification",
+        "secondaryCode": "301",
+        "secondaryShortMsg": "endOK",
+        "secondaryFullMsg": "__METHOD__ __CLASS__ __INSTANCE__"
+      }
+    },
+    "errorCode000-001": {
+      "label": "errorCode",
+      "onCreateSetList": {
+        "errorLevel": "endValue",
+        "securityLevel": 0,
+        "majorCode": "200",
+        "majorShortMsg": "system",
+        "majorFullMsg": "notification",
+        "secondaryCode": "301",
+        "secondaryShortMsg": "endOK",
+        "secondaryFullMsg": "__METHOD__ __CLASS__ __INSTANCE__"
+      }
+    },
+    "envDev": {
+      "label": "Environment"
+    },
+    "envDevErrorLevelWarning": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "2",
+        "httpCode": "500",
+        "funcReturn": false,
+        "exit": true,
+        "traceFile": true,
+        "traceStdout": true,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelFatal": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "3",
+        "httpCode": "500",
+        "funcReturn": false,
+        "exit": true,
+        "traceFile": true,
+        "traceStdout": true,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelNotice": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "1",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": true,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelInfo": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelStart": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelEnd": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelEndOK": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelEndValue": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": "value",
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envDevErrorLevelStartParam": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envPreprod": {
+      "label": "Environment"
+    },
+    "envPreprodErrorLevelWarning": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "2",
+        "httpCode": "500",
+        "funcReturn": false,
+        "exit": true,
+        "traceFile": true,
+        "traceStdout": true,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelFatal": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "3",
+        "httpCode": "500",
+        "funcReturn": false,
+        "exit": true,
+        "traceFile": true,
+        "traceStdout": true,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelNotice": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "1",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": true,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelInfo": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelStart": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelEndOK": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelEndValue": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": "value",
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envPreprodErrorLevelStartParam": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envProd": {
+      "label": "Environment"
+    },
+    "envProductionErrorLevelWarning": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "2",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": false
+      }
+    },
+    "envProductionErrorLevelFatal": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "3",
+        "httpCode": "500",
+        "funcReturn": false,
+        "exit": true,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envProductionErrorLevelNotice": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "1",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": false,
+        "traceStdout": false,
+        "logFull": false
+      }
+    },
+    "envProductionErrorLevelInfo": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": false,
+        "traceStdout": false,
+        "logFull": false
+      }
+    },
+    "envProductionErrorLevelStart": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": false,
+        "traceStdout": false,
+        "logFull": false
+      }
+    },
+    "envProductionErrorLevelEndOK": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envProductionErrorLevelEndValue": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": "value",
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "envProductionErrorLevelStartParam": {
+      "label": "ErrorLevel",
+      "onCreateSetList": {
+        "errorLevel": "0",
+        "httpCode": "200",
+        "funcReturn": true,
+        "exit": false,
+        "traceFile": true,
+        "traceStdout": false,
+        "logFull": true
+      }
+    },
+    "resourceUx": {
+      "label": "Resource",
+      "onCreateSetList": {
+        "urlPath": "img",
+        "urlName": "logo",
+        "urlExt": ".png",
+        "crc": ""
+      }
+    },
+    "resourceHuman": {
+      "label": "Resource"
+    },
+    "resourceMaterial": {
+      "label": "Resource"
+    },
+    "resourceLocation": {
+      "label": "Resource"
+    },
+    "resourceService": {
+      "label": "Resource"
+    },
+    "resourcelegal": {
+      "label": "Resource"
+    },
+    "resourceAdministrative": {
+      "label": "Resource"
+    },
+    "resourceOtherAsset": {
+      "label": "Resource"
+    },
     "tagInstall": {
       "label": "Tag",
       "uidHash": [
@@ -451,14 +1065,6 @@
     },
     "t": {
       "label": "time",
-      "uidHash": [
-        "time",
-        "e"
-      ],
-      "indexList": [
-        "time",
-        "e"
-      ],
       "onCreateSetList": {
         "time": "t_time",
         "u": "t_u",
@@ -469,13 +1075,7 @@
       }
     },
     "tdy": {
-      "label": "TimeDayYear",
-      "uidHash": [
-        "name"
-      ],
-      "onCreateSetList": {
-        "version": "0.0"
-      }
+      "label": "TimeDayYear"
     },
     "tY": {
       "label": "TimeYear"
@@ -617,7 +1217,10 @@
         "SERVER_SERVER_PATH",
         "SERVER_SERVER_SOFTWARE",
         "SERVER_SERVER_SIGNATURE",
-        "SERVER_CONTEXT_DOCUMENT_ROOT"
+        "SERVER_CONTEXT_DOCUMENT_ROOT",
+        "hostpublic1",
+        "hostfront1",
+        "hostfront2"
       ],
       "onCreateSetList": {
         "SERVER_PATH": "hApp_SERVER_PATH",
@@ -638,7 +1241,10 @@
         "SERVER_SERVER_SOFTWARE": "hApp_SERVER_SERVER_SOFTWARE",
         "SERVER_SERVER_SIGNATURE": "hApp_SERVER_SERVER_SIGNATURE",
         "SERVER_CONTEXT_DOCUMENT_ROOT": "hApp_SERVER_CONTEXT_DOCUMENT_ROOT",
-        "SERVER_SystemRoot": "hApp_SERVER_SystemRoot"
+        "SERVER_SystemRoot": "hApp_SERVER_SystemRoot",
+        "hostpublic1": "",
+        "hostfront1": "",
+        "hostfront2": ""
       }
     },
     "env": {
@@ -840,7 +1446,7 @@
         "all": true,
         "parentProfilNameSame": true,
         "inChilds": true
-      }        
+      }
     },
     "corp": {
       "label": "Corporation"
@@ -978,7 +1584,11 @@
         "pagename": "locCorp_pagename",
         "pagename_gmaps": "locCorp_pagenameGmaps",
         "geoa1": "locCorp_geoa1",
-        "lang": "locCorp_lang"
+        "lang": "locCorp_lang",
+        "code": "fr",
+        "locale": "Europe/Paris",
+        "charset": "utf-8",
+        "moneyUnit": "euro"
       }
     },
     "locTeam": {
@@ -1046,7 +1656,11 @@
         "pagename": "locTeam_pagename",
         "pagename_gmaps": "locTeam_pagenameGmaps",
         "geoa1": "locTeam_geoa1",
-        "lang": "locTeam_lang"
+        "lang": "locTeam_lang",
+        "code": "fr",
+        "locale": "Europe/Paris",
+        "charset": "utf-8",
+        "moneyUnit": "euro"
       }
     },
     "locPers": {
@@ -1114,11 +1728,84 @@
         "pagename": "locPers_pagename",
         "pagename_gmaps": "locPers_pagenameGmaps",
         "geoa1": "locPers_geoa1",
-        "lang": "locPers_lang"
+        "lang": "locPers_lang",
+        "code": "fr",
+        "locale": "Europe/Paris",
+        "charset": "utf-8",
+        "moneyUnit": "euro"
       }
     },
-    "r": {
-      "label": "Right"
+    "rRead": {
+      "label": "Right",
+      "onCreateSetList": {
+        "read": true
+      }
+    },
+    "rAdd": {
+      "label": "Right",
+      "onCreateSetList": {
+        "add": true
+      }
+    },
+    "rWrite": {
+      "label": "Right",
+      "onCreateSetList": {
+        "write": true
+      }
+    },
+    "rDelete": {
+      "label": "Right",
+      "onCreateSetList": {
+        "delete": true
+      }
+    },
+    "rDetail": {
+      "label": "Right",
+      "onCreateSetList": {
+        "detail": true
+      }
+    },
+    "rSkick": {
+      "label": "Right",
+      "onCreateSetList": {
+        "stick": true
+      }
+    },
+    "rNext": {
+      "label": "Right",
+      "onCreateSetList": {
+        "next": true
+      }
+    },
+    "rPrec": {
+      "label": "Right",
+      "onCreateSetList": {
+        "prec": true
+      }
+    },
+    "rAction": {
+      "label": "Right",
+      "onCreateSetList": {
+        "action": true
+      }
+    },
+    "rEmotion": {
+      "label": "Right",
+      "onCreateSetList": {
+        "emotion": true
+      }
+    },
+    "rAlgo": {
+      "label": "Right",
+      "onCreateSetList": {
+        "Algo": true
+      }
+    },
+    "segmentEarlyAll": {
+      "label": "Segment"
+    },
+    "segmentFanAll": {
+      "label": "Segment"
     },
     "docA": {
       "label": "documentToApply",
@@ -2552,8 +3239,6 @@
     "uxHeaderToolBarEmotionDeleteAction": {
       "label": "uxAction"
     },
-    
-    
     "uxCenterAlgorythm": {
       "label": "uxPosition"
     },
@@ -2599,8 +3284,7 @@
     "uxCenterAlgorythmDeleteAction": {
       "label": "uxAction"
     },
-    
-        "uxCenterScore": {
+    "uxCenterScore": {
       "label": "uxPosition"
     },
     "uxCenterScorePrevAction": {
@@ -2645,9 +3329,6 @@
     "uxCenterScoreDeleteAction": {
       "label": "uxAction"
     },
-    
-    
-    
     "uxSectionRight": {
       "label": "uxPosition"
     },
@@ -3105,10 +3786,55 @@
     "uxResource": {
       "label": "UxResource"
     },
-    "uxFormat": {
+    "uxFormatNormal": {
       "label": "UxFormat"
     },
-    "uxQuality": {
+    "uxFormatFull": {
+      "label": "UxFormat"
+    },
+    "uxFormatBig": {
+      "label": "UxFormat"
+    },
+    "uxFormatSmall": {
+      "label": "UxFormat"
+    },
+    "uxFormatLogo": {
+      "label": "UxFormat"
+    },
+    "uxFormatBanner1": {
+      "label": "UxFormat"
+    },
+    "uxFormatAction": {
+      "label": "UxFormat"
+    },
+    "uxFormatAvatar": {
+      "label": "UxFormat"
+    },
+    "uxFormatIco": {
+      "label": "UxFormat"
+    },
+    "uxFormatLeft": {
+      "label": "UxFormat"
+    },
+    "uxFormatRight": {
+      "label": "UxFormat"
+    },
+    "uxFormatCenter": {
+      "label": "UxFormat"
+    },
+    "uxFormatHead": {
+      "label": "UxFormat"
+    },
+    "uxFormatFoot": {
+      "label": "UxFormat"
+    },
+    "uxQualityHight": {
+      "label": "UxQuality"
+    },
+    "uxQualityOptimised": {
+      "label": "UxQuality"
+    },
+    "uxQualityLow": {
       "label": "UxQuality"
     },
     "uxNetwork": {
@@ -3118,18 +3844,45 @@
       "label": "UxCatNetwork"
     },
     "uxText": {
-      "label": "UxText",
       "label": "UserSocialProfil"
     },
-    "semanticDefault": {
+    "semanticCorpusThemeDefault": {
       "label": "Semantic",
       "onCreateSetList": {
-        "textName": "",
-        "cssList": [],
-        "value": "",
         "cleanNonSenseWordList": [],
         "acceptNonSenseWordList": [],
-        "weight": 2,
+        "countMaxtimePerPass": 50,
+        "includeEachWordSeparate": true,
+        "includeEachWordTogether": false,
+        "includeOnlyWithList": [],
+        "includeOnlyWithoutList": [],
+        "excludeEachWordSeparate": true,
+        "excludeEachWordTogether": false,
+        "excludeOnlyWithList": [],
+        "excludeOnlyWithoutList": []
+      }
+    },
+    "semanticCorpusDefault": {
+      "label": "Semantic",
+      "onCreateSetList": {
+        "cleanNonSenseWordList": [],
+        "acceptNonSenseWordList": [],
+        "countMaxtimePerPass": 50,
+        "includeEachWordSeparate": true,
+        "includeEachWordTogether": false,
+        "includeOnlyWithList": [],
+        "includeOnlyWithoutList": [],
+        "excludeEachWordSeparate": true,
+        "excludeEachWordTogether": false,
+        "excludeOnlyWithList": [],
+        "excludeOnlyWithoutList": []
+      }
+    },
+    "semanticWordDefault": {
+      "label": "Semantic",
+      "onCreateSetList": {
+        "cleanNonSenseWordList": [],
+        "acceptNonSenseWordList": [],
         "countMaxtimePerPass": 50,
         "includeEachWordSeparate": true,
         "includeEachWordTogether": false,
@@ -3159,1733 +3912,1664 @@
     "scoreNodeMatching": {
       "label": "ScoreNodeMatching"
     },
-    
-      "scoreNodeMatchingLevelUnknown": {
+    "scoreNodeMatchingLevelUnknown": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
-            "level": 1,
-            "min": 0,
-            "max": 10
-        }
-        }
-      },
-      "scoreNodeMatchingLevelNothingCommun": {
+      "onCreateSetList": {
+        "level": 1,
+        "min": 0,
+        "max": 10
+      }
+    },
+    "scoreNodeMatchingLevelNothingCommun": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 2,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelSameBasics": {
+      }
+    },
+    "scoreNodeMatchingLevelSameBasics": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 3,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelLikeYou": {
+      }
+    },
+    "scoreNodeMatchingLevelLikeYou": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 4,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelSamePriorities": {
+      }
+    },
+    "scoreNodeMatchingLevelSamePriorities": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 5,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelSameValues": {
+      }
+    },
+    "scoreNodeMatchingLevelSameValues": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 6,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelPerfectMatching": {
+      }
+    },
+    "scoreNodeMatchingLevelPerfectMatching": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 7,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelPerfectCouple": {
+      }
+    },
+    "scoreNodeMatchingLevelPerfectCouple": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 8,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelSymbiosis": {
+      }
+    },
+    "scoreNodeMatchingLevelSymbiosis": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 9,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingLevelClone": {
+      }
+    },
+    "scoreNodeMatchingLevelClone": {
       "label": "ScoreNodeMatchingLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 10,
         "min": 0,
         "max": 10
-        }
-      },
-      
-
+      }
+    },
     "scoreNodeMatchingAction": {
       "label": "ScoreNodeMatchingAction"
     },
-    
     "scoreNodeMatchingActionLevelUnknown": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 1,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelNothingCommun": {
+      }
+    },
+    "scoreNodeMatchingActionLevelNothingCommun": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 2,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelSameBasics": {
+      }
+    },
+    "scoreNodeMatchingActionLevelSameBasics": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 3,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelLikeYou": {
+      }
+    },
+    "scoreNodeMatchingActionLevelLikeYou": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 4,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelSamePriorities": {
+      }
+    },
+    "scoreNodeMatchingActionLevelSamePriorities": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 5,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelSameValues": {
+      }
+    },
+    "scoreNodeMatchingActionLevelSameValues": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 6,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelPerfectMatching": {
+      }
+    },
+    "scoreNodeMatchingActionLevelPerfectMatching": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 7,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelPerfectCouple": {
+      }
+    },
+    "scoreNodeMatchingActionLevelPerfectCouple": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 8,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelSymbiosis": {
+      }
+    },
+    "scoreNodeMatchingActionLevelSymbiosis": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 9,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingActionLevelClone": {
+      }
+    },
+    "scoreNodeMatchingActionLevelClone": {
       "label": "ScoreNodeMatchingActionLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 10,
         "min": 0,
         "max": 10
-        }
-      },
-    
-    "scoreNodeMatchingPosition": {
-      "label": "ScoreNodeMatchingPosition",
+      }
     },
-    
+    "scoreNodeMatchingPosition": {
+      "label": "ScoreNodeMatchingPosition"
+    },
     "scoreNodeMatchingPositionLevelUnknown": {
       "label": "ScoreNodeMatchingPositionlevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 1,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingPositionLevelNothingCommun": {
+      }
+    },
+    "scoreNodeMatchingPositionLevelNothingCommun": {
       "label": "ScoreNodeMatchingPositionlevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 2,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingPositionLevelSameBasics": {
+      }
+    },
+    "scoreNodeMatchingPositionLevelSameBasics": {
       "label": "ScoreNodeMatchingPositionlevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 3,
         "min": 0,
         "max": 10
-        }
-      },
-      "scoreNodeMatchingPositionLevelLikeYou": {
+      }
+    },
+    "scoreNodeMatchingPositionLevelLikeYou": {
       "label": "ScoreNodeMatchingPositionlevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 4,
         "min": 0,
         "max": 10
       },
       "scoreNodeMatchingPositionLevelSamePriorities": {
-      "label": "ScoreNodeMatchingPositionlevel",
+        "label": "ScoreNodeMatchingPositionlevel",
         "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
+          "level": 5,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingPositionLevelSameValues": {
-      "label": "ScoreNodeMatchingPositionlevel",
+        "label": "ScoreNodeMatchingPositionlevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
+          "level": 6,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingPositionLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingPositionlevel",
+        "label": "ScoreNodeMatchingPositionlevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
+          "level": 7,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingPositionLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingPositionlevel",
+        "label": "ScoreNodeMatchingPositionlevel",
         "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
+          "level": 8,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingPositionLevelSymbiosis": {
-      "label": "ScoreNodeMatchingPositionlevel",
+        "label": "ScoreNodeMatchingPositionlevel",
         "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
+          "level": 9,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingPositionLevelClone": {
-      "label": "ScoreNodeMatchingPositionlevel",
+        "label": "ScoreNodeMatchingPositionlevel",
         "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
+          "level": 10,
+          "min": 0,
+          "max": 10
         }
       },
-      
-    "scoreNodeMatchingTime": {
-      "label": "ScoreNodeMatchingTime"
-    },
-    
-    "scoreNodeMatchingTimeLevelUnknown": {
-      "label": "ScoreNodeMatchingTimeLevel"
+      "scoreNodeMatchingTime": {
+        "label": "ScoreNodeMatchingTime"
+      },
+      "scoreNodeMatchingTimeLevelUnknown": {
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
+          "level": 1,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelNothingCommun": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
+          "level": 2,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelSameBasics": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
+          "level": 3,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelLikeYou": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
+          "level": 4,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelSamePriorities": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
+          "level": 5,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelSameValues": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
+          "level": 6,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
+          "level": 7,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
+          "level": 8,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelSymbiosis": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
+          "level": 9,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingTimeLevelClone": {
-      "label": "ScoreNodeMatchingTimeLevel"
+        "label": "ScoreNodeMatchingTimeLevel",
         "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
+          "level": 10,
+          "min": 0,
+          "max": 10
         }
       },
-      
-    "scoreNodeMatching": {
-      "label": "ScoreNodeMatching"
-    },
-    
-    "scoreNodeMatchingLevelUnknown": {
-      "label": "ScoreNodeMatchingLevel"
+      "scoreNodeMatching": {
+        "label": "ScoreNodeMatching"
+      },
+      "scoreNodeMatchingLevelUnknown": {
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
+          "level": 1,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelNothingCommun": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
+          "level": 2,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelSameBasics": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
+          "level": 3,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelLikeYou": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
+          "level": 4,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelSamePriorities": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
+          "level": 5,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelSameValues": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
+          "level": 6,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
+          "level": 7,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
+          "level": 8,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelSymbiosis": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
+          "level": 9,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingLevelClone": {
-      "label": "ScoreNodeMatchingLevel"
+        "label": "ScoreNodeMatchingLevel",
         "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
+          "level": 10,
+          "min": 0,
+          "max": 10
         }
       },
-      
-    "scoreNodeMatchingCampaign": {
-      "label": "ScoreNodeMatchingCampaign"
-    },
-    
-    "scoreNodeMatchingCampaignLevelUnknown": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+      "scoreNodeMatchingCampaign": {
+        "label": "ScoreNodeMatchingCampaign"
+      },
+      "scoreNodeMatchingCampaignLevelUnknown": {
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
+          "level": 1,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelNothingCommun": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
+          "level": 2,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelSameBasics": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
+          "level": 3,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelLikeYou": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
+          "level": 4,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelSamePriorities": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
+          "level": 5,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelSameValues": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
+          "level": 6,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
+          "level": 7,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
+          "level": 8,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelSymbiosis": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
+          "level": 9,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingCampaignLevelClone": {
-      "label": "ScoreNodeMatchingCampaignLevel"
+        "label": "ScoreNodeMatchingCampaignLevel",
         "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
+          "level": 10,
+          "min": 0,
+          "max": 10
         }
       },
-      
-    "scoreNodeMatchingGraph": {
-      "label": "ScoreNodeMatchingGraph"
-    },
-    
-    "scoreNodeMatchingGraphLevelUnknown": {
-      "label": "ScoreNodeMatchingGraphLevel",
+      "scoreNodeMatchingGraph": {
+        "label": "ScoreNodeMatchingGraph"
+      },
+      "scoreNodeMatchingGraphLevelUnknown": {
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
-      }
+          "level": 1,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelNothingCommun": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
+          "level": 2,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeMatchingGraphLevelSameBasics": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
+          "level": 3,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelLikeYou": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
+          "level": 4,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelSamePriorities": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
+          "level": 5,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelSameValues": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
+          "level": 6,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
+          "level": 7,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
+          "level": 8,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelSymbiosis": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
+          "level": 9,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingGraphLevelClone": {
-      "label": "ScoreNodeMatchingGraphLevel",
+        "label": "ScoreNodeMatchingGraphLevel",
         "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
+          "level": 10,
+          "min": 0,
+          "max": 10
+        }
       },
-      
-    "scoreNodeMatchingFilter": {
-      "label": "ScoreNodeMatchingFilter"
-    },
-    
-    "scoreNodeMatchingFilterLevelUnknown": {
-      "label": "ScoreNodeMatchingFilterLevel",
+      "scoreNodeMatchingFilter": {
+        "label": "ScoreNodeMatchingFilter"
+      },
+      "scoreNodeMatchingFilterLevelUnknown": {
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
-      }
+          "level": 1,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelNothingCommun": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
+          "level": 2,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelSameBasics": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
+          "level": 3,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelLikeYou": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
+          "level": 4,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelSamePriorities": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
+          "level": 5,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelSameValues": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
+          "level": 6,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
+          "level": 7,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
+          "level": 8,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelSymbiosis": {
-      "label": "ScoreNodeMatchingFilterLevel",
+        "label": "ScoreNodeMatchingFilterLevel",
         "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
+          "level": 9,
+          "min": 0,
+          "max": 10
+        }
       },
       "scoreNodeMatchingFilterLevelClone": {
-      "label": "ScoreNodeMatchingFilterLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-    "scoreNodeMatchingBusiness": {
-      "label": "ScoreNodeMatchingBusiness"
-    },
-    
-    "scoreNodeMatchingBusinessLevelUnknown": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelNothingCommun": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelSameBasics": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelLikeYou": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelSamePriorities": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelSameValues": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelSymbiosis": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingBusinessLevelClone": {
-      "label": "ScoreNodeMatchingBusinessLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-    "scoreNodeMatchingLeader": {
-      "label": "ScoreNodeMatchingLeader"
-    },
-    
-    "scoreNodeMatchingLeaderLevelUnknown": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 1,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelNothingCommun": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelSameBasics": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelLikeYou": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelSamePriorities": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelSameValues": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelPerfectMatching": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelPerfectCouple": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelSymbiosis": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeMatchingLeaderLevelClone": {
-      "label": "ScoreNodeMatchingLeaderLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-    "scoreNodeContent": {
-      "label": "ScoreNodeContent"
-    },    
-    
-    
-      "scoreNodeContentLevelNotIntersted": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelIIintersted": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelAPlus": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelInterestConfirmed": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelMajorValue": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelExpert": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelFan": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelAddict": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeContentLevelHero": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-    
-    "scoreNode": {
-      "label": "ScoreMatching"
-    },
-    
-    
-      "scoreNodeLevelNotIntersted": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelIIintersted": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelAPlus": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelInterestConfirmed": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelMajorValue": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelExpert": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelFan": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelAddict": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLevelHero": {
-      "label": "ScoreNodeLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-    "scoreNodeAction": {
-      "label": "ScoreNodeAction"
-    },
-    
-    
-      "scoreNodeActionLevelNotIntersted": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelIIintersted": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelAPlus": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelInterestConfirmed": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelMajorValue": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelExpert": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelFan": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelAddict": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeActionLevelHero": {
-      "label": "ScoreNodeActionLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodePosition": {
-      "label": "ScoreNodePosition"
-    },
-    
-    
-      "scoreNodePositionLevelNotIntersted": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelIIintersted": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelAPlus": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelInterestConfirmed": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelMajorValue": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelExpert": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelFan": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelAddict": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodePositionLevelHero": {
-      "label": "ScoreNodePositionLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodeTime": {
-      "label": "ScoreNodeTime"
-    },
-    
-    
-      "scoreNodeTimeLevelNotIntersted": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelIIintersted": { 
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelAPlus": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelInterestConfirmed": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelMajorValue": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelExpert": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelFan": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelAddict": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeTimeLevelHero": {
-      "label": "ScoreNodeTimeLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodeCampaign": {
-      "label": "ScoreNodeCampaign"
-    },
-    
-    
-      "scoreNodeCampaignLevelNotIntersted": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeCampaignLevelIIintersted": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeCampaignLevelAPlus": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeCampaignLevelInterestConfirmed": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
+        "label": "ScoreNodeMatchingFilterLevel",
+        "onCreateSetList": {
+          "level": 10,
+          "min": 0,
+          "max": 10
+        },
+        "scoreNodeMatchingBusiness": {
+          "label": "ScoreNodeMatchingBusiness"
+        },
+        "scoreNodeMatchingBusinessLevelUnknown": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 1,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelNothingCommun": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelSameBasics": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelLikeYou": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelSamePriorities": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelSameValues": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelPerfectMatching": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelPerfectCouple": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelSymbiosis": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingBusinessLevelClone": {
+          "label": "ScoreNodeMatchingBusinessLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeader": {
+          "label": "ScoreNodeMatchingLeader"
+        },
+        "scoreNodeMatchingLeaderLevelUnknown": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 1,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelNothingCommun": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelSameBasics": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelLikeYou": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelSamePriorities": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelSameValues": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelPerfectMatching": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelPerfectCouple": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelSymbiosis": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeMatchingLeaderLevelClone": {
+          "label": "ScoreNodeMatchingLeaderLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContent": {
+          "label": "ScoreNodeContent"
+        },
+        "scoreNodeContentLevelNotIntersted": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelIIintersted": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelAPlus": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelInterestConfirmed": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelMajorValue": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelExpert": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelFan": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelAddict": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeContentLevelHero": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNode": {
+          "label": "ScoreMatching"
+        },
+        "scoreNodeLevelNotIntersted": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelIIintersted": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelAPlus": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelInterestConfirmed": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelMajorValue": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelExpert": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelFan": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelAddict": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLevelHero": {
+          "label": "ScoreNodeLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeAction": {
+          "label": "ScoreNodeAction"
+        },
+        "scoreNodeActionLevelNotIntersted": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelIIintersted": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelAPlus": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelInterestConfirmed": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelMajorValue": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelExpert": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelFan": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelAddict": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeActionLevelHero": {
+          "label": "ScoreNodeActionLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePosition": {
+          "label": "ScoreNodePosition"
+        },
+        "scoreNodePositionLevelNotIntersted": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelIIintersted": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelAPlus": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelInterestConfirmed": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelMajorValue": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelExpert": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelFan": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelAddict": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodePositionLevelHero": {
+          "label": "ScoreNodePositionLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTime": {
+          "label": "ScoreNodeTime"
+        },
+        "scoreNodeTimeLevelNotIntersted": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelIIintersted": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelAPlus": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelInterestConfirmed": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelMajorValue": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelExpert": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelFan": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelAddict": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeTimeLevelHero": {
+          "label": "ScoreNodeTimeLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeCampaign": {
+          "label": "ScoreNodeCampaign"
+        },
+        "scoreNodeCampaignLevelNotIntersted": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeCampaignLevelIIintersted": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeCampaignLevelAPlus": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeCampaignLevelInterestConfirmed": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
         }
-      }
       },
       "scoreNodeCampaignLevelMajorValue": {
-      "label": "ScoreNodeCampaignLevel",
+        "label": "ScoreNodeCampaignLevel",
         "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
+          "level": 6,
+          "min": 0,
+          "max": 10
         }
       },
       "scoreNodeCampaignLevelExpert": {
-      "label": "ScoreNodeCampaignLevel",
+        "label": "ScoreNodeCampaignLevel",
         "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      },
-      "scoreNodeCampaignLevelFan": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeCampaignLevelAddict": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeCampaignLevelHero": {
-      "label": "ScoreNodeCampaignLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodeGraph": {
-      "label": "ScoreNodeGraph"
-    },
-    
-    
-      "scoreNodeGraphLevelNotIntersted": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelIIintersted": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelAPlus": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelInterestConfirmed": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelMajorValue": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelExpert": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelFan": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelAddict": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeGraphLevelHero": {
-      "label": "ScoreNodeGraphLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodeFilter": {
-      "label": "ScoreNodeFilter"
-    },
-    
-    
-      "scoreNodeFilterLevelNotIntersted": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelIIintersted": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelAPlus": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
+          "level": 7,
+          "min": 0,
+          "max": 10
+        },
+        "scoreNodeCampaignLevelFan": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeCampaignLevelAddict": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeCampaignLevelHero": {
+          "label": "ScoreNodeCampaignLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraph": {
+          "label": "ScoreNodeGraph"
+        },
+        "scoreNodeGraphLevelNotIntersted": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelIIintersted": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelAPlus": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelInterestConfirmed": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelMajorValue": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelExpert": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelFan": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelAddict": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeGraphLevelHero": {
+          "label": "ScoreNodeGraphLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilter": {
+          "label": "ScoreNodeFilter"
+        },
+        "scoreNodeFilterLevelNotIntersted": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelIIintersted": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelAPlus": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelInterestConfirmed": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelMajorValue": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelExpert": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelFan": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelAddict": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeFilterLevelHero": {
+          "label": "ScoreNodeFilterLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusiness": {
+          "label": "ScoreNodeBusiness"
+        },
+        "scoreNodeBusinessLevelNotIntersted": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelIIintersted": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelAPlus": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelInterestConfirmed": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelMajorValue": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelExpert": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelFan": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelAddict": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeBusinessLevelHero": {
+          "label": "ScoreNodeBusinessLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeader": {
+          "label": "ScoreNodeLeader"
+        },
+        "scoreNodeLeaderLevelNotIntersted": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelIIintersted": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 3,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelAPlus": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 4,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelInterestConfirmed": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 5,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelMajorValue": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 6,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelExpert": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 7,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelFan": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 8,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelAddict": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 9,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "scoreNodeLeaderLevelHero": {
+          "label": "ScoreNodeLeaderLevel",
+          "onCreateSetList": {
+            "level": 10,
+            "min": 0,
+            "max": 10
+          }
+        },
+        "batchScore": {
+          "label": "batch"
+        },
+        "batchExpire": {
+          "label": "batch"
+        },
+        "scoreNodeContent": {
+          "label": "ScoreNodeContent"
+        },
+        "scoreNodeContentLevelNotIntersted": {
+          "label": "ScoreNodeContentLevel",
+          "onCreateSetList": {
+            "level": 2,
+            "min": 0,
+            "max": 10
+          }
         }
-      },
-      "scoreNodeFilterLevelInterestConfirmed": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelMajorValue": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelExpert": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelFan": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelAddict": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeFilterLevelHero": {
-      "label": "ScoreNodeFilterLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-    "scoreNodeBusiness": {
-      "label": "ScoreNodeBusiness"
-    },
-    
-    
-      "scoreNodeBusinessLevelNotIntersted": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelIIintersted": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelAPlus": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelInterestConfirmed": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelMajorValue": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelExpert": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelFan": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelAddict": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeBusinessLevelHero": {
-      "label": "ScoreNodeBusinessLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodeLeader": {
-      "label": "ScoreNodeLeader"
-    },
-    
-    
-      "scoreNodeLeaderLevelNotIntersted": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelIIintersted": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelAPlus": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 4,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelInterestConfirmed": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 5,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelMajorValue": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 6,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelExpert": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 7,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelFan": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 8,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelAddict": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 9,
-        "min": 0,
-        "max": 10
-      }
-      },
-      "scoreNodeLeaderLevelHero": {
-      "label": "ScoreNodeLeaderLevel",
-        "onCreateSetList": {
-        "level": 10,
-        "min": 0,
-        "max": 10
-      }
-      },
-      
-      
-      
-    "scoreNodeContent": {
-      "label": "ScoreNodeContent"
-    },    
-    
-    
-      "scoreNodeContentLevelNotIntersted": {
-      "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
-        "level": 2,
-        "min": 0,
-        "max": 10
-        }
-      }
       },
       "scoreNodeContentLevelIIintersted": {
-      "label": "ScoreNodeContentLevel",
+        "label": "ScoreNodeContentLevel",
         "onCreateSetList": {
-        "level": 3,
-        "min": 0,
-        "max": 10
+          "level": 3,
+          "min": 0,
+          "max": 10
         }
       }
-      },
-      "scoreNodeContentLevelAPlus": {
+    },
+    "scoreNodeContentLevelAPlus": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 4,
         "min": 0,
         "max": 10
       }
-      },
-      "scoreNodeContentLevelInterestConfirmed": {
+    },
+    "scoreNodeContentLevelInterestConfirmed": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 5,
         "min": 0,
         "max": 10
       }
-      },
-      "scoreNodeContentLevelMajorValue": {
+    },
+    "scoreNodeContentLevelMajorValue": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 6,
         "min": 0,
         "max": 10
       }
-      },
-      "scoreNodeContentLevelExpert": {
+    },
+    "scoreNodeContentLevelExpert": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 7,
         "min": 0,
         "max": 10
       }
-      },
-      "scoreNodeContentLevelFan": {
+    },
+    "scoreNodeContentLevelFan": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 8,
         "min": 0,
         "max": 10
       }
-      },
-      "scoreNodeContentLevelAddict": {
+    },
+    "scoreNodeContentLevelAddict": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 9,
         "min": 0,
         "max": 10
       }
-      },
-      "scoreNodeContentLevelHero": {
+    },
+    "scoreNodeContentLevelHero": {
       "label": "ScoreNodeContentLevel",
-        "onCreateSetList": {
+      "onCreateSetList": {
         "level": 10,
         "min": 0,
         "max": 10
       }
-      },
-      
-      
-      
+    },
     "algorythmeNodeMatching": {
       "label": "AlgorythmeNodeMatching",
       "onCreateSetList": {
@@ -4904,7 +5588,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingAction": {
       "label": "AlgorythmeNodeMatchingAction",
@@ -4924,7 +5608,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingPosition": {
       "label": "AlgorythmeNodeMatchingPosition",
@@ -4944,7 +5628,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingTime": {
       "label": "AlgorythmeNodeMatchingTime",
@@ -4964,27 +5648,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
-    },
-    "algorythmeNodeMatching": {
-      "label": "AlgorythmeNodeMatching",
-      "onCreateSetList": {
-        "valueMin": 0,
-        "valueMAx": 100,
-        "valueError": 0,
-        "valueDefault": 1,
-        "operationXList": "",
-        "operationYList": "",
-        "operationZList": "",
-        "operationOtherList": "",
-        "operationXY": "",
-        "operationXYWeight": "",
-        "operationXYZOther": "",
-        "xList": [],
-        "yList": [],
-        "weightList": [],
-        "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingCampaign": {
       "label": "AlgorythmeNodeMatchingCampaign",
@@ -5004,7 +5668,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingGraph": {
       "label": "AlgorythmeNodeMatchingGraph",
@@ -5024,7 +5688,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingFilter": {
       "label": "AlgorythmeNodeMatchingFilter",
@@ -5044,7 +5708,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingBusiness": {
       "label": "AlgorythmeNodeMatchingBusiness",
@@ -5064,7 +5728,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeMatchingLeader": {
       "label": "AlgorythmeNodeMatchingLeader",
@@ -5084,7 +5748,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeContent": {
       "label": "AlgorythmeNodeContent",
@@ -5104,8 +5768,8 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
-    },    
+      }
+    },
     "algorythmeNode": {
       "label": "AlgorythmeNode",
       "onCreateSetList": {
@@ -5124,7 +5788,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeAction": {
       "label": "AlgorythmeNodeAction",
@@ -5144,7 +5808,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodePosition": {
       "label": "AlgorythmeNodePosition",
@@ -5164,7 +5828,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeTime": {
       "label": "AlgorythmeNodeTime",
@@ -5184,7 +5848,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeCampaign": {
       "label": "AlgorythmeNodeCampaign",
@@ -5204,7 +5868,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeGraph": {
       "label": "AlgorythmeNodeGraph",
@@ -5224,7 +5888,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeFilter": {
       "label": "AlgorythmeNodeFilter",
@@ -5244,7 +5908,7 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-        }
+      }
     },
     "algorythmeNodeBusiness": {
       "label": "AlgorythmeNodeBusiness",
@@ -5264,692 +5928,613 @@
         "yList": [],
         "weightList": [],
         "otherList": {}
-    },
-    "algorythmeNodeLeader": {
-      "label": "AlgorythmeNodeLeader",
-      "onCreateSetList": {
-        "valueMin": 0,
-        "valueMAx": 100,
-        "valueError": 0,
-        "valueDefault": 1,
-        "operationXList": "",
-        "operationYList": "",
-        "operationZList": "",
-        "operationOtherList": "",
-        "operationXY": "",
-        "operationXYWeight": "",
-        "operationXYZOther": "",
-        "xList": [],
-        "yList": [],
-        "weightList": [],
-        "otherList": {}
-    },
-    "algorythmeNodeContent": {
-      "label": "AlgorythmeNodeContent",
-      "onCreateSetList": {
-        "valueMin": 0,
-        "valueMAx": 100,
-        "valueError": 0,
-        "valueDefault": 1,
-        "operationXList": "",
-        "operationYList": "",
-        "operationZList": "",
-        "operationOtherList": "",
-        "operationXY": "",
-        "operationXYWeight": "",
-        "operationXYZOther": "",
-        "xList": [],
-        "yList": [],
-        "weightList": [],
-        "otherList": {}
-      }
-    },
-    
-    "scoreNodeMatchingLevelUnknownSticker": {
-      "label": "Sticker"
       },
-      "scoreNodeMatchingLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelCloneSticker": {
-      "label": "Sticker"
-      },
-      
-
-    
-    "scoreNodeMatchingActionLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingActionLevelCloneSticker": {
-      "label": "Sticker"
-      },
-    
-    "scoreNodeMatchingPositionSticker": {
-      "label": "Sticker"
-    },
-    
-    "scoreNodeMatchingPositionLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingPositionLevelCloneSticker": {
-      "label": "Sticker"
-      },
-      
-    
-    "scoreNodeMatchingTimeLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingTimeLevelCloneSticker": {
-      "label": "Sticker"
-      },
-
-    
-    "scoreNodeMatchingLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLevelCloneSticker": {
-      "label": "Sticker"
-      },
-      
-    
-    "scoreNodeMatchingCampaignLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingCampaignLevelCloneSticker": {
-      "label": "Sticker"
-      },
-
-    
-    "scoreNodeMatchingGraphLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingGraphLevelCloneSticker": {
-      "label": "Sticker"
-      },
-
-    
-    "scoreNodeMatchingFilterLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingFilterLevelCloneSticker": {
-      "label": "Sticker"
-      },
-    
-    "scoreNodeMatchingBusinessLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingBusinessLevelCloneSticker": {
-      "label": "Sticker"
-      },
-
-    "scoreNodeMatchingLeaderLevelUnknownSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelNothingCommunSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelSameBasicsSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelLikeYouSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelSamePrioritiesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelSameValuesSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelPerfectMatchingSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelPerfectCoupleSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelSymbiosisSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeMatchingLeaderLevelCloneSticker": {
-      "label": "Sticker"
-      },
-
-    
-      "scoreNodeContentLevelNotInterstedSticker": {
-      "label": "Sticker"
+      "algorythmeNodeLeader": {
+        "label": "AlgorythmeNodeLeader",
+        "onCreateSetList": {
+          "valueMin": 0,
+          "valueMAx": 100,
+          "valueError": 0,
+          "valueDefault": 1,
+          "operationXList": "",
+          "operationYList": "",
+          "operationZList": "",
+          "operationOtherList": "",
+          "operationXY": "",
+          "operationXYWeight": "",
+          "operationXYZOther": "",
+          "xList": [],
+          "yList": [],
+          "weightList": [],
+          "otherList": {}
+        },
+        "algorythmeNodeContent": {
+          "label": "AlgorythmeNodeContent",
+          "onCreateSetList": {
+            "valueMin": 0,
+            "valueMAx": 100,
+            "valueError": 0,
+            "valueDefault": 1,
+            "operationXList": "",
+            "operationYList": "",
+            "operationZList": "",
+            "operationOtherList": "",
+            "operationXY": "",
+            "operationXYWeight": "",
+            "operationXYZOther": "",
+            "xList": [],
+            "yList": [],
+            "weightList": [],
+            "otherList": {}
+          }
+        },
+        "scoreNodeMatchingLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingActionLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingPositionLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingTimeLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingCampaignLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingGraphLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingFilterLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingBusinessLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelUnknownSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelNothingCommunSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelSameBasicsSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelLikeYouSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelSamePrioritiesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelSameValuesSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelPerfectMatchingSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelPerfectCoupleSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelSymbiosisSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeMatchingLeaderLevelCloneSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeContentLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeActionLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodePositionLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeTimeLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeCampaignLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeGraphLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeFilterLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeBusinessLevelHeroSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelNotInterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelIIinterstedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelAPlusSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelInterestConfirmedSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelMajorValueSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelExpertSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelFanSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelAddictSticker": {
+          "label": "Sticker"
+        },
+        "scoreNodeLeaderLevelHeroSticker": {
+          "label": "Sticker"
+        }
       },
       "scoreNodeContentLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelHeroSticker": {
-      "label": "Sticker"
-      },
-      
-
-    
-      "scoreNodeLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLevelHeroSticker": {
-      "label": "Sticker"
-      },
-
-    
-      "scoreNodeActionLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeActionLevelHeroSticker": {
-      "label": "Sticker"
-      },
-      
- 
-    
-    
-      "scoreNodePositionLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodePositionLevelHeroSticker": {
-      "label": "Sticker"
-      },
-
-    
-      "scoreNodeTimeLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelIIinterstedSticker": { 
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeTimeLevelHeroSticker": {
-      "label": "Sticker"
-      },
-      
-    
-      "scoreNodeCampaignLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeCampaignLevelHeroSticker": {
-      "label": "Sticker"
-      },
-    
-      "scoreNodeGraphLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeGraphLevelHeroSticker": {
-      "label": "Sticker"
-      },
-      
-    
-    
-      "scoreNodeFilterLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeFilterLevelHeroSticker": {
-      "label": "Sticker"
-      },
-
-    
-      "scoreNodeBusinessLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeBusinessLevelHeroSticker": {
-      "label": "Sticker"
-      },
-      
-    
-      "scoreNodeLeaderLevelNotInterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelIIinterstedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelAPlusSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelInterestConfirmedSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelMajorValueSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelExpertSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelFanSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeLeaderLevelHeroSticker": {
-      "label": "Sticker"
-      },
-
-      "scoreNodeContentLevelNotInterstedSticker": {
-      "label": "Sticker"
+        "label": "Sticker"
       }
-      },
-      "scoreNodeContentLevelIIinterstedSticker": {
+    },
+    "scoreNodeContentLevelAPlusSticker": {
       "label": "Sticker"
-      }
-      },
-      "scoreNodeContentLevelAPlusSticker": {
+    },
+    "scoreNodeContentLevelInterestConfirmedSticker": {
       "label": "Sticker"
-      },
-      "scoreNodeContentLevelInterestConfirmedSticker": {
+    },
+    "scoreNodeContentLevelMajorValueSticker": {
       "label": "Sticker"
-      },
-      "scoreNodeContentLevelMajorValueSticker": {
+    },
+    "scoreNodeContentLevelExpertSticker": {
       "label": "Sticker"
-      },
-      "scoreNodeContentLevelExpertSticker": {
+    },
+    "scoreNodeContentLevelFanSticker": {
       "label": "Sticker"
-      },
-      "scoreNodeContentLevelFanSticker": {
+    },
+    "scoreNodeContentLevelAddictSticker": {
       "label": "Sticker"
-      },
-      "scoreNodeContentLevelAddictSticker": {
-      "label": "Sticker"
-      },
-      "scoreNodeContentLevelHeroSticker": {
-      },
-      
-      
-      
+    },
+    "scoreNodeContentLevelHeroSticker": {},
     "algorythmeNodeMatchingSticker": {
       "label": "Sticker"
     },
@@ -5960,9 +6545,6 @@
       "label": "Sticker"
     },
     "algorythmeNodeMatchingTimeSticker": {
-      "label": "Sticker"
-    },
-    "algorythmeNodeMatchingSticker": {
       "label": "Sticker"
     },
     "algorythmeNodeMatchingCampaignSticker": {
@@ -5982,7 +6564,7 @@
     },
     "algorythmeNodeContentSticker": {
       "label": "Sticker"
-    },    
+    },
     "algorythmeNodeSticker": {
       "label": "Sticker"
     },
@@ -6010,10 +6592,6 @@
     "algorythmeNodeLeaderSticker": {
       "label": "Sticker"
     },
-    "algorythmeNodeContentSticker": {
-      "label": "Sticker"
-    },
-    
     "algoNodeWeight": {
       "label": "AlgonodeWeight"
     },
@@ -6045,7 +6623,7 @@
       "label": "ExpeditionCost"
     },
     "expeditionReturnCost": {
-      "label": "ExpeditionReturnCost"
+      "label": "ExpeditionCost"
     },
     "expeditionVehicle": {
       "label": "ExpeditionVehicle"
@@ -6118,510 +6696,6 @@
     }
   },
   "relationshipList": {
-    "_todo": "user social profil follower visitor lover relay uxMedia uxCatDevicePC uxCatDeviceTablette 
-    uxCatDeviceSmatphone uxCatDeviceIot uxCatDeviceOther uxCatMedia uxCampaign uxSegement uxResource uxFormat 
-    uxQuality uxNetwork uxCatNetwork uxText uxsemantic workfow step task kpi transformation score algorythme 
-    algolevel algonodeWeight algoNode taskPriority taskSeverity payementvalidationOk pts product stock stockShipping 
-    stockWarehouse expeditionCost expeditionReturnCost expeditionVehicle series serialNumber provider price currency 
-    offer order bill BillPayment BillPaymentReturnKO BillPaymentReturnOK BillPaymentValidationOK BillPaymentValidationKO 
-    expedition ExpeditionReturnOpen ExpeditionReturnClosed ExpeditionPaymentBack BillPaymentBackReturnKO 
-    BillPaymentBackReturnOK BillPaymentBackValidationOK package packageProtection   
-    scoreNodeMatching       
-    scoreNodeMatchingAction
-    scoreNodeMatchingPosition
-    scoreNodeMatchingTime
-    scoreNodeMatching
-    scoreNodeMatchingCampaign
-    scoreNodeMatchingGraph
-    scoreNodeMatchingFilter
-    scoreNodeMatchingBusiness
-    scoreNodeMatchingLeader
-    scoreNodeContent
-    scoreNode
-    scoreNodeAction
-    scoreNodePosition
-    scoreNodeTime
-    scoreNodeCampaign
-    scoreNodeGraph
-    scoreNodeFilter
-    scoreNodeBusiness
-    scoreNodeLeader
-    scoreNodeContent
-    algorythmeNodeMatching
-    algorythmeNodeMatchingAction
-    algorythmeNodeMatchingPosition
-    algorythmeNodeMatchingTime
-    algorythmeNodeMatching
-    algorythmeNodeMatchingCampaign
-    algorythmeNodeMatchingGraph
-    algorythmeNodeMatchingFilter
-    algorythmeNodeMatchingBusiness
-    algorythmeNodeMatchingLeader
-    algorythmeNodeContent
-    algorythmeNode
-    algorythmeNodeAction
-    algorythmeNodePosition
-    algorythmeNodeTime
-    algorythmeNodeCampaign
-    algorythmeNodeGraph
-    algorythmeNodeFilter
-    algorythmeNodeLeader
-    algorythmeNodeBusiness
-    algorythmeNodeContent
-    scoreNodeMatchingLevelUnknown
-scoreNodeMatchingLevelNothingCommun
-scoreNodeMatchingLevelSameBasics
-scoreNodeMatchingLevelLikeYou
-scoreNodeMatchingLevelSamePriorities
-scoreNodeMatchingLevelSameValues
-scoreNodeMatchingLevelPerfectMatching
-scoreNodeMatchingLevelPerfectCouple
-scoreNodeMatchingLevelSymbiosis
-scoreNodeMatchingLevelClone
-scoreNodeMatchingActionLevelUnknown
-scoreNodeMatchingActionLevelNothingCommun
-scoreNodeMatchingActionLevelSameBasics
-scoreNodeMatchingActionLevelLikeYou
-scoreNodeMatchingActionLevelSamePriorities
-scoreNodeMatchingActionLevelSameValues
-scoreNodeMatchingActionLevelPerfectMatching
-scoreNodeMatchingActionLevelPerfectCouple
-scoreNodeMatchingActionLevelSymbiosis
-scoreNodeMatchingActionLevelClone
-scoreNodeMatchingPosition
-scoreNodeMatchingPositionLevelUnknown
-scoreNodeMatchingPositionLevelNothingCommun
-scoreNodeMatchingPositionLevelSameBasics
-scoreNodeMatchingPositionLevelLikeYou
-scoreNodeMatchingPositionLevelSamePriorities
-scoreNodeMatchingPositionLevelSameValues
-scoreNodeMatchingPositionLevelPerfectMatching
-scoreNodeMatchingPositionLevelPerfectCouple
-scoreNodeMatchingPositionLevelSymbiosis
-scoreNodeMatchingPositionLevelClone
-scoreNodeMatchingTimeLevelUnknown
-scoreNodeMatchingTimeLevelNothingCommun
-scoreNodeMatchingTimeLevelSameBasics
-scoreNodeMatchingTimeLevelLikeYou
-scoreNodeMatchingTimeLevelSamePriorities
-scoreNodeMatchingTimeLevelSameValues
-scoreNodeMatchingTimeLevelPerfectMatching
-scoreNodeMatchingTimeLevelPerfectCouple
-scoreNodeMatchingTimeLevelSymbiosis
-scoreNodeMatchingTimeLevelClone
-scoreNodeMatchingLevelUnknown
-scoreNodeMatchingLevelNothingCommun
-scoreNodeMatchingLevelSameBasics
-scoreNodeMatchingLevelLikeYou
-scoreNodeMatchingLevelSamePriorities
-scoreNodeMatchingLevelSameValues
-scoreNodeMatchingLevelPerfectMatching
-scoreNodeMatchingLevelPerfectCouple
-scoreNodeMatchingLevelSymbiosis
-scoreNodeMatchingLevelClone
-scoreNodeMatchingCampaignLevelUnknown
-scoreNodeMatchingCampaignLevelNothingCommun
-scoreNodeMatchingCampaignLevelSameBasics
-scoreNodeMatchingCampaignLevelLikeYou
-scoreNodeMatchingCampaignLevelSamePriorities
-scoreNodeMatchingCampaignLevelSameValues
-scoreNodeMatchingCampaignLevelPerfectMatching
-scoreNodeMatchingCampaignLevelPerfectCouple
-scoreNodeMatchingCampaignLevelSymbiosis
-scoreNodeMatchingCampaignLevelClone
-scoreNodeMatchingGraphLevelUnknown
-scoreNodeMatchingGraphLevelNothingCommun
-scoreNodeMatchingGraphLevelSameBasics
-scoreNodeMatchingGraphLevelLikeYou
-scoreNodeMatchingGraphLevelSamePriorities
-scoreNodeMatchingGraphLevelSameValues
-scoreNodeMatchingGraphLevelPerfectMatching
-scoreNodeMatchingGraphLevelPerfectCouple
-scoreNodeMatchingGraphLevelSymbiosis
-scoreNodeMatchingGraphLevelClone
-scoreNodeMatchingFilterLevelUnknown
-scoreNodeMatchingFilterLevelNothingCommun
-scoreNodeMatchingFilterLevelSameBasics
-scoreNodeMatchingFilterLevelLikeYou
-scoreNodeMatchingFilterLevelSamePriorities
-scoreNodeMatchingFilterLevelSameValues
-scoreNodeMatchingFilterLevelPerfectMatching
-scoreNodeMatchingFilterLevelPerfectCouple
-scoreNodeMatchingFilterLevelSymbiosis
-scoreNodeMatchingFilterLevelClone
-scoreNodeMatchingBusinessLevelUnknown
-scoreNodeMatchingBusinessLevelNothingCommun
-scoreNodeMatchingBusinessLevelSameBasics
-scoreNodeMatchingBusinessLevelLikeYou
-scoreNodeMatchingBusinessLevelSamePriorities
-scoreNodeMatchingBusinessLevelSameValues
-scoreNodeMatchingBusinessLevelPerfectMatching
-scoreNodeMatchingBusinessLevelPerfectCouple
-scoreNodeMatchingBusinessLevelSymbiosis
-scoreNodeMatchingBusinessLevelClone
-scoreNodeMatchingLeaderLevelUnknown
-scoreNodeMatchingLeaderLevelNothingCommun
-scoreNodeMatchingLeaderLevelSameBasics
-scoreNodeMatchingLeaderLevelLikeYou
-scoreNodeMatchingLeaderLevelSamePriorities
-scoreNodeMatchingLeaderLevelSameValues
-scoreNodeMatchingLeaderLevelPerfectMatching
-scoreNodeMatchingLeaderLevelPerfectCouple
-scoreNodeMatchingLeaderLevelSymbiosis
-scoreNodeMatchingLeaderLevelClone
-scoreNodeContentLevelNotIntersted
-scoreNodeContentLevelIIintersted
-scoreNodeContentLevelAPlus
-scoreNodeContentLevelInterestConfirmed
-scoreNodeContentLevelMajorValue
-scoreNodeContentLevelExpert
-scoreNodeContentLevelFan
-scoreNodeContentLevelAddict
-scoreNodeContentLevelHero
-scoreNodeLevelNotIntersted
-scoreNodeLevelIIintersted
-scoreNodeLevelAPlus
-scoreNodeLevelInterestConfirmed
-scoreNodeLevelMajorValue
-scoreNodeLevelExpert
-scoreNodeLevelFan
-scoreNodeLevelAddict
-scoreNodeLevelHero
-scoreNodeActionLevelNotIntersted
-scoreNodeActionLevelIIintersted
-scoreNodeActionLevelAPlus
-scoreNodeActionLevelInterestConfirmed
-scoreNodeActionLevelMajorValue
-scoreNodeActionLevelExpert
-scoreNodeActionLevelFan
-scoreNodeActionLevelAddict
-scoreNodeActionLevelHero
-scoreNodePositionLevelNotIntersted
-scoreNodePositionLevelIIintersted
-scoreNodePositionLevelAPlus
-scoreNodePositionLevelInterestConfirmed
-scoreNodePositionLevelMajorValue
-scoreNodePositionLevelExpert
-scoreNodePositionLevelFan
-scoreNodePositionLevelAddict
-scoreNodePositionLevelHero
-scoreNodeTimeLevelNotIntersted
-scoreNodeTimeLevelIIintersted 
-scoreNodeTimeLevelAPlus
-scoreNodeTimeLevelInterestConfirmed
-scoreNodeTimeLevelMajorValue
-scoreNodeTimeLevelExpert
-scoreNodeTimeLevelFan
-scoreNodeTimeLevelAddict
-scoreNodeTimeLevelHero
-scoreNodeCampaignLevelNotIntersted
-scoreNodeCampaignLevelIIintersted
-scoreNodeCampaignLevelAPlus
-scoreNodeCampaignLevelInterestConfirmed
-scoreNodeCampaignLevelMajorValue
-scoreNodeCampaignLevelExpert
-scoreNodeCampaignLevelFan
-scoreNodeCampaignLevelAddict
-scoreNodeCampaignLevelHero
-scoreNodeGraphLevelNotIntersted
-scoreNodeGraphLevelIIintersted
-scoreNodeGraphLevelAPlus
-scoreNodeGraphLevelInterestConfirmed
-scoreNodeGraphLevelMajorValue
-scoreNodeGraphLevelExpert
-scoreNodeGraphLevelFan
-scoreNodeGraphLevelAddict
-scoreNodeGraphLevelHero
-scoreNodeFilterLevelNotIntersted
-scoreNodeFilterLevelIIintersted
-scoreNodeFilterLevelAPlus
-scoreNodeFilterLevelInterestConfirmed
-scoreNodeFilterLevelMajorValue
-scoreNodeFilterLevelExpert
-scoreNodeFilterLevelFan
-scoreNodeFilterLevelAddict
-scoreNodeFilterLevelHero
-scoreNodeBusinessLevelNotIntersted
-scoreNodeBusinessLevelIIintersted
-scoreNodeBusinessLevelAPlus
-scoreNodeBusinessLevelInterestConfirmed
-scoreNodeBusinessLevelMajorValue
-scoreNodeBusinessLevelExpert
-scoreNodeBusinessLevelFan
-scoreNodeBusinessLevelAddict
-scoreNodeBusinessLevelHero
-scoreNodeLeaderLevelNotIntersted
-scoreNodeLeaderLevelIIintersted
-scoreNodeLeaderLevelAPlus
-scoreNodeLeaderLevelInterestConfirmed
-scoreNodeLeaderLevelMajorValue
-scoreNodeLeaderLevelExpert
-scoreNodeLeaderLevelFan
-scoreNodeLeaderLevelAddict
-scoreNodeLeaderLevelHero
-scoreNodeContentLevelNotIntersted
-scoreNodeContentLevelIIintersted
-scoreNodeContentLevelAPlus
-scoreNodeContentLevelInterestConfirmed
-scoreNodeContentLevelMajorValue
-scoreNodeContentLevelExpert
-scoreNodeContentLevelFan
-scoreNodeContentLevelAddict
-scoreNodeContentLevelHero
-    scoreNodeMatchingLevelUnknownSticker
-scoreNodeMatchingLevelNothingCommunSticker
-scoreNodeMatchingLevelSameBasicsSticker
-scoreNodeMatchingLevelLikeYouSticker
-scoreNodeMatchingLevelSamePrioritiesSticker
-scoreNodeMatchingLevelSameValuesSticker
-scoreNodeMatchingLevelPerfectMatchingSticker
-scoreNodeMatchingLevelPerfectCoupleSticker
-scoreNodeMatchingLevelSymbiosisSticker
-scoreNodeMatchingLevelCloneSticker
-scoreNodeMatchingActionLevelUnknownSticker
-scoreNodeMatchingActionLevelNothingCommunSticker
-scoreNodeMatchingActionLevelSameBasicsSticker
-scoreNodeMatchingActionLevelLikeYouSticker
-scoreNodeMatchingActionLevelSamePrioritiesSticker
-scoreNodeMatchingActionLevelSameValuesSticker
-scoreNodeMatchingActionLevelPerfectMatchingSticker
-scoreNodeMatchingActionLevelPerfectCoupleSticker
-scoreNodeMatchingActionLevelSymbiosisSticker
-scoreNodeMatchingActionLevelCloneSticker
-scoreNodeMatchingPositionSticker
-scoreNodeMatchingPositionLevelUnknownSticker
-scoreNodeMatchingPositionLevelNothingCommunSticker
-scoreNodeMatchingPositionLevelSameBasicsSticker
-scoreNodeMatchingPositionLevelLikeYouSticker
-scoreNodeMatchingPositionLevelSamePrioritiesSticker
-scoreNodeMatchingPositionLevelSameValuesSticker
-scoreNodeMatchingPositionLevelPerfectMatchingSticker
-scoreNodeMatchingPositionLevelPerfectCoupleSticker
-scoreNodeMatchingPositionLevelSymbiosisSticker
-scoreNodeMatchingPositionLevelCloneSticker
-scoreNodeMatchingTimeLevelUnknownSticker
-scoreNodeMatchingTimeLevelNothingCommunSticker
-scoreNodeMatchingTimeLevelSameBasicsSticker
-scoreNodeMatchingTimeLevelLikeYouSticker
-scoreNodeMatchingTimeLevelSamePrioritiesSticker
-scoreNodeMatchingTimeLevelSameValuesSticker
-scoreNodeMatchingTimeLevelPerfectMatchingSticker
-scoreNodeMatchingTimeLevelPerfectCoupleSticker
-scoreNodeMatchingTimeLevelSymbiosisSticker
-scoreNodeMatchingTimeLevelCloneSticker
-scoreNodeMatchingLevelUnknownSticker
-scoreNodeMatchingLevelNothingCommunSticker
-scoreNodeMatchingLevelSameBasicsSticker
-scoreNodeMatchingLevelLikeYouSticker
-scoreNodeMatchingLevelSamePrioritiesSticker
-scoreNodeMatchingLevelSameValuesSticker
-scoreNodeMatchingLevelPerfectMatchingSticker
-scoreNodeMatchingLevelPerfectCoupleSticker
-scoreNodeMatchingLevelSymbiosisSticker
-scoreNodeMatchingLevelCloneSticker
-scoreNodeMatchingCampaignLevelUnknownSticker
-scoreNodeMatchingCampaignLevelNothingCommunSticker
-scoreNodeMatchingCampaignLevelSameBasicsSticker
-scoreNodeMatchingCampaignLevelLikeYouSticker
-scoreNodeMatchingCampaignLevelSamePrioritiesSticker
-scoreNodeMatchingCampaignLevelSameValuesSticker
-scoreNodeMatchingCampaignLevelPerfectMatchingSticker
-scoreNodeMatchingCampaignLevelPerfectCoupleSticker
-scoreNodeMatchingCampaignLevelSymbiosisSticker
-scoreNodeMatchingCampaignLevelCloneSticker
-scoreNodeMatchingGraphLevelUnknownSticker
-scoreNodeMatchingGraphLevelNothingCommunSticker
-scoreNodeMatchingGraphLevelSameBasicsSticker
-scoreNodeMatchingGraphLevelLikeYouSticker
-scoreNodeMatchingGraphLevelSamePrioritiesSticker
-scoreNodeMatchingGraphLevelSameValuesSticker
-scoreNodeMatchingGraphLevelPerfectMatchingSticker
-scoreNodeMatchingGraphLevelPerfectCoupleSticker
-scoreNodeMatchingGraphLevelSymbiosisSticker
-scoreNodeMatchingGraphLevelCloneSticker
-scoreNodeMatchingFilterLevelUnknownSticker
-scoreNodeMatchingFilterLevelNothingCommunSticker
-scoreNodeMatchingFilterLevelSameBasicsSticker
-scoreNodeMatchingFilterLevelLikeYouSticker
-scoreNodeMatchingFilterLevelSamePrioritiesSticker
-scoreNodeMatchingFilterLevelSameValuesSticker
-scoreNodeMatchingFilterLevelPerfectMatchingSticker
-scoreNodeMatchingFilterLevelPerfectCoupleSticker
-scoreNodeMatchingFilterLevelSymbiosisSticker
-scoreNodeMatchingFilterLevelCloneSticker
-scoreNodeMatchingBusinessLevelUnknownSticker
-scoreNodeMatchingBusinessLevelNothingCommunSticker
-scoreNodeMatchingBusinessLevelSameBasicsSticker
-scoreNodeMatchingBusinessLevelLikeYouSticker
-scoreNodeMatchingBusinessLevelSamePrioritiesSticker
-scoreNodeMatchingBusinessLevelSameValuesSticker
-scoreNodeMatchingBusinessLevelPerfectMatchingSticker
-scoreNodeMatchingBusinessLevelPerfectCoupleSticker
-scoreNodeMatchingBusinessLevelSymbiosisSticker
-scoreNodeMatchingBusinessLevelCloneSticker
-scoreNodeMatchingLeaderLevelUnknownSticker
-scoreNodeMatchingLeaderLevelNothingCommunSticker
-scoreNodeMatchingLeaderLevelSameBasicsSticker
-scoreNodeMatchingLeaderLevelLikeYouSticker
-scoreNodeMatchingLeaderLevelSamePrioritiesSticker
-scoreNodeMatchingLeaderLevelSameValuesSticker
-scoreNodeMatchingLeaderLevelPerfectMatchingSticker
-scoreNodeMatchingLeaderLevelPerfectCoupleSticker
-scoreNodeMatchingLeaderLevelSymbiosisSticker
-scoreNodeMatchingLeaderLevelCloneSticker
-scoreNodeContentLevelNotInterstedSticker
-scoreNodeContentLevelIIinterstedSticker
-scoreNodeContentLevelAPlusSticker
-scoreNodeContentLevelInterestConfirmedSticker
-scoreNodeContentLevelMajorValueSticker
-scoreNodeContentLevelExpertSticker
-scoreNodeContentLevelFanSticker
-scoreNodeContentLevelAddictSticker
-scoreNodeContentLevelHeroSticker
-scoreNodeLevelNotInterstedSticker
-scoreNodeLevelIIinterstedSticker
-scoreNodeLevelAPlusSticker
-scoreNodeLevelInterestConfirmedSticker
-scoreNodeLevelMajorValueSticker
-scoreNodeLevelExpertSticker
-scoreNodeLevelFanSticker
-scoreNodeLevelAddictSticker
-scoreNodeLevelHeroSticker
-scoreNodeActionLevelNotInterstedSticker
-scoreNodeActionLevelIIinterstedSticker
-scoreNodeActionLevelAPlusSticker
-scoreNodeActionLevelInterestConfirmedSticker
-scoreNodeActionLevelMajorValueSticker
-scoreNodeActionLevelExpertSticker
-scoreNodeActionLevelFanSticker
-scoreNodeActionLevelAddictSticker
-scoreNodeActionLevelHeroSticker
-scoreNodePositionLevelNotInterstedSticker
-scoreNodePositionLevelIIinterstedSticker
-scoreNodePositionLevelAPlusSticker
-scoreNodePositionLevelInterestConfirmedSticker
-scoreNodePositionLevelMajorValueSticker
-scoreNodePositionLevelExpertSticker
-scoreNodePositionLevelFanSticker
-scoreNodePositionLevelAddictSticker
-scoreNodePositionLevelHeroSticker
-scoreNodeTimeLevelNotInterstedSticker
-scoreNodeTimeLevelIIinterstedSticker 
-scoreNodeTimeLevelAPlusSticker
-scoreNodeTimeLevelInterestConfirmedSticker
-scoreNodeTimeLevelMajorValueSticker
-scoreNodeTimeLevelExpertSticker
-scoreNodeTimeLevelFanSticker
-scoreNodeTimeLevelAddictSticker
-scoreNodeTimeLevelHeroSticker
-scoreNodeCampaignLevelNotInterstedSticker
-scoreNodeCampaignLevelIIinterstedSticker
-scoreNodeCampaignLevelAPlusSticker
-scoreNodeCampaignLevelInterestConfirmedSticker
-scoreNodeCampaignLevelMajorValueSticker
-scoreNodeCampaignLevelExpertSticker
-scoreNodeCampaignLevelFanSticker
-scoreNodeCampaignLevelAddictSticker
-scoreNodeCampaignLevelHeroSticker
-scoreNodeGraphLevelNotInterstedSticker
-scoreNodeGraphLevelIIinterstedSticker
-scoreNodeGraphLevelAPlusSticker
-scoreNodeGraphLevelInterestConfirmedSticker
-scoreNodeGraphLevelMajorValueSticker
-scoreNodeGraphLevelExpertSticker
-scoreNodeGraphLevelFanSticker
-scoreNodeGraphLevelAddictSticker
-scoreNodeGraphLevelHeroSticker
-scoreNodeFilterLevelNotInterstedSticker
-scoreNodeFilterLevelIIinterstedSticker
-scoreNodeFilterLevelAPlusSticker
-scoreNodeFilterLevelInterestConfirmedSticker
-scoreNodeFilterLevelMajorValueSticker
-scoreNodeFilterLevelExpertSticker
-scoreNodeFilterLevelFanSticker
-scoreNodeFilterLevelAddictSticker
-scoreNodeFilterLevelHeroSticker
-scoreNodeBusinessLevelNotInterstedSticker
-scoreNodeBusinessLevelIIinterstedSticker
-scoreNodeBusinessLevelAPlusSticker
-scoreNodeBusinessLevelInterestConfirmedSticker
-scoreNodeBusinessLevelMajorValueSticker
-scoreNodeBusinessLevelExpertSticker
-scoreNodeBusinessLevelFanSticker
-scoreNodeBusinessLevelAddictSticker
-scoreNodeBusinessLevelHeroSticker
-scoreNodeLeaderLevelNotInterstedSticker
-scoreNodeLeaderLevelIIinterstedSticker
-scoreNodeLeaderLevelAPlusSticker
-scoreNodeLeaderLevelInterestConfirmedSticker
-scoreNodeLeaderLevelMajorValueSticker
-scoreNodeLeaderLevelExpertSticker
-scoreNodeLeaderLevelFanSticker
-scoreNodeLeaderLevelAddictSticker
-scoreNodeLeaderLevelHeroSticker
-scoreNodeContentLevelNotInterstedSticker
-scoreNodeContentLevelIIinterstedSticker
-scoreNodeContentLevelAPlusSticker
-scoreNodeContentLevelInterestConfirmedSticker
-scoreNodeContentLevelMajorValueSticker
-scoreNodeContentLevelExpertSticker
-scoreNodeContentLevelFanSticker
-scoreNodeContentLevelAddictSticker
-scoreNodeContentLevelHeroSticker
-algorythmeNodeMatchingSticker
-algorythmeNodeMatchingActionSticker
-algorythmeNodeMatchingPositionSticker
-algorythmeNodeMatchingTimeSticker
-algorythmeNodeMatchingSticker
-algorythmeNodeMatchingCampaignSticker
-algorythmeNodeMatchingGraphSticker
-algorythmeNodeMatchingFilterSticker
-algorythmeNodeMatchingBusinessSticker
-algorythmeNodeMatchingLeaderSticker
-algorythmeNodeContentSticker
-algorythmeNodeSticker
-algorythmeNodeActionSticker
-algorythmeNodePositionSticker
-algorythmeNodeTimeSticker
-algorythmeNodeCampaignSticker
-algorythmeNodeGraphSticker
-algorythmeNodeFilterSticker
-algorythmeNodeBusinessSticker
-algorythmeNodeLeaderSticker
-algorythmeNodeContentSticker"
-
-uxCenterAlgorythm
-uxCenterAlgorythmPrevAction
-uxCenterAlgorythmNextActionAction
-uxCenterAlgorythmAddAction
-uxCenterAlgorythmItem
-uxCenterAlgorythmSticker
-uxCenterAlgorythmDetail
-uxCenterAlgorythmRead
-uxCenterAlgorythmWrite
-uxCenterAlgorythmDelete
-uxCenterAlgorythmStickerAction
-uxCenterAlgorythmDetailAction
-uxCenterAlgorythmReadAction
-uxCenterAlgorythmWriteAction
-uxCenterAlgorythmDeleteAction
- uxCenterScore
-uxCenterScorePrevAction
-uxCenterScoreNextActionAction
-uxCenterScoreAddAction
-uxCenterScoreItem
-uxCenterScoreSticker
-uxCenterScoreDetail
-uxCenterScoreRead
-uxCenterScoreWrite
-uxCenterScoreDelete
-uxCenterScoreStickerAction
-uxCenterScoreDetailAction
-uxCenterScoreReadAction
-uxCenterScoreWriteAction
-uxCenterScoreDeleteAction
-    
-    ,
     "stickTctCorp_tctCorp": {
       "relationship": "REPRESENTE",
       "start": "stickTctCorp",
@@ -7192,10 +7266,6 @@ uxCenterScoreDeleteAction
       "start": "uxHeaderToolBarEmotion",
       "end": "uxHeaderToolBarEmotionAddAction"
     },
-    
-    
-    
-    
     "uxSectionRight_uxSectionRightToolBar": {
       "relationship": "CONTAIN",
       "start": "uxSectionRight",
@@ -9132,10 +9202,17 @@ uxCenterScoreDeleteAction
     "version",
     "deployment",
     "cssClassName",
-    "templateName"
+    "templateName",
+    "unit",
+    "occurenceMax"
   ],
   "nodeParamDefaultList": {
     "onCreateSetList": {
+      "ttl": 31104000,
+      "ttlKeep": 31104000,
+      "token": false,
+      "tokenCrypted": false,
+      "ttlLastdate": "timestamp()",
       "var": "__KEY__",
       "name": "__KEY__",
       "state": true,
@@ -9151,9 +9228,13 @@ uxCenterScoreDeleteAction
       "value": false,
       "score": false,
       "weight": 1,
+      "occurence": 1,
+      "occurenceMax": 1,
+      "unit": 1,
       "itCost": 0,
       "commCost": 0,
       "marketCost": 0,
+      "motif": "",
       "uid": false,
       "sign": false,
       "blockChain": "t_blockChain",
@@ -9168,26 +9249,36 @@ uxCenterScoreDeleteAction
     "onMatchSetList": {
       "var": "__KEY__",
       "matchLastUser": "u_name",
-      "matchLastDate": "t_time",
+      "matchLastDate": "timestamp()",
+      "ttlLastdate": "timestamp()",
       "deployment": "t_deployment",
       "matchLastVersion": "0.0",
       "matcLastDeployment_version": "0.0",
       "value": false,
       "score": false,
       "itCost": 0,
+      "unit": 1,
       "commCost": 0,
-      "marketCost": 0
+      "marketCost": 0,
+      "motif": "",
       "sign": false,
       "blockChain": "t_blockChain",
       "blockChainBlock": "t_blockChainBlock",
       "blockChainSign": "t_blockChainSign",
       "blockChainTime": "t_blockChainTime",
       "blockChainLeader": "t_blockChainleader",
-      "localDefault": "t_localDefault"
+      "localDefault": "t_localDefault",
+      "token": false,
+      "tokenCrypted": false
     }
   },
   "relationshipParamDefaultList": {
     "onCreateSetList": {
+      "ttl": 31104000,
+      "ttlKeep": 31104000,
+      "token": false,
+      "tokenCrypted": false,
+      "ttlLastdate": "timestamp()",
       "var": "__KEY__",
       "name": "__KEY__",
       "state": true,
@@ -9199,6 +9290,8 @@ uxCenterScoreDeleteAction
       "step": "create",
       "visibility": "public",
       "note": "",
+      "occurence": 1,
+      "occurenceMax": 1,
       "locDefault": "FR",
       "value": false,
       "weight": 1,
@@ -9218,276 +9311,18 @@ uxCenterScoreDeleteAction
       "deployment_version": "0.0"
     },
     "onMatchSetList": {
+      "ttlLastdate": "timestamp()",
       "var": "__KEY__",
       "matchLastUser": "u_name",
-      "matchLastDate": "t_time",
+      "matchLastDate": "timestamp()",
       "deployment": "t_deployment",
       "matchLastVersion": "0.0",
-      "matcLastDeployment_version": "0.0"
+      "matcLastDeployment_version": "0.0",
+      "occurence": 2,
+      "token": false,
+      "tokenCrypted": false
     }
   },
-  "labelList": {
-    "Device": {
-      "PC": {},
-      "tablette": {},
-      "smarphone": {},
-      "iot": {}
-    },
-    "Media": {
-      "site": {},
-      "appAndroid": {},
-      "appIohone": {}
-    },
-    "Campaign": {
-      "campaign1": {}
-    },
-    "Resource ": {
-      "logo": {
-        "urlPath": "img",
-        "urlName": "logo",
-        "urlExt": ".png",
-        "crc": ""
-      },
-      "product1": {
-        "urlPath": "img",
-        "urlName": "product1",
-        "urlExt": ".png",
-        "crc": ""
-      }
-    },
-    "Format": {
-      "standardLogo": {
-        "contentType": "image/png",
-        "height": 480,
-        "heightUnit": "px",
-        "width": 38,
-        "widthUnit": "px",
-        "weight": 19,
-        "weightUnit": "ko"
-      }
-    },
-    "AnalyticScriptCall": {
-      "analyticScriptCall1": {
-        "google": "<script></scrypt>",
-        "crm": "<script></scrypt>",
-        "salesforce": "<script></scrypt>",
-        "other": "<script></scrypt>"
-      }
-    },
-    "AnalyticUrlCall": {
-      "analyticUrlCall1": {
-        "google": "http://",
-        "crm": "http://",
-        "salesforce": "http://",
-        "other": "http://"
-      }
-    },
-    "Segment": {
-      "early": {},
-      "fan": {}
-    },
-    "Right": {
-      "adminRight": {},
-      "userRight": {},
-      "compagnyRight": {}
-    },
-    "step": {
-      "todo": {},
-      "created": {},
-      "published": {},
-      "tested": {},
-      "validated": {},
-      "accessed": {},
-      "used": {},
-      "updated": {},
-      "expireded": {},
-      "integrityFalse": {}
-    },
-    "Quality": {
-      "hight": {},
-      "optimised": {},
-      "low": {}
-    },
-    "Contract": {
-      "contract1DianeKruger": {}
-    },
-    "Token": {
-      "ncantu": {
-        "value": "sdfsdfsdfsdf",
-        "expire": 0
-      },
-      "user1": {
-        "value": "sdfsdfsdfsdfqdsqsd",
-        "expire": 0
-      }
-    },
-    "Tag": {
-      "init": {}
-    },
-    "ExpireControler": {
-      "batch": {
-        "version": 0.1
-      }
-    },
-    "Localization": {
-      "fr": {
-        "code": "fr",
-        "locale": "Europe/Paris",
-        "lang": "fr-FR",
-        "charset": "utf-8",
-        "moneyUnit": "euro"
-      }
-    },
-    "Place": {
-      "top": {},
-      "left": {},
-      "right": {},
-      "bottom": {},
-      "body": {},
-      "confirmButton": {},
-      "validButton": {},
-      "visitButton": {}
-    },
-    "History": {
-      "batch": {
-        "version": 0.1
-      }
-    },
-    "Membership": {
-      "basic": {},
-      "gold": {},
-      "business": {},
-      "smart": {},
-      "starup": {},
-      "school": {},
-      "try": {}
-    },
-    "ProductCategory": {
-      "cdn": {},
-      "hosting": {},
-      "localiazation": {},
-      "monitoring": {},
-      "seo": {},
-      "framework": {},
-      "ebusiness": {}
-    },
-    "Product": {
-      "hostingCdnImage": {},
-      "frameworkEbusiness": {},
-      "ebusinessSiteInternationnal": {}
-    },
-    "Price": {
-      "basic": {
-        "value": 20,
-        "during": 12,
-        "duringUnit": "month",
-        "renewBilling": 1
-      },
-      "gold": {
-        "value": 20,
-        "during": 12,
-        "duringUnit": "month",
-        "renewBilling": 1
-      },
-      "business": {
-        "value": 20,
-        "during": 12,
-        "duringUnit": "month",
-        "renewBilling": 1
-      },
-      "smart": {
-        "value": 20,
-        "during": 12,
-        "duringUnit": "month",
-        "renewBilling": 1
-      },
-      "starup": {
-        "value": 20,
-        "during": 12,
-        "duringUnit": "month",
-        "renewBilling": 1
-      },
-      "school": {
-        "value": 20,
-        "during": 12,
-        "duringUnit": "month",
-        "renewBilling": 1
-      },
-      "try": {
-        "value": 0,
-        "during": 3,
-        "duringUnit": "month",
-        "renewBilling": 3
-      }
-    },
-    "Stock": {
-      "stockPart1": {
-        "value": 20,
-        "unit": "unit"
-      },
-      "stockPart2": {
-        "value": 20,
-        "unit": "unit"
-      }
-    },
-    "Shipping": {
-      "shippingPart1": {
-        "value": 20,
-        "unit": "unit"
-      },
-      "shippingPart2": {
-        "value": 20,
-        "unit": "unit"
-      }
-    },
-    "Order": {
-      "order1": {
-        "value": 3,
-        "unit": "unit"
-      },
-      "order2": {
-        "value": 2,
-        "unit": "unit"
-      }
-    },
-    "BankTransaction": {
-      "bankTransaction1": {
-        "value": 60
-      },
-      "bankTransaction2": {
-        "value": 40
-      }
-    },
-    "Bill": {
-      "bill1": {
-        "value": 3,
-        "unit": "unit",
-        "trascationValue": 60
-      },
-      "bill2": {
-        "value": 2,
-        "unit": "unit",
-        "trascationValue": 40
-      }
-    },
-    "Expedition": {
-      "expition1": {
-        "open": false,
-        "motif": ""
-      }
-    },
-    "ExpeditionReturn": {
-      "expitionReturn1": {}
-    },
-    "PayBack": {
-      "payBack1": {}
-    },
-    "Host": {
-      "hostPublic1": {},
-      "hostFront1": {},
-      "hostFront2": {}
-    },
-}
   "eventList": {
     "not": {
       "send": {
