@@ -9312,11 +9312,12 @@ semanticWordDefault
       "attributSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "relationship": "ATTRIBUT_SET",
           "postNameList": ["attributName", "attributValue"],
           "postTypeList": ["String", "Mixted"],
+          "return": true,
           "end": "Attribut"
       },
       "attributGet": {
@@ -9338,8 +9339,8 @@ semanticWordDefault
       "relationshipSet": {
           "path": ["relationShip", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false,   
           "relationship": "RELATIONSHIP_SET",
           "postNameList": ["relationshipName", "end", "attributList"],
@@ -9349,12 +9350,13 @@ semanticWordDefault
       "uxElementNameSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false,          
           "relationship": "UX_ELEMENT_SET",
           "postNameList": ["uxElementName"],
           "postTypeList": ["String"],
+          "return": true,
           "end": "UxElement"
       },
       "uxElementNameGet": {    
@@ -9368,12 +9370,13 @@ semanticWordDefault
       "uxCssNameSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false,          
           "relationship": "UX_CSS_SET",
           "postNameList": ["uxCssValue"],
           "postTypeList": ["String"],
+          "return": true,
           "end": "UxCss"
       },
       "uxCssNameGet": {    
@@ -9387,12 +9390,13 @@ semanticWordDefault
       "scoreSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true,          
           "relationship": "SCORE_SET",
           "postNameList": ["scoreValue"],
           "postTypeList": ["String"],
+          "return": true,
           "end": "Score"
       },
       "scoreGet": {
@@ -9406,8 +9410,8 @@ semanticWordDefault
       "expireUpdate": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true,   
           "relationship": "EXPIRE_UPDATE",
           "postNameList": [],
@@ -9418,24 +9422,25 @@ semanticWordDefault
       "tokenUpdate": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true,   
           "relationship": "TOKEN_UPDATE",
           "postNameList": [],
           "postTypeList": [],
-          "return": "dateExpire",
+          "return": true,
           "end": "Token"
       },
       "nameSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false,   
           "relationship": "NAME_SET",
           "postNameList": ["name"],
           "postTypeList": ["String"],
+          "return": true,
           "end": "Name"
       },
       "nameGet": {
@@ -9457,23 +9462,25 @@ semanticWordDefault
       "uidSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "UID_SET",
           "postNameList": ["uuid"],
           "postTypeList": ["String"],
+          "return": true,
           "end": "Uid"
       },
       "scoreCostSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true,   
           "relationship": "SCORE_COST_SET",
           "postNameList": ["scoreCost"],
           "postTypeList": ["Int"],
+          "return": true,
           "end": "ScoreCost"
       },
       "scoreCostGet": {
@@ -9487,8 +9494,8 @@ semanticWordDefault
       "scoreRoiSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "SCORE_ROI_SET",
           "postNameList": ["scoreRoi"],
@@ -9514,261 +9521,392 @@ semanticWordDefault
       "stateSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "STATE_SET",
           "postNameList": ["state"],
           "postTypeList": ["boolean"],
-          "end": "state",
+          "return": true,
+          "end": "State",
       },
       "dateUpdate": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "DATE_UPDATE",
-          "end": "evt"
+          "postNameList": ["dateUpdate"],
+          "postTypeList": ["timestamp"],
+          "end": "DateUpdate"
       },
       "dateStartSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "DATE_START_SET",
-          "end": "evt"
+          "postNameList": ["dateStart"],
+          "postTypeList": ["timestamp"],
+          "return": true,
+          "end": "DateStart"
       },
       "dateStartGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "DATE_START_GET",
-          "end": "evt"
-      },
-      "dateEndSet": {
-          "relationship": "DATE_END_SET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "dateStart",
+          "end": "DateStart"
       },
       "dateEndSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "DATE_END_GER",
-          "end": "evt"
+          "relationship": "DATE_END_SET",
+          "postNameList": ["dateEnd"],
+          "postTypeList": ["timestamp"],
+          "return": true,
+          "end": "DateEnd"
+      },
+      "dateEndGet": {
+          "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
+          "relationship": "DATE_END_GET",
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "dateEnd",
+          "end": "DateEnd"
       },
       "dateDueSet": {
           "path": ["node", "uid"],
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "DATE_DUE_SET",
-          "end": "evt"
+          "postNameList": ["dateDue"],
+          "postTypeList": ["timestamp"],
+          "return": true,
+          "end": "DateDue"
       },
       "dateDueGet": {
           "path": ["node", "uid"],
-          "relationship": "DATE_DUE_GET",
-          "end": "evt"
-      },
-      "stateSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "STATE_SET",
-          "end": "evt"
-      },
-      "stateGet": {
-          "path": ["node", "uid"],
-          "relationship": "STATE_GET",
-          "end": "evt"
+          "relationship": "DATE_DUE_GET",
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "dateDue",
+          "end": "DateDue"
       },
       "visibilityGet": {
           "path": ["node", "uid"],
           "relationship": "VISIBILITY_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "visibilityGet",
+          "end": "VisibilityGet"
       },
       "visibilitySet": {
           "path": ["node", "uid"],
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "VISIBILITY_SET",
-          "end": "evt"
+          "postNameList": ["visibility"],
+          "postTypeList": ["Visibility"],
+          "return": true,
+          "end": "VisibilityGet"
       },
       "noteSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "NOTE_SET",
-          "end": "evt"
+          "postNameList": ["note"],
+          "postTypeList": ["String"],
+          "return": true,
+          "end": "Note"
       },
       "noteGet": {
           "path": ["node", "uid"],
           "relationship": "NOTE_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "note",
+          "end": "Note"
       },
       "occcurenceSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "OCCURENCE_SET",
-          "end": "evt"
+          "postNameList": ["occurence"],
+          "postTypeList": ["int"],
+          "return": true,
+          "end": "Occurence"
       },
       "occcurenceGet": {
           "path": ["node", "uid"],
           "relationship": "OCCURENCE_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "occurence",
+          "end": "Occurence"
       },
-      "localSet": {
+      "locationSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "LOCAL_SET",
-          "end": "evt"
+          "postNameList": ["location"],
+          "postTypeList": ["Location"],
+          "return": true,
+          "end": "Location"
       },
       "localeGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "LOCAL_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "postNameList": ["location"],
+          "postTypeList": ["Location"],
+          "return": "location",
+          "end": "Location"
       },
       "valueSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "VALUE_SET",
-          "end": "evt"
+          "postNameList": ["value"],
+          "postTypeList": ["Mixted"],
+          "return": true,
+          "end": "Value"
       },
       "valueGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "VALUE_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "value",
+          "end": "Value"
       },
       "weightSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "WEIGHT_SET",
-          "end": "evt"
+          "postNameList": ["weight"],
+          "postTypeList": ["Int"],
+          "return": true,
+          "end": "Weight"
       },
       "weightGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "WEIGHT_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "weight",
+          "end": "Weight"
       },
       "orderSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "ORDER_SET",
-          "end": "evt"
+          "postNameList": ["order"],
+          "postTypeList": ["Int"],
+          "return": true,
+          "end": "Order"
       },
       "orderGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "ORDER_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "order",
+          "end": "Order"
       },
       "itCostSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "IT_COST_SET",
-          "end": "evt"
+          "postNameList": ["itCost"],
+          "postTypeList": ["Int"],
+          "return": true,
+          "end": "ItCost"
       },
       "itCostGet": {
+          "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "IT_COST_GET",
-          "end": "evt"
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "itCost",
+          "end": "ItCost"
       },
       "commCostSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "COMM_COST_SET",
-          "end": "evt"
+          "postNameList": ["commCost"],
+          "postTypeList": ["Int"],
+          "return": true,
+          "end": "CommCost"
       },
       "commCostGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "COMM_COST_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "commCost",
+          "end": "CommCost"
       },
       "marketCostSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MARKET_COST_GET",
-          "end": "evt"
+          "postTypeList": ["marketCost"],
+          "postTypeList": ["Int"],
+          "return": true,
+          "end": "MarketCost"
       },
       "marketCostGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "MARKET_COST_SET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "marketCost",
+          "end": "MarketCost"
       },
       "signSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "SIGN_SET",
-          "end": "evt"
+          "postTypeList": ["sign"],
+          "postTypeList": ["String"],
+          "return": true,
+          "end": "sign"
       },
       "signGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "SIGN_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "sign",
+          "end": "sign"
       },
-      "blockChainlastAsk": {
+      "blockChainLastAsk": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "BLOCKCHAIN_ASK",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "blockChainLast",
+          "end": "BlockChainLast"
       },
       "blockChainAddBlock": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "BLOCKCHAIN_ADD_BLOCK",
-          "end": "evt"
+          "postTypeList": ["block"],
+          "postTypeList": ["string"],
+          "return": "blockSelected",
+          "end": "BlockChainAdd"
       }
       "blockChainUpdate": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "BLOCKCHAIN_UPDATE",
-          "end": "evt"
+          "postTypeList": ["block"],
+          "postTypeList": ["string"],
+          "return": "blockChainUpdate",
+          "end": "BlockChainUpdate"
       },
       "versionConfSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "VERSION_CONF_SET",
           "end": "evt"
@@ -9781,148 +9919,187 @@ semanticWordDefault
       "versionDeploymentSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "VERSION_DEPLYMENT_SET",
           "end": "evt"
       },
       "versionDeploymentGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "VERSION_DEPLYMENT_GET",
           "end": "evt"
       },
       "createUserSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "CREATE_USER_SET",
           "end": "evt"
       },
       "createUserGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "CREATE_USER_GET",
           "end": "evt"
       }   ,   
       "createdDateSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "CREATE_DATE_SET",
           "end": "evt"
       },
       "createdDateGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "CREATE_DATE_GET",
           "end": "evt"
       }    ,   
       "matchLastConfSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MATCH_LAST_CONF_SET",
           "end": "evt"
       },
       "matchLastConfGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "MATCH_LAST_CONF_GET",
           "end": "evt"
       } ,   
       "matchLastDeploymentVersionSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MATCH_LAST_DEPLOYMENT_SET",
           "end": "evt"
       },
       "matchLastDeploymentVersionGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "MATCH_LAST_DEPLOYMENT_GET",
           "end": "evt"
       },
       "matchLastUserSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MATCH_LAST_USER_SET",
           "end": "evt"
       },
       "matchLastUserGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "MATCH_LAST_USER_GET",
           "end": "evt"
       } ,
       "matchLastDateSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MATCH_LAST_DATE_SET",
           "end": "evt"
       },
       "matchLastDateGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "MATCH_LAST_DATE_GET",
           "end": "evt"
       }  ,
       "tagSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TAG_SET",
           "end": "evt"
       },
       "tagGet": {
           "path": ["node", "uid"],
-          "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "TAG_GET",
           "end": "evt"
       }  ,
       "locationSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "LOCATION_SET",
           "end": "evt"
       },
       "locationGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "LOCATION_GET",
           "end": "evt"
       }  ,
       "stikerSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "STIKER_SET",
           "end": "evt"
       },
       "stikerGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "STIKER_GET",
           "end": "evt"
       }   ,
       "uxstikerSetInto": {
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TYPE_SET",
           "end": "evt"
@@ -9930,19 +10107,27 @@ semanticWordDefault
       "typeSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
-          "errorValue": fasle,
-          "defaultValue": fasle,
+          "errorValue": false,
+          "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TYPE_SET",
           "end": "evt"
       },
       "typeGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "TYPE_GET",
           "end": "evt"
       }  
       "trace": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "NOTIFE",
           "end": "evt"
         }
