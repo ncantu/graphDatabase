@@ -6146,53 +6146,17 @@
     "sign"
   ],
   "microserviceDefaultList": {
-      "indexAdd": {
-         
-      },
-      "uxActionAdd": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-     
-      },
-      "uxActionStiker": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-   
-      },
-      "uxActionPrec": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-   
-      },
-      "uxActionNext": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-  
-      },
-      "uxActionDelete": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-  
-      },
-      "uxActionDetail": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-   
-      },
-      "uxActionRead": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-
-      },
-      "uxActionWrite": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-
-      },
-      "uxActionAddAlgo": {
-          "relationship": "UX_ACTION",
-          "end": "evt"
-
+      "explore": {
+          "path": ["node", "uid"],
+          "returnEmptyValue": "",
+          "returnErrorValue": false,
+          "returnDefaultValue": false,
+          "relationship": "EXLPORE",
+          "postNameList": [],
+          "postTypeList": [],
+          "return": "nodeList",
+          "returnType": "NodeList",
+          "end": "NodeList"
       },
       "add": {
           "path": ["node", "uid"],
@@ -6202,9 +6166,9 @@
           "relationship": "ADD",
           "postNameList": ["node"],
           "postTypeList": ["Node"],
-          "return": "nodeAddList",
-          "returnType": "nodeAddList",
-          "end": "NodeAddList"
+          "return": "nodeList",
+          "returnType": "NodeList",
+          "end": "NodeList"
       },
       "addAction": {
           "path": ["node", "uid"],
@@ -6242,6 +6206,18 @@
           "returnType": "AlgorithmList",
           "end": "AlgorithmList"
       },
+      "addGraph": {
+          "path": ["node", "uid"],
+          "returnEmptyValue": "",
+          "returnErrorValue": false,
+          "returnDefaultValue": false,
+          "relationship": "ADD_GRAPH",
+          "postNameList": ["graphId", "attributList"],
+          "postTypeList": ["String", "mixted"],
+          "return": "graphList",
+          "returnType": "GraphList",
+          "end": "GraphList"
+      },
       "addFilter": {
           "path": ["node", "uid"],
           "returnEmptyValue": "",
@@ -6265,6 +6241,18 @@
           "return": "actionList",
           "returnType": "ActionList",
           "end": "ActionList"
+      },
+      "removeGraph": {
+          "path": ["node", "uid"],
+          "returnEmptyValue": "",
+          "returnErrorValue": false,
+          "returnDefaultValue": false,
+          "relationship": "ADD_GRAPH",
+          "postNameList": ["graphId"],
+          "postTypeList": ["String"],
+          "return": "graphList",
+          "returnType": "GraphList",
+          "end": "GraphList"
       },
       "removeEmotion": {
           "path": ["node", "uid"],
@@ -6310,9 +6298,9 @@
           "relationship": "NEXT",
           "postNameList": ["startOrder", "limit", "filterList"],
           "postTypeList": ["Int", "Int", "FilterList"],
-          "return": "nodeAddList",
-          "returnType": "nodeAddList",
-          "end": "NodeAddList"
+          "return": "nodeList",
+          "returnType": "NodeList",
+          "end": "NodeList"
       },
       "prec": {
           "path": ["node", "uid"],
@@ -6322,9 +6310,9 @@
           "relationship": "PREC",
           "postNameList": [],
           "postTypeList": [],
-          "return": "nodeAddList",
-          "returnType": "nodeAddList",
-          "end": "NodeAddList"
+          "return": "nodeList",
+          "returnType": "NodeList",
+          "end": "NodeList"
       },
       "read": {
           "path": ["node", "uid"],
@@ -6372,7 +6360,7 @@
           "postTypeList": ["String", "Mixted"],
           "return": "relationShip",
           "returnType": "RelationShip",
-          "end": "relationShip"
+          "end": "RelationShip"
       },
       "create": {
           "path": ["node", "uid"],
