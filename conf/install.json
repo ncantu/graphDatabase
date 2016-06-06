@@ -9317,23 +9317,34 @@ semanticWordDefault
           "relationship": "ATTRIBUT_SET",
           "postNameList": ["attributName", "attributValue"],
           "postTypeList": ["String", "Mixted"],
-          "return": true,
+          "return": "attributSelected",
+          "returnType": "Attribut",
           "end": "Attribut"
       },
       "attributGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "ATTRIBUT_GET",
           "postNameList": ["attributName"],
           "postTypeList": ["String"],
           "return": "attributSelected",
+          "returnType": "Mixted",
           "end": "Attribut"
       },
       "relationshipGet": {
           "path": ["relationShip", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "RELATIONSHIP_GET",
-          "postNameList": ["relationshipName"],
+          "postNameList": ["relationshipId"],
           "postTypeList": ["String"],
           "return": "relationShipSelected",
+          "returnType": "Relationship",
           "end": "Relationship"
       },
       "relationshipSet": {
@@ -9345,6 +9356,8 @@ semanticWordDefault
           "relationship": "RELATIONSHIP_SET",
           "postNameList": ["relationshipName", "end", "attributList"],
           "postTypeList": ["String", "String", "Array"],
+          "return": "relationship",
+          "returnType": "Relationship",
           "end": "Relationship"
       },
       "uxElementNameSet": {
@@ -9354,37 +9367,50 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": false,          
           "relationship": "UX_ELEMENT_SET",
-          "postNameList": ["uxElementName"],
-          "postTypeList": ["String"],
-          "return": true,
+          "postNameList": ["uxElement"],
+          "postTypeList": ["UxElement"],
+          "return": "uxElement",
+          "returnType": "UxElement",
           "end": "UxElement"
       },
       "uxElementNameGet": {    
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "UX_ELEMENT_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "uxElementName",
+          "return": "uxElement",
+          "return": "uxElement",
+          "returnType": "UxElement",
           "end": "uxElement"
       },
-      "uxCssNameSet": {
+      "uxCssSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": false,          
           "relationship": "UX_CSS_SET",
-          "postNameList": ["uxCssValue"],
-          "postTypeList": ["String"],
-          "return": true,
+          "postNameList": ["uxCss"],
+          "postTypeList": ["UxCss"],
+          "return": "uxCss",
+          "returnType": "UxCss",
           "end": "UxCss"
       },
       "uxCssNameGet": {    
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "UX_CSS_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "uxCssName",
+          "return": "uxCss",
+          "returnType": "UxCss",
           "end": "UxCss"
       },
       "scoreSet": {
@@ -9396,15 +9422,21 @@ semanticWordDefault
           "relationship": "SCORE_SET",
           "postNameList": ["scoreValue"],
           "postTypeList": ["String"],
-          "return": true,
+          "return": "score",
+          "returnType": "Score",
           "end": "Score"
       },
       "scoreGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "SCORE_GET",
           "postNameList": [],
-          "postTypeList": [],
+          "postTypeList": [],,
           "return": "score",
+          "returnType": "Score",
           "end": "Score"   
       },
       "expireUpdate": {
@@ -9417,7 +9449,8 @@ semanticWordDefault
           "postNameList": [],
           "postTypeList": [],
           "return": "dateExpire",
-          "end": "Expiration"
+          "returnType": "DateExpire",
+          "end": "DateExpire"
       },
       "tokenUpdate": {
           "path": ["node", "uid"],
@@ -9428,7 +9461,8 @@ semanticWordDefault
           "relationship": "TOKEN_UPDATE",
           "postNameList": [],
           "postTypeList": [],
-          "return": true,
+          "return": "token",
+          "returnType": "Token",
           "end": "Token"
       },
       "nameSet": {
@@ -9440,23 +9474,34 @@ semanticWordDefault
           "relationship": "NAME_SET",
           "postNameList": ["name"],
           "postTypeList": ["String"],
-          "return": true,
+          "return": "name",
+          "returnType": "Name",
           "end": "Name"
       },
       "nameGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "NAME_GET",
           "postNameList": [],
           "postTypeList": [],
           "return": "name",
+          "returnType": "Name",
           "end": "Name"
       },
       "uidGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "UID_GET",
           "postNameList": [],
           "postTypeList": [],
           "return": "uid",
+          "returnType": "Uid",
           "end": "Uid"
       },
       "uidSet": {
@@ -9468,7 +9513,8 @@ semanticWordDefault
           "relationship": "UID_SET",
           "postNameList": ["uuid"],
           "postTypeList": ["String"],
-          "return": true,
+          "returnType": "Uid",
+          "return": "uid",
           "end": "Uid"
       },
       "scoreCostSet": {
@@ -9480,16 +9526,22 @@ semanticWordDefault
           "relationship": "SCORE_COST_SET",
           "postNameList": ["scoreCost"],
           "postTypeList": ["Int"],
-          "return": true,
+          "returnType": "ScoreCost",
+          "return": "scoreCost",
           "end": "ScoreCost"
       },
       "scoreCostGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": false, 
           "relationship": "SCORE_COST_GET",
           "postNameList": [],
           "postTypeList": [],
           "end": "scoreCost",
-          "return": "uid",
+          "returnType": "ScoreCost",
+          "return": "scoreCost",
       },
       "scoreRoiSet": {
           "path": ["node", "uid"],
@@ -9501,21 +9553,33 @@ semanticWordDefault
           "postNameList": ["scoreRoi"],
           "postTypeList": ["int"],
           "end": "ScoreRoi",
+          "returnType": "ScoreRoi",
+          "return": "ScoreRoi"
       },
       "scoreRoiGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "SCORE_ROI_GET",
           "postNameList": [],
           "postTypeList": [],
           "end": "ScoreRoi",
+          "returnType": "ScoreRoi",
           "return": "scoreRoi"
       },
       "stateGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "STATE_GET",
           "postNameList": [],
           "postTypeList": [],
           "end": "State",
+          "returnType": "State",
           "return": "state"
       },
       "stateSet": {
@@ -9527,7 +9591,8 @@ semanticWordDefault
           "relationship": "STATE_SET",
           "postNameList": ["state"],
           "postTypeList": ["boolean"],
-          "return": true,
+          "returnType": "State",
+          "return": "state"
           "end": "State",
       },
       "dateUpdate": {
@@ -9550,7 +9615,8 @@ semanticWordDefault
           "relationship": "DATE_START_SET",
           "postNameList": ["dateStart"],
           "postTypeList": ["timestamp"],
-          "return": true,
+          "returnType": "DateStart",
+          "return": "dateStart"
           "end": "DateStart"
       },
       "dateStartGet": {
@@ -9562,7 +9628,8 @@ semanticWordDefault
           "relationship": "DATE_START_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "dateStart",
+          "returnType": "DateStart",
+          "return": "dateStart"
           "end": "DateStart"
       },
       "dateEndSet": {
@@ -9574,7 +9641,8 @@ semanticWordDefault
           "relationship": "DATE_END_SET",
           "postNameList": ["dateEnd"],
           "postTypeList": ["timestamp"],
-          "return": true,
+          "returnType": "DateEnd",
+          "return": "dateEnd"
           "end": "DateEnd"
       },
       "dateEndGet": {
@@ -9586,22 +9654,24 @@ semanticWordDefault
           "relationship": "DATE_END_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "dateEnd",
+          "returnType": "DateEnd",
+          "return": "dateEnd"
           "end": "DateEnd"
       },
       "dateDueSet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "DATE_DUE_SET",
           "postNameList": ["dateDue"],
           "postTypeList": ["timestamp"],
-          "return": true,
+          "returnType": "DateDue",
+          "return": "dateDue"
           "end": "DateDue"
       },
       "dateDueGet": {
-          "path": ["node", "uid"],
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
@@ -9610,16 +9680,22 @@ semanticWordDefault
           "relationship": "DATE_DUE_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "dateDue",
+          "returnType": "DateDue",
+          "return": "dateDue"
           "end": "DateDue"
       },
       "visibilityGet": {
           "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
           "relationship": "VISIBILITY_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "visibilityGet",
-          "end": "VisibilityGet"
+          "returnType": "Visibility",
+          "return": "visibility",
+          "end": "Visibility"
       },
       "visibilitySet": {
           "path": ["node", "uid"],
@@ -9629,8 +9705,9 @@ semanticWordDefault
           "relationship": "VISIBILITY_SET",
           "postNameList": ["visibility"],
           "postTypeList": ["Visibility"],
-          "return": true,
-          "end": "VisibilityGet"
+          "returnType": "Visibility",
+          "return": "visibility",
+          "end": "Visibility"
       },
       "noteSet": {
           "path": ["node", "uid"],
@@ -9641,16 +9718,18 @@ semanticWordDefault
           "relationship": "NOTE_SET",
           "postNameList": ["note"],
           "postTypeList": ["String"],
-          "return": true,
-          "end": "Note"
+          "returnType": "Note",
+          "return": "note",
+          "end": "Visibility"
       },
       "noteGet": {
           "path": ["node", "uid"],
           "relationship": "NOTE_GET",
           "postNameList": [],
           "postTypeList": [],
+          "returnType": "Note",
           "return": "note",
-          "end": "Note"
+          "end": "Visibility"
       },
       "occcurenceSet": {
           "path": ["node", "uid"],
@@ -9661,16 +9740,18 @@ semanticWordDefault
           "relationship": "OCCURENCE_SET",
           "postNameList": ["occurence"],
           "postTypeList": ["int"],
-          "return": true,
-          "end": "Occurence"
+          "returnType": "Occcurence",
+          "return": "occcurence",
+          "end": "Occcurence"
       },
       "occcurenceGet": {
           "path": ["node", "uid"],
           "relationship": "OCCURENCE_GET",
           "postNameList": [],
           "postTypeList": [],
-          "return": "occurence",
-          "end": "Occurence"
+          "returnType": "Occcurence",
+          "return": "occcurence",
+          "end": "Occcurence"
       },
       "locationSet": {
           "path": ["node", "uid"],
@@ -9681,7 +9762,8 @@ semanticWordDefault
           "relationship": "LOCAL_SET",
           "postNameList": ["location"],
           "postTypeList": ["Location"],
-          "return": true,
+          "returnType": "Location",
+          "return": "location",
           "end": "Location"
       },
       "localeGet": {
@@ -9695,6 +9777,7 @@ semanticWordDefault
           "postTypeList": [],
           "postNameList": ["location"],
           "postTypeList": ["Location"],
+          "returnType": "Location",
           "return": "location",
           "end": "Location"
       },
@@ -9707,7 +9790,8 @@ semanticWordDefault
           "relationship": "VALUE_SET",
           "postNameList": ["value"],
           "postTypeList": ["Mixted"],
-          "return": true,
+          "returnType": "Value",
+          "return": "value",
           "end": "Value"
       },
       "valueGet": {
@@ -9719,6 +9803,7 @@ semanticWordDefault
           "relationship": "VALUE_GET",
           "postNameList": [],
           "postTypeList": [],
+          "returnType": "Value",
           "return": "value",
           "end": "Value"
       },
@@ -9731,8 +9816,9 @@ semanticWordDefault
           "relationship": "WEIGHT_SET",
           "postNameList": ["weight"],
           "postTypeList": ["Int"],
-          "return": true,
-          "end": "Weight"
+          "returnType": "weight",
+          "return": "weight",
+          "end": "weight"
       },
       "weightGet": {
           "path": ["node", "uid"],
@@ -9743,8 +9829,9 @@ semanticWordDefault
           "relationship": "WEIGHT_GET",
           "postNameList": [],
           "postTypeList": [],
+          "returnType": "weight",
           "return": "weight",
-          "end": "Weight"
+          "end": "weight"
       },
       "orderSet": {
           "path": ["node", "uid"],
@@ -9755,7 +9842,8 @@ semanticWordDefault
           "relationship": "ORDER_SET",
           "postNameList": ["order"],
           "postTypeList": ["Int"],
-          "return": true,
+          "returnType": "Order",
+          "return": "order",
           "end": "Order"
       },
       "orderGet": {
@@ -9767,6 +9855,7 @@ semanticWordDefault
           "relationship": "ORDER_GET",
           "postNameList": [],
           "postTypeList": [],
+          "returnType": "Order",
           "return": "order",
           "end": "Order"
       },
@@ -9779,7 +9868,8 @@ semanticWordDefault
           "relationship": "IT_COST_SET",
           "postNameList": ["itCost"],
           "postTypeList": ["Int"],
-          "return": true,
+          "returnType": "ItCost",
+          "return": "itCost",
           "end": "ItCost"
       },
       "itCostGet": {
@@ -9791,6 +9881,7 @@ semanticWordDefault
           "relationship": "IT_COST_GET",
           "postNameList": [],
           "postTypeList": [],
+          "returnType": "ItCost",
           "return": "itCost",
           "end": "ItCost"
       },
@@ -9803,7 +9894,8 @@ semanticWordDefault
           "relationship": "COMM_COST_SET",
           "postNameList": ["commCost"],
           "postTypeList": ["Int"],
-          "return": true,
+          "returnType": "CommCost",
+          "return": "commCost",
           "end": "CommCost"
       },
       "commCostGet": {
@@ -9815,6 +9907,7 @@ semanticWordDefault
           "relationship": "COMM_COST_GET",
           "postTypeList": [],
           "postTypeList": [],
+          "returnType": "CommCost",
           "return": "commCost",
           "end": "CommCost"
       },
@@ -9827,7 +9920,8 @@ semanticWordDefault
           "relationship": "MARKET_COST_GET",
           "postTypeList": ["marketCost"],
           "postTypeList": ["Int"],
-          "return": true,
+          "returnType": "MarketCost",
+          "return": "marketCost",
           "end": "MarketCost"
       },
       "marketCostGet": {
@@ -9839,6 +9933,7 @@ semanticWordDefault
           "relationship": "MARKET_COST_SET",
           "postTypeList": [],
           "postTypeList": [],
+          "returnType": "MarketCost",
           "return": "marketCost",
           "end": "MarketCost"
       },
@@ -9851,8 +9946,9 @@ semanticWordDefault
           "relationship": "SIGN_SET",
           "postTypeList": ["sign"],
           "postTypeList": ["String"],
-          "return": true,
-          "end": "sign"
+          "returnType": "Sign",
+          "return": "sign",
+          "end": "Sign"
       },
       "signGet": {
           "path": ["node", "uid"],
@@ -9863,8 +9959,9 @@ semanticWordDefault
           "relationship": "SIGN_GET",
           "postTypeList": [],
           "postTypeList": [],
+          "returnType": "Sign",
           "return": "sign",
-          "end": "sign"
+          "end": "Sign"
       },
       "blockChainLastAsk": {
           "path": ["node", "uid"],
@@ -9876,6 +9973,7 @@ semanticWordDefault
           "postTypeList": [],
           "postTypeList": [],
           "return": "blockChainLast",
+          "returnType": "BlockChainLast",
           "end": "BlockChainLast"
       },
       "blockChainAddBlock": {
@@ -9888,6 +9986,7 @@ semanticWordDefault
           "postTypeList": ["block"],
           "postTypeList": ["string"],
           "return": "blockSelected",
+          "returnType": "BlockSelected",
           "end": "BlockChainAdd"
       }
       "blockChainUpdate": {
@@ -9900,6 +9999,7 @@ semanticWordDefault
           "postTypeList": ["block"],
           "postTypeList": ["string"],
           "return": "blockChainUpdate",
+          "returnType": "BlockChainUpdate",
           "end": "BlockChainUpdate"
       },
       "versionConfSet": {
@@ -9909,12 +10009,20 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "VERSION_CONF_SET",
-          "end": "evt"
+          "postTypeList": ["versionConf"],
+          "postTypeList": ["string"],
+          "return": "versionConf",
+          "returnType": "VersionConf",
+          "end": "VersionConf"
       },
       "versionConfGet": {
           "path": ["node", "uid"],
           "relationship": "VERSION_CONF_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "versionConf",
+          "returnType": "VersionConf",
+          "end": "VersionConf"
       },
       "versionDeploymentSet": {
           "path": ["node", "uid"],
@@ -9923,7 +10031,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "VERSION_DEPLYMENT_SET",
-          "end": "evt"
+          "postTypeList": ["versionDeployment"],
+          "postTypeList": ["String"],
+          "return": "versionDeployment",
+          "returnType": "VersionDeployment",
+          "end": "VersionDeployment"
       },
       "versionDeploymentGet": {
           "path": ["node", "uid"],
@@ -9932,7 +10044,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "VERSION_DEPLYMENT_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "versionDeployment",
+          "returnType": "VersionDeployment",
+          "end": "VersionDeployment"
       },
       "createUserSet": {
           "path": ["node", "uid"],
@@ -9941,7 +10057,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "CREATE_USER_SET",
-          "end": "evt"
+          "postTypeList": ["createUserSet"],
+          "postTypeList": ["String"],
+          "return": "createUserSet",
+          "returnType": "CreateUserSet",
+          "end": "CreateUserSet"
       },
       "createUserGet": {
           "path": ["node", "uid"],
@@ -9950,7 +10070,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "CREATE_USER_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "createUserSet",
+          "returnType": "CreateUserSet",
+          "end": "CreateUserSet"
       }   ,   
       "createdDateSet": {
           "path": ["node", "uid"],
@@ -9959,7 +10083,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": false, 
           "relationship": "CREATE_DATE_SET",
-          "end": "evt"
+          "postTypeList": ["createdDate"],
+          "postTypeList": ["timestamp"],
+          "return": "createdDate",
+          "returnType": "CreatedDate",
+          "end": "CreatedDate"
       },
       "createdDateGet": {
           "path": ["node", "uid"],
@@ -9968,61 +10096,89 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "CREATE_DATE_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "createdDate",
+          "returnType": "CreatedDate",
+          "end": "CreatedDate"
       }    ,   
-      "matchLastConfSet": {
+      "matchLastVersionConfSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "MATCH_LAST_CONF_SET",
-          "end": "evt"
+          "relationship": "MATCH_LAST_VERSION_CONF_SET",
+          "postTypeList": ["versionConf"],
+          "postTypeList": ["String"],
+          "return": "lastVersionConf",
+          "returnType": "LastVersionConf",
+          "end": "LastVersionConf"
       },
-      "matchLastConfGet": {
+      "matchLastVersionConfGet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "MATCH_LAST_CONF_GET",
-          "end": "evt"
+          "relationship": "MATCH_LAST_VERSION_CONF_GET",
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "lastVersionConf",
+          "returnType": "LastVersionConf",
+          "end": "LastVersionConf"
       } ,   
-      "matchLastDeploymentVersionSet": {
+      "matchLastVersionDeploymentVersionSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "MATCH_LAST_DEPLOYMENT_SET",
-          "end": "evt"
+          "relationship": "MATCH_LAST_VERSION_DEPLOYMENT_SET",
+          "postTypeList": ["versionDeployment"],
+          "postTypeList": ["String"],
+          "return": "lastVersionDeployment",
+          "returnType": "LastVersionDeployment",
+          "end": "LastVersionDeployment"
       },
-      "matchLastDeploymentVersionGet": {
+      "matchLastVersionDeploymentVersionGet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "MATCH_LAST_DEPLOYMENT_GET",
-          "end": "evt"
+          "relationship": "MATCH_LAST_VERSION_DEPLOYMENT_GET",
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "lastVersionDeployment",
+          "returnType": "LastVersionDeployment",
+          "end": "LastVersionDeployment"
       },
-      "matchLastUserSet": {
+      "matchLastUserIdSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "MATCH_LAST_USER_SET",
-          "end": "evt"
+          "relationship": "MATCH_LAST_USER_ID_SET",
+          "postTypeList": ["userId"],
+          "postTypeList": ["string"],
+          "return": "lastUserId",
+          "returnType": "LastUserId",
+          "end": "LastUserId"
       },
-      "matchLastUserGet": {
+      "matchLastUserIdGet": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
-          "relationship": "MATCH_LAST_USER_GET",
-          "end": "evt"
+          "relationship": "MATCH_LAST_USER_ID_GET",
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "lastUserId",
+          "returnType": "LastUserId",
+          "end": "LastUserId"
       } ,
       "matchLastDateSet": {
           "path": ["node", "uid"],
@@ -10031,7 +10187,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MATCH_LAST_DATE_SET",
-          "end": "evt"
+          "postTypeList": ["date"],
+          "postTypeList": ["timestamp"],
+          "return": "lastDate",
+          "returnType": "LastDate",
+          "end": "LastDate"
       },
       "matchLastDateGet": {
           "path": ["node", "uid"],
@@ -10040,16 +10200,37 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "MATCH_LAST_DATE_GET",
-          "end": "evt"
-      }  ,
-      "tagSet": {
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "lastDate",
+          "returnType": "LastDate",
+          "end": "LastDate"
+      },
+      "tagAdd": {
           "path": ["node", "uid"],
           "emptyValue": "",
           "errorValue": false,
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TAG_SET",
-          "end": "evt"
+          "postTypeList": ["tag"],
+          "postTypeList": ["String"],
+          "return": "tagList",
+          "returnType": "TagList",
+          "end": "Tag"
+      },
+      "tagRemove": {
+          "path": ["node", "uid"],
+          "emptyValue": "",
+          "errorValue": false,
+          "defaultValue": false,
+          "setOnMatch": true, 
+          "relationship": "TAG_REMOVE",
+          "postTypeList": ["tag"],
+          "postTypeList": ["String"],
+          "return": "tagList",
+          "returnType": "TagList",
+          "end": "Tag"
       },
       "tagGet": {
           "path": ["node", "uid"],
@@ -10058,7 +10239,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TAG_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "tagList",
+          "returnType": "TagList",
+          "end": "Tag"
       }  ,
       "locationSet": {
           "path": ["node", "uid"],
@@ -10067,7 +10252,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "LOCATION_SET",
-          "end": "evt"
+          "postTypeList": ["Location"],
+          "postTypeList": ["Location"],
+          "return": "Location",
+          "returnType": "Location",
+          "end": "Location"
       },
       "locationGet": {
           "path": ["node", "uid"],
@@ -10076,7 +10265,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "LOCATION_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "Location",
+          "returnType": "Location",
+          "end": "Location"
       }  ,
       "stikerSet": {
           "path": ["node", "uid"],
@@ -10085,7 +10278,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "STIKER_SET",
-          "end": "evt"
+          "postTypeList": ["stikerObject"],
+          "postTypeList": ["Stiker"],
+          "return": "stiker",
+          "returnType": "Stiker",
+          "end": "Stiker"
       },
       "stikerGet": {
           "path": ["node", "uid"],
@@ -10094,7 +10291,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "STIKER_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "stiker",
+          "returnType": "Stiker",
+          "end": "Stiker"
       }   ,
       "uxstikerSetInto": {
           "emptyValue": "",
@@ -10102,8 +10303,12 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TYPE_SET",
-          "end": "evt"
-      },   ,
+          "postTypeList": ["stikerObject", "parent", "order", "x", "y", "weight"],
+          "postTypeList": ["Stiker", "String", "Int", "Int", "Int", "Int"],
+          "return": "stiker",
+          "returnType": "Stiker",
+          "end": "Stiker"
+      },   
       "typeSet": {
           "path": ["node", "uid"],
           "emptyValue": "",
@@ -10111,7 +10316,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TYPE_SET",
-          "end": "evt"
+          "postTypeList": ["type"],
+          "postTypeList": ["String"],
+          "return": "type",
+          "returnType": "Type",
+          "end": "Type"
       },
       "typeGet": {
           "path": ["node", "uid"],
@@ -10120,7 +10329,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "TYPE_GET",
-          "end": "evt"
+          "postTypeList": [],
+          "postTypeList": [],
+          "return": "type",
+          "returnType": "Type",
+          "end": "Type"
       }  
       "trace": {
           "path": ["node", "uid"],
@@ -10129,7 +10342,11 @@ semanticWordDefault
           "defaultValue": false,
           "setOnMatch": true, 
           "relationship": "NOTIFE",
-          "end": "evt"
+          "postTypeList": ["code", "line", "method", "class", "isntance", "var"],
+          "postTypeList": ["String", "Int", "String", "String", "String", "Mixted"],
+          "return": "trace",
+          "returnType": "Trace",
+          "end": "Trace"
         }
   }
   "microserviceList": {
