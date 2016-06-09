@@ -1,0 +1,3101 @@
+TODO: Relationship
+socialProfil
+follower
+visitor
+lover
+relay
+uxMedia
+uxCatDevicePC
+uxCatDeviceTablette 
+uxCatDeviceSmatphone 
+uxCatDeviceIot 
+uxCatDeviceOther 
+uxCatMedia 
+uxCampaign 
+uxSegement 
+uxResource 
+uxFormat 
+uxQuality 
+uxNetwork 
+uxCatNetwork 
+uxText 
+uxsemantic 
+workfow 
+step 
+task 
+kpi 
+transformation 
+score 
+algorythme 
+algolevel 
+algonodeWeight 
+algoNode 
+taskPriority 
+taskSeverity 
+payementvalidationOk 
+pts 
+product 
+stock 
+stockShipping 
+stockWarehouse 
+expeditionCost 
+expeditionReturnCost 
+expeditionVehicle 
+series 
+serialNumber 
+provider 
+price 
+currency 
+offer 
+order 
+bill 
+BillPayment 
+BillPaymentReturnKO 
+BillPaymentReturnOK 
+BillPaymentValidationOK 
+BillPaymentValidationKO 
+expedition ExpeditionReturnOpen 
+ExpeditionReturnClosed 
+ExpeditionPaymentBack 
+BillPaymentBackReturnKO 
+BillPaymentBackReturnOK 
+BillPaymentBackValidationOK 
+package 
+packageProtection   
+scoreNodeMatching       
+scoreNodeMatchingAction
+scoreNodeMatchingPosition
+scoreNodeMatchingTime
+scoreNodeMatching
+scoreNodeMatchingCampaign
+scoreNodeMatchingGraph
+scoreNodeMatchingFilter
+scoreNodeMatchingBusiness
+scoreNodeMatchingLeader
+scoreNodeContent
+scoreNode
+scoreNodeAction
+scoreNodePosition
+scoreNodeTime
+scoreNodeCampaign
+scoreNodeGraph
+scoreNodeFilter
+scoreNodeBusiness
+scoreNodeLeader
+scoreNodeContent
+algorythmeNodeMatching
+algorythmeNodeMatchingAction
+algorythmeNodeMatchingPosition
+algorythmeNodeMatchingTime
+algorythmeNodeMatching
+algorythmeNodeMatchingCampaign
+algorythmeNodeMatchingGraph
+algorythmeNodeMatchingFilter
+algorythmeNodeMatchingBusiness
+algorythmeNodeMatchingLeader
+algorythmeNodeContent
+algorythmeNode
+algorythmeNodeAction
+algorythmeNodePosition
+algorythmeNodeTime
+algorythmeNodeCampaign
+algorythmeNodeGraph
+algorythmeNodeFilter
+algorythmeNodeLeader
+algorythmeNodeBusiness
+algorythmeNodeContent
+scoreNodeMatchingLevelUnknown
+scoreNodeMatchingLevelNothingCommun
+scoreNodeMatchingLevelSameBasics
+scoreNodeMatchingLevelLikeYou
+scoreNodeMatchingLevelSamePriorities
+scoreNodeMatchingLevelSameValues
+scoreNodeMatchingLevelPerfectMatching
+scoreNodeMatchingLevelPerfectCouple
+scoreNodeMatchingLevelSymbiosis
+scoreNodeMatchingLevelClone
+scoreNodeMatchingActionLevelUnknown
+scoreNodeMatchingActionLevelNothingCommun
+scoreNodeMatchingActionLevelSameBasics
+scoreNodeMatchingActionLevelLikeYou
+scoreNodeMatchingActionLevelSamePriorities
+scoreNodeMatchingActionLevelSameValues
+scoreNodeMatchingActionLevelPerfectMatching
+scoreNodeMatchingActionLevelPerfectCouple
+scoreNodeMatchingActionLevelSymbiosis
+scoreNodeMatchingActionLevelClone
+scoreNodeMatchingPosition
+scoreNodeMatchingPositionLevelUnknown
+scoreNodeMatchingPositionLevelNothingCommun
+scoreNodeMatchingPositionLevelSameBasics
+scoreNodeMatchingPositionLevelLikeYou
+scoreNodeMatchingPositionLevelSamePriorities
+scoreNodeMatchingPositionLevelSameValues
+scoreNodeMatchingPositionLevelPerfectMatching
+scoreNodeMatchingPositionLevelPerfectCouple
+scoreNodeMatchingPositionLevelSymbiosis
+scoreNodeMatchingPositionLevelClone
+scoreNodeMatchingTimeLevelUnknown
+scoreNodeMatchingTimeLevelNothingCommun
+scoreNodeMatchingTimeLevelSameBasics
+scoreNodeMatchingTimeLevelLikeYou
+scoreNodeMatchingTimeLevelSamePriorities
+scoreNodeMatchingTimeLevelSameValues
+scoreNodeMatchingTimeLevelPerfectMatching
+scoreNodeMatchingTimeLevelPerfectCouple
+scoreNodeMatchingTimeLevelSymbiosis
+scoreNodeMatchingTimeLevelClone
+scoreNodeMatchingLevelUnknown
+scoreNodeMatchingLevelNothingCommun
+scoreNodeMatchingLevelSameBasics
+scoreNodeMatchingLevelLikeYou
+scoreNodeMatchingLevelSamePriorities
+scoreNodeMatchingLevelSameValues
+scoreNodeMatchingLevelPerfectMatching
+scoreNodeMatchingLevelPerfectCouple
+scoreNodeMatchingLevelSymbiosis
+scoreNodeMatchingLevelClone
+scoreNodeMatchingCampaignLevelUnknown
+scoreNodeMatchingCampaignLevelNothingCommun
+scoreNodeMatchingCampaignLevelSameBasics
+scoreNodeMatchingCampaignLevelLikeYou
+scoreNodeMatchingCampaignLevelSamePriorities
+scoreNodeMatchingCampaignLevelSameValues
+scoreNodeMatchingCampaignLevelPerfectMatching
+scoreNodeMatchingCampaignLevelPerfectCouple
+scoreNodeMatchingCampaignLevelSymbiosis
+scoreNodeMatchingCampaignLevelClone
+scoreNodeMatchingGraphLevelUnknown
+scoreNodeMatchingGraphLevelNothingCommun
+scoreNodeMatchingGraphLevelSameBasics
+scoreNodeMatchingGraphLevelLikeYou
+scoreNodeMatchingGraphLevelSamePriorities
+scoreNodeMatchingGraphLevelSameValues
+scoreNodeMatchingGraphLevelPerfectMatching
+scoreNodeMatchingGraphLevelPerfectCouple
+scoreNodeMatchingGraphLevelSymbiosis
+scoreNodeMatchingGraphLevelClone
+scoreNodeMatchingFilterLevelUnknown
+scoreNodeMatchingFilterLevelNothingCommun
+scoreNodeMatchingFilterLevelSameBasics
+scoreNodeMatchingFilterLevelLikeYou
+scoreNodeMatchingFilterLevelSamePriorities
+scoreNodeMatchingFilterLevelSameValues
+scoreNodeMatchingFilterLevelPerfectMatching
+scoreNodeMatchingFilterLevelPerfectCouple
+scoreNodeMatchingFilterLevelSymbiosis
+scoreNodeMatchingFilterLevelClone
+scoreNodeMatchingBusinessLevelUnknown
+scoreNodeMatchingBusinessLevelNothingCommun
+scoreNodeMatchingBusinessLevelSameBasics
+scoreNodeMatchingBusinessLevelLikeYou
+scoreNodeMatchingBusinessLevelSamePriorities
+scoreNodeMatchingBusinessLevelSameValues
+scoreNodeMatchingBusinessLevelPerfectMatching
+scoreNodeMatchingBusinessLevelPerfectCouple
+scoreNodeMatchingBusinessLevelSymbiosis
+scoreNodeMatchingBusinessLevelClone
+scoreNodeMatchingLeaderLevelUnknown
+scoreNodeMatchingLeaderLevelNothingCommun
+scoreNodeMatchingLeaderLevelSameBasics
+scoreNodeMatchingLeaderLevelLikeYou
+scoreNodeMatchingLeaderLevelSamePriorities
+scoreNodeMatchingLeaderLevelSameValues
+scoreNodeMatchingLeaderLevelPerfectMatching
+scoreNodeMatchingLeaderLevelPerfectCouple
+scoreNodeMatchingLeaderLevelSymbiosis
+scoreNodeMatchingLeaderLevelClone
+scoreNodeContentLevelNotIntersted
+scoreNodeContentLevelIIintersted
+scoreNodeContentLevelAPlus
+scoreNodeContentLevelInterestConfirmed
+scoreNodeContentLevelMajorValue
+scoreNodeContentLevelExpert
+scoreNodeContentLevelFan
+scoreNodeContentLevelAddict
+scoreNodeContentLevelHero
+scoreNodeLevelNotIntersted
+scoreNodeLevelIIintersted
+scoreNodeLevelAPlus
+scoreNodeLevelInterestConfirmed
+scoreNodeLevelMajorValue
+scoreNodeLevelExpert
+scoreNodeLevelFan
+scoreNodeLevelAddict
+scoreNodeLevelHero
+scoreNodeActionLevelNotIntersted
+scoreNodeActionLevelIIintersted
+scoreNodeActionLevelAPlus
+scoreNodeActionLevelInterestConfirmed
+scoreNodeActionLevelMajorValue
+scoreNodeActionLevelExpert
+scoreNodeActionLevelFan
+scoreNodeActionLevelAddict
+scoreNodeActionLevelHero
+scoreNodePositionLevelNotIntersted
+scoreNodePositionLevelIIintersted
+scoreNodePositionLevelAPlus
+scoreNodePositionLevelInterestConfirmed
+scoreNodePositionLevelMajorValue
+scoreNodePositionLevelExpert
+scoreNodePositionLevelFan
+scoreNodePositionLevelAddict
+scoreNodePositionLevelHero
+scoreNodeTimeLevelNotIntersted
+scoreNodeTimeLevelIIintersted 
+scoreNodeTimeLevelAPlus
+scoreNodeTimeLevelInterestConfirmed
+scoreNodeTimeLevelMajorValue
+scoreNodeTimeLevelExpert
+scoreNodeTimeLevelFan
+scoreNodeTimeLevelAddict
+scoreNodeTimeLevelHero
+scoreNodeCampaignLevelNotIntersted
+scoreNodeCampaignLevelIIintersted
+scoreNodeCampaignLevelAPlus
+scoreNodeCampaignLevelInterestConfirmed
+scoreNodeCampaignLevelMajorValue
+scoreNodeCampaignLevelExpert
+scoreNodeCampaignLevelFan
+scoreNodeCampaignLevelAddict
+scoreNodeCampaignLevelHero
+scoreNodeGraphLevelNotIntersted
+scoreNodeGraphLevelIIintersted
+scoreNodeGraphLevelAPlus
+scoreNodeGraphLevelInterestConfirmed
+scoreNodeGraphLevelMajorValue
+scoreNodeGraphLevelExpert
+scoreNodeGraphLevelFan
+scoreNodeGraphLevelAddict
+scoreNodeGraphLevelHero
+scoreNodeFilterLevelNotIntersted
+scoreNodeFilterLevelIIintersted
+scoreNodeFilterLevelAPlus
+scoreNodeFilterLevelInterestConfirmed
+scoreNodeFilterLevelMajorValue
+scoreNodeFilterLevelExpert
+scoreNodeFilterLevelFan
+scoreNodeFilterLevelAddict
+scoreNodeFilterLevelHero
+scoreNodeBusinessLevelNotIntersted
+scoreNodeBusinessLevelIIintersted
+scoreNodeBusinessLevelAPlus
+scoreNodeBusinessLevelInterestConfirmed
+scoreNodeBusinessLevelMajorValue
+scoreNodeBusinessLevelExpert
+scoreNodeBusinessLevelFan
+scoreNodeBusinessLevelAddict
+scoreNodeBusinessLevelHero
+scoreNodeLeaderLevelNotIntersted
+scoreNodeLeaderLevelIIintersted
+scoreNodeLeaderLevelAPlus
+scoreNodeLeaderLevelInterestConfirmed
+scoreNodeLeaderLevelMajorValue
+scoreNodeLeaderLevelExpert
+scoreNodeLeaderLevelFan
+scoreNodeLeaderLevelAddict
+scoreNodeLeaderLevelHero
+scoreNodeContentLevelNotIntersted
+scoreNodeContentLevelIIintersted
+scoreNodeContentLevelAPlus
+scoreNodeContentLevelInterestConfirmed
+scoreNodeContentLevelMajorValue
+scoreNodeContentLevelExpert
+scoreNodeContentLevelFan
+scoreNodeContentLevelAddict
+scoreNodeContentLevelHero
+scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelNothingCommunSticker
+scoreNodeMatchingLevelSameBasicsSticker
+scoreNodeMatchingLevelLikeYouSticker
+scoreNodeMatchingLevelSamePrioritiesSticker
+scoreNodeMatchingLevelSameValuesSticker
+scoreNodeMatchingLevelPerfectMatchingSticker
+scoreNodeMatchingLevelPerfectCoupleSticker
+scoreNodeMatchingLevelSymbiosisSticker
+scoreNodeMatchingLevelCloneSticker
+scoreNodeMatchingActionLevelUnknownSticker
+scoreNodeMatchingActionLevelNothingCommunSticker
+scoreNodeMatchingActionLevelSameBasicsSticker
+scoreNodeMatchingActionLevelLikeYouSticker
+scoreNodeMatchingActionLevelSamePrioritiesSticker
+scoreNodeMatchingActionLevelSameValuesSticker
+scoreNodeMatchingActionLevelPerfectMatchingSticker
+scoreNodeMatchingActionLevelPerfectCoupleSticker
+scoreNodeMatchingActionLevelSymbiosisSticker
+scoreNodeMatchingActionLevelCloneSticker
+scoreNodeMatchingPositionSticker
+scoreNodeMatchingPositionLevelUnknownSticker
+scoreNodeMatchingPositionLevelNothingCommunSticker
+scoreNodeMatchingPositionLevelSameBasicsSticker
+scoreNodeMatchingPositionLevelLikeYouSticker
+scoreNodeMatchingPositionLevelSamePrioritiesSticker
+scoreNodeMatchingPositionLevelSameValuesSticker
+scoreNodeMatchingPositionLevelPerfectMatchingSticker
+scoreNodeMatchingPositionLevelPerfectCoupleSticker
+scoreNodeMatchingPositionLevelSymbiosisSticker
+scoreNodeMatchingPositionLevelCloneSticker
+scoreNodeMatchingTimeLevelUnknownSticker
+scoreNodeMatchingTimeLevelNothingCommunSticker
+scoreNodeMatchingTimeLevelSameBasicsSticker
+scoreNodeMatchingTimeLevelLikeYouSticker
+scoreNodeMatchingTimeLevelSamePrioritiesSticker
+scoreNodeMatchingTimeLevelSameValuesSticker
+scoreNodeMatchingTimeLevelPerfectMatchingSticker
+scoreNodeMatchingTimeLevelPerfectCoupleSticker
+scoreNodeMatchingTimeLevelSymbiosisSticker
+scoreNodeMatchingTimeLevelCloneSticker
+scoreNodeMatchingLevelUnknownSticker
+scoreNodeMatchingLevelNothingCommunSticker
+scoreNodeMatchingLevelSameBasicsSticker
+scoreNodeMatchingLevelLikeYouSticker
+scoreNodeMatchingLevelSamePrioritiesSticker
+scoreNodeMatchingLevelSameValuesSticker
+scoreNodeMatchingLevelPerfectMatchingSticker
+scoreNodeMatchingLevelPerfectCoupleSticker
+scoreNodeMatchingLevelSymbiosisSticker
+scoreNodeMatchingLevelCloneSticker
+scoreNodeMatchingCampaignLevelUnknownSticker
+scoreNodeMatchingCampaignLevelNothingCommunSticker
+scoreNodeMatchingCampaignLevelSameBasicsSticker
+scoreNodeMatchingCampaignLevelLikeYouSticker
+scoreNodeMatchingCampaignLevelSamePrioritiesSticker
+scoreNodeMatchingCampaignLevelSameValuesSticker
+scoreNodeMatchingCampaignLevelPerfectMatchingSticker
+scoreNodeMatchingCampaignLevelPerfectCoupleSticker
+scoreNodeMatchingCampaignLevelSymbiosisSticker
+scoreNodeMatchingCampaignLevelCloneSticker
+scoreNodeMatchingGraphLevelUnknownSticker
+scoreNodeMatchingGraphLevelNothingCommunSticker
+scoreNodeMatchingGraphLevelSameBasicsSticker
+scoreNodeMatchingGraphLevelLikeYouSticker
+scoreNodeMatchingGraphLevelSamePrioritiesSticker
+scoreNodeMatchingGraphLevelSameValuesSticker
+scoreNodeMatchingGraphLevelPerfectMatchingSticker
+scoreNodeMatchingGraphLevelPerfectCoupleSticker
+scoreNodeMatchingGraphLevelSymbiosisSticker
+scoreNodeMatchingGraphLevelCloneSticker
+scoreNodeMatchingFilterLevelUnknownSticker
+scoreNodeMatchingFilterLevelNothingCommunSticker
+scoreNodeMatchingFilterLevelSameBasicsSticker
+scoreNodeMatchingFilterLevelLikeYouSticker
+scoreNodeMatchingFilterLevelSamePrioritiesSticker
+scoreNodeMatchingFilterLevelSameValuesSticker
+scoreNodeMatchingFilterLevelPerfectMatchingSticker
+scoreNodeMatchingFilterLevelPerfectCoupleSticker
+scoreNodeMatchingFilterLevelSymbiosisSticker
+scoreNodeMatchingFilterLevelCloneSticker
+scoreNodeMatchingBusinessLevelUnknownSticker
+scoreNodeMatchingBusinessLevelNothingCommunSticker
+scoreNodeMatchingBusinessLevelSameBasicsSticker
+scoreNodeMatchingBusinessLevelLikeYouSticker
+scoreNodeMatchingBusinessLevelSamePrioritiesSticker
+scoreNodeMatchingBusinessLevelSameValuesSticker
+scoreNodeMatchingBusinessLevelPerfectMatchingSticker
+scoreNodeMatchingBusinessLevelPerfectCoupleSticker
+scoreNodeMatchingBusinessLevelSymbiosisSticker
+scoreNodeMatchingBusinessLevelCloneSticker
+scoreNodeMatchingLeaderLevelUnknownSticker
+scoreNodeMatchingLeaderLevelNothingCommunSticker
+scoreNodeMatchingLeaderLevelSameBasicsSticker
+scoreNodeMatchingLeaderLevelLikeYouSticker
+scoreNodeMatchingLeaderLevelSamePrioritiesSticker
+scoreNodeMatchingLeaderLevelSameValuesSticker
+scoreNodeMatchingLeaderLevelPerfectMatchingSticker
+scoreNodeMatchingLeaderLevelPerfectCoupleSticker
+scoreNodeMatchingLeaderLevelSymbiosisSticker
+scoreNodeMatchingLeaderLevelCloneSticker
+scoreNodeContentLevelNotInterstedSticker
+scoreNodeContentLevelIIinterstedSticker
+scoreNodeContentLevelAPlusSticker
+scoreNodeContentLevelInterestConfirmedSticker
+scoreNodeContentLevelMajorValueSticker
+scoreNodeContentLevelExpertSticker
+scoreNodeContentLevelFanSticker
+scoreNodeContentLevelAddictSticker
+scoreNodeContentLevelHeroSticker
+scoreNodeLevelNotInterstedSticker
+scoreNodeLevelIIinterstedSticker
+scoreNodeLevelAPlusSticker
+scoreNodeLevelInterestConfirmedSticker
+scoreNodeLevelMajorValueSticker
+scoreNodeLevelExpertSticker
+scoreNodeLevelFanSticker
+scoreNodeLevelAddictSticker
+scoreNodeLevelHeroSticker
+scoreNodeActionLevelNotInterstedSticker
+scoreNodeActionLevelIIinterstedSticker
+scoreNodeActionLevelAPlusSticker
+scoreNodeActionLevelInterestConfirmedSticker
+scoreNodeActionLevelMajorValueSticker
+scoreNodeActionLevelExpertSticker
+scoreNodeActionLevelFanSticker
+scoreNodeActionLevelAddictSticker
+scoreNodeActionLevelHeroSticker
+scoreNodePositionLevelNotInterstedSticker
+scoreNodePositionLevelIIinterstedSticker
+scoreNodePositionLevelAPlusSticker
+scoreNodePositionLevelInterestConfirmedSticker
+scoreNodePositionLevelMajorValueSticker
+scoreNodePositionLevelExpertSticker
+scoreNodePositionLevelFanSticker
+scoreNodePositionLevelAddictSticker
+scoreNodePositionLevelHeroSticker
+scoreNodeTimeLevelNotInterstedSticker
+scoreNodeTimeLevelIIinterstedSticker 
+scoreNodeTimeLevelAPlusSticker
+scoreNodeTimeLevelInterestConfirmedSticker
+scoreNodeTimeLevelMajorValueSticker
+scoreNodeTimeLevelExpertSticker
+scoreNodeTimeLevelFanSticker
+scoreNodeTimeLevelAddictSticker
+scoreNodeTimeLevelHeroSticker
+scoreNodeCampaignLevelNotInterstedSticker
+scoreNodeCampaignLevelIIinterstedSticker
+scoreNodeCampaignLevelAPlusSticker
+scoreNodeCampaignLevelInterestConfirmedSticker
+scoreNodeCampaignLevelMajorValueSticker
+scoreNodeCampaignLevelExpertSticker
+scoreNodeCampaignLevelFanSticker
+scoreNodeCampaignLevelAddictSticker
+scoreNodeCampaignLevelHeroSticker
+scoreNodeGraphLevelNotInterstedSticker
+scoreNodeGraphLevelIIinterstedSticker
+scoreNodeGraphLevelAPlusSticker
+scoreNodeGraphLevelInterestConfirmedSticker
+scoreNodeGraphLevelMajorValueSticker
+scoreNodeGraphLevelExpertSticker
+scoreNodeGraphLevelFanSticker
+scoreNodeGraphLevelAddictSticker
+scoreNodeGraphLevelHeroSticker
+scoreNodeFilterLevelNotInterstedSticker
+scoreNodeFilterLevelIIinterstedSticker
+scoreNodeFilterLevelAPlusSticker
+scoreNodeFilterLevelInterestConfirmedSticker
+scoreNodeFilterLevelMajorValueSticker
+scoreNodeFilterLevelExpertSticker
+scoreNodeFilterLevelFanSticker
+scoreNodeFilterLevelAddictSticker
+scoreNodeFilterLevelHeroSticker
+scoreNodeBusinessLevelNotInterstedSticker
+scoreNodeBusinessLevelIIinterstedSticker
+scoreNodeBusinessLevelAPlusSticker
+scoreNodeBusinessLevelInterestConfirmedSticker
+scoreNodeBusinessLevelMajorValueSticker
+scoreNodeBusinessLevelExpertSticker
+scoreNodeBusinessLevelFanSticker
+scoreNodeBusinessLevelAddictSticker
+scoreNodeBusinessLevelHeroSticker
+scoreNodeLeaderLevelNotInterstedSticker
+scoreNodeLeaderLevelIIinterstedSticker
+scoreNodeLeaderLevelAPlusSticker
+scoreNodeLeaderLevelInterestConfirmedSticker
+scoreNodeLeaderLevelMajorValueSticker
+scoreNodeLeaderLevelExpertSticker
+scoreNodeLeaderLevelFanSticker
+scoreNodeLeaderLevelAddictSticker
+scoreNodeLeaderLevelHeroSticker
+scoreNodeContentLevelNotInterstedSticker
+scoreNodeContentLevelIIinterstedSticker
+scoreNodeContentLevelAPlusSticker
+scoreNodeContentLevelInterestConfirmedSticker
+scoreNodeContentLevelMajorValueSticker
+scoreNodeContentLevelExpertSticker
+scoreNodeContentLevelFanSticker
+scoreNodeContentLevelAddictSticker
+scoreNodeContentLevelHeroSticker
+algorythmeNodeMatchingSticker
+algorythmeNodeMatchingActionSticker
+algorythmeNodeMatchingPositionSticker
+algorythmeNodeMatchingTimeSticker
+algorythmeNodeMatchingSticker
+algorythmeNodeMatchingCampaignSticker
+algorythmeNodeMatchingGraphSticker
+algorythmeNodeMatchingFilterSticker
+algorythmeNodeMatchingBusinessSticker
+algorythmeNodeMatchingLeaderSticker
+algorythmeNodeContentSticker
+algorythmeNodeSticker
+algorythmeNodeActionSticker
+algorythmeNodePositionSticker
+algorythmeNodeTimeSticker
+algorythmeNodeCampaignSticker
+algorythmeNodeGraphSticker
+algorythmeNodeFilterSticker
+algorythmeNodeBusinessSticker
+algorythmeNodeLeaderSticker
+algorythmeNodeContentSticker"
+uxCenterAlgorythm
+uxCenterAlgorythmPrevAction
+uxCenterAlgorythmNextActionAction
+uxCenterAlgorythmAddAction
+uxCenterAlgorythmItem
+uxCenterAlgorythmSticker
+uxCenterAlgorythmDetail
+uxCenterAlgorythmRead
+uxCenterAlgorythmWrite
+uxCenterAlgorythmDelete
+uxCenterAlgorythmStickerAction
+uxCenterAlgorythmDetailAction
+uxCenterAlgorythmReadAction
+uxCenterAlgorythmWriteAction
+uxCenterAlgorythmDeleteAction
+uxCenterScore
+uxCenterScorePrevAction
+uxCenterScoreNextActionAction
+uxCenterScoreAddAction
+uxCenterScoreItem
+uxCenterScoreSticker
+uxCenterScoreDetail
+uxCenterScoreRead
+uxCenterScoreWrite
+uxCenterScoreDelete
+uxCenterScoreStickerAction
+uxCenterScoreDetailAction
+uxCenterScoreReadAction
+uxCenterScoreWriteAction
+uxCenterScoreDeleteAction
+errorCode500-101
+errorCode500-001
+errorCode200-101
+errorCode200-001
+errorCode200-201
+errorCode200-401
+errorCode200-301
+errorCode000-001
+envDev
+envDevErrorLevelWarning
+envDevErrorLevelFatal
+envDevErrorLevelNotice
+envDevErrorLevelInfo
+envDevErrorLevelStart
+envDevErrorLevelEnd
+envDevErrorLevelEndOK
+envDevErrorLevelEndValue
+envDevErrorLevelStartParam
+envPreprod
+envPreprodErrorLevelWarning
+envPreprodErrorLevelFatal
+envPreprodErrorLevelNotice
+envPreprodErrorLevelInfo
+envPreprodErrorLevelStart
+envPreprodErrorLevelEndOK
+envPreprodErrorLevelEndValue
+envPreprodErrorLevelStartParam
+envProd
+envProductionErrorLevelWarning
+envProductionErrorLevelFatal
+envProductionErrorLevelNotice
+envProductionErrorLevelInfo
+envProductionErrorLevelStart
+envProductionErrorLevelEndOK
+envProductionErrorLevelEndValue
+envProductionErrorLevelStartParam
+resourceUx
+resourceHuman
+resourceMaterial
+resourceLocation
+resourceService
+resourcelegal
+resourceAdministrative
+resourceOtherAsset
+semanticCorpusThemeDefault
+semanticCorpusDefault
+semanticWordDefault
+
+
+  "relationshipList": {
+    "stickTctCorp_tctCorp": {
+      "relationship": "REPRESENTE",
+      "start": "stickTctCorp",
+      "end": "tctCorp"
+    },
+    "stickTctTeam_tctTeam": {
+      "relationship": "REPRESENTE",
+      "start": "stickTctTeam",
+      "end": "tctTeam"
+    },
+    "stickTctPers_tctPers": {
+      "relationship": "REPRESENTE",
+      "start": "stickTctPers",
+      "end": "tctPers"
+    },
+    "stickActWkfTest_actWkfTest": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfTest",
+      "end": "actWkfTest"
+    },
+    "stickActWkfValid_actWkfValid": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfValid",
+      "end": "actWkfValid"
+    },
+    "stickActWkfCollect_actWkfCollect": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfCollect",
+      "end": "actWkfCollect"
+    },
+    "stickActWkfOptimize_actWkfOptimize": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfOptimize",
+      "end": "actWkfOptimize"
+    },
+    "stickActWkfShipp_actWkfShipp": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfShipp",
+      "end": "actWkfShipp"
+    },
+    "stickActWkfPay_actWkfPay": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfPay",
+      "end": "actWkfPay"
+    },
+    "stickActWkfBilling_actWkfBilling": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfBilling",
+      "end": "actWkfBilling"
+    },
+    "stickActWkfExpedite_actWkfExpedite": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfExpedite",
+      "end": "actWkfExpedite"
+    },
+    "stickActWkfPayBack_actWkfPayBack": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfPayBack",
+      "end": "actWkfPayBack"
+    },
+    "stickActWkfShippManage_actWkfShippManage": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfShippManage",
+      "end": "actWkfShippManage"
+    },
+    "stickActWkfExpediteManage_actWkfExpediteManage": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfExpediteManage",
+      "end": "actWkfExpediteManage"
+    },
+    "stickActWkfPayManage_actWkfPayManage": {
+      "relationship": "REPRESENTE",
+      "start": "stickActWkfPayManage",
+      "end": "stickActWkfPayManage"
+    },
+    "stickActLfcCreate_actLfcCreate": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcCreate",
+      "end": "actLfcCreate"
+    },
+    "stickActLfcInit_actLfcInit": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcInit",
+      "end": "actLfcInit"
+    },
+    "stickActLfcPublish_actLfcPublish": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcPublish",
+      "end": "actLfcPublish"
+    },
+    "stickActLfcState_actLfcState": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcState",
+      "end": "actLfcState"
+    },
+    "stickActLfcExpire_actLfcExpire": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcExpire",
+      "end": "actLfcExpire"
+    },
+    "stickActLfcHistorize_actLfcHistorize": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcHistorize",
+      "end": "actLfcHistorize"
+    },
+    "stickActLfcArchive_actLfcArchive": {
+      "relationship": "REPRESENTE",
+      "start": "stickActLfcArchive",
+      "end": "actLfcArchive"
+    },
+    "stickActClabMark_actClabMark": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabMark",
+      "end": "actClabMark"
+    },
+    "stickActClabAsk_actClabAsk": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabAsk",
+      "end": "actClabAsk"
+    },
+    "stickActClabNote_actClabNote": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabNote",
+      "end": "actClabNote"
+    },
+    "stickActClabComment_actClabComment": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabComment",
+      "end": "actClabComment"
+    },
+    "stickActClabShare_actClabShare": {
+      "relationship": "REPRESENTE",
+      "start": "catEmoNeg",
+      "end": "emoNegSadness"
+    },
+    "stickActClabContributeTo_actClabContributeTo": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabContributeTo",
+      "end": "actClabContributeTo"
+    },
+    "stickActClabFacility_actClabFacility": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabFacility",
+      "end": "actClabFacility"
+    },
+    "stickActClabBalance_actClabBalance": {
+      "relationship": "REPRESENTE",
+      "start": "stickActClabBalance",
+      "end": "actClabBalance"
+    },
+    "stickActUaReturn_actUaReturn": {
+      "relationship": "REPRESENTE",
+      "start": "stickActUaReturn",
+      "end": "actUaReturn"
+    },
+    "stickActUaOrder_actUaOrder": {
+      "relationship": "REPRESENTE",
+      "start": "stickActUaOrder",
+      "end": "actUaOrder"
+    },
+    "stickActUaAdd_actUaAdd": {
+      "relationship": "REPRESENTE",
+      "start": "stickActUaAdd",
+      "end": "actUaAdd"
+    },
+    "stickActUaBuy_actUaBuy": {
+      "relationship": "REPRESENTE",
+      "start": "stickActUaBuy",
+      "end": "actUaBuy"
+    },
+    "stickActUaShow_actUaShow": {
+      "relationship": "REPRESENTE",
+      "start": "catEmoNeg",
+      "end": "emoNegSadness"
+    },
+    "stickActUaUse_actUaUse": {
+      "relationship": "REPRESENTE",
+      "start": "stickActUaUse",
+      "end": "actUaUse"
+    },
+    "stickActCmTarget_actCmTarget": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmTarget",
+      "end": "actCmTarget"
+    },
+    "stickActCmRepresente_actCmRepresente": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmRepresente",
+      "end": "actCmRepresente"
+    },
+    "stickActCmIdentify_actCmIdentify": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmIdentify",
+      "end": "actCmIdentify"
+    },
+    "stickActCmLocalize_actCmLocalize": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmLocalize",
+      "end": "stickActCmLocalize"
+    },
+    "stickActCmSize_actCmSize": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmSize",
+      "end": "actCmSize"
+    },
+    "stickActCmConcern_actCmConcern": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmConcern",
+      "end": "actCmConcern"
+    },
+    "stickActCmCost_actCmCost": {
+      "relationship": "REPRESENTE",
+      "start": "stickActCmCost",
+      "end": "actCmCost"
+    },
+    "stickActAuthOwn_actAuthOwn": {
+      "relationship": "REPRESENTE",
+      "start": "stickActAuthOwn",
+      "end": "actAuthOwn"
+    },
+    "stickActAuthManage_actAuthManage": {
+      "relationship": "REPRESENTE",
+      "start": "stickActAuthManage",
+      "end": "actAuthManage"
+    },
+    "stickActAuthAuthorise_actAuthAuthorise": {
+      "relationship": "REPRESENTE",
+      "start": "stickActAuthAuthorise",
+      "end": "actAuthAuthorise"
+    },
+    "stickActStaHost_actStaHost": {
+      "relationship": "REPRESENTE",
+      "start": "stickActStaHost",
+      "end": "actStaHost"
+    },
+    "stickActStaProduce_actStaProduce": {
+      "relationship": "REPRESENTE",
+      "start": "stickActStaProduce",
+      "end": "actStaProduce"
+    },
+    "stickActStaStock_actStaStock": {
+      "relationship": "REPRESENTE",
+      "start": "stickActStaStock",
+      "end": "actStaStock"
+    },
+    "stickEmoNegAnger_emoNegAnger": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegAnger",
+      "end": "emoNegAnger"
+    },
+    "stickEmoNegAnnoyance_emoNegAnnoyance": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegAnnoyance",
+      "end": "emoNegAnnoyance"
+    },
+    "stickEmoNegContempt_emoNegContempt": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegContempt",
+      "end": "emoNegContempt"
+    },
+    "stickEmoNegDisgust_emoNegDisgust": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegDisgust",
+      "end": "emoNegDisgust"
+    },
+    "stickEmoNegIrritation_emoNegIrritation": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegIrritation",
+      "end": "emoNegIrritation"
+    },
+    "stickEmoNegAnxiety_emoNegAnxiety": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegAnxiety",
+      "end": "emoNegAnxiety"
+    },
+    "stickEmoNegEmbarrassment_emoNegEmbarrassment": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegEmbarrassment",
+      "end": "emoNegEmbarrassment"
+    },
+    "stickEmoNegFear_emoNegFear": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegFear",
+      "end": "emoNegFear"
+    },
+    "stickEmoNegHelplessness_emoNegHelplessness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegHelplessness",
+      "end": "emoNegHelplessness"
+    },
+    "stickEmoNegPowerlessness_emoNegPowerlessness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegPowerlessness",
+      "end": "emoNegPowerlessness"
+    },
+    "stickEmoNegWorry_emoNegWorry": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegWorry",
+      "end": "emoNegWorry"
+    },
+    "stickEmoNegDoubty_emoNegDoubty": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegDoubty",
+      "end": "emoNegDoubty"
+    },
+    "stickEmoNegEnvy_emoNegEnvy": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegEnvy",
+      "end": "emoNegEnvy"
+    },
+    "stickEmoNegFrustration_emoNegFrustration": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegFrustration",
+      "end": "emoNegFrustration"
+    },
+    "stickEmoNegGuilt_emoNegGuilt": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegGuilt",
+      "end": "emoNegGuilt"
+    },
+    "stickEmoNegShame_emoNegShame": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegShame",
+      "end": "emoNegShame"
+    },
+    "stickEmoNegBoredom_emoNegBoredom": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegBoredom",
+      "end": "emoNegBoredom"
+    },
+    "stickEmoNegDespair_emoNegDespair": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegDespair",
+      "end": "emoNegDespair"
+    },
+    "stickEmoNegDisappointment_emoNegDisappointment": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegDisappointment",
+      "end": "emoNegDisappointment"
+    },
+    "stickEmoNegHurt_emoNegHurt": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegHurt",
+      "end": "emoNegHurt"
+    },
+    "stickEmoNegSadness_emoNegSadness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoNegSadness",
+      "end": "emoNegSadness"
+    },
+    "stickEmoPosAmusement_emoPosAmusement": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosAmusement",
+      "end": "emoPosAmusement"
+    },
+    "stickEmoPosDelight_emoPosDelight": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosDelight",
+      "end": "emoPosDelight"
+    },
+    "stickEmoPosElation_emoPosElation": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosElation",
+      "end": "emoPosElation"
+    },
+    "stickEmoPosExcitement_emoPosExcitement": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosExcitement",
+      "end": "emoPosExcitement"
+    },
+    "stickEmoPosHappiness_emoPosHappiness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosHappiness",
+      "end": "emoPosHappiness"
+    },
+    "stickEmoPosJoy_emoPosJoy": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosJoy",
+      "end": "emoPosJoy"
+    },
+    "stickEmoPosPleasure_emoPosPleasure": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosPleasure",
+      "end": "emoPosPleasure"
+    },
+    "stickEmoPosCourage_emoPosCourage": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosCourage",
+      "end": "emoPosCourage"
+    },
+    "stickEmoPosHope_emoPosHope": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosHope",
+      "end": "emoPosHope"
+    },
+    "stickEmoPosPride_emoPosPride": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosPride",
+      "end": "emoPosPride"
+    },
+    "stickEmoPosSatisfaction_emoPosSatisfaction": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosSatisfaction",
+      "end": "emoPosSatisfaction"
+    },
+    "stickEmoPosTrust_emoPosTrust": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosTrust",
+      "end": "emoPosTrust"
+    },
+    "stickEmoPosCalmness_emoPosCalmness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosCalmness",
+      "end": "emoPosCalmness"
+    },
+    "stickEmoPosContentment_emoPosContentment": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosContentment",
+      "end": "emoPosContentment"
+    },
+    "stickEmoPosRelaxation_emoPosRelaxation": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosRelaxation",
+      "end": "emoPosRelaxation"
+    },
+    "stickEmoPosRelief_emoPosRelief": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosRelief",
+      "end": "emoPosRelief"
+    },
+    "stickEmoPosSerenity_emoPosSerenity": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosSerenity",
+      "end": "emoPosSerenity"
+    },
+    "stickEmoPosNegStress_emoPosNegStress": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegStress",
+      "end": "emoPosNegStress"
+    },
+    "stickEmoPosNegShock_emoPosNegShock": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegShock",
+      "end": "emoPosNegShock"
+    },
+    "stickEmoPosNegTension_emoPosNegTension": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegTension",
+      "end": "emoPosNegTension"
+    },
+    "stickEmoPosNegAffection_emoPosNegAffection": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegAffection",
+      "end": "emoPosNegAffection"
+    },
+    "stickEmoPosNegEmpathy_emoPosNegEmpathy": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegEmpathy",
+      "end": "emoPosNegEmpathy"
+    },
+    "stickEmoPosNegFriendliness_emoPosNegFriendliness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegFriendliness",
+      "end": "emoPosNegFriendliness"
+    },
+    "stickEmoPosNegLove_emoPosNegLove": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegLove",
+      "end": "emoPosNegLove"
+    },
+    "stickEmoPosNegInterest_emoPosNegInterest": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegInterest",
+      "end": "emoPosNegInterest"
+    },
+    "stickEmoPosNegPoliteness_emoPosNegPoliteness": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegPoliteness",
+      "end": "emoPosNegPoliteness"
+    },
+    "stickEmoPosNegSurprise_emoPosNegSurprise": {
+      "relationship": "REPRESENTE",
+      "start": "stickEmoPosNegSurprise",
+      "end": "emoPosNegSurprise"
+    },
+    "uxSite_uxHeader": {
+      "relationship": "CONTAIN",
+      "start": "uxSite",
+      "end": "uxHeader"
+    },
+    "uxSite_uxSectionRight": {
+      "relationship": "CONTAIN",
+      "start": "uxSite",
+      "end": "uxSectionRight"
+    },
+    "uxSite_uxSectionLeft": {
+      "relationship": "CONTAIN",
+      "start": "uxSite",
+      "end": "uxSectionLeft"
+    },
+    "uxSite_uxSectionCenter": {
+      "relationship": "CONTAIN",
+      "start": "uxSite",
+      "end": "uxSectionCenter"
+    },
+    "uxSite_uxSiteNotification": {
+      "relationship": "CONTAIN",
+      "start": "uxSite",
+      "end": "uxSiteNotification"
+    },
+    "uxSite_uxFooter": {
+      "relationship": "CONTAIN",
+      "start": "uxSite",
+      "end": "uxFooter"
+    },
+    "uxFooter_uxFooterTerms": {
+      "relationship": "CONTAIN",
+      "start": "uxFooter",
+      "end": "uxFooterTerms"
+    },
+    "uxFooter_uxFooterLegal": {
+      "relationship": "CONTAIN",
+      "start": "uxFooter",
+      "end": "uxFooterLegal"
+    },
+    "uxHeader_uxHeaderBurger": {
+      "relationship": "CONTAIN",
+      "start": "uxHeader",
+      "end": "uxHeaderBurger"
+    },
+    "uxHeader_uxHeaderLogo": {
+      "relationship": "CONTAIN",
+      "start": "uxHeader",
+      "end": "uxHeaderLogo"
+    },
+    "uxHeader_uxHeaderTitle": {
+      "relationship": "CONTAIN",
+      "start": "uxHeader",
+      "end": "uxHeaderTitle"
+    },
+    "uxHeader_uxHeaderToolBar": {
+      "relationship": "CONTAIN",
+      "start": "uxHeader",
+      "end": "uxHeaderToolBar"
+    },
+    "uxHeaderToolBar_uxHeaderToolBarEmotion": {
+      "relationship": "CONTAIN",
+      "start": "uxHeaderToolBar",
+      "end": "uxHeaderToolBarEmotion"
+    },
+    "uxHeaderToolBarEmotion_uxHeaderToolBarEmotionItem": {
+      "relationship": "CONTAIN",
+      "start": "uxHeaderToolBarEmotion",
+      "end": "uxHeaderToolBarEmotionItem"
+    },
+    "uxHeaderToolBarEmotion_uxHeaderToolBarEmotionPrevAction": {
+      "relationship": "CONTAIN",
+      "start": "uxHeaderToolBarEmotion",
+      "end": "uxHeaderToolBarEmotionPrevAction"
+    },
+    "uxHeaderToolBarEmotion_uxHeaderToolBarEmotionNextAction": {
+      "relationship": "CONTAIN",
+      "start": "uxHeaderToolBarEmotion",
+      "end": "uxHeaderToolBarEmotionNextAction"
+    },
+    "uxHeaderToolBarEmotion_uxHeaderToolBarEmotionAddAction": {
+      "relationship": "CONTAIN",
+      "start": "uxHeaderToolBarEmotion",
+      "end": "uxHeaderToolBarEmotionAddAction"
+    },
+    "uxSectionRight_uxSectionRightToolBar": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionRightToolBar"
+    },
+    "uxSectionRight_uxSectionLeftUserAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserAction"
+    },
+    "uxSectionRight_uxSectionLeftUserList": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserList"
+    },
+    "uxSectionRight_uxSectionLeftUserListItem": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserListItem"
+    },
+    "uxSectionRight_uxSectionLeftUserSticker": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserSticker"
+    },
+    "uxSectionRight_uxSectionLeftUserDetail": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserDetail"
+    },
+    "uxSectionRight_uxSectionLeftUserRead": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserRead"
+    },
+    "uxSectionRight_uxSectionLeftUserWrite": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserWrite"
+    },
+    "uxSectionRight_uxSectionLeftUserDelete": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRight",
+      "end": "uxSectionLeftUserDelete"
+    },
+    "uxSectionRightToolBar_uxSectionRightToolBarViewListAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBar",
+      "end": "uxSectionRightToolBarViewListAction"
+    },
+    "uxSectionRightToolBar_uxSectionRightToolBarViewMapAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBar",
+      "end": "uxSectionRightToolBarViewMapAction"
+    },
+    "uxSectionRightToolBar_uxSectionRightToolBarViewTimeAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBar",
+      "end": "uxSectionRightToolBarViewTimeAction"
+    },
+    "uxSectionRightToolBar_uxSectionRightToolBarViewGraphAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBar",
+      "end": "uxSectionRightToolBarViewGraphAction"
+    },
+    "uxSectionRightToolBar_uxSectionRightToolBarAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBar",
+      "end": "uxSectionRightToolBarAction"
+    },
+    "uxSectionRightToolBarAction_uxSectionRightToolBarActionItem": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBarAction",
+      "end": "uxSectionRightToolBarActionItem"
+    },
+    "uxSectionRightToolBarAction_uxSectionRightToolBarActionNextAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBarAction",
+      "end": "uxSectionRightToolBarActionNextAction"
+    },
+    "uxSectionRightToolBarAction_uxSectionRightToolBarActionPrevAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBarAction",
+      "end": "uxSectionRightToolBarActionPrevAction"
+    },
+    "uxSectionRightToolBarAction_uxSectionRightToolBarActionAddAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionRightToolBarAction",
+      "end": "uxSectionRightToolBarActionAddAction"
+    },
+    "uxSectionLeftUserDetail_uxSectionLeftUserStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserDetail",
+      "end": "uxSectionLeftUserStickerAction"
+    },
+    "uxSectionLeftUserDetail_uxSectionLeftUserReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserDetail",
+      "end": "uxSectionLeftUserReadAction"
+    },
+    "uxSectionLeftUserDetail_uxSectionLeftUserWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserDetail",
+      "end": "uxSectionLeftUserWriteAction"
+    },
+    "uxSectionLeftUserDetail_uxSectionLeftUserDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserDetail",
+      "end": "uxSectionLeftUserDeleteAction"
+    },
+    "uxSectionLeftUserRead_uxSectionLeftUserStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "",
+      "end": ""
+    },
+    "uxSectionLeftUserRead_uxSectionLeftUserDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserRead",
+      "end": "uxSectionLeftUserDetailAction"
+    },
+    "uxSectionLeftUserRead_uxSectionLeftUserWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserRead",
+      "end": "uxSectionLeftUserWriteAction"
+    },
+    "uxSectionLeftUserRead_uxSectionLeftUserDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserRead",
+      "end": "uxSectionLeftUserDeleteAction"
+    },
+    "uxSectionLeftUserWrite_uxSectionLeftUserStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserWrite",
+      "end": "uxSectionLeftUserStickerAction"
+    },
+    "uxSectionLeftUserWrite_uxSectionLeftUserDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserWrite",
+      "end": "uxSectionLeftUserDetailAction"
+    },
+    "uxSectionLeftUserWrite_uxSectionLeftUserReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserWrite",
+      "end": "uxSectionLeftUserReadAction"
+    },
+    "uxSectionLeftUserWrite_uxSectionLeftUserDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserWrite",
+      "end": "uxSectionLeftUserDeleteAction"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotAction"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotList": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotList"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotSticker": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotSticker"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotDetail": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotDetail"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotRead": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotRead"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotWrite": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotWrite"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotDelete": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotDelete"
+    },
+    "uxSectionLeftUserNotDetail_uxSectionLeftUserNotStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotDetail",
+      "end": "uxSectionLeftUserNotStickerAction"
+    },
+    "uxSectionLeftUserNotDetail_uxSectionLeftUserNotReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotDetail",
+      "end": "uxSectionLeftUserNotReadAction"
+    },
+    "uxSectionLeftUserNotDetail_uxSectionLeftUserNotWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotDetail",
+      "end": "uxSectionLeftUserNotWriteAction"
+    },
+    "uxSectionLeftUserNotDetail_uxSectionLeftUserNotDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "",
+      "end": ""
+    },
+    "uxSectionLeftUserNotRead_uxSectionLeftUserNotStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotRead",
+      "end": "uxSectionLeftUserNotStickerAction"
+    },
+    "uxSectionLeftUserNotRead_uxSectionLeftUserNotDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotRead",
+      "end": "uxSectionLeftUserNotDetailAction"
+    },
+    "uxSectionLeftUserNotRead_uxSectionLeftUserNotWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotRead",
+      "end": "uxSectionLeftUserNotWriteAction"
+    },
+    "uxSectionLeftUserNotRead_uxSectionLeftUserNotDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotRead",
+      "end": "uxSectionLeftUserNotDeleteAction"
+    },
+    "uxSectionLeftUserNotWrite_uxSectionLeftUserNotStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotWrite",
+      "end": "uxSectionLeftUserNotStickerAction"
+    },
+    "uxSectionLeftUserNotWrite_uxSectionLeftUserNotDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotWrite",
+      "end": "uxSectionLeftUserNotDetailAction"
+    },
+    "uxSectionLeftUserNotWrite_uxSectionLeftUserNotReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotWrite",
+      "end": "uxSectionLeftUserNotReadAction"
+    },
+    "uxSectionLeftUserNotWrite_uxSectionLeftUserNotDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserNotWrite",
+      "end": "uxSectionLeftUserNotDeleteAction"
+    },
+    "uxSectionLeft_uxSectionLeftUserNotListItem": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserNotListItem"
+    },
+    "uxSectionLeft_uxSectionLeftUserPoint": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserPoint"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaAction"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaList": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaList"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaSticker": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaSticker"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaDetail": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaDetail"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaRead": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaRead"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaWrite": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaWrite"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaDelete": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaDelete"
+    },
+    "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaDetail",
+      "end": "uxSectionLeftUserAgendaStickerAction"
+    },
+    "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaDetail",
+      "end": "uxSectionLeftUserAgendaReadAction"
+    },
+    "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaDetail",
+      "end": "uxSectionLeftUserAgendaWriteAction"
+    },
+    "uxSectionLeftUserAgendaDetail_uxSectionLeftUserAgendaDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaDetail",
+      "end": "uxSectionLeftUserAgendaDeleteAction"
+    },
+    "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaRead",
+      "end": "uxSectionLeftUserAgendaStickerAction"
+    },
+    "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaRead",
+      "end": "uxSectionLeftUserAgendaDetailAction"
+    },
+    "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaRead",
+      "end": "uxSectionLeftUserAgendaWriteAction"
+    },
+    "uxSectionLeftUserAgendaRead_uxSectionLeftUserAgendaDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaRead",
+      "end": "uxSectionLeftUserAgendaDeleteAction"
+    },
+    "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaWrite",
+      "end": "uxSectionLeftUserAgendaStickerAction"
+    },
+    "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaWrite",
+      "end": "uxSectionLeftUserAgendaDetailAction"
+    },
+    "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaWrite",
+      "end": "uxSectionLeftUserAgendaReadAction"
+    },
+    "uxSectionLeftUserAgendaWrite_uxSectionLeftUserAgendaDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftUserAgendaWrite",
+      "end": "uxSectionLeftUserAgendaDeleteAction"
+    },
+    "uxSectionLeft_uxSectionLeftUserAgendaListItem": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftUserAgendaListItem"
+    },
+    "uxSectionLeft_uxSectionLeftFilterAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftFilterAction"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNode": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNode"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNodeItem": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNodeItem"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNodeSticker": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNodeSticker"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNodeDetail": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNodeDetail"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNodeRead": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNodeRead"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNodeWrite": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNodeWrite"
+    },
+    "uxSectionLeft_uxSectionLeftToolBarNodeDelete": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionLeftToolBarNodeDelete"
+    },
+    "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeDetail",
+      "end": "uxSectionLeftToolBarNodeStickerAction"
+    },
+    "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeDetail",
+      "end": "uxSectionLeftToolBarNodeReadAction"
+    },
+    "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeDetail",
+      "end": "uxSectionLeftToolBarNodeWriteAction"
+    },
+    "uxSectionLeftToolBarNodeDetail_uxSectionLeftToolBarNodeDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeDetail",
+      "end": "uxSectionLeftToolBarNodeDeleteAction"
+    },
+    "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeRead",
+      "end": "uxSectionLeftToolBarNodeStickerAction"
+    },
+    "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeRead",
+      "end": "uxSectionLeftToolBarNodeDetailAction"
+    },
+    "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeRead",
+      "end": "uxSectionLeftToolBarNodeWriteAction"
+    },
+    "uxSectionLeftToolBarNodeRead_uxSectionLeftToolBarNodeDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeRead",
+      "end": "uxSectionLeftToolBarNodeDeleteAction"
+    },
+    "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeWrite",
+      "end": "uxSectionLeftToolBarNodeStickerAction"
+    },
+    "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeWrite",
+      "end": "uxSectionLeftToolBarNodeDetailAction"
+    },
+    "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeReadAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeWrite",
+      "end": "uxSectionLeftToolBarNodeReadAction"
+    },
+    "uxSectionLeftToolBarNodeWrite_uxSectionLeftToolBarNodeDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeftToolBarNodeWrite",
+      "end": "uxSectionLeftToolBarNodeDeleteAction"
+    },
+    "uxSectionLeft_uxSectionCenterContentToolBar": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionLeft",
+      "end": "uxSectionCenterContentToolBar"
+    },
+    "uxSectionCenter_uxSectionCenterContentToolBarZoomIn": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "uxSectionCenterContentToolBarZoomIn"
+    },
+    "uxSectionCenter_uxSectionCenterContentToolBarZoomOu": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "uxSectionCenterContentToolBarZoomOu"
+    },
+    "uxSectionCenter_uxSectionCenterContentMap": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "uxSectionCenterContentMap"
+    },
+    "uxSectionCenter_uxSectionCenterContentTimeLine": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "uxSectionCenterContentTimeLine"
+    },
+    "uxSectionCenter_uxSectionCenterContentGraph": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "uxSectionCenterContentGraph"
+    },
+    "uxSectionCenter_evtUxMapPoint": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxMapPoint"
+    },
+    "uxSectionCenter_evtUxTimePoint": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxTimePoint"
+    },
+    "uxSectionCenter_evtUxGraphPoint": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxGraphPoint"
+    },
+    "uxSectionCenter_evtUxItemPoint": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemPoint"
+    },
+    "uxSectionCenter_evtUxGraphPointRelationShips": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxGraphPointRelationShips"
+    },
+    "uxSectionCenter_evtUxTimePointRelationShips": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxTimePointRelationShips"
+    },
+    "uxSectionCenter_evtUxMapPointRelationShips": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxMapPointRelationShips"
+    },
+    "uxSectionCenter_evtUxItemRelationShips": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemRelationShips"
+    },
+    "uxSectionCenter_evtUxItemRelationShipsSticker": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemRelationShipsSticker"
+    },
+    "uxSectionCenter_evtUxItemRelationShipsDetail": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemRelationShipsDetail"
+    },
+    "uxSectionCenter_evtUxItemRelationShipsRead": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemRelationShipsRead"
+    },
+    "uxSectionCenter_evtUxItemRelationShipsWrite": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemRelationShipsWrite"
+    },
+    "uxSectionCenter_evtUxItemRelationShipsDelete": {
+      "relationship": "CONTAIN",
+      "start": "uxSectionCenter",
+      "end": "evtUxItemRelationShipsDelete"
+    },
+    "evtUxItemRelationShipsDetail_evtUxItemRelationShipsStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsDetail",
+      "end": "evtUxItemRelationShipsStickerAction"
+    },
+    "evtUxItemRelationShipsDetail_evtUxItemRelationShipsReadAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsDetail",
+      "end": "evtUxItemRelationShipsReadAction"
+    },
+    "evtUxItemRelationShipsDetail_evtUxItemRelationShipsWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsDetail",
+      "end": "evtUxItemRelationShipsWriteAction"
+    },
+    "evtUxItemRelationShipsDetail_evtUxItemRelationShipsDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsDetail",
+      "end": "evtUxItemRelationShipsDeleteAction"
+    },
+    "evtUxItemRelationShipsRead_evtUxItemRelationShipsStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsRead",
+      "end": "evtUxItemRelationShipsStickerAction"
+    },
+    "evtUxItemRelationShipsRead_evtUxItemRelationShipsDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsRead",
+      "end": "evtUxItemRelationShipsDetailAction"
+    },
+    "evtUxItemRelationShipsRead_evtUxItemRelationShipsWriteAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsRead",
+      "end": "evtUxItemRelationShipsWriteAction"
+    },
+    "evtUxItemRelationShipsRead_evtUxItemRelationShipsDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsRead",
+      "end": "evtUxItemRelationShipsDeleteAction"
+    },
+    "evtUxItemRelationShipsWrite_evtUxItemRelationShipsStickerAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsWrite",
+      "end": "evtUxItemRelationShipsStickerAction"
+    },
+    "evtUxItemRelationShipsWrite_evtUxItemRelationShipsDetailAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsWrite",
+      "end": "evtUxItemRelationShipsDetailAction"
+    },
+    "evtUxItemRelationShipsWrite_evtUxItemRelationShipsReadAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsWrite",
+      "end": "evtUxItemRelationShipsReadAction"
+    },
+    "evtUxItemRelationShipsWrite_evtUxItemRelationShipsDeleteAction": {
+      "relationship": "CONTAIN",
+      "start": "evtUxItemRelationShipsWrite",
+      "end": "evtUxItemRelationShipsDeleteAction"
+    },
+    "catEmoNeg_emoNegSadness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegSadness"
+    },
+    "catEmoNeg_emoNegHurt": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegHurt"
+    },
+    "catEmoNeg_emoNegDisappointment": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegDisappointment"
+    },
+    "catEmoNeg_emoNegDespair": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegDespair"
+    },
+    "catEmoNeg_emoNegBoredom": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegBoredom"
+    },
+    "catEmoNeg_emoNegShame": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegShame"
+    },
+    "catEmoNeg_emoNegGuilt": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegGuilt"
+    },
+    "catEmoNeg_emoNegFrustration": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegFrustration"
+    },
+    "catEmoNeg_emoNegEnvy": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegEnvy"
+    },
+    "catEmoNeg_emoNegDoubty": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegDoubty"
+    },
+    "catEmoNeg_emoNegWorry": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegWorry"
+    },
+    "catEmoNeg_emoNegPowerlessness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegPowerlessness"
+    },
+    "catEmoNeg_emoNegHelplessness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegHelplessness"
+    },
+    "catEmoNeg_emoNegFear": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegFear"
+    },
+    "catEmoNeg_emoNegEmbarrassment": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegEmbarrassment"
+    },
+    "catEmoNeg_emoNegAnxiety": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegAnxiety"
+    },
+    "catEmoNeg_emoNegIrritation": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegIrritation"
+    },
+    "catEmoNeg_emoNegDisgust": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegDisgust"
+    },
+    "catEmoNeg_emoNegContempt": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegContempt"
+    },
+    "catEmoNeg_emoNegAnnoyance": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegAnnoyance"
+    },
+    "catEmoNeg_emoNegAnger": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNeg",
+      "end": "emoNegAnger"
+    },
+    "catEmoPos_emoPosSerenity": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosSerenity"
+    },
+    "catEmoPos_emoPosRelief": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosRelief"
+    },
+    "catEmoPos_emoPosRelaxation": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosRelaxation"
+    },
+    "catEmoPos_emoPosContentment": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosContentment"
+    },
+    "catEmoPos_emoPosCalmness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosCalmness"
+    },
+    "catEmoPos_emoPosTrust": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosTrust"
+    },
+    "catEmoPos_emoPosSatisfaction": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosSatisfaction"
+    },
+    "catEmoPos_emoPosPride": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosPride"
+    },
+    "catEmoPos_emoPosHope": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosHope"
+    },
+    "catEmoPos_emoPosCourage": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosCourage"
+    },
+    "catEmoPos_emoPosPleasure": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosPleasure"
+    },
+    "catEmoPos_emoPosJoy": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosJoy"
+    },
+    "catEmoPos_emoPosHappiness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosHappiness"
+    },
+    "catEmoPos_emoPosExcitement": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosExcitement"
+    },
+    "catEmoPos_emoPosElation": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosElation"
+    },
+    "catEmoPos_emoPosDelight": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosDelight"
+    },
+    "catEmoPos_emoPosAmusement": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoPos",
+      "end": "emoPosAmusement"
+    },
+    "catEmoNegPos_emoPosNegSurprise": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegSurprise"
+    },
+    "catEmoNegPos_emoPosNegPoliteness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegPoliteness"
+    },
+    "catEmoNegPos_emoPosNegInterest": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegInterest"
+    },
+    "catEmoNegPos_emoPosNegLove": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegLove"
+    },
+    "catEmoNegPos_emoPosNegFriendliness": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegFriendliness"
+    },
+    "catEmoNegPos_emoPosNegEmpathy": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegEmpathy"
+    },
+    "catEmoNegPos_emoPosNegAffection": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegAffection"
+    },
+    "catEmoNegPos_emoPosNegTension": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegTension"
+    },
+    "catEmoNegPos_emoPosNegShock": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegShock"
+    },
+    "catEmoNegPos_emoPosNegStress": {
+      "relationship": "CATEGORISE",
+      "start": "catEmoNegPos",
+      "end": "emoPosNegStress"
+    },
+    "evt_emoNegSadness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegSadness"
+    },
+    "evt_emoNegHurt": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegHurt"
+    },
+    "evt_emoNegDisappointment": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegDisappointment"
+    },
+    "evt_emoNegDespair": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegDespair"
+    },
+    "evt_emoNegBoredom": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegBoredom"
+    },
+    "evt_emoNegShame": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegShame"
+    },
+    "evt_emoNegGuilt": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegGuilt"
+    },
+    "evt_emoNegFrustration": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegFrustration"
+    },
+    "evt_emoNegEnvy": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegEnvy"
+    },
+    "evt_emoNegDoubty": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegDoubty"
+    },
+    "evt_emoNegWorry": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegWorry"
+    },
+    "evt_emoNegPowerlessness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegPowerlessness"
+    },
+    "evt_emoNegHelplessness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegHelplessness"
+    },
+    "evt_emoNegFear": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegFear"
+    },
+    "evt_emoNegEmbarrassment": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegEmbarrassment"
+    },
+    "evt_emoNegAnxiety": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegAnxiety"
+    },
+    "evt_emoNegIrritation": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegIrritation"
+    },
+    "evt_emoNegDisgust": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegDisgust"
+    },
+    "evt_emoNegContempt": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegContempt"
+    },
+    "evt_emoNegAnnoyance": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegAnnoyance"
+    },
+    "evt_emoNegAnger": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoNegAnger"
+    },
+    "evt_emoPosSerenity": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosSerenity"
+    },
+    "evt_emoPosRelief": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosRelief"
+    },
+    "evt_emoPosRelaxation": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosRelaxation"
+    },
+    "evt_emoPosContentment": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosContentment"
+    },
+    "evt_emoPosCalmness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosCalmness"
+    },
+    "evt_emoPosTrust": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosTrust"
+    },
+    "evt_emoPosSatisfaction": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosSatisfaction"
+    },
+    "evt_emoPosPride": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosPride"
+    },
+    "evt_emoPosHope": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosHope"
+    },
+    "evt_emoPosCourage": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosCourage"
+    },
+    "evt_emoPosPleasure": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosPleasure"
+    },
+    "evt_emoPosJoy": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosJoy"
+    },
+    "evt_emoPosHappiness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosHappiness"
+    },
+    "evt_emoPosExcitement": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosExcitement"
+    },
+    "evt_emoPosElation": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosElation"
+    },
+    "evt_emoPosDelight": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosDelight"
+    },
+    "evt_emoPosAmusement": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosAmusement"
+    },
+    "evt_emoPosNegSurprise": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegSurprise"
+    },
+    "evt_emoPosNegPoliteness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegPoliteness"
+    },
+    "evt_emoPosNegInterest": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegInterest"
+    },
+    "evt_emoPosNegLove": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegLove"
+    },
+    "evt_emoPosNegFriendliness": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegFriendliness"
+    },
+    "evt_emoPosNegEmpathy": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegEmpathy"
+    },
+    "evt_emoPosNegAffection": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegAffection"
+    },
+    "evt_emoPosNegTension": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegTension"
+    },
+    "evt_emoPosNegShock": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegShock"
+    },
+    "evt_emoPosNegStress": {
+      "relationship": "CATEGORISE",
+      "start": "evt",
+      "end": "emoPosNegStress"
+    },
+    "catActWfl_actWkfTest": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfTest"
+    },
+    "catActWfl_actWkfValid": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfValid"
+    },
+    "catActWfl_actWkfCollect": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfCollect"
+    },
+    "catActWfl_actWkfOptimize": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfOptimize"
+    },
+    "catActWfl_actWkfShipp": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfShipp"
+    },
+    "catActWfl_actWkfPay": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfPay"
+    },
+    "catActWfl_actWkfBilling": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfBilling"
+    },
+    "catActWfl_actWkfExpedite": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfExpedite"
+    },
+    "catActWfl_actWkfPayBack": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfPayBack"
+    },
+    "catActWfl_actWkfShippManage": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfShippManage"
+    },
+    "catActWfl_actWkfExpediteManage": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfExpediteManage"
+    },
+    "catActWfl_actWkfPayManage": {
+      "relationship": "CATEGORISE",
+      "start": "catActWfl",
+      "end": "actWkfPayManage"
+    },
+    "catActLfc_actLfcArchive": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcArchive"
+    },
+    "catActLfc_actLfcHistorize": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcHistorize"
+    },
+    "catActLfc_actLfcExpire": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcExpire"
+    },
+    "catActLfc_actLfcState": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcState"
+    },
+    "catActLfc_actLfcPublish": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcPublish"
+    },
+    "catActLfc_actLfcInit": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcInit"
+    },
+    "catActLfc_actLfcCreate": {
+      "relationship": "CATEGORISE",
+      "start": "catActLfc",
+      "end": "actLfcCreate"
+    },
+    "catActCla_catActClaBalance": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaBalance"
+    },
+    "catActCla_catActClaFacility": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaFacility"
+    },
+    "catActCla_catActClaContributeTo": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaContributeTo"
+    },
+    "catActCla_catActClaShare": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaShare"
+    },
+    "catActCla_catActClaComment": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaComment"
+    },
+    "catActCla_catActClaNote": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaNote"
+    },
+    "catActCla_catActClaAsk": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaAsk"
+    },
+    "catActCla_catActClaMark": {
+      "relationship": "CATEGORISE",
+      "start": "catActCla",
+      "end": "catActClaMark"
+    },
+    "catActUa_": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": ""
+    },
+    "catActUa_catActUaUse": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": "catActUaUse"
+    },
+    "catActUa_catActUaShow": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": "catActUaShow"
+    },
+    "catActUa_catActUaBuy": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": "catActUaBuy"
+    },
+    "catActUa_catActUaAdd": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": "catActUaAdd"
+    },
+    "catActUa_catActUaOrder": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": "catActUaOrder"
+    },
+    "catActUa_catActUaReturn": {
+      "relationship": "CATEGORISE",
+      "start": "catActUa",
+      "end": "catActUaReturn"
+    },
+    "catActCm_catActCmCost": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmCost"
+    },
+    "catActCm_catActCmConcern": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmConcern"
+    },
+    "catActCm_catActCmSize": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmSize"
+    },
+    "catActCm_catActCmLocalize": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmLocalize"
+    },
+    "catActCm_catActCmIdentify": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmIdentify"
+    },
+    "catActCm_catActCmRepresente": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmRepresente"
+    },
+    "catActCm_catActCmTarget": {
+      "relationship": "CATEGORISE",
+      "start": "catActCm",
+      "end": "catActCmTarget"
+    },
+    "catActAuth_catActAuthAuthorise": {
+      "relationship": "CATEGORISE",
+      "start": "catActAuth",
+      "end": "catActAuthAuthorise"
+    },
+    "catActAuth_catActAuthManage": {
+      "relationship": "CATEGORISE",
+      "start": "catActAuth",
+      "end": "catActAuthManage"
+    },
+    "catActAuth_catActAuthOwn": {
+      "relationship": "CATEGORISE",
+      "start": "catActAuth",
+      "end": "catActAuthOwn"
+    },
+    "catActSta_catActStaHost": {
+      "relationship": "CATEGORISE",
+      "start": "catActSta",
+      "end": "catActStaHost"
+    },
+    "catActSta_catActStaProduce": {
+      "relationship": "CATEGORISE",
+      "start": "catActSta",
+      "end": "catActStaProduce"
+    },
+    "catActSta_catActStaStock": {
+      "relationship": "CATEGORISE",
+      "start": "catActSta",
+      "end": "catActStaStock"
+    },
+    "evt_actWkfTest": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfTest"
+    },
+    "evt_actWkfValid": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfValid"
+    },
+    "evt_actWkfCollect": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfCollect"
+    },
+    "evt_actWkfOptimize": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfOptimize"
+    },
+    "evt_actWkfShipp": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfShipp"
+    },
+    "evt_actWkfPay": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfPay"
+    },
+    "evt_actWkfBilling": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfBilling"
+    },
+    "evt_actWkfExpedite": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfExpedite"
+    },
+    "evt_actWkfPayBack": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfPayBack"
+    },
+    "evt_actWkfShippManage": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfShippManage"
+    },
+    "evt_actWkfExpediteManage": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfExpediteManage"
+    },
+    "evt_actWkfPayManage": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actWkfPayManage"
+    },
+    "evt_actLfcArchive": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcArchive"
+    },
+    "evt_actLfcHistorize": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcHistorize"
+    },
+    "evt_actLfcExpire": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcExpire"
+    },
+    "evt_actLfcState": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcState"
+    },
+    "evt_actLfcPublish": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcPublish"
+    },
+    "evt_actLfcInit": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcInit"
+    },
+    "evt_actLfcCreate": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "actLfcCreate"
+    },
+    "evt_catActClaBalance": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaBalance"
+    },
+    "evt_catActClaFacility": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaFacility"
+    },
+    "evt_catActClaContributeTo": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaContributeTo"
+    },
+    "evt_catActClaShare": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaShare"
+    },
+    "evt_catActClaComment": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaComment"
+    },
+    "evt_catActClaNote": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaNote"
+    },
+    "evt_catActClaAsk": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaAsk"
+    },
+    "evt_catActClaMark": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActClaMark"
+    },
+    "evt_catActUaUse": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActUaUse"
+    },
+    "evt_catActUaShow": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActUaShow"
+    },
+    "evt_catActUaBuy": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActUaBuy"
+    },
+    "evt_catActUaAdd": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActUaAdd"
+    },
+    "evt_catActUaOrder": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActUaOrder"
+    },
+    "evt_catActUaReturn": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActUaReturn"
+    },
+    "evt_catActCmCost": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmCost"
+    },
+    "evt_catActCmConcern": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmConcern"
+    },
+    "evt_catActCmSize": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmSize"
+    },
+    "evt_catActCmLocalize": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmLocalize"
+    },
+    "evt_catActCmIdentify": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmIdentify"
+    },
+    "evt_catActCmRepresente": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmRepresente"
+    },
+    "evt_catActCmTarget": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActCmTarget"
+    },
+    "evt_catActAuthAuthorise": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActAuthAuthorise"
+    },
+    "evt_catActAuthManage": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActAuthManage"
+    },
+    "evt_catActAuthOwn": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActAuthOwn"
+    },
+    "evt_catActStaHost": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActStaHost"
+    },
+    "evt_catActStaProduce": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActStaProduce"
+    },
+    "evt_catActStaStock": {
+      "relationship": "GENERATE",
+      "start": "evt",
+      "end": "catActStaStock"
+    },
+    "team_corp": {
+      "relationship": "CONTRIBUTE",
+      "start": "team",
+      "end": "corp"
+    },
+    "pers_team": {
+      "relationship": "CONTRIBUTE",
+      "start": "pers",
+      "end": "team"
+    },
+    "pers_corp": {
+      "relationship": "CONTRIBUTE",
+      "start": "pers",
+      "end": "corp"
+    },
+    "uCorp_corp": {
+      "relationship": "LOGIN",
+      "start": "uCorp",
+      "end": "corp",
+      "indexList": {
+        "housing": false,
+        "work": true,
+        "expedition": true,
+        "billing": true,
+        "expeditionReturnFrom": true,
+        "payment": true
+      }
+    },
+    "uTeam_team": {
+      "relationship": "LOGIN",
+      "start": "uTeam",
+      "end": "team",
+      "indexList": {
+        "housing": false,
+        "work": true,
+        "expedition": true,
+        "billing": true,
+        "expeditionReturnFrom": true,
+        "payment": true
+      }
+    },
+    "uPers_pers": {
+      "relationship": "LOGIN",
+      "start": "uPers",
+      "end": "pers",
+      "indexList": {
+        "housing": false,
+        "work": true,
+        "expedition": true,
+        "billing": true,
+        "expeditionReturnFrom": true,
+        "payment": true
+      }
+    },
+    "ctcCorp_corp": {
+      "relationship": "FOR_CONTACT",
+      "start": "ctcCorp",
+      "end": "corp"
+    },
+    "ctcTeam_team": {
+      "relationship": "FOR_CONTACT",
+      "start": "ctcTeam",
+      "end": "team"
+    },
+    "ctcPers_pers": {
+      "relationship": "FOR_CONTACT",
+      "start": "ctcPers",
+      "end": "pers"
+    },
+    "ctcCorp_ext": {
+      "relationship": "FOR_CONTACT",
+      "start": "ctcCorp",
+      "end": "ext"
+    },
+    "ctcTeam_ext": {
+      "relationship": "FOR_CONTACT",
+      "start": "ctcTeam",
+      "end": "ext"
+    },
+    "ctcPers_ext": {
+      "relationship": "FOR_CONTACT",
+      "start": "ctcPers",
+      "end": "ext"
+    },
+    "dom_ext": {
+      "relationship": "DETAILS",
+      "start": "dom",
+      "end": "ext"
+    },
+    "btcCorp_corp": {
+      "relationship": "MONETIZES",
+      "start": "btcCorp",
+      "end": "corp"
+    },
+    "btcTeam_team": {
+      "relationship": "MONETIZES",
+      "start": "btcTeam",
+      "end": "team"
+    },
+    "btcPers_pers": {
+      "relationship": "MONETIZES",
+      "start": "btcPers",
+      "end": "pers"
+    },
+    "locCorp_corp": {
+      "relationship": "LOCATE",
+      "start": "locCorp",
+      "end": "corp",
+      "indexList": {
+        "housing": false,
+        "work": true,
+        "expedition": true,
+        "billing": true,
+        "expeditionReturnFrom": true,
+        "payment": true
+      }
+    },
+    "locTeam_team": {
+      "relationship": "LOCATE",
+      "start": "locTeam",
+      "end": "team",
+      "indexList": {
+        "housing": false,
+        "work": true,
+        "expedition": true,
+        "billing": true,
+        "expeditionReturnFrom": true,
+        "payment": true
+      }
+    },
+    "locPers_pers": {
+      "relationship": "LOCATE",
+      "start": "locPers",
+      "end": "pers",
+      "indexList": {
+        "housing": false,
+        "work": true,
+        "expedition": true,
+        "billing": true,
+        "expeditionReturnFrom": true,
+        "payment": true
+      }
+    },
+    "zone_locCorp": {
+      "relationship": "LOCATE",
+      "start": "zone",
+      "end": "locCorp"
+    },
+    "zone_locTeam": {
+      "relationship": "LOCATE",
+      "start": "zone",
+      "end": "locTeam"
+    },
+    "zone_locPers": {
+      "relationship": "LOCATE",
+      "start": "zone",
+      "end": "locPers"
+    },
+    "c_r": {
+      "relationship": "AUTHORISE",
+      "start": "c",
+      "end": "r"
+    },
+    "docA_c": {
+      "relationship": "APPLY_FOR",
+      "start": "docA",
+      "end": "c"
+    },
+    "docR_c": {
+      "relationship": "REFERENCE",
+      "start": "docR",
+      "end": "c"
+    },
+    "rid_c": {
+      "relationship": "APPLY_FOR",
+      "start": "rid",
+      "end": "c"
+    },
+    "signPers_c": {
+      "relationship": "SIGN",
+      "start": "signPers",
+      "end": "c"
+    },
+    "signPersPM_c": {
+      "relationship": "SIGN",
+      "start": "signPersPM",
+      "end": "c"
+    },
+    "signPers_uPers": {
+      "relationship": "SIGN",
+      "start": "signPers",
+      "end": "uPers"
+    },
+    "signPersPM_uPersPM": {
+      "relationship": "SIGN",
+      "start": "signPersPM",
+      "end": "uPersPM"
+    },
+    "not_evt": {
+      "relationship": "NOTIFY",
+      "start": "not",
+      "end": "evt"
+    },
+    "tdy_t": {
+      "relationship": "DATE",
+      "start": "tdy",
+      "end": "t"
+    },
+    "ty_t": {
+      "relationship": "DATE",
+      "start": "tY",
+      "end": "t"
+    },
+    "dmon_t": {
+      "relationship": "DATE",
+      "start": "tmon",
+      "end": "t"
+    },
+    "tdm_t": {
+      "relationship": "DATE",
+      "start": "tdm",
+      "end": "t"
+    },
+    "tmin_t": {
+      "relationship": "DATE",
+      "start": "tmin",
+      "end": "t"
+    },
+    "tH_t": {
+      "relationship": "DATE",
+      "start": "tH",
+      "end": "t"
+    },
+    "ts_t": {
+      "relationship": "DATE",
+      "start": "ts",
+      "end": "t"
+    },
+    "t_evt": {
+      "relationship": "DATE",
+      "start": "t",
+      "end": "evt"
+    },
+    "code_evt": {
+      "relationship": "CATEGORIZE",
+      "start": "code",
+      "end": "evt"
+    },
+    "req_evt": {
+      "relationship": "GENERATE",
+      "start": "req",
+      "end": "evt"
+    },
+    "req_tr": {
+      "relationship": "GENERATE",
+      "start": "req",
+      "end": "tr"
+    },
+    "tr_req": {
+      "relationship": "TRACE",
+      "start": "tr",
+      "end": "req"
+    },
+    "tr_i": {
+      "relationship": "TRACE",
+      "start": "tr",
+      "end": "i"
+    },
+    "i_c": {
+      "relationship": "IMPLEMENT",
+      "start": "i",
+      "end": "c"
+    },
+    "tr_c": {
+      "relationship": "TRACE",
+      "start": "tr",
+      "end": "c"
+    },
+    "c_m": {
+      "relationship": "EXPOSE",
+      "start": "c",
+      "end": "m"
+    },
+    "tr_m": {
+      "relationship": "TRACE",
+      "start": "tr",
+      "end": "m"
+    },
+    "tr_l": {
+      "relationship": "TRACE",
+      "start": "tr",
+      "end": "l"
+    },
+    "m_l": {
+      "relationship": "CONTAIN",
+      "start": "m",
+      "end": "l"
+    },
+    "tr_var": {
+      "relationship": "TRACE",
+      "start": "tr",
+      "end": "var"
+    },
+    "l_var": {
+      "relationship": "GENERATE",
+      "start": "l",
+      "end": "var"
+    },
+    "bt_tr": {
+      "relationship": "HISTORIZE",
+      "start": "bt",
+      "end": "tr"
+    },
+    "cf_app": {
+      "relationship": "CONFIGURE",
+      "start": "cf",
+      "end": "app"
+    },
+    "env_hApp": {
+      "relationship": "SPONSORIZE",
+      "start": "env",
+      "end": "hApp"
+    },
+    "hApp_app": {
+      "relationship": "HOST",
+      "start": "hApp",
+      "end": "app"
+    },
+    "hClient_ss": {
+      "relationship": "HOST",
+      "start": "hClient",
+      "end": "ss"
+    },
+    "uPers_req": {
+      "relationship": "CALL",
+      "start": "uPers",
+      "end": "req"
+    },
+    "ss_ssClient": {
+      "relationship": "MAINTAIN",
+      "start": "ss",
+      "end": "ssClient"
+    },
+    "ss_ssApp": {
+      "relationship": "MAINTAIN",
+      "start": "ss",
+      "end": "ssApp"
+    },
+    "ssClient_uPers": {
+      "relationship": "AUTORIZE",
+      "start": "ssClient",
+      "end": "uPers"
+    },
+    "ssApp_app": {
+      "relationship": "ACCESS",
+      "start": "ssApp",
+      "end": "app"
+    },
+    "mock_uPers": {
+      "relationship": "MOCK",
+      "start": "mock",
+      "end": "uPers"
+    },
+    "uh_uPers": {
+      "relationship": "HISTORIZE",
+      "start": "uh",
+      "end": "uPers"
+    }
+  },
