@@ -14,16 +14,25 @@ trait TraitApp {
 
 		Install::verif();
 
-		$confFile    = Install::CONF_DIR.self::CONF_VERSION.DIRECTORY_SEPARATOR.self::CONF_FILE_BASENAME.Install::CONF_EXT;
+		$confFile = Install::CONF_DIR.self::CONF_VERSION.DIRECTORY_SEPARATOR.self::CONF_FILE_BASENAME.Install::CONF_EXT;
+
+		if(is_file($confFile) === false) {
+
+		    return false;
+		}
 		$confContent = file_get_contents($confFile);
 		$confObj     = json_decode($confContent);
 
+		if($confObj === false) {
+
+		    return false;
+		}
 		$this->run($confObj);
 	}
 
 	final private static function requireFrameWork($mask) {
 
-	    foreach(glob(Install::DIR_LIB.$mask) as $file) {
+	    foreach(glob(Install::LIB_DIR.$mask) as $file) {
 
 	        require_once $file;
 	    }
@@ -48,7 +57,7 @@ trait TraitApp {
 
 	    foreach($this->traitList as $traitName){
 
-	        require_once Install::DIR_LIB_SPECIFIC.Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT;
+	        require_once Install::LIB_SPECIFIC_DIR.Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT;
 	    }
 		return true;
 	}
@@ -57,7 +66,7 @@ trait TraitApp {
 
 	    foreach($this->classList as $className){
 
-	        require_once Install::DIR_LIB_SPECIFIC.Install::CLASS_PREFIX.$className.Install::CLASS_EXT;
+	        require_once Install::LIB_SPECIFIC_DIR.Install::CLASS_PREFIX.$className.Install::CLASS_EXT;
 	    }
 		return true;
 	}

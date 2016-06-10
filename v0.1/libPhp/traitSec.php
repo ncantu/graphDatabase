@@ -6,6 +6,7 @@ Trait TraitSec {
     public $key;
     public $decypted;
     public $crypted;
+    public $crypted64;
 
     public function __construct($type) {
 
@@ -66,10 +67,10 @@ Trait TraitSec {
         $ciphertext    = $iv . $ciphertext;
         $this->crypted = $ciphertext;
 
-        if(self::BASE_64_ENCODE === true) $this->crypted = base64_encode($crypted);
+        if(self::BASE_64_ENCODE === true) $this->crypted = base64_encode($this->crypted);
 
         $this->key['KEY'] = $key;
-        $this->key['IV']  = $iv;
+        $this->key['IV']  = $iv_size;
 
         return true;
     }
@@ -80,7 +81,10 @@ Trait TraitSec {
 
             $key = $this->key;
         }
-        $ciphertext_dec  = base64_decode($value);
+        $ciphertext_dec = $value;
+
+        if(self::BASE_64_ENCODE === true) $ciphertext_dec  = base64_decode($value);
+
         $iv_dec          = substr($ciphertext_dec, 0, $key['IV']);
         $ciphertext_dec  = substr($ciphertext_dec, $key['IV']);
         $this->decrypted = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key['KEY'], $ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
@@ -92,7 +96,7 @@ Trait TraitSec {
 
         $value = rand(self::RAND_START, self::RAND_STOP).$type.$i;
 
-        while(isset(self::$nodeList[$value]) === true) {
+        while(isset(FrameWork::$nodeList[$value]) === true) {
 
             $i++;
 

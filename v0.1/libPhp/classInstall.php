@@ -6,9 +6,9 @@ class Install {
 	CONST LOG_DIR              = 'log/';
 	CONST CONF_DIR             = 'conf/';
 	CONST CONF_EXT             = '.json';
-    CONST DIR_LIB              = '../libPhp/';
-	CONST DIR_LIB_SPECIFIC     = 'libSpecific/';
-	CONST DIR_APP_EXPLOITATION = './';
+    CONST LIB_DIR              = '../libPhp/';
+	CONST LIB_SPECIFIC_DIR     = 'libSpecific/';
+	CONST APP_EXPLOITATION_DIR = './';
 	CONST CLASS_EXT            = '.php';
     CONST CLASS_PREFIX         = 'class';
 	CONST TRAIT_EXT            = '.php';
