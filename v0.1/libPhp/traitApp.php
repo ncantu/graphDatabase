@@ -4,6 +4,8 @@ trait TraitApp {
 
 	public function __construct() {
 
+	    set_time_limit(self::EXECUTION_TIME_LIMIT);
+
 		require_once dirname(__FILE__).'/classInstall.php';
 
 		self::requireFrameWorkTraitList();

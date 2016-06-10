@@ -6,7 +6,6 @@ Trait TraitSec {
     public $key;
     public $decypted;
     public $crypted;
-    public $crypted64;
 
     public function __construct($type) {
 
