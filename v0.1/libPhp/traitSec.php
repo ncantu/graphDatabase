@@ -1,9 +1,6 @@
 <?php
 
-class Sec {
-
-    CONST SALT_EXIPRE_DATE_FORMAT = 'Ym';
-    CONST SALT_FILE_BASENAME      = 'secSalt';
+Trait TraitSec {
 
     public $type;
     public $key;
@@ -20,14 +17,14 @@ class Sec {
     public static function installVerif() {
 
         self::installVerifSalt(self::SALT_FILE_BASENAME);
-        self::installVerifKey(self::SEC_KEY_FILE_BASENAME);
+        self::installVerifKey(self::KEY_FILE_BASENAME);
 
         return true;
     }
 
     private static function fileSet($basename) {
 
-        return Install::DIR.$basename.date(self::SALT_EXIPRE_DATE_FORMAT, time());
+        return Install::SEC_DIR.$basename.date(self::SALT_EXIPRE_DATE_FORMAT, time());
     }
 
     private static function installVerifSalt($basename) {

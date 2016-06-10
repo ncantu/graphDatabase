@@ -35,4 +35,5 @@ class Install {
 	    return true;
 	}
 }
+
 ?>
