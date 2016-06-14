@@ -6,11 +6,14 @@ trait TraitApp {
 
     use TraitModule;
 
-    private static $frameWork    = 'Framework';
     private static $installClass = '/classInstall.php';
     private static $dataBaseName = false;
+    private static $className    = false;
 
     public static $dataBase      = false;
+
+    private static $appClassList = array('SecPath', 'SecUuid');
+    private static $appTraitList = array('Trace', 'Test', 'Sec', 'Path');
 
 	public function __construct() {
 
@@ -26,9 +29,13 @@ trait TraitApp {
 
 		Install::verif();
 
-		self::configure(self::$frameWork, self::CONF_FILE_BASENAME);
-        self::moduleListLoad();
+		self::$className = get_class($this);
+		$result          = self::configure(self::$className, self::CONF_FILE_BASENAME);
 
+		if($result === false) {
+
+		    return false;
+		}
         if(self::$dataBaseName !== false) {
 
             self::dataBaseConnect();
@@ -53,7 +60,12 @@ trait TraitApp {
 
 	final private static function configure($className, $mask) {
 
-	    $confFile    = self::configureFileGet($mask);
+	    $confFile = self::configureFileGet($mask);
+
+	    if(is_file($confFile) === false) {
+
+	        return true;
+	    }
 	    $confContent = file_get_contents($confFile);
 	    $confObj     = json_decode($confContent);
 
@@ -61,14 +73,24 @@ trait TraitApp {
 
 	        return false;
 	    }
-	    if(is_object($$className::$conf) === false) {
+	    if(is_object($className::$conf) === false) {
 
-	        $$className::$conf = new stdClass();
+	        $className::$conf = new stdClass();
 	    }
 	    foreach($confObj as $k => $v) {
 
-	       if(isset($$className::$conf->$k)  === true) $$className::$conf->$k  = $v;
-	       if(isset($$className::$conf::$$k) === true) $$className::$conf::$$k = $v;
+	       if(isset($className::$conf->$k)  === true) {
+
+	           $className::$conf->$k  = $v;
+	       }
+	       elseif(isset($className::$conf::$$k) === true) {
+
+	           $className::$conf::$$k = $v;
+	       }
+	       else {
+
+	           $className::$conf->$k = $v;
+	       }
 	    }
 	    return true;
 	}
@@ -84,21 +106,26 @@ trait TraitApp {
 
 	final private static function requireFrameWorkTraitList($mask = '*') {
 
-	    self::requireFrameWork(Install::TRAIT_PREFIX.$mask.Install::TRAIT_EXT);
+	    foreach(self::$appTraitList as $traitName) {
+
+	        self::requireFrameWork(Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT);
+	    }
 
 	    return true;
 	}
 
 	final private static function requireFrameWorkClassList($mask = '*') {
 
-	    self::requireFrameWork(Install::CLASS_PREFIX.$mask.Install::CLASS_EXT);
+	    foreach(self::$appClassList as $className) {
 
+	        self::requireFrameWork(Install::CLASS_PREFIX.$className.Install::CLASS_EXT);
+	    }
 	    return true;
 	}
 
 	final private function requireTraitList() {
 
-	    foreach($this->traitList as $traitName){
+	    foreach($this->traitList as $traitName) {
 
 	        require_once Install::LIB_SPECIFIC_DIR.Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT;
 	    }
@@ -107,7 +134,7 @@ trait TraitApp {
 
 	final private function requireClassList() {
 
-	    foreach($this->classList as $className){
+	    foreach($this->classList as $className) {
 
 	        require_once Install::LIB_SPECIFIC_DIR.Install::CLASS_PREFIX.$className.Install::CLASS_EXT;
 	    }

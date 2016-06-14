@@ -8,7 +8,7 @@ trait TraitModule {
 
         foreach(self::$conf->moduleList as $module => $detailList) {
 
-            $this->requireFrameWorkModule($detailList);
+            self::requireFrameWorkModule($detailList);
         }
         return true;
     }
@@ -19,15 +19,15 @@ trait TraitModule {
 
         foreach($detailList->traitList as $traitName) {
 
-            App::requireFrameWork($mask.Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT);
+            self::requireFrameWork($mask.Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT);
         }
         foreach($detailList->classList as $className) {
 
-            App::requireFrameWork($mask.Install::CLASS_PREFIX.$className.Install::CLASS_EXT);
+            self::requireFrameWork($mask.Install::CLASS_PREFIX.$className.Install::CLASS_EXT);
         }
         foreach($detailList->confList as $confDetailList) {
 
-            App::configure($confDetailList->className, $mask.$confDetailList->confName);
+            self::configure($confDetailList->className, $mask.$confDetailList->confName);
         }
         return true;
     }

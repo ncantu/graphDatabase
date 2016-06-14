@@ -7,9 +7,12 @@ Trait TraitSec {
     public $decypted;
     public $crypted;
 
-    public function __construct($type) {
+    public static $list;
+
+    public function __construct($type, $list = array()) {
 
         $this->type = $type;
+        $this->list = $list;
         $this->cryptSet($type);
         $this->d($this->crypted);
     }
@@ -95,7 +98,7 @@ Trait TraitSec {
 
         $value = rand(self::RAND_START, self::RAND_STOP).$type.$i;
 
-        while(isset(FrameWork::$nodeList[$value]) === true) {
+        while(isset(self::$list[$value]) === true) {
 
             $i++;
 
