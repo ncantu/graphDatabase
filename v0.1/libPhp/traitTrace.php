@@ -4,9 +4,18 @@ trait TraitTrace {
 
     static function t($c, $exit = true) {
 
-        echo $c;
+        if(is_object($c) === true) {
 
-        if($exit === true) exit();
+            $c = json_encode($c, JSON_PRETTY_PRINT);
+        }
+        echo '<pre>';
+        echo $c;
+        echo '</pre>';
+
+        if($exit === true) {
+
+            exit();
+        }
     }
 }
 
