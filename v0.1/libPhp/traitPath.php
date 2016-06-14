@@ -7,9 +7,9 @@ trait TraitPath {
     private $secPath;
     private $secUuid;
 
-    private $attributList    = array();
+    private $attributList   = array();
 
-    private static $pathlist = false;
+    public static $pathlist = false;
 
     private function pathSet() {
 
