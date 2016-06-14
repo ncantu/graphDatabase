@@ -4,16 +4,17 @@ trait TraitApp {
 
     use TraitModule;
 
-    CONST FRAMEWORK     = 'Framework';
-    CONST INSTALL_CLASS = '/classInstall.php';
+    private static $frameWork    = 'Framework';
+    private static $installClass = '/classInstall.php';
+    private static $dataBaseName = false;
 
-    static $dataBase = false;
+    public static $dataBase      = false;
 
 	public function __construct() {
 
 	    set_time_limit(self::EXECUTION_TIME_LIMIT);
 
-		require_once dirname(__FILE__).self::INSTALL_CLASS;
+		require_once dirname(__FILE__).self::$installClass;
 
 		self::requireFrameWorkTraitList();
 		self::requireFrameWorkClassList();
@@ -23,10 +24,24 @@ trait TraitApp {
 
 		Install::verif();
 
-		self::configure(self::FRAMEWORK, self::CONF_FILE_BASENAME);
+		self::configure(self::$frameWork, self::CONF_FILE_BASENAME);
         self::moduleListLoad();
 
+        if(self::$dataBaseName !== false) {
+
+            self::dataBaseConnect();
+        }
 		$this->run();
+	}
+
+	final private static function dataBaseConnect() {
+
+	    $dataBaseName   = self::$dataBaseName;
+	    self::$database = new $dataBaseName();
+
+	    self::$dataBaseName->connect();
+
+	    return true;
 	}
 
 	final private static function configureFileGet($mask) {
@@ -51,7 +66,8 @@ trait TraitApp {
 	    }
 	    foreach($confObj as $k => $v) {
 
-	       $$className::$conf->$k = $v;
+	       if(isset($$className::$conf->$k)  === true) $$className::$conf->$k  = $v;
+	       if(isset($$className::$conf::$$k) === true) $$className::$conf::$$k = $v;
 	    }
 	    return true;
 	}

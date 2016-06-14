@@ -15,32 +15,34 @@ class DataNeo4j {
     CONST EOL                 = ' ';
     CONST LANGUAGE            = 'DataNeo4j';
 
-    public function connect($cypher) {
+    public static function connect($cypher) {
 
-            if(is_object(self::$conf) === false) return false;
+            return self::request('');
+    }
 
-            $post = '
-		{
-			"statements" : [ {
-			"statement" : "'.$cypher.'"
-			} ]
-		}';
+    public static function request($cypher) {
 
-            $process = curl_init('http://'.self::$conf->host.':'.self::$conf->port.self::$database->url);
+        $post = '
+{
+	"statements" : [ {
+	"statement" : "'.$cypher.'"
+	} ]
+}';
+        $process = curl_init('http://'.self::$conf->host.':'.self::$conf->port.self::$database->url);
 
-            curl_setopt($process, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Accept: application/json; charset=UTF-8'));
-            curl_setopt($process, CURLOPT_HEADER, 1);
-            curl_setopt($process, CURLOPT_USERPWD, self::$conf->username.':'.self::$conf->password);
-            curl_setopt($process, CURLOPT_TIMEOUT, 30);
-            curl_setopt($process, CURLOPT_POST, 1);
-            curl_setopt($process, CURLOPT_POSTFIELDS, $post);
-            curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($process, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Accept: application/json; charset=UTF-8'));
+        curl_setopt($process, CURLOPT_HEADER, 1);
+        curl_setopt($process, CURLOPT_USERPWD, self::$conf->username.':'.self::$conf->password);
+        curl_setopt($process, CURLOPT_TIMEOUT, 30);
+        curl_setopt($process, CURLOPT_POST, 1);
+        curl_setopt($process, CURLOPT_POSTFIELDS, $post);
+        curl_setopt($process, CURLOPT_RETURNTRANSFER, TRUE);
 
-            $return = curl_exec($process);
+        $return = curl_exec($process);
 
-            curl_close($process);
+        curl_close($process);
 
-            return $return;
+        return $return;
     }
 
     public function attribut($attributObj) {
