@@ -1,5 +1,7 @@
 <?php
 
+require_once dirname(__FILE__).'/traitModule.php';
+
 trait TraitApp {
 
     use TraitModule;
@@ -51,8 +53,7 @@ trait TraitApp {
 
 	final private static function configure($className, $mask) {
 
-	    $confFile = self::configureFileGet($mask.$confDetailList->confName);
-
+	    $confFile    = self::configureFileGet($mask);
 	    $confContent = file_get_contents($confFile);
 	    $confObj     = json_decode($confContent);
 
