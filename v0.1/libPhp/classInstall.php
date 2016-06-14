@@ -5,6 +5,7 @@ class Install {
 	CONST SEC_DIR              = './';
 	CONST LOG_DIR              = 'log/';
 	CONST CONF_DIR             = 'conf/';
+	CONST MODULE_LIST_DIR      = 'moduleList/';
 	CONST CONF_EXT             = '.json';
     CONST LIB_DIR              = '../libPhp/';
 	CONST LIB_SPECIFIC_DIR     = 'libSpecific/';

@@ -2,6 +2,8 @@
 
 class CodePhp {
 
+    use TraitModule;
+
     CONST LANGUAGE = 'Php';
 
     public function attribut($attributObj){

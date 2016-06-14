@@ -2,11 +2,18 @@
 
 trait TraitApp {
 
+    use TraitModule;
+
+    CONST FRAMEWORK     = 'Framework';
+    CONST INSTALL_CLASS = '/classInstall.php';
+
+    static $dataBase = false;
+
 	public function __construct() {
 
 	    set_time_limit(self::EXECUTION_TIME_LIMIT);
 
-		require_once dirname(__FILE__).'/classInstall.php';
+		require_once dirname(__FILE__).self::INSTALL_CLASS;
 
 		self::requireFrameWorkTraitList();
 		self::requireFrameWorkClassList();
@@ -16,20 +23,37 @@ trait TraitApp {
 
 		Install::verif();
 
-		$confFile = Install::CONF_DIR.self::CONF_VERSION.DIRECTORY_SEPARATOR.self::CONF_FILE_BASENAME.Install::CONF_EXT;
+		self::configure(self::FRAMEWORK, self::CONF_FILE_BASENAME);
+        self::moduleListLoad();
 
-		if(is_file($confFile) === false) {
+		$this->run();
+	}
 
-		    return false;
-		}
-		$confContent = file_get_contents($confFile);
-		$confObj     = json_decode($confContent);
+	final private static function configureFileGet($mask) {
 
-		if($confObj === false) {
+	    return Install::CONF_DIR.self::CONF_VERSION.DIRECTORY_SEPARATOR.$mask.Install::CONF_EXT;
+	}
 
-		    return false;
-		}
-		$this->run($confObj);
+	final private static function configure($className, $mask) {
+
+	    $confFile = self::configureFileGet($mask.$confDetailList->confName);
+
+	    $confContent = file_get_contents($confFile);
+	    $confObj     = json_decode($confContent);
+
+	    if($confObj === false) {
+
+	        return false;
+	    }
+	    if(is_object($$className::$conf) === false) {
+
+	        $$className::$conf = new stdClass();
+	    }
+	    foreach($confObj as $k => $v) {
+
+	       $$className::$conf->$k = $v;
+	    }
+	    return true;
 	}
 
 	final private static function requireFrameWork($mask) {
@@ -41,16 +65,16 @@ trait TraitApp {
 	    return true;
 	}
 
-	final private static function requireFrameWorkTraitList() {
+	final private static function requireFrameWorkTraitList($mask = '*') {
 
-	    self::requireFrameWork(Install::TRAIT_PREFIX.'*'.Install::TRAIT_EXT);
+	    self::requireFrameWork(Install::TRAIT_PREFIX.$mask.Install::TRAIT_EXT);
 
 	    return true;
 	}
 
-	final private static function requireFrameWorkClassList() {
+	final private static function requireFrameWorkClassList($mask = '*') {
 
-	    self::requireFrameWork(Install::CLASS_PREFIX.'*'.Install::CLASS_EXT);
+	    self::requireFrameWork(Install::CLASS_PREFIX.$mask.Install::CLASS_EXT);
 
 	    return true;
 	}
