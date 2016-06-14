@@ -7,15 +7,14 @@ trait TraitPath {
     private $secPath;
     private $secUuid;
 
-    private $attributList = array();
+    private $attributList    = array();
 
     private static $pathlist = false;
-    private static $className;
 
     private function pathSet() {
 
-        $this->secPath = new SecPath(self::SEC_TYPE, self::$list);
-        $this->secUuid = new SecUuid(self::SEC_TYPE, self::$list);
+        $this->secPath = new SecPath(self::SEC_TYPE, __CLASS__);
+        $this->secUuid = new SecUuid(self::SEC_TYPE, __CLASS__);
 
         return true;
     }
@@ -24,17 +23,14 @@ trait TraitPath {
 
         if(isset(self::$pathlist[$id]) === true) {
 
-            self::t($nodeConf->return.' exist', false);
+            self::t(__LINE__.' '.__FILE__.' '.__CLASS__.' '.__FUNCTION__.' '.__METHOD__.' '.$nodeConf->return.' exist', false);
 
             self::$list[$id]->attributListMergeFromConf($conf);
 
             return false;
         }
-        self::t(__CLASS__, false);
-        self::t(self::$className);
-
-        $class               = self::$className;
-        self::$pathlist[$id] = new $class($conf);
+        $class                 = __CLASS__;
+        $class::$pathlist[$id] = new $class($conf);
 
         return true;
     }

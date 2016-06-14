@@ -110,7 +110,6 @@ trait TraitApp {
 
 	        self::requireFrameWork(Install::TRAIT_PREFIX.$traitName.Install::TRAIT_EXT);
 	    }
-
 	    return true;
 	}
 

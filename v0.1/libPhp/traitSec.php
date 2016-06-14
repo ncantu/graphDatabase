@@ -7,12 +7,13 @@ Trait TraitSec {
     public $decypted;
     public $crypted;
 
-    public static $list;
+    private static $listClassName;
 
-    public function __construct($type, $list = array()) {
+    public function __construct($type, $listClassName) {
 
-        $this->type = $type;
-        $this->list = $list;
+        $this->type          = $type;
+        self::$listClassName = $listClassName;
+
         $this->cryptSet($type);
         $this->d($this->crypted);
     }
@@ -96,9 +97,10 @@ Trait TraitSec {
 
     private function cryptSet($type, $i = 0) {
 
-        $value = rand(self::RAND_START, self::RAND_STOP).$type.$i;
+        $value         = rand(self::RAND_START, self::RAND_STOP).$type.$i;
+        $listClassName = self::$listClassName;
 
-        while(isset(self::$list[$value]) === true) {
+        while(isset($listClassName::$pathlist[$value]) === true) {
 
             $i++;
 
